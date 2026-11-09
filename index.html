@@ -23,7 +23,7 @@ body{background:radial-gradient(ellipse at 50% 35%,#3a2418 0,#1b110c 55%,#0c0806
 .frame{flex:1;max-width:1100px;width:100%;margin:0 auto;border:1px solid #0f2322;border-radius:10px;background:radial-gradient(ellipse at 50% 0%,#174745 0,#0c2a29 45%,#081d1d 100%);box-shadow:0 0 0 6px #1b1c1d,0 0 0 8px #2b2c2d,0 20px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;padding:18px 22px}
 header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:1px solid #0a1716;padding-bottom:12px}
 .logo{display:flex;align-items:center;gap:12px}
-.logo svg{width:42px;height:42px}
+.logo-img{width:60px;height:60px;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
 .logo b{display:block;font:700 30px/1 var(--ff);letter-spacing:.04em;color:#f1fbf9}
 .logo small{display:block;font:600 14px/1.2 var(--ff);letter-spacing:.14em;color:var(--dim);text-transform:uppercase;margin-top:3px}
 .sp{flex:1}
@@ -78,18 +78,32 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .card .tag{z-index:4}
 .card:hover .pv-gal .strip{animation-duration:40s}
 @media (prefers-reduced-motion:reduce){.pv *{animation:none!important}}
+
+.support{flex-wrap:wrap;align-items:center;gap:18px 26px}
+.refer{display:flex;flex-direction:column;gap:7px;min-width:0}
+.rf-head b{display:block;font:700 15px/1.1 var(--ff);letter-spacing:.14em;color:#f1fbf9;text-transform:uppercase}
+.rf-head small{display:block;font-size:14px;color:var(--dim);margin-top:2px}
+.rf-box{display:flex;align-items:stretch;border:1px solid #2f6a73;border-radius:8px;background:linear-gradient(180deg,#123a44,#0b2a33);overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.rf-code{position:relative;border:0;background:transparent;color:#f1fbf9;font:700 19px/1 var(--ff);letter-spacing:.08em;padding:12px 20px 14px;cursor:copy}
+.rf-code i{position:absolute;left:20px;right:20px;bottom:6px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--gold),#79e0b4)}
+.rf-code:hover,.rf-code:focus-visible{background:rgba(255,255,255,.05);outline:none}
+.rf-code.ok span{color:var(--ok)}
+.rf-go{display:flex;align-items:center;gap:7px;padding:0 18px;border-left:1px solid #2f6a73;background:#163f49;color:#a8e9f5;text-decoration:none;font:700 16px var(--ff);letter-spacing:.04em;white-space:nowrap}
+.rf-go svg{width:18px;height:18px}
+.rf-go:hover,.rf-go:focus-visible{background:#1d5260;color:#fff;outline:none}
 footer{border-top:1px solid #0a1716;padding-top:12px;font-size:13.5px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 footer b{color:var(--dim);font-weight:600}
 @media (max-width:760px){
  body{padding:6px}
  .frame{padding:12px 12px;box-shadow:0 0 0 3px #1b1c1d}
- .logo b{font-size:24px}.logo svg{width:34px;height:34px}
+ .logo b{font-size:24px}.logo-img{width:50px;height:50px}
  header{gap:10px}.sp{display:none}
  .flags svg{width:24px;height:16px}.flags svg.fhr{width:32px}
  main{padding:18px 0}
  .hello h1{font-size:24px}.hello p{font-size:16px}
  .cards{grid-template-columns:1fr;gap:14px}
  .bmc.hd{display:none}
+ .support{flex-direction:column}.refer{align-items:center;text-align:center}.rf-code{font-size:17px;padding:11px 14px 13px}.rf-code i{left:14px;right:14px}.rf-go{padding:0 14px}
  .card{min-height:0;padding:20px 18px 18px}
  .pv{height:120px;margin:-20px -18px 4px}.pv-gal{--sw:1260px}
  .card .ic{width:48px;height:48px}
@@ -102,7 +116,7 @@ footer b{color:var(--dim);font-weight:600}
 <div class="frame">
  <header>
   <div class="logo">
-   <svg viewBox="0 0 48 48" fill="none" stroke="#e2cf78" stroke-width="2.4" stroke-linejoin="round"><path d="M24 3l18 10v22L24 45 6 35V13z"/><path d="M24 13l9 5v12l-9 5-9-5V18z" stroke="#79e0b4"/></svg>
+   <img class="logo-img" src="assets/logo-96.webp" srcset="assets/logo-96.webp 1x, assets/logo-192.webp 2x" width="60" height="60" alt="ShoGy_HR">
    <div><b>ShoGy-HR</b><small data-t="sub"></small></div>
   </div>
   <span class="sp"></span>
@@ -128,7 +142,12 @@ footer b{color:var(--dim);font-weight:600}
     <span class="go"><span data-t="open"></span> ›</span>
    </a>
   </div>
-  <div class="support"><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-t="coffee"></span></a></div>
+  <div class="support"><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-t="coffee"></span></a>
+  <div class="refer">
+   <div class="rf-head"><b data-t="playT"></b><small data-t="playS"></small></div>
+   <div class="rf-box"><button type="button" class="rf-code" id="rfCode" data-ta="copyCode"><span>STAR-QWST-J2ND</span><i></i></button><a class="rf-go" href="https://www.robertsspaceindustries.com/enlist?referral=STAR-QWST-J2ND" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span data-t="enlist"></span></a></div>
+  </div>
+  </div>
  </main>
  <footer>
   <span data-t="fan"></span>
@@ -154,6 +173,11 @@ var TX={
  galD:["UEE xenological archive: dossiers on every known species, a timeline of first contacts and an interactive star map.","UEE ksenološki arhiv: dosjei svih poznatih vrsta, vremenska crta prvih kontakata i interaktivna zvjezdana karta.","UEE-Xenologie-Archiv: Dossiers zu allen bekannten Spezies, eine Zeitleiste der Erstkontakte und eine interaktive Sternenkarte.","Ksenologiczne archiwum UEE: dossier wszystkich znanych gatunków, oś czasu pierwszych kontaktów i interaktywna mapa gwiazd.","Archive xénologique de l'UEE : dossiers de toutes les espèces connues, chronologie des premiers contacts et carte stellaire interactive.","Archivo xenológico de la UEE: expedientes de todas las especies conocidas, cronología de primeros contactos y mapa estelar interactivo."],
  kioskD:["Track which blueprints you own, check recipes and materials, and simulate crafting like at the in-game fabricator.","Prati koje blueprinte imaš, provjeri recepte i materijale i simuliraj izradu kao na fabrikatoru u igri.","Verfolge deine Blueprints, prüfe Rezepte und Materialien und simuliere die Herstellung wie am Fabrikator im Spiel.","Śledź posiadane blueprinty, sprawdzaj receptury i materiały oraz symuluj wytwarzanie jak na fabrykatorze w grze.","Suis les blueprints que tu possèdes, consulte recettes et matériaux et simule la fabrication comme au fabricateur du jeu.","Controla los blueprints que tienes, consulta recetas y materiales y simula la fabricación como en el fabricador del juego."],
  coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
+ playT:["Play Star Citizen","Igraj Star Citizen","Star Citizen spielen","Zagraj w Star Citizen","Jouer à Star Citizen","Juega a Star Citizen"],
+ playS:["New pilot? Enlist with my referral code.","Novi pilot? Prijavi se s mojim referral kodom.","Neuer Pilot? Registriere dich mit meinem Empfehlungscode.","Nowy pilot? Zarejestruj się z moim kodem polecającym.","Nouveau pilote ? Inscris-toi avec mon code de parrainage.","¿Piloto nuevo? Alístate con mi código de referido."],
+ enlist:["Enlist","Prijavi se","Registrieren","Dołącz","S'enrôler","Alistarse"],
+ copyCode:["Copy code","Kopiraj kod","Code kopieren","Kopiuj kod","Copier le code","Copiar código"],
+ copied:["Copied!","Kopirano!","Kopiert!","Skopiowano!","Copié !","¡Copiado!"],
  open:["Open","Otvori","Öffnen","Otwórz","Ouvrir","Abrir"],
  soon:["Coming soon","Uskoro","Demnächst","Wkrótce","Bientôt","Próximamente"],
  live:["Live","Aktivno","Live","Aktywne","En ligne","Activo"],
@@ -175,6 +199,10 @@ function render(){
 }
 document.getElementById("flags").addEventListener("click",function(ev){var b=ev.target.closest("button[data-l]");if(!b)return;LANG=b.getAttribute("data-l");try{localStorage.setItem("scbp-lang",LANG)}catch(e){}render()});
 render();
+(function(){var b=document.getElementById("rfCode"),sp=b.querySelector("span"),code=sp.textContent,tm=0;
+ b.addEventListener("click",function(){var done=function(){sp.textContent=t("copied");b.classList.add("ok");clearTimeout(tm);tm=setTimeout(function(){sp.textContent=code;b.classList.remove("ok")},1600)};
+  try{navigator.clipboard.writeText(code).then(done,function(){fb()})}catch(e){fb()}
+  function fb(){var x=document.createElement("textarea");x.value=code;document.body.appendChild(x);x.select();try{document.execCommand("copy");done()}catch(e){}x.remove()}});})();
 try{fetch("blueprints/data/status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(s){if(s&&s.data&&s.data.version){VER=String(s.data.version).replace(/-LIVE\.\d+$/," LIVE");render()}}).catch(function(){})}catch(e){}
 </script>
 </body>
