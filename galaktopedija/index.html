@@ -1,41 +1,1119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Star Citizen Galaktopedija · ShoGy-HR</title>
-<meta name="theme-color" content="#0c2a29">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UEE Galactopedia · ShoGy-HR</title>
+<meta name="description" content="Fan-made Star Citizen xenological archive: species dossiers, timeline and star map.">
+<meta name="theme-color" content="#02070b">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <style>
+/* Layout: cinematic 16:9 landing (species wall mounted on the hologram screen) -> archive (filter sidebar + species grid) -> dossier overlay.
+   Modes (timeline, starmap) swap into the archive column. One visual world, dark only, so the page commits to a single theme. */
+:root{
+  color-scheme:dark;
+  --void:#02070b; --deep:#03101a; --panel:#071c29; --edge:#27718c;
+  --cyan:#63dfff; --ice:#e5f8ff; --mist:#a7cbd8; --muted:#78a9ba; --amber:#ffb54e;
+  --green:#66d9a6; --violet:#b48ae0; --slate:#9aa7ae; --red:#ff6b6b; --sand:#d9c36a; --coral:#ff8a5b; --rose:#ff5fa8;
+  --font-ui:Arial,Helvetica,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+
+/* ---------- base ---------- */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;min-height:100%;overflow-x:hidden;background-color:var(--void);color:var(--ice);font-family:var(--font-ui)}
+body{background-image:radial-gradient(circle at 70% 8%,#0c3851 0,#061a28 25%,#020b12 62%)}
+body.landing-mode{overflow:hidden;background-image:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.42;background-image:radial-gradient(#bceeff 1px,transparent 1px);background-size:47px 47px;-webkit-mask-image:linear-gradient(#000,transparent 72%);mask-image:linear-gradient(#000,transparent 72%)}
+
+/* ---------- landing ---------- */
+.landing{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--void)}
+.landing-stage{position:relative;flex:none;width:min(100vw,177.7777778vh);height:min(56.25vw,100vh);aspect-ratio:16/9;overflow:hidden}
+.landing-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:fill}
+.landing-cards{position:absolute;left:12.4%;right:5.6%;top:24.5%;height:34%;display:grid;grid-template-columns:repeat(14,minmax(0,1fr));gap:3px;padding:3px;background:linear-gradient(180deg,#03131edb,#020c14e8);border:1px solid #45bfe9;box-shadow:0 0 20px #26cfff38,inset 0 0 28px #25c8ff20}
+.landing-card{position:relative;min-width:0;padding:0;overflow:hidden;border:1px solid #26647d;background:#03131e;cursor:pointer;box-shadow:inset 0 0 14px #1bbde72a;transition:transform .2s,filter .2s,border-color .2s,box-shadow .2s}
+.landing-card:hover,.landing-card:focus-visible{transform:translateY(-3px) scale(1.018);filter:brightness(1.12);border-color:#78e9ff;box-shadow:0 0 18px #32d9ff88,inset 0 0 22px #27d8ff33;z-index:20}
+.landing-card>*{pointer-events:none}
+.landing-card img{display:block;width:100%;height:79%;object-fit:cover;object-position:center 22%}
+.landing-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,#03111bf2 79%)}
+.landing-name,.landing-meta{position:absolute;z-index:2;left:2px;right:2px;text-align:center;text-shadow:0 0 8px #000}
+.landing-name{bottom:10%;font:700 clamp(7px,.85vw,14px) var(--font-ui);color:#e8fbff;letter-spacing:.5px}
+.landing-meta{bottom:3%;font:600 clamp(5px,.52vw,9px) var(--font-ui);color:#8dddf4}
+.landing-tip{position:absolute;bottom:2.4%;left:50%;transform:translateX(-50%);padding:10px 18px;white-space:nowrap;background:#02111cdd;border:1px solid #3999ba;color:#a8efff;font:700 clamp(11px,.76vw,16px) var(--font-ui);letter-spacing:2.2px}
+.mobile-brand,.mobile-counter,.mobile-nav-btn,.mobile-swipe-hint{display:none}
+
+/* ---------- archive shell ---------- */
+.shell{position:relative;z-index:1;min-height:calc(100vh - 170px);padding:18px max(2vw,16px,env(safe-area-inset-right,0px)) 0 max(2vw,16px,env(safe-area-inset-left,0px))}
+header{position:relative;height:118px;display:grid;grid-template-columns:minmax(200px,280px) 1fr minmax(200px,340px);align-items:center;border-bottom:1px solid var(--edge)}
+header:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
+.uee-mark{display:flex;gap:14px;align-items:center}
+.uee-mark span{font-size:42px;font-weight:900;letter-spacing:4px}
+.uee-mark small{font-size:10px;line-height:1.2;color:#9ac8d8}
+.title{text-align:center}
+.title h1{margin:0;font-size:clamp(34px,4.2vw,56px);letter-spacing:clamp(6px,1vw,14px);text-shadow:0 0 24px #3ec8ff}
+.title p{margin:3px 0;color:#a8d8e8;letter-spacing:5px;font-size:13px}
+.clearance{text-align:right;color:#8eb8c8;font:11px/1.8 var(--font-mono)}
+.clearance b{color:var(--amber)}
+main{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;padding-top:22px}
+aside{border-right:1px solid #1c5369;padding-right:20px}
+.aside-title{margin:8px 0 18px;font-size:17px;font-weight:800;letter-spacing:2px}
+.nav,.mode{display:block;width:100%;margin:3px 0;padding:11px 13px;border:0;border-left:2px solid transparent;background:transparent;color:var(--mist);text-align:left;font-size:12px;letter-spacing:1px;cursor:pointer}
+.mode{font-size:11px}
+.nav i{float:right;font-style:normal;color:#638999}
+.nav:hover,.mode:hover,.nav.active,.mode.active{color:#fff;background:linear-gradient(90deg,#0e4058aa,transparent);border-left-color:var(--cyan);text-shadow:0 0 10px #54d7ff}
+.nav.back{color:var(--amber);letter-spacing:2px;font-weight:700}
+.rule{height:1px;margin:15px 0;background:#23556a}
+.archive{min-width:0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:2px 0 13px}
+.section-head span{font-size:16px;letter-spacing:3px}
+.section-head em{font:normal 11px var(--font-mono);color:var(--amber)}
+
+/* ---------- species cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(7,minmax(130px,1fr));gap:12px}
+.card{position:relative;height:540px;overflow:hidden;background:#061824;border:1px solid #2c7e9b;cursor:pointer;clip-path:polygon(0 0,94% 0,100% 4%,100% 100%,6% 100%,0 96%);box-shadow:inset 0 0 35px #07131c;transition:transform .25s,filter .25s,border-color .25s,box-shadow .25s}
+.card:hover,.card:focus-visible{transform:translateY(-8px) scale(1.018);filter:brightness(1.1);border-color:#8cecff;z-index:10;box-shadow:0 0 24px #32d9ff55}
+.card>*{pointer-events:none}
+.card:before{content:"";position:absolute;z-index:3;inset:0;background:linear-gradient(180deg,transparent 45%,#031019 87%),repeating-linear-gradient(0deg,#7feaff08 0 1px,transparent 1px 7px)}
+.card img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(.88) contrast(1.06)}
+.card .tag{position:absolute;z-index:5;top:11px;left:10px;padding:5px 7px;background:#04131dcc;border:1px solid #327a94;color:#bdeeff;font:9px var(--font-mono)}
+.card .bio{position:absolute;z-index:5;right:10px;top:13px;width:34px;height:34px;border:1px solid #68dfff;border-radius:50%;box-shadow:0 0 12px #58d9ff55}
+.card .bio:after{content:"";position:absolute;inset:7px;border:1px dashed #68dfff;border-radius:50%}
+.card .name{position:absolute;z-index:5;left:12px;right:12px;bottom:68px;font-size:20px;font-weight:900;letter-spacing:1px;text-shadow:0 2px 8px #000}
+.card .meta{position:absolute;z-index:5;left:12px;right:12px;bottom:16px;font:9px/1.35 var(--font-mono);color:var(--amber);text-transform:uppercase}
+.card[data-lore="PROJECT SPECULATIVE"]:after{content:"PROJECT // SPECULATIVE";position:absolute;right:7px;top:56px;z-index:4;padding:4px 6px;background:#1c1309dd;border:1px solid #c58f42;color:#ffd18b;font:700 7px var(--font-ui);letter-spacing:1px}
+
+/* ---------- console footer ---------- */
+.console{display:grid;grid-template-columns:1fr 1.4fr 1fr;align-items:center;height:170px;margin-top:10px;padding:0 4vw;border-top:1px solid #23677f;background:linear-gradient(180deg,#061a27,#020b12);box-shadow:0 -20px 60px #0a4b6440}
+.radar{position:relative;width:290px;height:110px;margin:auto;transform:perspective(500px) rotateX(58deg)}
+.orbit{position:absolute;inset:0;border:1px solid #3ab9e0;border-radius:50%}
+.o2{inset:18px 40px}.o3{inset:35px 85px}
+.core{position:absolute;left:50%;top:50%;width:13px;height:13px;border-radius:50%;background:var(--amber);box-shadow:0 0 20px var(--amber)}
+.console-copy{text-align:center}
+.console-copy b{display:block;font-size:18px;letter-spacing:4px}
+.console-copy span{display:block;margin-top:10px;color:var(--amber);letter-spacing:3px;font-size:11px}
+.telemetry{text-align:right;color:#77a7b8;font:10px/1.8 var(--font-mono)}
+
+/* ---------- dossier ---------- */
+.modal{position:fixed;inset:0;z-index:200000;display:none}
+.modal.open{display:block}
+.modal-backdrop{position:absolute;inset:0;background:#01070bd9;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.dossier{position:absolute;inset:7vh 7vw;display:grid;grid-template-columns:42% 58%;overflow:hidden;background:#04131e;border:1px solid #51d8ff;box-shadow:0 0 70px #32cfff38}
+.dossier:after{content:"UEE // XENO INTELLIGENCE // ACTIVE DOSSIER";position:absolute;top:13px;left:18px;font:10px var(--font-mono);color:#9eeaff;letter-spacing:2px}
+.dossier>img{width:100%;height:100%;min-height:0;object-fit:cover}
+.detail{min-height:0;overflow-y:auto;padding:75px 54px 40px;background:linear-gradient(90deg,#04131ef0,#071f2d)}
+.kicker{color:var(--amber);font:11px var(--font-mono);letter-spacing:3px}
+.detail h2{margin:10px 0 8px;font-size:clamp(36px,4.2vw,58px);letter-spacing:5px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.facts div{padding:13px;border:1px solid #235d73;background:#071a25}
+.facts small{display:block;color:var(--muted);font:9px var(--font-mono);letter-spacing:1px}
+.facts b{display:block;margin-top:5px;color:#fff;font-size:14px}
+.detail p{max-width:800px;margin-top:26px;color:#c3dce5;font-size:16px;line-height:1.7}
+.warning{margin-top:25px;padding:12px 15px;border-left:3px solid var(--amber);background:#33240c55;color:#ffd08a;font:10px/1.5 var(--font-mono)}
+.lore-badge{display:inline-flex;align-items:center;gap:7px;margin:0 0 16px;padding:6px 9px;border:1px solid #3ca7c8;background:#061722cc;color:#9cecff;font:700 9px var(--font-ui);letter-spacing:1.4px}
+.lore-badge.speculative{border-color:#d29a47;color:#ffd18b}
+.lore-badge.extinct{border-color:#7d8993;color:#c8d0d5}
+.lore-badge.protected{border-color:#53be91;color:#a9f1cf}
+.lore-badge.uncontacted{border-color:#a47ac7;color:#dcc0f4}
+.dossier-source{margin-top:14px;padding:10px 12px;border-left:2px solid #48bddc;background:#06141d;color:#84b8c8;font:600 9px/1.55 var(--font-ui);letter-spacing:.5px}
+.dossier-source a{color:#a9efff;text-decoration:none;border-bottom:1px dotted #5aaac1}
+.dossier-source a:hover{color:#fff}
+.close{position:absolute;right:16px;top:10px;z-index:5;background:none;border:0;color:#fff;font-size:36px;line-height:1;cursor:pointer}
+.scanline{position:absolute;left:0;right:58%;height:2px;z-index:4;pointer-events:none;background:#7be9ff88;box-shadow:0 0 20px #58e2ff;animation:scan 4s linear infinite}
+@keyframes scan{from{top:0}to{top:100%}}
+
+/* ---------- timeline ---------- */
+.timeline-panel{min-height:560px}
+.timeline-toolbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 0 18px}
+.timeline-filters,.timeline-lore-filters{display:flex;gap:7px;flex-wrap:wrap}
+.timeline-filter,.timeline-lore-filter{padding:8px 11px;border:1px solid #285f75;background:#061923;color:#83b8c9;font:700 9px var(--font-ui);letter-spacing:1.4px;cursor:pointer;clip-path:polygon(0 0,94% 0,100% 24%,100% 100%,6% 100%,0 76%)}
+.timeline-filter:hover,.timeline-lore-filter:hover,.timeline-filter.active,.timeline-lore-filter.active{color:#e8fbff;border-color:#6ddfff;background:linear-gradient(180deg,#0d4057,#08222f);box-shadow:0 0 18px #2dcfff2c;text-shadow:0 0 8px #5de8ff}
+.timeline-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.timeline-summary div{padding:11px 13px;border:1px solid #214f62;background:#061822}
+.timeline-summary small{display:block;margin-bottom:5px;color:#6c99a9;font:8px var(--font-mono);letter-spacing:1.6px}
+.timeline-summary b{font-size:14px;letter-spacing:1.5px;color:#d6f6ff}
+.timeline-legend{margin:8px 0 0;color:#7399a8;font:9px/1.6 var(--font-mono)}
+.timeline-wrap{position:relative;padding:6px 0 30px}
+.timeline-wrap:before{content:"";position:absolute;left:104px;top:0;bottom:0;width:1px;background:linear-gradient(#2bd6ff22,#58dbffcc 10%,#58dbffcc 90%,#2bd6ff22);box-shadow:0 0 15px #3ddcff55}
+.timeline-event{position:relative;display:grid;grid-template-columns:86px minmax(0,1fr);gap:36px;margin:0 0 18px;min-height:112px}
+.timeline-year{padding-top:15px;text-align:right;font:900 20px var(--font-ui);letter-spacing:1px;color:#f1b15d;text-shadow:0 0 14px #ff9c3640}
+.timeline-dot{position:absolute;left:98px;top:21px;width:13px;height:13px;border:2px solid #8beaff;border-radius:50%;background:#06131c;box-shadow:0 0 18px #39d9ff}
+.timeline-event.project .timeline-dot{border-color:#ffb85f;box-shadow:0 0 18px #ff9e3e66}
+.timeline-card{position:relative;padding:15px 18px 16px;border:1px solid #255c70;background:linear-gradient(135deg,#071a25ee,#041019f3);clip-path:polygon(0 0,98.5% 0,100% 12%,100% 100%,1.5% 100%,0 88%);transition:transform .2s,border-color .2s,box-shadow .2s}
+.timeline-card:hover{transform:translateX(4px);border-color:#62dfff;box-shadow:0 0 25px #22bfff20}
+.timeline-event.project .timeline-card{border-color:#735b39;background:linear-gradient(135deg,#1b150cdd,#091218f2)}
+.timeline-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.timeline-type{font:800 9px var(--font-ui);letter-spacing:1.8px;color:#7ce5ff}
+.timeline-event.project .timeline-type{color:#ffc276}
+.timeline-canon{padding:4px 7px;border:1px solid #27708b;background:#05151dcc;color:#9cecff;font:700 8px var(--font-ui);letter-spacing:1.3px;white-space:nowrap}
+.timeline-event.project .timeline-canon{border-color:#896b3e;color:#ffd49b}
+.timeline-title{margin:0 0 8px;font-size:18px;font-weight:900;letter-spacing:1.2px;color:#f3fbff}
+.timeline-desc{max-width:1100px;margin:0;color:#9fc2cf;font:11px/1.62 var(--font-ui)}
+.timeline-species{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.timeline-species button{padding:6px 9px;border:1px solid #285f73;background:#061720;color:#c8edf8;font:800 8px var(--font-ui);letter-spacing:1.2px;cursor:pointer}
+.timeline-species button:hover{border-color:#72e5ff;background:#0a3142;color:#fff}
+.timeline-source{display:inline-block;margin-top:12px;color:#f0b261;font:700 8px var(--font-ui);letter-spacing:1.2px;text-decoration:none}
+a.timeline-source:hover{color:#ffd59d;text-decoration:underline}
+.timeline-empty{display:none;padding:35px;border:1px dashed #31596a;text-align:center;color:#759baa;font:11px var(--font-mono);letter-spacing:2px}
+.timeline-empty.show{display:block}
+
+/* ---------- starmap ---------- */
+.map-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}
+.map-stage{position:relative;aspect-ratio:1000/640;overflow:hidden;border:1px solid #25687f;background:radial-gradient(ellipse at 47% 53%,#0a3249 0,#06202f 38%,#030f17 78%);box-shadow:inset 0 0 60px #02080d}
+.map-svg{position:absolute;inset:0;width:100%;height:100%}
+.map-region{position:absolute;transform:translate(-50%,-50%);color:#79aebf;font:700 9px var(--font-ui);letter-spacing:2.4px;white-space:nowrap;pointer-events:none;text-shadow:0 0 6px #000}
+.map-node{position:absolute;width:30px;height:30px;padding:0;transform:translate(-50%,-50%);border:0;background:transparent;cursor:pointer;transition:opacity .2s}
+.map-node i{position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--c);box-shadow:0 0 10px var(--c)}
+.map-node:after{content:"";position:absolute;left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px;border:1px solid var(--c);border-radius:50%;opacity:0;transition:opacity .2s}
+.map-node:hover:after,.map-node:focus-visible:after,.map-node.selected:after{opacity:.9}
+.map-node.selected:after{animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.7);opacity:0}}
+.map-node span{position:absolute;left:100%;top:50%;transform:translateY(-50%);padding-left:2px;color:#cfeaf3;font:700 9px var(--font-ui);letter-spacing:1.6px;white-space:nowrap;text-shadow:0 0 6px #000,0 0 3px #000}
+.map-node.flip span{left:auto;right:100%;padding:0 2px 0 0}
+.map-node.selected span{color:#fff}
+.map-node.dim{opacity:.2}
+.map-legend{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.legend-chip{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid #255c70;background:#061923;color:#9fc7d6;font:700 9px var(--font-ui);letter-spacing:1.3px;cursor:pointer}
+.legend-chip i{width:8px;height:8px;border-radius:50%;background:var(--c)}
+.legend-chip[aria-pressed="true"]{color:#fff;border-color:var(--c);background:#0a2a3a}
+.map-note{margin:10px 0 0;color:#6f98a7;font:9px/1.6 var(--font-mono)}
+.map-unplaced{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;color:#6f98a7;font:9px var(--font-mono);letter-spacing:1px}
+.map-unplaced button,.map-index button{padding:7px 10px;border:1px solid #285f73;background:#061720;color:#c8edf8;font:800 9px var(--font-ui);letter-spacing:1.2px;cursor:pointer}
+.map-unplaced button:hover,.map-index button:hover,.map-index button.selected{border-color:#72e5ff;background:#0a3142;color:#fff}
+.map-index{display:none;gap:7px;flex-wrap:wrap;margin-top:12px}
+.map-info{padding:18px;border:1px solid #235d73;background:linear-gradient(180deg,#071b27,#04111a)}
+.map-info h3{margin:8px 0 12px;font-size:26px;letter-spacing:3px}
+.map-info p{margin:0 0 14px;color:#b9d6df;font-size:13px;line-height:1.65}
+.map-info h4{margin:18px 0 8px;color:var(--amber);font:700 9px var(--font-mono);letter-spacing:2px}
+.map-info ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.map-info li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:10px;color:#a9cad6;font-size:12px;line-height:1.45}
+.map-info li b{color:#f1b15d;font-variant-numeric:tabular-nums}
+.map-info small{display:block;color:#6f98a7;font:9px/1.6 var(--font-mono)}
+.map-species{display:grid;gap:7px}
+.map-species button{padding:9px 11px;border:1px solid #285f73;background:#061720;color:#d3f1fb;text-align:left;font:800 9px/1.4 var(--font-ui);letter-spacing:1.2px;cursor:pointer}
+.map-species button:hover{border-color:#72e5ff;background:#0a3142;color:#fff}
+
+/* ---------- threat assessment ---------- */
+.timeline-filter small{margin-left:5px;opacity:.7;font-size:inherit}
+.threat-note{margin:12px 0 0;color:#7399a8;font:9px/1.6 var(--font-mono)}
+.threat-list{display:grid;gap:8px;margin-top:14px}
+.threat-row{--tc:var(--slate);display:grid;grid-template-columns:56px minmax(150px,210px) minmax(0,1fr) 150px;gap:16px;align-items:center;padding:8px 14px 8px 8px;border:1px solid #214f62;border-left:3px solid var(--tc);background:#061822;cursor:pointer;transition:border-color .2s,background .2s}
+.threat-row:hover,.threat-row:focus-visible{border-color:#62dfff;border-left-color:var(--tc);background:#08212e}
+.threat-row img{display:block;width:56px;height:72px;object-fit:cover;object-position:center 20%}
+.threat-main{min-width:0}
+.threat-main b{display:block;font-size:15px;letter-spacing:1.5px}
+.threat-main small{display:block;margin-top:4px;color:#6c99a9;font:8px/1.4 var(--font-mono);letter-spacing:1px}
+.threat-row p{margin:0;color:#a9cad6;font-size:12px;line-height:1.55}
+.threat-rating{display:grid;gap:7px;justify-items:end}
+.threat-badge{padding:5px 8px;border:1px solid var(--tc);color:var(--tc);font:800 9px var(--font-ui);letter-spacing:1.6px}
+.threat-meter{display:flex;gap:3px}
+.threat-meter i{width:16px;height:6px;background:#17384a}
+.threat-meter i.on{background:var(--tc);box-shadow:0 0 8px var(--tc)}
+.t-severe{--tc:var(--red)}.t-guarded{--tc:var(--amber)}.t-low{--tc:var(--cyan)}.t-unknown{--tc:var(--violet)}.t-protected{--tc:var(--green)}.t-wildlife{--tc:var(--sand)}
+
+/* ---------- culture / technology / biology profiles ---------- */
+.unknown{color:var(--red);font:700 11px var(--font-mono);letter-spacing:1.8px}
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px;margin-top:14px}
+.profile-card{min-width:0;border:1px solid #214f62;background:#061822}
+.profile-head{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;width:100%;padding:8px 12px 8px 8px;border:0;border-bottom:1px solid #1d4a5c;background:#08212e;text-align:left;cursor:pointer}
+.profile-head:hover,.profile-head:focus-visible{background:#0a2c3d}
+.profile-head img{display:block;width:44px;height:58px;object-fit:cover;object-position:center 20%}
+.profile-title b{display:block;font-size:14px;letter-spacing:1.4px}
+.profile-title small{display:block;margin-top:3px;color:#6c99a9;font:8px/1.4 var(--font-mono);letter-spacing:1px}
+.profile-known{color:#9cecff;font:700 8px var(--font-ui);letter-spacing:1.2px;white-space:nowrap}
+.profile-known.none{color:var(--red)}
+.profile-card dl{display:grid;gap:10px;margin:0;padding:10px 14px 14px}
+.profile-card dt{margin-bottom:3px;color:var(--amber);font:700 8px var(--font-mono);letter-spacing:1.6px}
+.profile-card dd{margin:0;color:#b9d6df;font-size:12px;line-height:1.55}
+
+/* ---------- archive logs ---------- */
+.log-summary{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:16px}
+.log-summary div{padding:11px 13px;border:1px solid #214f62;background:#061822}
+.log-summary small{display:block;margin-bottom:5px;color:#6c99a9;font:8px var(--font-mono);letter-spacing:1.6px}
+.log-summary b{font-size:20px;color:var(--c,#d6f6ff);font-variant-numeric:tabular-nums}
+.rev-log{margin:16px 0;padding:14px 16px;border:1px solid #235d73;background:#071b27}
+.rev-log h4{margin:0 0 10px;color:var(--amber);font:700 9px var(--font-mono);letter-spacing:2px}
+.rev-log ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.rev-log li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:12px;color:#a9cad6;font-size:12px;line-height:1.5}
+.rev-log li b{color:#f1b15d;font:700 10px var(--font-mono)}
+.log-table{display:grid;gap:6px;margin-top:12px}
+.log-head,.log-row{display:grid;grid-template-columns:78px minmax(0,1fr) 112px 128px 112px minmax(0,210px);gap:12px;align-items:center;padding:10px 12px}
+.log-head{padding-block:4px;color:#6c99a9;font:700 8px var(--font-mono);letter-spacing:1.6px}
+.log-row{border:1px solid #1d4a5c;background:#061822}
+.log-kind{color:#7ce5ff;font:800 8px var(--font-ui);letter-spacing:1.5px}
+.log-main{min-width:0}
+.log-main b{display:block;font-size:12px;line-height:1.4;letter-spacing:.8px}
+.log-main small{display:block;margin-top:3px;color:#7399a8;font:10px/1.5 var(--font-ui)}
+.log-year{color:#f1b15d;font:700 11px var(--font-mono)}
+.log-badge{--bc:#27708b;padding:4px 7px;border:1px solid var(--bc);color:var(--bc);font:700 8px var(--font-ui);letter-spacing:1.2px;text-align:center;white-space:nowrap}
+.log-badge.canon{--bc:#6fcdea}.log-badge.proj{--bc:var(--amber)}
+.log-badge.ok{--bc:var(--green)}.log-badge.warn{--bc:var(--sand)}.log-badge.unv{--bc:var(--violet)}.log-badge.spec{--bc:var(--amber)}
+.log-src{color:#f0b261;font:700 9px/1.4 var(--font-ui);letter-spacing:.6px;overflow-wrap:anywhere}
+a.log-src:hover{color:#ffd59d;text-decoration:underline}
+
+
+/* ---------- starmap layers, links and system facts ---------- */
+.map-banner{display:flex;gap:6px 18px;flex-wrap:wrap;align-items:center;margin:0 0 12px;padding:10px 14px;border:1px solid #6b5630;background:#1b150c88;color:#ffd49b;font:700 9px/1.5 var(--font-ui);letter-spacing:1.4px}
+.map-banner b{color:var(--amber);letter-spacing:2px}
+.map-banner i{font-style:normal}
+.map-controls{margin:0 0 10px}
+.map-links line{stroke:#63dfff;stroke-opacity:.26;stroke-width:1.4}
+.map-links line.v1{stroke:#ffb54e;stroke-opacity:.5}
+.map-links line.hot{stroke:#bdf4ff;stroke-opacity:.95;stroke-width:2.4}
+.map-node.v1:before{content:"1.0";position:absolute;left:50%;top:-4px;transform:translateX(-50%);color:var(--amber);font:800 8px var(--font-ui);letter-spacing:1px;text-shadow:0 0 4px #000}
+.map-node.unk i{background:transparent;border:1.5px dashed var(--slate);box-shadow:none}
+.legend-chip.is-unknown{color:var(--red)}
+.map-stats{display:grid;gap:10px;margin:0 0 4px}
+.map-stats div{padding:10px 12px;border:1px solid #1d4a5c;background:#05141d}
+.map-stats small{display:block;margin-bottom:4px;color:#6c99a9;font:700 8px var(--font-mono);letter-spacing:1.6px}
+.map-stats b{display:block;font-size:15px;letter-spacing:2px}
+.map-stats b.unknown{font-size:13px}
+.map-stats span{display:block;margin-top:5px;color:#a9cad6;font-size:11px;line-height:1.55}
+.map-v1{margin:0 0 14px;padding:9px 11px;border-left:3px solid var(--amber);background:#33240c55;color:#ffd49b;font:700 9px/1.6 var(--font-ui);letter-spacing:1.1px}
+.map-near{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.map-near li{display:grid;grid-template-columns:58px minmax(0,1fr);gap:10px;color:#a9cad6;font-size:11px;line-height:1.5}
+.map-near li b{color:#f1b15d;font:700 9px var(--font-mono);letter-spacing:1px}
+.map-jumps{display:flex;gap:6px;flex-wrap:wrap}
+.map-jumps button,.map-jumps span{padding:5px 8px;border:1px solid #285f73;background:#061720;color:#c8edf8;font:800 8px var(--font-ui);letter-spacing:1.1px}
+.map-jumps button{cursor:pointer}
+.map-jumps button:hover{border-color:#72e5ff;background:#0a3142;color:#fff}
+.map-jumps span{border-style:dashed;color:#7399a8}
+.map-src{display:inline-block;margin-top:14px;color:#f0b261;font:700 8px var(--font-ui);letter-spacing:1.2px;text-decoration:none}
+.map-src:hover{color:#ffd59d;text-decoration:underline}
+
+/* ---------- placeholder modules ---------- */
+.stub-panel{display:grid;place-items:center;min-height:360px;padding:40px 20px;border:1px dashed #31596a;text-align:center}
+.stub-panel h3{margin:0 0 10px;font-size:20px;letter-spacing:4px}
+.stub-panel p{max-width:460px;margin:0;color:#85aebd;font:11px/1.7 var(--font-mono);letter-spacing:1px}
+
+/* ---------- tablet ---------- */
+@media (max-width:1100px){
+  .cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .card{height:430px}
+}
+@media (max-width:900px){
+  header{grid-template-columns:1fr}
+  .uee-mark,.clearance,.console{display:none}
+  .title h1{font-size:34px;letter-spacing:6px}
+  main{grid-template-columns:minmax(0,1fr)}
+  aside{display:flex;overflow-x:auto;border-right:0;border-bottom:1px solid #24586c;padding:0 0 6px}
+  .aside-title,.rule{display:none}
+  .nav,.mode{flex:none;width:auto;min-width:150px;white-space:nowrap}
+  .dossier{inset:2vh 2vw;grid-template-columns:1fr;overflow-y:auto}
+  .dossier>img{height:45vh}
+  .detail{overflow:visible;padding:35px 25px}
+  .timeline-toolbar{align-items:flex-start}
+  .timeline-filters,.timeline-lore-filters{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}
+  .timeline-filter,.timeline-lore-filter{white-space:nowrap}
+  .timeline-wrap:before{left:76px}
+  .timeline-event{grid-template-columns:62px minmax(0,1fr);gap:29px}
+  .timeline-dot{left:70px}
+  .timeline-year{font-size:15px}
+  .timeline-title{font-size:16px}
+  .map-layout{grid-template-columns:minmax(0,1fr)}
+  .map-index{display:flex}
+  #threatChips{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}
+  #threatChips .timeline-filter{white-space:nowrap}
+  .threat-row{grid-template-columns:56px minmax(0,1fr);gap:10px 14px}
+  .threat-row p,.threat-rating{grid-column:1/-1}
+  .threat-rating{grid-auto-flow:column;justify-content:start;align-items:center;justify-items:start;gap:12px}
+  .log-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .log-head{display:none}
+  .log-row{display:flex;flex-wrap:wrap;gap:8px 10px}
+  .log-main{flex:1 1 100%;order:-1}
+  .log-src{flex:1 1 100%}
+  .rev-log li{grid-template-columns:minmax(0,1fr);gap:2px}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:700px){
+  body:not(.landing-mode):before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:13;background:#03111b}
+  #archive header{height:auto;padding:16px 0}
+  #archive .title h1{font-size:26px;letter-spacing:3px}
+  #archive .title p{font-size:9px;letter-spacing:1.6px}
+  main{padding-top:0;padding-bottom:30px}
+  aside{position:sticky;top:env(safe-area-inset-top,0px);z-index:12;gap:8px;padding:10px 0;background:#03111bf2;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .nav,.mode{min-width:max-content;padding:10px 12px}
+  .section-head{padding:12px 0 12px;font-size:10px}
+  .section-head span{font-size:12px;letter-spacing:2px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .card{height:300px;clip-path:polygon(7% 0,93% 0,100% 5%,100% 95%,93% 100%,7% 100%,0 95%,0 5%)}
+  .card:hover{transform:none}
+  .card .name{font-size:14px;bottom:44px}
+  .card .meta{font-size:7px;bottom:12px}
+  .card .tag{font-size:7px}
+  .card[data-lore="PROJECT SPECULATIVE"]:after{top:46px}
+  .modal{z-index:200000}
+  .dossier{inset:0;display:block;width:100vw;height:100dvh;overflow-y:auto;border:0}
+  .dossier:after{top:14px;left:16px;right:54px;font-size:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:3}
+  .close{position:fixed;top:max(10px,env(safe-area-inset-top,0px));right:10px;width:42px;height:42px;font-size:30px;background:#031722ee}
+  .dossier>img{display:block;width:100%;height:43dvh;object-position:center 18%}
+  .detail{overflow:visible;padding:26px 18px calc(38px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,#061b29,#04131e)}
+  .detail h2{margin:5px 0 12px;font-size:36px;letter-spacing:3px}
+  .facts{gap:8px}
+  .facts div{min-height:62px;padding:10px}
+  .detail p{font-size:14px;line-height:1.65}
+  .warning{font-size:9px}
+  .dossier-source,.lore-badge{font-size:10px}
+  .timeline-panel{min-height:0}
+  .timeline-summary{grid-template-columns:1fr;gap:6px}
+  .timeline-summary div{padding:9px 11px}
+  .timeline-wrap{padding-top:3px}
+  .timeline-wrap:before{left:18px}
+  .timeline-event{display:block;min-height:0;margin:0 0 14px;padding-left:39px}
+  .timeline-dot{left:12px;top:8px;width:11px;height:11px}
+  .timeline-year{padding:0 0 7px;text-align:left;font-size:14px}
+  .timeline-card{padding:13px 13px 14px}
+  .timeline-card:hover{transform:none}
+  .timeline-card-top{align-items:flex-start}
+  .timeline-title{font-size:15px}
+  .timeline-canon{font-size:7px}
+  .timeline-species button{padding:7px 9px}
+  .map-node span,.map-region{display:none}
+  .map-node.selected span{display:block}
+  .map-info{padding:14px}
+}
+
+/* ---------- phone landing: swipeable species rail ---------- */
+@media (max-width:700px) and (orientation:portrait){
+  .landing-stage{position:absolute;inset:0;width:100vw;height:100dvh;aspect-ratio:auto}
+  .landing-stage:after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,#02070b40 0%,#02070b99 19%,#02070b35 42%,#02070bd8 100%)}
+  .landing-bg{object-fit:cover;object-position:center;filter:saturate(.9) brightness(.72)}
+  .mobile-brand{display:block;position:absolute;z-index:5;top:max(18px,env(safe-area-inset-top,0px));left:18px;right:18px;text-align:center;pointer-events:none;text-shadow:0 0 18px #000}
+  .mobile-brand b{display:block;color:#e9fbff;font:700 clamp(19px,6.4vw,29px) var(--font-ui);letter-spacing:4px}
+  .mobile-brand span{display:block;margin-top:6px;color:#7eddf7;font:700 9px var(--font-ui);letter-spacing:2.5px}
+  .landing-cards{z-index:4;left:0;right:0;top:16.5dvh;width:100vw;height:64dvh;display:flex;gap:14px;padding:8px 14vw 16px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:14vw;overscroll-behavior-x:contain;touch-action:pan-x;-webkit-overflow-scrolling:touch;scrollbar-width:none;background:linear-gradient(180deg,#03131e55,#020c1499);border:0;border-top:1px solid #45bfe955;border-bottom:1px solid #45bfe955;box-shadow:inset 0 0 35px #25c8ff16}
+  .landing-cards::-webkit-scrollbar{display:none}
+  .landing-card{flex:0 0 72vw;width:72vw;min-width:72vw;height:100%;scroll-snap-align:center;scroll-snap-stop:always;border:1px solid #3a9fc4;background:#03131ef0;opacity:.68;clip-path:polygon(7% 0,93% 0,100% 5%,100% 95%,93% 100%,7% 100%,0 95%,0 5%);box-shadow:0 0 24px #0009,inset 0 0 22px #1bbde72a;transition:opacity .22s,transform .22s,border-color .22s}
+  .landing-card:hover{transform:none;filter:none}
+  .landing-card.mobile-active,.landing-card.mobile-active:hover{opacity:1;transform:scale(1.015);border-color:#82eaff;box-shadow:0 0 25px #32d9ff55,inset 0 0 24px #27d8ff2f}
+  .landing-card img{height:79%;object-position:center 20%}
+  .landing-name{bottom:9.5%;font:700 clamp(18px,5.3vw,24px) var(--font-ui);letter-spacing:2px}
+  .landing-meta{bottom:3.5%;font:700 clamp(10px,3vw,13px) var(--font-ui);letter-spacing:1.2px}
+  .landing-tip{display:none}
+  .mobile-counter{display:block;position:absolute;z-index:6;left:50%;bottom:10.5dvh;transform:translateX(-50%);padding:7px 12px;background:#02111cdd;border:1px solid #3999ba;color:#bdf4ff;font:700 10px var(--font-ui);letter-spacing:2px;white-space:nowrap}
+  .mobile-swipe-hint{display:block;position:absolute;z-index:6;left:50%;bottom:5.8dvh;transform:translateX(-50%);color:#77cfe8;font:700 9px var(--font-ui);letter-spacing:1.8px;white-space:nowrap}
+  .mobile-nav-btn{display:grid;place-items:center;position:absolute;z-index:7;top:48%;width:36px;height:58px;transform:translateY(-50%);border:1px solid #4bbfe5;background:#02131dcc;color:#bff5ff;font:700 24px var(--font-ui);box-shadow:0 0 16px #0008}
+  .mobile-nav-btn.prev{left:max(4px,env(safe-area-inset-left,0px));clip-path:polygon(18% 0,100% 0,100% 100%,18% 100%,0 50%)}
+  .mobile-nav-btn.next{right:max(4px,env(safe-area-inset-right,0px));clip-path:polygon(0 0,82% 0,100% 50%,82% 100%,0 100%)}
+}
+@media (max-height:520px) and (orientation:landscape){
+  .landing-stage{width:100vw;height:100vh;aspect-ratio:auto}
+  .landing-bg{object-fit:cover}
+  .landing-cards{left:8vw;right:8vw;top:22vh;height:48vh}
+  .landing-tip{bottom:2vh;font-size:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important}
+}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:500;src:url(../assets/fonts/rajdhani-500-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:500;src:url(../assets/fonts/rajdhani-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:600;src:url(../assets/fonts/rajdhani-600-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:600;src:url(../assets/fonts/rajdhani-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:700;src:url(../assets/fonts/rajdhani-700-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:700;src:url(../assets/fonts/rajdhani-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;min-height:100vh;display:grid;place-items:center;padding:16px;background:radial-gradient(ellipse at 50% 35%,#3a2418 0,#1b110c 55%,#0c0806 100%);color:#d5ece8;font:500 17px/1.4 Rajdhani,"Arial Narrow",system-ui,sans-serif}
-.box{max-width:560px;width:100%;text-align:center;border:1px solid #2b5550;border-radius:8px;padding:34px 24px;background:radial-gradient(ellipse at 50% 0%,#174745 0,#0c2a29 55%,#081d1d 100%);box-shadow:0 0 0 5px #1b1c1d,0 20px 60px rgba(0,0,0,.6)}
-svg{width:72px;height:72px;color:#e2cf78}
-small{display:block;font-weight:600;letter-spacing:.16em;color:#e2cf78;text-transform:uppercase;font-size:15px}
-h1{margin:4px 0 10px;font:700 34px/1.05 Rajdhani,"Arial Narrow",sans-serif;letter-spacing:.05em;text-transform:uppercase;color:#f1fbf9}
-p{color:#9cc4be;margin:0 0 22px}
-a{display:inline-block;border:2px solid #d6c56b;background:linear-gradient(#3b3c1c,#2a2b12);color:#f6ecb2;text-decoration:none;font:700 18px Rajdhani,sans-serif;letter-spacing:.08em;padding:8px 20px;text-transform:uppercase}
-a:hover{filter:brightness(1.15)}
+/* ---------- ShoGy-HR site bar (home + coffee) ---------- */
+.sitebar{position:fixed;z-index:100001;top:max(10px,env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));display:flex;gap:8px;align-items:center}
+.sitebar .home{display:grid;place-items:center;width:36px;height:36px;border:1px solid #3999ba;border-radius:4px;background:#02111cdd;color:#a8efff;text-decoration:none}
+.sitebar .home:hover,.sitebar .home:focus-visible{border-color:#78e9ff;color:#fff;box-shadow:0 0 12px #32d9ff66}
+.sitebar .home svg{width:19px;height:19px}
+.bmc{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:#2a1a0c;background:linear-gradient(#ffd96b,#f2b33d);border:1px solid #ffe7a1;border-radius:20px;padding:4px 13px 4px 8px;font:700 14px/1 Rajdhani,"Arial Narrow",Arial,sans-serif;letter-spacing:.03em;box-shadow:0 0 0 0 rgba(255,205,90,.55);animation:bmcGlow 3.2s ease-in-out infinite;transition:transform .15s,filter .15s}
+.bmc:hover,.bmc:focus-visible{transform:translateY(-1px) scale(1.04);filter:brightness(1.08);outline:none}
+.bmc .cup{width:22px;height:22px;color:#4a2a12;overflow:visible;transform-origin:50% 90%;animation:bmcTilt 3.2s ease-in-out infinite}
+.bmc .cup .mug{color:#5b3416}
+.bmc .steam path{opacity:0;animation:bmcSteam 2.4s ease-in-out infinite}
+.bmc .steam .s2{animation-delay:.5s}.bmc .steam .s3{animation-delay:1s}
+@keyframes bmcSteam{0%{opacity:0;transform:translateY(3px)}35%{opacity:.9}100%{opacity:0;transform:translateY(-4px)}}
+@keyframes bmcTilt{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-9deg)}86%{transform:rotate(6deg)}93%{transform:rotate(-3deg)}}
+@keyframes bmcGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,205,90,0)}50%{box-shadow:0 0 14px 2px rgba(255,205,90,.35)}}
+@media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
+.sitebar .bmc{padding:6px 14px 6px 9px}
+#archive .shell{padding-top:58px}
+@media (max-width:700px){.landing .mobile-brand{top:max(54px,calc(env(safe-area-inset-top,0px) + 46px))}.sitebar .bmc{padding:6px 8px}.sitebar .bmc span{display:none}.sitebar .home{width:34px;height:34px}}
 </style>
 </head>
 <body>
-<div class="box">
-<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="32" cy="32" r="13"/><ellipse cx="32" cy="32" rx="28" ry="9" transform="rotate(-20 32 32)"/><circle cx="52" cy="17" r="2.4" fill="currentColor"/></svg>
-<small>Star Citizen</small>
-<h1>Galaktopedija</h1>
-<p id="msg">Coming soon. We are still charting this part of the 'verse.</p>
-<a href="../" id="back">‹ Back</a>
+<nav class="sitebar" aria-label="ShoGy-HR">
+  <a class="home" href="../" id="siteHome" title="ShoGy-HR · Star Citizen tools" aria-label="ShoGy-HR · Star Citizen tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></a>
+  <a class="bmc" id="siteCoffee" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Buy me a coffee</span></a>
+</nav>
+
+<section id="landing" class="landing" aria-label="Galactopedia landing">
+  <div class="landing-stage">
+    <img class="landing-bg" src="img/landing-hologram.webp" alt="">
+    <div class="mobile-brand"><b>GALACTOPEDIA</b><span>UEE XENOLOGICAL INTELLIGENCE ARCHIVES</span></div>
+    <div id="landingCards" class="landing-cards"></div>
+    <div class="landing-tip">SELECT SPECIES // OPEN XENOLOGICAL DOSSIER</div>
+    <div id="mobileCounter" class="mobile-counter" aria-live="polite"></div>
+    <div class="mobile-swipe-hint">SWIPE // TAP TO OPEN DOSSIER</div>
+    <button id="mobPrev" class="mobile-nav-btn prev" type="button" aria-label="Previous species">‹</button>
+    <button id="mobNext" class="mobile-nav-btn next" type="button" aria-label="Next species">›</button>
+  </div>
+</section>
+
+<section id="archive" hidden>
+  <div class="stars"></div>
+  <div class="shell">
+    <header>
+      <div class="uee-mark"><span>UEE</span><small>UNITED EMPIRE<br>OF EARTH</small></div>
+      <div class="title"><h1>GALACTOPEDIA</h1><p>XENOLOGICAL INTELLIGENCE ARCHIVES</p></div>
+      <div class="clearance">UEE NAVY // RECRUIT ORIENTATION<br><b>TRAINING ACCESS GRANTED</b></div>
+    </header>
+
+    <main>
+      <aside id="sidebar">
+        <button id="backBtn" class="nav back" type="button">‹ LANDING</button>
+        <div class="aside-title">GALACTOPEDIA</div>
+        <button class="nav active" type="button" data-filter="ALL">ALL SPECIES <i data-count="ALL"></i></button>
+        <button class="nav" type="button" data-filter="CONFIRMED">CONFIRMED <i data-count="CONFIRMED"></i></button>
+        <button class="nav" type="button" data-filter="PROTECTED">PROTECTED <i data-count="PROTECTED"></i></button>
+        <button class="nav" type="button" data-filter="EXTINCT">EXTINCT <i data-count="EXTINCT"></i></button>
+        <button class="nav" type="button" data-filter="UNCONTACTED">UNCONTACTED <i data-count="UNCONTACTED"></i></button>
+        <button class="nav" type="button" data-filter="SPECULATIVE">SPECULATIVE <i data-count="SPECULATIVE"></i></button>
+        <div class="rule"></div>
+        <button class="mode" type="button" data-mode="timeline">TIMELINE</button>
+        <button class="mode" type="button" data-mode="starmap">STARMAP</button>
+        <button class="mode" type="button" data-mode="threat">THREAT ASSESSMENT</button>
+        <button class="mode" type="button" data-mode="culture">CULTURE</button>
+        <button class="mode" type="button" data-mode="technology">TECHNOLOGY</button>
+        <button class="mode" type="button" data-mode="biology">BIOLOGY</button>
+        <button class="mode" type="button" data-mode="logs">ARCHIVE LOGS</button>
+      </aside>
+
+      <section class="archive">
+        <div class="section-head"><span id="sectionTitle">KNOWN &amp; RECORDED SPECIES</span><em id="resultCount"></em></div>
+
+        <div id="cards" class="cards"></div>
+
+        <div id="timelinePanel" class="timeline-panel" hidden>
+          <div class="timeline-toolbar">
+            <div id="timelineTypeFilters" class="timeline-filters"></div>
+            <div id="timelineLoreFilters" class="timeline-lore-filters"></div>
+          </div>
+          <div class="timeline-summary">
+            <div><small>ARCHIVE SPAN</small><b>2438 → PRESENT ARCHIVE</b></div>
+            <div><small>VERIFIED / CANON RECORDS</small><b id="timelineCanonCount"></b></div>
+            <div><small>PROJECT / SPECULATIVE RECORDS</small><b id="timelineProjectCount"></b></div>
+          </div>
+          <div class="timeline-legend">UEE HISTORICAL INDEX // DATED EVENTS ARE SORTED CHRONOLOGICALLY. UNDATED OR CLASSIFIED RECORDS APPEAR AT THE END OF THE ARCHIVE.</div>
+          <div id="timelineWrap" class="timeline-wrap"></div>
+          <div id="timelineEmpty" class="timeline-empty">NO RECORDS MATCH CURRENT FILTERS</div>
+        </div>
+
+        <div id="starmapPanel" hidden>
+          <div class="map-layout">
+            <div>
+              <div class="map-banner"><b>STAR CITIZEN 1.0 PLAN</b><span>FIRST FIVE SYSTEMS: STANTON, PYRO, NYX, CASTRA, TERRA</span><span>PTU 1.0: <i class="unknown">NOT ANNOUNCED</i></span><span>RELEASE DATE: <i class="unknown">NOT ANNOUNCED</i></span></div>
+              <div id="mapLayers" class="timeline-filters map-controls"></div>
+              <div class="map-stage" id="mapStage">
+                <svg class="map-svg" viewBox="0 0 1000 640" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                  <defs>
+                    <radialGradient id="gUee"><stop offset="0" stop-color="#63dfff" stop-opacity=".24"/><stop offset="1" stop-color="#63dfff" stop-opacity="0"/></radialGradient>
+                    <radialGradient id="gBanu"><stop offset="0" stop-color="#ffb54e" stop-opacity=".2"/><stop offset="1" stop-color="#ffb54e" stop-opacity="0"/></radialGradient>
+                    <radialGradient id="gXian"><stop offset="0" stop-color="#b48ae0" stop-opacity=".24"/><stop offset="1" stop-color="#b48ae0" stop-opacity="0"/></radialGradient>
+                    <radialGradient id="gVand"><stop offset="0" stop-color="#ff5555" stop-opacity=".24"/><stop offset="1" stop-color="#ff5555" stop-opacity="0"/></radialGradient>
+                    <radialGradient id="gFree"><stop offset="0" stop-color="#9aa7ae" stop-opacity=".22"/><stop offset="1" stop-color="#9aa7ae" stop-opacity="0"/></radialGradient>
+                  </defs>
+                  <g stroke="#63dfff" stroke-opacity=".07" stroke-width="1">
+                    <path d="M0 160H1000M0 320H1000M0 480H1000M250 0V640M500 0V640M750 0V640" fill="none"/>
+                  </g>
+                  <g fill="none" stroke="#63dfff" stroke-opacity=".16" stroke-width="1.2">
+                    <circle cx="380" cy="330" r="110"/>
+                    <circle cx="380" cy="330" r="220" stroke-dasharray="3 6"/>
+                    <circle cx="380" cy="330" r="330"/>
+                    <circle cx="380" cy="330" r="440" stroke-dasharray="3 6"/>
+                  </g>
+                  <ellipse cx="470" cy="330" rx="250" ry="190" fill="url(#gUee)"/>
+                  <ellipse cx="690" cy="185" rx="150" ry="95" fill="url(#gBanu)"/>
+                  <ellipse cx="880" cy="440" rx="140" ry="170" fill="url(#gXian)"/>
+                  <ellipse cx="135" cy="215" rx="160" ry="135" fill="url(#gVand)"/>
+                  <ellipse cx="670" cy="410" rx="120" ry="140" fill="url(#gFree)"/>
+                  <g id="mapLinks" class="map-links"></g>
+                </svg>
+                <span class="map-region" style="left:44%;top:36%">UEE SPACE</span>
+                <span class="map-region" style="left:70%;top:11%">BANU PROTECTORATE</span>
+                <span class="map-region" style="left:90%;top:82%">XI'AN EMPIRE</span>
+                <span class="map-region" style="left:13%;top:23%">VANDUUL TERRITORY</span>
+                <span class="map-region" style="left:72%;top:60%">UNCLAIMED</span>
+                <div id="mapNodes"></div>
+              </div>
+              <div id="mapLegend" class="map-legend"></div>
+              <p class="map-note">SCHEMATIC // POSITIONS AND RINGS ARE ILLUSTRATIVE, NOT TO SCALE, AND ARE NOT CIG STAR COORDINATES. LINES ARE JUMP POINTS TAKEN FROM THE CITED PAGES. DANGER IS AN ARCHIVE ESTIMATE, NOT AN OFFICIAL RATING. RED UNKNOWN MEANS NO CHECKED SOURCE STATES IT.</p>
+              <div id="mapUnplaced" class="map-unplaced"></div>
+              <div id="mapIndex" class="map-index"></div>
+            </div>
+            <aside id="mapInfo" class="map-info" aria-live="polite"></aside>
+          </div>
+        </div>
+
+        <div id="threatPanel" hidden>
+          <div id="threatChips" class="timeline-filters"></div>
+          <p class="threat-note">THREAT LEVELS COME FROM THE ARCHIVE'S OWN SPECIES RECORDS. THE METER APPEARS ONLY FOR GRADED LEVELS (LOW, GUARDED, SEVERE). THIS IS AN ARCHIVE SUMMARY, NOT AN OFFICIAL CIG RATING.</p>
+          <div id="threatList" class="threat-list"></div>
+        </div>
+
+        <div id="profilePanel" hidden>
+          <div id="profileChips" class="timeline-filters"></div>
+          <p class="threat-note">FIELDS SHOWN IN RED READ UNKNOWN: NO CHECKED SOURCE STATES THEM YET. SELECT A PROFILE HEADER TO OPEN ITS DOSSIER.</p>
+          <div id="profileGrid" class="profile-grid"></div>
+        </div>
+
+        <div id="logsPanel" hidden>
+          <div id="logSummary" class="log-summary"></div>
+          <div class="timeline-toolbar">
+            <div id="logKindChips" class="timeline-filters"></div>
+            <div id="logCheckChips" class="timeline-lore-filters"></div>
+          </div>
+          <div id="logRev" class="rev-log"></div>
+          <div id="logTable" class="log-table"></div>
+        </div>
+
+        <div id="stubPanel" class="stub-panel" hidden></div>
+      </section>
+    </main>
+
+    <section class="console">
+      <div class="radar"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="core"></div></div>
+      <div class="console-copy"><b>UEE XENO INTELLIGENCE NETWORK</b><span>EXPLORE · ANALYSE · UNDERSTAND · DEFEND</span></div>
+      <div class="telemetry">ARK NODE 07<br>LINK STABLE // 99.8%<br>FAN PROJECT // NOT AFFILIATED WITH CLOUD IMPERIUM GAMES</div>
+    </section>
+  </div>
+</section>
+
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop"></div>
+  <article class="dossier" role="dialog" aria-modal="true" aria-labelledby="detailName">
+    <button id="close" class="close" type="button" aria-label="Close dossier">×</button>
+    <div class="scanline"></div>
+    <img id="detailImage" alt="">
+    <div class="detail">
+      <div class="kicker">UEE XENOLOGICAL DOSSIER</div>
+      <h2 id="detailName"></h2>
+      <div id="detailLoreBadge" class="lore-badge"></div>
+      <div class="facts">
+        <div><small>ARCHIVE STATUS</small><b id="detailStatus"></b></div>
+        <div><small>FIRST HUMAN RECORD</small><b id="detailContact"></b></div>
+        <div><small>HOMEWORLD / REGION</small><b id="detailHome"></b></div>
+        <div><small>THREAT</small><b id="detailThreat"></b></div>
+        <div><small>CLASSIFICATION</small><b id="detailClass"></b></div>
+      </div>
+      <p id="detailDesc"></p>
+      <div id="detailSource" class="dossier-source"></div>
+      <div class="warning">RECRUIT NOTICE // ARCHIVE RECONSTRUCTIONS ARE IDENTIFIED AS SUCH. CURRENT UEE ORDERS OVERRIDE HISTORICAL DATABASE MATERIAL.</div>
+    </div>
+  </article>
 </div>
+
 <script>
-var M={en:["Coming soon. We are still charting this part of the 'verse.","‹ Back"],hr:["Uskoro. Ovaj dio svemira još ucrtavamo.","‹ Natrag"],de:["Demnächst. Diesen Teil des 'Verse kartieren wir noch.","‹ Zurück"],pl:["Wkrótce. Wciąż mapujemy tę część uniwersum.","‹ Wróć"],fr:["Bientôt. Nous cartographions encore cette partie du 'verse.","‹ Retour"],es:["Próximamente. Aún estamos cartografiando esta parte del 'verso.","‹ Volver"]};
-var L="en";try{var n=(navigator.language||"en").slice(0,2).toLowerCase();if(M[n])L=n;if(n==="bs"||n==="sr")L="hr";var s=localStorage.getItem("scbp-lang");if(s&&M[s])L=s}catch(e){}
-document.documentElement.lang=L;document.getElementById("msg").textContent=M[L][0];document.getElementById("back").textContent=M[L][1];
+(function(){
+'use strict';
+
+const SPECIES=[{"id": "banu", "name": "BANU", "image": "img/banu.webp", "status": "CONFIRMED", "contact": "2438", "homeworld": "Banu Protectorate", "threat": "LOW", "cls": "SPACEFARING CIVILIZATION", "desc": "The Banu are a spacefaring civilization and Humanity's first confirmed extrasolar contact. In 2438 explorer Vernon Tar met a fugitive Banu ship in the Davien system, and the Interstellar Peace and Trade Accord was signed that October.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Banu-Human First Contact", "sourceUrl": "https://www.starcitizen.tools/First_Contact"}, {"id": "xian", "name": "XI'AN", "image": "img/xian.webp", "status": "CONFIRMED", "contact": "2530", "homeworld": "Xi'an Empire", "threat": "GUARDED", "cls": "SPACEFARING CIVILIZATION", "desc": "The Xi'an are an ancient, technologically advanced spacefaring civilization. Contact began in 2530 when Gaia Planet Services tried to terraform a world the Xi'an claim, starting a long Cold War. Senator Akari and Emperor Kr.ē's 2789 treaty ended it unofficially, and the Perry Line Pact formalized the end in 2793.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Xi'an Cold War", "sourceUrl": "https://starcitizen.tools/Xi%27An_Cold_War"}, {"id": "tevarin", "name": "TEVARIN", "image": "img/tevarin.webp", "status": "CONFIRMED", "contact": "2541", "homeworld": "Jalan (Elysium IV) / formerly Kaleeth", "threat": "HISTORICAL", "cls": "UEE-INTEGRATED CIVILIZATION", "desc": "The Tevarin are a bipedal spacefaring people. First contact in 2541 led to the First Tevarin War (2541-2546) and the annexation of their systems. Warlord Corath'Thal's bid to retake Jalan (Elysium IV) began the Second Tevarin War (2603-2610). Surviving Tevarin then joined the UEE and are experiencing a cultural revival.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Tevarin", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin/"}, {"id": "vanduul", "name": "VANDUUL", "image": "img/vanduul.webp", "status": "CONFIRMED", "contact": "2681", "homeworld": "Unknown / nomadic Clans", "threat": "SEVERE", "cls": "HOSTILE SPACEFARING CIVILIZATION", "desc": "The Vanduul are a hostile, clan-based spacefaring civilization. Humanity first encountered them in 2681 when a Vanduul Clan raided Dell Township on Armitage (Orion III). Attempts to establish diplomatic relations have failed.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Vanduul", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul"}, {"id": "quasi", "name": "QUASI", "image": "img/quasi.webp", "status": "SPECULATIVE", "contact": "Ancient ruins", "homeworld": "Unverified", "threat": "UNKNOWN", "cls": "XENOARCHAEOLOGY / RECONSTRUCTION", "desc": "Project-created xenological reconstruction. No Quasi civilization matching this dossier turned up in the RSI or community-wiki sources checked, so the entry stays flagged as speculative.", "loreStatus": "PROJECT SPECULATIVE", "source": "Project reconstruction — not confirmed CIG canon", "sourceUrl": ""}, {"id": "hadesian", "name": "HADESIAN", "image": "img/hadesian.webp", "status": "EXTINCT", "contact": "2531 (jump point found 2515)", "homeworld": "Hades system", "threat": "NONE", "cls": "EXTINCT SPACEFARING CIVILIZATION", "desc": "The Hadesians were an indigenous interplanetary civilization in the Hades system. Ruins of their worlds show they died out long before Humans arrived. The prevailing theory is that they destroyed themselves in a civil war roughly 300,000 years ago. Sources differ on the exact year of the first human survey.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Hadesians; Star Citizen Wiki — Galactic Guide: Hades System", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/RPPxMqdkpE-hadesians"}, {"id": "garron", "name": "GARRON II", "image": "img/garron.webp", "status": "EXTINCT", "contact": "Known before 2792", "homeworld": "Garron II", "threat": "NONE", "cls": "EXTINCT INDIGENOUS SAPIENTS", "desc": "Garron II held a developing sapient species, the first non-spacefaring civilization Humanity found. Imperator Linton Messer XI's regime terraformed the planet despite this, and a Tide broadcast in April 2792 showed that the species was gone. The footage helped ignite the revolution that ended the Messer Era.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Galactic Guide: Garron System", "sourceUrl": "https://starcitizen.tools/Comm-Link:Galactic_Guide_-_Garron_System"}, {"id": "phare", "name": "PHARE'S APE", "image": "img/phare.webp", "status": "CONFIRMED", "contact": "Recorded fauna", "homeworld": "Etos / Osiris system", "threat": "WILDLIFE", "cls": "XENOBIOLOGY / POSSIBLY SENTIENT", "desc": "Phare's Ape is a canon alien animal: a vaguely Human-like primate that biologists think may have the potential to develop higher thinking. It is included in this archive as a xenobiology entry, not as a confirmed spacefaring civilization.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Phare's Ape (cites the Osiris System guide)", "sourceUrl": "https://starcitizen.tools/Phare%27s_Ape"}, {"id": "orm", "name": "ORM", "image": "img/orm.webp", "status": "CONFIRMED", "contact": "2811", "homeworld": "Xis (northern polar region)", "threat": "UNKNOWN", "cls": "DEVELOPING SENTIENT SPECIES", "desc": "The Orms are a sentient species living in the northern polar region of Xis. Patek Coen discovered them in 2811. They are classed as a developing civilization, with their culture dated to around 2840.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Orm (community wiki; check against RSI Galactapedia)", "sourceUrl": "https://starcitizen.tools/Orm"}, {"id": "genesis-ocean", "name": "GENESIS II", "image": "img/genesis-ocean.webp", "status": "PROTECTED", "contact": "Observed civilization", "homeworld": "Genesis II", "threat": "PROTECTED", "cls": "CEPHALOPOD SAPIENTS", "desc": "Genesis II is home to several sapient species. An ocean-dwelling cephalopod civilization whose factions have begun incursions onto land and violent clashes with the avian-reptoids. The Fair Chance Act forbids all outside interference, and scientists debate whether to let the conflict run its course.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Genesis II; RSI Galactapedia — The Inhabitants of Genesis II", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"id": "genesis-land", "name": "GENESIS II", "image": "img/genesis-land.webp", "status": "PROTECTED", "contact": "Observed civilization", "homeworld": "Genesis II", "threat": "PROTECTED", "cls": "AVIAN-REPTOID SAPIENTS", "desc": "Genesis II is home to several sapient species. A land-dwelling avian-reptoid civilization and one of the planet's best-documented, locked in deadly clashes with the ocean-dwelling cephalopods. The Fair Chance Act forbids all outside interference, and scientists debate whether to let the conflict run its course.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Genesis II; RSI Galactapedia — The Inhabitants of Genesis II", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"id": "osoians", "name": "OSOIANS", "image": "img/osoians.webp", "status": "PROTECTED", "contact": "2861 system discovery", "homeworld": "Oso II", "threat": "PROTECTED", "cls": "DEVELOPING CIVILIZATION", "desc": "The Osoians are a developing civilization indigenous to Oso II. They use tools and weapons, live in villages, and communicate in part through flashes of color produced by the skin of their foreheads. They are protected under the Fair Chance Act.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Osoians", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/0NwpEy2LNM-osoians"}, {"id": "kins", "name": "KINS II", "image": "img/kins.webp", "status": "SPECULATIVE", "contact": "Unconfirmed", "homeworld": "Kins II / Banu Protectorate", "threat": "UNKNOWN", "cls": "PROJECT RECONSTRUCTION", "desc": "Kins II is a canon location in the Banu-controlled Kins system, but the lost-civilization interpretation in this portrait is a project reconstruction and not a confirmed species dossier. It stays flagged as speculative.", "loreStatus": "PROJECT SPECULATIVE", "source": "Canon location; project-created species interpretation", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/"}, {"id": "krthak", "name": "KR'THAK", "image": "img/krthak.webp", "status": "UNCONTACTED", "contact": "No direct Human contact", "homeworld": "Kr'Thak space beyond Xi'an territory", "threat": "UNKNOWN", "cls": "SPACEFARING / UNCONTACTED", "desc": "The Kr'Thak are a sentient spacefaring civilization known to Humanity largely through Xi'an information. The UEE has debated attempting contact, but direct Human knowledge remains extremely limited because of the Xi'an-Kr'Thak conflict and the geography of their territory.", "loreStatus": "CIG CANON", "source": "RSI lore — Kr'Thak / Krēl system", "sourceUrl": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak"}];
+const EVENTS=[{"sort": 2438.1, "date": "2438", "type": "CONTACT", "title": "First Human Contact with the Banu", "species": ["banu"], "desc": "On 12 June 2438 explorer Vernon Tar met a fugitive Banu ship in the Davien system and reported his position. A UNE delegation followed, and the Banu Protectorate made formal contact two weeks later.", "lore": "CIG CANON", "source": "RSI — 2438: Hello / Jerry: A History Half-Remembered", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello"}, {"sort": 2438.8, "date": "2438", "type": "DIPLOMACY", "title": "Banu-Human Interstellar Peace and Trade Accord", "species": ["banu"], "desc": "The UNE and Banu Protectorate signed the first interspecies treaty in Human history, formalizing peaceful relations and trade.", "lore": "CIG CANON", "source": "RSI Galactapedia — Banu-Human Interstellar Peace Treaty", "url": "https://robertsspaceindustries.com/galactapedia/article/RzPoJ1aP4z-banu-human-interstellar-peace-treaty"}, {"sort": 2515, "date": "2515", "type": "DISCOVERY", "title": "Hidden Jump Point to Hades Detected", "species": ["hadesian"], "desc": "The crew of the Merry Crow detected an undocumented jump point in Nexus. Its destination would remain uncharted by Humanity for years.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2530, "date": "2530", "type": "CONTACT", "title": "Humanity Discovers the Xi'an Empire", "species": ["xian"], "desc": "Gaia Planet Services attempted to terraform a world the Xi'an claim. The incident marked first contact and began the prolonged tension known as the Xi'an-Human Cold War.", "lore": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Xi'an Cold War", "url": "https://www.starcitizen.tools/First_Contact"}, {"sort": 2531, "date": "2531", "type": "DISCOVERY", "title": "Hades System Surveyed — Extinct Civilization Confirmed", "species": ["hadesian"], "desc": "Dynamo Corporation navigated the Hades jump point. Surveys revealed ruins of a previously unknown spacefaring civilization devastated by ancient interplanetary war. Sources differ on the exact year of this first survey.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2541, "date": "2541", "type": "CONFLICT", "title": "Tevarin First Contact and the First Tevarin War", "species": ["tevarin"], "desc": "Dr. Kellar Lench discovered the Tevarin system. Hostilities followed first contact, beginning the First Tevarin War.", "lore": "CIG CANON", "source": "RSI Galactapedia — Tevarin", "url": "https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin/"}, {"sort": 2544, "date": "2544", "type": "CONFLICT", "title": "Battle of Idris IV", "species": ["tevarin"], "desc": "A major UPE victory on 1 October 2544 turned the tide of the First Tevarin War and elevated Ivar Messer's public profile.", "lore": "CIG CANON", "source": "RSI Galactapedia — Battle of Idris IV", "url": "https://robertsspaceindustries.com/galactapedia/article/ReJajXKelk-battle-of-idris-iv"}, {"sort": 2546, "date": "2546", "type": "CONFLICT", "title": "First Tevarin War Ends", "species": ["tevarin"], "desc": "The Tevarin were defeated and their systems, including Elysium, were annexed by the UPE. The conflict's aftermath reshaped Human and Tevarin history.", "lore": "CIG CANON", "source": "RSI — Writer's Guide: Part Two / Elysium System", "url": "https://robertsspaceindustries.com/galactapedia/article/RvlQrKZxPO-elysium-system"}, {"sort": 2603, "date": "2603", "type": "CONFLICT", "title": "Second Tevarin War Begins", "species": ["tevarin"], "desc": "Warlord Corath'Thal launched a campaign to reclaim the Tevarin home system, igniting the Second Tevarin War.", "lore": "CIG CANON", "source": "RSI Galactapedia — Elysium System", "url": "https://robertsspaceindustries.com/galactapedia/article/RvlQrKZxPO-elysium-system"}, {"sort": 2610, "date": "2610", "type": "CONFLICT", "title": "Second Tevarin War Ends", "species": ["tevarin"], "desc": "Squadron 42 helped disable Corath'Thal's fleet during the final campaign, allowing UEE forces to destroy the Tevarin armada and end the war.", "lore": "CIG CANON", "source": "RSI Galactapedia — Squadron 42", "url": "https://robertsspaceindustries.com/galactapedia/article/RWoeByvQap-squadron-42"}, {"sort": 2647, "date": "2647", "type": "RESEARCH", "title": "Hadesian Extinction Theory Published", "species": ["hadesian"], "desc": "Astravin University researchers published a major theory that an interplanetary war caused the extinction of the Hadesian civilization.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2681, "date": "2681", "type": "CONTACT", "title": "First Contact with the Vanduul", "species": ["vanduul"], "desc": "A Vanduul raiding party destroyed Dell Township on Armitage (Orion III), becoming Humanity's first confirmed encounter with the Vanduul.", "lore": "CIG CANON", "source": "RSI Galactapedia — Armitage (Orion III)", "url": "https://robertsspaceindustries.com/galactapedia/article/RL6KLK4ylo-armitage-orion-iii"}, {"sort": 2712, "date": "2712", "type": "CONFLICT", "title": "Battle of Orion: System Lost to the Vanduul", "species": ["vanduul"], "desc": "On 16-18 February 2712 thousands of Vanduul and a Kingship entered Orion from a previously unknown jump point. The UEE lost, ceded the system, and suffered its first major defeat in decades.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Battle of Orion", "url": "https://starcitizen.tools/Battle_of_Orion"}, {"sort": 2789, "date": "2789", "type": "DIPLOMACY", "title": "Akari-Kr.ē Treaty — Xi'an-Human Cold War Thaws", "species": ["xian"], "desc": "Senator Terrence Akari and Xi'an Emperor Kr.ē negotiated the treaty in secret on Tohil III. It brought the unofficial end of the Xi'an-Human Cold War and pulled Xi'an forces back from the Perry Line.", "lore": "CIG CANON", "source": "Galactapedia (via star-citizen.wiki) — Akari-Kr.ē Treaty", "url": "https://api.star-citizen.wiki/galactapedia/bE3rKrl5z6"}, {"sort": 2792, "date": "2792", "type": "EXTINCTION", "title": "Massacre of Garron II", "species": ["garron"], "desc": "Terraforming under Imperator Linton Messer XI eliminated a developing sapient species. A Tide broadcast in April 2792 showed the result, and the public turned against the Messers, leading to the Anti-Messer Revolution.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Galactic Guide: Garron System", "url": "https://starcitizen.tools/Comm-Link:Galactic_Guide_-_Garron_System"}, {"sort": 2795, "date": "2795", "type": "PROTECTION", "title": "Fair Chance Act Ratified", "species": ["garron", "osoians", "genesis-ocean", "genesis-land"], "desc": "Following the Garron II atrocity, the UEE enacted protections intended to prevent Humanity from destroying developing indigenous civilizations through terraforming or interference.", "lore": "CIG CANON", "source": "RSI — Writer's Guide: Part Two", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12956-Writers-Guide-Part-Two"}, {"sort": 2800, "date": "2800", "type": "ARCHIVE", "title": "The Ark Established as a Repository of Knowledge", "species": [], "desc": "Construction of the Ark finished in orbit around Tayac I. Imperator Marshall Leon's idea was a neutral meeting place for all species and a repository of galactic knowledge, and its archivists curate the Galactapedia and Starmap.", "lore": "CIG CANON", "source": "Star Citizen Wiki — The Ark (station)", "url": "https://starcitizen.tools/The_Ark_%28station%29"}, {"sort": 2811, "date": "2811", "type": "DISCOVERY", "title": "Orms Discovered on Xis", "species": ["orm"], "desc": "Patek Coen discovered the Orms, a developing sentient species living in the northern polar region of Xis.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Orm", "url": "https://starcitizen.tools/Orm"}, {"sort": 2861, "date": "2861", "type": "DISCOVERY", "title": "Oso System Discovered — Osoian Civilization Protected", "species": ["osoians"], "desc": "Human surveys of the Oso system revealed the developing civilization on Oso II. The system was subsequently protected under the Fair Chance Act.", "lore": "CIG CANON", "source": "RSI Galactapedia — Osoians / Oso I", "url": "https://robertsspaceindustries.com/galactapedia/article/0NwpEy2LNM-osoians"}, {"sort": 2872, "date": "2872", "type": "PROTECTION", "title": "Project Archangel Announced", "species": [], "desc": "The UEE announced Synthworld / Project Archangel as an attempt to support expansion without repeating the destructive consequences of terraforming inhabited worlds.", "lore": "CIG CANON", "source": "RSI Galactapedia — Project Archangel", "url": "https://robertsspaceindustries.com/galactapedia/article/RLMmAnr4gj-project-archangel"}, {"sort": 9990.1, "date": "DATE UNRECORDED", "type": "BIOLOGY", "title": "Phare's Ape Added to the Biological Archive", "species": ["phare"], "desc": "Phare's Ape is a canon fauna entry in the Galactapedia animal archive. The current project database does not attach a verified historical discovery date to this entry.", "lore": "CIG CANON", "source": "RSI Galactapedia — Animals Archive", "url": "https://robertsspaceindustries.com/galactapedia/category/animals"}, {"sort": 9990.2, "date": "DATE UNRECORDED", "type": "OBSERVATION", "title": "Genesis II Sapient Civilizations Under Observation", "species": ["genesis-ocean", "genesis-land"], "desc": "Several sapient species live on Genesis II. Land-dwelling avian-reptoids and ocean-dwelling cephalopods are clashing, while the Fair Chance Act prohibits intervention.", "lore": "CIG CANON", "source": "RSI Galactapedia — The Inhabitants of Genesis II", "url": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"sort": 9990.3, "date": "DATE CLASSIFIED", "type": "INTELLIGENCE", "title": "Kr'Thak Intelligence File", "species": ["krthak"], "desc": "Humanity has no direct confirmed contact with the Kr'Thak. UEE knowledge is largely indirect and constrained by Xi'an relations and territorial geography.", "lore": "CIG CANON", "source": "RSI Lore — Kr'Thak", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak"}, {"sort": 9998.1, "date": "DATE UNKNOWN", "type": "PROJECT", "title": "Quasi Ancient-Ruins Record", "species": ["quasi"], "desc": "Speculative project entry associated with ancient ruins. No CIG-canon chronology is asserted for this record.", "lore": "PROJECT SPECULATIVE", "source": "Galactopedia Project Archive", "url": ""}, {"sort": 9998.2, "date": "UNCONFIRMED", "type": "PROJECT", "title": "Kins II Intelligence Record", "species": ["kins"], "desc": "Unconfirmed project intelligence record. This entry is intentionally separated from CIG canon until reliable lore exists.", "lore": "PROJECT SPECULATIVE", "source": "Galactopedia Project Archive", "url": ""}, {"sort": 2793, "date": "2793", "type": "DIPLOMACY", "title": "Perry Line Pact Ends the Xi'an-Human Cold War", "species": ["xian"], "desc": "The Perry Line Pact, signed on 5 July 2793, formally closed the Cold War that the 2789 Akari-Kr.ē Treaty had ended unofficially.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Xi'an Cold War", "url": "https://starcitizen.tools/Xi%27An_Cold_War"}];
+
+const $=(s,r)=>(r||document).querySelector(s);
+const $$=(s,r)=>Array.from((r||document).querySelectorAll(s));
+const byId=id=>SPECIES.find(s=>s.id===id);
+const esc=v=>String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const el={
+  landing:$('#landing'), archive:$('#archive'), landingCards:$('#landingCards'),
+  cards:$('#cards'), count:$('#resultCount'), title:$('#sectionTitle'),
+  timeline:$('#timelinePanel'), starmap:$('#starmapPanel'), threat:$('#threatPanel'), profile:$('#profilePanel'), logs:$('#logsPanel'), stub:$('#stubPanel'),
+  modal:$('#modal')
+};
+let filter='ALL', mode='species', lastFocus=null;
+
+/* ---------- landing ---------- */
+function buildLanding(){
+  el.landingCards.innerHTML=SPECIES.map(s=>
+    '<button type="button" class="landing-card" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
+    '<img src="'+s.image+'" alt=""><span class="landing-name">'+esc(s.name)+'</span>'+
+    '<span class="landing-meta">'+esc(s.contact||s.status)+'</span></button>').join('');
+  el.landingCards.addEventListener('click',e=>{
+    const b=e.target.closest('.landing-card'); if(!b)return;
+    const sp=byId(b.dataset.id); if(!sp)return;
+    showArchive(); setMode('species'); openDossier(sp);
+  });
+}
+function showLanding(){
+  el.archive.hidden=true; el.landing.hidden=false;
+  document.body.classList.add('landing-mode'); window.scrollTo(0,0);
+}
+function showArchive(){
+  el.landing.hidden=true; el.archive.hidden=false;
+  document.body.classList.remove('landing-mode');
+}
+
+/* phone rail: counter, prev/next, active card */
+function setupRail(){
+  const rail=el.landingCards, counter=$('#mobileCounter'); let raf=0;
+  const list=()=>$$('.landing-card',rail);
+  const active=()=>{const c=rail.scrollLeft+rail.clientWidth/2;let best=0,d=Infinity;list().forEach((n,i)=>{const x=Math.abs(n.offsetLeft+n.offsetWidth/2-c);if(x<d){d=x;best=i}});return best};
+  const paint=()=>{raf=0;const l=list(),i=active();l.forEach((n,k)=>n.classList.toggle('mobile-active',k===i));
+    if(l.length)counter.textContent=String(i+1).padStart(2,'0')+' / '+String(l.length).padStart(2,'0')+'  //  '+SPECIES[i].name};
+  const move=d=>{const l=list();if(!l.length)return;const i=Math.max(0,Math.min(l.length-1,active()+d));l[i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})};
+  rail.addEventListener('scroll',()=>{if(!raf)raf=requestAnimationFrame(paint)},{passive:true});
+  window.addEventListener('resize',paint,{passive:true});
+  $('#mobPrev').addEventListener('click',()=>move(-1));
+  $('#mobNext').addEventListener('click',()=>move(1));
+  setTimeout(()=>{if(matchMedia('(max-width:700px) and (orientation:portrait)').matches){const l=list();if(l[0])l[0].scrollIntoView({inline:'center',block:'nearest'})}paint()},120);
+}
+
+/* ---------- species grid ---------- */
+function renderCards(){
+  const list=filter==='ALL'?SPECIES:SPECIES.filter(s=>s.status===filter);
+  el.cards.innerHTML=list.map((s,i)=>
+    '<article class="card" tabindex="0" role="button" data-id="'+esc(s.id)+'" data-lore="'+esc(s.loreStatus||'')+'" aria-label="Open '+esc(s.name)+' dossier">'+
+    '<img src="'+s.image+'" alt=""><span class="tag">'+String(i+1).padStart(2,'0')+' // '+esc(s.status)+'</span><span class="bio"></span>'+
+    '<div class="name">'+esc(s.name)+'</div><div class="meta">'+esc(s.cls)+' // '+esc(s.contact)+'</div></article>').join('');
+  if(mode==='species')el.count.textContent=list.length+' ENTRIES';
+}
+function openFromCard(t){const c=t.closest('.card');if(!c)return;const sp=byId(c.dataset.id);if(sp)openDossier(sp)}
+el.cards.addEventListener('click',e=>openFromCard(e.target));
+el.cards.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openFromCard(e.target)}});
+
+/* ---------- dossier ---------- */
+function openDossier(sp){
+  lastFocus=document.activeElement;
+  const img=$('#detailImage'); img.src=sp.image; img.alt=sp.name;
+  $('#detailName').textContent=sp.name;
+  $('#detailStatus').textContent=sp.status;
+  $('#detailContact').textContent=sp.contact;
+  $('#detailHome').textContent=sp.homeworld;
+  $('#detailThreat').textContent=sp.threat;
+  $('#detailClass').textContent=sp.cls;
+  $('#detailDesc').textContent=sp.desc;
+  const badge=$('#detailLoreBadge');
+  badge.textContent=(sp.loreStatus||'ARCHIVE STATUS')+' // '+sp.status;
+  badge.className='lore-badge '+String(sp.status||'').toLowerCase();
+  $('#detailSource').innerHTML='<b>SOURCE CLASSIFICATION:</b> '+esc(sp.source||'Archive source unavailable')+
+    (sp.sourceUrl?' &nbsp;·&nbsp; <a href="'+esc(sp.sourceUrl)+'" target="_blank" rel="noopener">OPEN RSI SOURCE ↗</a>':'');
+  el.modal.classList.add('open'); el.modal.setAttribute('aria-hidden','false');
+  $('.detail').scrollTop=0; $('#close').focus();
+}
+function closeDossier(){
+  el.modal.classList.remove('open'); el.modal.setAttribute('aria-hidden','true');
+  if(lastFocus&&document.contains(lastFocus)&&lastFocus.offsetParent!==null)lastFocus.focus();
+}
+$('#close').addEventListener('click',closeDossier);
+$('.modal-backdrop').addEventListener('click',closeDossier);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&el.modal.classList.contains('open'))closeDossier()});
+
+/* ---------- modes ---------- */
+const MODE_TITLES={species:'KNOWN & RECORDED SPECIES',timeline:'XENOLOGICAL HISTORICAL TIMELINE',starmap:'GALACTIC STARMAP',
+  threat:'THREAT ASSESSMENT',culture:'CULTURE',technology:'TECHNOLOGY',biology:'BIOLOGY',logs:'ARCHIVE LOGS'};
+function setMode(m){
+  mode=m;
+  el.cards.hidden=m!=='species';
+  el.timeline.hidden=m!=='timeline';
+  el.starmap.hidden=m!=='starmap';
+  el.threat.hidden=m!=='threat';
+  el.profile.hidden=!PROFILE_FIELDS[m];
+  el.logs.hidden=m!=='logs';
+  const stub=!['species','timeline','starmap','threat','logs'].includes(m)&&!PROFILE_FIELDS[m];
+  el.stub.hidden=!stub;
+  el.title.textContent=MODE_TITLES[m]||'';
+  $$('.nav[data-filter]').forEach(b=>b.classList.toggle('active',m==='species'&&b.dataset.filter===filter));
+  $$('.mode').forEach(b=>b.classList.toggle('active',b.dataset.mode===m));
+  if(m==='species'){renderCards()}
+  else if(m==='timeline'){renderTimeline()}
+  else if(m==='starmap'){buildStarmap();el.count.textContent=SYSTEMS.length+' SYSTEMS'}
+  else if(m==='threat'){renderThreat()}
+  else if(PROFILE_FIELDS[m]){renderProfile(m)}
+  else if(m==='logs'){renderLogs()}
+  else{
+    el.stub.innerHTML='<div><h3>'+esc(MODE_TITLES[m])+'</h3><p>THIS MODULE IS NOT AVAILABLE IN THE CURRENT ARCHIVE BUILD. ALL ARCHIVE MODULES ARE ONLINE.</p></div>';
+    el.count.textContent='OFFLINE';
+  }
+  window.scrollTo({top:0});
+}
+$$('.nav[data-filter]').forEach(b=>{
+  const f=b.dataset.filter;
+  $('[data-count="'+f+'"]',b).textContent=f==='ALL'?SPECIES.length:SPECIES.filter(s=>s.status===f).length;
+  b.addEventListener('click',()=>{filter=f;setMode('species')});
+});
+$$('.mode').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
+$('#backBtn').addEventListener('click',showLanding);
+
+/* ---------- timeline ---------- */
+let typeFilter='ALL', loreFilter='ALL', timelineBuilt=false;
+function buildTimeline(){
+  if(timelineBuilt)return; timelineBuilt=true;
+  const types=['ALL','CONTACT','DISCOVERY','CONFLICT','DIPLOMACY','EXTINCTION','PROTECTION','RESEARCH','ARCHIVE','BIOLOGY','OBSERVATION','INTELLIGENCE','PROJECT'];
+  const tb=$('#timelineTypeFilters'), lb=$('#timelineLoreFilters');
+  tb.innerHTML=types.map(t=>'<button type="button" class="timeline-filter'+(t==='ALL'?' active':'')+'" data-t="'+t+'">'+t+'</button>').join('');
+  lb.innerHTML=['ALL','CIG CANON','PROJECT SPECULATIVE'].map(t=>'<button type="button" class="timeline-lore-filter'+(t==='ALL'?' active':'')+'" data-l="'+t+'">'+(t==='ALL'?'ALL RECORDS':t)+'</button>').join('');
+  tb.addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(!b)return;typeFilter=b.dataset.t;$$('[data-t]',tb).forEach(x=>x.classList.toggle('active',x===b));renderTimeline()});
+  lb.addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;loreFilter=b.dataset.l;$$('[data-l]',lb).forEach(x=>x.classList.toggle('active',x===b));renderTimeline()});
+  $('#timelineWrap').addEventListener('click',e=>{const b=e.target.closest('[data-species-id]');if(!b)return;const sp=byId(b.dataset.speciesId);if(sp)openDossier(sp)});
+}
+function renderTimeline(){
+  buildTimeline();
+  const list=EVENTS.filter(e=>(typeFilter==='ALL'||e.type===typeFilter)&&(loreFilter==='ALL'||e.lore===loreFilter)).sort((a,b)=>a.sort-b.sort);
+  $('#timelineWrap').innerHTML=list.map(e=>{
+    const sp=e.species.map(byId).filter(Boolean), project=e.lore==='PROJECT SPECULATIVE';
+    return '<article class="timeline-event '+(project?'project':'canon')+'"><div class="timeline-year">'+esc(e.date)+'</div><span class="timeline-dot"></span><div class="timeline-card">'+
+      '<div class="timeline-card-top"><span class="timeline-type">'+esc(e.type)+'</span><span class="timeline-canon">'+esc(e.lore)+'</span></div>'+
+      '<h3 class="timeline-title">'+esc(e.title)+'</h3><p class="timeline-desc">'+esc(e.desc)+'</p>'+
+      (sp.length?'<div class="timeline-species">'+sp.map(s=>'<button type="button" data-species-id="'+esc(s.id)+'">'+esc(s.name)+' // OPEN DOSSIER</button>').join('')+'</div>':'')+
+      (e.url?'<a class="timeline-source" href="'+esc(e.url)+'" target="_blank" rel="noopener">SOURCE // '+esc(e.source)+' ↗</a>':'<span class="timeline-source">SOURCE // '+esc(e.source)+'</span>')+
+      '</div></article>';
+  }).join('');
+  $('#timelineEmpty').classList.toggle('show',!list.length);
+  $('#timelineCanonCount').textContent=EVENTS.filter(e=>e.lore==='CIG CANON').length+' RECORDS';
+  $('#timelineProjectCount').textContent=EVENTS.filter(e=>e.lore==='PROJECT SPECULATIVE').length+' RECORDS';
+  if(mode==='timeline')el.count.textContent=list.length+' EVENTS';
+}
+
+/* ---------- starmap ---------- */
+const STATUS_COLOR={CONFIRMED:'var(--cyan)',PROTECTED:'var(--green)',EXTINCT:'var(--slate)',UNCONTACTED:'var(--violet)',SPECULATIVE:'var(--amber)',CORE:'var(--ice)'};
+const CONTROL_COLOR={HIGH:'var(--cyan)',PARTIAL:'var(--sand)',NONE:'var(--slate)'};
+const DANGER_COLOR={LOW:'var(--green)',MODERATE:'var(--sand)',ELEVATED:'var(--amber)',HIGH:'var(--coral)',SEVERE:'var(--rose)'};
+const LAYERS={
+  STATUS:{label:'SPECIES STATUS',values:['CONFIRMED','PROTECTED','EXTINCT','UNCONTACTED','SPECULATIVE'],color:STATUS_COLOR},
+  CONTROL:{label:'UEE CONTROL',values:['HIGH','PARTIAL','NONE','UNKNOWN'],color:CONTROL_COLOR},
+  DANGER:{label:'DANGER',values:['LOW','MODERATE','ELEVATED','HIGH','SEVERE','UNKNOWN'],color:DANGER_COLOR}
+};
+const W='https://starcitizen.tools/';
+/* control: HIGH / PARTIAL / NONE, null = UNKNOWN. danger: archive estimate from sourced hazards, null = UNKNOWN.
+   jumps: ids are drawn on this map, other names are real jump points to systems not drawn. */
+const SYSTEMS=[
+  {id:'sol',name:'SOL',region:'UEE CORE',x:380,y:330,species:[],tag:'CIG CANON // REFERENCE ORIGIN',cls:'canon',
+   note:'Home system of the United Empire of Earth. It is the reference origin for the rings on this schematic.',
+   control:'HIGH',cwhy:'Home system of the UEE.',danger:null,dwhy:'',jumps:['davien'],src:'Reference origin',url:''},
+  {id:'terra',name:'TERRA',region:'UEE SPACE',x:500,y:290,species:[],tag:'CIG CANON',cls:'canon',
+   note:'The UEE\'s showcase system, named after the capital planet Terra III, which is becoming the cultural focus of the Empire. Ruins of an unidentified ancient civilization lie on its southern continent.',
+   control:'HIGH',cwhy:'UEE system and home of the capital planet.',danger:null,dwhy:'',
+   v1:'PLANNED FOR 1.0. NOT YET IN GAME.',jumps:['Goss','Hadrian','Magnus','pyro','stanton','Taranis','tayac'],src:'Star Citizen Wiki — Terra system',url:W+'Terra_system'},
+  {id:'tayac',name:'TAYAC',region:'UEE SPACE',x:545,y:170,species:[],tag:'CIG CANON',cls:'canon',
+   note:'Home of The Ark, a neutral repository of galactic knowledge completed in 2800. During the Messer era the system was a military zone closed to civilians.',
+   control:'PARTIAL',cwhy:'UEE system, but the Ark and its surroundings are neutral space under the Ark Treaty.',danger:null,dwhy:'',
+   jumps:['Baker','Goss','terra'],src:'Star Citizen Wiki — Tayac system; The Ark',url:W+'Tayac_system'},
+  {id:'stanton',name:'STANTON',region:'UEE SPACE',x:560,y:400,species:[],tag:'CIG CANON',cls:'canon',
+   note:'Four corporate-owned planets: Hurston, Crusader, ArcCorp and microTech. There is no native alien species. Starmap data lists economy 10/10 and population 10/10.',
+   control:'PARTIAL',cwhy:'UEE jurisdiction and common law apply, but the planets are privately owned and the UEE does not fully police the region.',
+   danger:'MODERATE',dwhy:'No official rating. Outlaw activity is reported in Crusader\'s shipping lanes (citation needed) and Hurston is heavily polluted.',
+   v1:'IN GAME SINCE ALPHA 3.0. PLANNED FOR 1.0.',jumps:['Magnus','nyx','pyro','terra'],src:'Star Citizen Wiki — Stanton system',url:W+'Stanton_system'},
+  {id:'pyro',name:'PYRO',region:'UNCLAIMED',x:680,y:330,species:[],tag:'CIG CANON',cls:'canon',
+   note:'Gangs and pirate groups such as XenoThreat, Rough & Ready, Headhunters, 73R Vipers and Fire Rats compete for it, and XenoThreat holds Ruin Station. There is no native alien species.',
+   control:'NONE',cwhy:'Unclaimed. The UEE never formally claimed it and later put other systems first.',
+   danger:'HIGH',dwhy:'Dangerous and mostly anarchic. Gangs hold shifting territory, and an unstable star causes solar flares.',
+   v1:'IN GAME SINCE ALPHA 4.0. PLANNED FOR 1.0.',jumps:['Cano','castra','Hadrian','nyx','oso','stanton','terra'],src:'Star Citizen Wiki — Pyro system',url:W+'Pyro_system'},
+  {id:'nyx',name:'NYX',region:'UNCLAIMED',x:660,y:490,species:[],tag:'CIG CANON',cls:'canon',
+   note:'Levski, an asteroid mining base founded by People\'s Alliance refugees in 2618, is the busiest location. Starmap data lists economy 1.7/10 and population 5.4/10. As of CitizenCon 2025 the Castra jump point is temporarily redirected to Stanton.',
+   control:'NONE',cwhy:'Unclaimed. The People\'s Alliance, based at Levski, controls it, not the UEE.',
+   danger:'ELEVATED',dwhy:'No official rating. Vanduul raids are increasing, piracy is not uncommon and outlaw bases are suspected in the Glaciem Ring.',
+   v1:'IN GAME SINCE ALPHA 4.4. PLANNED FOR 1.0.',jumps:['Bremen','castra','Odin','pyro','stanton','tohil','Virgil'],src:'Star Citizen Wiki — Nyx system',url:W+'Nyx_system'},
+  {id:'castra',name:'CASTRA',region:'UEE SPACE',x:800,y:410,species:[],tag:'CIG CANON',cls:'canon',
+   note:'A former focal point of the Xi\'an Cold War, with a large orbital platform built for capital ships. It is now mainly a trading hub. The Xi\'an Empire borders the Perry Line nearby.',
+   control:'HIGH',cwhy:'UEE system. The UEE cut its military presence in 2789 and opened it to civilians, though some areas stay under military control.',
+   danger:null,dwhy:'',v1:'PLANNED FOR 1.0. NOT YET IN GAME.',jumps:['Hadrian','nyx','oso','oya','pyro'],src:'Star Citizen Wiki — Castra system',url:W+'Castra_system'},
+  {id:'oso',name:'OSO',region:'PROTECTED SPACE',x:800,y:290,species:['osoians'],tag:'CIG CANON',cls:'canon',
+   note:'Surveyed in 2861. The Osoians of Oso II use tools, live in villages and signal with color flashes on their foreheads. The system is protected under the Fair Chance Act.',
+   control:'PARTIAL',cwhy:'Protectorate under the Fair Chance Act, with a permanent UEE garrison near the first jump point.',danger:null,dwhy:'',
+   jumps:['castra','pyro'],src:'Star Citizen Wiki — Galactic Guide: Oso System',url:W+'Comm-Link%3AGalactic_Guide_-_Oso_System'},
+  {id:'oya',name:'OYA',region:'UEE SPACE',x:900,y:340,species:['xian'],tag:'CIG CANON',cls:'canon',
+   note:'One of the Perry Line systems given to the UEE during the military de-escalation. The former Xi\'an settlement on Oya III is the only sovereign alien territory within the Empire.',
+   control:'PARTIAL',cwhy:'UEE system, but the Oya III settlement was returned to the Xi\'an Empire as a goodwill gesture.',danger:null,dwhy:'',
+   jumps:['castra','Ē\'aluth','Gurzil','Hadrian','tohil'],src:'Star Citizen Wiki — Oya system',url:W+'Oya_system'},
+  {id:'tohil',name:'TOHIL',region:'HUMAN-XI\'AN BORDER',x:780,y:570,species:['xian'],tag:'CIG CANON',cls:'canon',
+   note:'Border system with no military presence. Senator Terrence Akari and Emperor Kr.ē held the secret talks that led to the 2789 treaty on Tohil III.',
+   control:'NONE',cwhy:'No military presence. It sits on the border of both empires.',danger:null,dwhy:'',
+   jumps:['nyx','oya'],src:'Galactapedia (via star-citizen.wiki) — Akari-Kr.ē Treaty',url:'https://api.star-citizen.wiki/galactapedia/bE3rKrl5z6'},
+  {id:'thusung',name:"TH.US'ŪNG",region:"XI'AN EMPIRE",x:880,y:470,species:['xian'],tag:'CIG CANON',cls:'canon',
+   note:"Site of first contact in 2530. Gaia Planet Services tried to terraform Se'kith, a world the Xi'an claim, and the standoff grew into the long Human-Xi'an Cold War.",
+   control:'NONE',cwhy:"Xi'an Empire territory.",danger:null,dwhy:'',jumps:[],src:'Star Citizen Wiki — First Contact',url:'https://www.starcitizen.tools/First_Contact'},
+  {id:'krthak',name:"KR'THAK SPACE",region:"BEYOND XI'AN SPACE",x:930,y:585,species:['krthak'],tag:'CIG CANON // LOCATION APPROXIMATE',cls:'canon',
+   note:"Known to Humanity mostly through Xi'an information. There is no direct Human contact, and the exact location is not established in the archive.",
+   control:'NONE',cwhy:'Beyond Xi\'an territory. There is no contact.',danger:null,dwhy:'',jumps:[],src:'RSI Spectrum Dispatch — The Kr\'Thak',url:'https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak'},
+  {id:'davien',name:'DAVIEN',region:'BANU SPACE',x:620,y:215,species:['banu'],tag:'CIG CANON',cls:'canon',
+   note:'Site of the first confirmed Human contact with an alien civilization. In 2438 an explorer met a Banu vessel here, and the first Interstellar Peace and Trade Accord followed that year.',
+   control:'PARTIAL',cwhy:'UEE-affiliated, with a military-led watch station. The page does not say who governs it.',danger:null,dwhy:'',
+   jumps:['Bacchus','Cano','Cathcart','Ferron','Kilian','sol'],src:'Star Citizen Wiki — Davien system',url:'https://www.starcitizen.tools/Davien_System'},
+  {id:'kins',name:'KINS',region:'BANU SPACE',x:740,y:140,species:['kins'],tag:'CANON LOCATION // PROJECT SPECIES',cls:'speculative',
+   note:'A Banu-controlled system. The lost-civilization portrait attached to Kins II is a project reconstruction and is not a confirmed species dossier.',
+   control:'NONE',cwhy:'Banu-controlled.',danger:null,dwhy:'',jumps:[],src:'Canon location; project-created species interpretation',url:'https://robertsspaceindustries.com/galactapedia/'},
+  {id:'hades',name:'HADES',region:'UNCLAIMED',x:290,y:250,species:['hadesian'],tag:'CIG CANON',cls:'canon',
+   note:'A tramp freighter spotted a hidden jump point here in 2515. Surveys found ruins of a spacefaring civilization that appears to have destroyed itself in a civil war roughly 300,000 years ago.',
+   control:'NONE',cwhy:'Unclaimed. The UEE withdrew protection in 2541 and refused a 2792 petition to reclaim it.',
+   danger:'ELEVATED',dwhy:'Reachable only through pirate-controlled territory. All planets are inhospitable after an ancient conflict, and Hades III has a toxic atmosphere.',
+   jumps:['Cathcart','Nemo','Nexus'],src:'Star Citizen Wiki — Hades system',url:W+'Hades_system'},
+  {id:'osiris',name:'OSIRIS',region:'UEE SPACE',x:400,y:120,species:['phare'],tag:'CIG CANON',cls:'canon',
+   note:'Phare\'s Ape is documented in the Osiris System guide: a vaguely Human-like primate that biologists think may have the potential to develop higher thinking. OB Kobold station monitors Osiris I.',
+   control:'PARTIAL',cwhy:'UEE system and one of the first protected under the Fair Chance Act, but little is done to stop poachers using Etos as a base.',
+   danger:'LOW',dwhy:'Starmap danger rating of 1.05 out of 10.',jumps:['Baker','Goss',"Kyuk'ya"],src:'Star Citizen Wiki — Osiris system',url:W+'Osiris_system'},
+  {id:'garron',name:'GARRON',region:'UEE SPACE',x:470,y:540,species:['garron'],tag:'CIG CANON',cls:'canon',
+   note:'Garron II held a developing sapient species, the first non-spacefaring civilization Humanity found. Terraforming under Imperator Linton Messer XI wiped it out, and a Tide broadcast in April 2792 showed the result.',
+   control:null,cwhy:'The page lists the system as Developing and does not say who controls it. UEE scientists are restoring Garron II under the Fair Chance Act.',
+   danger:'MODERATE',dwhy:'Garron I is covered in lava, and the system may hide an undiscovered jump point into Vanduul space.',
+   jumps:['Bacchus','Banshee','Idris','Leir'],src:'Star Citizen Wiki — Garron system',url:W+'Garron_system'},
+  {id:'genesis',name:'GENESIS',region:'OBSERVED SPACE',x:240,y:470,species:['genesis-ocean','genesis-land'],tag:'CIG CANON',cls:'canon',
+   note:'Home to several sapient species, including land-dwelling avian-reptoids and ocean-dwelling cephalopods that have begun moving onto land. The Fair Chance Act forbids any outside interference.',
+   control:null,cwhy:'The page lists the system as Developing and names no governing power. Genesis II is protected under the Fair Chance Act.',
+   danger:'MODERATE',dwhy:'Violent clashes between native species on Genesis II, and frequent asteroid impacts on Genesis I.',
+   jumps:['Charon','Corel','Taranis'],src:'Star Citizen Wiki — Genesis system',url:W+'Genesis_System'},
+  {id:'elysium',name:'ELYSIUM',region:'UEE SPACE',x:370,y:430,species:['tevarin'],tag:'CIG CANON',cls:'canon',
+   note:'Tevarin ancestral home. Jalan (Elysium IV) was the Tevarin homeworld, the flashpoint of the first interstellar war and the site where the second ended.',
+   control:'HIGH',cwhy:'UEE system, captured from the Tevarin after the First Tevarin War. Current administration is not detailed.',danger:null,dwhy:'',
+   jumps:['Centauri','Idris','Leir','Vanguard'],src:'Star Citizen Wiki — Elysium system',url:W+'Elysium_system'},
+  {id:'orion',name:'ORION',region:'VANDUUL TERRITORY',x:130,y:220,species:['vanduul'],tag:'CIG CANON',cls:'canon',
+   note:'A Vanduul raid destroyed Dell Township on Armitage (Orion III) in August 2681. In February 2712 thousands of Vanduul and a Kingship forced the UEE out of the system.',
+   control:'NONE',cwhy:'Ceded to the Vanduul in February 2712 and still in Vanduul territory.',
+   danger:'SEVERE',dwhy:'Vanduul territory.',jumps:[],src:'Star Citizen Wiki — Battle of Orion',url:W+'Battle_of_Orion'}
+];
+const EDGES=[];
+SYSTEMS.forEach(a=>a.jumps.forEach(j=>{const b=SYSTEMS.find(x=>x.id===j);
+  if(b&&!EDGES.some(e=>(e[0]===a.id&&e[1]===b.id)||(e[0]===b.id&&e[1]===a.id)))EDGES.push([a.id,b.id])}));
+let mapBuilt=false, mapFilter='ALL', mapSel='stanton', mapLayer='CONTROL', only10=false;
+const sysStatus=s=>s.species.length?((byId(s.species[0])||{}).status||'CORE'):'CORE';
+const sysById=id=>SYSTEMS.find(x=>x.id===id);
+
+function nearby(id){
+  const dist={}; dist[id]=0; const q=[id];
+  while(q.length){const c=q.shift(); if(dist[c]>=2)continue;
+    EDGES.forEach(e=>{const n=e[0]===c?e[1]:(e[1]===c?e[0]:null); if(n&&dist[n]===undefined){dist[n]=dist[c]+1;q.push(n)}})}
+  const out={1:{},2:{}};
+  Object.keys(dist).forEach(k=>{const d=dist[k]; if(d<1||d>2)return; const s=sysById(k);
+    s.species.forEach(sid=>{const sp=byId(sid); if(sp)(out[d][sp.name]=out[d][sp.name]||[]).push(s.name)})});
+  return out;
+}
+function levelBox(label,val,why,colors,fallback){
+  return '<div><small>'+label+'</small>'+(val?'<b style="color:'+colors[val]+'">'+val+'</b>':'<b class="unknown">UNKNOWN</b>')+
+    '<span>'+esc(why||fallback)+'</span></div>';
+}
+function buildStarmap(){
+  if(mapBuilt)return; mapBuilt=true;
+  $('#mapNodes').innerHTML=SYSTEMS.map(s=>
+    '<button type="button" class="map-node'+(s.x>720?' flip':'')+(s.v1?' v1':'')+'" data-sys="'+s.id+'" style="left:'+(s.x/10)+'%;top:'+(s.y/6.4)+'%" aria-label="'+esc(s.name)+', '+esc(s.region)+'"><i></i><span>'+esc(s.name)+'</span></button>').join('');
+  $('#mapLinks').innerHTML=EDGES.map(e=>{const a=sysById(e[0]),b=sysById(e[1]);
+    return '<line data-a="'+a.id+'" data-b="'+b.id+'" class="'+(a.v1&&b.v1?'v1':'')+'" x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'"/>'}).join('');
+  $('#mapLayers').innerHTML=Object.keys(LAYERS).map(k=>'<button type="button" class="timeline-filter" data-layer="'+k+'">'+LAYERS[k].label+'</button>').join('')+
+    '<button type="button" id="mapOnly10" class="timeline-filter">1.0 SYSTEMS ONLY</button>';
+  $('#mapIndex').innerHTML=SYSTEMS.map(s=>'<button type="button" data-sys="'+s.id+'">'+esc(s.name)+'</button>').join('');
+  const unplaced=SPECIES.filter(sp=>!SYSTEMS.some(s=>s.species.includes(sp.id)));
+  $('#mapUnplaced').innerHTML=unplaced.length?'<span>LOCATION NOT PLACED ON THIS MAP //</span>'+unplaced.map(sp=>'<button type="button" data-open="'+esc(sp.id)+'">'+esc(sp.name)+'</button>').join(''):'';
+  el.starmap.addEventListener('click',e=>{
+    const n=e.target.closest('[data-sys]'); if(n){selectSystem(n.dataset.sys);return}
+    const l=e.target.closest('[data-layer]'); if(l){mapLayer=l.dataset.layer;mapFilter='ALL';paintMap();return}
+    if(e.target.closest('#mapOnly10')){only10=!only10;paintMap();return}
+    const c=e.target.closest('.legend-chip'); if(c){mapFilter=mapFilter===c.dataset.val?'ALL':c.dataset.val;paintMap();return}
+    const o=e.target.closest('[data-open]'); if(o){const sp=byId(o.dataset.open);if(sp)openDossier(sp)}
+  });
+  paintMap(); selectSystem(mapSel);
+}
+function paintMap(){
+  const L=LAYERS[mapLayer];
+  $$('.map-node').forEach(n=>{
+    const s=sysById(n.dataset.sys);
+    const val=mapLayer==='CONTROL'?(s.control||'UNKNOWN'):(mapLayer==='DANGER'?(s.danger||'UNKNOWN'):sysStatus(s));
+    n.dataset.val=val; n.style.setProperty('--c',L.color[val]||'var(--slate)');
+    n.classList.toggle('unk',val==='UNKNOWN');
+    n.classList.toggle('dim',(mapFilter!=='ALL'&&val!==mapFilter&&val!=='CORE')||(only10&&!s.v1));
+  });
+  $('#mapLegend').innerHTML=L.values.map(k=>'<button type="button" class="legend-chip'+(k==='UNKNOWN'?' is-unknown':'')+'" data-val="'+k+'" aria-pressed="'+(mapFilter===k)+'" style="--c:'+(L.color[k]||'var(--slate)')+'"><i></i>'+k+'</button>').join('');
+  $$('[data-layer]').forEach(b=>b.classList.toggle('active',b.dataset.layer===mapLayer));
+  $('#mapOnly10').classList.toggle('active',only10);
+}
+function selectSystem(id){
+  const s=sysById(id); if(!s)return; mapSel=id;
+  $$('[data-sys]',el.starmap).forEach(n=>n.classList.toggle('selected',n.dataset.sys===id));
+  $$('#mapLinks line').forEach(l=>l.classList.toggle('hot',l.dataset.a===id||l.dataset.b===id));
+  const sp=s.species.map(byId).filter(Boolean);
+  const rel=EVENTS.filter(e=>e.species.some(x=>s.species.includes(x))).sort((a,b)=>a.sort-b.sort);
+  const near=nearby(id);
+  const nearHtml=[1,2].map(d=>{const names=Object.keys(near[d]);
+    return '<li><b>'+d+' JUMP'+(d>1?'S':'')+'</b><span>'+(names.length?names.map(k=>esc(k)+' ('+esc(near[d][k].join(', '))+')').join('; '):'None among the mapped systems.')+'</span></li>'}).join('');
+  const jumps=s.jumps.length?'<div class="map-jumps">'+s.jumps.map(j=>{const t=sysById(j);return t?'<button type="button" data-sys="'+t.id+'">'+esc(t.name)+'</button>':'<span>'+esc(j)+'</span>'}).join('')+'</div>':'<small><span class="unknown">UNKNOWN</span> No jump points found in the checked sources.</small>';
+  $('#mapInfo').innerHTML=
+    '<div class="kicker">'+esc(s.region)+'</div><h3>'+esc(s.name)+'</h3>'+
+    '<div class="lore-badge '+s.cls+'">'+esc(s.tag)+'</div>'+
+    (s.v1?'<div class="map-v1">'+esc(s.v1)+'</div>':'')+
+    '<p>'+esc(s.note)+'</p>'+
+    '<div class="map-stats">'+levelBox('UEE CONTROL',s.control,s.cwhy,CONTROL_COLOR,'No checked source states who controls it.')+
+      levelBox('DANGER (ARCHIVE ESTIMATE)',s.danger,s.dwhy,DANGER_COLOR,'No rating or hazard list in the checked sources.')+'</div>'+
+    '<h4>ALIEN SPECIES NEARBY</h4><ul class="map-near">'+nearHtml+'</ul>'+
+    '<small>COUNTS ONLY JUMP POINTS BETWEEN SYSTEMS DRAWN ON THIS MAP.</small>'+
+    '<h4>JUMP POINTS</h4>'+jumps+
+    (sp.length?'<h4>DOSSIERS</h4><div class="map-species">'+sp.map(x=>'<button type="button" data-open="'+esc(x.id)+'">OPEN DOSSIER // '+esc(x.name)+' · '+esc(x.cls)+'</button>').join('')+'</div>':'')+
+    '<h4>RELATED TIMELINE RECORDS</h4>'+
+    (rel.length?'<ul>'+rel.slice(0,5).map(e=>'<li><b>'+esc(e.date)+'</b><span>'+esc(e.title)+'</span></li>').join('')+'</ul>'+(rel.length>5?'<small>+'+(rel.length-5)+' more in the timeline module</small>':''):'<small>NO DATED RECORDS FOR THIS LOCATION.</small>')+
+    (s.url?'<a class="map-src" href="'+esc(s.url)+'" target="_blank" rel="noopener">SOURCE // '+esc(s.src)+' ↗</a>':'<span class="map-src">SOURCE // '+esc(s.src)+'</span>');
+}
+
+/* ---------- threat assessment ---------- */
+const THREAT_ORDER=['SEVERE','GUARDED','UNKNOWN','WILDLIFE','LOW','HISTORICAL','PROTECTED','NONE'];
+const THREAT_METER={SEVERE:5,GUARDED:3,LOW:1};
+const THREAT_NOTE={
+  banu:'Peaceful trade partner. The 2438 Interstellar Peace and Trade Accord was Humanity\'s first treaty with an alien civilization.',
+  xian:'Advanced empire that Humanity has been in a long Cold War with. It ended unofficially in 2789 and formally in 2793.',
+  tevarin:'Fought two wars with Humanity (2541-2546 and 2603-2610). Survivors are now part of the UEE.',
+  vanduul:'Hostile clans. They destroyed Dell Township in 2681 and forced the UEE out of Orion in 2712. Diplomacy has failed.',
+  krthak:'No direct contact. The Xi\'an describe them as enemies, and the UEE has only begun debating whether to approach them.',
+  quasi:'Project reconstruction. There is not enough sourced lore to assess it.',
+  kins:'Project reconstruction. There is not enough sourced lore to assess it.',
+  orm:'Developing species discovered in 2811. No threat assessment is on record.',
+  phare:'Wildlife. Biologists think it may have the potential to develop higher thinking.',
+  'genesis-ocean':'Protected. Cephalopod groups are clashing with avian-reptoids, and the Fair Chance Act forbids intervention.',
+  'genesis-land':'Protected. Avian-reptoids are in deadly clashes with ocean-dwelling cephalopods, and intervention is forbidden.',
+  osoians:'Protected. A permanent garrison near the jump point lets them develop without outside interference.',
+  hadesian:'Extinct. Surveys note harsh surface conditions and radiation from an unknown weapon or device.',
+  garron:'Extinct. The planet has no inhabitants today.'
+};
+let threatFilter='ALL', threatBuilt=false;
+function renderThreat(){
+  const box=$('#threatList'), chips=$('#threatChips');
+  if(!threatBuilt){
+    threatBuilt=true;
+    const levels=THREAT_ORDER.filter(l=>SPECIES.some(s=>s.threat===l));
+    chips.innerHTML=['ALL'].concat(levels).map(l=>'<button type="button" class="timeline-filter'+(l==='ALL'?' active':'')+'" data-th="'+l+'">'+l+'<small>'+(l==='ALL'?SPECIES.length:SPECIES.filter(s=>s.threat===l).length)+'</small></button>').join('');
+    chips.addEventListener('click',e=>{const b=e.target.closest('[data-th]');if(!b)return;threatFilter=b.dataset.th;$$('[data-th]',chips).forEach(x=>x.classList.toggle('active',x===b));renderThreat()});
+    const open=t=>{const r=t.closest('[data-id]');const sp=r&&byId(r.dataset.id);if(sp)openDossier(sp)};
+    box.addEventListener('click',e=>open(e.target));
+    box.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(e.target)}});
+  }
+  const list=SPECIES.filter(s=>threatFilter==='ALL'||s.threat===threatFilter)
+    .sort((a,b)=>THREAT_ORDER.indexOf(a.threat)-THREAT_ORDER.indexOf(b.threat)||a.name.localeCompare(b.name));
+  box.innerHTML=list.map(s=>{const n=THREAT_METER[s.threat]||0;
+    return '<article class="threat-row t-'+esc(String(s.threat).toLowerCase())+'" tabindex="0" role="button" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
+      '<img src="'+s.image+'" alt=""><div class="threat-main"><b>'+esc(s.name)+'</b><small>'+esc(s.cls)+'</small></div>'+
+      '<p>'+esc(THREAT_NOTE[s.id]||s.desc)+'</p>'+
+      '<div class="threat-rating"><span class="threat-badge">'+esc(s.threat)+'</span>'+
+      (n?'<span class="threat-meter" aria-hidden="true">'+[1,2,3,4,5].map(i=>'<i'+(i<=n?' class="on"':'')+'></i>').join('')+'</span>':'')+'</div></article>';
+  }).join('');
+  if(mode==='threat')el.count.textContent=list.length+' ASSESSMENTS';
+}
+
+/* ---------- culture / technology / biology ---------- */
+const PROFILE_FIELDS={
+  culture:[['gov','GOVERNMENT'],['society','SOCIETY'],['comm','COMMUNICATION'],['humans','RELATIONS WITH HUMANITY'],['facts','NOTABLE FACTS']],
+  technology:[['flight','SPACEFLIGHT'],['military','MILITARY / WEAPONS'],['craft','SHIPS / TOOLS']],
+  biology:[['body','BODY FORM'],['habitat','HABITAT'],['sentience','SENTIENCE'],['lifespan','LIFESPAN'],['diet','DIET']]
+};
+/* Only facts found in the checked sources. A missing key renders as UNKNOWN. */
+const DEEP={
+  banu:{gov:`Banu Protectorate.`,humans:`Peaceful. Formal contact in 2438 led to the Interstellar Peace and Trade Accord that October.`,facts:`Banu-controlled space includes the Kins system.`,flight:`Spacefaring. A fugitive Banu ship was the first alien vessel Humans met.`,habitat:`Banu Protectorate.`,sentience:`Sapient.`},
+  xian:{gov:`Xi'an Empire, ruled by an Emperor. Emperor Kr.ē negotiated the 2789 treaty.`,humans:`Cold War from 2530. It ended unofficially with the 2789 Akari-Kr.ē Treaty and formally with the 2793 Perry Line Pact.`,facts:`An ancient civilization. In the first-contact standoff they captured 276 Gaia Planet Services crew and later freed foreman Charles Baxter as a goodwill gesture. They call the Kr'Thak enemies.`,flight:`Spacefaring and technologically advanced.`,military:`Held the Perry Line border and withdrew forces from it after the 2789 treaty.`,habitat:`Xi'an Empire.`,sentience:`Sapient.`},
+  tevarin:{gov:`Annexed by the UPE after the First Tevarin War. Corath'Thal led the Second War, and Deacon Messer II later ruled the Tevarin inside the UEE.`,society:`Surviving Tevarin are part of the UEE and are experiencing a cultural revival.`,humans:`Two wars (2541-2546 and 2603-2610), then integration into the UEE.`,facts:`After the Second War they abandoned their old culture and assimilated. Corath'Thal's remaining ships stripped their thermal shielding and dove into Jalan's atmosphere.`,flight:`Spacefaring.`,military:`Fielded a fleet that the UEE destroyed in the Second Tevarin War.`,body:`Bipedal.`,habitat:`Jalan (Elysium IV), formerly Kaleeth.`,sentience:`Sapient.`},
+  vanduul:{gov:`Clan-based.`,humans:`Hostile. Attempts at diplomacy have failed.`,facts:`Nomadic clans. Their raid on Dell Township (Armitage, Orion III) on 9 August 2681 was first contact.`,flight:`Spacefaring. In 2712 thousands of ships entered Orion through a previously unknown jump point.`,military:`Raiders and invaders who forced the UEE out of Orion in 2712.`,craft:`Kingship (accompanied the 2712 invasion fleet).`,sentience:`Sapient.`},
+  hadesian:{society:`An interplanetary civilization spread across the Hades system.`,humans:`No contact. They were extinct long before Humans arrived.`,facts:`Current research dates their civil war to roughly 300,000 years ago. Decades of study have not produced a complete picture of them.`,flight:`Interplanetary spaceflight.`,military:`Hades IV is split into two halves, which suggests a planet-destroying weapon. The archive does not confirm it caused their collapse.`,body:`Roundish, with a bulky central body, many thin appendages and a pair of long arms. This is a recent theory, and older renderings differ.`,habitat:`Hades system.`,sentience:`Sapient (extinct).`},
+  garron:{society:`A developing, non-spacefaring civilization, the first of its kind Humanity found.`,humans:`The Messer regime terraformed the planet and wiped the species out. Restoration revived plant life but no creatures.`,facts:`The atrocity led to the Fair Chance Act and later inspired the Synthworld project.`,flight:`Not spacefaring.`,habitat:`Garron II, which had a varied biosphere.`,sentience:`Sapient (developing, extinct).`},
+  phare:{humans:`Observed from a safe distance. Observation Station Kobold monitors the planet Etos.`,facts:`Documented in the Osiris System guide.`,flight:`Not spacefaring.`,body:`Primate, vaguely Human-like.`,habitat:`Etos, Osiris system.`,sentience:`Not confirmed. Biologists think it may have the potential to develop higher thinking.`},
+  quasi:{facts:`Project reconstruction associated with ancient ruins. No sourced lore.`},
+  kins:{facts:`Project reconstruction. Kins II itself is a canon location in the Banu-controlled Kins system.`,habitat:`Kins II (location only).`},
+  orm:{society:`Civilization dated to around 2840.`,humans:`Discovered in 2811 by Patek Coen.`,habitat:`Northern polar region of Xis.`,sentience:`Sapient, classed as developing.`},
+  'genesis-ocean':{society:`Ocean-dwelling cephalopod civilization with rival factions.`,humans:`Protected. The Fair Chance Act forbids all UEE interference.`,facts:`Factions have begun moving onto land, causing violent clashes with the avian-reptoids. Scientists debate letting the conflict run its course.`,body:`Cephalopod-like.`,habitat:`Genesis II oceans.`,sentience:`Sapient.`},
+  'genesis-land':{society:`One of the planet's best-documented civilizations.`,humans:`Protected. The Fair Chance Act forbids all UEE interference.`,facts:`Locked in deadly clashes with the ocean-dwelling cephalopods. Scientists debate letting the conflict run its course.`,body:`Avian-reptoid.`,habitat:`Genesis II landmasses.`,sentience:`Sapient.`},
+  osoians:{society:`Live in villages of free-standing dwellings.`,comm:`Flashes of color made by chameleon cells in the skin of their foreheads.`,humans:`Protected under the Fair Chance Act. A permanent UEE garrison near the jump point keeps outsiders away, and scientists study them only under approved conditions.`,facts:`Called the most developed primitive species the UEE has met. Amateur explorer Errol Navis discovered the system in 2861 and named it after his daughter.`,flight:`Not spacefaring. Described as a primitive species.`,military:`Use tools and weapons.`,craft:`Tools, weapons and villages.`,body:`Multi-limbed.`,habitat:`Oso II, a lush high-gravity planet.`,sentience:`Sapient (developing).`},
+  krthak:{humans:`No contact. UEE knowledge comes mostly from the Xi'an, who call them enemies.`,facts:`The Senate has begun debating whether to attempt contact. Xi'an-Kr'Thak relations are linked to the later Spirit Wars.`,flight:`Spacefaring.`,habitat:`Beyond Xi'an territory (location approximate).`,sentience:`Sapient.`}
+};
+let profileFilter='ALL', profileBuilt=false;
+function renderProfile(m){
+  const chips=$('#profileChips'), grid=$('#profileGrid');
+  if(!profileBuilt){
+    profileBuilt=true;
+    chips.innerHTML=['ALL','CONFIRMED','PROTECTED','EXTINCT','UNCONTACTED','SPECULATIVE'].map(f=>'<button type="button" class="timeline-filter'+(f==='ALL'?' active':'')+'" data-pf="'+f+'">'+f+'<small>'+(f==='ALL'?SPECIES.length:SPECIES.filter(s=>s.status===f).length)+'</small></button>').join('');
+    chips.addEventListener('click',e=>{const b=e.target.closest('[data-pf]');if(!b)return;profileFilter=b.dataset.pf;$$('[data-pf]',chips).forEach(x=>x.classList.toggle('active',x===b));renderProfile(mode)});
+    grid.addEventListener('click',e=>{const h=e.target.closest('[data-id]');const sp=h&&byId(h.dataset.id);if(sp)openDossier(sp)});
+  }
+  const fields=PROFILE_FIELDS[m]; if(!fields)return;
+  const list=SPECIES.filter(s=>profileFilter==='ALL'||s.status===profileFilter);
+  grid.innerHTML=list.map(s=>{
+    const d=DEEP[s.id]||{}, known=fields.filter(f=>d[f[0]]).length;
+    return '<article class="profile-card"><button type="button" class="profile-head" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
+      '<img src="'+s.image+'" alt=""><span class="profile-title"><b>'+esc(s.name)+'</b><small>'+esc(s.cls)+'</small></span>'+
+      '<span class="profile-known'+(known?'':' none')+'">'+known+'/'+fields.length+' KNOWN</span></button><dl>'+
+      fields.map(f=>'<div><dt>'+f[1]+'</dt><dd>'+(d[f[0]]?esc(d[f[0]]):'<span class="unknown">UNKNOWN</span>')+'</dd></div>').join('')+'</dl></article>';
+  }).join('');
+  el.count.textContent=list.length+' PROFILES';
+}
+
+/* ---------- archive logs ---------- */
+const V='VERIFIED', C='CONFLICTING', U='UNVERIFIED', P='SPECULATIVE';
+const SP_CHECK={banu:V,xian:V,tevarin:V,vanduul:V,hadesian:C,garron:V,phare:V,orm:V,'genesis-ocean':V,'genesis-land':V,osoians:V,krthak:V,quasi:P,kins:P};
+const SP_NOTE={
+  hadesian:'Sources differ on the year of the first Human survey.',
+  orm:'Single source: community wiki. Check against RSI Galactapedia.',
+  phare:'Community wiki source. Sentience is not stated.',
+  tevarin:'Second war dates checked. The 2541 first-contact detail comes from the earlier build.',
+  'genesis-ocean':'The number of sapient species is not confirmed, so the archive says "several".',
+  'genesis-land':'The number of sapient species is not confirmed, so the archive says "several".',
+  quasi:'No source found in the RSI or community-wiki checks.',
+  kins:'Kins II is a canon location. The species is a project reconstruction.',
+  krthak:'Debate transcript; the source gives opinions, not settled facts.'
+};
+const EV_CHECK={2438.1:V,2438.8:V,2515:V,2530:V,2531:C,2541:U,2544:V,2546:V,2603:V,2610:V,2647:U,2681:V,2712:V,2789:V,2792:V,2793:V,2795:V,2800:V,2811:V,2861:V,2872:U,9990.1:V,9990.2:V,9990.3:V,9998.1:P,9998.2:P};
+const EV_NOTE={
+  2531:'Sources differ on the year of the first Human survey.',
+  2541:'Carried over from the earlier build. Not rechecked.',
+  2544:'Year checked. The exact day is not confirmed.',
+  2610:'The end year is checked. The Squadron 42 detail is not.',
+  2647:'Carried over from the earlier build. Not rechecked.',
+  2872:'The Garron guide says Synthworld was inspired by Garron nearly a century later. The year is not confirmed.'
+};
+const SYS_CHECK={sol:U,kins:U,krthak:U};
+const SYS_NOTE={sol:'Reference origin. Not checked.',kins:'The species at this location is a project reconstruction.',krthak:'Location is approximate.',stanton:'No official danger rating exists in the source. The archive rating is an estimate.',pyro:'No official danger rating exists in the source. The archive rating is an estimate.',nyx:'No official danger rating exists in the source. The archive rating is an estimate.'};
+const CHECK_CLASS={VERIFIED:'ok',CONFLICTING:'warn',UNVERIFIED:'unv',SPECULATIVE:'spec'};
+const REVISIONS=[
+  ['BUILD 8','Fact-check pass against RSI Galactapedia, the Star Citizen Wiki and Wikipedia. Wikipedia carries almost no in-universe lore.'],
+  ['BUILD 8','ORM reclassified from speculative to canon (Xis, discovered 2811 by Patek Coen).'],
+  ['BUILD 8','Akari-Kr.ē Treaty location corrected to Tohil III. It was listed under La\'uo.'],
+  ['BUILD 8','Genesis II "at least five species" replaced with "several". The count is not confirmed.'],
+  ['BUILD 8','Hades survey year flagged as conflicting between sources.'],
+  ['BUILD 8','Garron II dating refined: the April 2792 broadcast revealed the loss of the species.'],
+  ['BUILD 8','Added the Perry Line Pact (2793) and the Battle of Orion detail (February 2712).'],
+  ['BUILD 8','Quasi and Kins II remain speculative: no source found.'],
+  ['BUILD 9','Starmap: added the five Star Citizen 1.0 systems (Stanton, Pyro, Nyx, Castra, Terra) plus Tayac and Oya.'],
+  ['BUILD 9','Starmap: added UEE control and danger layers, jump-point links and nearby-species ranges.'],
+  ['BUILD 9','No PTU 1.0 or 1.0 release date has been announced. Sources only list the five planned systems.'],
+  ['BUILD 9','Hades corrected to unclaimed: the UEE withdrew protection in 2541 and is not in control.']
+];
+let logKind='ALL', logCheck='ALL', logsBuilt=false;
+function logRecords(){
+  const rows=[];
+  SPECIES.forEach(s=>rows.push({kind:'SPECIES',title:s.name+(s.id.indexOf('genesis')===0?' ('+(s.id==='genesis-ocean'?'CEPHALOPOD':'AVIAN-REPTOID')+')':''),year:s.contact,
+    lore:s.loreStatus,check:SP_CHECK[s.id]||U,note:SP_NOTE[s.id]||'',source:s.source,url:s.sourceUrl,id:s.id}));
+  EVENTS.slice().sort((a,b)=>a.sort-b.sort).forEach(e=>rows.push({kind:'EVENT',title:e.title,year:e.date,lore:e.lore,
+    check:EV_CHECK[e.sort]||U,note:EV_NOTE[e.sort]||'',source:e.source,url:e.url}));
+  SYSTEMS.forEach(s=>{const sp=byId(s.species[0]);rows.push({kind:'LOCATION',title:s.name,year:'—',lore:s.cls==='speculative'?'PROJECT SPECULATIVE':'CIG CANON',
+    check:SYS_CHECK[s.id]||V,note:(SYS_NOTE[s.id]?SYS_NOTE[s.id]+' ':'')+'Map position is illustrative.',source:s.src||(sp?sp.source:'Reference origin'),url:s.url||(sp?sp.sourceUrl:'')})});
+  return rows;
+}
+function renderLogs(){
+  const all=logRecords();
+  if(!logsBuilt){
+    logsBuilt=true;
+    $('#logKindChips').innerHTML=['ALL','SPECIES','EVENT','LOCATION'].map(k=>'<button type="button" class="timeline-filter'+(k==='ALL'?' active':'')+'" data-lk="'+k+'">'+k+'<small>'+(k==='ALL'?all.length:all.filter(r=>r.kind===k).length)+'</small></button>').join('');
+    $('#logCheckChips').innerHTML=['ALL','VERIFIED','CONFLICTING','UNVERIFIED','SPECULATIVE'].map(k=>'<button type="button" class="timeline-lore-filter'+(k==='ALL'?' active':'')+'" data-lc="'+k+'">'+(k==='ALL'?'ALL CHECKS':k)+'</button>').join('');
+    $('#logKindChips').addEventListener('click',e=>{const b=e.target.closest('[data-lk]');if(!b)return;logKind=b.dataset.lk;$$('[data-lk]').forEach(x=>x.classList.toggle('active',x===b));renderLogs()});
+    $('#logCheckChips').addEventListener('click',e=>{const b=e.target.closest('[data-lc]');if(!b)return;logCheck=b.dataset.lc;$$('[data-lc]').forEach(x=>x.classList.toggle('active',x===b));renderLogs()});
+    $('#logRev').innerHTML='<h4>REVISION LOG // 23 OCT 2026</h4><ul>'+REVISIONS.map(r=>'<li><b>'+esc(r[0])+'</b><span>'+esc(r[1])+'</span></li>').join('')+'</ul>';
+    $('#logTable').addEventListener('click',e=>{const a=e.target.closest('[data-id]');if(!a)return;e.preventDefault();const sp=byId(a.dataset.id);if(sp)openDossier(sp)});
+  }
+  const count=k=>all.filter(r=>r.check===k).length;
+  $('#logSummary').innerHTML=[['TOTAL RECORDS',all.length,''],['VERIFIED',count(V),'var(--green)'],['CONFLICTING',count(C),'var(--sand)'],['UNVERIFIED',count(U),'var(--violet)'],['SPECULATIVE',count(P),'var(--amber)']]
+    .map(c=>'<div style="'+(c[2]?'--c:'+c[2]:'')+'"><small>'+c[0]+'</small><b>'+c[1]+'</b></div>').join('');
+  const list=all.filter(r=>(logKind==='ALL'||r.kind===logKind)&&(logCheck==='ALL'||r.check===logCheck));
+  $('#logTable').innerHTML='<div class="log-head"><span>TYPE</span><span>RECORD</span><span>YEAR</span><span>CANON</span><span>CHECK</span><span>SOURCE</span></div>'+
+    list.map(r=>'<div class="log-row"><span class="log-kind">'+r.kind+'</span><div class="log-main"><b>'+(r.id?'<a href="#" data-id="'+esc(r.id)+'" style="color:inherit;text-decoration:none">'+esc(r.title)+'</a>':esc(r.title))+'</b>'+(r.note?'<small>'+esc(r.note)+'</small>':'')+'</div>'+
+      '<span class="log-year">'+esc(r.year)+'</span><span class="log-badge '+(r.lore==='CIG CANON'?'canon':'proj')+'">'+esc(r.lore)+'</span>'+
+      '<span class="log-badge '+CHECK_CLASS[r.check]+'">'+r.check+'</span>'+
+      (r.url?'<a class="log-src" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.source)+' ↗</a>':'<span class="log-src">'+esc(r.source)+'</span>')+'</div>').join('');
+  if(mode==='logs')el.count.textContent=list.length+' RECORDS';
+}
+
+/* ---------- start ---------- */
+buildLanding(); setupRail(); renderCards();
+})();
+</script>
+
+<script>
+(function(){var M={en:"Buy me a coffee",hr:"Kupi mi kavu",de:"Spendier mir einen Kaffee",pl:"Postaw mi kawę",fr:"Offre-moi un café",es:"Invítame a un café"},L="en";
+try{var n=(navigator.language||"en").slice(0,2).toLowerCase();if(M[n])L=n;if(n==="bs"||n==="sr")L="hr";var st=localStorage.getItem("scbp-lang");if(st&&M[st])L=st}catch(e){}
+var a=document.getElementById("siteCoffee");a.querySelector("span").textContent=M[L];a.title=M[L];a.setAttribute("aria-label",M[L]);})();
 </script>
 </body>
 </html>
