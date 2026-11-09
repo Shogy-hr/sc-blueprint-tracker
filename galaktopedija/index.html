@@ -248,7 +248,7 @@ a.timeline-source:hover{color:#ffd59d;text-decoration:underline}
 .log-main b{display:block;font-size:12px;line-height:1.4;letter-spacing:.8px}
 .log-main small{display:block;margin-top:3px;color:#7399a8;font:10px/1.5 var(--font-ui)}
 .log-year{color:#f1b15d;font:700 11px var(--font-mono)}
-.log-badge{--bc:#27708b;padding:4px 7px;border:1px solid var(--bc);color:var(--bc);font:700 8px var(--font-ui);letter-spacing:1.2px;text-align:center;white-space:nowrap}
+.log-badge{--bc:#27708b;padding:4px 7px;border:1px solid var(--bc);color:var(--bc);font:700 8px var(--font-ui);letter-spacing:1.2px;text-align:center;white-space:normal;line-height:1.3;overflow-wrap:anywhere}
 .log-badge.canon{--bc:#6fcdea}.log-badge.proj{--bc:var(--amber)}
 .log-badge.ok{--bc:var(--green)}.log-badge.warn{--bc:var(--sand)}.log-badge.unv{--bc:var(--violet)}.log-badge.spec{--bc:var(--amber)}
 .log-src{color:#f0b261;font:700 9px/1.4 var(--font-ui);letter-spacing:.6px;overflow-wrap:anywhere}
@@ -432,6 +432,13 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
 @media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
 .sitebar .bmc{padding:6px 14px 6px 9px}
 #archive .shell{padding-top:58px}
+.gflags{position:fixed;z-index:100001;top:max(10px,env(safe-area-inset-top,0px));right:max(10px,env(safe-area-inset-right,0px));display:flex;gap:5px}
+.gflags button{border:1px solid #3999ba;background:#02111cdd;border-radius:4px;padding:4px;line-height:0;cursor:pointer}
+.gflags button.on{border-color:#ffb54e;background:#2a2410ee}
+.gflags button:hover{border-color:#78e9ff}
+.gflags svg{width:24px;height:16px;display:block;border-radius:2px}.gflags svg.fhr{width:32px}
+@media (max-width:700px){.gflags{gap:3px}.gflags button{padding:3px}.gflags svg{width:22px;height:15px}.gflags svg.fhr{width:30px}}
+
 @media (max-width:700px){.landing .mobile-brand{top:max(54px,calc(env(safe-area-inset-top,0px) + 46px))}.sitebar .bmc{padding:6px 8px}.sitebar .bmc span{display:none}.sitebar .home{width:34px;height:34px}}
 </style>
 </head>
@@ -440,6 +447,7 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
   <a class="home" href="../" id="siteHome" title="ShoGy-HR · Star Citizen tools" aria-label="ShoGy-HR · Star Citizen tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></a>
   <a class="bmc" id="siteCoffee" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Buy me a coffee</span></a>
 </nav>
+<div class="gflags" id="gflags" role="group" aria-label="Language"></div>
 
 <section id="landing" class="landing" aria-label="Galactopedia landing">
   <div class="landing-stage">
@@ -607,9 +615,26 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
   </article>
 </div>
 
+<script src="i18n.js"></script>
 <script>
 (function(){
 'use strict';
+/* ---------- i18n (shared language with the rest of shogy-hr.com) ---------- */
+const LANGS=['en','hr','de','pl','fr','es'];
+let LANG='en';
+try{const nl=(navigator.languages||[navigator.language||'en']).map(x=>String(x).slice(0,2).toLowerCase()).find(x=>LANGS.includes(x)||x==='bs'||x==='sr');if(nl)LANG=(nl==='bs'||nl==='sr')?'hr':nl}catch(e){}
+try{const st=localStorage.getItem('scbp-lang');if(st&&LANGS.includes(st))LANG=st}catch(e){}
+const LI=LANGS.indexOf(LANG), DICT=window.GAL_I18N||{};
+const t=v=>{if(LI<=0||v==null)return v;const r=DICT[v];return r&&r[LI-1]?r[LI-1]:v};
+const tr=t;
+function translateStatic(root){
+  if(LI<=0)return;
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentNode&&/^(SCRIPT|STYLE)$/.test(n.parentNode.nodeName)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+  const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
+  nodes.forEach(n=>{const raw=n.nodeValue,x0=raw.trim();if(!x0)return;const x=t(x0);if(x!==x0)n.nodeValue=raw.replace(x0,x)});
+  root.querySelectorAll('[aria-label],[placeholder],[title]').forEach(e=>['aria-label','placeholder','title'].forEach(a=>{const v=e.getAttribute(a);if(v){const x=t(v);if(x!==v)e.setAttribute(a,x)}}));
+}
+document.documentElement.lang=LANG;
 
 const SPECIES=[{"id": "banu", "name": "BANU", "image": "img/banu.webp", "status": "CONFIRMED", "contact": "2438", "homeworld": "Banu Protectorate", "threat": "LOW", "cls": "SPACEFARING CIVILIZATION", "desc": "The Banu are a spacefaring civilization and Humanity's first confirmed extrasolar contact. In 2438 explorer Vernon Tar met a fugitive Banu ship in the Davien system, and the Interstellar Peace and Trade Accord was signed that October.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Banu-Human First Contact", "sourceUrl": "https://www.starcitizen.tools/First_Contact"}, {"id": "xian", "name": "XI'AN", "image": "img/xian.webp", "status": "CONFIRMED", "contact": "2530", "homeworld": "Xi'an Empire", "threat": "GUARDED", "cls": "SPACEFARING CIVILIZATION", "desc": "The Xi'an are an ancient, technologically advanced spacefaring civilization. Contact began in 2530 when Gaia Planet Services tried to terraform a world the Xi'an claim, starting a long Cold War. Senator Akari and Emperor Kr.ē's 2789 treaty ended it unofficially, and the Perry Line Pact formalized the end in 2793.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Xi'an Cold War", "sourceUrl": "https://starcitizen.tools/Xi%27An_Cold_War"}, {"id": "tevarin", "name": "TEVARIN", "image": "img/tevarin.webp", "status": "CONFIRMED", "contact": "2541", "homeworld": "Jalan (Elysium IV) / formerly Kaleeth", "threat": "HISTORICAL", "cls": "UEE-INTEGRATED CIVILIZATION", "desc": "The Tevarin are a bipedal spacefaring people. First contact in 2541 led to the First Tevarin War (2541-2546) and the annexation of their systems. Warlord Corath'Thal's bid to retake Jalan (Elysium IV) began the Second Tevarin War (2603-2610). Surviving Tevarin then joined the UEE and are experiencing a cultural revival.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Tevarin", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin/"}, {"id": "vanduul", "name": "VANDUUL", "image": "img/vanduul.webp", "status": "CONFIRMED", "contact": "2681", "homeworld": "Unknown / nomadic Clans", "threat": "SEVERE", "cls": "HOSTILE SPACEFARING CIVILIZATION", "desc": "The Vanduul are a hostile, clan-based spacefaring civilization. Humanity first encountered them in 2681 when a Vanduul Clan raided Dell Township on Armitage (Orion III). Attempts to establish diplomatic relations have failed.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Vanduul", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/VpGPp92gdO-vanduul"}, {"id": "quasi", "name": "QUASI", "image": "img/quasi.webp", "status": "SPECULATIVE", "contact": "Ancient ruins", "homeworld": "Unverified", "threat": "UNKNOWN", "cls": "XENOARCHAEOLOGY / RECONSTRUCTION", "desc": "Project-created xenological reconstruction. No Quasi civilization matching this dossier turned up in the RSI or community-wiki sources checked, so the entry stays flagged as speculative.", "loreStatus": "PROJECT SPECULATIVE", "source": "Project reconstruction — not confirmed CIG canon", "sourceUrl": ""}, {"id": "hadesian", "name": "HADESIAN", "image": "img/hadesian.webp", "status": "EXTINCT", "contact": "2531 (jump point found 2515)", "homeworld": "Hades system", "threat": "NONE", "cls": "EXTINCT SPACEFARING CIVILIZATION", "desc": "The Hadesians were an indigenous interplanetary civilization in the Hades system. Ruins of their worlds show they died out long before Humans arrived. The prevailing theory is that they destroyed themselves in a civil war roughly 300,000 years ago. Sources differ on the exact year of the first human survey.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Hadesians; Star Citizen Wiki — Galactic Guide: Hades System", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/RPPxMqdkpE-hadesians"}, {"id": "garron", "name": "GARRON II", "image": "img/garron.webp", "status": "EXTINCT", "contact": "Known before 2792", "homeworld": "Garron II", "threat": "NONE", "cls": "EXTINCT INDIGENOUS SAPIENTS", "desc": "Garron II held a developing sapient species, the first non-spacefaring civilization Humanity found. Imperator Linton Messer XI's regime terraformed the planet despite this, and a Tide broadcast in April 2792 showed that the species was gone. The footage helped ignite the revolution that ended the Messer Era.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Galactic Guide: Garron System", "sourceUrl": "https://starcitizen.tools/Comm-Link:Galactic_Guide_-_Garron_System"}, {"id": "phare", "name": "PHARE'S APE", "image": "img/phare.webp", "status": "CONFIRMED", "contact": "Recorded fauna", "homeworld": "Etos / Osiris system", "threat": "WILDLIFE", "cls": "XENOBIOLOGY / POSSIBLY SENTIENT", "desc": "Phare's Ape is a canon alien animal: a vaguely Human-like primate that biologists think may have the potential to develop higher thinking. It is included in this archive as a xenobiology entry, not as a confirmed spacefaring civilization.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Phare's Ape (cites the Osiris System guide)", "sourceUrl": "https://starcitizen.tools/Phare%27s_Ape"}, {"id": "orm", "name": "ORM", "image": "img/orm.webp", "status": "CONFIRMED", "contact": "2811", "homeworld": "Xis (northern polar region)", "threat": "UNKNOWN", "cls": "DEVELOPING SENTIENT SPECIES", "desc": "The Orms are a sentient species living in the northern polar region of Xis. Patek Coen discovered them in 2811. They are classed as a developing civilization, with their culture dated to around 2840.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Orm (community wiki; check against RSI Galactapedia)", "sourceUrl": "https://starcitizen.tools/Orm"}, {"id": "genesis-ocean", "name": "GENESIS II", "image": "img/genesis-ocean.webp", "status": "PROTECTED", "contact": "Observed civilization", "homeworld": "Genesis II", "threat": "PROTECTED", "cls": "CEPHALOPOD SAPIENTS", "desc": "Genesis II is home to several sapient species. An ocean-dwelling cephalopod civilization whose factions have begun incursions onto land and violent clashes with the avian-reptoids. The Fair Chance Act forbids all outside interference, and scientists debate whether to let the conflict run its course.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Genesis II; RSI Galactapedia — The Inhabitants of Genesis II", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"id": "genesis-land", "name": "GENESIS II", "image": "img/genesis-land.webp", "status": "PROTECTED", "contact": "Observed civilization", "homeworld": "Genesis II", "threat": "PROTECTED", "cls": "AVIAN-REPTOID SAPIENTS", "desc": "Genesis II is home to several sapient species. A land-dwelling avian-reptoid civilization and one of the planet's best-documented, locked in deadly clashes with the ocean-dwelling cephalopods. The Fair Chance Act forbids all outside interference, and scientists debate whether to let the conflict run its course.", "loreStatus": "CIG CANON", "source": "Star Citizen Wiki — Genesis II; RSI Galactapedia — The Inhabitants of Genesis II", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"id": "osoians", "name": "OSOIANS", "image": "img/osoians.webp", "status": "PROTECTED", "contact": "2861 system discovery", "homeworld": "Oso II", "threat": "PROTECTED", "cls": "DEVELOPING CIVILIZATION", "desc": "The Osoians are a developing civilization indigenous to Oso II. They use tools and weapons, live in villages, and communicate in part through flashes of color produced by the skin of their foreheads. They are protected under the Fair Chance Act.", "loreStatus": "CIG CANON", "source": "RSI Galactapedia — Osoians", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/article/0NwpEy2LNM-osoians"}, {"id": "kins", "name": "KINS II", "image": "img/kins.webp", "status": "SPECULATIVE", "contact": "Unconfirmed", "homeworld": "Kins II / Banu Protectorate", "threat": "UNKNOWN", "cls": "PROJECT RECONSTRUCTION", "desc": "Kins II is a canon location in the Banu-controlled Kins system, but the lost-civilization interpretation in this portrait is a project reconstruction and not a confirmed species dossier. It stays flagged as speculative.", "loreStatus": "PROJECT SPECULATIVE", "source": "Canon location; project-created species interpretation", "sourceUrl": "https://robertsspaceindustries.com/galactapedia/"}, {"id": "krthak", "name": "KR'THAK", "image": "img/krthak.webp", "status": "UNCONTACTED", "contact": "No direct Human contact", "homeworld": "Kr'Thak space beyond Xi'an territory", "threat": "UNKNOWN", "cls": "SPACEFARING / UNCONTACTED", "desc": "The Kr'Thak are a sentient spacefaring civilization known to Humanity largely through Xi'an information. The UEE has debated attempting contact, but direct Human knowledge remains extremely limited because of the Xi'an-Kr'Thak conflict and the geography of their territory.", "loreStatus": "CIG CANON", "source": "RSI lore — Kr'Thak / Krēl system", "sourceUrl": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak"}];
 const EVENTS=[{"sort": 2438.1, "date": "2438", "type": "CONTACT", "title": "First Human Contact with the Banu", "species": ["banu"], "desc": "On 12 June 2438 explorer Vernon Tar met a fugitive Banu ship in the Davien system and reported his position. A UNE delegation followed, and the Banu Protectorate made formal contact two weeks later.", "lore": "CIG CANON", "source": "RSI — 2438: Hello / Jerry: A History Half-Remembered", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12690-2438-Hello"}, {"sort": 2438.8, "date": "2438", "type": "DIPLOMACY", "title": "Banu-Human Interstellar Peace and Trade Accord", "species": ["banu"], "desc": "The UNE and Banu Protectorate signed the first interspecies treaty in Human history, formalizing peaceful relations and trade.", "lore": "CIG CANON", "source": "RSI Galactapedia — Banu-Human Interstellar Peace Treaty", "url": "https://robertsspaceindustries.com/galactapedia/article/RzPoJ1aP4z-banu-human-interstellar-peace-treaty"}, {"sort": 2515, "date": "2515", "type": "DISCOVERY", "title": "Hidden Jump Point to Hades Detected", "species": ["hadesian"], "desc": "The crew of the Merry Crow detected an undocumented jump point in Nexus. Its destination would remain uncharted by Humanity for years.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2530, "date": "2530", "type": "CONTACT", "title": "Humanity Discovers the Xi'an Empire", "species": ["xian"], "desc": "Gaia Planet Services attempted to terraform a world the Xi'an claim. The incident marked first contact and began the prolonged tension known as the Xi'an-Human Cold War.", "lore": "CIG CANON", "source": "Star Citizen Wiki — First Contact / Xi'an Cold War", "url": "https://www.starcitizen.tools/First_Contact"}, {"sort": 2531, "date": "2531", "type": "DISCOVERY", "title": "Hades System Surveyed — Extinct Civilization Confirmed", "species": ["hadesian"], "desc": "Dynamo Corporation navigated the Hades jump point. Surveys revealed ruins of a previously unknown spacefaring civilization devastated by ancient interplanetary war. Sources differ on the exact year of this first survey.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2541, "date": "2541", "type": "CONFLICT", "title": "Tevarin First Contact and the First Tevarin War", "species": ["tevarin"], "desc": "Dr. Kellar Lench discovered the Tevarin system. Hostilities followed first contact, beginning the First Tevarin War.", "lore": "CIG CANON", "source": "RSI Galactapedia — Tevarin", "url": "https://robertsspaceindustries.com/galactapedia/article/V8gJv3nB3X-tevarin/"}, {"sort": 2544, "date": "2544", "type": "CONFLICT", "title": "Battle of Idris IV", "species": ["tevarin"], "desc": "A major UPE victory on 1 October 2544 turned the tide of the First Tevarin War and elevated Ivar Messer's public profile.", "lore": "CIG CANON", "source": "RSI Galactapedia — Battle of Idris IV", "url": "https://robertsspaceindustries.com/galactapedia/article/ReJajXKelk-battle-of-idris-iv"}, {"sort": 2546, "date": "2546", "type": "CONFLICT", "title": "First Tevarin War Ends", "species": ["tevarin"], "desc": "The Tevarin were defeated and their systems, including Elysium, were annexed by the UPE. The conflict's aftermath reshaped Human and Tevarin history.", "lore": "CIG CANON", "source": "RSI — Writer's Guide: Part Two / Elysium System", "url": "https://robertsspaceindustries.com/galactapedia/article/RvlQrKZxPO-elysium-system"}, {"sort": 2603, "date": "2603", "type": "CONFLICT", "title": "Second Tevarin War Begins", "species": ["tevarin"], "desc": "Warlord Corath'Thal launched a campaign to reclaim the Tevarin home system, igniting the Second Tevarin War.", "lore": "CIG CANON", "source": "RSI Galactapedia — Elysium System", "url": "https://robertsspaceindustries.com/galactapedia/article/RvlQrKZxPO-elysium-system"}, {"sort": 2610, "date": "2610", "type": "CONFLICT", "title": "Second Tevarin War Ends", "species": ["tevarin"], "desc": "Squadron 42 helped disable Corath'Thal's fleet during the final campaign, allowing UEE forces to destroy the Tevarin armada and end the war.", "lore": "CIG CANON", "source": "RSI Galactapedia — Squadron 42", "url": "https://robertsspaceindustries.com/galactapedia/article/RWoeByvQap-squadron-42"}, {"sort": 2647, "date": "2647", "type": "RESEARCH", "title": "Hadesian Extinction Theory Published", "species": ["hadesian"], "desc": "Astravin University researchers published a major theory that an interplanetary war caused the extinction of the Hadesian civilization.", "lore": "CIG CANON", "source": "RSI Galactapedia — Hades System", "url": "https://robertsspaceindustries.com/galactapedia/article/RAX3mnkp8v-hades-system"}, {"sort": 2681, "date": "2681", "type": "CONTACT", "title": "First Contact with the Vanduul", "species": ["vanduul"], "desc": "A Vanduul raiding party destroyed Dell Township on Armitage (Orion III), becoming Humanity's first confirmed encounter with the Vanduul.", "lore": "CIG CANON", "source": "RSI Galactapedia — Armitage (Orion III)", "url": "https://robertsspaceindustries.com/galactapedia/article/RL6KLK4ylo-armitage-orion-iii"}, {"sort": 2712, "date": "2712", "type": "CONFLICT", "title": "Battle of Orion: System Lost to the Vanduul", "species": ["vanduul"], "desc": "On 16-18 February 2712 thousands of Vanduul and a Kingship entered Orion from a previously unknown jump point. The UEE lost, ceded the system, and suffered its first major defeat in decades.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Battle of Orion", "url": "https://starcitizen.tools/Battle_of_Orion"}, {"sort": 2789, "date": "2789", "type": "DIPLOMACY", "title": "Akari-Kr.ē Treaty — Xi'an-Human Cold War Thaws", "species": ["xian"], "desc": "Senator Terrence Akari and Xi'an Emperor Kr.ē negotiated the treaty in secret on Tohil III. It brought the unofficial end of the Xi'an-Human Cold War and pulled Xi'an forces back from the Perry Line.", "lore": "CIG CANON", "source": "Galactapedia (via star-citizen.wiki) — Akari-Kr.ē Treaty", "url": "https://api.star-citizen.wiki/galactapedia/bE3rKrl5z6"}, {"sort": 2792, "date": "2792", "type": "EXTINCTION", "title": "Massacre of Garron II", "species": ["garron"], "desc": "Terraforming under Imperator Linton Messer XI eliminated a developing sapient species. A Tide broadcast in April 2792 showed the result, and the public turned against the Messers, leading to the Anti-Messer Revolution.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Galactic Guide: Garron System", "url": "https://starcitizen.tools/Comm-Link:Galactic_Guide_-_Garron_System"}, {"sort": 2795, "date": "2795", "type": "PROTECTION", "title": "Fair Chance Act Ratified", "species": ["garron", "osoians", "genesis-ocean", "genesis-land"], "desc": "Following the Garron II atrocity, the UEE enacted protections intended to prevent Humanity from destroying developing indigenous civilizations through terraforming or interference.", "lore": "CIG CANON", "source": "RSI — Writer's Guide: Part Two", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12956-Writers-Guide-Part-Two"}, {"sort": 2800, "date": "2800", "type": "ARCHIVE", "title": "The Ark Established as a Repository of Knowledge", "species": [], "desc": "Construction of the Ark finished in orbit around Tayac I. Imperator Marshall Leon's idea was a neutral meeting place for all species and a repository of galactic knowledge, and its archivists curate the Galactapedia and Starmap.", "lore": "CIG CANON", "source": "Star Citizen Wiki — The Ark (station)", "url": "https://starcitizen.tools/The_Ark_%28station%29"}, {"sort": 2811, "date": "2811", "type": "DISCOVERY", "title": "Orms Discovered on Xis", "species": ["orm"], "desc": "Patek Coen discovered the Orms, a developing sentient species living in the northern polar region of Xis.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Orm", "url": "https://starcitizen.tools/Orm"}, {"sort": 2861, "date": "2861", "type": "DISCOVERY", "title": "Oso System Discovered — Osoian Civilization Protected", "species": ["osoians"], "desc": "Human surveys of the Oso system revealed the developing civilization on Oso II. The system was subsequently protected under the Fair Chance Act.", "lore": "CIG CANON", "source": "RSI Galactapedia — Osoians / Oso I", "url": "https://robertsspaceindustries.com/galactapedia/article/0NwpEy2LNM-osoians"}, {"sort": 2872, "date": "2872", "type": "PROTECTION", "title": "Project Archangel Announced", "species": [], "desc": "The UEE announced Synthworld / Project Archangel as an attempt to support expansion without repeating the destructive consequences of terraforming inhabited worlds.", "lore": "CIG CANON", "source": "RSI Galactapedia — Project Archangel", "url": "https://robertsspaceindustries.com/galactapedia/article/RLMmAnr4gj-project-archangel"}, {"sort": 9990.1, "date": "DATE UNRECORDED", "type": "BIOLOGY", "title": "Phare's Ape Added to the Biological Archive", "species": ["phare"], "desc": "Phare's Ape is a canon fauna entry in the Galactapedia animal archive. The current project database does not attach a verified historical discovery date to this entry.", "lore": "CIG CANON", "source": "RSI Galactapedia — Animals Archive", "url": "https://robertsspaceindustries.com/galactapedia/category/animals"}, {"sort": 9990.2, "date": "DATE UNRECORDED", "type": "OBSERVATION", "title": "Genesis II Sapient Civilizations Under Observation", "species": ["genesis-ocean", "genesis-land"], "desc": "Several sapient species live on Genesis II. Land-dwelling avian-reptoids and ocean-dwelling cephalopods are clashing, while the Fair Chance Act prohibits intervention.", "lore": "CIG CANON", "source": "RSI Galactapedia — The Inhabitants of Genesis II", "url": "https://robertsspaceindustries.com/galactapedia/article/01dWXY9edJ-inhabitants-of-genesis-ii"}, {"sort": 9990.3, "date": "DATE CLASSIFIED", "type": "INTELLIGENCE", "title": "Kr'Thak Intelligence File", "species": ["krthak"], "desc": "Humanity has no direct confirmed contact with the Kr'Thak. UEE knowledge is largely indirect and constrained by Xi'an relations and territorial geography.", "lore": "CIG CANON", "source": "RSI Lore — Kr'Thak", "url": "https://robertsspaceindustries.com/en/comm-link/spectrum-dispatch/12886-News-Update-The-KrThak"}, {"sort": 9998.1, "date": "DATE UNKNOWN", "type": "PROJECT", "title": "Quasi Ancient-Ruins Record", "species": ["quasi"], "desc": "Speculative project entry associated with ancient ruins. No CIG-canon chronology is asserted for this record.", "lore": "PROJECT SPECULATIVE", "source": "Galactopedia Project Archive", "url": ""}, {"sort": 9998.2, "date": "UNCONFIRMED", "type": "PROJECT", "title": "Kins II Intelligence Record", "species": ["kins"], "desc": "Unconfirmed project intelligence record. This entry is intentionally separated from CIG canon until reliable lore exists.", "lore": "PROJECT SPECULATIVE", "source": "Galactopedia Project Archive", "url": ""}, {"sort": 2793, "date": "2793", "type": "DIPLOMACY", "title": "Perry Line Pact Ends the Xi'an-Human Cold War", "species": ["xian"], "desc": "The Perry Line Pact, signed on 5 July 2793, formally closed the Cold War that the 2789 Akari-Kr.ē Treaty had ended unofficially.", "lore": "CIG CANON", "source": "Star Citizen Wiki — Xi'an Cold War", "url": "https://starcitizen.tools/Xi%27An_Cold_War"}];
@@ -630,9 +655,9 @@ let filter='ALL', mode='species', lastFocus=null;
 /* ---------- landing ---------- */
 function buildLanding(){
   el.landingCards.innerHTML=SPECIES.map(s=>
-    '<button type="button" class="landing-card" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
+    '<button type="button" class="landing-card" data-id="'+esc(s.id)+'" aria-label="'+esc(t('Open dossier')+': '+s.name)+'">'+
     '<img src="'+s.image+'" alt=""><span class="landing-name">'+esc(s.name)+'</span>'+
-    '<span class="landing-meta">'+esc(s.contact||s.status)+'</span></button>').join('');
+    '<span class="landing-meta">'+esc(t(s.contact||s.status))+'</span></button>').join('');
   el.landingCards.addEventListener('click',e=>{
     const b=e.target.closest('.landing-card'); if(!b)return;
     const sp=byId(b.dataset.id); if(!sp)return;
@@ -667,10 +692,10 @@ function setupRail(){
 function renderCards(){
   const list=filter==='ALL'?SPECIES:SPECIES.filter(s=>s.status===filter);
   el.cards.innerHTML=list.map((s,i)=>
-    '<article class="card" tabindex="0" role="button" data-id="'+esc(s.id)+'" data-lore="'+esc(s.loreStatus||'')+'" aria-label="Open '+esc(s.name)+' dossier">'+
-    '<img src="'+s.image+'" alt=""><span class="tag">'+String(i+1).padStart(2,'0')+' // '+esc(s.status)+'</span><span class="bio"></span>'+
-    '<div class="name">'+esc(s.name)+'</div><div class="meta">'+esc(s.cls)+' // '+esc(s.contact)+'</div></article>').join('');
-  if(mode==='species')el.count.textContent=list.length+' ENTRIES';
+    '<article class="card" tabindex="0" role="button" data-id="'+esc(s.id)+'" data-lore="'+esc(s.loreStatus||'')+'" aria-label="'+esc(t('Open dossier')+': '+s.name)+'">'+
+    '<img src="'+s.image+'" alt=""><span class="tag">'+String(i+1).padStart(2,'0')+' // '+esc(t(s.status))+'</span><span class="bio"></span>'+
+    '<div class="name">'+esc(s.name)+'</div><div class="meta">'+esc(t(s.cls))+' // '+esc(t(s.contact))+'</div></article>').join('');
+  if(mode==='species')el.count.textContent=list.length+' '+t('ENTRIES');
 }
 function openFromCard(t){const c=t.closest('.card');if(!c)return;const sp=byId(c.dataset.id);if(sp)openDossier(sp)}
 el.cards.addEventListener('click',e=>openFromCard(e.target));
@@ -681,17 +706,17 @@ function openDossier(sp){
   lastFocus=document.activeElement;
   const img=$('#detailImage'); img.src=sp.image; img.alt=sp.name;
   $('#detailName').textContent=sp.name;
-  $('#detailStatus').textContent=sp.status;
-  $('#detailContact').textContent=sp.contact;
-  $('#detailHome').textContent=sp.homeworld;
-  $('#detailThreat').textContent=sp.threat;
-  $('#detailClass').textContent=sp.cls;
-  $('#detailDesc').textContent=sp.desc;
+  $('#detailStatus').textContent=t(sp.status);
+  $('#detailContact').textContent=t(sp.contact);
+  $('#detailHome').textContent=t(sp.homeworld);
+  $('#detailThreat').textContent=t(sp.threat);
+  $('#detailClass').textContent=t(sp.cls);
+  $('#detailDesc').textContent=t(sp.desc);
   const badge=$('#detailLoreBadge');
-  badge.textContent=(sp.loreStatus||'ARCHIVE STATUS')+' // '+sp.status;
+  badge.textContent=t(sp.loreStatus||'ARCHIVE STATUS')+' // '+t(sp.status);
   badge.className='lore-badge '+String(sp.status||'').toLowerCase();
-  $('#detailSource').innerHTML='<b>SOURCE CLASSIFICATION:</b> '+esc(sp.source||'Archive source unavailable')+
-    (sp.sourceUrl?' &nbsp;·&nbsp; <a href="'+esc(sp.sourceUrl)+'" target="_blank" rel="noopener">OPEN RSI SOURCE ↗</a>':'');
+  $('#detailSource').innerHTML='<b>'+esc(t('SOURCE CLASSIFICATION:'))+'</b> '+esc(sp.source||t('Archive source unavailable'))+
+    (sp.sourceUrl?' &nbsp;·&nbsp; <a href="'+esc(sp.sourceUrl)+'" target="_blank" rel="noopener">'+esc(t('OPEN RSI SOURCE'))+' ↗</a>':'');
   el.modal.classList.add('open'); el.modal.setAttribute('aria-hidden','false');
   $('.detail').scrollTop=0; $('#close').focus();
 }
@@ -716,18 +741,18 @@ function setMode(m){
   el.logs.hidden=m!=='logs';
   const stub=!['species','timeline','starmap','threat','logs'].includes(m)&&!PROFILE_FIELDS[m];
   el.stub.hidden=!stub;
-  el.title.textContent=MODE_TITLES[m]||'';
+  el.title.textContent=t(MODE_TITLES[m]||'');
   $$('.nav[data-filter]').forEach(b=>b.classList.toggle('active',m==='species'&&b.dataset.filter===filter));
   $$('.mode').forEach(b=>b.classList.toggle('active',b.dataset.mode===m));
   if(m==='species'){renderCards()}
   else if(m==='timeline'){renderTimeline()}
-  else if(m==='starmap'){buildStarmap();el.count.textContent=SYSTEMS.length+' SYSTEMS'}
+  else if(m==='starmap'){buildStarmap();el.count.textContent=SYSTEMS.length+' '+t('SYSTEMS')}
   else if(m==='threat'){renderThreat()}
   else if(PROFILE_FIELDS[m]){renderProfile(m)}
   else if(m==='logs'){renderLogs()}
   else{
-    el.stub.innerHTML='<div><h3>'+esc(MODE_TITLES[m])+'</h3><p>THIS MODULE IS NOT AVAILABLE IN THE CURRENT ARCHIVE BUILD. ALL ARCHIVE MODULES ARE ONLINE.</p></div>';
-    el.count.textContent='OFFLINE';
+    el.stub.innerHTML='<div><h3>'+esc(t(MODE_TITLES[m]))+'</h3><p>'+esc(t('THIS MODULE IS NOT AVAILABLE IN THE CURRENT ARCHIVE BUILD. ALL ARCHIVE MODULES ARE ONLINE.'))+'</p></div>';
+    el.count.textContent=t('OFFLINE');
   }
   window.scrollTo({top:0});
 }
@@ -745,8 +770,8 @@ function buildTimeline(){
   if(timelineBuilt)return; timelineBuilt=true;
   const types=['ALL','CONTACT','DISCOVERY','CONFLICT','DIPLOMACY','EXTINCTION','PROTECTION','RESEARCH','ARCHIVE','BIOLOGY','OBSERVATION','INTELLIGENCE','PROJECT'];
   const tb=$('#timelineTypeFilters'), lb=$('#timelineLoreFilters');
-  tb.innerHTML=types.map(t=>'<button type="button" class="timeline-filter'+(t==='ALL'?' active':'')+'" data-t="'+t+'">'+t+'</button>').join('');
-  lb.innerHTML=['ALL','CIG CANON','PROJECT SPECULATIVE'].map(t=>'<button type="button" class="timeline-lore-filter'+(t==='ALL'?' active':'')+'" data-l="'+t+'">'+(t==='ALL'?'ALL RECORDS':t)+'</button>').join('');
+  tb.innerHTML=types.map(t=>'<button type="button" class="timeline-filter'+(t==='ALL'?' active':'')+'" data-t="'+t+'">'+esc(tr(t))+'</button>').join('');
+  lb.innerHTML=['ALL','CIG CANON','PROJECT SPECULATIVE'].map(t=>'<button type="button" class="timeline-lore-filter'+(t==='ALL'?' active':'')+'" data-l="'+t+'">'+esc(tr(t==='ALL'?'ALL RECORDS':t))+'</button>').join('');
   tb.addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(!b)return;typeFilter=b.dataset.t;$$('[data-t]',tb).forEach(x=>x.classList.toggle('active',x===b));renderTimeline()});
   lb.addEventListener('click',e=>{const b=e.target.closest('[data-l]');if(!b)return;loreFilter=b.dataset.l;$$('[data-l]',lb).forEach(x=>x.classList.toggle('active',x===b));renderTimeline()});
   $('#timelineWrap').addEventListener('click',e=>{const b=e.target.closest('[data-species-id]');if(!b)return;const sp=byId(b.dataset.speciesId);if(sp)openDossier(sp)});
@@ -756,17 +781,17 @@ function renderTimeline(){
   const list=EVENTS.filter(e=>(typeFilter==='ALL'||e.type===typeFilter)&&(loreFilter==='ALL'||e.lore===loreFilter)).sort((a,b)=>a.sort-b.sort);
   $('#timelineWrap').innerHTML=list.map(e=>{
     const sp=e.species.map(byId).filter(Boolean), project=e.lore==='PROJECT SPECULATIVE';
-    return '<article class="timeline-event '+(project?'project':'canon')+'"><div class="timeline-year">'+esc(e.date)+'</div><span class="timeline-dot"></span><div class="timeline-card">'+
-      '<div class="timeline-card-top"><span class="timeline-type">'+esc(e.type)+'</span><span class="timeline-canon">'+esc(e.lore)+'</span></div>'+
-      '<h3 class="timeline-title">'+esc(e.title)+'</h3><p class="timeline-desc">'+esc(e.desc)+'</p>'+
-      (sp.length?'<div class="timeline-species">'+sp.map(s=>'<button type="button" data-species-id="'+esc(s.id)+'">'+esc(s.name)+' // OPEN DOSSIER</button>').join('')+'</div>':'')+
-      (e.url?'<a class="timeline-source" href="'+esc(e.url)+'" target="_blank" rel="noopener">SOURCE // '+esc(e.source)+' ↗</a>':'<span class="timeline-source">SOURCE // '+esc(e.source)+'</span>')+
+    return '<article class="timeline-event '+(project?'project':'canon')+'"><div class="timeline-year">'+esc(t(e.date))+'</div><span class="timeline-dot"></span><div class="timeline-card">'+
+      '<div class="timeline-card-top"><span class="timeline-type">'+esc(t(e.type))+'</span><span class="timeline-canon">'+esc(t(e.lore))+'</span></div>'+
+      '<h3 class="timeline-title">'+esc(t(e.title))+'</h3><p class="timeline-desc">'+esc(t(e.desc))+'</p>'+
+      (sp.length?'<div class="timeline-species">'+sp.map(s=>'<button type="button" data-species-id="'+esc(s.id)+'">'+esc(s.name)+' // '+esc(t('OPEN DOSSIER'))+'</button>').join('')+'</div>':'')+
+      (e.url?'<a class="timeline-source" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t('SOURCE'))+' // '+esc(e.source)+' ↗</a>':'<span class="timeline-source">'+esc(t('SOURCE'))+' // '+esc(e.source)+'</span>')+
       '</div></article>';
   }).join('');
   $('#timelineEmpty').classList.toggle('show',!list.length);
-  $('#timelineCanonCount').textContent=EVENTS.filter(e=>e.lore==='CIG CANON').length+' RECORDS';
-  $('#timelineProjectCount').textContent=EVENTS.filter(e=>e.lore==='PROJECT SPECULATIVE').length+' RECORDS';
-  if(mode==='timeline')el.count.textContent=list.length+' EVENTS';
+  $('#timelineCanonCount').textContent=EVENTS.filter(e=>e.lore==='CIG CANON').length+' '+t('RECORDS');
+  $('#timelineProjectCount').textContent=EVENTS.filter(e=>e.lore==='PROJECT SPECULATIVE').length+' '+t('RECORDS');
+  if(mode==='timeline')el.count.textContent=list.length+' '+t('EVENTS');
 }
 
 /* ---------- starmap ---------- */
@@ -882,20 +907,20 @@ function nearby(id){
   return out;
 }
 function levelBox(label,val,why,colors,fallback){
-  return '<div><small>'+label+'</small>'+(val?'<b style="color:'+colors[val]+'">'+val+'</b>':'<b class="unknown">UNKNOWN</b>')+
-    '<span>'+esc(why||fallback)+'</span></div>';
+  return '<div><small>'+esc(t(label))+'</small>'+(val?'<b style="color:'+colors[val]+'">'+esc(t(val))+'</b>':'<b class="unknown">'+esc(t('UNKNOWN'))+'</b>')+
+    '<span>'+esc(t(why||fallback))+'</span></div>';
 }
 function buildStarmap(){
   if(mapBuilt)return; mapBuilt=true;
   $('#mapNodes').innerHTML=SYSTEMS.map(s=>
-    '<button type="button" class="map-node'+(s.x>720?' flip':'')+(s.v1?' v1':'')+'" data-sys="'+s.id+'" style="left:'+(s.x/10)+'%;top:'+(s.y/6.4)+'%" aria-label="'+esc(s.name)+', '+esc(s.region)+'"><i></i><span>'+esc(s.name)+'</span></button>').join('');
+    '<button type="button" class="map-node'+(s.x>720?' flip':'')+(s.v1?' v1':'')+'" data-sys="'+s.id+'" style="left:'+(s.x/10)+'%;top:'+(s.y/6.4)+'%" aria-label="'+esc(s.name)+', '+esc(t(s.region))+'"><i></i><span>'+esc(t(s.name))+'</span></button>').join('');
   $('#mapLinks').innerHTML=EDGES.map(e=>{const a=sysById(e[0]),b=sysById(e[1]);
     return '<line data-a="'+a.id+'" data-b="'+b.id+'" class="'+(a.v1&&b.v1?'v1':'')+'" x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'"/>'}).join('');
-  $('#mapLayers').innerHTML=Object.keys(LAYERS).map(k=>'<button type="button" class="timeline-filter" data-layer="'+k+'">'+LAYERS[k].label+'</button>').join('')+
-    '<button type="button" id="mapOnly10" class="timeline-filter">1.0 SYSTEMS ONLY</button>';
-  $('#mapIndex').innerHTML=SYSTEMS.map(s=>'<button type="button" data-sys="'+s.id+'">'+esc(s.name)+'</button>').join('');
+  $('#mapLayers').innerHTML=Object.keys(LAYERS).map(k=>'<button type="button" class="timeline-filter" data-layer="'+k+'">'+esc(t(LAYERS[k].label))+'</button>').join('')+
+    '<button type="button" id="mapOnly10" class="timeline-filter">'+esc(t('1.0 SYSTEMS ONLY'))+'</button>';
+  $('#mapIndex').innerHTML=SYSTEMS.map(s=>'<button type="button" data-sys="'+s.id+'">'+esc(t(s.name))+'</button>').join('');
   const unplaced=SPECIES.filter(sp=>!SYSTEMS.some(s=>s.species.includes(sp.id)));
-  $('#mapUnplaced').innerHTML=unplaced.length?'<span>LOCATION NOT PLACED ON THIS MAP //</span>'+unplaced.map(sp=>'<button type="button" data-open="'+esc(sp.id)+'">'+esc(sp.name)+'</button>').join(''):'';
+  $('#mapUnplaced').innerHTML=unplaced.length?'<span>'+esc(t('LOCATION NOT PLACED ON THIS MAP //'))+'</span>'+unplaced.map(sp=>'<button type="button" data-open="'+esc(sp.id)+'">'+esc(sp.name)+'</button>').join(''):'';
   el.starmap.addEventListener('click',e=>{
     const n=e.target.closest('[data-sys]'); if(n){selectSystem(n.dataset.sys);return}
     const l=e.target.closest('[data-layer]'); if(l){mapLayer=l.dataset.layer;mapFilter='ALL';paintMap();return}
@@ -914,7 +939,7 @@ function paintMap(){
     n.classList.toggle('unk',val==='UNKNOWN');
     n.classList.toggle('dim',(mapFilter!=='ALL'&&val!==mapFilter&&val!=='CORE')||(only10&&!s.v1));
   });
-  $('#mapLegend').innerHTML=L.values.map(k=>'<button type="button" class="legend-chip'+(k==='UNKNOWN'?' is-unknown':'')+'" data-val="'+k+'" aria-pressed="'+(mapFilter===k)+'" style="--c:'+(L.color[k]||'var(--slate)')+'"><i></i>'+k+'</button>').join('');
+  $('#mapLegend').innerHTML=L.values.map(k=>'<button type="button" class="legend-chip'+(k==='UNKNOWN'?' is-unknown':'')+'" data-val="'+k+'" aria-pressed="'+(mapFilter===k)+'" style="--c:'+(L.color[k]||'var(--slate)')+'"><i></i>'+esc(t(k))+'</button>').join('');
   $$('[data-layer]').forEach(b=>b.classList.toggle('active',b.dataset.layer===mapLayer));
   $('#mapOnly10').classList.toggle('active',only10);
 }
@@ -926,22 +951,22 @@ function selectSystem(id){
   const rel=EVENTS.filter(e=>e.species.some(x=>s.species.includes(x))).sort((a,b)=>a.sort-b.sort);
   const near=nearby(id);
   const nearHtml=[1,2].map(d=>{const names=Object.keys(near[d]);
-    return '<li><b>'+d+' JUMP'+(d>1?'S':'')+'</b><span>'+(names.length?names.map(k=>esc(k)+' ('+esc(near[d][k].join(', '))+')').join('; '):'None among the mapped systems.')+'</span></li>'}).join('');
-  const jumps=s.jumps.length?'<div class="map-jumps">'+s.jumps.map(j=>{const t=sysById(j);return t?'<button type="button" data-sys="'+t.id+'">'+esc(t.name)+'</button>':'<span>'+esc(j)+'</span>'}).join('')+'</div>':'<small><span class="unknown">UNKNOWN</span> No jump points found in the checked sources.</small>';
+    return '<li><b>'+esc(t(d>1?'2 JUMPS':'1 JUMP'))+'</b><span>'+(names.length?names.map(k=>esc(k)+' ('+esc(near[d][k].join(', '))+')').join('; '):esc(t('None among the mapped systems.')))+'</span></li>'}).join('');
+  const jumps=s.jumps.length?'<div class="map-jumps">'+s.jumps.map(j=>{const t=sysById(j);return t?'<button type="button" data-sys="'+t.id+'">'+esc(t.name)+'</button>':'<span>'+esc(j)+'</span>'}).join('')+'</div>':'<small><span class="unknown">'+esc(t('UNKNOWN'))+'</span> '+esc(t('No jump points found in the checked sources.'))+'</small>';
   $('#mapInfo').innerHTML=
-    '<div class="kicker">'+esc(s.region)+'</div><h3>'+esc(s.name)+'</h3>'+
-    '<div class="lore-badge '+s.cls+'">'+esc(s.tag)+'</div>'+
-    (s.v1?'<div class="map-v1">'+esc(s.v1)+'</div>':'')+
-    '<p>'+esc(s.note)+'</p>'+
+    '<div class="kicker">'+esc(t(s.region))+'</div><h3>'+esc(t(s.name))+'</h3>'+
+    '<div class="lore-badge '+s.cls+'">'+esc(t(s.tag))+'</div>'+
+    (s.v1?'<div class="map-v1">'+esc(t(s.v1))+'</div>':'')+
+    '<p>'+esc(t(s.note))+'</p>'+
     '<div class="map-stats">'+levelBox('UEE CONTROL',s.control,s.cwhy,CONTROL_COLOR,'No checked source states who controls it.')+
       levelBox('DANGER (ARCHIVE ESTIMATE)',s.danger,s.dwhy,DANGER_COLOR,'No rating or hazard list in the checked sources.')+'</div>'+
-    '<h4>ALIEN SPECIES NEARBY</h4><ul class="map-near">'+nearHtml+'</ul>'+
-    '<small>COUNTS ONLY JUMP POINTS BETWEEN SYSTEMS DRAWN ON THIS MAP.</small>'+
-    '<h4>JUMP POINTS</h4>'+jumps+
-    (sp.length?'<h4>DOSSIERS</h4><div class="map-species">'+sp.map(x=>'<button type="button" data-open="'+esc(x.id)+'">OPEN DOSSIER // '+esc(x.name)+' · '+esc(x.cls)+'</button>').join('')+'</div>':'')+
-    '<h4>RELATED TIMELINE RECORDS</h4>'+
-    (rel.length?'<ul>'+rel.slice(0,5).map(e=>'<li><b>'+esc(e.date)+'</b><span>'+esc(e.title)+'</span></li>').join('')+'</ul>'+(rel.length>5?'<small>+'+(rel.length-5)+' more in the timeline module</small>':''):'<small>NO DATED RECORDS FOR THIS LOCATION.</small>')+
-    (s.url?'<a class="map-src" href="'+esc(s.url)+'" target="_blank" rel="noopener">SOURCE // '+esc(s.src)+' ↗</a>':'<span class="map-src">SOURCE // '+esc(s.src)+'</span>');
+    '<h4>'+esc(t('ALIEN SPECIES NEARBY'))+'</h4><ul class="map-near">'+nearHtml+'</ul>'+
+    '<small>'+esc(t('COUNTS ONLY JUMP POINTS BETWEEN SYSTEMS DRAWN ON THIS MAP.'))+'</small>'+
+    '<h4>'+esc(t('JUMP POINTS'))+'</h4>'+jumps+
+    (sp.length?'<h4>'+esc(t('DOSSIERS'))+'</h4><div class="map-species">'+sp.map(x=>'<button type="button" data-open="'+esc(x.id)+'">'+esc(t('OPEN DOSSIER'))+' // '+esc(x.name)+' · '+esc(t(x.cls))+'</button>').join('')+'</div>':'')+
+    '<h4>'+esc(t('RELATED TIMELINE RECORDS'))+'</h4>'+
+    (rel.length?'<ul>'+rel.slice(0,5).map(e=>'<li><b>'+esc(t(e.date))+'</b><span>'+esc(t(e.title))+'</span></li>').join('')+'</ul>'+(rel.length>5?'<small>+'+(rel.length-5)+' '+esc(t('more in the timeline module'))+'</small>':''):'<small>'+esc(t('NO DATED RECORDS FOR THIS LOCATION.'))+'</small>')+
+    (s.url?'<a class="map-src" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(t('SOURCE'))+' // '+esc(s.src)+' ↗</a>':'<span class="map-src">'+esc(t('SOURCE'))+' // '+esc(s.src)+'</span>');
 }
 
 /* ---------- threat assessment ---------- */
@@ -969,7 +994,7 @@ function renderThreat(){
   if(!threatBuilt){
     threatBuilt=true;
     const levels=THREAT_ORDER.filter(l=>SPECIES.some(s=>s.threat===l));
-    chips.innerHTML=['ALL'].concat(levels).map(l=>'<button type="button" class="timeline-filter'+(l==='ALL'?' active':'')+'" data-th="'+l+'">'+l+'<small>'+(l==='ALL'?SPECIES.length:SPECIES.filter(s=>s.threat===l).length)+'</small></button>').join('');
+    chips.innerHTML=['ALL'].concat(levels).map(l=>'<button type="button" class="timeline-filter'+(l==='ALL'?' active':'')+'" data-th="'+l+'">'+esc(t(l))+'<small>'+(l==='ALL'?SPECIES.length:SPECIES.filter(s=>s.threat===l).length)+'</small></button>').join('');
     chips.addEventListener('click',e=>{const b=e.target.closest('[data-th]');if(!b)return;threatFilter=b.dataset.th;$$('[data-th]',chips).forEach(x=>x.classList.toggle('active',x===b));renderThreat()});
     const open=t=>{const r=t.closest('[data-id]');const sp=r&&byId(r.dataset.id);if(sp)openDossier(sp)};
     box.addEventListener('click',e=>open(e.target));
@@ -978,13 +1003,13 @@ function renderThreat(){
   const list=SPECIES.filter(s=>threatFilter==='ALL'||s.threat===threatFilter)
     .sort((a,b)=>THREAT_ORDER.indexOf(a.threat)-THREAT_ORDER.indexOf(b.threat)||a.name.localeCompare(b.name));
   box.innerHTML=list.map(s=>{const n=THREAT_METER[s.threat]||0;
-    return '<article class="threat-row t-'+esc(String(s.threat).toLowerCase())+'" tabindex="0" role="button" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
-      '<img src="'+s.image+'" alt=""><div class="threat-main"><b>'+esc(s.name)+'</b><small>'+esc(s.cls)+'</small></div>'+
-      '<p>'+esc(THREAT_NOTE[s.id]||s.desc)+'</p>'+
-      '<div class="threat-rating"><span class="threat-badge">'+esc(s.threat)+'</span>'+
+    return '<article class="threat-row t-'+esc(String(s.threat).toLowerCase())+'" tabindex="0" role="button" data-id="'+esc(s.id)+'" aria-label="'+esc(t('Open dossier')+': '+s.name)+'">'+
+      '<img src="'+s.image+'" alt=""><div class="threat-main"><b>'+esc(s.name)+'</b><small>'+esc(t(s.cls))+'</small></div>'+
+      '<p>'+esc(t(THREAT_NOTE[s.id]||s.desc))+'</p>'+
+      '<div class="threat-rating"><span class="threat-badge">'+esc(t(s.threat))+'</span>'+
       (n?'<span class="threat-meter" aria-hidden="true">'+[1,2,3,4,5].map(i=>'<i'+(i<=n?' class="on"':'')+'></i>').join('')+'</span>':'')+'</div></article>';
   }).join('');
-  if(mode==='threat')el.count.textContent=list.length+' ASSESSMENTS';
+  if(mode==='threat')el.count.textContent=list.length+' '+t('ASSESSMENTS');
 }
 
 /* ---------- culture / technology / biology ---------- */
@@ -1015,7 +1040,7 @@ function renderProfile(m){
   const chips=$('#profileChips'), grid=$('#profileGrid');
   if(!profileBuilt){
     profileBuilt=true;
-    chips.innerHTML=['ALL','CONFIRMED','PROTECTED','EXTINCT','UNCONTACTED','SPECULATIVE'].map(f=>'<button type="button" class="timeline-filter'+(f==='ALL'?' active':'')+'" data-pf="'+f+'">'+f+'<small>'+(f==='ALL'?SPECIES.length:SPECIES.filter(s=>s.status===f).length)+'</small></button>').join('');
+    chips.innerHTML=['ALL','CONFIRMED','PROTECTED','EXTINCT','UNCONTACTED','SPECULATIVE'].map(f=>'<button type="button" class="timeline-filter'+(f==='ALL'?' active':'')+'" data-pf="'+f+'">'+esc(t(f))+'<small>'+(f==='ALL'?SPECIES.length:SPECIES.filter(s=>s.status===f).length)+'</small></button>').join('');
     chips.addEventListener('click',e=>{const b=e.target.closest('[data-pf]');if(!b)return;profileFilter=b.dataset.pf;$$('[data-pf]',chips).forEach(x=>x.classList.toggle('active',x===b));renderProfile(mode)});
     grid.addEventListener('click',e=>{const h=e.target.closest('[data-id]');const sp=h&&byId(h.dataset.id);if(sp)openDossier(sp)});
   }
@@ -1023,12 +1048,12 @@ function renderProfile(m){
   const list=SPECIES.filter(s=>profileFilter==='ALL'||s.status===profileFilter);
   grid.innerHTML=list.map(s=>{
     const d=DEEP[s.id]||{}, known=fields.filter(f=>d[f[0]]).length;
-    return '<article class="profile-card"><button type="button" class="profile-head" data-id="'+esc(s.id)+'" aria-label="Open '+esc(s.name)+' dossier">'+
-      '<img src="'+s.image+'" alt=""><span class="profile-title"><b>'+esc(s.name)+'</b><small>'+esc(s.cls)+'</small></span>'+
-      '<span class="profile-known'+(known?'':' none')+'">'+known+'/'+fields.length+' KNOWN</span></button><dl>'+
-      fields.map(f=>'<div><dt>'+f[1]+'</dt><dd>'+(d[f[0]]?esc(d[f[0]]):'<span class="unknown">UNKNOWN</span>')+'</dd></div>').join('')+'</dl></article>';
+    return '<article class="profile-card"><button type="button" class="profile-head" data-id="'+esc(s.id)+'" aria-label="'+esc(t('Open dossier')+': '+s.name)+'">'+
+      '<img src="'+s.image+'" alt=""><span class="profile-title"><b>'+esc(s.name)+'</b><small>'+esc(t(s.cls))+'</small></span>'+
+      '<span class="profile-known'+(known?'':' none')+'">'+known+'/'+fields.length+' '+esc(t('KNOWN'))+'</span></button><dl>'+
+      fields.map(f=>'<div><dt>'+esc(t(f[1]))+'</dt><dd>'+(d[f[0]]?esc(t(d[f[0]])):'<span class="unknown">'+esc(t('UNKNOWN'))+'</span>')+'</dd></div>').join('')+'</dl></article>';
   }).join('');
-  el.count.textContent=list.length+' PROFILES';
+  el.count.textContent=list.length+' '+t('PROFILES');
 }
 
 /* ---------- archive logs ---------- */
@@ -1074,46 +1099,64 @@ const REVISIONS=[
 let logKind='ALL', logCheck='ALL', logsBuilt=false;
 function logRecords(){
   const rows=[];
-  SPECIES.forEach(s=>rows.push({kind:'SPECIES',title:s.name+(s.id.indexOf('genesis')===0?' ('+(s.id==='genesis-ocean'?'CEPHALOPOD':'AVIAN-REPTOID')+')':''),year:s.contact,
+  SPECIES.forEach(s=>rows.push({kind:'SPECIES',title:s.name+(s.id.indexOf('genesis')===0?' ('+t(s.id==='genesis-ocean'?'CEPHALOPOD':'AVIAN-REPTOID')+')':''),year:s.contact,
     lore:s.loreStatus,check:SP_CHECK[s.id]||U,note:SP_NOTE[s.id]||'',source:s.source,url:s.sourceUrl,id:s.id}));
   EVENTS.slice().sort((a,b)=>a.sort-b.sort).forEach(e=>rows.push({kind:'EVENT',title:e.title,year:e.date,lore:e.lore,
     check:EV_CHECK[e.sort]||U,note:EV_NOTE[e.sort]||'',source:e.source,url:e.url}));
   SYSTEMS.forEach(s=>{const sp=byId(s.species[0]);rows.push({kind:'LOCATION',title:s.name,year:'—',lore:s.cls==='speculative'?'PROJECT SPECULATIVE':'CIG CANON',
-    check:SYS_CHECK[s.id]||V,note:(SYS_NOTE[s.id]?SYS_NOTE[s.id]+' ':'')+'Map position is illustrative.',source:s.src||(sp?sp.source:'Reference origin'),url:s.url||(sp?sp.sourceUrl:'')})});
+    check:SYS_CHECK[s.id]||V,note:(SYS_NOTE[s.id]?t(SYS_NOTE[s.id])+' ':'')+t('Map position is illustrative.'),source:s.src||(sp?sp.source:t('Reference origin')),url:s.url||(sp?sp.sourceUrl:'')})});
   return rows;
 }
 function renderLogs(){
   const all=logRecords();
   if(!logsBuilt){
     logsBuilt=true;
-    $('#logKindChips').innerHTML=['ALL','SPECIES','EVENT','LOCATION'].map(k=>'<button type="button" class="timeline-filter'+(k==='ALL'?' active':'')+'" data-lk="'+k+'">'+k+'<small>'+(k==='ALL'?all.length:all.filter(r=>r.kind===k).length)+'</small></button>').join('');
-    $('#logCheckChips').innerHTML=['ALL','VERIFIED','CONFLICTING','UNVERIFIED','SPECULATIVE'].map(k=>'<button type="button" class="timeline-lore-filter'+(k==='ALL'?' active':'')+'" data-lc="'+k+'">'+(k==='ALL'?'ALL CHECKS':k)+'</button>').join('');
+    $('#logKindChips').innerHTML=['ALL','SPECIES','EVENT','LOCATION'].map(k=>'<button type="button" class="timeline-filter'+(k==='ALL'?' active':'')+'" data-lk="'+k+'">'+esc(t(k))+'<small>'+(k==='ALL'?all.length:all.filter(r=>r.kind===k).length)+'</small></button>').join('');
+    $('#logCheckChips').innerHTML=['ALL','VERIFIED','CONFLICTING','UNVERIFIED','SPECULATIVE'].map(k=>'<button type="button" class="timeline-lore-filter'+(k==='ALL'?' active':'')+'" data-lc="'+k+'">'+esc(t(k==='ALL'?'ALL CHECKS':k))+'</button>').join('');
     $('#logKindChips').addEventListener('click',e=>{const b=e.target.closest('[data-lk]');if(!b)return;logKind=b.dataset.lk;$$('[data-lk]').forEach(x=>x.classList.toggle('active',x===b));renderLogs()});
     $('#logCheckChips').addEventListener('click',e=>{const b=e.target.closest('[data-lc]');if(!b)return;logCheck=b.dataset.lc;$$('[data-lc]').forEach(x=>x.classList.toggle('active',x===b));renderLogs()});
-    $('#logRev').innerHTML='<h4>REVISION LOG // 23 OCT 2026</h4><ul>'+REVISIONS.map(r=>'<li><b>'+esc(r[0])+'</b><span>'+esc(r[1])+'</span></li>').join('')+'</ul>';
+    $('#logRev').innerHTML='<h4>'+esc(t('REVISION LOG // 23 OCT 2026'))+'</h4><ul>'+REVISIONS.map(r=>'<li><b>'+esc(r[0])+'</b><span>'+esc(t(r[1]))+'</span></li>').join('')+'</ul>';
     $('#logTable').addEventListener('click',e=>{const a=e.target.closest('[data-id]');if(!a)return;e.preventDefault();const sp=byId(a.dataset.id);if(sp)openDossier(sp)});
   }
   const count=k=>all.filter(r=>r.check===k).length;
   $('#logSummary').innerHTML=[['TOTAL RECORDS',all.length,''],['VERIFIED',count(V),'var(--green)'],['CONFLICTING',count(C),'var(--sand)'],['UNVERIFIED',count(U),'var(--violet)'],['SPECULATIVE',count(P),'var(--amber)']]
-    .map(c=>'<div style="'+(c[2]?'--c:'+c[2]:'')+'"><small>'+c[0]+'</small><b>'+c[1]+'</b></div>').join('');
+    .map(c=>'<div style="'+(c[2]?'--c:'+c[2]:'')+'"><small>'+esc(t(c[0]))+'</small><b>'+c[1]+'</b></div>').join('');
   const list=all.filter(r=>(logKind==='ALL'||r.kind===logKind)&&(logCheck==='ALL'||r.check===logCheck));
-  $('#logTable').innerHTML='<div class="log-head"><span>TYPE</span><span>RECORD</span><span>YEAR</span><span>CANON</span><span>CHECK</span><span>SOURCE</span></div>'+
-    list.map(r=>'<div class="log-row"><span class="log-kind">'+r.kind+'</span><div class="log-main"><b>'+(r.id?'<a href="#" data-id="'+esc(r.id)+'" style="color:inherit;text-decoration:none">'+esc(r.title)+'</a>':esc(r.title))+'</b>'+(r.note?'<small>'+esc(r.note)+'</small>':'')+'</div>'+
-      '<span class="log-year">'+esc(r.year)+'</span><span class="log-badge '+(r.lore==='CIG CANON'?'canon':'proj')+'">'+esc(r.lore)+'</span>'+
-      '<span class="log-badge '+CHECK_CLASS[r.check]+'">'+r.check+'</span>'+
-      (r.url?'<a class="log-src" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.source)+' ↗</a>':'<span class="log-src">'+esc(r.source)+'</span>')+'</div>').join('');
-  if(mode==='logs')el.count.textContent=list.length+' RECORDS';
+  $('#logTable').innerHTML='<div class="log-head">'+['TYPE','RECORD','YEAR','CANON','CHECK','SOURCE'].map(h=>'<span>'+esc(t(h))+'</span>').join('')+'</div>'+
+    list.map(r=>'<div class="log-row"><span class="log-kind">'+esc(t(r.kind))+'</span><div class="log-main"><b>'+(r.id?'<a href="#" data-id="'+esc(r.id)+'" style="color:inherit;text-decoration:none">'+esc(t(r.title))+'</a>':esc(t(r.title)))+'</b>'+(r.note?'<small>'+esc(t(r.note))+'</small>':'')+'</div>'+
+      '<span class="log-year">'+esc(t(r.year))+'</span><span class="log-badge '+(r.lore==='CIG CANON'?'canon':'proj')+'">'+esc(t(r.lore))+'</span>'+
+      '<span class="log-badge '+CHECK_CLASS[r.check]+'">'+esc(t(r.check))+'</span>'+
+      (r.url?'<a class="log-src" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(t(r.source))+' ↗</a>':'<span class="log-src">'+esc(t(r.source))+'</span>')+'</div>').join('');
+  if(mode==='logs')el.count.textContent=list.length+' '+t('RECORDS');
 }
 
 /* ---------- start ---------- */
-buildLanding(); setupRail(); renderCards();
+translateStatic(document.body); buildLanding(); setupRail(); renderCards();
 })();
 </script>
 
 <script>
-(function(){var M={en:"Buy me a coffee",hr:"Kupi mi kavu",de:"Spendier mir einen Kaffee",pl:"Postaw mi kawę",fr:"Offre-moi un café",es:"Invítame a un café"},L="en";
-try{var n=(navigator.language||"en").slice(0,2).toLowerCase();if(M[n])L=n;if(n==="bs"||n==="sr")L="hr";var st=localStorage.getItem("scbp-lang");if(st&&M[st])L=st}catch(e){}
-var a=document.getElementById("siteCoffee");a.querySelector("span").textContent=M[L];a.title=M[L];a.setAttribute("aria-label",M[L]);})();
+(function(){
+function T(k,...a){const r=TR[k];let s=r?(r[LI()]||r[0]):k;a.forEach((v,i)=>{s=s.split("{"+i+"}").join(v)});return s}
+const LOC=()=>LANGS[LI()][2];
+var FLAGS={
+ en:'<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>',
+ hr:'<svg class="fhr" viewBox="0 0 1200 600"><rect width="1200" height="200" fill="#FF0000"/><rect y="200" width="1200" height="200" fill="#FFFFFF"/><rect y="400" width="1200" height="200" fill="#171796"/><defs><clipPath id="hrsh"><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z"/></clipPath></defs><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z" fill="#fff"/><g clip-path="url(#hrsh)" fill="#FF0000"><path d="M475 170h50v50h-50zM575 170h50v50h-50zM675 170h50v50h-50zM525 220h50v50h-50zM625 220h50v50h-50zM475 270h50v50h-50zM575 270h50v50h-50zM675 270h50v50h-50zM525 320h50v50h-50zM625 320h50v50h-50zM475 370h50v50h-50zM575 370h50v50h-50zM675 370h50v50h-50z"/></g><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z" fill="none" stroke="#FF0000" stroke-width="7"/><g stroke="#FF0000" stroke-width="4" stroke-linejoin="round"><path d="M477 170V117L502 104L525 114V170Z" fill="#0093DD"/><path d="M525 170V108L550 94L575 106V170Z" fill="#0093DD"/><path d="M575 170V102L600 88L625 102V170Z" fill="#0093DD"/><path d="M625 170V106L650 94L675 108V170Z" fill="#0093DD"/><path d="M675 170V114L698 104L723 117V170Z" fill="#0093DD"/></g><path d="M501 121l3 7 7-3-4 7 7 3-7 2 2 7-6-4-5 6-1-7-7-1 6-4-4-6 7 2z" fill="#F7DB17"/><path d="M490 150a13 9 0 0 0 24 0a12 6 0 0 1-24 0z" fill="#fff"/><path d="M528 122h44v11h-44zM528 146h44v11h-44z" fill="#FF0000"/><g fill="#F7DB17"><circle cx="590" cy="118" r="7"/><circle cx="610" cy="118" r="7"/><circle cx="600" cy="145" r="7"/></g><path d="M636 154l4-14 8-6 4-10 4 2-2 8 8 3 6 9-3 8h-4l-3-7-8 1-5 9z" fill="#F7DB17"/><path d="M675 128h48v9h-48zM675 152h48v9h-48z" fill="#fff"/><path d="M675 137h48v15h-48z" fill="#FF0000"/><path d="M699 110l2 5 5-1-3 4 3 4-5-1-2 5-2-5-5 1 3-4-3-4 5 1z" fill="#F7DB17"/></svg>',
+ de:'<svg viewBox="0 0 60 40"><rect width="60" height="13.4" fill="#000"/><rect y="13.3" width="60" height="13.4" fill="#DD0000"/><rect y="26.6" width="60" height="13.4" fill="#FFCE00"/></svg>',
+ pl:'<svg viewBox="0 0 60 40"><rect width="60" height="20" fill="#fff"/><rect y="20" width="60" height="20" fill="#DC143C"/></svg>',
+ fr:'<svg viewBox="0 0 60 40"><rect width="20" height="40" fill="#0055A4"/><rect x="20" width="20" height="40" fill="#fff"/><rect x="40" width="20" height="40" fill="#EF4135"/></svg>',
+ es:'<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg>'};
+
+var LS=["en","hr","de","pl","fr","es"],NM={en:"English",hr:"Hrvatski",de:"Deutsch",pl:"Polski",fr:"Français",es:"Español"};
+var M={en:"Buy me a coffee",hr:"Kupi mi kavu",de:"Spendier mir einen Kaffee",pl:"Postaw mi kawę",fr:"Offre-moi un café",es:"Invítame a un café"};
+var H={en:"ShoGy-HR · Star Citizen tools",hr:"ShoGy-HR · Star Citizen alati",de:"ShoGy-HR · Star Citizen Tools",pl:"ShoGy-HR · Narzędzia Star Citizen",fr:"ShoGy-HR · Outils Star Citizen",es:"ShoGy-HR · Herramientas de Star Citizen"};
+var L=document.documentElement.lang||"en";if(!M[L])L="en";
+var a=document.getElementById("siteCoffee");a.querySelector("span").textContent=M[L];a.title=M[L];a.setAttribute("aria-label",M[L]);
+var h=document.getElementById("siteHome");h.title=H[L];h.setAttribute("aria-label",H[L]);
+var g=document.getElementById("gflags");
+g.innerHTML=LS.map(function(l){return '<button type="button" data-l="'+l+'" class="'+(l===L?"on":"")+'" title="'+NM[l]+'" aria-label="'+NM[l]+'">'+FLAGS[l]+'</button>'}).join("");
+g.addEventListener("click",function(e){var b=e.target.closest("button[data-l]");if(!b||b.getAttribute("data-l")===L)return;try{localStorage.setItem("scbp-lang",b.getAttribute("data-l"))}catch(x){}location.reload()});
+})();
 </script>
 </body>
 </html>
