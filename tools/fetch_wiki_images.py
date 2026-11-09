@@ -12,7 +12,7 @@ UA = os.environ.get('WIKI_UA', 'SC-Blueprint-Tracker/1.0 (fan site; github.com) 
 RECHECK_DAYS = 14
 WDIR = os.path.join(HERE, 'wiki'); IDIR = os.path.join(WDIR, 'img'); IDX = os.path.join(WDIR, 'index.json')
 BAD_IMG = re.compile(r'(logo|icon|placeholder|no[_ -]?image|\.svg$)', re.I)
-BAD_MAT = re.compile(r'(logo|placeholder|no[_ -]?image)', re.I)   # materials may use the official commodity icons
+BAD_MAT = re.compile(r'(logo|placeholder|no[_ -]?image|cargo[_ -])', re.I)   # generic cargo-box pictures are not the material
 
 
 def mat_titles(m):
@@ -22,6 +22,31 @@ def mat_titles(m):
     for x in t:
         if x not in out: out.append(x)
     return out
+
+
+def icon_titles(m):
+    base = re.sub(r'\s*\((ore|raw|mineral)\)\s*$', '', m, flags=re.I).strip()
+    out = []
+    for b in (base, base.replace('Aluminum', 'Aluminium')):
+        for t in (f'File:{b} icon.svg', f'File:{b} icon.png'):
+            if t not in out: out.append(t)
+    return out
+
+
+def query_files(titles):
+    """File:... title -> (file title, rendered thumbnail url) via imageinfo"""
+    d = get_json({'action': 'query', 'format': 'json', 'formatversion': '2', 'redirects': '1', 'prop': 'imageinfo',
+                  'iiprop': 'url', 'iiurlwidth': '256', 'titles': '|'.join(titles)})
+    q = d.get('query', {}); pages = {p['title']: p for p in q.get('pages', [])}; res = {}
+    for t in titles:
+        tt = t
+        for n in q.get('normalized', []):
+            if n['from'] == tt: tt = n['to']
+        p = pages.get(tt)
+        if p and not p.get('missing') and p.get('imageinfo'):
+            ii = p['imageinfo'][0]; url = ii.get('thumburl') or ii.get('url')
+            if url: res[t] = (tt, url)
+    return res
 
 
 def query(titles):
@@ -115,7 +140,11 @@ def main():
         time.sleep(1.0)
         json.dump(idx, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
     # ---- materials (ores, gems, items used in recipes)
-    mtodo = [m for m in cat.get('mats', {}) if not (idx.get('mat:' + m, {}).get('f') or now - idx.get('mat:' + m, {}).get('checked', 0) < RECHECK_DAYS * 86400)]
+    def mat_done(m):
+        e = idx.get('mat:' + m, {})
+        if e.get('f') and not BAD_MAT.search(e.get('file', '') or ''): return True
+        return not e.get('f') and now - e.get('checked', 0) < RECHECK_DAYS * 86400 and e.get('v') == 2
+    mtodo = [m for m in cat.get('mats', {}) if not mat_done(m)]
     print('wiki: asking for', len(mtodo), 'materials')
     for i in range(0, len(mtodo), 7):
         chunk = mtodo[i:i + 7]; titles = [t for m in chunk for t in mat_titles(m)]
@@ -133,7 +162,24 @@ def main():
                     except Exception as ex:
                         print('  image failed', m, ex)
                     break
+            entry['v'] = 2
             idx['mat:' + m] = entry
+        # fallback: the official commodity icon from the wiki (e.g. "File:Laranite icon.svg")
+        missing = [m for m in chunk if not idx['mat:' + m].get('f')]
+        if missing:
+            try: icons = query_files([t for m in missing for t in icon_titles(m)])
+            except Exception as ex: icons = {}; print('wiki icon query error:', ex)
+            for m in missing:
+                for t in icon_titles(m):
+                    if t in icons:
+                        ftitle, src = icons[t]; key = hashlib.sha1(src.encode()).hexdigest()[:16]
+                        try:
+                            if not os.path.exists(os.path.join(IDIR, key + '-s.webp')):
+                                save_images(get_bytes(src), key); time.sleep(0.25)
+                            idx['mat:' + m].update({'f': key, 'page': ftitle, 'file': ftitle.replace('File:', ''), 'url': src, 'icon': 1}); got += 1
+                        except Exception as ex:
+                            print('  icon failed', m, ex)
+                        break
         time.sleep(1.0)
     json.dump(idx, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
     print('wiki: new images', got, '| cached entries', len(idx), '| with image', sum(1 for e in idx.values() if e.get('f')))

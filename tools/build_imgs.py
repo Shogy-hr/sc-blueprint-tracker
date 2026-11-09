@@ -30,7 +30,16 @@ W = {}
 wiki_idx = os.path.join(HERE, 'wiki', 'index.json')
 if os.path.exists(wiki_idx):
     WIDX = json.load(open(wiki_idx, encoding='utf-8'))
+    _n = lambda x: re.sub(r'[^a-z0-9]', '', x.lower())
+    FAM = {f for f in (_n(i[0].split(' ')[0]) for i in items) if len(f) >= 4}
+
+    def wrong_model(title, fname):
+        """Wiki page image that clearly shows another model (file name starts with another model, not this one)."""
+        fn, own = _n(fname or ''), _n(title.split(' ')[0])
+        return own[:5] not in fn and any(fn.startswith(f) and not f.startswith(own[:4]) for f in FAM)
     for name, e in WIDX.items():
+        if e.get('f') and not name.startswith('mat:') and wrong_model(name, e.get('file', '')):
+            print('  skip wiki image (other model):', name, '<-', e.get('file')); continue
         if e.get('f') and not name.startswith('mat:'):
             fs, fl = os.path.join(HERE, 'wiki', 'img', e['f'] + '-s.webp'), os.path.join(HERE, 'wiki', 'img', e['f'] + '-l.webp')
             if os.path.exists(fs):
@@ -110,6 +119,7 @@ MATIMG = {}
 if os.path.exists(wiki_idx):
     for m in cat.get('mats', {}):
         e = WIDX.get('mat:' + m, {})
+        if re.search(r'cargo[_ -]', e.get('file', '') or '', re.I): continue
         fs = os.path.join(HERE, 'wiki', 'img', (e.get('f') or '') + '-s.webp')
         if e.get('f') and os.path.exists(fs): MATIMG[m] = ('w:' + e['f'], fs)
 for k, fs in MATIMG.values():
