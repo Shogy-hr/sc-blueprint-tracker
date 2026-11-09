@@ -432,6 +432,26 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
 @media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
 .sitebar .bmc{padding:6px 14px 6px 9px}
 #archive .shell{padding-top:58px}
+
+
+/* starmap extras: collapsible notes + system picker */
+.map-about{margin:10px 0 0}
+.map-about summary{cursor:pointer;color:#8fc3d3;font:700 10px var(--font-ui);letter-spacing:1.6px;list-style:none;display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #235d73}
+.map-about summary::-webkit-details-marker{display:none}
+.map-about summary:before{content:"i";display:grid;place-items:center;width:15px;height:15px;border-radius:50%;border:1px solid currentColor;font:700 10px/1 Georgia,serif}
+.map-about[open] summary{margin-bottom:4px}
+.map-pick{display:none}
+@media (max-width:900px){
+  .map-index{display:none}
+  .map-pick{display:flex;flex-direction:column;gap:6px;margin:14px 0}
+  .map-pick span{color:var(--amber);font:700 10.5px var(--font-mono);letter-spacing:2px}
+  .map-pick select{width:100%;padding:12px 40px 12px 12px;border:1px solid #3999ba;border-radius:0;background:#071c29 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2363dfff' stroke-width='2.4'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center/18px;color:#e5f8ff;font:700 15px var(--font-ui);letter-spacing:1px;-webkit-appearance:none;appearance:none}
+  .map-legend{gap:6px}
+  .legend-chip{padding:6px 9px}
+  .map-note{font-size:11px;line-height:1.6;text-transform:none}
+  .map-info{scroll-margin-top:12px}
+}
+
 /* ---------- phone: bottom tab bar + bigger small print ---------- */
 .mtabs,.msheet{display:none}
 @media (max-width:900px){
@@ -589,8 +609,11 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
                 <div id="mapNodes"></div>
               </div>
               <div id="mapLegend" class="map-legend"></div>
+              <details class="map-about" id="mapAbout"><summary>ABOUT THIS MAP</summary>
               <p class="map-note">SCHEMATIC // POSITIONS AND RINGS ARE ILLUSTRATIVE, NOT TO SCALE, AND ARE NOT CIG STAR COORDINATES. LINES ARE JUMP POINTS TAKEN FROM THE CITED PAGES. DANGER IS AN ARCHIVE ESTIMATE, NOT AN OFFICIAL RATING. RED UNKNOWN MEANS NO CHECKED SOURCE STATES IT.</p>
               <div id="mapUnplaced" class="map-unplaced"></div>
+              </details>
+              <label class="map-pick"><span>SELECT SYSTEM</span><select id="mapSelect"></select></label>
               <div id="mapIndex" class="map-index"></div>
             </div>
             <aside id="mapInfo" class="map-info" aria-live="polite"></aside>
@@ -967,11 +990,14 @@ function buildStarmap(){
     return '<line data-a="'+a.id+'" data-b="'+b.id+'" class="'+(a.v1&&b.v1?'v1':'')+'" x1="'+a.x+'" y1="'+a.y+'" x2="'+b.x+'" y2="'+b.y+'"/>'}).join('');
   $('#mapLayers').innerHTML=Object.keys(LAYERS).map(k=>'<button type="button" class="timeline-filter" data-layer="'+k+'">'+esc(t(LAYERS[k].label))+'</button>').join('')+
     '<button type="button" id="mapOnly10" class="timeline-filter">'+esc(t('1.0 SYSTEMS ONLY'))+'</button>';
+  $('#mapSelect').innerHTML=SYSTEMS.slice().sort((a,b)=>t(a.name).localeCompare(t(b.name))).map(s=>'<option value="'+s.id+'">'+esc(t(s.name))+' — '+esc(t(s.region))+'</option>').join('');
+  $('#mapSelect').addEventListener('change',e=>{selectSystem(e.target.value);focusInfo()});
+  $('#mapAbout').open=!matchMedia('(max-width:900px)').matches;
   $('#mapIndex').innerHTML=SYSTEMS.map(s=>'<button type="button" data-sys="'+s.id+'">'+esc(t(s.name))+'</button>').join('');
   const unplaced=SPECIES.filter(sp=>!SYSTEMS.some(s=>s.species.includes(sp.id)));
   $('#mapUnplaced').innerHTML=unplaced.length?'<span>'+esc(t('LOCATION NOT PLACED ON THIS MAP //'))+'</span>'+unplaced.map(sp=>'<button type="button" data-open="'+esc(sp.id)+'">'+esc(sp.name)+'</button>').join(''):'';
   el.starmap.addEventListener('click',e=>{
-    const n=e.target.closest('[data-sys]'); if(n){selectSystem(n.dataset.sys);return}
+    const n=e.target.closest('[data-sys]'); if(n){selectSystem(n.dataset.sys);if(n.closest('#mapNodes,.map-jumps'))focusInfo();return}
     const l=e.target.closest('[data-layer]'); if(l){mapLayer=l.dataset.layer;mapFilter='ALL';paintMap();return}
     if(e.target.closest('#mapOnly10')){only10=!only10;paintMap();return}
     const c=e.target.closest('.legend-chip'); if(c){mapFilter=mapFilter===c.dataset.val?'ALL':c.dataset.val;paintMap();return}
@@ -992,8 +1018,9 @@ function paintMap(){
   $$('[data-layer]').forEach(b=>b.classList.toggle('active',b.dataset.layer===mapLayer));
   $('#mapOnly10').classList.toggle('active',only10);
 }
+function focusInfo(){if(!matchMedia('(max-width:900px)').matches)return;const i=$('#mapInfo'),r=i.getBoundingClientRect();if(r.top>innerHeight*0.6||r.top<0)i.scrollIntoView({behavior:'smooth',block:'start'})}
 function selectSystem(id){
-  const s=sysById(id); if(!s)return; mapSel=id;
+  const s=sysById(id); if(!s)return; mapSel=id;const ms=$('#mapSelect');if(ms)ms.value=id;
   $$('[data-sys]',el.starmap).forEach(n=>n.classList.toggle('selected',n.dataset.sys===id));
   $$('#mapLinks line').forEach(l=>l.classList.toggle('hot',l.dataset.a===id||l.dataset.b===id));
   const sp=s.species.map(byId).filter(Boolean);
