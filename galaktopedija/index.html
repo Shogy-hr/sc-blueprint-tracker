@@ -432,6 +432,12 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
 @media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
 .sitebar .bmc{padding:6px 14px 6px 9px}
 #archive .shell{padding-top:58px}
+/* scan line follows the photo on single-column dossiers (tablet / phone) */
+@keyframes scanT{from{top:0}to{top:calc(45vh - 2px)}}
+@keyframes scanP{from{top:0}to{top:calc(43dvh - 2px)}}
+@media (max-width:900px){.scanline{right:0;animation-name:scanT}}
+@media (max-width:700px){.scanline{animation-name:scanP}}
+
 .gflags{position:fixed;z-index:100001;top:max(10px,env(safe-area-inset-top,0px));right:max(10px,env(safe-area-inset-right,0px));display:flex;gap:5px}
 .gflags button{border:1px solid #3999ba;background:#02111cdd;border-radius:4px;padding:4px;line-height:0;cursor:pointer}
 .gflags button.on{border-color:#ffb54e;background:#2a2410ee}

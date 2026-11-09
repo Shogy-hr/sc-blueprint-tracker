@@ -42,6 +42,7 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .badge.view{background:#0f3a37;border:1px solid #3d7d76;color:#9fe3d8}
 .badge.sim{background:#3d2a0c;border:1px solid var(--amber);color:var(--amber)}
 .top .sp{flex:1}
+@media (min-width:761px){#vbadge{white-space:nowrap;flex:0 0 auto}}
 .bmc{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:#2a1a0c;background:linear-gradient(#ffd96b,#f2b33d);border:1px solid #ffe7a1;border-radius:20px;padding:4px 13px 4px 8px;font:700 14px/1 var(--ff);letter-spacing:.03em;box-shadow:0 0 0 0 rgba(255,205,90,.55);animation:bmcGlow 3.2s ease-in-out infinite;transition:transform .15s,filter .15s}
 .bmc:hover,.bmc:focus-visible{transform:translateY(-1px) scale(1.04);filter:brightness(1.08);outline:none}
 .bmc .cup{width:22px;height:22px;color:#4a2a12;overflow:visible;transform-origin:50% 90%;animation:bmcTilt 3.2s ease-in-out infinite}
@@ -237,7 +238,7 @@ table.q td.tm{font-variant-numeric:tabular-nums;color:var(--gold)}
 .mbtns.left{justify-content:flex-start;margin-top:8px}
 .flags{display:flex;flex-wrap:wrap;gap:8px}
 .lflags{display:flex;gap:5px;flex-wrap:nowrap}
-.top>.lflags{order:-1;width:100%;justify-content:flex-end;margin:-4px 0 -6px}
+.top>.toprow{order:-1;width:100%;display:flex;justify-content:flex-end;align-items:center;gap:12px;margin:-4px 0 -6px}
 .lflags button{border:1px solid #2b5550;background:#132f2e;border-radius:4px;padding:4px;line-height:0;cursor:pointer}
 .lflags button.on{border-color:var(--gold);background:#2a2d14}
 .lflags button:hover{border-color:#5d9d96}
@@ -327,7 +328,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .ttl{font-size:19px;width:100%}.ttl small{font-size:17px}
  .badge{font-size:10.5px;padding:3px 7px}
  .top .sp{display:none}
- .top>.lflags{order:0;margin:2px 0 0}
+ .top>.toprow{order:0;margin:2px 0 0}
  .top{position:relative}#bmcTop{position:absolute;right:0;top:-2px;padding:4px 7px}#bmcTop span{display:none}.ttl{padding-right:44px}
  .slots{font-size:16px;margin-left:auto}
  .tbtn{font-size:12px;padding:5px 8px}
@@ -404,8 +405,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
       <button class="tbtn" id="bSet">⚙ <span data-l10n="settings"></span></button>
-      <a class="bmc" id="bmcTop" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-it="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a>
-      <div class="lflags" id="flags"></div>
+      <div class="toprow"><a class="bmc" id="bmcTop" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-it="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a>
+      <div class="lflags" id="flags"></div></div>
     </div>
     <div class="view" id="view"></div>
   </div>

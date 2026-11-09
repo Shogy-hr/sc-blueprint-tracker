@@ -36,7 +36,7 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .hello h1{font:700 34px/1.1 var(--ff);letter-spacing:.06em;margin:0;color:#f1fbf9;text-transform:uppercase}
 .hello p{margin:8px 0 0;color:var(--dim);font-size:18px}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card{position:relative;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--tx);border:1px solid #2b5550;background:linear-gradient(160deg,rgba(26,61,58,.85),rgba(8,30,31,.85));padding:26px 24px 22px;border-radius:6px;transition:border-color .15s,transform .15s,background .15s;min-height:260px}
+.card{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--tx);border:1px solid #2b5550;background:linear-gradient(160deg,rgba(26,61,58,.85),rgba(8,30,31,.85));padding:26px 24px 22px;border-radius:6px;transition:border-color .15s,transform .15s,background .15s;min-height:260px}
 .card:hover,.card:focus-visible{border-color:var(--gold);transform:translateY(-2px);background:linear-gradient(160deg,rgba(42,45,20,.9),rgba(8,30,31,.9));outline:none}
 .card .ic{width:64px;height:64px;color:var(--gold)}
 .card h2{margin:0;font:700 28px/1.05 var(--ff);letter-spacing:.05em;text-transform:uppercase;color:#f1fbf9}
@@ -60,6 +60,24 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .bmc.hd{font-size:16px;padding:6px 16px 6px 10px}.bmc.hd .cup{width:26px;height:26px}
 .support{display:flex;justify-content:center;margin-top:26px}
 .bmc.big2{font-size:19px;padding:10px 22px 10px 14px;border-radius:26px}.bmc.big2 .cup{width:32px;height:32px}
+
+/* animated previews (kept above the text, never behind it) */
+.pv{position:relative;height:150px;margin:-26px -24px 6px;overflow:hidden;border-bottom:1px solid #2b5550;border-radius:6px 6px 0 0;background:#06181a}
+.pv:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,30,31,0) 55%,rgba(8,30,31,.9));pointer-events:none;z-index:1}
+.pv-gal{--sw:1575px}
+.pv-gal .strip{position:absolute;inset:0;background:url(assets/preview/galaktopedija-strip.webp) 0 0/auto 100% repeat-x;animation:pvPan 80s linear infinite}
+@keyframes pvPan{to{background-position-x:calc(-1 * var(--sw))}}
+.pv-kiosk .shot{position:absolute;inset:0;background:url(assets/preview/kiosk.webp) 0 0/cover;transform-origin:30% 30%;animation:pvKb 22s ease-in-out infinite alternate}
+@keyframes pvKb{from{transform:scale(1.08) translate(0,0)}to{transform:scale(1.35) translate(-14%,-8%)}}
+.pv .scan{position:absolute;left:0;right:0;top:0;height:2px;z-index:2;background:#7be9ffaa;box-shadow:0 0 14px #58e2ff;animation:pvScan 5s linear infinite}
+@keyframes pvScan{from{top:0}to{top:calc(100% - 2px)}}
+.pv-kiosk .fab{position:absolute;left:14px;bottom:12px;z-index:3;display:flex;align-items:center;gap:10px;padding:5px 10px;background:#081d1df0;border:1px solid #d6c56b;border-radius:3px;font:700 12px/1 var(--ff);letter-spacing:.12em;color:#f6ecb2}
+.pv-kiosk .fab i{display:block;width:90px;height:6px;background:#2a2b12;border:1px solid #6b6230;overflow:hidden}
+.pv-kiosk .fab s{display:block;height:100%;width:0;background:linear-gradient(90deg,#b6a552,#f2dc7a);animation:pvFab 6s ease-in-out infinite}
+@keyframes pvFab{0%{width:0}80%{width:100%}100%{width:100%}}
+.card .tag{z-index:4}
+.card:hover .pv-gal .strip{animation-duration:40s}
+@media (prefers-reduced-motion:reduce){.pv *{animation:none!important}}
 footer{border-top:1px solid #0a1716;padding-top:12px;font-size:13.5px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 footer b{color:var(--dim);font-weight:600}
 @media (max-width:760px){
@@ -73,6 +91,7 @@ footer b{color:var(--dim);font-weight:600}
  .cards{grid-template-columns:1fr;gap:14px}
  .bmc.hd{display:none}
  .card{min-height:0;padding:20px 18px 18px}
+ .pv{height:120px;margin:-20px -18px 4px}.pv-gal{--sw:1260px}
  .card .ic{width:48px;height:48px}
  .card h2{font-size:24px}
  .card p{font-size:16px}
@@ -95,14 +114,14 @@ footer b{color:var(--dim);font-weight:600}
   <div class="cards">
    <a class="card" href="galaktopedija/" id="cGal">
     <span class="tag live" data-t="live"></span>
-    <svg class="ic" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="32" cy="32" r="13"/><ellipse cx="32" cy="32" rx="28" ry="9" transform="rotate(-20 32 32)"/><circle cx="52" cy="17" r="2.4" fill="currentColor"/><path d="M10 52l3-3M54 50l2 2M8 12l2 2" stroke="#79e0b4"/></svg>
-    <h2><small>Star Citizen</small>Galaktopedija</h2>
+    <div class="pv pv-gal" aria-hidden="true"><div class="strip"></div><span class="scan"></span></div>
+    <h2><small>Star Citizen · Squadron 42</small>Galaktopedija</h2>
     <p data-t="galD"></p>
     <span class="go"><span data-t="open"></span> ›</span>
    </a>
    <a class="card" href="blueprints/" id="cKiosk">
     <span class="tag live" data-t="live"></span>
-    <svg class="ic" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><rect x="8" y="10" width="48" height="34" rx="2"/><path d="M8 36h48M22 44l-4 10h28l-4-10"/><path d="M26 18h12l4 6-10 8-10-8z" stroke="#79e0b4"/></svg>
+    <div class="pv pv-kiosk" aria-hidden="true"><div class="shot"></div><div class="fab"><span>FABRICATING</span><i><s></s></i></div><span class="scan"></span></div>
     <h2><small>Blueprints · Crafting</small>Fabrication Kiosk</h2>
     <p data-t="kioskD"></p>
     <span class="meta" id="kver"></span>
@@ -139,7 +158,7 @@ var TX={
  soon:["Coming soon","Uskoro","Demnächst","Wkrótce","Bientôt","Próximamente"],
  live:["Live","Aktivno","Live","Aktywne","En ligne","Activo"],
  data:["Game data","Podaci igre","Spieldaten","Dane gry","Données du jeu","Datos del juego"],
- fan:["Unofficial fan site, not affiliated with Cloud Imperium Games. Star Citizen® is a trademark of Cloud Imperium Rights LLC.","Neslužbena stranica zajednice, nije povezana s Cloud Imperium Games. Star Citizen® je zaštitni znak tvrtke Cloud Imperium Rights LLC.","Inoffizielle Fan-Seite, nicht mit Cloud Imperium Games verbunden. Star Citizen® ist eine Marke der Cloud Imperium Rights LLC.","Nieoficjalna strona fanów, niezwiązana z Cloud Imperium Games. Star Citizen® jest znakiem towarowym Cloud Imperium Rights LLC.","Site de fans non officiel, sans lien avec Cloud Imperium Games. Star Citizen® est une marque de Cloud Imperium Rights LLC.","Sitio de fans no oficial, sin relación con Cloud Imperium Games. Star Citizen® es una marca de Cloud Imperium Rights LLC."],
+ fan:["Unofficial fan site, not affiliated with Cloud Imperium Games. Star Citizen® and Squadron 42® are trademarks of Cloud Imperium Rights LLC.","Neslužbena stranica zajednice, nije povezana s Cloud Imperium Games. Star Citizen® i Squadron 42® zaštitni su znakovi tvrtke Cloud Imperium Rights LLC.","Inoffizielle Fan-Seite, nicht mit Cloud Imperium Games verbunden. Star Citizen® und Squadron 42® sind Marken der Cloud Imperium Rights LLC.","Nieoficjalna strona fanów, niezwiązana z Cloud Imperium Games. Star Citizen® i Squadron 42® są znakami towarowymi Cloud Imperium Rights LLC.","Site de fans non officiel, sans lien avec Cloud Imperium Games. Star Citizen® et Squadron 42® sont des marques de Cloud Imperium Rights LLC.","Sitio de fans no oficial, sin relación con Cloud Imperium Games. Star Citizen® y Squadron 42® son marcas de Cloud Imperium Rights LLC."],
  priv:["no accounts, no tracking","bez računa, bez praćenja","keine Konten, kein Tracking","bez kont, bez śledzenia","sans compte, sans pistage","sin cuentas, sin rastreo"]
 };
 var LANG="en";
