@@ -10,6 +10,16 @@ Ovaj paket je napravljen za **GitHub Pages**. Automatski zadatak (GitHub Action)
 
 Ti ne moraš raditi ništa.
 
+
+## Struktura stranice
+
+| Adresa | Datoteka | Tko je mijenja |
+|---|---|---|
+| `/` početna (izbor alata) | `index.html` | ručno (Claude / ti) |
+| `/blueprints/` Fabrication Kiosk | `blueprints/` | bot (sastavlja ga iz `tools/kiosk_src.html`) |
+| `/galaktopedija/` Star Citizen Galaktopedija | `galaktopedija/` | ručno |
+| zajednički fontovi | `assets/fonts/` | ručno |
+
 ---
 
 ## 1. Postavljanje (jednom, ~10 minuta)
@@ -42,12 +52,12 @@ Vlastita domena: **Settings → Pages → Custom domain**.
 Svakih 6 sati (i kad nešto promijeniš u repozitoriju) zadatak:
 
 1. **Provjeri verzije igre** iz službenih RSI izvora (Spectrum patch notes, RSI Roadmap),
-   a kao rezervu koristi patchbot.io. Rezultat ide u `data/status.json`.
+   a kao rezervu koristi patchbot.io. Rezultat ide u `blueprints/data/status.json`.
 2. **Provjeri ima li novih podataka igre** u
    [StarCitizenWiki/scunpacked-data](https://github.com/StarCitizenWiki/scunpacked-data).
    To nisu ručno pisani članci nego podaci izvučeni izravno iz datoteka igre (`Data.p4k`).
    Ako je verzija nova, povuče blueprinte i slike, sastavi stranicu, spremi promjene
-   u repozitorij i podigne verziju u `sw.js`.
+   u repozitorij i podigne verziju u `blueprints/sw.js`.
 3. **Traži slike sa Star Citizen Wikija** za blueprinte koji nemaju pravu sliku u Datapadu
    (varijante, spremnici i ostalo) i za sve **materijale** (rude i minerale). Kod materijala pazi
    na razlike u nazivima, npr. „Aluminum” u igri je „Aluminium” na Wikiju. Svaki predmet pita samo jednom, a one bez slike ponovno provjeri
@@ -101,7 +111,7 @@ python3 update.py --force    # ponovno sastavi sve, i bez novih podataka
 - `build_imgs.py`: odabir slike za svaki blueprint (Datapad, Wiki, varijante).
 - `fetch_wiki_images.py`: dohvat slika sa Star Citizen Wikija.
 - `build_ptu.py`: usporedba PTU s LIVE.
-- `check_versions.py`: provjera verzija i `data/status.json`.
+- `check_versions.py`: provjera verzija i `blueprints/data/status.json`.
 
 ---
 
@@ -111,18 +121,18 @@ U repozitoriju su dvije vrste datoteka:
 
 | Mijenjaš ti (ili Claude) | Mijenja ih samo automatski zadatak – **ne diraj ih** |
 |---|---|
-| `tools/kiosk_src.html` (izgled, tekstovi, prijevodi, funkcije) | `index.html` |
-| `tools/*.py` (alati) | `img/` (slike) |
+| `tools/kiosk_src.html` (izgled, tekstovi, prijevodi, funkcije) | `blueprints/index.html` |
+| `tools/*.py` (alati) | `blueprints/img/` (slike) |
 | `tools/ptu/` (PTU podaci) | `tools/catalog.json`, `tools/imgdata.json` |
 | `README.md`, `THIRD-PARTY.md`, `favicon.svg`, ikone | `tools/wiki/` (slike s Wikija) |
-| `.github/workflows/update.yml` | `sw.js` (broj verzije), `data/` |
+| `.github/workflows/update.yml` | `blueprints/sw.js` (broj verzije), `blueprints/data/` |
 
 Svaka promjena se ubaci na GitHub i **zadatak se sam pokrene**. Za 2–3 minute iz `tools/kiosk_src.html`
-ponovno sastavi `index.html`, s već skinutim slikama s Wikija, i objavi stranicu.
+ponovno sastavi `blueprints/index.html`, s već skinutim slikama s Wikija, i objavi stranicu.
 Zato se promjene i slike nikad ne sudaraju: ti mijenjaš izvor, a zadatak slaže gotovu stranicu.
 
-Ako greškom ubaciš stari `index.html`, ništa se ne kvari jer ga zadatak pri sljedećem pokretanju
-ponovno složi. Mapu `img/` i datoteke iz `tools/` koje mijenja zadatak nemoj zamjenjivati starima. Ako baš treba, u **Actions → Run workflow** pokreneš ga ručno.
+Ako greškom ubaciš stari `blueprints/index.html`, ništa se ne kvari jer ga zadatak pri sljedećem pokretanju
+ponovno složi. Mapu `blueprints/img/` i datoteke iz `tools/` koje mijenja zadatak nemoj zamjenjivati starima. Ako baš treba, u **Actions → Run workflow** pokreneš ga ručno.
 
 ---
 

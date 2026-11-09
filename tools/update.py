@@ -8,7 +8,7 @@ Only rebuilds when something changed. Use --force to rebuild anyway."""
 import json, os, re, shutil, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sclib import parse_version, wiki_sig
-HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..'))
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..')); SITE = os.path.join(ROOT, 'blueprints')   # the kiosk lives in /blueprints/
 DATA_REPO = 'https://github.com/StarCitizenWiki/scunpacked-data.git'
 IMG_REPO = 'https://github.com/jpcoombes-byte/Datapad.git'
 FORCE = '--force' in sys.argv
@@ -74,7 +74,7 @@ def main():
             if os.path.exists(os.path.join(HERE, 'blueprints.json')): os.remove(os.path.join(HERE, 'blueprints.json'))
     # PTU
     pdir = os.path.join(HERE, 'ptu'); pbp = os.path.join(pdir, 'blueprints.json'); pv = os.path.join(pdir, 'version.txt')
-    ptu_out = os.path.join(ROOT, 'data', 'ptu.json')
+    ptu_out = os.path.join(SITE, 'data', 'ptu.json')
     if os.path.exists(pbp) and os.path.exists(pv):
         pver = open(pv, encoding='utf-8').read().strip().splitlines()[0]
         old = json.load(open(ptu_out, encoding='utf-8')) if os.path.exists(ptu_out) else {}
@@ -88,11 +88,11 @@ def main():
         py('build_ptu.py', '--clear')
     # Always rebuild the page from tools/kiosk_src.html + catalog + imgdata, so edits to the
     # source (by you or by Claude) are published without ever touching the images.
-    before = open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read() if os.path.exists(os.path.join(ROOT, 'index.html')) else ''
-    py('build.py', os.path.join(ROOT, 'index.html'))
-    if open(os.path.join(ROOT, 'index.html'), encoding='utf-8').read() != before: changed = True
+    before = open(os.path.join(SITE, 'index.html'), encoding='utf-8').read() if os.path.exists(os.path.join(SITE, 'index.html')) else ''
+    py('build.py', os.path.join(SITE, 'index.html'))
+    if open(os.path.join(SITE, 'index.html'), encoding='utf-8').read() != before: changed = True
     if changed or FORCE:
-        sw = os.path.join(ROOT, 'sw.js'); s = open(sw, encoding='utf-8').read()
+        sw = os.path.join(SITE, 'sw.js'); s = open(sw, encoding='utf-8').read()
         nv = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))['v']
         s = re.sub(r'const VERSION = "[^"]*";', f'const VERSION = "bp-{nv}";', s); open(sw, 'w', encoding='utf-8').write(s)
     py('check_versions.py')

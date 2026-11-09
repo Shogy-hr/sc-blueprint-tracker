@@ -42,6 +42,7 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .badge.view{background:#0f3a37;border:1px solid #3d7d76;color:#9fe3d8}
 .badge.sim{background:#3d2a0c;border:1px solid var(--amber);color:var(--amber)}
 .top .sp{flex:1}
+.ttl .home{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:10px;vertical-align:-5px;border:1px solid #2b5550;border-radius:4px;color:#9cc9c3;background:#132f2e}.ttl .home:hover{color:var(--gold);border-color:var(--gold)}.ttl .home svg{width:18px;height:18px}
 .slots{font:600 22px var(--ff);color:#e9f6f4}
 .slots b{color:var(--ok)}
 .tbtn{background:#0e2b2a;border:1px solid var(--line);border-radius:3px;padding:5px 10px;font-weight:700;font-size:13px;letter-spacing:.04em;color:#bfe3de}
@@ -375,7 +376,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </nav>
   <div class="main">
     <div class="top">
-      <div class="ttl">FABRICATION KIOSK <small id="vname">//FABRICATE</small></div>
+      <div class="ttl"><a class="home" id="home" href="../" data-it="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></a>FABRICATION KIOSK <small id="vname">//FABRICATE</small></div>
       <span class="badge" id="vbadge"></span>
       <span class="sp"></span>
       <span class="slots">Blueprints <b id="cOwn">0</b> / <span id="cAll">0</span></span>
@@ -449,6 +450,7 @@ ITEMS.forEach(it=>{it.mats=new Set();it.r.forEach(g=>g[2].forEach(o=>it.mats.add
 /* ---------- i18n ---------- */
 const LANGS=[["en","English","en-GB"],["hr","Hrvatski","hr-HR"],["de","Deutsch","de-DE"],["pl","Polski","pl-PL"],["fr","Français","fr-FR"],["es","Español","es-ES"]];
 const TR={
+ home:["Home · ShoGy-HR","Početna · ShoGy-HR","Startseite · ShoGy-HR","Strona główna · ShoGy-HR","Accueil · ShoGy-HR","Inicio · ShoGy-HR"],
 gameName:["In-game name: {0} (several items share it)","Naziv u igri: {0} (isti naziv ima više predmeta)","Name im Spiel: {0} (mehrere Gegenstände heißen so)","Nazwa w grze: {0} (nosi ją kilka przedmiotów)","Nom en jeu : {0} (plusieurs objets portent ce nom)","Nombre en el juego: {0} (varios objetos lo comparten)"],
 noGameName:["The game files have no name for this item – this name is derived from its data.","U datotekama igre ovaj predmet nema naziv – naziv je izveden iz njegovih podataka.","In den Spieldateien hat dieser Gegenstand keinen Namen – der Name ist aus seinen Daten abgeleitet.","W plikach gry ten przedmiot nie ma nazwy – nazwa pochodzi z jego danych.","Les fichiers du jeu ne donnent pas de nom à cet objet – ce nom est déduit de ses données.","Los archivos del juego no dan nombre a este objeto; el nombre se deriva de sus datos."],
 stTitle:["Data status","Status podataka","Datenstatus","Status danych","État des données","Estado de los datos"],
@@ -1373,6 +1375,7 @@ function renderQueueTimes(){const now=Date.now();$$("td.tm[data-end]").forEach(t
   $$("table.q tr[data-id]").forEach(tr=>{const td=tr.querySelector("td.tm");const end=+td.dataset.end;if(!end)return;const id=+tr.dataset.id;const j=ST.sim.p.find(x=>x.id===id)||ST.sim.dp.find(x=>x.id===id);if(j){const i=tr.querySelector(".bar i");if(i)i.style.width=Math.min(100,(now-j.start)/(j.dur*10)).toFixed(1)+"%"}})}
 
 applyStatic();render();
+try{if(window.claude){const h=document.getElementById("home");if(h)h.remove()}}catch(e){}
 try{if(!window.claude&&"serviceWorker" in navigator&&location.protocol==="https:")navigator.serviceWorker.register("sw.js").catch(()=>{})}catch(e){}
 boot().then(()=>{applyStatic();advance(Date.now());render();if(!PM.list.length)showWelcome(false);loadStatus()});
 })();

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pick an image for every blueprint and write tools/imgdata.json + ../img/l-*.json.
+"""Pick an image for every blueprint and write tools/imgdata.json + ../blueprints/img/l-*.json.
 Sources, best first:
   d  Datapad (jpcoombes-byte/Datapad): renders from the game files, matched by item UUID or exact name
   w  Star Citizen Wiki page image (downloaded by fetch_wiki_images.py into tools/wiki/)
@@ -127,7 +127,7 @@ for k, fs in MATIMG.values():
 keys = sorted({v[0] for v in res.values()} | {v[0] for v in MATIMG.values()})
 kidx = {k: i for i, k in enumerate(keys)}
 thumbs = [small(k) for k in keys]
-outdir = os.path.join(HERE, '..', 'img'); os.makedirs(outdir, exist_ok=True)
+outdir = os.path.join(HERE, '..', 'blueprints', 'img'); os.makedirs(outdir, exist_ok=True)
 for f in glob.glob(os.path.join(outdir, 'l-*.json')): os.remove(f)
 chunks, cur, size, loc = [], {}, 0, {}
 for k in keys:

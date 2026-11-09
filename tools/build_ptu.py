@@ -6,7 +6,7 @@ import argparse, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sclib import convert, parse_version
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, '..', 'data', 'ptu.json')
+OUT = os.path.join(HERE, '..', 'blueprints', 'data', 'ptu.json')
 
 
 def comparable(it, pools, mods):

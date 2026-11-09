@@ -8,7 +8,7 @@ import json, os, re, sys, time, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sclib import parse_version, VER_RE
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, '..', 'data', 'status.json')
+OUT = os.path.join(HERE, '..', 'blueprints', 'data', 'status.json')
 UA = 'Mozilla/5.0 (compatible; SC-Blueprint-Tracker/1.0; fan site update check)'
 SOURCES = [
     ('RSI Spectrum (Patch Notes)', 'https://robertsspaceindustries.com/spectrum/community/SC/forum/190048'),
@@ -67,7 +67,7 @@ def main():
     # PTU that is older than or equal to LIVE is not "upcoming"
     if status['ptu'] and status['live'] and status['live']['build'] and status['ptu']['build'] <= status['live']['build']:
         status['ptu'] = None
-    pj = os.path.join(HERE, '..', 'data', 'ptu.json')
+    pj = os.path.join(HERE, '..', 'blueprints', 'data', 'ptu.json')
     if os.path.exists(pj):
         p = json.load(open(pj, encoding='utf-8'))
         status['ptuData'] = {'version': p['version'], 'date': p.get('date', ''), 'added': len(p['added']), 'changed': len(p['changed']), 'removed': len(p['removed'])}
