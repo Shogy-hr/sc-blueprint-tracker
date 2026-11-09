@@ -21,7 +21,8 @@
 <meta name="twitter:description" content="Track which blueprints you own, check recipes and materials and simulate crafting like at the in-game fabricator. Auto-updated with game data, free, no tracking.">
 <meta name="twitter:image" content="https://shogy-hr.com/assets/og-kiosk.jpg">
 <meta name="theme-color" content="#0c2a29">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <style>/* Rajdhani – SIL Open Font License 1.1, self-hosted (no requests to Google) */
@@ -66,7 +67,7 @@ input,select,textarea{font:inherit;color:var(--tx)}
 @keyframes bmcGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,205,90,0)}50%{box-shadow:0 0 14px 2px rgba(255,205,90,.35)}}
 @media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
 .bmc.big2{font-size:17px;padding:8px 18px 8px 12px;border-radius:24px}.bmc.big2 .cup{width:28px;height:28px}
-.ttl .home{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:10px;vertical-align:-5px;border:1px solid #2b5550;border-radius:4px;color:#9cc9c3;background:#132f2e}.ttl .home:hover{color:var(--gold);border-color:var(--gold)}.ttl .home svg{width:18px;height:18px}
+.ttl .home{display:inline-block;width:34px;height:34px;margin-right:10px;vertical-align:-9px;border-radius:50%;transition:transform .15s,filter .15s}.ttl .home:hover{transform:scale(1.08);filter:drop-shadow(0 0 6px rgba(226,207,120,.6))}.ttl .home img{width:34px;height:34px;display:block}
 .slots{font:600 22px var(--ff);color:#e9f6f4}
 .slots b{color:var(--ok)}
 .tbtn{background:#0e2b2a;border:1px solid var(--line);border-radius:3px;padding:5px 10px;font-weight:700;font-size:13px;letter-spacing:.04em;color:#bfe3de}
@@ -409,7 +410,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   </nav>
   <div class="main">
     <div class="top">
-      <div class="ttl"><a class="home" id="home" href="../" data-it="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></a>FABRICATION KIOSK <small id="vname">//FABRICATE</small></div>
+      <div class="ttl"><a class="home" id="home" href="../" data-it="home"><img src="../assets/logo-96.webp" srcset="../assets/logo-96.webp 1x, ../assets/logo-192.webp 2x" width="34" height="34" alt=""></a>FABRICATION KIOSK <small id="vname">//FABRICATE</small></div>
       <span class="badge" id="vbadge"></span>
       <span class="sp"></span>
       <span class="slots">Blueprints <b id="cOwn">0</b> / <span id="cAll">0</span></span>

@@ -1,6 +1,6 @@
 // Offline cache. Raise VERSION whenever you publish new game data.
 const VERSION = "bp-4.10.2-LIVE.12881860";
-const CORE = ["./", "index.html", "manifest.webmanifest", "favicon.svg", "icon-192.png"];
+const CORE = ["./", "index.html", "manifest.webmanifest", "favicon.ico", "icon-192.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
 });

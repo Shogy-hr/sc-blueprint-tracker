@@ -124,7 +124,7 @@ U repozitoriju su dvije vrste datoteka:
 | `tools/kiosk_src.html` (izgled, tekstovi, prijevodi, funkcije) | `blueprints/index.html` |
 | `tools/*.py` (alati) | `blueprints/img/` (slike) |
 | `tools/ptu/` (PTU podaci) | `tools/catalog.json`, `tools/imgdata.json` |
-| `README.md`, `THIRD-PARTY.md`, `favicon.svg`, ikone | `tools/wiki/` (slike s Wikija) |
+| `README.md`, `THIRD-PARTY.md`, `favicon.ico`, ikone, `assets/` (logo, slike za dijeljenje) | `tools/wiki/` (slike s Wikija) |
 | `.github/workflows/update.yml` | `blueprints/sw.js` (broj verzije), `blueprints/data/` |
 
 Svaka promjena se ubaci na GitHub i **zadatak se sam pokrene**. Za 2–3 minute iz `tools/kiosk_src.html`

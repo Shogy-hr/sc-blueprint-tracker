@@ -21,7 +21,8 @@
 <meta name="twitter:description" content="UEE xenological archive: dossiers on every known species, a timeline of first contacts and an interactive star map. Fan-made, 6 languages.">
 <meta name="twitter:image" content="https://shogy-hr.com/assets/og-galaktopedija.jpg">
 <meta name="theme-color" content="#02070b">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <style>
 /* Layout: cinematic 16:9 landing (species wall mounted on the hologram screen) -> archive (filter sidebar + species grid) -> dossier overlay.
@@ -432,9 +433,9 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
 @font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:700;src:url(../assets/fonts/rajdhani-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 /* ---------- ShoGy-HR site bar (home + coffee) ---------- */
 .sitebar{position:fixed;z-index:100001;top:max(10px,env(safe-area-inset-top,0px));left:max(10px,env(safe-area-inset-left,0px));display:flex;gap:8px;align-items:center}
-.sitebar .home{display:grid;place-items:center;width:36px;height:36px;border:1px solid #3999ba;border-radius:4px;background:#02111cdd;color:#a8efff;text-decoration:none}
-.sitebar .home:hover,.sitebar .home:focus-visible{border-color:#78e9ff;color:#fff;box-shadow:0 0 12px #32d9ff66}
-.sitebar .home svg{width:19px;height:19px}
+.sitebar .home{display:block;width:40px;height:40px;border-radius:50%;text-decoration:none;filter:drop-shadow(0 2px 6px #000a);transition:transform .15s}.sitebar .home img{width:40px;height:40px;display:block}
+.sitebar .home:hover,.sitebar .home:focus-visible{transform:scale(1.08)}
+
 .bmc{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:#2a1a0c;background:linear-gradient(#ffd96b,#f2b33d);border:1px solid #ffe7a1;border-radius:20px;padding:4px 13px 4px 8px;font:700 14px/1 Rajdhani,"Arial Narrow",Arial,sans-serif;letter-spacing:.03em;box-shadow:0 0 0 0 rgba(255,205,90,.55);animation:bmcGlow 3.2s ease-in-out infinite;transition:transform .15s,filter .15s}
 .bmc:hover,.bmc:focus-visible{transform:translateY(-1px) scale(1.04);filter:brightness(1.08);outline:none}
 .bmc .cup{width:22px;height:22px;color:#4a2a12;overflow:visible;transform-origin:50% 90%;animation:bmcTilt 3.2s ease-in-out infinite}
@@ -514,12 +515,12 @@ a.log-src:hover{color:#ffd59d;text-decoration:underline}
 .gflags svg{width:24px;height:16px;display:block;border-radius:2px}.gflags svg.fhr{width:32px}
 @media (max-width:700px){.gflags{gap:3px}.gflags button{padding:3px}.gflags svg{width:22px;height:15px}.gflags svg.fhr{width:30px}}
 
-@media (max-width:700px){.landing .mobile-brand{top:max(54px,calc(env(safe-area-inset-top,0px) + 46px))}.sitebar .bmc{padding:6px 8px}.sitebar .bmc span{display:none}.sitebar .home{width:34px;height:34px}}
+@media (max-width:700px){.landing .mobile-brand{top:max(54px,calc(env(safe-area-inset-top,0px) + 46px))}.sitebar .bmc{padding:6px 8px}.sitebar .bmc span{display:none}.sitebar .home,.sitebar .home img{width:36px;height:36px}}
 </style>
 </head>
 <body>
 <nav class="sitebar" aria-label="ShoGy-HR">
-  <a class="home" href="../" id="siteHome" title="ShoGy-HR · Star Citizen tools" aria-label="ShoGy-HR · Star Citizen tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></a>
+  <a class="home" href="../" id="siteHome" title="ShoGy-HR · Star Citizen tools" aria-label="ShoGy-HR · Star Citizen tools"><img src="../assets/logo-96.webp" srcset="../assets/logo-96.webp 1x, ../assets/logo-192.webp 2x" width="36" height="36" alt=""></a>
   <a class="bmc" id="siteCoffee" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Buy me a coffee</span></a>
 </nav>
 <div class="gflags" id="gflags" role="group" aria-label="Language"></div>
