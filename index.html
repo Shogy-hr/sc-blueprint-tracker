@@ -47,6 +47,19 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .tag.soon{background:#4a3a14;color:#ffd27a;border:1px solid #8a6a26}
 .tag.live{background:#103c30;color:var(--ok);border:1px solid #2b7a5f}
 .meta{font-size:14px;color:var(--mut);letter-spacing:.04em}
+.bmc{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:#2a1a0c;background:linear-gradient(#ffd96b,#f2b33d);border:1px solid #ffe7a1;border-radius:20px;padding:4px 13px 4px 8px;font:700 14px/1 var(--ff);letter-spacing:.03em;box-shadow:0 0 0 0 rgba(255,205,90,.55);animation:bmcGlow 3.2s ease-in-out infinite;transition:transform .15s,filter .15s}
+.bmc:hover,.bmc:focus-visible{transform:translateY(-1px) scale(1.04);filter:brightness(1.08);outline:none}
+.bmc .cup{width:22px;height:22px;color:#4a2a12;overflow:visible;transform-origin:50% 90%;animation:bmcTilt 3.2s ease-in-out infinite}
+.bmc .cup .mug{color:#5b3416}
+.bmc .steam path{opacity:0;animation:bmcSteam 2.4s ease-in-out infinite}
+.bmc .steam .s2{animation-delay:.5s}.bmc .steam .s3{animation-delay:1s}
+@keyframes bmcSteam{0%{opacity:0;transform:translateY(3px)}35%{opacity:.9}100%{opacity:0;transform:translateY(-4px)}}
+@keyframes bmcTilt{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-9deg)}86%{transform:rotate(6deg)}93%{transform:rotate(-3deg)}}
+@keyframes bmcGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,205,90,0)}50%{box-shadow:0 0 14px 2px rgba(255,205,90,.35)}}
+@media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
+.bmc.hd{font-size:16px;padding:6px 16px 6px 10px}.bmc.hd .cup{width:26px;height:26px}
+.support{display:flex;justify-content:center;margin-top:26px}
+.bmc.big2{font-size:19px;padding:10px 22px 10px 14px;border-radius:26px}.bmc.big2 .cup{width:32px;height:32px}
 footer{border-top:1px solid #0a1716;padding-top:12px;font-size:13.5px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 footer b{color:var(--dim);font-weight:600}
 @media (max-width:760px){
@@ -58,6 +71,7 @@ footer b{color:var(--dim);font-weight:600}
  main{padding:18px 0}
  .hello h1{font-size:24px}.hello p{font-size:16px}
  .cards{grid-template-columns:1fr;gap:14px}
+ .bmc.hd{display:none}
  .card{min-height:0;padding:20px 18px 18px}
  .card .ic{width:48px;height:48px}
  .card h2{font-size:24px}
@@ -73,6 +87,7 @@ footer b{color:var(--dim);font-weight:600}
    <div><b>ShoGy-HR</b><small data-t="sub"></small></div>
   </div>
   <span class="sp"></span>
+  <a class="bmc hd" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-ta="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-t="coffee"></span></a>
   <div class="flags" id="flags"></div>
  </header>
  <main>
@@ -94,6 +109,7 @@ footer b{color:var(--dim);font-weight:600}
     <span class="go"><span data-t="open"></span> ›</span>
    </a>
   </div>
+  <div class="support"><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-t="coffee"></span></a></div>
  </main>
  <footer>
   <span data-t="fan"></span>
@@ -118,6 +134,7 @@ var TX={
  lead:["Fan-made helpers for Star Citizen pilots","Pomagala za Star Citizen pilote, napravljena od zajednice","Von Fans gemachte Helfer für Star-Citizen-Piloten","Pomocnicy dla pilotów Star Citizen, stworzeni przez fanów","Des outils faits par des fans pour les pilotes de Star Citizen","Ayudas hechas por fans para pilotos de Star Citizen"],
  galD:["Encyclopedia of the 'verse: ships, locations, lore and everything in between.","Enciklopedija svemira Star Citizena: brodovi, lokacije, priča i sve između.","Enzyklopädie des 'Verse: Schiffe, Orte, Lore und alles dazwischen.","Encyklopedia uniwersum: statki, lokacje, lore i wszystko pomiędzy.","Encyclopédie du 'verse : vaisseaux, lieux, lore et tout le reste.","Enciclopedia del 'verso: naves, lugares, lore y todo lo demás."],
  kioskD:["Track which blueprints you own, check recipes and materials, and simulate crafting like at the in-game fabricator.","Prati koje blueprinte imaš, provjeri recepte i materijale i simuliraj izradu kao na fabrikatoru u igri.","Verfolge deine Blueprints, prüfe Rezepte und Materialien und simuliere die Herstellung wie am Fabrikator im Spiel.","Śledź posiadane blueprinty, sprawdzaj receptury i materiały oraz symuluj wytwarzanie jak na fabrykatorze w grze.","Suis les blueprints que tu possèdes, consulte recettes et matériaux et simule la fabrication comme au fabricateur du jeu.","Controla los blueprints que tienes, consulta recetas y materiales y simula la fabricación como en el fabricador del juego."],
+ coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
  open:["Open","Otvori","Öffnen","Otwórz","Ouvrir","Abrir"],
  soon:["Coming soon","Uskoro","Demnächst","Wkrótce","Bientôt","Próximamente"],
  live:["Live","Aktivno","Live","Aktywne","En ligne","Activo"],
@@ -133,6 +150,7 @@ function t(k){var r=TX[k];return r?(r[LANGS.indexOf(LANG)]||r[0]):k}
 function render(){
  document.documentElement.lang=LANG;
  document.querySelectorAll("[data-t]").forEach(function(e){e.textContent=t(e.getAttribute("data-t"))});
+ document.querySelectorAll("[data-ta]").forEach(function(e){e.title=t(e.getAttribute("data-ta"));e.setAttribute("aria-label",t(e.getAttribute("data-ta")))});
  document.getElementById("flags").innerHTML=LANGS.map(function(l){return '<button type="button" data-l="'+l+'" class="'+(l===LANG?"on":"")+'" title="'+NAMES[l]+'" aria-label="'+NAMES[l]+'">'+FLAGS[l]+'</button>'}).join("");
  document.getElementById("kver").textContent=VER?t("data")+": "+VER:"";
 }

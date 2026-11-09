@@ -42,6 +42,17 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .badge.view{background:#0f3a37;border:1px solid #3d7d76;color:#9fe3d8}
 .badge.sim{background:#3d2a0c;border:1px solid var(--amber);color:var(--amber)}
 .top .sp{flex:1}
+.bmc{display:inline-flex;align-items:center;gap:7px;text-decoration:none;white-space:nowrap;color:#2a1a0c;background:linear-gradient(#ffd96b,#f2b33d);border:1px solid #ffe7a1;border-radius:20px;padding:4px 13px 4px 8px;font:700 14px/1 var(--ff);letter-spacing:.03em;box-shadow:0 0 0 0 rgba(255,205,90,.55);animation:bmcGlow 3.2s ease-in-out infinite;transition:transform .15s,filter .15s}
+.bmc:hover,.bmc:focus-visible{transform:translateY(-1px) scale(1.04);filter:brightness(1.08);outline:none}
+.bmc .cup{width:22px;height:22px;color:#4a2a12;overflow:visible;transform-origin:50% 90%;animation:bmcTilt 3.2s ease-in-out infinite}
+.bmc .cup .mug{color:#5b3416}
+.bmc .steam path{opacity:0;animation:bmcSteam 2.4s ease-in-out infinite}
+.bmc .steam .s2{animation-delay:.5s}.bmc .steam .s3{animation-delay:1s}
+@keyframes bmcSteam{0%{opacity:0;transform:translateY(3px)}35%{opacity:.9}100%{opacity:0;transform:translateY(-4px)}}
+@keyframes bmcTilt{0%,70%,100%{transform:rotate(0)}78%{transform:rotate(-9deg)}86%{transform:rotate(6deg)}93%{transform:rotate(-3deg)}}
+@keyframes bmcGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,205,90,0)}50%{box-shadow:0 0 14px 2px rgba(255,205,90,.35)}}
+@media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
+.bmc.big2{font-size:17px;padding:8px 18px 8px 12px;border-radius:24px}.bmc.big2 .cup{width:28px;height:28px}
 .ttl .home{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:10px;vertical-align:-5px;border:1px solid #2b5550;border-radius:4px;color:#9cc9c3;background:#132f2e}.ttl .home:hover{color:var(--gold);border-color:var(--gold)}.ttl .home svg{width:18px;height:18px}
 .slots{font:600 22px var(--ff);color:#e9f6f4}
 .slots b{color:var(--ok)}
@@ -309,6 +320,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .ttl{font-size:19px;width:100%}.ttl small{font-size:17px}
  .badge{font-size:10.5px;padding:3px 7px}
  .top .sp{display:none}
+ .top{position:relative}#bmcTop{position:absolute;right:0;top:-2px;padding:4px 7px}#bmcTop span{display:none}.ttl{padding-right:44px}
  .slots{font-size:16px;margin-left:auto}
  .tbtn{font-size:12px;padding:5px 8px}
  .tabs2 button{font-size:17px;padding:8px}
@@ -384,6 +396,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
       <button class="tbtn" id="bSet">⚙ <span data-l10n="settings"></span></button>
+      <a class="bmc" id="bmcTop" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-it="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a>
     </div>
     <div class="view" id="view"></div>
   </div>
@@ -408,6 +421,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <div class="plist" id="pList"></div>
     <div class="mbtns left"><button class="btn" id="pNew" data-l10n="pNew"></button></div>
     <p class="hint" id="pMode"></p></div>
+  <div class="sset"><h3 data-l10n="sSupport"></h3><p data-l10n="sSupportTxt"></p><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a></div>
   <div class="sset"><h3 data-l10n="sLang"></h3><div class="flags" id="flags"></div><p class="hint" data-l10n="sGameTerms"></p></div>
   <div class="sset"><h3 data-l10n="sData"></h3><p data-l10n="sDataIntro"></p>
     <div class="mbtns left"><button class="btn" id="expFile" data-l10n="sExpFile"></button><button class="btn" id="cpJson" data-l10n="sCopyJson"></button><button class="btn" id="cpOwned" data-l10n="sCopyOwned"></button></div>
@@ -450,6 +464,9 @@ ITEMS.forEach(it=>{it.mats=new Set();it.r.forEach(g=>g[2].forEach(o=>it.mats.add
 /* ---------- i18n ---------- */
 const LANGS=[["en","English","en-GB"],["hr","Hrvatski","hr-HR"],["de","Deutsch","de-DE"],["pl","Polski","pl-PL"],["fr","Français","fr-FR"],["es","Español","es-ES"]];
 const TR={
+ coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
+ sSupport:["Support the project","Podrži projekt","Projekt unterstützen","Wesprzyj projekt","Soutenir le projet","Apoya el proyecto"],
+ sSupportTxt:["The tracker is free and has no ads. If it helps you, a coffee keeps it running and updated.","Tracker je besplatan i bez reklama. Ako ti pomaže, kava pomaže da ostane živ i ažuran.","Der Tracker ist kostenlos und werbefrei. Wenn er dir hilft, hält ein Kaffee ihn am Laufen und aktuell.","Tracker jest darmowy i bez reklam. Jeśli ci pomaga, kawa pozwala go utrzymać i aktualizować.","Le tracker est gratuit et sans pub. S'il t'aide, un café le garde en vie et à jour.","El tracker es gratis y sin anuncios. Si te ayuda, un café lo mantiene vivo y actualizado."],
  home:["Home · ShoGy-HR","Početna · ShoGy-HR","Startseite · ShoGy-HR","Strona główna · ShoGy-HR","Accueil · ShoGy-HR","Inicio · ShoGy-HR"],
 gameName:["In-game name: {0} (several items share it)","Naziv u igri: {0} (isti naziv ima više predmeta)","Name im Spiel: {0} (mehrere Gegenstände heißen so)","Nazwa w grze: {0} (nosi ją kilka przedmiotów)","Nom en jeu : {0} (plusieurs objets portent ce nom)","Nombre en el juego: {0} (varios objetos lo comparten)"],
 noGameName:["The game files have no name for this item – this name is derived from its data.","U datotekama igre ovaj predmet nema naziv – naziv je izveden iz njegovih podataka.","In den Spieldateien hat dieser Gegenstand keinen Namen – der Name ist aus seinen Daten abgeleitet.","W plikach gry ten przedmiot nie ma nazwy – nazwa pochodzi z jego danych.","Les fichiers du jeu ne donnent pas de nom à cet objet – ce nom est déduit de ses données.","Los archivos del juego no dan nombre a este objeto; el nombre se deriva de sus datos."],
