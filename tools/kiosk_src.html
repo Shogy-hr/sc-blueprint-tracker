@@ -23,6 +23,7 @@
 :root{--ff:Rajdhani,"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;--tx:#d5ece8;--dim:#7fa7a2;--mut:#55807b;--line:#24504c;--line2:#1a3d3a;--pan:rgba(8,30,31,.72);--gold:#e2cf78;--goldbg:#a59646;--ok:#79e0b4;--bad:#ff8b7b;--want:#ffc46b;--amber:#ffb24a}
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{background:radial-gradient(ellipse at 50% 40%,#3a2418 0,#1b110c 55%,#0c0806 100%);color:var(--tx);font:500 15px/1.3 var(--ff);padding:14px}
 button{font:inherit;color:inherit;cursor:pointer}
 input,select,textarea{font:inherit;color:var(--tx)}
@@ -121,15 +122,16 @@ select.sel{background:#0d2827;border:1px solid var(--line);padding:6px 8px;min-w
 .slotg h4 small{font:500 14px var(--ff);color:#a7c8c4}
 .slotb{display:grid;grid-template-columns:100px 1fr;gap:10px;padding:4px 10px 10px}
 .box{height:96px;border:1px solid #2b5550;background:#132f2e;display:grid;place-items:center;font-size:34px;color:var(--gold)}
-.box.fill{font-size:13px;color:#e8f6f3;text-align:center;padding:4px;border-color:var(--gold);background:#2a2d14}
-.box.fill b{display:block;font-size:22px;color:var(--gold)}
+.box{min-width:0;overflow:hidden}
+.box.fill{font-size:13px;line-height:1.15;color:#e8f6f3;text-align:center;padding:4px;border-color:var(--gold);background:#2a2d14;height:auto;min-height:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;overflow-wrap:anywhere;hyphens:auto}
+.box.fill b{display:block;font-size:22px;line-height:1;color:var(--gold);white-space:nowrap}
 .opt{display:grid;grid-template-columns:18px minmax(70px,1fr) auto auto;gap:8px;align-items:center;padding:4px 6px;border:1px solid transparent;cursor:pointer;color:#ffa463;font-weight:600;font-size:15px;text-transform:uppercase}
 .opt:hover{border-color:#5d4630;background:#2a2116}
 .opt.on{border-color:var(--gold);background:#2b2914;color:var(--gold)}
 .opt svg{width:16px;height:16px}
 img.mi{width:18px;height:18px;object-fit:contain;border-radius:3px;display:block}
 .mats .mrow img.mi{width:22px;height:22px}
-.box img.mi.big{width:38px;height:38px;margin:0 auto 2px}
+.box img.mi.mbig{width:38px;height:38px;margin:0 auto 2px}
 .opt>span:nth-of-type(1){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .opt .q,.opt .a{color:#f0a067;font-weight:600;white-space:nowrap}
 .opt .stk{grid-column:2/5;font-size:12px;text-transform:none;color:var(--mut);margin-top:-3px}
@@ -332,7 +334,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
  .stats table{font-size:14px}.stats th,.stats td{padding:5px 6px}
  .ctl{grid-template-columns:1fr;gap:4px}
  .ctl .row .btn{padding:6px 10px}
- .slotb{grid-template-columns:72px 1fr}.box{height:72px}
+ .slotb{grid-template-columns:84px minmax(0,1fr);gap:8px}.box{height:auto;min-height:72px}.box.fill{min-height:72px;font-size:11px}.box.fill b{font-size:17px}.box img.mi.mbig{width:28px;height:28px}
  .slotg h4{font-size:18px}
  .opt{font-size:14px}
  .foot{position:sticky;bottom:0;background:#0b2423;border-top:1px solid var(--line);gap:8px;padding:8px}
@@ -1227,7 +1229,7 @@ function renderDetail(){
   const slots=it.r.map((g,gi)=>{
     const f=U.fill[gi];const o=f?g[2][f.o]:null;
     return `<div class="slotg"><h4>${esc(g[0].toUpperCase())} <small>(Choose ${g[1]>1?g[1]+" materials":"one material"})</small></h4><div class="slotb">
-      <button class="box ${f?"fill":""}" data-g="${gi}" title="${f?T("removeMat"):T("pickMat")}">${f?`${IMG.mats&&IMG.mats[o[0]]!=null?matIc(o[0],"big"):""}${esc(o[0])}<b>Q ${f.q}</b>`:"+"}</button><div>`+
+      <button class="box ${f?"fill":""}" data-g="${gi}" title="${f?T("removeMat"):T("pickMat")}">${f?`${IMG.mats&&IMG.mats[o[0]]!=null?matIc(o[0],"mbig"):""}${esc(o[0])}<b>Q ${f.q}</b>`:"+"}</button><div>`+
       g[2].map((o,oi)=>{const s=stockOf(o[0]);const need=o[1]*q;const k=MATS[o[0]]?MATS[o[0]][0]:"r";
         let sk="";if(s){const okA=+s.a>=need,okQ=(+s.q||0)>=o[2];sk=`<span class="stk ${okA&&okQ?"okk":"no"}">${T("stockL",fmtA(+s.a,k),s.q||0)}${okA?"":T("notEnough")}${okQ?"":T("lowQ")}</span>`}
         return `<div class="opt ${f&&f.o===oi?"on":""}" data-g="${gi}" data-o="${oi}">${matIc(o[0])}<span>${esc(o[0])}</span><span class="q">≥ ${o[2]} Q</span><span class="a">${fmtA(need,k)}</span>${sk}</div>`}).join("")+

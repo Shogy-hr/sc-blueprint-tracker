@@ -8,7 +8,7 @@ Needs: catalog.json, datapad/ (optional), wiki/ (optional), blueprints.json (opt
 import base64, glob, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from sclib import out, clean_name
+from sclib import out, clean_name, wiki_sig
 
 cat = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))
 items = cat['items']
@@ -139,7 +139,7 @@ chunks.append(cur)
 for i, c in enumerate(chunks): json.dump(c, open(os.path.join(outdir, f'l-{i}.json'), 'w'), separators=(',', ':'))
 img = {n: [kidx[k], v, loc.get(kidx[k], -1), s] for n, (k, v, s) in res.items()}
 mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
-json.dump({'thumbs': thumbs, 'img': img, 'mats': mats}, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
+json.dump({'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
 st = {'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)

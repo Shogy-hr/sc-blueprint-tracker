@@ -7,7 +7,7 @@
 Only rebuilds when something changed. Use --force to rebuild anyway."""
 import json, os, re, shutil, subprocess, sys, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from sclib import parse_version
+from sclib import parse_version, wiki_sig
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(os.path.join(HERE, '..'))
 DATA_REPO = 'https://github.com/StarCitizenWiki/scunpacked-data.git'
 IMG_REPO = 'https://github.com/jpcoombes-byte/Datapad.git'
@@ -43,6 +43,13 @@ def images(tmp, src):
     py('build_imgs.py')
 
 
+def images_stale():
+    """True when imgdata.json was built from a different wiki cache than the current one."""
+    p = os.path.join(HERE, 'imgdata.json')
+    if not os.path.exists(p): return True
+    return json.load(open(p, encoding='utf-8')).get('wsig') != wiki_sig(HERE)
+
+
 def main():
     cur = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))['v']
     changed = False
@@ -59,7 +66,8 @@ def main():
                 r = subprocess.run([sys.executable, os.path.join(HERE, 'fetch_wiki_images.py')], capture_output=True, text=True)
                 print(r.stdout.strip(), r.stderr.strip()[-500:])
                 m = re.search(r'new images (\d+)', r.stdout)
-                if m and int(m.group(1)) > 0:
+                # rebuild when pictures were added OR removed/replaced (e.g. a filter dropped a wrong image)
+                if (m and int(m.group(1)) > 0) or images_stale():
                     images(tmp, src); changed = True
         finally:
             shutil.rmtree(os.path.join(HERE, 'datapad'), ignore_errors=True)

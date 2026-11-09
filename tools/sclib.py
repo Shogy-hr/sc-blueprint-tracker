@@ -177,3 +177,12 @@ def parse_version(s):
     """'4.10.2-LIVE.12881860' -> ('4.10.2','LIVE',12881860) or None"""
     m = VER_RE.search(s or '')
     return (m.group(1), m.group(2).upper(), int(m.group(3))) if m else None
+
+
+def wiki_sig(here):
+    """Short hash of which picture each name uses in the wiki cache (ignores 'checked' timestamps)."""
+    import hashlib, json, os
+    p = os.path.join(here, 'wiki', 'index.json')
+    if not os.path.exists(p): return ''
+    d = json.load(open(p, encoding='utf-8'))
+    return hashlib.sha1(json.dumps({k: v.get('f') for k, v in d.items()}, sort_keys=True).encode()).hexdigest()[:12]
