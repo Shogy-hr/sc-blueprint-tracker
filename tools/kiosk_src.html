@@ -265,7 +265,7 @@ table.q td.tm{font-variant-numeric:tabular-nums;color:var(--gold)}
 .rbox .man summary{cursor:pointer;color:#f0d264}
 @keyframes rIn{from{opacity:0;transform:translateY(6px)}}
 @media (prefers-reduced-motion:reduce){.scr i,.rbox{animation:none}}
-.res ul{max-height:170px;overflow:auto;margin:6px 0;padding-left:18px;color:var(--ok)}
+.res ul{max-height:170px;overflow:auto;scrollbar-width:thin;scrollbar-color:#3f7a73 #0b2120;margin:6px 0;padding-left:18px;color:var(--ok)}
 .mbox.wide{max-width:720px}
 .sset{border:1px solid var(--line2);background:#0a2222;padding:10px 12px;margin:10px 0}
 .sset h3{margin:0 0 8px;font:700 17px var(--ff);letter-spacing:.08em;color:#9fd0ca;text-transform:uppercase}
@@ -1222,7 +1222,7 @@ async function readLogs(all,explicit){
   if(!nread){fail(T("readErr",errs));return}
   if(!found.size){fail(T("noBp"),gl);return}
   const r=addLogNames(found);ST.logSync=Date.now();save();render();
-  res.innerHTML=`<div class="rbox"><h4>✓ ${T("okTitle")}</h4>${T("found",found.size,r.added,r.already)}`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl+`<details class="man"><summary>${T("manualMiss")}</summary>${manual}</details></div>`;
+  res.innerHTML=`<div class="rbox"><h4>✓ ${T("okTitle")}</h4>${T("found",r.added+r.already,r.added,r.already)}`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl+`<details class="man"><summary>${T("manualMiss")}</summary>${manual}</details></div>`;
 }
 
 /* ---------- render ---------- */
