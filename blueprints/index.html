@@ -585,6 +585,7 @@ logOld:["Older sessions (select all files, Ctrl+A):","Stare sesije (označi sve 
 logDrop:["Drop files here or <b>click to choose</b><br><small>several files at once is fine</small>","Povuci datoteke ovamo ili <b>klikni za odabir</b><br><small>može više datoteka odjednom</small>","Dateien hierher ziehen oder <b>klicken zum Auswählen</b><br><small>mehrere Dateien auf einmal möglich</small>","Przeciągnij pliki tutaj lub <b>kliknij, aby wybrać</b><br><small>można kilka plików naraz</small>","Déposez les fichiers ici ou <b>cliquez pour choisir</b><br><small>plusieurs fichiers à la fois possibles</small>","Arrastra los archivos aquí o <b>haz clic para elegir</b><br><small>puedes elegir varios a la vez</small>"],
 close:["Close","Zatvori","Schließen","Zamknij","Fermer","Cerrar"],
 lastSync:["Last sync: {0}","Zadnja sinkronizacija: {0}","Letzte Synchronisierung: {0}","Ostatnia synchronizacja: {0}","Dernière synchronisation : {0}","Última sincronización: {0}"],
+readingN:["Reading file {0} of {1}… blueprints so far: {2}","Čitam datoteku {0} od {1}… dosad blueprinta: {2}","Lese Datei {0} von {1}… Blueprints bisher: {2}","Czytam plik {0} z {1}… dotąd blueprintów: {2}","Lecture du fichier {0} sur {1}… blueprints trouvés : {2}","Leyendo archivo {0} de {1}… blueprints hasta ahora: {2}"],
 reading:["Reading {0} files…","Čitam {0} datoteka…","Lese {0} Dateien…","Wczytuję {0} plików…","Lecture de {0} fichiers…","Leyendo {0} archivos…"],
 filesRead:["Files read: {0}","Pročitano datoteka: {0}","Gelesene Dateien: {0}","Odczytane pliki: {0}","Fichiers lus : {0}","Archivos leídos: {0}"],
 noBp:["No “Received Blueprint” entries in these files. If you just played a mission that gave no blueprint, that’s normal.","U ovim datotekama nema zapisa „Received Blueprint”. Ako si tek odigrao misiju koja nije dala blueprint, to je normalno.","Keine „Received Blueprint“-Einträge in diesen Dateien. Wenn deine letzte Mission keinen Blueprint gab, ist das normal.","Brak wpisów „Received Blueprint” w tych plikach. Jeśli misja nie dała blueprintu, to normalne.","Aucune entrée « Received Blueprint » dans ces fichiers. Si ta mission n’a pas donné de blueprint, c’est normal.","No hay entradas «Received Blueprint» en estos archivos. Si la misión no dio ningún blueprint, es normal."],
@@ -1142,13 +1143,25 @@ dr.onclick=()=>fi.click();fi.onchange=()=>{const fs=Array.from(fi.files);fi.valu
 dr.ondragover=e=>{e.preventDefault();dr.classList.add("hov")};dr.ondragleave=()=>dr.classList.remove("hov");
 dr.ondrop=e=>{e.preventDefault();dr.classList.remove("hov");readLogs(Array.from(e.dataTransfer.files))};
 const BP_RE=/<([^>]+)>[^\n]*?Received Blueprint:\s*(.*?):\s*"/g;
+/* stream a (possibly huge) log: keep the first 256 KB for the header, collect only "Received Blueprint" lines */
+async function scanLog(f){
+  const head=await f.slice(0,262144).text();const bp=[];
+  const rd=f.stream().getReader(),dec=new TextDecoder();let carry="";
+  for(;;){const {value,done}=await rd.read();const txt=carry+(done?dec.decode():dec.decode(value,{stream:true}));
+    const cut=done?txt.length:txt.lastIndexOf("\n")+1;const part=txt.slice(0,cut);carry=txt.slice(cut);
+    if(part.includes("Received Blueprint"))for(const m of part.matchAll(BP_RE))bp.push(m);
+    if(done)break}
+  return {head,bp}}
 async function readLogs(files){
   if(!files||!files.length)return;const res=$("#logres");res.innerHTML=`<span class="hint">${T("reading",files.length)}</span>`;
   const found=new Map();let game=null,nread=0;
-  for(const f of files){let t;try{t=await f.text();nread++}catch(e){continue}
-    const cl=/Changelist:\s*(\d+)/.exec(t),br=/Branch:\s*sc-alpha-([\d.]+)/.exec(t),env=/@env_session:\s*'[a-z]+-sc-alpha-[\d]+-(\d+)'/.exec(t),ex=/Executable:[^\n]*\\(LIVE|PTU|EPTU|HOTFIX|TECH-PREVIEW)\\Bin64/i.exec(t),ls=/Log started on ([^\n]+)/.exec(t);
+  let fi=0,lastUi=0;
+  for(const f of files){fi++;
+    if(Date.now()-lastUi>150){lastUi=Date.now();res.innerHTML=`<span class="hint">${T("readingN",fi,files.length,found.size)}</span>`}
+    let t;try{t=await scanLog(f)}catch(e){continue}nread++;
+    const cl=/Changelist:\s*(\d+)/.exec(t.head),br=/Branch:\s*sc-alpha-([\d.]+)/.exec(t.head),env=/@env_session:\s*'[a-z]+-sc-alpha-[\d]+-(\d+)'/.exec(t.head),ex=/Executable:[^\n]*\\(LIVE|PTU|EPTU|HOTFIX|TECH-PREVIEW)\\Bin64/i.exec(t.head),ls=/Log started on ([^\n]+)/.exec(t.head);
     if(cl){const g={build:+cl[1],ver:br?br[1]:"",env:env?+env[1]:0,ch:ex?ex[1].toUpperCase():"LIVE",at:ls?Date.parse(ls[1])||0:0};if(!game||g.at>game.at||(!g.at&&g.build>game.build))game=g}
-    for(const m of t.matchAll(BP_RE)){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=found.get(k);if(!o||ts<o.ts)found.set(k,{name,ts})}}
+    for(const m of t.bp){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=found.get(k);if(!o||ts<o.ts)found.set(k,{name,ts})}}
   const gl=`<p class="hint">${T("filesRead",nread)}</p>`+(game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"");
   if(game){ST.game=game;save();applyStatic()}
   if(!found.size){res.innerHTML=`<span style="color:var(--amber)">${T("noBp")}</span>`+gl;return}
