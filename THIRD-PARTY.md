@@ -3,6 +3,7 @@
 | What | Source | License / terms |
 |---|---|---|
 | Blueprint, recipe, mission and dismantle data | Star Citizen game files, via [StarCitizenWiki/scunpacked-data](https://github.com/StarCitizenWiki/scunpacked-data) (ScDataDumper) | Game data © Cloud Imperium. Used for a free, non-commercial fan site. |
+| Material icons and item-category icons | Star Citizen game files (`Data.p4k`, `Data/UI/...` inventory and engineering UI icons), extracted locally by the site owner; sources in `tools/game_icons/src` | Images © Cloud Imperium. Used for a free, non-commercial fan site. |
 | Item images | Star Citizen game files, via [jpcoombes-byte/Datapad](https://github.com/jpcoombes-byte/Datapad) | Images © Cloud Imperium. Used for a free, non-commercial fan site. |
 | Item images (fallback) | [Star Citizen Wiki](https://starcitizen.tools) page images, downloaded by `tools/fetch_wiki_images.py` | Wiki text CC BY-SA 4.0; game images © Cloud Imperium. Used for a free, non-commercial fan site. |
 | Patch / build versions | RSI Spectrum patch notes, RSI Roadmap, patchbot.io | Public information, only version numbers are read. |

@@ -107,6 +107,9 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .tile{position:relative;width:104px;height:112px;background:linear-gradient(#173f3c,#0e2a28);border:1px solid #2d5b56;padding:22px 4px 4px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
 .tile .t{position:absolute;left:4px;top:4px;width:22px;height:22px;border:1px solid #8fc0b9;border-radius:50%;font:700 11px/20px var(--ff);color:#cfe8e4}
 .tile svg{width:38px;height:38px;color:#c9e9e3;opacity:.9}
+.gic{display:block;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.tile .gic{width:40px;height:40px;color:#c9e9e3;opacity:.9}
+.hero .gic{width:130px;height:130px;color:#d8efeb}
 .tile img{width:96px;height:58px;object-fit:contain;filter:drop-shadow(0 2px 3px #000a)}
 .tile.miss img{opacity:.35;filter:grayscale(.7)}
 .hero img{max-width:92%;max-height:260px;object-fit:contain;filter:drop-shadow(0 8px 14px #000b)}
@@ -1195,7 +1198,9 @@ function tilesHTML(L,selIdx){
   if(ls)h+="</div>";if(lc)h+="</div>";
   return h;
 }
-function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt="" loading="lazy">`+(m[1]?`<span class="tmp" title="${T("tmpTitle")}">${T("tmpShort")}</span>`:""):ic(subIc(it))}
+/* category icon from the game UI (tools/game_icons) when an item has no picture; else the drawn icon */
+function noImg(it){const u=IMG.subs&&IMG.subs[it.c==="V"?"V":it.s];return u?`<span class="gic" style="--m:url(${u})"></span>`:ic(subIc(it))}
+function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt="" loading="lazy">`+(m[1]?`<span class="tmp" title="${T("tmpTitle")}">${T("tmpShort")}</span>`:""):noImg(it)}
 function pagerHTML(page,pages,id){return `<div class="pager" id="${id}"><button data-p="first" ${page<=0?"disabled":""}>«</button><button data-p="prev" ${page<=0?"disabled":""}>‹</button><span>${pages?page+1:0}/${pages}</span><button data-p="next" ${page>=pages-1?"disabled":""}>›</button><button data-p="last" ${page>=pages-1?"disabled":""}>»</button></div>`}
 function bindPager(id,get,set,pages){$$(`#${id} button`).forEach(b=>b.onclick=()=>{const p=get();set({first:0,prev:p-1,next:p+1,last:pages-1}[b.dataset.p]);render()})}
 
@@ -1296,7 +1301,7 @@ function renderDetail(){
     ${slots}
    </div>
    <div class="info">
-    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt="">${imgOf(it)[1]?`<span class="vr">${T("tmpLong")}</span>`:""}</span>`:ic(subIc(it))}</div>
+    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt="">${imgOf(it)[1]?`<span class="vr">${T("tmpLong")}</span>`:""}</span>`:noImg(it)}</div>
     <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CBY[it.c].n)} → <b>${esc(it.s)}</b> • Tier <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • Grade ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
       <div class="ft">Fabrication Time:<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
     ${ptuBox(it)}

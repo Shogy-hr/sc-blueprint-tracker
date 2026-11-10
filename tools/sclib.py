@@ -186,3 +186,22 @@ def wiki_sig(here):
     if not os.path.exists(p): return ''
     d = json.load(open(p, encoding='utf-8'))
     return hashlib.sha1(json.dumps({k: v.get('f') for k, v in d.items()}, sort_keys=True).encode()).hexdigest()[:12]
+
+
+def add_game_icons(here, data, cat_mats):
+    """Put in-game UI icons (tools/game_icons/out, made by game_icons/make.py from Data.p4k) into imgdata:
+    material icons win over wiki photos; 'subs' = category icons for items that have no picture."""
+    import json, os
+    d = os.path.join(here, 'game_icons', 'out')
+    if not os.path.exists(os.path.join(d, 'mats.json')): return data
+    M = json.load(open(os.path.join(d, 'mats.json'), encoding='utf-8'))
+    S = json.load(open(os.path.join(d, 'subs.json'), encoding='utf-8'))
+    generic = M.get('Iron') and M.get('Silicon')  # Silicon uses the generic "mineral" icon
+    pos = {u: i for i, u in enumerate(data['thumbs'])}
+    for m, (kind, *_r) in cat_mats.items():
+        u = M.get(m) or (generic if kind == 'r' else None)   # unknown new ore -> generic mineral icon
+        if not u: continue
+        if u not in pos: pos[u] = len(data['thumbs']); data['thumbs'].append(u)
+        data['mats'][m] = pos[u]
+    data['subs'] = S
+    return data

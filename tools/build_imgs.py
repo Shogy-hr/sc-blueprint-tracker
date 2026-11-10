@@ -2,13 +2,14 @@
 """Pick an image for every blueprint and write tools/imgdata.json + ../blueprints/img/l-*.json.
 Sources, best first:
   d  Datapad (jpcoombes-byte/Datapad): renders from the game files, matched by item UUID or exact name
+  g  material + category icons from the game UI (tools/game_icons, see make.py)
   w  Star Citizen Wiki page image (downloaded by fetch_wiki_images.py into tools/wiki/)
   variant: the image of the base model (same category only), shown with a "temporary image" label
 Needs: catalog.json, datapad/ (optional), wiki/ (optional), blueprints.json (optional, for class names)."""
 import base64, glob, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from sclib import out, clean_name, wiki_sig
+from sclib import out, clean_name, wiki_sig, add_game_icons
 
 cat = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))
 items = cat['items']
@@ -117,7 +118,10 @@ def large(key):
 # ---- material images (small only)
 MATIMG = {}
 if os.path.exists(wiki_idx):
+    _gm = os.path.join(HERE, 'game_icons', 'out', 'mats.json')
+    GAME_MATS = set(json.load(open(_gm, encoding='utf-8'))) if os.path.exists(_gm) else set()
     for m in cat.get('mats', {}):
+        if m in GAME_MATS: continue   # in-game icon is used instead (add_game_icons)
         e = WIDX.get('mat:' + m, {})
         if re.search(r'cargo[_ -]', e.get('file', '') or '', re.I): continue
         fs = os.path.join(HERE, 'wiki', 'img', (e.get('f') or '') + '-s.webp')
@@ -139,7 +143,9 @@ chunks.append(cur)
 for i, c in enumerate(chunks): json.dump(c, open(os.path.join(outdir, f'l-{i}.json'), 'w'), separators=(',', ':'))
 img = {n: [kidx[k], v, loc.get(kidx[k], -1), s] for n, (k, v, s) in res.items()}
 mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
-json.dump({'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
+data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, cat.get('mats', {}))
+mats = data['mats']
+json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
 st = {'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)
