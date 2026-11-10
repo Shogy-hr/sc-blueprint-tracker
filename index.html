@@ -75,6 +75,16 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 @media (prefers-reduced-motion:reduce){.bmc,.bmc .cup,.bmc .steam path{animation:none}.bmc .steam path{opacity:.7}}
 .bmc.hd{font-size:16px;padding:6px 16px 6px 10px}.bmc.hd .cup{width:26px;height:26px}
 .support{display:flex;justify-content:center;margin-top:26px}
+.vid{display:flex;gap:22px;align-items:center;margin-top:26px;padding:16px;border:1px solid var(--line,#2c5a55);background:#0b2424cc}
+.vfac{position:relative;flex:0 0 420px;aspect-ratio:16/9;padding:0;border:1px solid #3f7a73;background:#000;cursor:pointer;overflow:hidden}
+.vfac img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s,filter .4s}
+.vfac:hover img{transform:scale(1.03);filter:brightness(1.1)}
+.vplay{position:absolute;left:76%;top:50%;width:76px;height:54px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px #000a);transition:transform .2s}
+.vfac:hover .vplay{transform:translate(-50%,-50%) scale(1.1)}
+.vfac iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vtxt b{display:block;font-size:24px;color:#f0d264;letter-spacing:.04em}
+.vtxt p{margin:6px 0 8px;font-size:17px}
+.vtxt small{color:#8fbcb5;font-size:13px}.vtxt a{color:#9fd8d0;font-size:13px}
 .bmc.big2{font-size:19px;padding:10px 22px 10px 14px;border-radius:26px}.bmc.big2 .cup{width:32px;height:32px}
 
 /* animated previews (kept above the text, never behind it) */
@@ -118,6 +128,7 @@ footer b{color:var(--dim);font-weight:600}
  main{padding:18px 0}
  .hello h1{font-size:24px}.hello p{font-size:16px}
  .cards{grid-template-columns:1fr;gap:14px}
+ .vid{flex-direction:column;align-items:stretch;padding:12px}.vfac{flex:none;width:100%}.vtxt{text-align:center}
  .bmc.hd{display:none}
  .support{flex-direction:column}.refer{align-items:center;text-align:center}.rf-code{font-size:17px;padding:11px 14px 13px}.rf-code i{left:14px;right:14px}.rf-go{padding:0 14px}
  .card{min-height:0;padding:20px 18px 18px}
@@ -157,6 +168,10 @@ footer b{color:var(--dim);font-weight:600}
     <span class="meta" id="kver"></span>
     <span class="go"><span data-t="open"></span> ›</span>
    </a>
+  </div>
+  <div class="vid">
+   <button type="button" class="vfac" id="vFac" data-ta="vPlay"><img src="assets/tutorial-thumb-640.webp" srcset="assets/tutorial-thumb-640.webp 640w, assets/tutorial-thumb.webp 1280w" sizes="(max-width:700px) 92vw, 420px" alt="" width="640" height="360" loading="lazy"><span class="vplay" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e33"/><path d="M27 34.5 45 24 27 13.5z" fill="#fff"/></svg></span></button>
+   <div class="vtxt"><b data-t="vT"></b><p data-t="vD"></p><small data-t="vNote"></small> <a href="https://youtu.be/Qzf4-WhVY3k" target="_blank" rel="noopener noreferrer" data-t="vYt"></a></div>
   </div>
   <div class="support"><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-t="coffee"></span></a>
   <div class="refer">
@@ -199,6 +214,11 @@ var TX={
  live:["Live","Aktivno","Live","Aktywne","En ligne","Activo"],
  data:["Game data","Podaci igre","Spieldaten","Dane gry","Données du jeu","Datos del juego"],
  fan:["Unofficial fan site, not affiliated with Cloud Imperium Games. Star Citizen® and Squadron 42® are trademarks of Cloud Imperium Rights LLC.","Neslužbena stranica zajednice, nije povezana s Cloud Imperium Games. Star Citizen® i Squadron 42® zaštitni su znakovi tvrtke Cloud Imperium Rights LLC.","Inoffizielle Fan-Seite, nicht mit Cloud Imperium Games verbunden. Star Citizen® und Squadron 42® sind Marken der Cloud Imperium Rights LLC.","Nieoficjalna strona fanów, niezwiązana z Cloud Imperium Games. Star Citizen® i Squadron 42® są znakami towarowymi Cloud Imperium Rights LLC.","Site de fans non officiel, sans lien avec Cloud Imperium Games. Star Citizen® et Squadron 42® sont des marques de Cloud Imperium Rights LLC.","Sitio de fans no oficial, sin relación con Cloud Imperium Games. Star Citizen® y Squadron 42® son marcas de Cloud Imperium Rights LLC."],
+ vT:["Video tutorial · 2 min","Video vodič · 2 min","Video-Tutorial · 2 Min.","Poradnik wideo · 2 min","Tutoriel vidéo · 2 min","Tutorial en vídeo · 2 min"],
+ vD:["How to use the Fabrication Kiosk – import your blueprints from Game.log, plan crafts, track materials.","Kako koristiti Fabrication Kiosk – uvoz blueprinta iz Game.loga, planiranje izrade, praćenje materijala.","So nutzt du den Fabrication Kiosk – Blueprints aus Game.log importieren, Crafts planen, Materialien verfolgen.","Jak korzystać z Fabrication Kiosk – import blueprintów z Game.log, planowanie craftingu, śledzenie materiałów.","Comment utiliser le Fabrication Kiosk – importer tes blueprints depuis Game.log, planifier, suivre tes matériaux.","Cómo usar el Fabrication Kiosk: importa tus blueprints desde Game.log, planifica y controla tus materiales."],
+ vNote:["In English. The YouTube player loads only after you click play.","Na engleskom. YouTube player se učitava tek kad klikneš play.","Auf Englisch. Der YouTube-Player lädt erst, wenn du auf Play klickst.","Po angielsku. Odtwarzacz YouTube ładuje się dopiero po kliknięciu.","En anglais. Le lecteur YouTube ne se charge qu’après ton clic.","En inglés. El reproductor de YouTube solo se carga al pulsar play."],
+ vYt:["Open on YouTube ↗","Otvori na YouTubeu ↗","Auf YouTube öffnen ↗","Otwórz w YouTube ↗","Ouvrir sur YouTube ↗","Abrir en YouTube ↗"],
+ vPlay:["Play the video tutorial","Pokreni video vodič","Video-Tutorial abspielen","Odtwórz poradnik wideo","Lire le tutoriel vidéo","Reproducir el tutorial"],
  priv:["no accounts, no tracking","bez računa, bez praćenja","keine Konten, kein Tracking","bez kont, bez śledzenia","sans compte, sans pistage","sin cuentas, sin rastreo"]
 };
 var LANG="en";
@@ -220,6 +240,8 @@ render();
   try{navigator.clipboard.writeText(code).then(done,function(){fb()})}catch(e){fb()}
   function fb(){var x=document.createElement("textarea");x.value=code;document.body.appendChild(x);x.select();try{document.execCommand("copy");done()}catch(e){}x.remove()}});})();
 try{fetch("blueprints/data/status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(s){if(s&&s.data&&s.data.version){VER=String(s.data.version).replace(/-LIVE\.\d+$/," LIVE");render()}}).catch(function(){})}catch(e){}
+/* video facade: nothing is loaded from YouTube until the visitor clicks */
+document.getElementById("vFac").addEventListener("click",function(){if(this.querySelector("iframe"))return;const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/Qzf4-WhVY3k?autoplay=1&rel=0&modestbranding=1";f.title="Fabrication Kiosk tutorial";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;this.innerHTML="";this.appendChild(f)});
 </script>
 </body>
 </html>

@@ -243,6 +243,12 @@ table.q td.tm{font-variant-numeric:tabular-nums;color:var(--gold)}
 /* modal & misc */
 .modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:14px;z-index:9}
 .modal.on{display:flex}
+.vbox{max-width:900px}
+.vfac{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:1px solid #3f7a73;background:#000;cursor:pointer;overflow:hidden}
+.vfac img{width:100%;height:100%;object-fit:cover;display:block}
+.vplay{position:absolute;left:76%;top:50%;width:84px;height:60px;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 10px #000a);transition:transform .2s}
+.vfac:hover .vplay{transform:translate(-50%,-50%) scale(1.1)}
+.vfac iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .mbox{background:#0d2a29;border:1px solid #3f7a73;box-shadow:0 0 0 6px #1b2226;width:100%;max-width:560px;max-height:92vh;overflow:auto;padding:16px 18px}
 .mbox h2{margin:0 0 10px;font:700 24px var(--ff);color:var(--gold);letter-spacing:.04em}
 .mbox p,.hint{color:#a9c9c5;font-size:14.5px;margin:6px 0}
@@ -444,6 +450,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <button class="tbtn stat" id="bStat"></button>
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
+      <button class="tbtn" id="bVid">▶ <span data-l10n="tut"></span></button>
       <button class="tbtn" id="bSet">⚙ <span data-l10n="settings"></span></button>
       <div class="toprow"><a class="bmc" id="bmcTop" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-it="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a>
       <div class="lflags" id="flags"></div></div>
@@ -453,6 +460,12 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 </div></div>
 <footer class="site-foot"><span data-l10n="footFan"></span></footer>
 
+<div class="modal" id="mVid"><div class="mbox vbox">
+  <h3 data-l10n="tutT"></h3>
+  <button type="button" class="vfac" id="vFac"><img src="../assets/tutorial-thumb.webp" alt="" width="1280" height="720"><span class="vplay" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e33"/><path d="M27 34.5 45 24 27 13.5z" fill="#fff"/></svg></span></button>
+  <p class="hint"><span data-l10n="tutNote"></span> <a href="https://youtu.be/Qzf4-WhVY3k" target="_blank" rel="noopener noreferrer">YouTube ↗</a></p>
+  <div class="mbtns"><button class="btn" data-close data-l10n="close"></button></div>
+</div></div>
 <div class="modal" id="mLog"><div class="mbox">
   <h2 data-l10n="logTitle"></h2>
   <p data-l10n="logIntro"></p>
@@ -625,6 +638,9 @@ manualT:["Add blueprints by hand","Ručno dodavanje blueprinta","Blueprints von 
 manualMiss:["Something missing (e.g. logs deleted after a reinstall)? Add it by hand","Nešto fali (npr. logovi obrisani kod reinstalacije)? Dodaj ručno","Fehlt etwas (z. B. Logs nach Neuinstallation gelöscht)? Von Hand hinzufügen","Czegoś brakuje (np. logi usunięte po reinstalacji)? Dodaj ręcznie","Il manque quelque chose (p. ex. logs supprimés après une réinstallation) ? Ajoute-le à la main","¿Falta algo (p. ej. logs borrados al reinstalar)? Añádelo a mano"],
 manualS:["1. Close this window and find the blueprint in the list (you can search by name).<br>2. Click it to open its details.<br>3. Click <b>{0}</b>. Clicking again removes the mark.","1. Zatvori ovaj prozor i pronađi blueprint na popisu (možeš ga potražiti po imenu).<br>2. Klikni na njega da se otvore detalji.<br>3. Klikni <b>{0}</b>. Ponovni klik uklanja oznaku.","1. Schließe dieses Fenster und suche den Blueprint in der Liste (Suche nach Name geht).<br>2. Klicke ihn an, um die Details zu öffnen.<br>3. Klicke auf <b>{0}</b>. Ein weiterer Klick entfernt die Markierung.","1. Zamknij to okno i znajdź blueprint na liście (możesz wyszukać po nazwie).<br>2. Kliknij go, aby otworzyć szczegóły.<br>3. Kliknij <b>{0}</b>. Ponowne kliknięcie usuwa oznaczenie.","1. Ferme cette fenêtre et trouve le blueprint dans la liste (la recherche par nom fonctionne).<br>2. Clique dessus pour ouvrir les détails.<br>3. Clique sur <b>{0}</b>. Un nouveau clic retire la marque.","1. Cierra esta ventana y busca el blueprint en la lista (puedes buscar por nombre).<br>2. Haz clic en él para abrir los detalles.<br>3. Haz clic en <b>{0}</b>. Otro clic quita la marca."],
 logDrop:["Drop files here or <b>click to choose</b><br><small>several files at once is fine</small>","Povuci datoteke ovamo ili <b>klikni za odabir</b><br><small>može više datoteka odjednom</small>","Dateien hierher ziehen oder <b>klicken zum Auswählen</b><br><small>mehrere Dateien auf einmal möglich</small>","Przeciągnij pliki tutaj lub <b>kliknij, aby wybrać</b><br><small>można kilka plików naraz</small>","Déposez les fichiers ici ou <b>cliquez pour choisir</b><br><small>plusieurs fichiers à la fois possibles</small>","Arrastra los archivos aquí o <b>haz clic para elegir</b><br><small>puedes elegir varios a la vez</small>"],
+tut:["TUTORIAL","VODIČ","TUTORIAL","PORADNIK","TUTORIEL","TUTORIAL"],
+tutT:["Video tutorial (2 min)","Video vodič (2 min)","Video-Tutorial (2 Min.)","Poradnik wideo (2 min)","Tutoriel vidéo (2 min)","Tutorial en vídeo (2 min)"],
+tutNote:["In English. The YouTube player (youtube-nocookie.com) loads only after you click play.","Na engleskom. YouTube player (youtube-nocookie.com) učitava se tek kad klikneš play.","Auf Englisch. Der YouTube-Player (youtube-nocookie.com) lädt erst nach deinem Klick auf Play.","Po angielsku. Odtwarzacz YouTube (youtube-nocookie.com) ładuje się dopiero po kliknięciu.","En anglais. Le lecteur YouTube (youtube-nocookie.com) ne se charge qu’après ton clic.","En inglés. El reproductor de YouTube (youtube-nocookie.com) solo se carga al pulsar play."],
 close:["Close","Zatvori","Schließen","Zamknij","Fermer","Cerrar"],
 lastSync:["Last sync: {0}","Zadnja sinkronizacija: {0}","Letzte Synchronisierung: {0}","Ostatnia synchronizacja: {0}","Dernière synchronisation : {0}","Última sincronización: {0}"],
 readingN:["Reading file {0} of {1}… blueprints so far: {2}","Čitam datoteku {0} od {1}… dosad blueprinta: {2}","Lese Datei {0} von {1}… Blueprints bisher: {2}","Czytam plik {0} z {1}… dotąd blueprintów: {2}","Lecture du fichier {0} sur {1}… blueprints trouvés : {2}","Leyendo archivo {0} de {1}… blueprints hasta ahora: {2}"],
@@ -1106,6 +1122,10 @@ function instant(lanes){const now=Date.now();let n=0;lanes.forEach(([qk,pk])=>{S
 /* ---------- shell ---------- */
 const railIcons={fab:"pencil",dis:"hammer",queue:"stack"};
 $$(".rail button").forEach(b=>{b.innerHTML=ic(railIcons[b.dataset.v]);b.onclick=()=>{if(isSheet()){U.sel=null;document.body.style.overflow=""}U.view=b.dataset.v;render();window.scrollTo(0,0)}});
+/* video facade: nothing loads from YouTube until the user clicks; closing the window stops the video */
+$("#bVid").onclick=()=>$("#mVid").classList.add("on");
+$("#vFac").onclick=function(){if(this.querySelector("iframe"))return;const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/Qzf4-WhVY3k?autoplay=1&rel=0&modestbranding=1";f.title="Fabrication Kiosk tutorial";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;this.dataset.html=this.innerHTML;this.innerHTML="";this.appendChild(f)};
+$("#mVid [data-close]").addEventListener("click",()=>{const v=$("#vFac");if(v.dataset.html){v.innerHTML=v.dataset.html;delete v.dataset.html}});
 $("#bLog").onclick=()=>{$("#logres").innerHTML=ST.logSync?`<span class="hint">${T("lastSync",new Date(ST.logSync).toLocaleString(LOC()))}</span>`:"";$("#mLog").classList.add("on")};
 $("#bProf").onclick=()=>$("#bSet").click();
 $("#bStat").onclick=()=>{$("#bSet").click();setTimeout(()=>{const e=$("#stSec");if(e)e.scrollIntoView({block:"start",behavior:"smooth"})},60)};
