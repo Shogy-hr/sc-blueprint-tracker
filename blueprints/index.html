@@ -246,6 +246,25 @@ table.q td.tm{font-variant-numeric:tabular-nums;color:var(--gold)}
 .drop.hov{border-color:var(--gold);color:var(--gold)}
 .mbox textarea{width:100%;min-height:150px;background:#081b1b;border:1px solid var(--line);font:12px ui-monospace,monospace;padding:8px}
 .mbtns{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
+.pickrow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:8px}
+.dnote{font-size:12px;margin:-4px 0 8px}
+.scan{display:flex;gap:14px;align-items:center;padding:12px;border:1px solid var(--line);background:#081b1b}
+.scan b{letter-spacing:.08em;color:#f0d264}
+.scr{position:relative;width:64px;height:64px;flex:0 0 64px;border:1px solid #3f7a73;overflow:hidden;
+ background:#0b2624 linear-gradient(#2d5b5655 1px,transparent 1px) 0 0/8px 8px,linear-gradient(90deg,#2d5b5655 1px,transparent 1px) 0 0/8px 8px}
+.scr::before{content:"";position:absolute;inset:14px 12px;border:2px solid #5ff2d8;border-radius:2px;box-shadow:0 0 8px #5ff2d855;
+ background:linear-gradient(#5ff2d8 0 0) 6px 8px/24px 2px no-repeat,linear-gradient(#5ff2d8 0 0) 6px 16px/16px 2px no-repeat,linear-gradient(#5ff2d8 0 0) 6px 24px/20px 2px no-repeat}
+.scr i{position:absolute;left:0;right:0;top:-16px;height:16px;background:linear-gradient(transparent,#5ff2d8aa);border-bottom:2px solid #5ff2d8;animation:scanY 1.3s linear infinite}
+@keyframes scanY{to{top:64px}}
+.scan .bar{height:6px;background:#0b2120;border:1px solid var(--line);margin:7px 0 5px;width:min(320px,52vw)}
+.scan .bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#3fd1b8,#f0d264);transition:width .15s}
+.rbox{border:1px solid var(--line);border-left:4px solid var(--ok);background:#081b1b;padding:10px 12px;animation:rIn .35s ease-out}
+.rbox.bad{border-left-color:var(--amber)}
+.rbox h4{margin:0 0 6px;letter-spacing:.08em;color:var(--ok)}.rbox.bad h4{color:var(--amber)}
+.rbox .man{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:14px;color:#cfe6e2}
+.rbox .man summary{cursor:pointer;color:#f0d264}
+@keyframes rIn{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.scr i,.rbox{animation:none}}
 .res ul{max-height:170px;overflow:auto;margin:6px 0;padding-left:18px;color:var(--ok)}
 .mbox.wide{max-width:720px}
 .sset{border:1px solid var(--line2);background:#0a2222;padding:10px 12px;margin:10px 0}
@@ -434,8 +453,13 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
   <p data-l10n="logIntro"></p>
   <div class="hint" data-l10n="logCur"></div><div class="path2">…\StarCitizen\LIVE\Game.log</div>
   <div class="hint" data-l10n="logOld"></div><div class="path2">…\StarCitizen\LIVE\logbackups\</div>
-  <div class="drop" id="drop" data-l10n="logDrop"></div>
+  <div class="drop" id="drop">
+    <div class="pickrow"><button class="btn pri" id="pickDir" type="button" data-l10n="pickDir"></button><button class="btn" id="pickFiles" type="button" data-l10n="pickFiles"></button></div>
+    <div class="hint" data-l10n="dropOr"></div>
+  </div>
+  <p class="hint dnote" data-l10n="dirNote"></p>
   <input type="file" id="logfile" multiple accept=".log,.txt,text/plain" hidden>
+  <input type="file" id="logdir" webkitdirectory directory multiple hidden>
   <div class="res" id="logres"></div>
   <div class="mbtns"><button class="btn" data-close data-l10n="close"></button></div>
 </div></div>
@@ -581,7 +605,20 @@ settings:["SETTINGS","POSTAVKE","EINSTELLUNGEN","USTAWIENIA","PARAMÈTRES","AJUS
 logTitle:["SYNC FROM THE GAME","SINKRONIZACIJA IZ IGRE","SYNCHRONISIERUNG AUS DEM SPIEL","SYNCHRONIZACJA Z GRY","SYNCHRONISATION DEPUIS LE JEU","SINCRONIZACIÓN DESDE EL JUEGO"],
 logIntro:["Star Citizen writes every blueprint you receive to Game.log (“Received Blueprint”). This only reads that text file – the game itself is not touched.","Star Citizen svaki dobiveni blueprint zapiše u Game.log („Received Blueprint”). Ovdje se samo čita taj tekst, igra se ne dira.","Star Citizen schreibt jeden erhaltenen Blueprint in die Game.log („Received Blueprint“). Hier wird nur diese Textdatei gelesen – das Spiel selbst wird nicht angefasst.","Star Citizen zapisuje każdy otrzymany blueprint w Game.log („Received Blueprint”). Tu odczytywany jest tylko ten plik tekstowy – gra nie jest modyfikowana.","Star Citizen inscrit chaque blueprint reçu dans Game.log (« Received Blueprint »). Seul ce fichier texte est lu – le jeu n’est pas modifié.","Star Citizen escribe cada blueprint recibido en Game.log («Received Blueprint»). Aquí solo se lee ese archivo de texto; el juego no se toca."],
 logCur:["Current session:","Trenutna sesija:","Aktuelle Sitzung:","Bieżąca sesja:","Session actuelle :","Sesión actual:"],
-logOld:["Older sessions (select all files, Ctrl+A):","Stare sesije (označi sve datoteke, Ctrl+A):","Ältere Sitzungen (alle Dateien markieren, Strg+A):","Starsze sesje (zaznacz wszystkie pliki, Ctrl+A):","Sessions précédentes (sélectionnez tous les fichiers, Ctrl+A) :","Sesiones anteriores (selecciona todos los archivos, Ctrl+A):"],
+logOld:["Older sessions – choose the whole folder:","Stare sesije – odaberi cijelu mapu:","Ältere Sitzungen – den ganzen Ordner wählen:","Starsze sesje – wybierz cały folder:","Sessions précédentes – choisis le dossier entier :","Sesiones anteriores: elige la carpeta entera:"],
+pickDir:["📁 Choose the logbackups folder","📁 Odaberi mapu logbackups","📁 Ordner logbackups wählen","📁 Wybierz folder logbackups","📁 Choisir le dossier logbackups","📁 Elegir la carpeta logbackups"],
+pickFiles:["📄 Choose files (Game.log)","📄 Odaberi datoteke (Game.log)","📄 Dateien wählen (Game.log)","📄 Wybierz pliki (Game.log)","📄 Choisir des fichiers (Game.log)","📄 Elegir archivos (Game.log)"],
+dropOr:["…or drop files or the whole folder here","…ili ovamo povuci datoteke ili cijelu mapu","…oder Dateien bzw. den ganzen Ordner hierher ziehen","…albo przeciągnij tu pliki lub cały folder","…ou glisse ici les fichiers ou le dossier entier","…o arrastra aquí los archivos o la carpeta entera"],
+dirNote:["Your browser may ask whether to “upload” the files – they never leave your computer, they are only read on this page.","Preglednik će možda pitati želiš li „uploadati” datoteke – one ne napuštaju tvoje računalo, samo se čitaju na ovoj stranici.","Dein Browser fragt evtl., ob die Dateien „hochgeladen“ werden sollen – sie verlassen deinen Computer nie, sie werden nur auf dieser Seite gelesen.","Przeglądarka może zapytać o „przesłanie” plików – nie opuszczają one komputera, są tylko odczytywane na tej stronie.","Ton navigateur peut demander s’il faut « importer » les fichiers – ils ne quittent jamais ton ordinateur, ils sont seulement lus sur cette page.","Tu navegador puede preguntar si quieres «subir» los archivos: nunca salen de tu ordenador, solo se leen en esta página."],
+scanTitle:["SCANNING YOUR BLUEPRINTS","SKENIRAM TVOJE BLUEPRINTE","SCANNE DEINE BLUEPRINTS","SKANUJĘ TWOJE BLUEPRINTY","ANALYSE DE TES BLUEPRINTS","ESCANEANDO TUS BLUEPRINTS"],
+scanProg:["File {0} / {1} · blueprints found: {2}","Datoteka {0} / {1} · pronađeno blueprinta: {2}","Datei {0} / {1} · gefundene Blueprints: {2}","Plik {0} / {1} · znalezione blueprinty: {2}","Fichier {0} / {1} · blueprints trouvés : {2}","Archivo {0} / {1} · blueprints encontrados: {2}"],
+okTitle:["SYNC COMPLETE","SINKRONIZACIJA USPJELA","SYNCHRONISIERUNG ERFOLGREICH","SYNCHRONIZACJA UDANA","SYNCHRONISATION RÉUSSIE","SINCRONIZACIÓN COMPLETADA"],
+failTitle:["NO BLUEPRINTS FOUND","NISU PRONAĐENI BLUEPRINTI","KEINE BLUEPRINTS GEFUNDEN","NIE ZNALEZIONO BLUEPRINTÓW","AUCUN BLUEPRINT TROUVÉ","NO SE ENCONTRARON BLUEPRINTS"],
+noLogs:["There are no .log files in what you chose. Choose the logbackups folder or Game.log from …\\StarCitizen\\LIVE\\.","U odabranom nema .log datoteka. Odaberi mapu logbackups ili Game.log iz …\\StarCitizen\\LIVE\\.","In deiner Auswahl sind keine .log-Dateien. Wähle den Ordner logbackups oder Game.log aus …\\StarCitizen\\LIVE\\.","W wybranych nie ma plików .log. Wybierz folder logbackups lub Game.log z …\\StarCitizen\\LIVE\\.","Ta sélection ne contient aucun fichier .log. Choisis le dossier logbackups ou Game.log dans …\\StarCitizen\\LIVE\\.","Lo que elegiste no contiene archivos .log. Elige la carpeta logbackups o Game.log de …\\StarCitizen\\LIVE\\."],
+readErr:["{0} files could not be read.","{0} datoteka nije bilo moguće pročitati.","{0} Dateien konnten nicht gelesen werden.","Nie udało się odczytać {0} plików.","{0} fichiers n’ont pas pu être lus.","No se pudieron leer {0} archivos."],
+manualT:["Add blueprints by hand","Ručno dodavanje blueprinta","Blueprints von Hand hinzufügen","Ręczne dodawanie blueprintów","Ajouter des blueprints à la main","Añadir blueprints a mano"],
+manualMiss:["Something missing (e.g. logs deleted after a reinstall)? Add it by hand","Nešto fali (npr. logovi obrisani kod reinstalacije)? Dodaj ručno","Fehlt etwas (z. B. Logs nach Neuinstallation gelöscht)? Von Hand hinzufügen","Czegoś brakuje (np. logi usunięte po reinstalacji)? Dodaj ręcznie","Il manque quelque chose (p. ex. logs supprimés après une réinstallation) ? Ajoute-le à la main","¿Falta algo (p. ej. logs borrados al reinstalar)? Añádelo a mano"],
+manualS:["1. Close this window and find the blueprint in the list (you can search by name).<br>2. Click it to open its details.<br>3. Click <b>{0}</b>. Clicking again removes the mark.","1. Zatvori ovaj prozor i pronađi blueprint na popisu (možeš ga potražiti po imenu).<br>2. Klikni na njega da se otvore detalji.<br>3. Klikni <b>{0}</b>. Ponovni klik uklanja oznaku.","1. Schließe dieses Fenster und suche den Blueprint in der Liste (Suche nach Name geht).<br>2. Klicke ihn an, um die Details zu öffnen.<br>3. Klicke auf <b>{0}</b>. Ein weiterer Klick entfernt die Markierung.","1. Zamknij to okno i znajdź blueprint na liście (możesz wyszukać po nazwie).<br>2. Kliknij go, aby otworzyć szczegóły.<br>3. Kliknij <b>{0}</b>. Ponowne kliknięcie usuwa oznaczenie.","1. Ferme cette fenêtre et trouve le blueprint dans la liste (la recherche par nom fonctionne).<br>2. Clique dessus pour ouvrir les détails.<br>3. Clique sur <b>{0}</b>. Un nouveau clic retire la marque.","1. Cierra esta ventana y busca el blueprint en la lista (puedes buscar por nombre).<br>2. Haz clic en él para abrir los detalles.<br>3. Haz clic en <b>{0}</b>. Otro clic quita la marca."],
 logDrop:["Drop files here or <b>click to choose</b><br><small>several files at once is fine</small>","Povuci datoteke ovamo ili <b>klikni za odabir</b><br><small>može više datoteka odjednom</small>","Dateien hierher ziehen oder <b>klicken zum Auswählen</b><br><small>mehrere Dateien auf einmal möglich</small>","Przeciągnij pliki tutaj lub <b>kliknij, aby wybrać</b><br><small>można kilka plików naraz</small>","Déposez les fichiers ici ou <b>cliquez pour choisir</b><br><small>plusieurs fichiers à la fois possibles</small>","Arrastra los archivos aquí o <b>haz clic para elegir</b><br><small>puedes elegir varios a la vez</small>"],
 close:["Close","Zatvori","Schließen","Zamknij","Fermer","Cerrar"],
 lastSync:["Last sync: {0}","Zadnja sinkronizacija: {0}","Letzte Synchronisierung: {0}","Ostatnia synchronizacja: {0}","Dernière synchronisation : {0}","Última sincronización: {0}"],
@@ -1139,9 +1176,19 @@ $$(".rst").forEach(b=>b.onclick=()=>{
   U.dsel=[];b.classList.remove("arm");b.innerHTML=T(b.dataset.l10n);save();render();$("#dataMsg").textContent="";toast(T("sResetDone"));
 });
 const dr=$("#drop"),fi=$("#logfile");
-dr.onclick=()=>fi.click();fi.onchange=()=>{const fs=Array.from(fi.files);fi.value="";readLogs(fs)};  /* copy first: clearing the input empties the live FileList */
+const fd=$("#logdir");
+$("#pickDir").onclick=e=>{e.stopPropagation();fd.click()};$("#pickFiles").onclick=e=>{e.stopPropagation();fi.click()};
+dr.onclick=()=>fd.click();
+/* copy first: clearing the input empties the live FileList */
+fi.onchange=()=>{const fs=Array.from(fi.files);fi.value="";readLogs(fs,true)};
+fd.onchange=()=>{const fs=Array.from(fd.files);fd.value="";readLogs(fs,false)};
+async function walkEntry(en,out){
+  if(en.isFile){const f=await new Promise((ok,no)=>en.file(ok,no)).catch(()=>null);if(f)out.push(f);return}
+  if(en.isDirectory){const r=en.createReader();for(;;){const b=await new Promise((ok,no)=>r.readEntries(ok,no)).catch(()=>[]);if(!b.length)break;for(const c of b)await walkEntry(c,out)}}}
 dr.ondragover=e=>{e.preventDefault();dr.classList.add("hov")};dr.ondragleave=()=>dr.classList.remove("hov");
-dr.ondrop=e=>{e.preventDefault();dr.classList.remove("hov");readLogs(Array.from(e.dataTransfer.files))};
+dr.ondrop=async e=>{e.preventDefault();dr.classList.remove("hov");
+  const files=Array.from(e.dataTransfer.files),ents=Array.from(e.dataTransfer.items||[]).map(i=>i.webkitGetAsEntry?i.webkitGetAsEntry():null).filter(Boolean);
+  if(ents.some(x=>x.isDirectory)){const out=[];for(const en of ents)await walkEntry(en,out);readLogs(out,false)}else readLogs(files,true)};
 const BP_RE=/<([^>]+)>[^\n]*?Received Blueprint:\s*(.*?):\s*"/g;
 /* stream a (possibly huge) log: keep the first 256 KB for the header, collect only "Received Blueprint" lines */
 async function scanLog(f){
@@ -1152,21 +1199,30 @@ async function scanLog(f){
     if(part.includes("Received Blueprint"))for(const m of part.matchAll(BP_RE))bp.push(m);
     if(done)break}
   return {head,bp}}
-async function readLogs(files){
-  if(!files||!files.length)return;const res=$("#logres");res.innerHTML=`<span class="hint">${T("reading",files.length)}</span>`;
-  const found=new Map();let game=null,nread=0;
-  let fi=0,lastUi=0;
+async function readLogs(all,explicit){
+  if(!all||!all.length)return;const res=$("#logres");
+  const files=explicit?all:all.filter(f=>/\.log$/i.test(f.name));
+  const manual=`<b>${T("manualT")}</b><p>${T("manualS",T("markOwn"))}</p>`;
+  const fail=(msg,extra="")=>{res.innerHTML=`<div class="rbox bad"><h4>✕ ${T("failTitle")}</h4><p>${msg}</p>${extra}<div class="man">${manual}</div></div>`};
+  if(!files.length){fail(T("noLogs"));return}
+  res.innerHTML=`<div class="scan"><div class="scr"><i></i></div><div><b>${T("scanTitle")}</b><div class="bar"><span id="scBar"></span></div><div class="hint" id="scTxt"></div></div></div>`;
+  const bar=$("#scBar"),txt=$("#scTxt"),t0=Date.now();
+  const found=new Map();let game=null,nread=0,fi=0,lastUi=0;
+  const ui=()=>{bar.style.width=(100*fi/files.length).toFixed(1)+"%";txt.textContent=T("scanProg",fi,files.length,found.size)};ui();
   for(const f of files){fi++;
-    if(Date.now()-lastUi>150){lastUi=Date.now();res.innerHTML=`<span class="hint">${T("readingN",fi,files.length,found.size)}</span>`}
+    if(Date.now()-lastUi>120){lastUi=Date.now();ui()}
     let t;try{t=await scanLog(f)}catch(e){continue}nread++;
     const cl=/Changelist:\s*(\d+)/.exec(t.head),br=/Branch:\s*sc-alpha-([\d.]+)/.exec(t.head),env=/@env_session:\s*'[a-z]+-sc-alpha-[\d]+-(\d+)'/.exec(t.head),ex=/Executable:[^\n]*\\(LIVE|PTU|EPTU|HOTFIX|TECH-PREVIEW)\\Bin64/i.exec(t.head),ls=/Log started on ([^\n]+)/.exec(t.head);
     if(cl){const g={build:+cl[1],ver:br?br[1]:"",env:env?+env[1]:0,ch:ex?ex[1].toUpperCase():"LIVE",at:ls?Date.parse(ls[1])||0:0};if(!game||g.at>game.at||(!g.at&&g.build>game.build))game=g}
     for(const m of t.bp){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=found.get(k);if(!o||ts<o.ts)found.set(k,{name,ts})}}
-  const gl=`<p class="hint">${T("filesRead",nread)}</p>`+(game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"");
+  ui();await new Promise(r=>setTimeout(r,Math.max(0,1400-(Date.now()-t0))));   // let the scan be seen even for one small file
+  const errs=files.length-nread;
+  const gl=`<p class="hint">${T("filesRead",nread)}${errs?" · "+T("readErr",errs):""}</p>`+(game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"");
   if(game){ST.game=game;save();applyStatic()}
-  if(!found.size){res.innerHTML=`<span style="color:var(--amber)">${T("noBp")}</span>`+gl;return}
+  if(!nread){fail(T("readErr",errs));return}
+  if(!found.size){fail(T("noBp"),gl);return}
   const r=addLogNames(found);ST.logSync=Date.now();save();render();
-  res.innerHTML=`<span style="color:var(--ok)">${T("found",found.size,r.added,r.already)}</span>`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl;
+  res.innerHTML=`<div class="rbox"><h4>✓ ${T("okTitle")}</h4>${T("found",found.size,r.added,r.already)}`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl+`<details class="man"><summary>${T("manualMiss")}</summary>${manual}</details></div>`;
 }
 
 /* ---------- render ---------- */
