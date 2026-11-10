@@ -586,6 +586,7 @@ logDrop:["Drop files here or <b>click to choose</b><br><small>several files at o
 close:["Close","Zatvori","Schließen","Zamknij","Fermer","Cerrar"],
 lastSync:["Last sync: {0}","Zadnja sinkronizacija: {0}","Letzte Synchronisierung: {0}","Ostatnia synchronizacja: {0}","Dernière synchronisation : {0}","Última sincronización: {0}"],
 reading:["Reading {0} files…","Čitam {0} datoteka…","Lese {0} Dateien…","Wczytuję {0} plików…","Lecture de {0} fichiers…","Leyendo {0} archivos…"],
+filesRead:["Files read: {0}","Pročitano datoteka: {0}","Gelesene Dateien: {0}","Odczytane pliki: {0}","Fichiers lus : {0}","Archivos leídos: {0}"],
 noBp:["No “Received Blueprint” entries in these files. If you just played a mission that gave no blueprint, that’s normal.","U ovim datotekama nema zapisa „Received Blueprint”. Ako si tek odigrao misiju koja nije dala blueprint, to je normalno.","Keine „Received Blueprint“-Einträge in diesen Dateien. Wenn deine letzte Mission keinen Blueprint gab, ist das normal.","Brak wpisów „Received Blueprint” w tych plikach. Jeśli misja nie dała blueprintu, to normalne.","Aucune entrée « Received Blueprint » dans ces fichiers. Si ta mission n’a pas donné de blueprint, c’est normal.","No hay entradas «Received Blueprint» en estos archivos. Si la misión no dio ningún blueprint, es normal."],
 found:["<b>Found {0} blueprints.</b> New: {1} · already marked: {2}","<b>Pronađeno {0} blueprinta.</b> Novih: {1} · već označeno: {2}","<b>{0} Blueprints gefunden.</b> Neu: {1} · bereits markiert: {2}","<b>Znaleziono {0} blueprintów.</b> Nowe: {1} · już oznaczone: {2}","<b>{0} blueprints trouvés.</b> Nouveaux : {1} · déjà marqués : {2}","<b>{0} blueprints encontrados.</b> Nuevos: {1} · ya marcados: {2}"],
 notInCat:["Not in the catalogue (maybe a new patch): {0}","Nisu u katalogu (možda novi patch): {0}","Nicht im Katalog (evtl. neuer Patch): {0}","Brak w katalogu (może nowy patch): {0}","Absents du catalogue (peut-être un nouveau patch) : {0}","No están en el catálogo (quizá un parche nuevo): {0}"],
@@ -1137,18 +1138,18 @@ $$(".rst").forEach(b=>b.onclick=()=>{
   U.dsel=[];b.classList.remove("arm");b.innerHTML=T(b.dataset.l10n);save();render();$("#dataMsg").textContent="";toast(T("sResetDone"));
 });
 const dr=$("#drop"),fi=$("#logfile");
-dr.onclick=()=>fi.click();fi.onchange=()=>{readLogs(fi.files);fi.value=""};
+dr.onclick=()=>fi.click();fi.onchange=()=>{const fs=Array.from(fi.files);fi.value="";readLogs(fs)};  /* copy first: clearing the input empties the live FileList */
 dr.ondragover=e=>{e.preventDefault();dr.classList.add("hov")};dr.ondragleave=()=>dr.classList.remove("hov");
-dr.ondrop=e=>{e.preventDefault();dr.classList.remove("hov");readLogs(e.dataTransfer.files)};
+dr.ondrop=e=>{e.preventDefault();dr.classList.remove("hov");readLogs(Array.from(e.dataTransfer.files))};
 const BP_RE=/<([^>]+)>[^\n]*?Received Blueprint:\s*(.*?):\s*"/g;
 async function readLogs(files){
   if(!files||!files.length)return;const res=$("#logres");res.innerHTML=`<span class="hint">${T("reading",files.length)}</span>`;
-  const found=new Map();let game=null;
-  for(const f of files){let t;try{t=await f.text()}catch(e){continue}
+  const found=new Map();let game=null,nread=0;
+  for(const f of files){let t;try{t=await f.text();nread++}catch(e){continue}
     const cl=/Changelist:\s*(\d+)/.exec(t),br=/Branch:\s*sc-alpha-([\d.]+)/.exec(t),env=/@env_session:\s*'[a-z]+-sc-alpha-[\d]+-(\d+)'/.exec(t),ex=/Executable:[^\n]*\\(LIVE|PTU|EPTU|HOTFIX|TECH-PREVIEW)\\Bin64/i.exec(t),ls=/Log started on ([^\n]+)/.exec(t);
     if(cl){const g={build:+cl[1],ver:br?br[1]:"",env:env?+env[1]:0,ch:ex?ex[1].toUpperCase():"LIVE",at:ls?Date.parse(ls[1])||0:0};if(!game||g.at>game.at||(!g.at&&g.build>game.build))game=g}
     for(const m of t.matchAll(BP_RE)){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=found.get(k);if(!o||ts<o.ts)found.set(k,{name,ts})}}
-  const gl=game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"";
+  const gl=`<p class="hint">${T("filesRead",nread)}</p>`+(game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"");
   if(game){ST.game=game;save();applyStatic()}
   if(!found.size){res.innerHTML=`<span style="color:var(--amber)">${T("noBp")}</span>`+gl;return}
   const r=addLogNames(found);ST.logSync=Date.now();save();render();
