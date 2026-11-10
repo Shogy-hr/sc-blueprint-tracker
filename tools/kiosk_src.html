@@ -167,7 +167,12 @@ img.mi{width:18px;height:18px;object-fit:contain;border-radius:3px;display:block
 .opt .stk.okk{color:var(--ok)}.opt .stk.no{color:var(--bad)}
 .qs{display:flex;align-items:center;gap:8px;margin:6px 0 0;font-size:14px;color:#cfe5e1;text-transform:none}
 .qs input{flex:1;accent-color:var(--gold)}
-.qs b{width:44px;text-align:right;color:var(--gold)}
+.qs input.qn{flex:0 0 64px;width:64px;background:#0b2120;border:1px solid var(--line);color:var(--gold);font:700 15px var(--ff);text-align:right;padding:3px 6px}
+.qs input.qn:focus{outline:1px solid var(--gold)}
+.qbtns{display:flex;gap:6px;align-items:center;margin:6px 0 2px;flex-wrap:wrap}
+.qbtns button{padding:2px 9px;font:700 13px var(--ff);letter-spacing:.04em;background:#0f3735;border:1px solid var(--line);color:#cfe5e1}
+.qbtns button:hover:not(:disabled){border-color:var(--gold);color:var(--gold)}.qbtns button:disabled{opacity:.35;cursor:default}
+.qbtns .hint{margin-left:auto;font-size:12px}
 .info{display:flex;flex-direction:column;min-height:0;overflow:auto}
 .hero{position:relative;min-height:190px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 55%,#1e5550,transparent 65%)}
 .hero svg{width:130px;height:130px;color:#d8efeb;filter:drop-shadow(0 6px 10px #0009)}
@@ -659,6 +664,7 @@ pickMat:["Choose a material on the right","Odaberi materijal desno","Material re
 stockL:["stock: {0} · Q {1}","zaliha: {0} · Q {1}","Vorrat: {0} · Q {1}","zapas: {0} · Q {1}","stock : {0} · Q {1}","inventario: {0} · Q {1}"],
 notEnough:[" · not enough"," · nedovoljno"," · zu wenig"," · za mało"," · insuffisant"," · insuficiente"],
 lowQ:[" · quality too low"," · preniska kvaliteta"," · Qualität zu niedrig"," · zbyt niska jakość"," · qualité trop basse"," · calidad demasiado baja"],
+qMinT:["Lowest quality this slot accepts: {0}","Najniža kvaliteta koju ovaj slot prima: {0}","Niedrigste Qualität, die dieser Slot annimmt: {0}","Najniższa jakość, jaką przyjmuje ten slot: {0}","Qualité minimale acceptée par ce slot : {0}","Calidad mínima que acepta este hueco: {0}"],
 qualityL:["Quality","Kvaliteta","Qualität","Jakość","Qualité","Calidad"],
 startBp:["Starter blueprint – everyone has it","Početni blueprint – svi ga imaju","Start-Blueprint – hat jeder","Blueprint startowy – ma go każdy","Blueprint de départ – tout le monde l’a","Blueprint inicial: todos lo tienen"],
 noPool:["Not in any mission pool in 4.10.2 (maybe an event or a future patch).","Nije u poolu nijedne misije u 4.10.2 (možda event ili budući patch).","In 4.10.2 in keinem Missionspool (evtl. Event oder künftiger Patch).","W 4.10.2 nie ma go w żadnej puli misji (może event lub przyszły patch).","Dans aucun pool de mission en 4.10.2 (peut-être un événement ou un futur patch).","No está en ningún pool de misiones en 4.10.2 (quizá un evento o un parche futuro)."],
@@ -1026,6 +1032,9 @@ const stockOf=m=>ST.stock[m];
 function affordable(it,qty=1){
   return it.r.every(g=>g[2].some(o=>{const s=stockOf(o[0]);return s&&+s.a>=o[1]*qty&&(+s.q||0)>=o[2]}));
 }
+/* material quality: game data uses 0–1000; a slot accepts nothing below the recipe's minimum (≥ Q) */
+const Q_MAX=1000,qMin=o=>Math.max(0,Math.min(Q_MAX,+o[2]||0));
+const clampQ=(v,o)=>{v=Math.round(Number(v));if(!isFinite(v))v=qMin(o);return Math.max(qMin(o),Math.min(Q_MAX,v))};
 function modVal(entries,q){ // entries for one mod idx in one group
   let lin=null,add=null;
   for(const e of entries){
@@ -1345,13 +1354,14 @@ function renderDetail(){
   if(!it){R.innerHTML=`<div class="empty"><div>${ic("compass")}<div class="msg">${T("pickTitle")}</div><p class="hint" style="margin-top:14px">${T("pickHint")}</p></div></div>`;return}
   const own=isOwned(it),q=U.qty;
   const slots=it.r.map((g,gi)=>{
-    const f=U.fill[gi];const o=f?g[2][f.o]:null;
+    const f=U.fill[gi];const o=f?g[2][f.o]:null;if(f)f.q=clampQ(f.q,o);
     return `<div class="slotg"><h4>${esc(g[0].toUpperCase())} <small>(Choose ${g[1]>1?g[1]+" materials":"one material"})</small></h4><div class="slotb">
       <button class="box ${f?"fill":""}" data-g="${gi}" title="${f?T("removeMat"):T("pickMat")}">${f?`${IMG.mats&&IMG.mats[o[0]]!=null?matIc(o[0],"mbig"):""}${esc(o[0])}<b>Q ${f.q}</b>`:"+"}</button><div>`+
       g[2].map((o,oi)=>{const s=stockOf(o[0]);const need=o[1]*q;const k=MATS[o[0]]?MATS[o[0]][0]:"r";
         let sk="";if(s){const okA=+s.a>=need,okQ=(+s.q||0)>=o[2];sk=`<span class="stk ${okA&&okQ?"okk":"no"}">${T("stockL",fmtA(+s.a,k),s.q||0)}${okA?"":T("notEnough")}${okQ?"":T("lowQ")}</span>`}
         return `<div class="opt ${f&&f.o===oi?"on":""}" data-g="${gi}" data-o="${oi}">${matIc(o[0])}<span>${esc(o[0])}</span><span class="q">≥ ${o[2]} Q</span><span class="a">${fmtA(need,k)}</span>${sk}</div>`}).join("")+
-      (f?`<div class="qs">${T("qualityL")} <input type="range" min="0" max="1000" step="1" value="${f.q}" data-g="${gi}"><b>${f.q}</b></div>`:"")+
+      (f?`<div class="qs">${T("qualityL")} <input type="range" min="${qMin(o)}" max="${Q_MAX}" step="1" value="${f.q}" data-g="${gi}"><input type="number" class="qn" min="${qMin(o)}" max="${Q_MAX}" step="1" inputmode="numeric" value="${f.q}" data-g="${gi}" aria-label="${T("qualityL")}"></div>
+        <div class="qbtns"><button type="button" data-g="${gi}" data-q="min" title="${T("qMinT",qMin(o))}">MIN</button><button type="button" data-g="${gi}" data-q="500" ${qMin(o)>500?"disabled":""}>Q500</button><button type="button" data-g="${gi}" data-q="max">MAX</button><span class="hint">${qMin(o)}–${Q_MAX}</span></div>`:"")+
     `</div></div></div>`}).join("");
   const st=calcStats(it);let srows="";
   st.forEach((r,mi)=>{const nm=MODS[mi][0];
@@ -1393,7 +1403,13 @@ function renderDetail(){
   const im=imgOf(it);if(im&&im[2]>=0){const sel=U.sel;loadLarge(im[2]).then(d=>{const h=$("#heroImg");if(d&&h&&U.sel===sel&&d[im[0]])h.src=d[im[0]]})}
   $$("#right .opt").forEach(x=>x.onclick=()=>{const g=+x.dataset.g,o=+x.dataset.o;const s=stockOf(it.r[g][2][o][0]);U.fill[g]={o,q:U.fill[g]?.q??(s&&s.q?+s.q:500)};renderDetail()});
   $$("#right .box").forEach(x=>x.onclick=()=>{const g=+x.dataset.g;if(U.fill[g]){delete U.fill[g];renderDetail()}else{const s=it.r[g][2].findIndex(o=>stockOf(o[0]));const o=s>=0?s:0;const st=stockOf(it.r[g][2][o][0]);U.fill[g]={o,q:st&&st.q?+st.q:500};renderDetail()}});
-  $$("#right .qs input").forEach(x=>{x.oninput=()=>{U.fill[+x.dataset.g].q=+x.value;x.nextElementSibling.textContent=x.value};x.onchange=()=>renderDetail()});
+  const optOf=gi=>it.r[gi][2][U.fill[gi].o];
+  $$("#right .qs input[type=range]").forEach(x=>{x.oninput=()=>{const g=+x.dataset.g;U.fill[g].q=clampQ(x.value,optOf(g));x.nextElementSibling.value=U.fill[g].q};x.onchange=()=>renderDetail()});
+  $$("#right .qs input.qn").forEach(x=>{
+    x.oninput=()=>{if(+x.value>Q_MAX)x.value=Q_MAX};     // 99999 -> 1000 right away
+    x.onchange=()=>{const g=+x.dataset.g;U.fill[g].q=clampQ(x.value===""?NaN:x.value,optOf(g));renderDetail()};
+    x.onkeydown=e=>{if(e.key==="Enter")x.blur();if(["e","E","+","-",".",","].includes(e.key))e.preventDefault()}});
+  $$("#right .qbtns button").forEach(x=>x.onclick=()=>{const g=+x.dataset.g,o=optOf(g);U.fill[g].q=clampQ(x.dataset.q==="min"?qMin(o):x.dataset.q==="max"?Q_MAX:+x.dataset.q,o);renderDetail()});
   const af=best=>{it.r.forEach((g,gi)=>{let bo=0,bq=best?-1:2000;g[2].forEach((o,oi)=>{const s=stockOf(o[0]);const qq=s&&+s.a>0?(+s.q||0):(best?1000:o[2]);if(best?qq>bq:qq<bq){bq=qq;bo=oi}});U.fill[gi]={o:bo,q:Math.max(bq,0)}});renderDetail()};
   $("#afB").onclick=()=>af(true);$("#afW").onclick=()=>af(false);
   const setQ=n=>{U.qty=Math.max(1,Math.min(999,n|0||1));renderDetail()};
