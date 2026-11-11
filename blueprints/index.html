@@ -1089,10 +1089,12 @@ function calcStats(it){
   rows.forEach(r=>{r.mult=r.cnt?r.sum/r.cnt:1});
   return rows;
 }
+/* names rewritten by localisation mods (e.g. StarStrings): "Q IND 3B Agni", "S CIV 3B 6CA 'Bila'", "[IND-S2-B] Citadel" */
+const ssName=n=>String(n).replace(/^\[[A-Z]{3}-S\d-[A-Z]\]\s*/,"").replace(/^[A-Z] [A-Z]{3} \d[A-Z] /,"").replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();
 function addLogNames(names){ // names: Map lc->{name,ts}
   let added=0,already=0;const unknown=[];const newly=[];
   const expanded=[];
-  for(const [k,f] of names){const it=BYN.get(k)||BYNK.get(nk(f.name));if(it){expanded.push([it.lc,{name:it.n,ts:f.ts}]);continue}
+  for(const [k,f] of names){const it=BYN.get(k)||BYNK.get(nk(f.name))||BYNK.get(nk(ssName(f.name)));if(it){expanded.push([it.lc,{name:it.n,ts:f.ts}]);continue}
     const grp=ALIAS.get(nk(f.name));if(grp){grp.forEach(g=>expanded.push([g.lc,{name:g.n,ts:f.ts}]));continue}expanded.push([k,f])}
   for(const [k,f] of expanded){
     const it=BYN.get(k);const nm=it?it.n:f.name;
