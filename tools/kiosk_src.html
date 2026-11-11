@@ -1387,7 +1387,7 @@ function renderDetail(){
   st.forEach((r,mi)=>{const nm=MODS[mi][0];
     if(r.isAdd){const d=r.add;srows+=`<tr><td>${esc(nm)}</td><td>+0</td><td>${d>=0?"+":""}${d}</td><td class="${d>0?"up":d<0?"dn":""}">${r.touched&&d?(d>0?"+":"")+d:"·"}</td></tr>`;return}
     const dp=(r.mult-1)*100;const good=r.dir===0?0:Math.sign(dp)*(r.dir>0?1:-1);
-    srows+=`<tr><td>${esc(nm)}</td><td>1.00</td><td>${r.mult.toFixed(2)}</td><td class="${good>0?"up":good<0?"dn":""}">${r.touched&&Math.abs(dp)>=0.005?(dp>0?"+":"")+dp.toFixed(2)+" %":"·"}</td></tr>`});
+    srows+=`<tr><td>${esc(nm)}</td><td>×1.00</td><td>×${r.mult.toFixed(2)}</td><td class="${good>0?"up":good<0?"dn":""}">${r.touched&&Math.abs(dp)>=0.005?(dp>0?"+":"")+dp.toFixed(2)+" %":"·"}</td></tr>`});
   const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(POOLS[p])}</span>`).join(""):`<span class="hint">${T("noPool")}</span>`;
   const ret=it.x.length?`<table class="sumt">${it.x.map(r=>`<tr><td>${esc(r[0])}</td><td>${fmtA(r[1],r[2])}</td></tr>`).join("")}</table><div class="hint">${T("time",fmtT(it.xt))}</div>`:`<span class="hint">${T("noData")}</span>`;
   const allFilled=it.r.every((g,gi)=>U.fill[gi]);
