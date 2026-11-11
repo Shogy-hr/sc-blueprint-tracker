@@ -271,6 +271,10 @@ table.q td.tm{font-variant-numeric:tabular-nums;color:var(--gold)}
 .scan .bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#3fd1b8,#f0d264);transition:width .15s}
 .rbox{border:1px solid var(--line);border-left:4px solid var(--ok);background:#081b1b;padding:10px 12px;animation:rIn .35s ease-out}
 .rbox.bad{border-left-color:var(--amber)}
+.rbox.acc{border-left-color:#5ff2d8}.rbox.acc h4{color:#5ff2d8}
+.accrow{display:flex;gap:8px;align-items:center;padding:6px 0;cursor:pointer;font-size:15px}
+.accrow input{width:18px;height:18px;accent-color:#f0d264}
+#accGo{margin:6px 0 4px}
 .rbox h4{margin:0 0 6px;letter-spacing:.08em;color:var(--ok)}.rbox.bad h4{color:var(--amber)}
 .rbox .man{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:14px;color:#cfe6e2}
 .rbox .man summary{cursor:pointer;color:#f0d264}
@@ -645,6 +649,13 @@ close:["Close","Zatvori","Schließen","Zamknij","Fermer","Cerrar"],
 lastSync:["Last sync: {0}","Zadnja sinkronizacija: {0}","Letzte Synchronisierung: {0}","Ostatnia synchronizacja: {0}","Dernière synchronisation : {0}","Última sincronización: {0}"],
 readingN:["Reading file {0} of {1}… blueprints so far: {2}","Čitam datoteku {0} od {1}… dosad blueprinta: {2}","Lese Datei {0} von {1}… Blueprints bisher: {2}","Czytam plik {0} z {1}… dotąd blueprintów: {2}","Lecture du fichier {0} sur {1}… blueprints trouvés : {2}","Leyendo archivo {0} de {1}… blueprints hasta ahora: {2}"],
 reading:["Reading {0} files…","Čitam {0} datoteka…","Lese {0} Dateien…","Wczytuję {0} plików…","Lecture de {0} fichiers…","Leyendo {0} archivos…"],
+accT:["BLUEPRINTS FROM SEVERAL GAME ACCOUNTS","BLUEPRINTI S VIŠE RAČUNA","BLUEPRINTS VON MEHREREN SPIELKONTEN","BLUEPRINTY Z KILKU KONT","BLUEPRINTS DE PLUSIEURS COMPTES","BLUEPRINTS DE VARIAS CUENTAS"],
+accS:["These logs come from more than one game account. Choose which ones belong to this profile:","Ovi logovi su s više računa u igri. Odaberi koji pripadaju ovom profilu:","Diese Logs stammen von mehr als einem Spielkonto. Wähle, welche zu diesem Profil gehören:","Te logi pochodzą z więcej niż jednego konta. Wybierz, które należą do tego profilu:","Ces logs viennent de plusieurs comptes. Choisis ceux qui appartiennent à ce profil :","Estos logs son de más de una cuenta. Elige cuáles pertenecen a este perfil:"],
+accRow:["<b>{0}</b> – {1} blueprints · {2} logs","<b>{0}</b> – {1} blueprinta · {2} logova","<b>{0}</b> – {1} Blueprints · {2} Logs","<b>{0}</b> – {1} blueprintów · {2} logów","<b>{0}</b> – {1} blueprints · {2} logs","<b>{0}</b> – {1} blueprints · {2} logs"],
+accNone:["Logs without account info – {0} blueprints · {1} logs","Logovi bez podatka o računu – {0} blueprinta · {1} logova","Logs ohne Kontoangabe – {0} Blueprints · {1} Logs","Logi bez informacji o koncie – {0} blueprintów · {1} logów","Logs sans info de compte – {0} blueprints · {1} logs","Logs sin datos de cuenta – {0} blueprints · {1} logs"],
+accGo:["Import selected","Uvezi odabrano","Auswahl importieren","Importuj zaznaczone","Importer la sélection","Importar selección"],
+accPick:["Pick at least one account.","Odaberi barem jedan račun.","Wähle mindestens ein Konto.","Wybierz co najmniej jedno konto.","Choisis au moins un compte.","Elige al menos una cuenta."],
+accOne:["Account: {0}","Račun: {0}","Konto: {0}","Konto: {0}","Compte : {0}","Cuenta: {0}"],
 filesRead:["Files read: {0}","Pročitano datoteka: {0}","Gelesene Dateien: {0}","Odczytane pliki: {0}","Fichiers lus : {0}","Archivos leídos: {0}"],
 noBp:["No “Received Blueprint” entries in these files. If you just played a mission that gave no blueprint, that’s normal.","U ovim datotekama nema zapisa „Received Blueprint”. Ako si tek odigrao misiju koja nije dala blueprint, to je normalno.","Keine „Received Blueprint“-Einträge in diesen Dateien. Wenn deine letzte Mission keinen Blueprint gab, ist das normal.","Brak wpisów „Received Blueprint” w tych plikach. Jeśli misja nie dała blueprintu, to normalne.","Aucune entrée « Received Blueprint » dans ces fichiers. Si ta mission n’a pas donné de blueprint, c’est normal.","No hay entradas «Received Blueprint» en estos archivos. Si la misión no dio ningún blueprint, es normal."],
 found:["<b>Found {0} blueprints.</b> New: {1} · already marked: {2}","<b>Pronađeno {0} blueprinta.</b> Novih: {1} · već označeno: {2}","<b>{0} Blueprints gefunden.</b> Neu: {1} · bereits markiert: {2}","<b>Znaleziono {0} blueprintów.</b> Nowe: {1} · już oznaczone: {2}","<b>{0} blueprints trouvés.</b> Nouveaux : {1} · déjà marqués : {2}","<b>{0} blueprints encontrados.</b> Nuevos: {1} · ya marcados: {2}"],
@@ -1227,7 +1238,8 @@ async function scanLog(f){
     const cut=done?txt.length:txt.lastIndexOf("\n")+1;const part=txt.slice(0,cut);carry=txt.slice(cut);
     if(part.includes("Received Blueprint"))for(const m of part.matchAll(BP_RE))bp.push(m);
     if(done)break}
-  return {head,bp}}
+  const h=/Handle\[([^\]\s]+)\]/.exec(head)||/AccountLoginCharacterStatus_Character>[^\n]*? - name (\S+) - state/.exec(head);
+  return {head,bp,acct:h?h[1]:""}}
 async function readLogs(all,explicit){
   if(!all||!all.length)return;const res=$("#logres");
   const files=explicit?all:all.filter(f=>/\.log$/i.test(f.name));
@@ -1236,22 +1248,34 @@ async function readLogs(all,explicit){
   if(!files.length){fail(T("noLogs"));return}
   res.innerHTML=`<div class="scan"><div class="scr"><i></i></div><div><b>${T("scanTitle")}</b><div class="bar"><span id="scBar"></span></div><div class="hint" id="scTxt"></div></div></div>`;
   const bar=$("#scBar"),txt=$("#scTxt"),t0=Date.now();
-  const found=new Map();let game=null,nread=0,fi=0,lastUi=0;
-  const ui=()=>{bar.style.width=(100*fi/files.length).toFixed(1)+"%";txt.textContent=T("scanProg",fi,files.length,found.size)};ui();
+  const accs=new Map();let game=null,nread=0,fi=0,lastUi=0,nbp=0;   // account handle -> {files, found}; "" = log without account info
+  const ui=()=>{bar.style.width=(100*fi/files.length).toFixed(1)+"%";txt.textContent=T("scanProg",fi,files.length,nbp)};ui();
   for(const f of files){fi++;
     if(Date.now()-lastUi>120){lastUi=Date.now();ui()}
     let t;try{t=await scanLog(f)}catch(e){continue}nread++;
     const cl=/Changelist:\s*(\d+)/.exec(t.head),br=/Branch:\s*sc-alpha-([\d.]+)/.exec(t.head),env=/@env_session:\s*'[a-z]+-sc-alpha-[\d]+-(\d+)'/.exec(t.head),ex=/Executable:[^\n]*\\(LIVE|PTU|EPTU|HOTFIX|TECH-PREVIEW)\\Bin64/i.exec(t.head),ls=/Log started on ([^\n]+)/.exec(t.head);
     if(cl){const g={build:+cl[1],ver:br?br[1]:"",env:env?+env[1]:0,ch:ex?ex[1].toUpperCase():"LIVE",at:ls?Date.parse(ls[1])||0:0};if(!game||g.at>game.at||(!g.at&&g.build>game.build))game=g}
-    for(const m of t.bp){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=found.get(k);if(!o||ts<o.ts)found.set(k,{name,ts})}}
+    let a=accs.get(t.acct);if(!a){a={files:0,found:new Map()};accs.set(t.acct,a)}a.files++;
+    for(const m of t.bp){const name=m[2].replace(/^[A-Z]{4} -[A-Z]{3} -\d-[A-Z] -/,"").trim();if(!name)continue;const ts=Date.parse(m[1])||Date.now();const k=name.toLowerCase(),o=a.found.get(k);if(!o){nbp++;a.found.set(k,{name,ts})}else if(ts<o.ts)o.ts=ts}}
   ui();await new Promise(r=>setTimeout(r,Math.max(0,1400-(Date.now()-t0))));   // let the scan be seen even for one small file
   const errs=files.length-nread;
   const gl=`<p class="hint">${T("filesRead",nread)}${errs?" · "+T("readErr",errs):""}</p>`+(game?`<p class="hint">${T("logGame",esc(game.ver),esc(game.ch),game.build)} – ${game.ch!=="LIVE"?T("stYourPtu"):(game.env||game.build)<=((bnum(CAT.v)||{}).build||0)?T("stYourOk"):T("stYourNewer")}</p>`:"");
   if(game){ST.game=game;save();applyStatic()}
   if(!nread){fail(T("readErr",errs));return}
-  if(!found.size){fail(T("noBp"),gl);return}
-  const r=addLogNames(found);ST.logSync=Date.now();save();render();
-  res.innerHTML=`<div class="rbox"><h4>✓ ${T("okTitle")}</h4>${T("found",r.added+r.already,r.added,r.already)}`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl+`<details class="man"><summary>${T("manualMiss")}</summary>${manual}</details></div>`;
+  const merge=keys=>{const f=new Map();for(const k of keys)for(const [n,v] of (accs.get(k)||{found:new Map()}).found){const o=f.get(n);if(!o||v.ts<o.ts)f.set(n,v)}return f};
+  const named=[...accs.keys()].filter(k=>k).sort((x,y)=>accs.get(y).files-accs.get(x).files);
+  const finish=(keys)=>{
+    const found=merge(keys);const who=keys.filter(k=>k);
+    if(!found.size){fail(T("noBp"),gl);return}
+    if(who.length===1)ST.logAcct=who[0];
+    const r=addLogNames(found);ST.logSync=Date.now();save();render();
+    res.innerHTML=`<div class="rbox"><h4>✓ ${T("okTitle")}</h4>${who.length?`<p class="hint">${T("accOne",who.map(esc).join(", "))}</p>`:""}${T("found",r.added+r.already,r.added,r.already)}`+(r.newly.length?`<ul>${r.newly.sort().map(n=>"<li>"+esc(n)+"</li>").join("")}</ul>`:"")+(r.unknown.length?`<p class="hint">${T("notInCat",r.unknown.map(esc).join(", "))}</p>`:"")+gl+`<details class="man"><summary>${T("manualMiss")}</summary>${manual}</details></div>`};
+  if(named.length<=1){finish([...accs.keys()]);return}
+  /* logs from several game accounts: let the player choose which belong to this profile */
+  const pre=named.includes(ST.logAcct)?ST.logAcct:named[0];
+  const row=(k,lbl)=>{const a=accs.get(k);return `<label class="accrow"><input type="checkbox" value="${esc(k)}" ${k===pre?"checked":""}> <span>${lbl}</span></label>`};
+  res.innerHTML=`<div class="rbox acc"><h4>${T("accT")}</h4><p>${T("accS")}</p>`+named.map(k=>row(k,T("accRow",esc(k),accs.get(k).found.size,accs.get(k).files))).join("")+(accs.has("")?row("",T("accNone",accs.get("").found.size,accs.get("").files)):"")+`<p class="hint" id="accErr"></p><button class="btn pri" id="accGo">${T("accGo")}</button>${gl}</div>`;
+  $("#accGo").onclick=()=>{const keys=[...res.querySelectorAll(".accrow input:checked")].map(x=>x.value);if(!keys.length){$("#accErr").textContent=T("accPick");return}finish(keys)};
 }
 
 /* ---------- render ---------- */
