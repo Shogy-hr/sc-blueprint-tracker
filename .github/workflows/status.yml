@@ -37,7 +37,7 @@ jobs:
           def key(p):
               try: s = json.load(open(p))
               except Exception: return None
-              v = lambda x: (x or {}).get('version'), (x or {}).get('build')
+              v = lambda x: ((x or {}).get('version'), (x or {}).get('build'))
               srv = s.get('server') or {}
               nx = s.get('next') or {}
               return [v(s.get('live')), v(s.get('ptu')), srv.get('summary'), [(x.get('name'), x.get('status')) for x in srv.get('systems', [])], nx.get('eta'), nx.get('overdue')]
