@@ -168,3 +168,18 @@ Jedino hosting (GitHub Pages) vodi uobičajene zapise o posjetima. Detalji i lic
 (status.robertsspaceindustries.com) i patch notes (`tools/check_versions.py`) i objavi stranicu
 ponovno **samo ako se nešto promijenilo** (stanje servera, LIVE ili PTU verzija).
 Posjetiteljev preglednik nikad ne kontaktira RSI – čita samo `blueprints/data/status.json` sa stranice.
+
+## License · Licenca
+
+**EN:** The code is licensed under the **GNU GPL-3.0** ([LICENSE](LICENSE)), with one
+additional term under section 7(b): any hosted copy must keep a visible credit to
+**ShoGy-HR** with a link to this repo ([NOTICE](NOTICE)). Game icons, images and data
+belong to their owners and are not covered ([THIRD-PARTY.md](THIRD-PARTY.md)).
+
+**Self-hosting:** it is a fully static site with no backend. Clone the repo and serve the
+root folder with any static web server, e.g. `python3 -m http.server 8000`, then open
+`http://localhost:8000/`. Nothing is sent anywhere; profiles stay in the browser.
+
+**HR:** Kod je pod licencom **GNU GPL-3.0** uz dodatni uvjet (čl. 7(b)): svaka objavljena
+kopija mora vidljivo navesti ShoGy-HR i link na ovaj repozitorij. Ikone, slike i podaci
+iz igre nisu pokriveni licencom.
