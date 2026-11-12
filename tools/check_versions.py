@@ -15,6 +15,36 @@ SOURCES = [
     ('RSI Roadmap', 'https://robertsspaceindustries.com/roadmap/progress-tracker'),
     ('patchbot.io', 'https://patchbot.io/games/star-citizen'),
 ]
+STATUS_URL = 'https://status.robertsspaceindustries.com/'   # official RSI server status (cState)
+SEV = {'ok': 0, 'notice': 1, 'disrupted': 2, 'down': 3}
+
+
+def server_status():
+    """Official RSI status page -> {'summary': ok|notice|disrupted|down, 'systems': [{name,status}]}.
+    cState offers a read-only JSON API at /index.json; fall back to reading the HTML."""
+    try:
+        j = json.loads(fetch(STATUS_URL + 'index.json'))
+        systems = [{'name': x.get('name', ''), 'status': (x.get('status') or 'ok').lower()} for x in j.get('systems', [])]
+        worst = max((x['status'] for x in systems if x['status'] in SEV), key=SEV.get, default='ok')
+        summ = (j.get('summaryStatus') or '').lower()
+        summ = max(summ, worst, key=lambda v: SEV.get(v, -1)) if summ in SEV else worst
+        return {'summary': summ, 'systems': systems, 'source': STATUS_URL}
+    except Exception as e:
+        err = str(e)[:120]
+    try:
+        html = fetch(STATUS_URL)
+        systems = []
+        for name in ('Platform', 'Persistent Universe', 'Arena Commander'):
+            m = re.search(re.escape(name) + r'.{0,400}?\b(Operational|Disrupted|Degraded|Down|Outage|Maintenance|Notice)\b', html, re.S | re.I)
+            if m:
+                w = m.group(1).lower()
+                st = 'ok' if w == 'operational' else 'down' if w in ('down', 'outage') else 'notice' if w in ('maintenance', 'notice') else 'disrupted'
+                systems.append({'name': name, 'status': st})
+        if systems:
+            return {'summary': max((x['status'] for x in systems), key=SEV.get), 'systems': systems, 'source': STATUS_URL}
+    except Exception as e:
+        err = str(e)[:120]
+    return {'summary': 'unknown', 'systems': [], 'source': STATUS_URL, 'error': err}
 TITLE_RE = re.compile(r'Alpha\s+(\d+\.\d+(?:\.\d+)?)\s+(LIVE|PTU)\b[^<>{}"]{0,60}?\b(\d{8,9})\b', re.I)
 HOTFIX_RE = re.compile(r'Alpha\s+(\d+\.\d+(?:\.\d+)?)\s+LIVE\s*-\s*Hotfix\s+(\d{8,9})', re.I)
 ROADMAP_LIVE = re.compile(r'Live Version:\s*(\d+\.\d+(?:\.\d+)?)', re.I)
@@ -67,13 +97,14 @@ def main():
     # PTU that is older than or equal to LIVE is not "upcoming"
     if status['ptu'] and status['live'] and status['live']['build'] and status['ptu']['build'] <= status['live']['build']:
         status['ptu'] = None
+    status['server'] = server_status()
     pj = os.path.join(HERE, '..', 'blueprints', 'data', 'ptu.json')
     if os.path.exists(pj):
         p = json.load(open(pj, encoding='utf-8'))
         status['ptuData'] = {'version': p['version'], 'date': p.get('date', ''), 'added': len(p['added']), 'changed': len(p['changed']), 'removed': len(p['removed'])}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(status, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(json.dumps({k: status[k] for k in ('data', 'live', 'ptu', 'ptuData')}, ensure_ascii=False))
+    print(json.dumps({k: status[k] for k in ('data', 'live', 'ptu', 'ptuData', 'server')}, ensure_ascii=False))
     print('sources:', status['sources'])
 
 

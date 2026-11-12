@@ -161,3 +161,10 @@ Jedino hosting (GitHub Pages) vodi uobičajene zapise o posjetima. Detalji i lic
   Star Citizen® je zaštićeni znak Cloud Imperiuma. Stranica nikad ne dira igru,
   a Game.log samo čita kao tekst. Prema pravilima RSI-ja za stranice zajednice
   mora ostati besplatna i jasno označena kao neslužbena (napomena je u podnožju stranice).
+
+## Status servera (početna stranica)
+
+`.github/workflows/status.yml` svakih 30 minuta pročita službenu RSI stranicu statusa
+(status.robertsspaceindustries.com) i patch notes (`tools/check_versions.py`) i objavi stranicu
+ponovno **samo ako se nešto promijenilo** (stanje servera, LIVE ili PTU verzija).
+Posjetiteljev preglednik nikad ne kontaktira RSI – čita samo `blueprints/data/status.json` sa stranice.

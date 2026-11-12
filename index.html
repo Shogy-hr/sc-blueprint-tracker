@@ -51,6 +51,18 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .hello{text-align:center;margin:0 0 26px}
 .hello h1{font:700 34px/1.1 var(--ff);letter-spacing:.06em;margin:0;color:#f1fbf9;text-transform:uppercase}
 .hello p{margin:8px 0 0;color:var(--dim);font-size:18px}
+.sstat{display:inline-grid;grid-template-columns:auto auto;gap:3px 14px;align-items:center;margin:14px auto 0;padding:9px 16px;border:1px solid #23504b;background:#0b2424cc;font-size:14.5px;text-align:left}
+.sstat .k{display:flex;align-items:center;gap:8px;font:700 14px var(--ff);letter-spacing:.1em;color:#dff3ef}
+.sstat .v{color:var(--dim)}.sstat .v b{color:#f1fbf9;font-weight:700}
+.sstat .nx{grid-column:1/-1;border-top:1px solid #1d4440;margin-top:4px;padding-top:5px;color:var(--dim);font-size:13.5px}
+.sstat .nx b{color:#f0d264}
+.dot{width:10px;height:10px;border-radius:50%;background:#5d6f6c;flex:0 0 10px}
+.dot.ok{background:#3ee08a;box-shadow:0 0 0 0 #3ee08a99;animation:dp 2.2s infinite}
+.dot.notice{background:#f0d264}.dot.disrupted{background:#ff9f43}.dot.down{background:#ff5252;animation:dp 1.2s infinite}
+.dot.ptu{background:#5fc8f2}
+@keyframes dp{0%{box-shadow:0 0 0 0 currentColor}70%{box-shadow:0 0 0 7px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.dot.ok{color:#3ee08a88}.dot.down{color:#ff525288}
+@media (prefers-reduced-motion:reduce){.dot{animation:none!important}}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .card{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--tx);border:1px solid #2b5550;background:linear-gradient(160deg,rgba(26,61,58,.85),rgba(8,30,31,.85));padding:26px 24px 22px;border-radius:6px;transition:border-color .15s,transform .15s,background .15s;min-height:260px}
 .card:hover,.card:focus-visible{border-color:var(--gold);transform:translateY(-2px);background:linear-gradient(160deg,rgba(42,45,20,.9),rgba(8,30,31,.9));outline:none}
@@ -117,6 +129,7 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .rf-go{display:flex;align-items:center;gap:7px;padding:0 18px;border-left:1px solid #2f6a73;background:#163f49;color:#a8e9f5;text-decoration:none;font:700 16px var(--ff);letter-spacing:.04em;white-space:nowrap}
 .rf-go svg{width:18px;height:18px}
 .rf-go:hover,.rf-go:focus-visible{background:#1d5260;color:#fff;outline:none}
+.hnote{flex-basis:100%;font-size:12.5px;opacity:.8}
 footer{border-top:1px solid #0a1716;padding-top:12px;font-size:13.5px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
 footer b{color:var(--dim);font-weight:600}
 @media (max-width:760px){
@@ -151,7 +164,8 @@ footer b{color:var(--dim);font-weight:600}
   <div class="flags" id="flags"></div>
  </header>
  <main>
-  <div class="hello"><h1 data-t="h1"></h1><p data-t="lead"></p></div>
+  <div class="hello"><h1 data-t="h1"></h1><p data-t="lead"></p>
+   <div class="sstat" id="sstat" hidden></div></div>
   <div class="cards">
    <a class="card" href="galaktopedija/" id="cGal">
     <span class="tag live" data-t="live"></span>
@@ -183,6 +197,7 @@ footer b{color:var(--dim);font-weight:600}
  <footer>
   <span data-t="fan"></span>
   <span><b>ShoGy-HR</b> · <span data-t="priv"></span></span>
+  <small class="hnote" data-t="hostNote"></small>
  </footer>
 </div>
 <script>
@@ -219,12 +234,37 @@ var TX={
  vNote:["In English. The YouTube player loads only after you click play.","Na engleskom. YouTube player se učitava tek kad klikneš play.","Auf Englisch. Der YouTube-Player lädt erst, wenn du auf Play klickst.","Po angielsku. Odtwarzacz YouTube ładuje się dopiero po kliknięciu.","En anglais. Le lecteur YouTube ne se charge qu’après ton clic.","En inglés. El reproductor de YouTube solo se carga al pulsar play."],
  vYt:["Open on YouTube ↗","Otvori na YouTubeu ↗","Auf YouTube öffnen ↗","Otwórz w YouTube ↗","Ouvrir sur YouTube ↗","Abrir en YouTube ↗"],
  vPlay:["Play the video tutorial","Pokreni video vodič","Video-Tutorial abspielen","Odtwórz poradnik wideo","Lire le tutoriel vidéo","Reproducir el tutorial"],
+ sLive:["LIVE","LIVE","LIVE","LIVE","LIVE","LIVE"],
+ sPtu:["PTU","PTU","PTU","PTU","PTU","PTU"],
+ sok:["servers online","serveri rade","Server online","serwery działają","serveurs en ligne","servidores en línea"],
+ snotice:["notice from RSI","obavijest RSI-ja","Hinweis von RSI","komunikat RSI","avis de RSI","aviso de RSI"],
+ sdisrupted:["partial issues","djelomični problemi","teilweise Störungen","częściowe problemy","problèmes partiels","problemas parciales"],
+ sdown:["servers down","serveri ne rade","Server offline","serwery nie działają","serveurs hors ligne","servidores caídos"],
+ sunknown:["status unknown","status nepoznat","Status unbekannt","status nieznany","statut inconnu","estado desconocido"],
+ sNoPtu:["no test build right now","trenutno nema testne verzije","gerade kein Testbuild","obecnie brak wersji testowej","pas de build de test actuellement","sin versión de prueba ahora"],
+ sPtuOn:["testing","u testiranju","im Test","w testach","en test","en pruebas"],
+ sNext:["Next patch:","Sljedeći patch:","Nächster Patch:","Następny patch:","Prochain patch :","Próximo parche:"],
+ sNextV:["{0} – testing on the PTU now","{0} – trenutno se testira na PTU-u","{0} – wird gerade auf dem PTU getestet","{0} – obecnie testowany na PTU","{0} – en test sur le PTU","{0} – en pruebas en el PTU"],
+ sNextNone:["not announced on the PTU yet","još nije na PTU-u","noch nicht auf dem PTU","jeszcze nie na PTU","pas encore sur le PTU","aún no está en el PTU"],
+ sSrc:["Official RSI status page and patch notes · checked {0}","Službena RSI stranica statusa i patch notes · provjereno {0}","Offizielle RSI-Statusseite und Patchnotes · geprüft {0}","Oficjalna strona statusu RSI i patch notes · sprawdzono {0}","Page de statut officielle RSI et notes de patch · vérifié {0}","Página de estado oficial de RSI y notas del parche · comprobado {0}"],
+ hostNote:["No cookies, no tracking scripts. Hosting providers (GitHub, Cloudflare) see standard connection data to deliver the page; we only see total visitor counts.","Bez kolačića i skripti za praćenje. Pružatelji hostinga (GitHub, Cloudflare) vide uobičajene podatke o vezi da bi isporučili stranicu; mi vidimo samo ukupan broj posjeta.","Keine Cookies, keine Tracking-Skripte. Hosting-Anbieter (GitHub, Cloudflare) sehen übliche Verbindungsdaten, um die Seite auszuliefern; wir sehen nur die Gesamtzahl der Besuche.","Bez ciasteczek i skryptów śledzących. Dostawcy hostingu (GitHub, Cloudflare) widzą standardowe dane połączenia, aby dostarczyć stronę; my widzimy tylko łączną liczbę odwiedzin.","Pas de cookies, pas de scripts de suivi. Les hébergeurs (GitHub, Cloudflare) voient les données de connexion habituelles pour servir la page ; nous ne voyons que le nombre total de visites.","Sin cookies ni scripts de seguimiento. Los proveedores de alojamiento (GitHub, Cloudflare) ven los datos de conexión habituales para servir la página; nosotros solo vemos el número total de visitas."],
  priv:["no accounts, no tracking","bez računa, bez praćenja","keine Konten, kein Tracking","bez kont, bez śledzenia","sans compte, sans pistage","sin cuentas, sin rastreo"]
 };
 var LANG="en";
 try{var nl=(navigator.languages||[navigator.language||"en"]).map(function(x){return String(x).slice(0,2).toLowerCase()}).filter(function(x){return LANGS.indexOf(x)>=0||x==="bs"||x==="sr"})[0];if(nl)LANG=(nl==="bs"||nl==="sr")?"hr":nl}catch(e){}
 try{var sl=localStorage.getItem("scbp-lang");if(sl&&LANGS.indexOf(sl)>=0)LANG=sl}catch(e){}
-var VER="";
+var VER="",STAT=null;
+/* LIVE / PTU / server status, from blueprints/data/status.json (built by the site's bot from the
+   official RSI status page and patch notes – the visitor's browser never contacts RSI) */
+function drawStatus(){var el=document.getElementById("sstat");if(!STAT||!STAT.live&&!STAT.server){el.hidden=true;return}
+ var e=function(x){return String(x).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+ var sv=STAT.server||{},sum=sv.summary||"unknown",lv=STAT.live&&STAT.live.version,pv=STAT.ptu&&STAT.ptu.version;
+ var tip=(sv.systems||[]).map(function(x){return x.name+": "+t("s"+x.status)}).join("\n");
+ var when="";try{when=new Date(STAT.checked).toLocaleString(LANG,{dateStyle:"short",timeStyle:"short"})}catch(er){}
+ el.innerHTML='<span class="k"><i class="dot '+e(sum)+'"></i>'+t("sLive")+'</span><span class="v" title="'+e(tip)+'"><b>'+e(lv||"–")+'</b> · '+t("s"+sum)+'</span>'+
+  '<span class="k"><i class="dot '+(pv?"ptu":"")+'"></i>'+t("sPtu")+'</span><span class="v">'+(pv?'<b>'+e(pv)+'</b> · '+t("sPtuOn"):t("sNoPtu"))+'</span>'+
+  '<span class="nx">'+t("sNext")+' '+(pv&&pv!==lv?t("sNextV").replace("{0}","<b>"+e(pv)+"</b>"):t("sNextNone"))+'</span>';
+ el.title=t("sSrc").replace("{0}",when);el.hidden=false}
 function t(k){var r=TX[k];return r?(r[LANGS.indexOf(LANG)]||r[0]):k}
 function render(){
  document.documentElement.lang=LANG;
@@ -232,6 +272,7 @@ function render(){
  document.querySelectorAll("[data-ta]").forEach(function(e){e.title=t(e.getAttribute("data-ta"));e.setAttribute("aria-label",t(e.getAttribute("data-ta")))});
  document.getElementById("flags").innerHTML=LANGS.map(function(l){return '<button type="button" data-l="'+l+'" class="'+(l===LANG?"on":"")+'" title="'+NAMES[l]+'" aria-label="'+NAMES[l]+'">'+FLAGS[l]+'</button>'}).join("");
  document.getElementById("kver").textContent=VER?t("data")+": "+VER:"";
+ drawStatus();
 }
 document.getElementById("flags").addEventListener("click",function(ev){var b=ev.target.closest("button[data-l]");if(!b)return;LANG=b.getAttribute("data-l");try{localStorage.setItem("scbp-lang",LANG)}catch(e){}render()});
 render();
@@ -239,7 +280,7 @@ render();
  b.addEventListener("click",function(){var done=function(){sp.textContent=t("copied");b.classList.add("ok");clearTimeout(tm);tm=setTimeout(function(){sp.textContent=code;b.classList.remove("ok")},1600)};
   try{navigator.clipboard.writeText(code).then(done,function(){fb()})}catch(e){fb()}
   function fb(){var x=document.createElement("textarea");x.value=code;document.body.appendChild(x);x.select();try{document.execCommand("copy");done()}catch(e){}x.remove()}});})();
-try{fetch("blueprints/data/status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(s){if(s&&s.data&&s.data.version){VER=String(s.data.version).replace(/-LIVE\.\d+$/," LIVE");render()}}).catch(function(){})}catch(e){}
+try{fetch("blueprints/data/status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(s){if(s){STAT=s;if(s.data&&s.data.version)VER=String(s.data.version).replace(/-LIVE\.\d+$/," LIVE");render()}}).catch(function(){})}catch(e){}
 /* video facade: nothing is loaded from YouTube until the visitor clicks */
 document.getElementById("vFac").addEventListener("click",function(){if(this.querySelector("iframe"))return;const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/Qzf4-WhVY3k?autoplay=1&rel=0&modestbranding=1";f.title="Fabrication Kiosk tutorial";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;this.innerHTML="";this.appendChild(f)});
 </script>

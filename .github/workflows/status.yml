@@ -1,0 +1,60 @@
+name: Server status (LIVE / PTU)
+
+# Every 30 minutes: read the official RSI status page and patch notes, and publish
+# the site again ONLY if something visible changed (server state, LIVE or PTU version).
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.cmp.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check RSI status and versions
+        run: python3 tools/check_versions.py
+      - id: cmp
+        name: Compare with the published status
+        run: |
+          curl -fsS "https://shogy-hr.com/blueprints/data/status.json?t=$(date +%s)" -o /tmp/old.json || echo '{}' > /tmp/old.json
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          def key(p):
+              try: s = json.load(open(p))
+              except Exception: return None
+              v = lambda x: (x or {}).get('version'), (x or {}).get('build')
+              srv = s.get('server') or {}
+              return [v(s.get('live')), v(s.get('ptu')), srv.get('summary'), [(x.get('name'), x.get('status')) for x in srv.get('systems', [])]]
+          print('changed=' + ('true' if key('/tmp/old.json') != key('blueprints/data/status.json') else 'false'))
+          PY
+      - if: steps.cmp.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+      - if: steps.cmp.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: check
+    if: needs.check.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
