@@ -56,6 +56,8 @@ def server_status():
     return {'summary': 'unknown', 'systems': [], 'source': STATUS_URL, 'error': err}
 TITLE_RE = re.compile(r'Alpha\s+(\d+\.\d+(?:\.\d+)?)\s+(LIVE|PTU)\b[^<>{}"]{0,60}?\b(\d{8,9})\b', re.I)
 HOTFIX_RE = re.compile(r'Alpha\s+(\d+\.\d+(?:\.\d+)?)\s+LIVE\s*-\s*Hotfix\s+(\d{8,9})', re.I)
+# thread titles without a build number: "Star Citizen Alpha 4.10.3 LIVE Release Notes"
+LIVE_TITLE_RE = re.compile(r'Alpha\s+(\d+\.\d+(?:\.\d+)?)\s+LIVE\s+Release\s+Notes', re.I)
 ROADMAP_LIVE = re.compile(r'Live Version:\s*(\d+\.\d+(?:\.\d+)?)', re.I)
 ROADMAP_PTU = re.compile(r'PTU Version:\s*Alpha\s*(\d+\.\d+(?:\.\d+)?)\s*[,-]\s*(\d{8,9})', re.I)
 
@@ -79,7 +81,13 @@ def scan(text):
     if m: found.append((m.group(1), 'PTU', int(m.group(2))))
     m = ROADMAP_LIVE.search(text)
     if m: found.append((m.group(1), 'LIVE', 0))
+    for m in LIVE_TITLE_RE.finditer(text):
+        found.append((m.group(1), 'LIVE', 0))
     return found
+
+
+def vt(v):
+    return tuple(int(x) for x in re.findall(r'\d+', v or '')[:3])
 
 
 HIST = os.path.join(HERE, 'patch_history.json')
@@ -118,11 +126,15 @@ def main():
               'data': {'version': cat['v'], 'build': dv[2] if dv else None, 'date': cat.get('date', '')},
               'live': None, 'ptu': None, 'ptuData': None, 'sources': []}
     best = {}
+    newest_live = ('', '', '')
     for name, url in SOURCES:
         try:
             hits = scan(fetch(url))
             status['sources'].append({'name': name, 'ok': bool(hits), 'found': len(hits)})
             for ver, ch, build in hits:
+                if ch.upper() == 'LIVE' and not build:   # version-only LIVE announcement
+                    if vt(ver) > vt(newest_live[0]): newest_live = (ver, name, url)
+                    continue
                 ch = 'PTU' if ch in ('PTU', 'EPTU') else ch
                 if ch not in ('LIVE', 'PTU'): continue
                 cur = best.get(ch)
@@ -131,6 +143,14 @@ def main():
         except Exception as e:
             status['sources'].append({'name': name, 'ok': False, 'error': str(e)[:120]})
     # a LIVE entry with build 0 only tells the version (roadmap); keep it only if nothing better
+    # an official "X LIVE Release Notes" title can appear before any source lists the new build:
+    # if it names a newer version than the newest LIVE build we know, it is LIVE now
+    # (and when that version was on the PTU, the PTU build is the one that went LIVE)
+    lv = best.get('LIVE')
+    if newest_live[0] and (not lv or vt(newest_live[0]) > vt(lv['version'])):
+        p = best.get('PTU')
+        b = p['build'] if p and p['version'] == newest_live[0] else (lv['build'] if lv else 0)
+        best['LIVE'] = {'version': newest_live[0], 'build': b, 'source': newest_live[1], 'url': newest_live[2]}
     status['live'] = best.get('LIVE'); status['ptu'] = best.get('PTU')
     # the game data we ship is a LIVE build too: if it is at least as new, trust its version label
     if dv and (not status['live'] or dv[2] >= (status['live'].get('build') or 0)):
