@@ -19,14 +19,23 @@ STATUS_URL = 'https://status.robertsspaceindustries.com/'   # official RSI serve
 SEV = {'ok': 0, 'notice': 1, 'disrupted': 2, 'down': 3}
 
 
+def norm_sev(v):
+    v = str(v or 'ok').strip().lower()
+    if v in SEV: return v
+    if 'operational' in v or v in ('up', 'online'): return 'ok'
+    if 'maint' in v or 'notice' in v: return 'notice'
+    if 'major' in v or 'down' in v or 'offline' in v: return 'down'
+    return 'disrupted'
+
+
 def server_status():
     """Official RSI status page -> {'summary': ok|notice|disrupted|down, 'systems': [{name,status}]}.
     cState offers a read-only JSON API at /index.json; fall back to reading the HTML."""
     try:
         j = json.loads(fetch(STATUS_URL + 'index.json'))
-        systems = [{'name': x.get('name', ''), 'status': (x.get('status') or 'ok').lower()} for x in j.get('systems', [])]
+        systems = [{'name': x.get('name', ''), 'status': norm_sev(x.get('status'))} for x in j.get('systems', [])]
         worst = max((x['status'] for x in systems if x['status'] in SEV), key=SEV.get, default='ok')
-        summ = (j.get('summaryStatus') or '').lower()
+        summ = norm_sev(j.get('summaryStatus')) if j.get('summaryStatus') else ''
         summ = max(summ, worst, key=lambda v: SEV.get(v, -1)) if summ in SEV else worst
         return {'summary': summ, 'systems': systems, 'source': STATUS_URL}
     except Exception as e:
@@ -94,6 +103,9 @@ def main():
             status['sources'].append({'name': name, 'ok': False, 'error': str(e)[:120]})
     # a LIVE entry with build 0 only tells the version (roadmap); keep it only if nothing better
     status['live'] = best.get('LIVE'); status['ptu'] = best.get('PTU')
+    # the game data we ship is a LIVE build too: if it is at least as new, trust its version label
+    if dv and (not status['live'] or dv[2] >= (status['live'].get('build') or 0)):
+        status['live'] = {'version': dv[0], 'build': dv[2], 'source': 'game data', 'url': ''} if not status['live'] or dv[2] > (status['live'].get('build') or 0) else dict(status['live'], version=dv[0])
     # PTU that is older than or equal to LIVE is not "upcoming"
     if status['ptu'] and status['live'] and status['live']['build'] and status['ptu']['build'] <= status['live']['build']:
         status['ptu'] = None
