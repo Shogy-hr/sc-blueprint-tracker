@@ -56,6 +56,8 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .sstat .v{color:var(--dim)}.sstat .v b{color:#f1fbf9;font-weight:700}
 .sstat .nx{grid-column:1/-1;border-top:1px solid #1d4440;margin-top:4px;padding-top:5px;color:var(--dim);font-size:13.5px}
 .sstat .nx b{color:#f0d264}
+.sstat .eta{grid-column:1/-1;color:var(--dim);font-size:13.5px;cursor:help}
+.sstat .eta b{color:#f1fbf9}.sstat .eta i{font-style:normal;opacity:.75}
 .dot{width:10px;height:10px;border-radius:50%;background:#5d6f6c;flex:0 0 10px}
 .dot.ok{background:#3ee08a;box-shadow:0 0 0 0 #3ee08a99;animation:dp 2.2s infinite}
 .dot.notice{background:#f0d264}.dot.disrupted{background:#ff9f43}.dot.down{background:#ff5252;animation:dp 1.2s infinite}
@@ -246,6 +248,11 @@ var TX={
  sNext:["Next patch:","Sljedeći patch:","Nächster Patch:","Następny patch:","Prochain patch :","Próximo parche:"],
  sNextV:["{0} – testing on the PTU now","{0} – trenutno se testira na PTU-u","{0} – wird gerade auf dem PTU getestet","{0} – obecnie testowany na PTU","{0} – en test sur le PTU","{0} – en pruebas en el PTU"],
  sNextNone:["not announced on the PTU yet","još nije na PTU-u","noch nicht auf dem PTU","jeszcze nie na PTU","pas encore sur le PTU","aún no está en el PTU"],
+ sEta:["Expected on LIVE:","Očekuje se na LIVE-u:","Erwartet auf LIVE:","Spodziewany na LIVE:","Attendu sur le LIVE :","Esperado en LIVE:"],
+ sEst:["estimate","procjena","Schätzung","szacunek","estimation","estimación"],
+ sOff:["official","službeno","offiziell","oficjalnie","officiel","oficial"],
+ sSoon:["any day now","svaki dan","jeden Tag","lada dzień","d’un jour à l’autre","cualquier día"],
+ sEstTip:["Estimate: similar patches stayed about {0} days on the PTU before going LIVE (based on {1} earlier patches). On the PTU since {2}.","Procjena: slični patchevi bili su oko {0} dana na PTU-u prije LIVE-a (prema {1} ranija patcha). Na PTU-u od {2}.","Schätzung: ähnliche Patches waren etwa {0} Tage auf dem PTU, bevor sie LIVE gingen (basierend auf {1} früheren Patches). Auf dem PTU seit {2}.","Szacunek: podobne patche były ok. {0} dni na PTU przed LIVE (na podstawie {1} wcześniejszych). Na PTU od {2}.","Estimation : les patchs similaires sont restés environ {0} jours sur le PTU avant le LIVE (d’après {1} patchs précédents). Sur le PTU depuis le {2}.","Estimación: parches similares estuvieron unos {0} días en el PTU antes de LIVE (según {1} parches anteriores). En el PTU desde {2}."],
  sSrc:["Official RSI status page and patch notes · checked {0}","Službena RSI stranica statusa i patch notes · provjereno {0}","Offizielle RSI-Statusseite und Patchnotes · geprüft {0}","Oficjalna strona statusu RSI i patch notes · sprawdzono {0}","Page de statut officielle RSI et notes de patch · vérifié {0}","Página de estado oficial de RSI y notas del parche · comprobado {0}"],
  hostNote:["No cookies, no tracking scripts. Hosting providers (GitHub, Cloudflare) see standard connection data to deliver the page; we only see total visitor counts.","Bez kolačića i skripti za praćenje. Pružatelji hostinga (GitHub, Cloudflare) vide uobičajene podatke o vezi da bi isporučili stranicu; mi vidimo samo ukupan broj posjeta.","Keine Cookies, keine Tracking-Skripte. Hosting-Anbieter (GitHub, Cloudflare) sehen übliche Verbindungsdaten, um die Seite auszuliefern; wir sehen nur die Gesamtzahl der Besuche.","Bez ciasteczek i skryptów śledzących. Dostawcy hostingu (GitHub, Cloudflare) widzą standardowe dane połączenia, aby dostarczyć stronę; my widzimy tylko łączną liczbę odwiedzin.","Pas de cookies, pas de scripts de suivi. Les hébergeurs (GitHub, Cloudflare) voient les données de connexion habituelles pour servir la page ; nous ne voyons que le nombre total de visites.","Sin cookies ni scripts de seguimiento. Los proveedores de alojamiento (GitHub, Cloudflare) ven los datos de conexión habituales para servir la página; nosotros solo vemos el número total de visitas."],
  priv:["no accounts, no tracking","bez računa, bez praćenja","keine Konten, kein Tracking","bez kont, bez śledzenia","sans compte, sans pistage","sin cuentas, sin rastreo"]
@@ -256,6 +263,12 @@ try{var sl=localStorage.getItem("scbp-lang");if(sl&&LANGS.indexOf(sl)>=0)LANG=sl
 var VER="",STAT=null;
 /* LIVE / PTU / server status, from blueprints/data/status.json (built by the site's bot from the
    official RSI status page and patch notes – the visitor's browser never contacts RSI) */
+/* expected LIVE date of the patch now on the PTU: "≈ DD/MM/YY (estimate)", official date if CIG gave one */
+function dmy(iso){var p=String(iso||"").split("-");return p.length===3?p[2]+"/"+p[1]+"/"+p[0].slice(2):iso}
+function etaRow(nx,pv,lv,e){if(!nx||!nx.eta||!pv||pv===lv||nx.version!==pv)return "";
+ var tip=nx.basis==="estimate"?t("sEstTip").replace("{0}",nx.days).replace("{1}",nx.samples).replace("{2}",dmy(nx.ptuSince)):"";
+ var val=nx.basis==="official"?"<b>"+dmy(nx.eta)+"</b> <i>("+t("sOff")+")</i>":nx.overdue?"<b>"+t("sSoon")+"</b> <i>("+t("sEst")+")</i>":"≈ <b>"+dmy(nx.eta)+"</b> <i>("+t("sEst")+")</i>";
+ return '<span class="eta" title="'+e(tip)+'">'+t("sEta")+" "+val+"</span>"}
 function drawStatus(){var el=document.getElementById("sstat");if(!STAT||!STAT.live&&!STAT.server){el.hidden=true;return}
  var e=function(x){return String(x).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
  var sv=STAT.server||{},sum=sv.summary||"unknown",lv=STAT.live&&STAT.live.version,pv=STAT.ptu&&STAT.ptu.version;
@@ -263,7 +276,7 @@ function drawStatus(){var el=document.getElementById("sstat");if(!STAT||!STAT.li
  var when="";try{when=new Date(STAT.checked).toLocaleString(LANG,{dateStyle:"short",timeStyle:"short"})}catch(er){}
  el.innerHTML='<span class="k"><i class="dot '+e(sum)+'"></i>'+t("sLive")+'</span><span class="v" title="'+e(tip)+'"><b>'+e(lv||"–")+'</b> · '+t("s"+sum)+'</span>'+
   '<span class="k"><i class="dot '+(pv?"ptu":"")+'"></i>'+t("sPtu")+'</span><span class="v">'+(pv?'<b>'+e(pv)+'</b> · '+t("sPtuOn"):t("sNoPtu"))+'</span>'+
-  '<span class="nx">'+t("sNext")+' '+(pv&&pv!==lv?t("sNextV").replace("{0}","<b>"+e(pv)+"</b>"):t("sNextNone"))+'</span>';
+  '<span class="nx">'+t("sNext")+' '+(pv&&pv!==lv?t("sNextV").replace("{0}","<b>"+e(pv)+"</b>"):t("sNextNone"))+'</span>'+etaRow(STAT.next,pv,lv,e);
  el.title=t("sSrc").replace("{0}",when);el.hidden=false}
 function t(k){var r=TX[k];return r?(r[LANGS.indexOf(LANG)]||r[0]):k}
 function render(){

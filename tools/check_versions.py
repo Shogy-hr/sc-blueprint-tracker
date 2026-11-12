@@ -82,6 +82,35 @@ def scan(text):
     return found
 
 
+HIST = os.path.join(HERE, 'patch_history.json')
+
+
+def next_patch(status, today=None):
+    """Remember when each version reached PTU / LIVE and estimate the next LIVE date as
+    first-PTU-date + median PTU duration of earlier patches of the same kind."""
+    import datetime as dt, statistics
+    today = today or dt.date.today()
+    try: h = json.load(open(HIST, encoding='utf-8'))
+    except Exception: h = {}
+    live = (status.get('live') or {}).get('version'); ptu = (status.get('ptu') or {}).get('version')
+    if ptu: h.setdefault(ptu, {}).setdefault('ptu', today.isoformat())
+    if live: h.setdefault(live, {}).setdefault('live', today.isoformat())
+    json.dump(h, open(HIST, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
+    if not ptu or ptu == live: return None
+    e = h.get(ptu, {})
+    kind = lambda v: 'major' if v.count('.') < 2 or v.endswith('.0') else 'minor'
+    d = lambda s: dt.date.fromisoformat(s)
+    durs = [(d(x['live']) - d(x['ptu'])).days for k, x in h.items() if isinstance(x, dict) and x.get('ptu') and x.get('live') and kind(k) == kind(ptu) and d(x['live']) > d(x['ptu'])]
+    out = {'version': ptu, 'ptuSince': e.get('ptu')}
+    if e.get('target'):
+        out.update(eta=e['target'], basis='official')
+    elif durs and e.get('ptu'):
+        med = int(round(statistics.median(durs)))
+        eta = d(e['ptu']) + dt.timedelta(days=med)
+        out.update(eta=eta.isoformat(), basis='estimate', days=med, samples=len(durs), overdue=eta < today)
+    return out
+
+
 def main():
     cat = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))
     dv = parse_version(cat['v'])
@@ -110,13 +139,15 @@ def main():
     if status['ptu'] and status['live'] and status['live']['build'] and status['ptu']['build'] <= status['live']['build']:
         status['ptu'] = None
     status['server'] = server_status()
+    try: status['next'] = next_patch(status)
+    except Exception as e: status['next'] = None; print('next patch estimate failed:', e)
     pj = os.path.join(HERE, '..', 'blueprints', 'data', 'ptu.json')
     if os.path.exists(pj):
         p = json.load(open(pj, encoding='utf-8'))
         status['ptuData'] = {'version': p['version'], 'date': p.get('date', ''), 'added': len(p['added']), 'changed': len(p['changed']), 'removed': len(p['removed'])}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     json.dump(status, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    print(json.dumps({k: status[k] for k in ('data', 'live', 'ptu', 'ptuData', 'server')}, ensure_ascii=False))
+    print(json.dumps({k: status[k] for k in ('data', 'live', 'ptu', 'ptuData', 'server', 'next')}, ensure_ascii=False))
     print('sources:', status['sources'])
 
 
