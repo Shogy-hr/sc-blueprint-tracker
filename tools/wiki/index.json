@@ -1489,6 +1489,9 @@
 "page": "Corbel Arms Patina",
 "url": "https://media.starcitizen.tools/thumb/9/9d/Corbel_arms_patina.png/600px-Corbel_arms_patina.png.webp?1onex"
 },
+"Corbel Arms Raider Camo": {
+"checked": 1794544917
+},
 "Corbel Arms Smolder": {
 "checked": 1794185695,
 "f": "d972e66d476fdd21",
@@ -1517,6 +1520,9 @@
 "page": "Corbel Core Patina",
 "url": "https://media.starcitizen.tools/thumb/9/93/Corbel_core_patina.png/600px-Corbel_core_patina.png.webp?dhw00"
 },
+"Corbel Core Raider Camo": {
+"checked": 1794544917
+},
 "Corbel Core Smolder": {
 "checked": 1794185695,
 "f": "d7e26822275f06c3",
@@ -1537,6 +1543,9 @@
 "file": "CorbelHelmetPatina.jpg",
 "page": "Corbel Helmet Patina",
 "url": "https://media.starcitizen.tools/thumb/7/7d/CorbelHelmetPatina.jpg/600px-CorbelHelmetPatina.jpg.webp?c47rf"
+},
+"Corbel Helmet Raider Camo": {
+"checked": 1794544917
 },
 "Corbel Helmet Smolder": {
 "checked": 1794185695,
@@ -1565,6 +1574,9 @@
 "file": "Corbel_legs_patina.png",
 "page": "Corbel Legs Patina",
 "url": "https://media.starcitizen.tools/thumb/9/95/Corbel_legs_patina.png/600px-Corbel_legs_patina.png.webp?1zj83"
+},
+"Corbel Legs Raider Camo": {
+"checked": 1794544917
 },
 "Corbel Legs Smolder": {
 "checked": 1794185695,
@@ -1826,6 +1838,9 @@
 "file": "Demeco_LMG_Battery_-_Mesh_BG.jpg",
 "page": "Demeco LMG Battery (100 cap)",
 "url": "https://media.starcitizen.tools/thumb/9/98/Demeco_LMG_Battery_-_Mesh_BG.jpg/600px-Demeco_LMG_Battery_-_Mesh_BG.jpg.webp?qhr30"
+},
+"Deterrent": {
+"checked": 1794544917
 },
 "Devastator \"Desert Shadow\" Shotgun": {
 "checked": 1794185695,
@@ -3068,6 +3083,9 @@
 "Lawson Mining Laser": {
 "checked": 1794185695
 },
+"Lephari": {
+"checked": 1794544917
+},
 "Lightstrike IV Cannon": {
 "checked": 1794185695
 },
@@ -3134,6 +3152,15 @@
 "file": "LynxSetColdSteel.png",
 "page": "Lynx Legs Cold Steel",
 "url": "https://media.starcitizen.tools/thumb/b/bc/LynxSetColdSteel.png/600px-LynxSetColdSteel.png.webp?ht7d7"
+},
+"M3A Cannon Raider Camo": {
+"checked": 1794544917
+},
+"M4A Cannon Raider Camo": {
+"checked": 1794544917
+},
+"M5A Cannon Raider Camo": {
+"checked": 1794544917
 },
 "M8A Cannon": {
 "checked": 1794185695
@@ -3480,6 +3507,9 @@
 },
 "Neutrino Racing Flight Suit Mirai": {
 "checked": 1794185695
+},
+"Neutrino Racing Flight Suit Mirai\\n": {
+"checked": 1794544917
 },
 "Neutrino Racing Flight Suit WhiteHot": {
 "checked": 1794185695
@@ -4702,12 +4732,18 @@
 "page": "Palatino Arms Necropolis",
 "url": "https://media.starcitizen.tools/thumb/8/85/Necropolis_Arms.jpg/600px-Necropolis_Arms.jpg.webp?obt85"
 },
+"Palatino Arms Raider Camo": {
+"checked": 1794544917
+},
 "Palatino Arms Sunstone": {
 "checked": 1794185695,
 "f": "d3a3328834bdcc69",
 "file": "Sunstone_Arms.jpg",
 "page": "Palatino Arms Sunstone",
 "url": "https://media.starcitizen.tools/thumb/4/4f/Sunstone_Arms.jpg/600px-Sunstone_Arms.jpg.webp?jty0x"
+},
+"Palatino Backpack Raider Camo": {
+"checked": 1794544917
 },
 "Palatino Core Daystar": {
 "checked": 1794185695,
@@ -4737,6 +4773,9 @@
 "page": "Palatino Core Necropolis",
 "url": "https://media.starcitizen.tools/thumb/a/a3/ScreenShot-2026-04-30_02-10-03-FA0.jpg/600px-ScreenShot-2026-04-30_02-10-03-FA0.jpg.webp?9i8cd"
 },
+"Palatino Core Raider Camo": {
+"checked": 1794544917
+},
 "Palatino Core Sunstone": {
 "checked": 1794185695,
 "f": "4cc62a9b1c604d9f",
@@ -4764,6 +4803,9 @@
 "file": "ScreenShot-2026-04-30_02-14-02-5E5.jpg",
 "page": "Palatino Helmet Moonfall",
 "url": "https://media.starcitizen.tools/thumb/b/b5/ScreenShot-2026-04-30_02-14-02-5E5.jpg/600px-ScreenShot-2026-04-30_02-14-02-5E5.jpg.webp?touf2"
+},
+"Palatino Helmet Raider Camo": {
+"checked": 1794544917
 },
 "Palatino Helmet Sunstone": {
 "checked": 1794185695,
@@ -4799,6 +4841,9 @@
 "file": "Necropolis_Legs.jpg",
 "page": "Palatino Legs Necropolis",
 "url": "https://media.starcitizen.tools/thumb/3/35/Necropolis_Legs.jpg/600px-Necropolis_Legs.jpg.webp?s6s6i"
+},
+"Palatino Legs Raider Camo": {
+"checked": 1794544917
 },
 "Palatino Legs Sunstone": {
 "checked": 1794185695,
@@ -4950,6 +4995,12 @@
 "file": "R97_Shotgun_Magazine_-_CutOut_-_Mesh_BG.png",
 "page": "R97 Shotgun Magazine (18 cap)",
 "url": "https://media.starcitizen.tools/thumb/a/a4/R97_Shotgun_Magazine_-_CutOut_-_Mesh_BG.png/600px-R97_Shotgun_Magazine_-_CutOut_-_Mesh_BG.png.webp?k84ct"
+},
+"RADR_GNRP_S03_Idris_TEMP": {
+"checked": 1794544917
+},
+"RADR_RSI_S04_Polaris": {
+"checked": 1794544917
 },
 "RN-7s": {
 "checked": 1794185695
@@ -5107,6 +5158,12 @@
 },
 "Shroud": {
 "checked": 1794185695
+},
+"Skarnov \"Raider Camo\" Rifle": {
+"checked": 1794544917
+},
+"Skarnov Rifle Battery (30 cap)": {
+"checked": 1794544917
 },
 "SmartGen": {
 "checked": 1794185695
@@ -5439,6 +5496,12 @@
 "file": "Tailwind_Flight_Suit_Dominion_Camo.png",
 "page": "Tailwind Flight Suit Dominion Camo",
 "url": "https://media.starcitizen.tools/thumb/d/da/Tailwind_Flight_Suit_Dominion_Camo.png/600px-Tailwind_Flight_Suit_Dominion_Camo.png.webp?8m85c"
+},
+"Tailwind Flight Suit Raider Camo": {
+"checked": 1794544917
+},
+"Tailwind Helmet Raider Camo": {
+"checked": 1794544917
 },
 "Tempest": {
 "checked": 1794185695
