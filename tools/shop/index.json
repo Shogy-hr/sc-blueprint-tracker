@@ -1,4 +1,10 @@
 {
+"A23 Flight Helmet Woodland": {
+"date": "2026-11-13",
+"f": "2b6a42e8af6dafe0",
+"sharp": 401.6,
+"src": "6e5f1728-image.jpg"
+},
 "ADP Core Dark Green": {
 "date": "2026-11-13",
 "f": "d0f45d601b42e40b",
@@ -143,6 +149,24 @@
 "sharp": 316.6,
 "src": "9a96701b-image.jpg"
 },
+"Deadrig Shotgun Magazine (8 cap)": {
+"date": "2026-11-13",
+"f": "e372de60b522f9d7",
+"sharp": 862.8,
+"src": "5332ead6-image.jpg"
+},
+"DustUp Core Tactical": {
+"date": "2026-11-13",
+"f": "ef067386385c9f5a",
+"sharp": 675.3,
+"src": "b8157e95-image.jpg"
+},
+"DustUp Helmet Tactical": {
+"date": "2026-11-13",
+"f": "191e5299e71939ad",
+"sharp": 504.4,
+"src": "b8157e95-image.jpg"
+},
 "G-2 Helmet Black": {
 "date": "2026-11-13",
 "f": "6e1aa7e7d2a555d2",
@@ -250,5 +274,11 @@
 "f": "7e7c7fcf65d60287",
 "sharp": 905.5,
 "src": "2bbe78d6-image.jpg"
+},
+"Pulse Laser Pistol Battery (60 Cap)": {
+"date": "2026-11-13",
+"f": "dd8d580921825dd8",
+"sharp": 291.9,
+"src": "1ab62f55-image.jpg"
 }
 }

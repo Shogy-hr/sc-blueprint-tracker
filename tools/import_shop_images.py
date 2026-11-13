@@ -35,11 +35,15 @@ def name_at(im, qx, qy):
         for i in range(len(d['text'])):
             if d['text'][i].strip() and float(d['conf'][i]) > 20:
                 rows.setdefault((d['block_num'][i], d['par_num'][i], d['line_num'][i]), []).append((d['text'][i], d['left'][i], d['top'][i]))
-        for key in sorted(rows, key=lambda k: min(w[2] for w in rows[k])):
-            line = rows[key]; txt = ' '.join(w[0] for w in line).strip()
+        keys = sorted(rows, key=lambda k: min(w[2] for w in rows[k]))
+        texts = [' '.join(w[0] for w in rows[k]).strip() for k in keys]
+        for i, key in enumerate(keys):
+            line = rows[key]; txt = texts[i]
             if txt.upper().startswith('VOLUME'): break
-            if match(txt):
-                return txt, x0 + line[0][1] // 2, y0 + min(w[2] for w in line) // 2
+            # long names wrap onto a second line ("... MAGAZINE (8" + "CAP)")
+            for cand in ([txt + ' ' + texts[i + 1]] if i + 1 < len(texts) and not texts[i + 1].upper().startswith('VOLUME') else []) + [txt]:
+                if match(cand):
+                    return cand, x0 + line[0][1] // 2, y0 + min(w[2] for w in line) // 2
     return None
 
 
