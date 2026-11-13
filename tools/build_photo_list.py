@@ -21,7 +21,14 @@ for it in cat['items']:
                                         'k': 1 if n in shops else 0})
 G = [{'q': k, 'items': sorted(v, key=lambda x: x['n'])} for k, v in groups.items()]
 G.sort(key=lambda g: (-sum(1 for x in g['items'] if x['sh']), -len(g['items']), g['q']))
-data = json.dumps({'v': cat['v'], 'groups': G}, ensure_ascii=False, separators=(',', ':'))
+from collections import Counter
+TOP = Counter()
+for g in G:
+    for x in g['items']:
+        for t in {s_[0] for s_ in [[s['t'], s['s']] for s in shops.get(x['n'], [])]}: TOP[t] += 1
+for g in G:
+    for x in g['items']: x['sh'] = [[s['t'], s['l'], s['s'], s['p']] for s in shops.get(x['n'], [])]
+data = json.dumps({'v': cat['v'], 'groups': G, 'top': TOP.most_common(15)}, ensure_ascii=False, separators=(',', ':'))
 page = open(os.path.join(HERE, 'photo_list_src.html'), encoding='utf-8').read().replace('/*DATA*/null', data)
 os.makedirs(os.path.join(ROOT, 'foto'), exist_ok=True)
 open(os.path.join(ROOT, 'foto', 'index.html'), 'w', encoding='utf-8').write(page)

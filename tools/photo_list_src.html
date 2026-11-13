@@ -24,6 +24,7 @@ main{padding:10px 12px 60px;max-width:900px;margin:0 auto}
 .tag{font-size:11px;padding:0 5px;border-radius:3px;margin-left:6px;vertical-align:1px}
 .tag.no{background:#4a1d1d;color:#ffb3a8}.tag.va{background:#3d3214;color:#ffd98a}
 .sh{font-size:12px;color:#a9d6cf;margin-top:2px}.sh span{display:inline-block;margin-right:10px}
+.top{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0 0 12px}.top h2{font-size:14px;margin:0 0 6px;color:var(--gold)}.chip{display:inline-block;margin:3px 4px 3px 0;padding:4px 8px;border-radius:14px;border:1px solid var(--line);background:#0f201f;color:var(--txt);font-size:13px;cursor:pointer}.chip.on{border-color:var(--gold);color:var(--gold)}.chip b{color:var(--ok)}
 .none{font-size:12px;color:#7d8f8c;margin-top:2px}
 .hide-done .it.done{display:none}.hide-done .g.alldone{display:none}
 .only-sold .it.nosold{display:none}.only-sold .g.nosold{display:none}
@@ -35,7 +36,7 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
 <label><input type="checkbox" id="sold" checked>samo u prodaji</label>
 <label><input type="checkbox" id="hd">sakrij snimljeno</label></div>
 <div class="prog"><i id="pg"></i></div></header>
-<main id="m"></main>
+<main><div id="top"></div><div id="m"></div></main>
 <footer>Upiši <b>riječ u okviru</b> u SEARCH shop terminala i snimi listu (pauza ~1 s po stranici).<br>
 Gdje se prodaje: podaci UEX zajednice preko api.star-citizen.wiki (mogu kasniti ili biti nepotpuni).<br>
 <span class="tag no">nema slike</span> u kiosku nema nikakve slike · <span class="tag va">varijanta</span> prikazuje sliku osnovnog modela</footer>
@@ -44,22 +45,25 @@ const D=/*DATA*/null;
 const K="foto-done-v1";let done={};try{done=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(K,JSON.stringify(done))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let SHOP="";
 const fmt=n=>Number(n).toLocaleString("hr-HR");
 function render(){
   const f=document.getElementById("f").value.trim().toLowerCase();
   let h="",all=0,dn=0,sold=0;
   for(const g of D.groups){
-    const its=g.items.filter(x=>!f||x.n.toLowerCase().includes(f)||g.q.toLowerCase().includes(f));
+    const its=g.items.filter(x=>(!f||x.n.toLowerCase().includes(f)||g.q.toLowerCase().includes(f))&&(!SHOP||x.sh.some(s=>s[0]===SHOP)));
     if(!its.length)continue;
     const gs=its.filter(x=>x.sh.length).length,gd=its.filter(x=>done[x.n]).length;
     all+=its.length;dn+=gd;sold+=gs;
     h+=`<details class="g ${gd===its.length?"alldone":""} ${gs?"":"nosold"}" ${f?"open":""}><summary><span class="q">${esc(g.q)}</span><button class="copy" data-q="${esc(g.q)}">kopiraj</button><span class="cnt"><b>${gd}</b>/${its.length} · u prodaji ${gs}</span></summary>`;
     for(const x of its){
-      const sh=x.sh.length?`<div class="sh">${x.sh.map(s=>`<span>🛒 ${esc(s[0]||s[1])}${s[2]&&s[2]!=="Stanton"?" ("+esc(s[2])+")":""} · ¤${fmt(s[3])}</span>`).join("")}</div>`:`<div class="none">${x.k?"nije pronađeno u shopovima":"još nije provjereno"}</div>`;
+      const sh=x.sh.length?`<div class="sh">${(SHOP?x.sh.filter(s=>s[0]===SHOP):x.sh.slice(0,3)).map(s=>`<span>🛒 ${esc(s[0]||s[1])}${s[2]&&s[2]!=="Stanton"?" ("+esc(s[2])+")":""} · ¤${fmt(s[3])}</span>`).join("")}</div>`:`<div class="none">${x.k?"nije pronađeno u shopovima":"još nije provjereno"}</div>`;
       h+=`<label class="it ${done[x.n]?"done":""} ${x.sh.length?"":"nosold"}"><input type="checkbox" data-n="${esc(x.n)}" ${done[x.n]?"checked":""}><div><span class="nm">${esc(x.n)}</span><span class="tag ${x.v?"va":"no"}">${x.v?"varijanta":"nema slike"}</span><div class="meta">${esc(x.c)} · ${esc(x.s)}</div>${sh}</div></label>`;
     }
     h+="</details>";
   }
+  document.getElementById("top").innerHTML=`<div class="top"><h2>Najbolji shopovi (koliko predmeta s popisa prodaju)</h2>${D.top.map(([t,c])=>`<span class="chip ${SHOP===t?"on":""}" data-t="${esc(t)}">${esc(t)} <b>${c}</b></span>`).join("")}${SHOP?' <span class="chip" data-t="">✕ svi</span>':""}</div>`;
+  document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{SHOP=SHOP===c.dataset.t?"":c.dataset.t;render()});
   document.getElementById("m").innerHTML=h||'<p class="sub">Ništa ne odgovara.</p>';
   document.getElementById("sum").textContent=`Kiosk ${D.v.split("-")[0]} · ${all} predmeta bez prave slike · ${sold} u prodaji · snimljeno ${dn}`;
   document.getElementById("pg").style.width=(all?dn/all*100:0)+"%";
