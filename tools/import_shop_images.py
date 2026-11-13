@@ -27,18 +27,21 @@ def quick_buys(im):
             if 150 < sl[1].stop - sl[1].start < 220 and 30 < sl[0].stop - sl[0].start < 60]
 
 def name_at(im, qx, qy):
-    x0, y0 = qx + 100, qy - 225
-    g = ImageOps.grayscale(im.crop((x0, y0, qx + 560, qy - 140))); g = g.resize((g.width * 2, g.height * 2), Image.LANCZOS)
+    x0, y0 = qx + 100, qy - 225     # lower rows are squeezed by the perspective, so look down to qy-115
+    g = ImageOps.grayscale(im.crop((x0, y0, qx + 560, qy - 115))); g = g.resize((g.width * 2, g.height * 2), Image.LANCZOS)
     for img in (ImageOps.invert(g), g):
         d = pytesseract.image_to_data(img, config='--psm 6', output_type=pytesseract.Output.DICT)
-        ws = [(d['text'][i], d['left'][i], d['top'][i], d['line_num'][i], d['block_num'][i]) for i in range(len(d['text']))
-              if d['text'][i].strip() and float(d['conf'][i]) > 20]
-        if not ws: continue
-        line = [w for w in ws if (w[4], w[3]) == (ws[0][4], ws[0][3])]
-        txt = ' '.join(w[0] for w in line).strip()
-        if len(txt) >= 3 and not txt.upper().startswith('VOLUME'):
-            return txt, x0 + line[0][1] // 2, y0 + line[0][2] // 2
+        rows = {}
+        for i in range(len(d['text'])):
+            if d['text'][i].strip() and float(d['conf'][i]) > 20:
+                rows.setdefault((d['block_num'][i], d['par_num'][i], d['line_num'][i]), []).append((d['text'][i], d['left'][i], d['top'][i]))
+        for key in sorted(rows, key=lambda k: min(w[2] for w in rows[k])):
+            line = rows[key]; txt = ' '.join(w[0] for w in line).strip()
+            if txt.upper().startswith('VOLUME'): break
+            if match(txt):
+                return txt, x0 + line[0][1] // 2, y0 + min(w[2] for w in line) // 2
     return None
+
 
 def cards(im):
     out = []
@@ -48,6 +51,7 @@ def cards(im):
         txt, nx, ny = r
         right, top, bottom = nx - 20, ny - 10, qy - 20
         if bottom - top < 120: continue
+        if bottom - top > 195: top = bottom - 165     # name found too high (OCR picked a line above): use a typical card size
         k = 7   # stay inside the card frame
         out.append((txt, (right - (bottom - top) + k, top + k, right - k, bottom - k)))
     return out
@@ -101,7 +105,7 @@ def main():
                 if not n: skipped.add(norm(txt)); continue
                 seen.add(n)
                 st = imgdata.get(n)
-                if not allm and st and not st[1] and n not in idx: continue   # already has its own picture
+                if not allm and st and not st[1] and st[3] != 's' and n not in idx: continue   # already has its own (non-shop) picture
                 c = im.crop(box); s = sharpness(c)
                 if n not in best or s > best[n][0]: best[n] = (s, c, label)
     os.makedirs(IMG, exist_ok=True); new = 0

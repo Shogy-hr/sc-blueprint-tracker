@@ -1,92 +1,254 @@
 {
+"ADP Core Dark Green": {
+"date": "2026-11-13",
+"f": "d0f45d601b42e40b",
+"sharp": 1044.2,
+"src": "3a66049f-image.jpg"
+},
+"ADP Core Dark Red": {
+"date": "2026-11-13",
+"f": "091af691be2c1d25",
+"sharp": 1367.8,
+"src": "3a66049f-image.jpg"
+},
+"ADP Core Red": {
+"date": "2026-11-13",
+"f": "811813e6808e9135",
+"sharp": 1340.9,
+"src": "3a66049f-image.jpg"
+},
+"ADP Core Sienna": {
+"date": "2026-11-13",
+"f": "327c292798ad40f4",
+"sharp": 1544.3,
+"src": "3a66049f-image.jpg"
+},
+"ADP Core Tan": {
+"date": "2026-11-13",
+"f": "8f5f0c9e08bfc167",
+"sharp": 1065.1,
+"src": "6c776225-image.jpg"
+},
+"ADP Core Violet": {
+"date": "2026-11-13",
+"f": "a5c44e37f36cdbef",
+"sharp": 1238.3,
+"src": "6c776225-image.jpg"
+},
+"ADP-mk4 Helmet Woodland": {
+"date": "2026-11-13",
+"f": "fb82e0b45af63c7b",
+"sharp": 727.0,
+"src": "13f6a8b9-image.jpg"
+},
 "Balor HCH Helmet Blue": {
 "date": "2026-11-13",
 "f": "92b0ff863e51555c",
-"sharp": 664.5,
+"sharp": 656.4,
 "src": "984459f5-image.jpg"
 },
 "Balor HCH Helmet Grey": {
 "date": "2026-11-13",
 "f": "29296dd38b90be22",
-"sharp": 775.6,
+"sharp": 755.4,
 "src": "984459f5-image.jpg"
 },
 "Balor HCH Helmet Orange": {
 "date": "2026-11-13",
 "f": "f30134c645ae5efa",
-"sharp": 795.2,
+"sharp": 774.3,
 "src": "984459f5-image.jpg"
 },
 "Balor HCH Helmet Seagreen": {
 "date": "2026-11-13",
 "f": "1790b34c534d921b",
-"sharp": 821.9,
+"sharp": 799.1,
 "src": "984459f5-image.jpg"
 },
 "Balor HCH Helmet Tan": {
 "date": "2026-11-13",
 "f": "d17ba8d2f7cc5277",
-"sharp": 881.4,
+"sharp": 947.4,
 "src": "984459f5-image.jpg"
 },
 "Balor HCH Helmet Twilight": {
 "date": "2026-11-13",
 "f": "a4abcd4db62a21e8",
-"sharp": 734.3,
+"sharp": 715.3,
 "src": "4a880fde-image.jpg"
 },
 "Balor HCH Helmet White": {
 "date": "2026-11-13",
 "f": "f3645ecf4d258d46",
-"sharp": 995.4,
+"sharp": 982.3,
 "src": "4a880fde-image.jpg"
+},
+"CBH-3 Helmet Black": {
+"date": "2026-11-13",
+"f": "32b46851256acbd8",
+"sharp": 326.3,
+"src": "63002696-image.jpg"
+},
+"CBH-3 Helmet Dark Green": {
+"date": "2026-11-13",
+"f": "7647bd3f11afc8ea",
+"sharp": 294.1,
+"src": "63002696-image.jpg"
+},
+"CBH-3 Helmet Grey": {
+"date": "2026-11-13",
+"f": "cc9491acc51af094",
+"sharp": 503.7,
+"src": "63002696-image.jpg"
+},
+"CBH-3 Helmet Orange": {
+"date": "2026-11-13",
+"f": "e62f9f5728a913ad",
+"sharp": 490.9,
+"src": "63002696-image.jpg"
+},
+"CBH-3 Helmet Purple": {
+"date": "2026-11-13",
+"f": "320c8908565b39b7",
+"sharp": 392.8,
+"src": "22f4c80f-image.jpg"
+},
+"CBH-3 Helmet Twilight": {
+"date": "2026-11-13",
+"f": "c7bc25145e32d683",
+"sharp": 352.5,
+"src": "22f4c80f-image.jpg"
+},
+"CBH-3 Helmet White": {
+"date": "2026-11-13",
+"f": "a2634f7445077a03",
+"sharp": 815.1,
+"src": "22f4c80f-image.jpg"
+},
+"CBH-3 Helmet Yellow": {
+"date": "2026-11-13",
+"f": "927bcbb16b386571",
+"sharp": 876.0,
+"src": "22f4c80f-image.jpg"
+},
+"Calico Core Tactical": {
+"date": "2026-11-13",
+"f": "b90df8f0724eee1b",
+"sharp": 648.4,
+"src": "9a96701b-image.jpg"
+},
+"Calico Helmet Tactical": {
+"date": "2026-11-13",
+"f": "e194ae321c469cdf",
+"sharp": 316.6,
+"src": "9a96701b-image.jpg"
+},
+"G-2 Helmet Black": {
+"date": "2026-11-13",
+"f": "6e1aa7e7d2a555d2",
+"sharp": 525.3,
+"src": "0f55bcb6-image.jpg"
+},
+"G-2 Helmet Imperial": {
+"date": "2026-11-13",
+"f": "2ca6b411a9aed317",
+"sharp": 745.2,
+"src": "0f55bcb6-image.jpg"
+},
+"G-2 Helmet Red": {
+"date": "2026-11-13",
+"f": "94e69bc3ca09657b",
+"sharp": 586.1,
+"src": "0f55bcb6-image.jpg"
+},
+"G-2 Helmet Tan": {
+"date": "2026-11-13",
+"f": "e5a57dd2a4ad8347",
+"sharp": 1126.2,
+"src": "0f55bcb6-image.jpg"
+},
+"G-2 Helmet Yellow": {
+"date": "2026-11-13",
+"f": "a7bbc9d6424da898",
+"sharp": 924.3,
+"src": "0f55bcb6-image.jpg"
+},
+"ORC-mkX Core Arctic": {
+"date": "2026-11-13",
+"f": "8e512fb26ad724e5",
+"sharp": 1682.4,
+"src": "55779071-image.jpg"
+},
+"ORC-mkX Core Desert": {
+"date": "2026-11-13",
+"f": "79d78887c0068d43",
+"sharp": 1037.6,
+"src": "55779071-image.jpg"
+},
+"ORC-mkX Core Twilight": {
+"date": "2026-11-13",
+"f": "11e13d99fec145ad",
+"sharp": 770.3,
+"src": "55779071-image.jpg"
+},
+"ORC-mkX Helmet Desert": {
+"date": "2026-11-13",
+"f": "acc671efb73c3f20",
+"sharp": 481.5,
+"src": "7f12ce5d-image.jpg"
+},
+"ORC-mkX Helmet Twilight": {
+"date": "2026-11-13",
+"f": "3897881220244983",
+"sharp": 368.1,
+"src": "7f12ce5d-image.jpg"
 },
 "PAB-1 Core Black": {
 "date": "2026-11-13",
 "f": "b1fb407392fd5ee3",
-"sharp": 561.1,
+"sharp": 553.5,
 "src": "5f7c26ac-image.jpg"
 },
 "PAB-1 Core Dark Green": {
 "date": "2026-11-13",
 "f": "ec727e0094fd4350",
-"sharp": 718.9,
+"sharp": 709.1,
 "src": "5f7c26ac-image.jpg"
 },
 "PAB-1 Core Dark Red": {
 "date": "2026-11-13",
 "f": "465faf2fbb545338",
-"sharp": 769.9,
+"sharp": 758.7,
 "src": "5f7c26ac-image.jpg"
 },
 "PAB-1 Core Desert": {
 "date": "2026-11-13",
 "f": "207d7653b36a275e",
-"sharp": 758.3,
+"sharp": 809.7,
 "src": "5f7c26ac-image.jpg"
 },
 "PAB-1 Core Grey": {
 "date": "2026-11-13",
 "f": "70b3d215e40e74f9",
-"sharp": 534.7,
+"sharp": 528.0,
 "src": "2bbe78d6-image.jpg"
 },
 "PAB-1 Core Red": {
 "date": "2026-11-13",
 "f": "808da57be923a2b8",
-"sharp": 620.6,
+"sharp": 612.8,
 "src": "2bbe78d6-image.jpg"
 },
 "PAB-1 Core Seagreen": {
 "date": "2026-11-13",
 "f": "99868898e39a5574",
-"sharp": 553.7,
+"sharp": 546.2,
 "src": "2bbe78d6-image.jpg"
 },
 "PAB-1 Core White": {
 "date": "2026-11-13",
 "f": "7e7c7fcf65d60287",
-"sharp": 930.9,
+"sharp": 905.5,
 "src": "2bbe78d6-image.jpg"
 }
 }
