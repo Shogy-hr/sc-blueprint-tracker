@@ -1325,7 +1325,7 @@ function tilesHTML(L,selIdx){
 }
 /* category icon from the game UI (tools/game_icons) when an item has no picture; else the drawn icon */
 function noImg(it){const u=IMG.subs&&IMG.subs[it.c==="V"?"V":it.s];return u?`<span class="gic" style="--m:url(${u})"></span>`:ic(subIc(it))}
-function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt="" loading="lazy">`+(m[1]?`<span class="tmp" title="${T("tmpTitle")}">${T("tmpShort")}</span>`:""):noImg(it)}
+function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt=""${m[1]?` title="${T("tmpTitle")}"`:""} loading="lazy">`:noImg(it)}
 function pagerHTML(page,pages,id){return `<div class="pager" id="${id}"><button data-p="first" ${page<=0?"disabled":""}>«</button><button data-p="prev" ${page<=0?"disabled":""}>‹</button><span>${pages?page+1:0}/${pages}</span><button data-p="next" ${page>=pages-1?"disabled":""}>›</button><button data-p="last" ${page>=pages-1?"disabled":""}>»</button></div>`}
 function bindPager(id,get,set,pages){$$(`#${id} button`).forEach(b=>b.onclick=()=>{const p=get();set({first:0,prev:p-1,next:p+1,last:pages-1}[b.dataset.p]);render()})}
 
@@ -1427,7 +1427,7 @@ function renderDetail(){
     ${slots}
    </div>
    <div class="info">
-    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt="">${imgOf(it)[1]?`<span class="vr">${T("tmpLong")}</span>`:""}</span>`:noImg(it)}</div>
+    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt=""${imgOf(it)[1]?` title="${T("tmpTitle")}"`:""}></span>`:noImg(it)}</div>
     <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CBY[it.c].n)} → <b>${esc(it.s)}</b> • Tier <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • Grade ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
       <div class="ft">Fabrication Time:<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
     ${ptuBox(it)}

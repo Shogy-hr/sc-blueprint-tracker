@@ -9,7 +9,7 @@ sys.path.insert(0, HERE)
 from sclib import clean_name
 API = os.environ.get('WIKI_API', 'https://starcitizen.tools/api.php')
 UA = os.environ.get('WIKI_UA', 'SC-Blueprint-Tracker/1.0 (fan site; github.com) python-urllib')
-RECHECK_DAYS = 14
+RECHECK_DAYS = 5      # new items get their wiki pictures a few days after a patch, so look again soon
 WDIR = os.path.join(HERE, 'wiki'); IDIR = os.path.join(WDIR, 'img'); IDX = os.path.join(WDIR, 'index.json')
 BAD_IMG = re.compile(r'(logo|icon|placeholder|no[_ -]?image|\.svg$)', re.I)
 BAD_MAT = re.compile(r'(logo|placeholder|no[_ -]?image|cargo[_ -])', re.I)   # generic cargo-box pictures are not the material
@@ -31,6 +31,55 @@ def icon_titles(m):
         for t in (f'File:{b} icon.svg', f'File:{b} icon.png'):
             if t not in out: out.append(t)
     return out
+
+
+TOK = re.compile(r"[a-z0-9]+")
+GENERIC = {'png', 'jpg', 'jpeg', 'webp', 'file', 'shop', 'display', 'cutout', 'ingame', 'in', 'game', 'render', 'front',
+           'side', 'image', 'promo', 'the', 'a', 'of', 'and', 'small', 'large', 'crop', 'cropped', 'scitem', 'v', '1', '01'}
+# words that may be added to an item's name for its own category ("Agni quantum drive.jpg" is still the Agni,
+# but "Bolt rifle" is not the Bolt quantum drive)
+CAT_WORDS = {'QUANTUM DRIVES': 'quantum drive', 'COOLERS': 'cooler', 'POWER PLANTS': 'power plant powerplant',
+             'SHIELDS': 'shield generator', 'RADARS': 'radar', 'MINING LASERS': 'mining laser', 'MINING MODULES': 'mining module',
+             'TRACTOR BEAMS': 'tractor beam', 'SALVAGE HEADS': 'salvage head', 'SCRAPER MODULES': 'scraper module',
+             'HELMETS': 'helmet flight armor armour', 'CORE': 'core armor armour', 'ARMS': 'arms armor armour', 'LEGS': 'legs armor armour',
+             'BACKPACKS': 'backpack', 'UNDERSUITS': 'undersuit', 'FLIGHT SUITS': 'flight suit', 'SIDEARMS': 'pistol',
+             'RIFLES': 'rifle', 'SNIPER RIFLES': 'sniper rifle', 'SMGS': 'smg', 'SHOTGUNS': 'shotgun', 'LMGS': 'lmg',
+             'MAGAZINES': 'magazine', 'SIZE 1': 'cannon repeater gun', 'SIZE 2': 'cannon repeater gun', 'SIZE 3': 'cannon repeater gun',
+             'SIZE 4': 'cannon repeater gun', 'SIZE 5': 'cannon repeater gun', 'SIZE 6': 'cannon repeater gun'}
+
+
+def toks(s):
+    return [t for t in TOK.findall(re.sub(r'([a-z])([A-Z])', r'\1 \2', s).lower().replace('_', ' ')) if t]
+
+
+def close_match(want, got, extra=1, ok=()):
+    """every word of the item name is in the found title, plus at most `extra` other words
+    (generic photo words and the item's own category words don't count)"""
+    w = set(toks(want)); g = [t for t in toks(got) if t not in GENERIC and t not in ok]
+    return w and w <= set(g) and len(set(g) - w) <= extra
+
+
+def search(title, ns):
+    d = get_json({'action': 'query', 'format': 'json', 'formatversion': '2', 'list': 'search', 'srsearch': title,
+                  'srnamespace': str(ns), 'srlimit': '5', 'srprop': ''})
+    return [x['title'] for x in d.get('query', {}).get('search', [])]
+
+
+def find_by_search(title, ok=()):
+    """Second chance for items whose exact page has no picture: a page with a slightly different name
+    (e.g. 'Tailwind Flight Helmet Raider Camo'), or an uploaded file named after the item."""
+    try:
+        for t in search(title, 0):
+            if t != title and close_match(title, t, 0, ok):
+                r = query([t])
+                if t in r and not BAD_IMG.search(r[t][1] or ''): return r[t]
+        for f in search(title, 6):
+            if BAD_IMG.search(f) or not close_match(title, f.split(':', 1)[-1].rsplit('.', 1)[0], 0, ok): continue
+            r = query_files([f])
+            if f in r: return (r[f][0], f.split(':', 1)[-1], r[f][1])
+    except Exception as ex:
+        print('  search failed', title, ex)
+    return None
 
 
 def query_files(titles):
@@ -138,6 +187,27 @@ def main():
                     print('  image failed', t, ex)
             idx[t] = entry
         time.sleep(1.0)
+        json.dump(idx, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
+    # second chance: search the wiki for a similarly named page or an uploaded picture of the item
+    titles = []; sub = {}
+    for it in cat['items']:
+        t = clean_name((it[12] if len(it) > 12 and it[12] else '') or it[0])
+        if it[0] not in have and not (len(it) > 13 and it[13]) and t not in titles: titles.append(t); sub[t] = it[2]
+    misses = [t for t in titles if t in idx and not idx[t].get('f') and now - idx[t].get('s', 0) > RECHECK_DAYS * 86400][:300]
+    print('wiki: searching for', len(misses), 'titles without a page image')
+    for t in misses:
+        hit = find_by_search(t, set(CAT_WORDS.get(sub.get(t), '').split())); idx[t]['s'] = int(now)
+        if hit:
+            page, fname, src = hit; key = hashlib.sha1(src.encode()).hexdigest()[:16]
+            try:
+                if not os.path.exists(os.path.join(IDIR, key + '-s.webp')):
+                    save_images(get_bytes(src), key); time.sleep(0.25)
+                idx[t].update({'f': key, 'page': page, 'file': fname, 'url': src, 'search': 1}); got += 1
+                print('  found by search:', t, '<-', page, fname)
+            except Exception as ex:
+                print('  image failed', t, ex)
+        time.sleep(0.6)
+    if misses:
         json.dump(idx, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
     # ---- materials (ores, gems, items used in recipes)
     def mat_done(m):
