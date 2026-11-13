@@ -91,6 +91,12 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .icons svg{width:24px;height:24px}
 .chks{display:flex;flex-wrap:wrap;gap:4px 16px;margin:9px 2px 4px;font-size:15px;color:#c6e2de}
 .chks label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.chks .crchk{color:#bfe3ff}
+.tile .cw{position:absolute;left:4px;bottom:24px;font:700 11px var(--ff);background:#123a52;color:#bfe3ff;border:1px solid #2f6f93;padding:0 4px;border-radius:3px;z-index:2}
+#crewList .crow{display:flex;align-items:center;gap:8px;padding:7px 4px;border-bottom:1px solid #1d3c3a}
+#crewList .crow .cn{margin-left:auto;color:#9cc3bd;font-size:13px}#crewList .crow.me{opacity:.8}
+#crewList .x{background:none;border:1px solid #3a5a57;color:#cfe;border-radius:3px;cursor:pointer;padding:0 6px}
+#crewDrop.hov{outline:2px dashed #9fd4cc}
 .chks .nwchk{color:#ffe7a8}.chks .nwchk .nw{font:700 11px var(--ff);background:var(--gold);color:#1b1a0b;padding:0 5px;border-radius:2px}
 .chks input{appearance:none;width:17px;height:17px;border:1px solid #6fa59e;background:#0c2423;display:grid;place-items:center;margin:0}
 .chks input:checked{background:#9fd4cc}
@@ -455,6 +461,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <button class="tbtn stat" id="bStat"></button>
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
+      <button class="tbtn" id="bCrew">👥 <span data-l10n="crew"></span> <b id="crewN"></b></button>
       <button class="tbtn" id="bVid">▶ <span data-l10n="tut"></span></button>
       <button class="tbtn" id="bSet">⚙ <span data-l10n="settings"></span></button>
       <div class="toprow"><a class="bmc" id="bmcTop" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer" data-it="coffee"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a>
@@ -508,6 +515,15 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <div class="mbtns left"><button class="btn rst all" data-r="all" data-l10n="sResetAll"></button></div>
     <p class="hint" data-l10n="sResetAllNote"></p></div>
   <div class="mbtns"><button class="btn" data-close data-l10n="close"></button></div>
+</div></div>
+<div class="modal" id="mCrew"><div class="mbox wide">
+  <h2>👥 <span data-l10n="crewT"></span></h2>
+  <p data-l10n="crewIntro"></p><p class="hint" data-l10n="crewTip"></p>
+  <div class="drop" id="crewDrop"><div class="pickrow"><button class="btn pri" id="crewPick" type="button" data-l10n="crewAdd"></button></div><div class="hint" data-l10n="dropOr"></div></div>
+  <input type="file" id="crewFile" multiple accept=".json,application/json" hidden>
+  <p class="hint" id="crewMsg"></p>
+  <div id="crewList"></div>
+  <div class="mbtns"><button class="btn" id="crewClr" data-l10n="crewClear"></button><button class="btn" data-close data-l10n="close"></button></div>
 </div></div>
 <div class="modal" id="mWel"><div class="mbox wide wiz" id="wBox"></div></div>
 <div class="toast" id="toast"></div>
@@ -781,6 +797,24 @@ thLoc:["Delivery Location","Mjesto dostave","Lieferort","Miejsce dostawy","Lieu 
 poolSpecial:["Special reward – source not known yet","Posebna nagrada – izvor još nepoznat","Sonderbelohnung – Quelle noch unbekannt","Nagroda specjalna – źródło jeszcze nieznane","Récompense spéciale – source encore inconnue","Recompensa especial – origen aún desconocido"],
 chooseOne:["Choose one material","Odaberi jedan materijal","Wähle ein Material","Wybierz jeden materiał","Choisis un matériau","Elige un material"],
 chooseN:["Choose {0} materials","Odaberi {0} materijala","Wähle {0} Materialien","Wybierz {0} materiały","Choisis {0} matériaux","Elige {0} materiales"],
+crew:["CREW","CREW","CREW","EKIPA","ÉQUIPAGE","TRIPULACIÓN"],
+crewT:["Crew view","Pregled crewa","Crew-Ansicht","Widok ekipy","Vue équipage","Vista de tripulación"],
+crewIntro:["See which blueprints your crew owns. Every member exports their profile (⚙ Settings → Export to file) and you load the files here. Everything stays in your browser – nothing is uploaded.","Vidi koje blueprinte ima tvoj crew. Svaki član izveze svoj profil (⚙ Postavke → Izvezi u datoteku), a ti ovdje učitaš datoteke. Sve ostaje u tvom pregledniku – ništa se ne šalje.","Sieh, welche Blueprints deine Crew besitzt. Jedes Mitglied exportiert sein Profil (⚙ Einstellungen → In Datei exportieren) und du lädst die Dateien hier. Alles bleibt in deinem Browser – nichts wird hochgeladen.","Zobacz, jakie blueprinty ma twoja ekipa. Każdy członek eksportuje profil (⚙ Ustawienia → Eksport do pliku), a ty wczytujesz pliki tutaj. Wszystko zostaje w przeglądarce – nic nie jest wysyłane.","Vois quels blueprints possède ton équipage. Chaque membre exporte son profil (⚙ Paramètres → Exporter dans un fichier) et tu charges les fichiers ici. Tout reste dans ton navigateur – rien n’est envoyé.","Mira qué blueprints tiene tu tripulación. Cada miembro exporta su perfil (⚙ Ajustes → Exportar a archivo) y tú cargas los archivos aquí. Todo queda en tu navegador: no se sube nada."],
+crewTip:["Tip: import your Game.log first – the export then carries your in-game handle, so the same person is always recognised and a newer file simply replaces the old one.","Savjet: prvo uvezi Game.log – izvoz tada nosi tvoj nadimak iz igre, pa se ista osoba uvijek prepozna, a novija datoteka samo zamijeni staru.","Tipp: Importiere zuerst dein Game.log – der Export enthält dann deinen Spielnamen, so wird dieselbe Person immer erkannt und eine neuere Datei ersetzt einfach die alte.","Wskazówka: najpierw zaimportuj Game.log – eksport zawiera wtedy twój nick z gry, więc ta sama osoba jest zawsze rozpoznawana, a nowszy plik po prostu zastępuje stary.","Astuce : importe d’abord ton Game.log – l’export contient alors ton pseudo en jeu, la même personne est toujours reconnue et un fichier plus récent remplace simplement l’ancien.","Consejo: importa primero tu Game.log; así la exportación lleva tu nombre en el juego, la misma persona siempre se reconoce y un archivo más nuevo sustituye al anterior."],
+crewAdd:["＋ Add crew files","＋ Dodaj datoteke crewa","＋ Crew-Dateien hinzufügen","＋ Dodaj pliki ekipy","＋ Ajouter des fichiers","＋ Añadir archivos"],
+crewYou:["you","ti","du","ty","toi","tú"],
+crewOwns:["{0} blueprints","{0} blueprinta","{0} Blueprints","{0} blueprintów","{0} blueprints","{0} blueprints"],
+crewExp:["exported {0}","izvezeno {0}","exportiert {0}","eksport {0}","exporté le {0}","exportado {0}"],
+crewClear:["Remove all","Ukloni sve","Alle entfernen","Usuń wszystkich","Tout retirer","Quitar todos"],
+crewNone:["No crew files loaded yet.","Još nema učitanih datoteka crewa.","Noch keine Crew-Dateien geladen.","Nie wczytano jeszcze plików ekipy.","Aucun fichier d’équipage chargé.","Aún no hay archivos de la tripulación."],
+crewSelf:["{0}: that is your own profile – skipped.","{0}: to je tvoj vlastiti profil – preskočeno.","{0}: das ist dein eigenes Profil – übersprungen.","{0}: to twój własny profil – pominięto.","{0} : c’est ton propre profil – ignoré.","{0}: es tu propio perfil, se omite."],
+crewBad:["{0}: not a profile export.","{0}: nije izvoz profila.","{0}: kein Profil-Export.","{0}: to nie jest eksport profilu.","{0} : pas un export de profil.","{0}: no es una exportación de perfil."],
+crewOk:["{0} loaded, {1} updated.","Učitano {0}, ažurirano {1}.","{0} geladen, {1} aktualisiert.","Wczytano {0}, zaktualizowano {1}.","{0} chargé(s), {1} mis à jour.","{0} cargados, {1} actualizados."],
+crewHasF:["Crew has it","Crew ga ima","Crew hat ihn","Ekipa ma","L’équipage l’a","La tripulación lo tiene"],
+crewNoF:["Nobody in crew","Nitko u crewu","Niemand in der Crew","Nikt w ekipie","Personne dans l’équipage","Nadie en la tripulación"],
+crewSec:["CREW","CREW","CREW","EKIPA","ÉQUIPAGE","TRIPULACIÓN"],
+crewBadgeT:["{0} crew member(s) own this blueprint","{0} člana crewa ima ovaj blueprint","{0} Crew-Mitglied(er) besitzen diesen Blueprint","{0} członków ekipy ma ten blueprint","{0} membre(s) de l’équipage possèdent ce blueprint","{0} miembro(s) de la tripulación tienen este blueprint"],
+crewNobody:["Nobody in your crew has this blueprint yet.","Nitko u tvom crewu još nema ovaj blueprint.","Noch niemand in deiner Crew hat diesen Blueprint.","Nikt z ekipy nie ma jeszcze tego blueprintu.","Personne de ton équipage n’a encore ce blueprint.","Nadie de tu tripulación tiene aún este blueprint."],
 inProg:["In progress","U izradi","In Arbeit","W toku","En cours","En curso"],
 waiting:["Waiting","Čeka","Wartet","Czeka","En attente","En espera"],
 cancel:["Cancel","Otkaži","Abbrechen","Anuluj","Annuler","Cancelar"],
@@ -920,7 +954,7 @@ const titleCase=s=>s.toLowerCase().replace(/(^|\s)\S/g,m=>m.toUpperCase());
 
 /* ---------- state & profiles ---------- */
 const LSK_OLD="scbp-kiosk-v1",LSP="scbp-profiles-v2";
-const blank=()=>({v:2,owned:{},want:{},notes:{},ids:{},stock:{},sim:{q:[],p:[],dq:[],dp:[],disp:[],inv:[],seq:1},logSync:0,lang:"",catv:"",known:"",lastBackup:0,game:null});
+const blank=()=>({v:2,owned:{},want:{},notes:{},ids:{},stock:{},sim:{q:[],p:[],dq:[],dp:[],disp:[],inv:[],seq:1},logSync:0,logAcct:"",lang:"",catv:"",known:"",lastBackup:0,game:null});
 let ST=blank();
 function norm(s){const b=blank();s=s&&typeof s==="object"?s:{};for(const k in b)if(s[k]!==undefined)b[k]=s[k];b.sim=Object.assign(blank().sim,s.sim||{});return b}
 const isOwned=it=>it.def||ST.owned[it.n]!==undefined;
@@ -1117,7 +1151,7 @@ async function boot(){
 
 /* ---------- ui state ---------- */
 const U={view:"fab",lt:"bp",q:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,desc:false,page:0,sel:null,qty:1,fill:{},mat:null,loc:"Location Inventory",
-  dq:"",dcats:new Set(),dAll:false,dsel:[],dpage:0,qt:"wo",mq:"",mkind:"",newSet:new Set(),newOnly:false,patchNew:false};
+  dq:"",dcats:new Set(),dAll:false,dsel:[],dpage:0,qt:"wo",mq:"",mkind:"",newSet:new Set(),newOnly:false,patchNew:false,crewHas:false,crewNo:false};
 let PER=48;const ROWS=10;
 const isMob=()=>window.matchMedia&&matchMedia("(max-width:760px)").matches;
 const isSheet=()=>window.matchMedia&&matchMedia("(max-width:1100px)").matches;
@@ -1276,9 +1310,44 @@ function importText(t){try{const d=JSON.parse(t);if(!d||typeof d!=="object"||!d.
 $("#imJson").onclick=()=>importText($("#dataT").value);
 $("#impFileB").onclick=()=>$("#impFile").click();
 $("#impFile").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f)return;try{importText(await f.text())}catch(x){$("#dataMsg").textContent=T("sBadJson")}};
+
+/* ---------- crew view: teammates' exported profiles, kept only in this browser ---------- */
+const LSC="scbp-crew-v1";let CREW={};try{CREW=JSON.parse(localStorage.getItem(LSC)||"{}")||{}}catch(e){CREW={}}
+const saveCrew=()=>{try{localStorage.setItem(LSC,JSON.stringify(CREW))}catch(e){}};
+const crewKeys=()=>Object.keys(CREW).sort((a,b)=>CREW[a].name.localeCompare(CREW[b].name));
+const crewOf=n=>crewKeys().filter(k=>CREW[k].owned.includes(n));
+function crewAddText(t,fname){
+  let d;try{d=JSON.parse(t)}catch(e){return["bad"]}
+  if(!d||typeof d!=="object"||!d.owned)return["bad"];
+  const handle=String(d.handle||d.logAcct||"").trim(),name=handle||String(d.profile||fname.replace(/\.json$/i,"")).trim();
+  if(handle&&ST.logAcct&&handle.toLowerCase()===ST.logAcct.toLowerCase())return["self",name];
+  const key=(handle||name).toLowerCase(),old=CREW[key],exp=+d.exported||0;
+  if(old&&old.exported>exp)return["old",name];
+  CREW[key]={name,handle,profile:d.profile||"",exported:exp,owned:Object.keys(d.owned).filter(n=>BYN.has(n.toLowerCase())).map(n=>BYN.get(n.toLowerCase()).n)};
+  return[old?"upd":"add",name];
+}
+async function crewFiles(files){
+  let add=0,upd=0;const notes=[];
+  for(const f of files){let r;try{r=crewAddText(await f.text(),f.name)}catch(e){r=["bad"]}
+    if(r[0]==="add")add++;else if(r[0]==="upd")upd++;else if(r[0]==="self")notes.push(T("crewSelf",esc(r[1])));else if(r[0]==="bad")notes.push(T("crewBad",esc(f.name)))}
+  saveCrew();$("#crewMsg").innerHTML=[T("crewOk",add,upd)].concat(notes).join("<br>");renderCrew();render();
+}
+function renderCrew(){
+  const ks=crewKeys(),fmt=t=>t?new Date(t).toLocaleDateString(LOC()):"–";
+  const me=`<div class="crow me"><b>${esc(ST.logAcct||activeName()||"–")}</b> <span class="hint">(${T("crewYou")})</span><span class="cn">${T("crewOwns",ITEMS.filter(isOwned).length)}</span></div>`;
+  $("#crewList").innerHTML=me+(ks.length?ks.map(k=>{const m=CREW[k];return `<div class="crow"><b>${esc(m.name)}</b>${m.handle&&m.profile&&m.profile!==m.handle?` <span class="hint">${esc(m.profile)}</span>`:""}<span class="cn">${T("crewOwns",m.owned.length)} · ${T("crewExp",fmt(m.exported))}</span><button class="x" data-k="${esc(k)}" title="✕">✕</button></div>`}).join(""):`<p class="hint">${T("crewNone")}</p>`);
+  $$("#crewList .x").forEach(b=>b.onclick=()=>{delete CREW[b.dataset.k];saveCrew();renderCrew();render()});
+  $("#crewN").textContent=ks.length?String(ks.length):"";
+}
+$("#bCrew").onclick=()=>{$("#crewMsg").textContent="";renderCrew();$("#mCrew").classList.add("on")};
+$("#crewPick").onclick=()=>$("#crewFile").click();
+$("#crewFile").onchange=e=>{const fs=[...e.target.files];e.target.value="";if(fs.length)crewFiles(fs)};
+$("#crewClr").onclick=()=>{CREW={};saveCrew();renderCrew();render()};
+$("#crewN").textContent=Object.keys(CREW).length||"";
+(()=>{const d=$("#crewDrop");d.addEventListener("dragover",e=>{e.preventDefault();d.classList.add("hov")});d.addEventListener("dragleave",()=>d.classList.remove("hov"));d.addEventListener("drop",e=>{e.preventDefault();d.classList.remove("hov");const fs=[...e.dataTransfer.files].filter(f=>/\.json$/i.test(f.name));if(fs.length)crewFiles(fs)})})();
 let DL=null;(async()=>{try{if(window.claude&&claude.use)DL=await claude.use("downloads")}catch(e){}})();
-async function doExport(){const nm=(activeName()||"profile").replace(/[^\w.-]+/g,"_");const name="sc-blueprint-tracker-"+nm+"-"+new Date().toISOString().slice(0,10)+".json";
-  const data=JSON.stringify(Object.assign({app:"sc-blueprint-tracker",profile:activeName(),exported:Date.now()},ST),null,1);
+async function doExport(){const nm=(ST.logAcct||activeName()||"profile").replace(/[^\w.-]+/g,"_");const name="sc-blueprint-tracker-"+nm+"-"+new Date().toISOString().slice(0,10)+".json";
+  const data=JSON.stringify(Object.assign({app:"sc-blueprint-tracker",profile:activeName(),handle:ST.logAcct||"",exported:Date.now()},ST),null,1);
   const ok=()=>{ST.lastBackup=Date.now();save();applyStatic();return true};
   if(DL){try{await DL.save({filename:name,data});return ok()}catch(e){}}
   else{try{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},2000);return ok()}catch(e){}}
@@ -1378,6 +1447,7 @@ function filtered(){
     if(U.wantOnly&&!ST.want[it.n])return false;
     if(U.newOnly&&!U.newSet.has(it.n))return false;
     if(U.patchNew&&!PNEW.has(it.n))return false;
+    if((U.crewHas||U.crewNo)&&Object.keys(CREW).length){const c=crewOf(it.n).length;if(U.crewHas&&!c)return false;if(U.crewNo&&c)return false}
     if(U.ptuOnly&&!(it.ptu||PTUI.chg.has(it.n)||PTUI.rem.has(it.n)))return false;
     if(U.mat&&!it.mats.has(U.mat))return false;
     if(U.hideUn&&!affordable(it))return false;
@@ -1394,7 +1464,7 @@ function tilesHTML(L,selIdx){
     if(it.c!==lc){if(lc)h+="</div>";h+=`<div class="gh">${ic(CBY[it.c].i)}${CN(CBY[it.c].n)}</div>`;lc=it.c;ls="";h+="<div>"}
     if(it.s!==ls){if(ls)h+="</div>";h+=`<div class="sh">${esc(CN(it.s))}</div><div class="tiles">`;ls=it.s}
     const own=isOwned(it);
-    h+=`<button class="tile ${own?"own":"miss"} ${selIdx===it.i?"sel":""} ${it.ptu?"ptunew":""}" data-i="${it.i}" title="${esc(it.n)}${own?"":" – "+T("noBlueprint")}"><span class="t">T1</span>${U.newSet.has(it.n)||PNEW.has(it.n)?`<span class="nw">${T("nwB")}</span>`:""}${ptuTag(it)}${ST.want[it.n]&&!own?'<span class="st">★</span>':own?"":'<span class="lk">🔒</span>'}${tileImg(it)}<span class="nm">${esc(it.n)}</span></button>`;
+    h+=`<button class="tile ${own?"own":"miss"} ${selIdx===it.i?"sel":""} ${it.ptu?"ptunew":""}" data-i="${it.i}" title="${esc(it.n)}${own?"":" – "+T("noBlueprint")}"><span class="t">T1</span>${U.newSet.has(it.n)||PNEW.has(it.n)?`<span class="nw">${T("nwB")}</span>`:""}${ptuTag(it)}${(()=>{const c=Object.keys(CREW).length?crewOf(it.n).length:0;return c?`<span class="cw" title="${T("crewBadgeT",c)}">👥${c}</span>`:""})()}${ST.want[it.n]&&!own?'<span class="st">★</span>':own?"":'<span class="lk">🔒</span>'}${tileImg(it)}<span class="nm">${esc(it.n)}</span></button>`;
   });
   if(ls)h+="</div>";if(lc)h+="</div>";
   return h;
@@ -1414,7 +1484,7 @@ function renderFab(){
   v.innerHTML=left+`<div class="col" id="right"></div>`;
   $$(".tabs2 button").forEach(b=>b.onclick=()=>{U.lt=b.dataset.t;render()});
   $("#q").oninput=e=>{if(U.lt==="bp"){U.q=e.target.value;U.page=0;renderFabList()}else{U.mq=e.target.value;renderMats()}};
-  $("#clr").onclick=()=>{Object.assign(U,{q:"",mq:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,patchNew:false,mat:null,mkind:"",page:0});render()};
+  $("#clr").onclick=()=>{Object.assign(U,{q:"",mq:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,patchNew:false,crewHas:false,crewNo:false,mat:null,mkind:"",page:0});render()};
   $("#srt").onclick=()=>{U.desc=!U.desc;render()};
   if(U.lt==="bp")renderFabList();else renderMats();
   renderDetail();
@@ -1428,7 +1498,9 @@ function renderFabList(){
   b.innerHTML=ptuBar+(U.newSet.size?`<div class="newbar">✨ ${T("newBp",U.newSet.size,esc(CAT.v))} <button class="btn" id="nwT">${U.newOnly?T("hideNew"):T("showNew")}</button></div>`:"")+iconRow(U.cats,"fIcons")+`<div class="chks">
     <label><input type="checkbox" id="hUn" ${U.hideUn?"checked":""}>${T("hUn")}</label>
     <label><input type="checkbox" id="hNot" ${U.hideNot?"checked":""}>${T("hNot")}</label>
-    <label><input type="checkbox" id="hOwn" ${U.hideOwn?"checked":""}>${T("hOwn")}</label>${PNEW.size?`
+    <label><input type="checkbox" id="hOwn" ${U.hideOwn?"checked":""}>${T("hOwn")}</label>${Object.keys(CREW).length?`
+    <label class="crchk"><input type="checkbox" id="hCrew" ${U.crewHas?"checked":""}>👥 ${T("crewHasF")}</label>
+    <label class="crchk"><input type="checkbox" id="hCrewNo" ${U.crewNo?"checked":""}>👥 ${T("crewNoF")}</label>`:""}${PNEW.size?`
     <label class="nwchk" title="${T("onlyNewT",esc(CAT.nwv),PNEW.size)}"><input type="checkbox" id="hNew" ${U.patchNew?"checked":""}>${T("onlyNew",esc(CAT.nwv))} <span class="nw">${PNEW.size}</span></label>`:""}</div>`+
     (U.mat?`<div><span class="chip">${T("material",esc(U.mat))} <button id="xMat">✕</button></span></div>`:"")+
     (U.hideUn&&!Object.keys(ST.stock).length?`<div class="matnote">${T("unaffNote")}</div>`:"")+
@@ -1438,6 +1510,8 @@ function renderFabList(){
   if($("#ptuO"))$("#ptuO").onclick=()=>{U.ptuOnly=!U.ptuOnly;U.page=0;renderFabList()};
   if($("#nwT"))$("#nwT").onclick=()=>{U.newOnly=!U.newOnly;U.page=0;renderFabList()};
   $("#hUn").onchange=e=>{U.hideUn=e.target.checked;U.page=0;renderFabList()};
+  if($("#hCrew"))$("#hCrew").onchange=e=>{U.crewHas=e.target.checked;if(U.crewHas)U.crewNo=false;U.page=0;renderFabList()};
+  if($("#hCrewNo"))$("#hCrewNo").onchange=e=>{U.crewNo=e.target.checked;if(U.crewNo)U.crewHas=false;U.page=0;renderFabList()};
   if($("#hNew"))$("#hNew").onchange=e=>{U.patchNew=e.target.checked;U.page=0;renderFabList()};
   $("#hNot").onchange=e=>{U.hideNot=e.target.checked;if(U.hideNot)U.hideOwn=false;U.page=0;renderFabList()};
   $("#hOwn").onchange=e=>{U.hideOwn=e.target.checked;if(U.hideOwn)U.hideNot=false;U.page=0;renderFabList()};
@@ -1511,6 +1585,7 @@ function renderDetail(){
     ${ptuBox(it)}
     <div class="stats"><h3>${T("statsH")}</h3>${srows?`<table><tr><th>${T("attrH")}</th><th>${T("baseH")}</th><th>${T("enhH")}</th><th>${T("deltaH")}</th></tr>${srows}</table>`:`<div class="none">${T("noMods")}</div>`}
       <div class="hint" style="padding:4px 10px 8px">${T("statsHint")}</div></div>
+    ${Object.keys(CREW).length?`<div class="sec"><h5>👥 ${T("crewSec")}</h5>${(()=>{const c=crewOf(it.n);return c.length?`<div class="crewhas">${c.map(k=>`<span class="pool">✓ ${esc(CREW[k].name)}</span>`).join("")}</div>`:`<div class="hint">${T("crewNobody")}</div>`})()}</div>`:""}
     <div class="sec"><h5>${T("whereGet")}</h5>${pools}${own&&ST.owned[it.n]?`<div class="hint">${T("gotOn",new Date(ST.owned[it.n]).toLocaleDateString(LOC()))}</div>`:""}</div>
     <div class="sec"><h5>${T("disRet")}</h5>${ret}</div>
     <div class="sec"><h5>${T("note")}</h5><textarea id="note" placeholder="${T("notePh")}">${esc(ST.notes[it.n]||"")}</textarea></div>
