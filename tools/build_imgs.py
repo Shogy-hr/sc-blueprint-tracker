@@ -4,6 +4,7 @@ Sources, best first:
   d  Datapad (jpcoombes-byte/Datapad): renders from the game files, matched by item UUID or exact name
   g  material + category icons from the game UI (tools/game_icons, see make.py)
   w  Star Citizen Wiki page image (downloaded by fetch_wiki_images.py into tools/wiki/)
+  s  in-game shop terminal picture (screenshots/videos by ShoGy, import_shop_images.py into tools/shop/)
   variant: the image of the base model (same category only), shown with a "temporary image" label
 Needs: catalog.json, datapad/ (optional), wiki/ (optional), blueprints.json (optional, for class names)."""
 import base64, glob, json, os, re, sys
@@ -46,6 +47,14 @@ if os.path.exists(wiki_idx):
             if os.path.exists(fs):
                 W[nk(name)] = ('w:' + e['f'], fs, fl if os.path.exists(fl) else fs)
 
+# ---- in-game shop pictures
+S = {}
+_si = os.path.join(HERE, 'shop', 'index.json')
+if os.path.exists(_si):
+    for name, e in json.load(open(_si, encoding='utf-8')).items():
+        fs, fl = os.path.join(HERE, 'shop', 'img', e['f'] + '-s.webp'), os.path.join(HERE, 'shop', 'img', e['f'] + '-l.webp')
+        if os.path.exists(fs): S[nk(name)] = ('s:' + e['f'], fs, fl if os.path.exists(fl) else fs)
+
 # ---- classes (optional)
 CLS = {}
 bpf = os.path.join(HERE, 'blueprints.json')
@@ -64,6 +73,8 @@ def exact(name):
         if cand and nk(cand) in dp_names: return ('d:' + dp_names[nk(cand)], 'd')
     for cand in (e['gn'], name):
         if cand and nk(cand) in W: return (W[nk(cand)][0], 'w')
+    for cand in (name, e['gn']):
+        if cand and nk(cand) in S: return (S[nk(cand)][0], 's')
     return None
 
 
@@ -107,11 +118,13 @@ def data_uri(path):
 
 def small(key):
     if key.startswith('d:'): return DS[key[2:]]
+    if key.startswith('s:'): return data_uri(next(v[1] for v in S.values() if v[0] == key))
     return data_uri(next(v[1] for v in W.values() if v[0] == key))
 
 
 def large(key):
     if key.startswith('d:'): return DL.get(key[2:])
+    if key.startswith('s:'): return data_uri(next(v[2] for v in S.values() if v[0] == key))
     return data_uri(next(v[2] for v in W.values() if v[0] == key))
 
 
@@ -147,6 +160,7 @@ data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig':
 mats = data['mats']
 json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
 st = {'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
+      'shop': sum(1 for v in res.values() if v[2] == 's' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)
 print('images:', st, '| thumbs', len(thumbs), '| chunks', len(chunks))

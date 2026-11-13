@@ -189,10 +189,12 @@ def parse_version(s):
 def wiki_sig(here):
     """Short hash of which picture each name uses in the wiki cache (ignores 'checked' timestamps)."""
     import hashlib, json, os
-    p = os.path.join(here, 'wiki', 'index.json')
-    if not os.path.exists(p): return ''
-    d = json.load(open(p, encoding='utf-8'))
-    return hashlib.sha1(json.dumps({k: v.get('f') for k, v in d.items()}, sort_keys=True).encode()).hexdigest()[:12]
+    p = os.path.join(here, 'wiki', 'index.json'); sp = os.path.join(here, 'shop', 'index.json')
+    d = json.load(open(p, encoding='utf-8')) if os.path.exists(p) else {}
+    s = json.load(open(sp, encoding='utf-8')) if os.path.exists(sp) else {}   # in-game shop pictures count too
+    if not d and not s: return ''
+    sig = {k: v.get('f') for k, v in d.items()}; sig.update({'shop:' + k: (v.get('f'), v.get('sharp')) for k, v in s.items()})
+    return hashlib.sha1(json.dumps(sig, sort_keys=True).encode()).hexdigest()[:12]
 
 
 def add_game_icons(here, data, cat_mats):
