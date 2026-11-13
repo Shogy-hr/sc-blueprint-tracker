@@ -70,7 +70,7 @@ def find_by_search(title, ok=()):
     (e.g. 'Tailwind Flight Helmet Raider Camo'), or an uploaded file named after the item."""
     try:
         for t in search(title, 0):
-            if t != title and close_match(title, t, 0, ok):
+            if t.lower() != title.lower() and close_match(title, t, 0, ok):
                 r = query([t])
                 if t in r and not BAD_IMG.search(r[t][1] or ''): return r[t]
         for f in search(title, 6):
