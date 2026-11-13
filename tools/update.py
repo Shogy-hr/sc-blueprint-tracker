@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run by the GitHub Action (or by hand). Keeps the site in sync with the game:
- 1. newest LIVE game data from StarCitizenWiki/scunpacked-data (extracted from the game files)
+ 1. newest LIVE game data: tools/game/ (extracted from our own game install with extract_game_data.ps1 +
+    import_game_data.py) when its build is newer, otherwise StarCitizenWiki/scunpacked-data (the backup)
  2. item images from jpcoombes-byte/Datapad
  3. optional PTU data you put in tools/ptu/ (blueprints.json + version.txt)
  4. which builds are on LIVE/PTU right now (RSI patch notes) -> data/status.json
@@ -33,6 +34,19 @@ def latest_data(tmp):
     return ver, date, os.path.join(d, 'blueprints.json')
 
 
+def own_game_data(ver, date, src):
+    """Prefer tools/game/ (our own extraction) when its build is newer than scunpacked-data."""
+    gv = os.path.join(HERE, 'game', 'version.txt'); gb = os.path.join(HERE, 'game', 'blueprints.json')
+    if not (os.path.exists(gv) and os.path.exists(gb)): return ver, date, src
+    lines = open(gv, encoding='utf-8').read().split()
+    g = parse_version(lines[0] if lines else ''); s = parse_version(ver)
+    if g and s and g[1] == 'LIVE' and g[2] > s[2]:
+        print('own game data is newer:', lines[0], '>', ver)
+        return lines[0], (lines[1] if len(lines) > 1 else date), gb
+    print('scunpacked-data is up to date (own game data:', lines[0] if lines else '?', ')')
+    return ver, date, src
+
+
 def images(tmp, src):
     """(Re)build item images from Datapad + the Wiki cache."""
     dp = os.path.join(HERE, 'datapad')
@@ -55,6 +69,7 @@ def main():
     changed = False
     with tempfile.TemporaryDirectory() as tmp:
         ver, date, src = latest_data(tmp)
+        ver, date, src = own_game_data(ver, date, src)
         print('data in repo:', ver, date, '| site has:', cur)
         try:
             if ver != cur or FORCE:

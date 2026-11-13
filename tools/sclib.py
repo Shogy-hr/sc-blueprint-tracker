@@ -109,7 +109,11 @@ def convert(bp):
         r = []
         for m in g.get('Modifiers', []):
             vt = m.get('ValueRangeType'); qr = m.get('QualityRange')
-            if vt == 'linear' and isinstance(m.get('ModifierRange'), dict) and isinstance(qr, dict):
+            if vt == 'linear' and m.get('ValueSegments'):
+                # several quality bands (e.g. 0-500: x0.8-1.0, 501-1000: x1.0-1.2): one entry per band
+                for x in m['ValueSegments']:
+                    r.append([mod(m), x['QualityMin'], x['QualityMax'], x['ModifierAtStart'], x['ModifierAtEnd']])
+            elif vt == 'linear' and isinstance(m.get('ModifierRange'), dict) and isinstance(qr, dict):
                 r.append([mod(m), qr['Min'], qr['Max'], m['ModifierRange']['AtMinQuality'], m['ModifierRange']['AtMaxQuality']])
             elif vt == 'linear_integer_additive':
                 r.append([mod(m), 'a', [[x['QualityMin'], x['QualityMax'], x['AdditiveAtStart'], x['AdditiveAtEnd']] for x in m.get('ValueSegments', [])]])

@@ -96,6 +96,19 @@ Kad taj patch izađe na LIVE, PTU oznake nestaju same.
 
 ---
 
+## 3a. Podaci iz vlastite igre (glavni izvor nakon patcha)
+
+Kad izađe patch, podatke možemo izvući iz svoje igre i ne moramo čekati scunpacked-data:
+
+1. Na PC-u: `tools/extract_game_data.ps1` stavi u mapu gdje je `unp4k.exe` i pokreni
+   `powershell -ExecutionPolicy Bypass -File .\extract_game_data.ps1`. Skripta samo čita igru:
+   iz `Data.p4k` izvuče `Game2.dcb` (baza igre) i `english/global.ini` (imena) i spremi
+   `SC_data_….zip` (~35 MB) u istu mapu.
+2. `python3 tools/import_game_data.py SC_data_….zip --version 4.10.3` → `tools/game/blueprints.json`
+   + `tools/game/version.txt` (čitač: `tools/dcb.py`, `tools/dcb_blueprints.py`, isti format kao scunpacked-data).
+3. Commit + push. `update.py` uzima `tools/game/` kad je njegov build **noviji** od scunpacked-data;
+   inače (npr. kad scunpacked objavi noviji patch) koristi scunpacked-data kao rezervu.
+
 ## 4. Ručno ažuriranje i izmjene (za napredne)
 
 Treba Python 3.10+ i git.
