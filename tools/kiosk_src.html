@@ -91,6 +91,7 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .icons svg{width:24px;height:24px}
 .chks{display:flex;flex-wrap:wrap;gap:4px 16px;margin:9px 2px 4px;font-size:15px;color:#c6e2de}
 .chks label{display:flex;align-items:center;gap:6px;cursor:pointer}
+.chks .nwchk{color:#ffe7a8}.chks .nwchk .nw{font:700 11px var(--ff);background:var(--gold);color:#1b1a0b;padding:0 5px;border-radius:2px}
 .chks input{appearance:none;width:17px;height:17px;border:1px solid #6fa59e;background:#0c2423;display:grid;place-items:center;margin:0}
 .chks input:checked{background:#9fd4cc}
 .chks input:checked:after{content:"✓";color:#0b2423;font-weight:700;font-size:13px}
@@ -450,7 +451,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <div class="ttl"><a class="home" id="home" href="../" data-it="home"><img src="../assets/logo-96.webp" srcset="../assets/logo-96.webp 1x, ../assets/logo-192.webp 2x" width="34" height="34" alt=""></a>FABRICATION KIOSK <small id="vname">//FABRICATE</small></div>
       <span class="badge" id="vbadge"></span>
       <span class="sp"></span>
-      <span class="slots">Blueprints <b id="cOwn">0</b> / <span id="cAll">0</span></span>
+      <span class="slots"><span data-l10n="hdrBp">Blueprints</span> <b id="cOwn">0</b> / <span id="cAll">0</span></span>
       <button class="tbtn stat" id="bStat"></button>
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
@@ -668,7 +669,7 @@ wishlist:["Wishlist","Lista želja","Wunschliste","Lista życzeń","Liste de sou
 noBlueprint:["you don’t own this blueprint","nemaš blueprint","Blueprint nicht im Besitz","nie masz tego blueprintu","blueprint non possédé","no tienes este blueprint"],
 sortT:["Sort","Sortiranje","Sortierung","Sortowanie","Tri","Ordenar"],
 material:["Material: {0}","Materijal: {0}","Material: {0}","Materiał: {0}","Matériau : {0}","Material: {0}"],
-unaffNote:["“Hide Unaffordable” uses the stock you enter on the MATERIALS tab.","„Hide Unaffordable” koristi zalihe koje upišeš u kartici MATERIALS.","„Hide Unaffordable“ nutzt den Vorrat, den du im Tab MATERIALS einträgst.","„Hide Unaffordable” korzysta z zapasów wpisanych w zakładce MATERIALS.","« Hide Unaffordable » utilise le stock saisi dans l’onglet MATERIALS.","«Hide Unaffordable» usa el inventario que introduces en la pestaña MATERIALS."],
+unaffNote:["“Hide Unaffordable” uses the stock you enter on the MATERIALS tab.","„Sakrij neizradive” koristi zalihe koje upišeš u kartici MATERIJALI.","„Nicht herstellbare ausblenden“ nutzt den Vorrat, den du im Tab MATERIALIEN einträgst.","„Ukryj niedostępne” korzysta z zapasów wpisanych w zakładce MATERIAŁY.","« Masquer les non réalisables » utilise le stock saisi dans l’onglet MATÉRIAUX.","«Ocultar no fabricables» usa el inventario que introduces en la pestaña MATERIALES."],
 noMatch:["No blueprints match these filters.","Nema blueprinta za ove filtere.","Keine Blueprints für diese Filter.","Brak blueprintów dla tych filtrów.","Aucun blueprint pour ces filtres.","Ningún blueprint coincide con estos filtros."],
 countLine:["{0} blueprints · you own {1}","{0} blueprinta · imaš {1}","{0} Blueprints · im Besitz {1}","{0} blueprintów · masz {1}","{0} blueprints · possédés {1}","{0} blueprints · tienes {1}"],
 credit:["Images: Datapad (jpcoombes-byte) and the Star Citizen Wiki, from the game files","Slike: Datapad (jpcoombes-byte) i Star Citizen Wiki, iz datoteka igre","Bilder: Datapad (jpcoombes-byte) und Star Citizen Wiki, aus den Spieldateien","Obrazy: Datapad (jpcoombes-byte) i Star Citizen Wiki, z plików gry","Images : Datapad (jpcoombes-byte) et Star Citizen Wiki, issues des fichiers du jeu","Imágenes: Datapad (jpcoombes-byte) y Star Citizen Wiki, de los archivos del juego"],
@@ -678,7 +679,7 @@ tmpLong:["TEMPORARY IMAGE FOR VARIANT","PRIVREMENA SLIKA ZA VARIJANTU","VORLÄUF
 mOre:["Ores & raw materials (SCU)","Rude i sirovine (SCU)","Erze & Rohstoffe (SCU)","Rudy i surowce (SCU)","Minerais et matières premières (SCU)","Minerales y materias primas (SCU)"],
 mGem:["Gems & items (pieces)","Dragulji i predmeti (komadi)","Edelsteine & Gegenstände (Stück)","Klejnoty i przedmioty (sztuki)","Gemmes et objets (pièces)","Gemas y objetos (unidades)"],
 mStock:["Only what I have in stock","Samo ono što imam na zalihi","Nur was ich vorrätig habe","Tylko to, co mam w zapasie","Seulement ce que j’ai en stock","Solo lo que tengo en inventario"],
-matNote:["Enter how much of each material you have and its quality (0–1000). The tracker then knows what you can craft (“Hide Unaffordable”). Click a material name to see the blueprints that use it.","Upiši koliko čega imaš i koje kvalitete (0–1000). Tracker onda zna što možeš izraditi („Hide Unaffordable”). Klik na ime materijala prikazuje blueprinte koji ga koriste.","Trage ein, wie viel du von jedem Material hast und in welcher Qualität (0–1000). Dann weiß der Tracker, was du herstellen kannst („Hide Unaffordable“). Klick auf einen Materialnamen zeigt die Blueprints, die es nutzen.","Wpisz, ile masz każdego materiału i jakiej jakości (0–1000). Tracker będzie wiedział, co możesz wytworzyć („Hide Unaffordable”). Kliknij nazwę materiału, aby zobaczyć blueprinty, które go używają.","Indique la quantité et la qualité (0–1000) de chaque matériau. Le tracker saura alors ce que tu peux fabriquer (« Hide Unaffordable »). Clique sur un matériau pour voir les blueprints qui l’utilisent.","Introduce cuánto tienes de cada material y su calidad (0–1000). Así el tracker sabe qué puedes fabricar («Hide Unaffordable»). Haz clic en un material para ver los blueprints que lo usan."],
+matNote:["Enter how much of each material you have and its quality (0–1000). The tracker then knows what you can craft (“Hide Unaffordable”). Click a material name to see the blueprints that use it.","Upiši koliko čega imaš i koje kvalitete (0–1000). Tracker onda zna što možeš izraditi („Sakrij neizradive”). Klik na ime materijala prikazuje blueprinte koji ga koriste.","Trage ein, wie viel du von jedem Material hast und in welcher Qualität (0–1000). Dann weiß der Tracker, was du herstellen kannst („Nicht herstellbare ausblenden“). Klick auf einen Materialnamen zeigt die Blueprints, die es nutzen.","Wpisz, ile masz każdego materiału i jakiej jakości (0–1000). Tracker będzie wiedział, co możesz wytworzyć („Ukryj niedostępne”). Kliknij nazwę materiału, aby zobaczyć blueprinty, które go używają.","Indique la quantité et la qualité (0–1000) de chaque matériau. Le tracker saura alors ce que tu peux fabriquer (« Masquer les non réalisables »). Clique sur un matériau pour voir les blueprints qui l’utilisent.","Introduce cuánto tienes de cada material y su calidad (0–1000). Así el tracker sabe qué puedes fabricar («Ocultar no fabricables»). Haz clic en un material para ver los blueprints que lo usan."],
 hMat:["MATERIAL","MATERIJAL","MATERIAL","MATERIAŁ","MATÉRIAU","MATERIAL"],
 hQty:["QUANTITY","KOLIČINA","MENGE","ILOŚĆ","QUANTITÉ","CANTIDAD"],
 hQual:["QUALITY","KVALITETA","QUALITÄT","JAKOŚĆ","QUALITÉ","CALIDAD"],
@@ -704,7 +705,7 @@ maxTitle:["As many as your stock allows","Najviše koliko dopuštaju zalihe","So
 own:["✓ BLUEPRINT OWNED","✓ IMAŠ BLUEPRINT","✓ BLUEPRINT IM BESITZ","✓ MASZ BLUEPRINT","✓ BLUEPRINT POSSÉDÉ","✓ TIENES EL BLUEPRINT"],
 notOwn:["✕ BLUEPRINT NOT OWNED","✕ NEMAŠ BLUEPRINT","✕ BLUEPRINT FEHLT","✕ NIE MASZ BLUEPRINTU","✕ BLUEPRINT NON POSSÉDÉ","✕ NO TIENES EL BLUEPRINT"],
 noMods:["This recipe has no quality modifiers.","Ovaj recept nema modifikatore kvalitete.","Dieses Rezept hat keine Qualitätsmodifikatoren.","Ta receptura nie ma modyfikatorów jakości.","Cette recette n’a pas de modificateurs de qualité.","Esta receta no tiene modificadores de calidad."],
-statsHint:["Base = no quality effect (×1.00). Enhanced is an estimate from the material quality in the slots (when one stat is affected by several slots, the average is used). Base weapon values (e.g. RPM) are not in the recipe data.","Base = bez utjecaja kvalitete (×1.00). Enhanced je procjena iz kvalitete materijala u slotovima (kad isti stat utječe više slotova, uzima se prosjek). Osnovne vrijednosti oružja (npr. RPM) nisu u podacima recepata.","Base = ohne Qualitätseinfluss (×1,00). Enhanced ist eine Schätzung aus der Materialqualität (wirken mehrere Slots auf denselben Wert, wird gemittelt). Grundwerte von Waffen (z. B. RPM) fehlen in den Rezeptdaten.","Base = bez wpływu jakości (×1,00). Enhanced to szacunek na podstawie jakości materiałów (gdy kilka slotów wpływa na tę samą statystykę, liczona jest średnia). Podstawowe wartości broni (np. RPM) nie występują w danych receptur.","Base = sans effet de qualité (×1,00). Enhanced est une estimation selon la qualité des matériaux (si plusieurs emplacements affectent la même stat, on fait la moyenne). Les valeurs de base des armes (ex. RPM) ne figurent pas dans les recettes.","Base = sin efecto de calidad (×1,00). Enhanced es una estimación según la calidad de los materiales (si varias ranuras afectan a la misma estadística, se promedia). Los valores base de las armas (p. ej. RPM) no están en los datos de recetas."],
+statsHint:["Base = no quality effect (×1.00). Enhanced is an estimate from the material quality in the slots (when one stat is affected by several slots, the average is used). Base weapon values (e.g. RPM) are not in the recipe data.","Osnova = bez utjecaja kvalitete (×1.00). Poboljšano je procjena iz kvalitete materijala u slotovima (kad isti stat utječe više slotova, uzima se prosjek). Osnovne vrijednosti oružja (npr. RPM) nisu u podacima recepata.","Basis = ohne Qualitätseinfluss (×1,00). Verbessert ist eine Schätzung aus der Materialqualität (wirken mehrere Slots auf denselben Wert, wird gemittelt). Grundwerte von Waffen (z. B. RPM) fehlen in den Rezeptdaten.","Bazowa = bez wpływu jakości (×1,00). Ulepszona to szacunek na podstawie jakości materiałów (gdy kilka slotów wpływa na tę samą statystykę, liczona jest średnia). Podstawowe wartości broni (np. RPM) nie występują w danych receptur.","Base = sans effet de qualité (×1,00). Amélioré est une estimation selon la qualité des matériaux (si plusieurs emplacements affectent la même stat, on fait la moyenne). Les valeurs de base des armes (ex. RPM) ne figurent pas dans les recettes.","Base = sin efecto de calidad (×1,00). Mejorado es una estimación según la calidad de los materiales (si varias ranuras afectan a la misma estadística, se promedia). Los valores base de las armas (p. ej. RPM) no están en los datos de recetas."],
 whereGet:["Where to get it","Gdje se dobiva","Wo erhältlich","Gdzie zdobyć","Où l’obtenir","Dónde conseguirlo"],
 gotOn:["Obtained: {0}","Dobiven: {0}","Erhalten: {0}","Zdobyty: {0}","Obtenu : {0}","Obtenido: {0}"],
 disRet:["Dismantle returns","Dismantle vraća","Dismantle ergibt","Dismantle zwraca","Le démontage rend","Desmontar devuelve"],
@@ -731,6 +732,55 @@ instDis:["dismantle queue done in 3 s","dismantle red gotov za 3 s","Zerlegen fe
 disFull:["Dismantle queue is full.","Red za dismantle je pun.","Zerlege-Warteschlange ist voll.","Kolejka demontażu jest pełna.","La file de démontage est pleine.","La cola de desmontaje está llena."],
 addedDis:["Added to the simulated dismantle queue","Dodano u simulirani red za dismantle","Zur simulierten Zerlege-Warteschlange hinzugefügt","Dodano do symulowanej kolejki demontażu","Ajouté à la file de démontage simulée","Añadido a la cola de desmontaje simulada"],
 items:["{0} items","{0} predmeta","{0} Gegenstände","{0} przedmiotów","{0} objets","{0} objetos"],
+tabBp:["BLUEPRINTS","BLUEPRINTI","BLUEPRINTS","BLUEPRINTY","BLUEPRINTS","BLUEPRINTS"],
+tabMat:["MATERIALS","MATERIJALI","MATERIALIEN","MATERIAŁY","MATÉRIAUX","MATERIALES"],
+hdrBp:["Blueprints","Blueprinti","Blueprints","Blueprinty","Blueprints","Blueprints"],
+srch:["Search","Pretraži","Suchen","Szukaj","Rechercher","Buscar"],
+clrF:["CLEAR FILTERS","OČISTI FILTERE","FILTER LÖSCHEN","WYCZYŚĆ FILTRY","EFFACER LES FILTRES","BORRAR FILTROS"],
+hUn:["Hide Unaffordable","Sakrij neizradive","Nicht herstellbare ausblenden","Ukryj niedostępne","Masquer les non réalisables","Ocultar no fabricables"],
+hNot:["Hide Not Owned","Sakrij koje nemam","Nicht besessene ausblenden","Ukryj nieposiadane","Masquer les non possédés","Ocultar no obtenidos"],
+hOwn:["Hide Owned","Sakrij koje imam","Besessene ausblenden","Ukryj posiadane","Masquer les possédés","Ocultar obtenidos"],
+onlyNew:["Only new in {0}","Samo novi u {0}","Nur neue in {0}","Tylko nowe w {0}","Seulement les nouveautés {0}","Solo nuevos en {0}"],
+onlyNewT:["Blueprints added in patch {0} ({1})","Blueprinti dodani u patchu {0} ({1})","In Patch {0} hinzugefügte Blueprints ({1})","Blueprinty dodane w patchu {0} ({1})","Blueprints ajoutés au patch {0} ({1})","Blueprints añadidos en el parche {0} ({1})"],
+nwB:["NEW","NOVO","NEU","NOWE","NOUVEAU","NUEVO"],
+upg:["Upgrade:","Nadogradnja:","Upgrade:","Ulepszenie:","Amélioration :","Mejora:"],
+autoF:["Autofill:","Auto-popuna:","Autom. füllen:","Autouzupełnij:","Remplissage auto :","Autorrellenar:"],
+bestM:["Best material","Najbolji materijal","Bestes Material","Najlepszy materiał","Meilleur matériau","Mejor material"],
+worstM:["Worst material","Najlošiji materijal","Schlechtestes Material","Najgorszy materiał","Pire matériau","Peor material"],
+qtyL:["Quantity:","Količina:","Menge:","Ilość:","Quantité :","Cantidad:"],
+clrAll:["Clear All","Očisti sve","Alles leeren","Wyczyść wszystko","Tout effacer","Borrar todo"],
+fabTime:["Fabrication Time:","Vrijeme izrade:","Herstellungszeit:","Czas wytwarzania:","Temps de fabrication :","Tiempo de fabricación:"],
+tierL:["Tier","Tier","Stufe","Poziom","Niveau","Nivel"],
+gradeL:["Grade","Klasa","Klasse","Klasa","Classe","Clase"],
+statsH:["STATISTICS","STATISTIKA","STATISTIKEN","STATYSTYKI","STATISTIQUES","ESTADÍSTICAS"],
+attrH:["Attribute","Svojstvo","Attribut","Atrybut","Attribut","Atributo"],
+baseH:["Base","Osnova","Basis","Bazowa","Base","Base"],
+enhH:["Enhanced","Poboljšano","Verbessert","Ulepszona","Amélioré","Mejorado"],
+deltaH:["Delta","Delta","Delta","Delta","Delta","Delta"],
+delivTo:["Deliver all to:","Dostavi sve u:","Alles liefern an:","Dostarcz wszystko do:","Tout livrer à :","Entregar todo en:"],
+locInv:["Location Inventory","Inventar lokacije","Standortinventar","Ekwipunek lokacji","Inventaire du lieu","Inventario de la ubicación"],
+shipInv:["Ship Inventory","Inventar broda","Schiffsinventar","Ekwipunek statku","Inventaire du vaisseau","Inventario de la nave"],
+fabBtn:["FABRICATE","IZRADI","HERSTELLEN","WYTWÓRZ","FABRIQUER","FABRICAR"],
+disBtn:["DISMANTLE","RASTAVI","ZERLEGEN","ROZBIERZ","DÉMANTELER","DESMANTELAR"],
+disP:["Dismantle","Rastavljanje","Zerlegen","Rozbiórka","Démantèlement","Desmantelamiento"],
+instF:["⚡ INSTANT FINISH","⚡ ODMAH ZAVRŠI","⚡ SOFORT FERTIG","⚡ ZAKOŃCZ OD RAZU","⚡ TERMINER MAINTENANT","⚡ TERMINAR YA"],
+selL:["Selected:","Odabrano:","Ausgewählt:","Wybrane:","Sélection :","Seleccionado:"],
+woT:["WORK ORDERS","RADNI NALOZI","ARBEITSAUFTRÄGE","ZLECENIA","ORDRES DE TRAVAIL","ÓRDENES DE TRABAJO"],
+dispT:["DISPATCHED ITEMS","ISPORUČENO","AUSGELIEFERT","WYSŁANE PRZEDMIOTY","OBJETS EXPÉDIÉS","OBJETOS ENVIADOS"],
+furT:["FABRICATE / UPGRADE / REPAIR","IZRADA / NADOGRADNJA / POPRAVAK","HERSTELLEN / VERBESSERN / REPARIEREN","WYTWARZANIE / ULEPSZANIE / NAPRAWA","FABRIQUER / AMÉLIORER / RÉPARER","FABRICAR / MEJORAR / REPARAR"],
+queueT:["QUEUE","RED ČEKANJA","WARTESCHLANGE","KOLEJKA","FILE D’ATTENTE","COLA"],
+inProgT:["IN PROGRESS","U IZRADI","IN ARBEIT","W TOKU","EN COURS","EN CURSO"],
+noQueued:["No Queued Items","Nema stavki u redu","Keine Aufträge in der Warteschlange","Brak zleceń w kolejce","Aucun objet en file","No hay objetos en cola"],
+noActive:["No Active Projects","Nema aktivnih projekata","Keine aktiven Projekte","Brak aktywnych projektów","Aucun projet actif","No hay proyectos activos"],
+thName:["Item Name","Naziv predmeta","Gegenstand","Nazwa przedmiotu","Nom de l’objet","Nombre del objeto"],
+thItem:["Item","Predmet","Gegenstand","Przedmiot","Objet","Objeto"],
+thInfo:["Info","Info","Info","Info","Info","Info"],
+thStatus:["Status","Status","Status","Status","Statut","Estado"],
+thTime:["Time","Vrijeme","Zeit","Czas","Temps","Tiempo"],
+thLoc:["Delivery Location","Mjesto dostave","Lieferort","Miejsce dostawy","Lieu de livraison","Lugar de entrega"],
+poolSpecial:["Special reward – source not known yet","Posebna nagrada – izvor još nepoznat","Sonderbelohnung – Quelle noch unbekannt","Nagroda specjalna – źródło jeszcze nieznane","Récompense spéciale – source encore inconnue","Recompensa especial – origen aún desconocido"],
+chooseOne:["Choose one material","Odaberi jedan materijal","Wähle ein Material","Wybierz jeden materiał","Choisis un matériau","Elige un material"],
+chooseN:["Choose {0} materials","Odaberi {0} materijala","Wähle {0} Materialien","Wybierz {0} materiały","Choisis {0} matériaux","Elige {0} materiales"],
 inProg:["In progress","U izradi","In Arbeit","W toku","En cours","En curso"],
 waiting:["Waiting","Čeka","Wartet","Czeka","En attente","En espera"],
 cancel:["Cancel","Otkaži","Abbrechen","Anuluj","Annuler","Cancelar"],
@@ -838,6 +888,31 @@ const CATS=[
  {k:"V",n:"SHIP WEAPONS",i:"cannon",subs:["SIZE 1","SIZE 2","SIZE 3","SIZE 4","SIZE 5","SIZE 6","SIZE 7","SIZE ?"]},
  {k:"X",n:"CARGO & EQUIPMENT",i:"box",subs:["ORE PODS","FUEL NOZZLES"]},
  {k:"O",n:"MISSION ITEMS",i:"misc",subs:["MISSION ITEMS"]}];
+/* category / sub-category names: [hr,de,pl,fr,es]; English is the key */
+const CTR={"ARMOR":["OKLOP","RÜSTUNG","PANCERZ","ARMURE","ARMADURA"],"CLOTHING":["ODJEĆA","KLEIDUNG","ODZIEŻ","VÊTEMENTS","ROPA"],
+"WEAPONS":["ORUŽJE","WAFFEN","BROŃ","ARMES","ARMAS"],"MINING & SALVAGE":["RUDARENJE I SPAŠAVANJE","BERGBAU & BERGUNG","GÓRNICTWO I ODZYSK","MINAGE & RÉCUPÉRATION","MINERÍA Y RECUPERACIÓN"],
+"AMMO":["STRELJIVO","MUNITION","AMUNICJA","MUNITIONS","MUNICIÓN"],"SHIP COMPONENTS":["KOMPONENTE BRODA","SCHIFFSKOMPONENTEN","KOMPONENTY STATKU","COMPOSANTS DE VAISSEAU","COMPONENTES DE NAVE"],
+"SHIP WEAPONS":["BRODSKO ORUŽJE","SCHIFFSWAFFEN","BROŃ STATKU","ARMES DE VAISSEAU","ARMAS DE NAVE"],"CARGO & EQUIPMENT":["TERET I OPREMA","FRACHT & AUSRÜSTUNG","ŁADUNEK I SPRZĘT","CARGAISON & ÉQUIPEMENT","CARGA Y EQUIPO"],
+"MISSION ITEMS":["PREDMETI ZA MISIJE","MISSIONSGEGENSTÄNDE","PRZEDMIOTY MISYJNE","OBJETS DE MISSION","OBJETOS DE MISIÓN"],
+"CORE":["TORZO","TORSO","KORPUS","TORSE","TORSO"],"HELMETS":["KACIGE","HELME","HEŁMY","CASQUES","CASCOS"],"ARMS":["RUKE","ARME","RAMIONA","BRAS","BRAZOS"],
+"LEGS":["NOGE","BEINE","NOGI","JAMBES","PIERNAS"],"BACKPACKS":["RUKSACI","RUCKSÄCKE","PLECAKI","SACS À DOS","MOCHILAS"],
+"UNDERSUITS":["PODODIJELA","UNTERANZÜGE","KOMBINEZONY","SOUS-COMBINAISONS","TRAJES INTERIORES"],"FLIGHT SUITS":["LETAČKA ODIJELA","FLUGANZÜGE","KOMBINEZONY LOTNICZE","COMBINAISONS DE VOL","TRAJES DE VUELO"],
+"SIDEARMS":["PIŠTOLJI","PISTOLEN","PISTOLETY","PISTOLETS","PISTOLAS"],"SMGS":["STROJNICE","MASCHINENPISTOLEN","PISTOLETY MASZYNOWE","PISTOLETS-MITRAILLEURS","SUBFUSILES"],
+"RIFLES":["PUŠKE","GEWEHRE","KARABINY","FUSILS","FUSILES"],"SHOTGUNS":["SAČMARICE","SCHROTFLINTEN","STRZELBY","FUSILS À POMPE","ESCOPETAS"],
+"SNIPER RIFLES":["SNAJPERI","SCHARFSCHÜTZENGEWEHRE","KARABINY SNAJPERSKIE","FUSILS DE PRÉCISION","FUSILES DE FRANCOTIRADOR"],"LMGS":["LAKE STROJNICE","LEICHTE MGS","LEKKIE KARABINY MASZYNOWE","MITRAILLEUSES LÉGÈRES","AMETRALLADORAS LIGERAS"],
+"SPECIAL":["POSEBNO","SPEZIAL","SPECJALNE","SPÉCIAL","ESPECIAL"],"OTHER":["OSTALO","SONSTIGE","INNE","AUTRES","OTROS"],
+"MINING LASERS":["RUDARSKI LASERI","BERGBAULASER","LASERY GÓRNICZE","LASERS DE MINAGE","LÁSERES DE MINERÍA"],"MINING MODULES":["RUDARSKI MODULI","BERGBAUMODULE","MODUŁY GÓRNICZE","MODULES DE MINAGE","MÓDULOS DE MINERÍA"],
+"SALVAGE HEADS":["GLAVE ZA SPAŠAVANJE","BERGUNGSKÖPFE","GŁOWICE ODZYSKU","TÊTES DE RÉCUPÉRATION","CABEZALES DE RECUPERACIÓN"],"SCRAPER MODULES":["MODULI STRUGAČA","SCHABERMODULE","MODUŁY SKROBAKÓW","MODULES DE RACLAGE","MÓDULOS RASCADORES"],
+"TRACTOR BEAMS":["TRAKTORSKE ZRAKE","TRAKTORSTRAHLEN","PROMIENIE ŚCIĄGAJĄCE","RAYONS TRACTEURS","RAYOS TRACTORES"],"MAGAZINES":["SPREMNICI","MAGAZINE","MAGAZYNKI","CHARGEURS","CARGADORES"],
+"POWER PLANTS":["ELEKTRANE","KRAFTWERKE","ELEKTROWNIE","GÉNÉRATEURS","PLANTAS DE ENERGÍA"],"COOLERS":["HLADNJACI","KÜHLER","CHŁODNICE","REFROIDISSEURS","REFRIGERADORES"],
+"SHIELDS":["ŠTITOVI","SCHILDE","OSŁONY","BOUCLIERS","ESCUDOS"],"QUANTUM DRIVES":["KVANTNI POGONI","QUANTENANTRIEBE","NAPĘDY KWANTOWE","PROPULSEURS QUANTIQUES","MOTORES CUÁNTICOS"],
+"RADARS":["RADARI","RADARE","RADARY","RADARS","RADARES"],"ORE PODS":["SPREMNICI RUDE","ERZBEHÄLTER","POJEMNIKI NA RUDĘ","CONTENEURS DE MINERAI","CONTENEDORES DE MINERAL"],
+"FUEL NOZZLES":["MLAZNICE ZA GORIVO","TANKDÜSEN","DYSZE PALIWOWE","BUSES DE CARBURANT","BOQUILLAS DE COMBUSTIBLE"]};
+const SIZEW=["SIZE","VELIČINA","GRÖSSE","ROZMIAR","TAILLE","TAMAÑO"];
+const CN=s=>{const i=LI();if(!i)return s;const m=/^SIZE (.+)$/.exec(s);if(m)return SIZEW[i]+" "+m[1];return (CTR[s]&&CTR[s][i-1])||s};
+const LOCN=v=>v==="Location Inventory"?T("locInv"):v==="Ship Inventory"?T("shipInv"):v;
+const PNEW=new Set(CAT.nw||[]);
+const poolN=p=>POOLS[p]==="@special"?T("poolSpecial"):POOLS[p];
 const CBY=Object.fromEntries(CATS.map(c=>[c.k,c]));
 const SUBI={CORE:"armor",HELMETS:"helmet",ARMS:"arms",LEGS:"legs",BACKPACKS:"pack",UNDERSUITS:"shirt","FLIGHT SUITS":"shirt",CLOTHING:"shirt",SIDEARMS:"gun",SMGS:"rifle",RIFLES:"rifle",SHOTGUNS:"rifle","SNIPER RIFLES":"rifle",LMGS:"rifle",SPECIAL:"rifle",OTHER:"rifle","MINING LASERS":"laser","MINING MODULES":"tools","SALVAGE HEADS":"tools","SCRAPER MODULES":"tools","TRACTOR BEAMS":"laser",MAGAZINES:"ammo","POWER PLANTS":"bolt",COOLERS:"snow",SHIELDS:"shield","QUANTUM DRIVES":"qd",RADARS:"radar","ORE PODS":"box","FUEL NOZZLES":"drop","MISSION ITEMS":"misc"};
 const subIc=it=>it.c==="V"?"cannon":(SUBI[it.s]||"misc");
@@ -1042,7 +1117,7 @@ async function boot(){
 
 /* ---------- ui state ---------- */
 const U={view:"fab",lt:"bp",q:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,desc:false,page:0,sel:null,qty:1,fill:{},mat:null,loc:"Location Inventory",
-  dq:"",dcats:new Set(),dAll:false,dsel:[],dpage:0,qt:"wo",mq:"",mkind:"",newSet:new Set(),newOnly:false};
+  dq:"",dcats:new Set(),dAll:false,dsel:[],dpage:0,qt:"wo",mq:"",mkind:"",newSet:new Set(),newOnly:false,patchNew:false};
 let PER=48;const ROWS=10;
 const isMob=()=>window.matchMedia&&matchMedia("(max-width:760px)").matches;
 const isSheet=()=>window.matchMedia&&matchMedia("(max-width:1100px)").matches;
@@ -1291,7 +1366,7 @@ function render(){
   if(U.view==="fab")renderFab();else if(U.view==="dis")renderDis();else renderQueue();
 }
 function iconRow(set,id){
-  return `<div class="icons" id="${id}">`+CATS.map(c=>`<button data-k="${c.k}" class="${set.has(c.k)?"on":""}" title="${c.n}" aria-label="${c.n}" aria-pressed="${set.has(c.k)}">${ic(c.i)}</button>`).join("")+
+  return `<div class="icons" id="${id}">`+CATS.map(c=>`<button data-k="${c.k}" class="${set.has(c.k)?"on":""}" title="${CN(c.n)}" aria-label="${CN(c.n)}" aria-pressed="${set.has(c.k)}">${ic(c.i)}</button>`).join("")+
     (id==="fIcons"?`<button data-k="*" class="${U.wantOnly?"on":""}" title="${T("wishlist")}">${ic("star")}</button>`:"")+`</div>`;
 }
 function filtered(){
@@ -1302,6 +1377,7 @@ function filtered(){
     if(U.hideNot&&!own)return false;if(U.hideOwn&&own)return false;
     if(U.wantOnly&&!ST.want[it.n])return false;
     if(U.newOnly&&!U.newSet.has(it.n))return false;
+    if(U.patchNew&&!PNEW.has(it.n))return false;
     if(U.ptuOnly&&!(it.ptu||PTUI.chg.has(it.n)||PTUI.rem.has(it.n)))return false;
     if(U.mat&&!it.mats.has(U.mat))return false;
     if(U.hideUn&&!affordable(it))return false;
@@ -1315,10 +1391,10 @@ function tilesHTML(L,selIdx){
   let h="",lc="",ls="";
   const counts={};L.forEach(it=>{const k=it.c+"|"+it.s;counts[k]=(counts[k]||0)+1});
   L.forEach(it=>{
-    if(it.c!==lc){if(lc)h+="</div>";h+=`<div class="gh">${ic(CBY[it.c].i)}${CBY[it.c].n}</div>`;lc=it.c;ls="";h+="<div>"}
-    if(it.s!==ls){if(ls)h+="</div>";h+=`<div class="sh">${esc(it.s)}</div><div class="tiles">`;ls=it.s}
+    if(it.c!==lc){if(lc)h+="</div>";h+=`<div class="gh">${ic(CBY[it.c].i)}${CN(CBY[it.c].n)}</div>`;lc=it.c;ls="";h+="<div>"}
+    if(it.s!==ls){if(ls)h+="</div>";h+=`<div class="sh">${esc(CN(it.s))}</div><div class="tiles">`;ls=it.s}
     const own=isOwned(it);
-    h+=`<button class="tile ${own?"own":"miss"} ${selIdx===it.i?"sel":""} ${it.ptu?"ptunew":""}" data-i="${it.i}" title="${esc(it.n)}${own?"":" – "+T("noBlueprint")}"><span class="t">T1</span>${U.newSet.has(it.n)?'<span class="nw">NEW</span>':""}${ptuTag(it)}${ST.want[it.n]&&!own?'<span class="st">★</span>':own?"":'<span class="lk">🔒</span>'}${tileImg(it)}<span class="nm">${esc(it.n)}</span></button>`;
+    h+=`<button class="tile ${own?"own":"miss"} ${selIdx===it.i?"sel":""} ${it.ptu?"ptunew":""}" data-i="${it.i}" title="${esc(it.n)}${own?"":" – "+T("noBlueprint")}"><span class="t">T1</span>${U.newSet.has(it.n)||PNEW.has(it.n)?`<span class="nw">${T("nwB")}</span>`:""}${ptuTag(it)}${ST.want[it.n]&&!own?'<span class="st">★</span>':own?"":'<span class="lk">🔒</span>'}${tileImg(it)}<span class="nm">${esc(it.n)}</span></button>`;
   });
   if(ls)h+="</div>";if(lc)h+="</div>";
   return h;
@@ -1332,13 +1408,13 @@ function bindPager(id,get,set,pages){$$(`#${id} button`).forEach(b=>b.onclick=()
 function renderFab(){
   const v=$("#view");v.className="view fab";
   const left=`<div class="col" style="padding:8px">
-    <div class="tabs2"><button data-t="bp" class="${U.lt==="bp"?"on":""}">BLUEPRINTS</button><button data-t="mat" class="${U.lt==="mat"?"on":""}">MATERIALS</button></div>
-    <div class="srch"><div class="in">${ic("search")}<input id="q" placeholder="Search" value="${esc(U.lt==="bp"?U.q:U.mq)}"></div><button id="clr" title="CLEAR FILTERS"><span class="lg">CLEAR FILTERS</span><span class="sm">✕</span></button><button id="srt" title="${T("sortT")}">${U.desc?"Z–A":"A–Z"}</button></div>
+    <div class="tabs2"><button data-t="bp" class="${U.lt==="bp"?"on":""}">${T("tabBp")}</button><button data-t="mat" class="${U.lt==="mat"?"on":""}">${T("tabMat")}</button></div>
+    <div class="srch"><div class="in">${ic("search")}<input id="q" placeholder="${T("srch")}" value="${esc(U.lt==="bp"?U.q:U.mq)}"></div><button id="clr" title="${T("clrF")}"><span class="lg">${T("clrF")}</span><span class="sm">✕</span></button><button id="srt" title="${T("sortT")}">${U.desc?"Z–A":"A–Z"}</button></div>
     <div id="lbody" style="display:flex;flex-direction:column;flex:1;min-height:0"></div></div>`;
   v.innerHTML=left+`<div class="col" id="right"></div>`;
   $$(".tabs2 button").forEach(b=>b.onclick=()=>{U.lt=b.dataset.t;render()});
   $("#q").oninput=e=>{if(U.lt==="bp"){U.q=e.target.value;U.page=0;renderFabList()}else{U.mq=e.target.value;renderMats()}};
-  $("#clr").onclick=()=>{Object.assign(U,{q:"",mq:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,mat:null,mkind:"",page:0});render()};
+  $("#clr").onclick=()=>{Object.assign(U,{q:"",mq:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,patchNew:false,mat:null,mkind:"",page:0});render()};
   $("#srt").onclick=()=>{U.desc=!U.desc;render()};
   if(U.lt==="bp")renderFabList();else renderMats();
   renderDetail();
@@ -1350,9 +1426,10 @@ function renderFabList(){
   const slice=L.slice(U.page*PER,U.page*PER+PER);
   const ptuBar=PTUON&&PTU?`<div class="ptubar">${T("ptuBar",esc((bnum(PTU.version)||{}).ver||PTU.version),PTUI.added.length,PTUI.chg.size,PTUI.rem.size)} <button class="btn ${U.ptuOnly?"on":""}" id="ptuO">${U.ptuOnly?T("hideNew"):T("ptuOnly")}</button></div>`:"";
   b.innerHTML=ptuBar+(U.newSet.size?`<div class="newbar">✨ ${T("newBp",U.newSet.size,esc(CAT.v))} <button class="btn" id="nwT">${U.newOnly?T("hideNew"):T("showNew")}</button></div>`:"")+iconRow(U.cats,"fIcons")+`<div class="chks">
-    <label><input type="checkbox" id="hUn" ${U.hideUn?"checked":""}>Hide Unaffordable</label>
-    <label><input type="checkbox" id="hNot" ${U.hideNot?"checked":""}>Hide Not Owned</label>
-    <label><input type="checkbox" id="hOwn" ${U.hideOwn?"checked":""}>Hide Owned</label></div>`+
+    <label><input type="checkbox" id="hUn" ${U.hideUn?"checked":""}>${T("hUn")}</label>
+    <label><input type="checkbox" id="hNot" ${U.hideNot?"checked":""}>${T("hNot")}</label>
+    <label><input type="checkbox" id="hOwn" ${U.hideOwn?"checked":""}>${T("hOwn")}</label>${PNEW.size?`
+    <label class="nwchk" title="${T("onlyNewT",esc(CAT.nwv),PNEW.size)}"><input type="checkbox" id="hNew" ${U.patchNew?"checked":""}>${T("onlyNew",esc(CAT.nwv))} <span class="nw">${PNEW.size}</span></label>`:""}</div>`+
     (U.mat?`<div><span class="chip">${T("material",esc(U.mat))} <button id="xMat">✕</button></span></div>`:"")+
     (U.hideUn&&!Object.keys(ST.stock).length?`<div class="matnote">${T("unaffNote")}</div>`:"")+
     `<div class="list" id="tl">${slice.length?tilesHTML(slice,U.sel):`<div class="matnote" style="padding:30px;text-align:center">${T("noMatch")}</div>`}</div>`+
@@ -1361,6 +1438,7 @@ function renderFabList(){
   if($("#ptuO"))$("#ptuO").onclick=()=>{U.ptuOnly=!U.ptuOnly;U.page=0;renderFabList()};
   if($("#nwT"))$("#nwT").onclick=()=>{U.newOnly=!U.newOnly;U.page=0;renderFabList()};
   $("#hUn").onchange=e=>{U.hideUn=e.target.checked;U.page=0;renderFabList()};
+  if($("#hNew"))$("#hNew").onchange=e=>{U.patchNew=e.target.checked;U.page=0;renderFabList()};
   $("#hNot").onchange=e=>{U.hideNot=e.target.checked;if(U.hideNot)U.hideOwn=false;U.page=0;renderFabList()};
   $("#hOwn").onchange=e=>{U.hideOwn=e.target.checked;if(U.hideOwn)U.hideNot=false;U.page=0;renderFabList()};
   if($("#xMat"))$("#xMat").onclick=()=>{U.mat=null;U.page=0;renderFabList()};
@@ -1388,7 +1466,7 @@ function ptuBox(it){
   const c=PTUI.chg.get(it.n);if(!c)return "";
   const li=c.k.map(k=>k==="time"?T("kTime",fmtT(c.old.t),fmtT(c.item.t)):k==="recipe"?T("kRecipe"):k==="sources"?T("kSources"):k==="dismantle"?T("kDismantle"):k==="name"?T("kName",esc(c.item.n)):T("kCat"));
   const rec=c.k.includes("recipe")?`<p class="hint" style="color:#d6c2ff">${T("ptuRecipe",c.item.r.map(g=>esc(g[0])+": "+g[2].map(o=>esc(o[0])+" "+fmtA(o[1],(MATS[o[0]]||["r"])[0])+(o[2]?" ≥Q"+o[2]:"")).join(" / ")).join(" · "))}</p>`:"";
-  const src=c.k.includes("sources")?`<p class="hint" style="color:#d6c2ff">${c.item.def?T("startBp"):c.item.p.map(p=>esc(POOLS[p])).join(", ")||"—"}</p>`:"";
+  const src=c.k.includes("sources")?`<p class="hint" style="color:#d6c2ff">${c.item.def?T("startBp"):c.item.p.map(p=>esc(poolN(p))).join(", ")||"—"}</p>`:"";
   return `<div class="ptubox"><h5>🧪 PTU ${esc(pv)}</h5>${T("ptuChgD",esc(PTU.version))}<ul>${li.map(x=>"<li>"+x+"</li>").join("")}</ul>${rec}${src}</div>`;
 }
 function renderDetail(){
@@ -1401,7 +1479,7 @@ function renderDetail(){
   const own=isOwned(it),q=U.qty;
   const slots=it.r.map((g,gi)=>{
     const f=U.fill[gi];const o=f?g[2][f.o]:null;if(f)f.q=clampQ(f.q,o);
-    return `<div class="slotg"><h4>${esc(g[0].toUpperCase())} <small>(Choose ${g[1]>1?g[1]+" materials":"one material"})</small></h4><div class="slotb">
+    return `<div class="slotg"><h4>${esc(g[0].toUpperCase())} <small>(${g[1]>1?T("chooseN",g[1]):T("chooseOne")})</small></h4><div class="slotb">
       <button class="box ${f?"fill":""}" data-g="${gi}" title="${f?T("removeMat"):T("pickMat")}">${f?`${IMG.mats&&IMG.mats[o[0]]!=null?matIc(o[0],"mbig"):""}${esc(o[0])}<b>Q ${f.q}</b>`:"+"}</button><div>`+
       g[2].map((o,oi)=>{const s=stockOf(o[0]);const need=o[1]*q;const k=MATS[o[0]]?MATS[o[0]][0]:"r";
         let sk="";if(s){const okA=+s.a>=need,okQ=(+s.q||0)>=o[2];sk=`<span class="stk ${okA&&okQ?"okk":"no"}">${T("stockL",fmtA(+s.a,k),s.q||0)}${okA?"":T("notEnough")}${okQ?"":T("lowQ")}</span>`}
@@ -1414,24 +1492,24 @@ function renderDetail(){
     if(r.isAdd){const d=r.add;srows+=`<tr><td>${esc(nm)}</td><td>+0</td><td>${d>=0?"+":""}${d}</td><td class="${d>0?"up":d<0?"dn":""}">${r.touched&&d?(d>0?"+":"")+d:"·"}</td></tr>`;return}
     const dp=(r.mult-1)*100;const good=r.dir===0?0:Math.sign(dp)*(r.dir>0?1:-1);
     srows+=`<tr><td>${esc(nm)}</td><td>×1.00</td><td>×${r.mult.toFixed(2)}</td><td class="${good>0?"up":good<0?"dn":""}">${r.touched&&Math.abs(dp)>=0.005?(dp>0?"+":"")+dp.toFixed(2)+" %":"·"}</td></tr>`});
-  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(POOLS[p])}</span>`).join(""):`<span class="hint">${T("noPool")}</span>`;
+  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(poolN(p))}</span>`).join(""):`<span class="hint">${T("noPool")}</span>`;
   const ret=it.x.length?`<table class="sumt">${it.x.map(r=>`<tr><td>${esc(r[0])}</td><td>${fmtA(r[1],r[2])}</td></tr>`).join("")}</table><div class="hint">${T("time",fmtT(it.xt))}</div>`:`<span class="hint">${T("noData")}</span>`;
   const allFilled=it.r.every((g,gi)=>U.fill[gi]);
   const S=ST.sim,full=S.q.length>=LIM.q&&S.p.length>=LIM.p;
   const why=it.ptu?T("ptuNewD",esc(PTU?PTU.version:"PTU")):!own?T("whyNotOwned"):!allFilled?T("whyFill"):full?T("whyFull"):"";
-  R.innerHTML=`<div class="mback"><button id="mB">‹ BLUEPRINTS</button><span></span></div><div class="det" style="flex:1;min-height:0">
+  R.innerHTML=`<div class="mback"><button id="mB">‹ ${T("tabBp")}</button><span></span></div><div class="det" style="flex:1;min-height:0">
    <div style="display:flex;flex-direction:column;min-height:0;overflow:auto;border-right:1px solid var(--line2)">
-    <div class="ctl"><span>Upgrade:</span><div class="row"><select class="sel" disabled><option>T1</option></select></div>
-      <span>Autofill:</span><div class="row"><button class="btn" id="afB">Best material</button><button class="btn" id="afW">Worst material</button></div>
-      <span>Quantity:</span><div class="row qty"><button class="btn" id="qm">-</button><input id="qv" value="${String(q).padStart(3,"0")}"><button class="btn" id="qp">+</button><button class="btn" id="qx" title="${T("maxTitle")}">Max</button><button class="btn" id="qc">Clear All</button></div></div>
+    <div class="ctl"><span>${T("upg")}</span><div class="row"><select class="sel" disabled><option>T1</option></select></div>
+      <span>${T("autoF")}</span><div class="row"><button class="btn" id="afB">${T("bestM")}</button><button class="btn" id="afW">${T("worstM")}</button></div>
+      <span>${T("qtyL")}</span><div class="row qty"><button class="btn" id="qm">-</button><input id="qv" value="${String(q).padStart(3,"0")}"><button class="btn" id="qp">+</button><button class="btn" id="qx" title="${T("maxTitle")}">Max</button><button class="btn" id="qc">${T("clrAll")}</button></div></div>
     ${slots}
    </div>
    <div class="info">
     <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt=""${imgOf(it)[1]?` title="${T("tmpTitle")}"`:""}></span>`:noImg(it)}</div>
-    <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CBY[it.c].n)} → <b>${esc(it.s)}</b> • Tier <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • Grade ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
-      <div class="ft">Fabrication Time:<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
+    <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CN(CBY[it.c].n))} → <b>${esc(CN(it.s))}</b> • ${T("tierL")} <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • ${T("gradeL")} ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
+      <div class="ft">${T("fabTime")}<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
     ${ptuBox(it)}
-    <div class="stats"><h3>STATISTICS</h3>${srows?`<table><tr><th>Attribute</th><th>Base</th><th>Enhanced</th><th>Delta</th></tr>${srows}</table>`:`<div class="none">${T("noMods")}</div>`}
+    <div class="stats"><h3>${T("statsH")}</h3>${srows?`<table><tr><th>${T("attrH")}</th><th>${T("baseH")}</th><th>${T("enhH")}</th><th>${T("deltaH")}</th></tr>${srows}</table>`:`<div class="none">${T("noMods")}</div>`}
       <div class="hint" style="padding:4px 10px 8px">${T("statsHint")}</div></div>
     <div class="sec"><h5>${T("whereGet")}</h5>${pools}${own&&ST.owned[it.n]?`<div class="hint">${T("gotOn",new Date(ST.owned[it.n]).toLocaleDateString(LOC()))}</div>`:""}</div>
     <div class="sec"><h5>${T("disRet")}</h5>${ret}</div>
@@ -1440,8 +1518,8 @@ function renderDetail(){
       <button class="tg ${own?"ow":""}" id="tOwn" ${it.def?`disabled title="${T("starterT")}"`:""}>${own?T("iOwn"):T("markOwn")}</button>
       ${own?"":`<button class="tg ${ST.want[it.n]?"wa":""}" id="tWant">★ ${ST.want[it.n]?T("onWish"):T("want")}</button>`}
       <div class="grow"></div>
-      <div class="dl">Deliver all to:<select class="sel" id="loc"><option ${U.loc==="Location Inventory"?"selected":""}>Location Inventory</option><option ${U.loc==="Ship Inventory"?"selected":""}>Ship Inventory</option><option ${U.loc==="ShoGy HR - XL Hangar"?"selected":""}>ShoGy HR - XL Hangar</option></select></div>
-      <button class="big" id="fabB" ${why?"disabled":""}>FABRICATE<small>${T("simQ")}</small></button>
+      <div class="dl">${T("delivTo")}<select class="sel" id="loc"><option value="Location Inventory" ${U.loc==="Location Inventory"?"selected":""}>${T("locInv")}</option><option value="Ship Inventory" ${U.loc==="Ship Inventory"?"selected":""}>${T("shipInv")}</option><option ${U.loc==="ShoGy HR - XL Hangar"?"selected":""}>ShoGy HR - XL Hangar</option></select></div>
+      <button class="big" id="fabB" ${why?"disabled":""}>${T("fabBtn")}<small>${T("simQ")}</small></button>
       ${why?`<div class="why">${why}</div>`:""}
     </div>
    </div></div>`;
@@ -1490,19 +1568,19 @@ function renderDis(){
   const S=ST.sim,full=S.dq.length>=LIM.q&&S.dp.length>=LIM.p;
   v.innerHTML=`<div class="col" style="padding:8px">
     <div class="simnote">${T("disNote")}</div>
-    <div class="srch" style="margin-top:0"><div class="in">${ic("search")}<input id="dq" placeholder="Search" value="${esc(U.dq)}"></div><button id="dclr" title="CLEAR FILTERS"><span class="lg">CLEAR FILTERS</span><span class="sm">✕</span></button></div>
+    <div class="srch" style="margin-top:0"><div class="in">${ic("search")}<input id="dq" placeholder="${T("srch")}" value="${esc(U.dq)}"></div><button id="dclr" title="${T("clrF")}"><span class="lg">${T("clrF")}</span><span class="sm">✕</span></button></div>
     ${iconRow(U.dcats,"dIcons")}
     <div class="chks"><label><input type="checkbox" id="dAll" ${U.dAll?"checked":""}>${T("showAll")}</label></div>
     <div class="list" id="dl">${slice.length?(U.dAll?tilesHTML(slice.map(o=>o.it),-1):tilesInv(slice)):`<div class="matnote" style="padding:30px;text-align:center">${U.dAll?T("nothing"):T("invEmpty")}</div>`}</div>
     ${pagerHTML(U.dpage,pages,"dpg")}
   </div>
   <div class="col" style="padding:10px 12px;display:flex;flex-direction:column">
-    <div style="font-weight:700;font-size:21px;color:#cfe5e1;margin:4px 10px 10px">Selected: <span style="color:#fff">${U.dsel.length}</span></div>
+    <div style="font-weight:700;font-size:21px;color:#cfe5e1;margin:4px 10px 10px">${T("selL")} <span style="color:#fff">${U.dsel.length}</span></div>
     <div style="flex:1;overflow:auto">${U.dsel.length?U.dsel.map((s,i)=>{const it=BYN.get(s.n.toLowerCase());return `<div class="drow"><span>${esc(s.n)}<small>${s.invId?T("fromInv"):T("fromCat")} · ${fmtT(it?it.xt:0)}</small></span><span class="hint">${it?it.x.map(r=>esc(r[0])+" "+fmtA(r[1],r[2])).join(", "):""}</span><button class="x" data-i="${i}">✕</button></div>`}).join("")+
       `<div class="sec" style="margin:12px 0"><h5>${T("totalRet",fmtT(time))}</h5><table class="sumt">${Object.entries(tot).map(([m,o])=>`<tr><td>${esc(m)}</td><td>${fmtA(o.a,o.k)}</td></tr>`).join("")}</table><div class="hint">${T("retNote")}</div></div>`
       :`<div class="empty" style="min-height:360px"><div class="msg" style="font-size:18px">${T("clickLeft")}</div></div>`}</div>
-    <div class="foot"><button class="instant" id="instD" ${ST.sim.dq.length+ST.sim.dp.length?"":"disabled"}>⚡ INSTANT FINISH<small>${T("instDis")}</small></button><div class="grow"></div><div class="dl">Deliver all to:<select class="sel" id="dloc"><option>Location Inventory</option><option>Ship Inventory</option><option>ShoGy HR - XL Hangar</option></select></div>
-      <button class="big" id="disB" ${!U.dsel.length||full?"disabled":""}>DISMANTLE<small>${T("simQ")}</small></button>${full?`<div class="why">${T("disFull")}</div>`:""}</div>
+    <div class="foot"><button class="instant" id="instD" ${ST.sim.dq.length+ST.sim.dp.length?"":"disabled"}>${T("instF")}<small>${T("instDis")}</small></button><div class="grow"></div><div class="dl">${T("delivTo")}<select class="sel" id="dloc"><option value="Location Inventory">${T("locInv")}</option><option value="Ship Inventory">${T("shipInv")}</option><option>ShoGy HR - XL Hangar</option></select></div>
+      <button class="big" id="disB" ${!U.dsel.length||full?"disabled":""}>${T("disBtn")}<small>${T("simQ")}</small></button>${full?`<div class="why">${T("disFull")}</div>`:""}</div>
   </div>`;
   $("#dq").oninput=e=>{U.dq=e.target.value;U.dpage=0;renderDis();const i=$("#dq");i.focus();i.setSelectionRange(i.value.length,i.value.length)};
   $("#dclr").onclick=()=>{U.dq="";U.dcats=new Set();U.dpage=0;renderDis()};
@@ -1523,27 +1601,27 @@ function tilesInv(slice){
 
 /* ---------- queue ---------- */
 function jobRow(j,prog,kind){
-  const now=Date.now();const name=kind==="f"?`${esc(j.n)}${j.qty>1?" ×"+j.qty:""}`:`Dismantle: ${esc(j.items.length===1?j.items[0]:T("items",j.items.length))}`;
+  const now=Date.now();const name=kind==="f"?`${esc(j.n)}${j.qty>1?" ×"+j.qty:""}`:`${T("disP")}: ${esc(j.items.length===1?j.items[0]:T("items",j.items.length))}`;
   const info=kind==="f"?(j.mats||[]).map(m=>esc(m[0])+" Q"+m[1]).join(", "):esc(j.items.slice(0,3).join(", ")+(j.items.length>3?"…":""));
   let tm,status,pct=0;
   if(prog){const rem=(j.start+j.dur*1000-now)/1000;pct=Math.min(100,Math.max(0,100-rem/j.dur*100));tm=fmtT(rem);status=T("inProg")}
   else{tm=fmtT(j.dur);status=T("waiting")}
-  return `<tr data-id="${j.id}"><td>${name}${prog?`<div class="bar"><i style="width:${pct.toFixed(1)}%"></i></div>`:""}</td><td class="hint">${info}</td><td>T1</td><td>${status}</td><td class="tm" data-end="${prog?j.start+j.dur*1000:""}">${tm}</td><td>${esc(j.loc)}</td><td><button class="x" data-c="${kind}${prog?"p":"q"}" data-id="${j.id}" title="${T("cancel")}">✕</button></td></tr>`;
+  return `<tr data-id="${j.id}"><td>${name}${prog?`<div class="bar"><i style="width:${pct.toFixed(1)}%"></i></div>`:""}</td><td class="hint">${info}</td><td>T1</td><td>${status}</td><td class="tm" data-end="${prog?j.start+j.dur*1000:""}">${tm}</td><td>${esc(LOCN(j.loc))}</td><td><button class="x" data-c="${kind}${prog?"p":"q"}" data-id="${j.id}" title="${T("cancel")}">✕</button></td></tr>`;
 }
 function qTable(title,list,lim,prog,kind,emptyMsg){
-  return `<div class="qsec"><h4>${title} ${list.length}/${lim}</h4>${list.length?`<table class="q"><tr><th>Item Name</th><th>Info</th><th>Tier</th><th>Status</th><th>Time</th><th>Delivery Location</th><th></th></tr>${list.map(j=>jobRow(j,prog,kind)).join("")}</table>`:`<div class="qempty"><span>${emptyMsg}</span></div>`}</div>`;
+  return `<div class="qsec"><h4>${title} ${list.length}/${lim}</h4>${list.length?`<table class="q"><tr><th>${T("thName")}</th><th>${T("thInfo")}</th><th>${T("tierL")}</th><th>${T("thStatus")}</th><th>${T("thTime")}</th><th>${T("thLoc")}</th><th></th></tr>${list.map(j=>jobRow(j,prog,kind)).join("")}</table>`:`<div class="qempty"><span>${emptyMsg}</span></div>`}</div>`;
 }
 function renderQueue(){
   const v=$("#view");v.className="view";const S=ST.sim;
-  const tabs=`<div class="qtabs"><button data-t="wo" class="${U.qt==="wo"?"on":""}"><span>WORK ORDERS</span><span>(${S.q.length+S.p.length})</span></button><button data-t="ds" class="${U.qt==="ds"?"on":""}"><span>DISMANTLE</span><span>(${S.dq.length+S.dp.length})</span></button><button data-t="dp" class="${U.qt==="dp"?"on":""}"><span>DISPATCHED ITEMS</span><span>(${S.disp.length})</span></button></div>`;
+  const tabs=`<div class="qtabs"><button data-t="wo" class="${U.qt==="wo"?"on":""}"><span>${T("woT")}</span><span>(${S.q.length+S.p.length})</span></button><button data-t="ds" class="${U.qt==="ds"?"on":""}"><span>${T("disBtn")}</span><span>(${S.dq.length+S.dp.length})</span></button><button data-t="dp" class="${U.qt==="dp"?"on":""}"><span>${T("dispT")}</span><span>(${S.disp.length})</span></button></div>`;
   let body="";
-  if(U.qt==="wo")body=`<div class="qhead">FABRICATE / UPGRADE / REPAIR</div>`+qTable("QUEUE",S.q,LIM.q,false,"f","No Queued Items")+qTable("IN PROGRESS",S.p,LIM.p,true,"f","No Active Projects");
-  else if(U.qt==="ds")body=`<div class="qhead">DISMANTLE</div>`+qTable("QUEUE",S.dq,LIM.q,false,"d","No Queued Items")+qTable("IN PROGRESS",S.dp,LIM.p,true,"d","No Active Projects");
-  else body=`<div class="qhead">DISPATCHED ITEMS</div><div class="qsec">${S.disp.length?`<table class="q"><tr><th>Item</th><th>${T("resultH")}</th><th>${T("doneH")}</th><th>Delivery Location</th></tr>${S.disp.map(d=>`<tr><td>${d.k==="f"?esc(d.n)+(d.qty>1?" ×"+d.qty:""):"Dismantle: "+esc(d.items?(d.items.length===1?d.items[0]:T("items",d.items.length)):d.n)}</td><td class="hint">${d.k==="f"?T("inSimInv"):Object.entries(d.ret||{}).map(([m,a])=>esc(m)+" "+(Math.round(a*1000)/1000)).join(", ")}</td><td>${new Date(d.t).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})}</td><td>${esc(d.loc)}</td></tr>`).join("")}</table><div class="mbtns" style="padding:0 10px 10px"><button class="btn" id="clrD">${T("clearList")}</button></div>`:`<div class="qempty"><span>${T("noDisp")}</span></div>`}</div>`;
+  if(U.qt==="wo")body=`<div class="qhead">${T("furT")}</div>`+qTable(T("queueT"),S.q,LIM.q,false,"f",T("noQueued"))+qTable(T("inProgT"),S.p,LIM.p,true,"f",T("noActive"));
+  else if(U.qt==="ds")body=`<div class="qhead">${T("disBtn")}</div>`+qTable(T("queueT"),S.dq,LIM.q,false,"d",T("noQueued"))+qTable(T("inProgT"),S.dp,LIM.p,true,"d",T("noActive"));
+  else body=`<div class="qhead">${T("dispT")}</div><div class="qsec">${S.disp.length?`<table class="q"><tr><th>${T("thItem")}</th><th>${T("resultH")}</th><th>${T("doneH")}</th><th>${T("thLoc")}</th></tr>${S.disp.map(d=>`<tr><td>${d.k==="f"?esc(d.n)+(d.qty>1?" ×"+d.qty:""):T("disP")+": "+esc(d.items?(d.items.length===1?d.items[0]:T("items",d.items.length)):d.n)}</td><td class="hint">${d.k==="f"?T("inSimInv"):Object.entries(d.ret||{}).map(([m,a])=>esc(m)+" "+(Math.round(a*1000)/1000)).join(", ")}</td><td>${new Date(d.t).toLocaleTimeString(LOC(),{hour:"2-digit",minute:"2-digit"})}</td><td>${esc(LOCN(d.loc))}</td></tr>`).join("")}</table><div class="mbtns" style="padding:0 10px 10px"><button class="btn" id="clrD">${T("clearList")}</button></div>`:`<div class="qempty"><span>${T("noDisp")}</span></div>`}</div>`;
   const lanes=U.qt==="wo"?[["q","p"]]:U.qt==="ds"?[["dq","dp"]]:[["q","p"],["dq","dp"]];
   const pend=lanes.reduce((a,[x,y])=>a+S[x].length+S[y].length,0);
   v.innerHTML=`<div class="qv"><div class="simnote">${T("qNote")}</div>${tabs}${body}
-    <div class="foot" style="border-top:1px solid var(--line2)"><div class="grow"></div><button class="instant" id="inst" ${pend?"":"disabled"}>⚡ INSTANT FINISH<small>${U.qt==="dp"?T("instAll",pend):T("instThis",pend)}</small></button></div></div>`;
+    <div class="foot" style="border-top:1px solid var(--line2)"><div class="grow"></div><button class="instant" id="inst" ${pend?"":"disabled"}>${T("instF")}<small>${U.qt==="dp"?T("instAll",pend):T("instThis",pend)}</small></button></div></div>`;
   $("#inst").onclick=()=>instant(lanes);
   $$(".qtabs button").forEach(b=>b.onclick=()=>{U.qt=b.dataset.t;renderQueue()});
   $$("table.q .x").forEach(b=>b.onclick=()=>{const k=b.dataset.c,id=+b.dataset.id;const map={fq:"q",fp:"p",dq:"dq",dp:"dp"};const arr=ST.sim[map[k]];const i=arr.findIndex(j=>j.id===id);if(i>=0)arr.splice(i,1);advance(Date.now());save();renderQueue()});

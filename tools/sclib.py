@@ -46,7 +46,8 @@ def size(o, key):
 
 
 def pool_name(k):
-    h = re.sub(r'^BP_(MISSIONREWARD|REWARDS)_', '', k).replace('_', ' ')
+    if k.startswith('@'): return k
+    h = re.sub(r'^BP_(MISSIONREWARD|REWARDS|REWARD)_', '', k).replace('_', ' ')
     h = re.sub(r'(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|(?<=[a-zA-Z])(?=\d)', ' ', h)
     return re.sub(r'\s+', ' ', h).strip()
 
@@ -154,7 +155,9 @@ def convert(bp):
         pools = []; default = False
         for bb in e['bs']:
             av = bb.get('Availability') or {}
-            pools += [pool(p['Key']) for p in av.get('RewardPools') or []]
+            own = 'BP_REWARD_' + re.sub(r'^BP_CRAFT_', '', bb.get('Key') or '')
+            # a pool made just for this one blueprint (e.g. 4.10.3 Raider Camo) says nothing about where it drops
+            pools += [pool('@special' if p['Key'].lower() == own.lower() else p['Key']) for p in av.get('RewardPools') or []]
             default = default or bool(av.get('Default'))
         pools = sorted(set(pools))
         av = {'Default': default}
