@@ -84,6 +84,10 @@ def main():
                 # rebuild when pictures were added OR removed/replaced (e.g. a filter dropped a wrong image)
                 if (m and int(m.group(1)) > 0) or images_stale():
                     images(tmp, src); changed = True
+            # where the items still without a proper picture are sold (for the photo list), cached weekly
+            if os.environ.get('SKIP_SHOPS') != '1':
+                r = subprocess.run([sys.executable, os.path.join(HERE, 'fetch_shops.py')], capture_output=True, text=True)
+                print(r.stdout.strip()[-1500:], r.stderr.strip()[-500:])
         finally:
             shutil.rmtree(os.path.join(HERE, 'datapad'), ignore_errors=True)
             if os.path.exists(os.path.join(HERE, 'blueprints.json')): os.remove(os.path.join(HERE, 'blueprints.json'))
@@ -110,6 +114,7 @@ def main():
         sw = os.path.join(SITE, 'sw.js'); s = open(sw, encoding='utf-8').read()
         nv = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))['v']
         s = re.sub(r'const VERSION = "[^"]*";', f'const VERSION = "bp-{nv}";', s); open(sw, 'w', encoding='utf-8').write(s)
+    py('build_photo_list.py')
     py('check_versions.py')
     print('DONE', 'rebuilt' if changed else 'no data change')
 
