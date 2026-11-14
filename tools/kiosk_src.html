@@ -543,7 +543,7 @@ const IMG=JSON.parse($("#imgs").textContent);
 const imgOf=it=>IMG.img[it.n]||null;
 const matIc=(m,cls="")=>IMG.mats&&IMG.mats[m]!=null?`<img class="mi ${cls}" src="${IMG.thumbs[IMG.mats[m]]}" alt="" loading="lazy">`:ic((MATS[m]||["r"])[0]==="r"?"ore":"gem");
 const LARGE={},LREQ={};
-function loadLarge(c){if(c<0)return Promise.resolve(null);if(LARGE[c])return Promise.resolve(LARGE[c]);if(typeof fetch!=="function")return Promise.resolve(null);if(!LREQ[c])LREQ[c]=fetch("img/l-"+c+".json").then(r=>r.ok?r.json():null).then(d=>{if(d)LARGE[c]=d;return d}).catch(()=>null);return LREQ[c]}
+function loadLarge(c){if(c<0)return Promise.resolve(null);if(LARGE[c])return Promise.resolve(LARGE[c]);if(typeof fetch!=="function")return Promise.resolve(null);if(!LREQ[c])LREQ[c]=fetch("img/l-"+c+".json"+(IMG.lv?"?v="+IMG.lv:"")).then(r=>r.ok?r.json():null).then(d=>{if(d)LARGE[c]=d;return d}).catch(()=>null);return LREQ[c]}
 const BYN=new Map(ITEMS.map(it=>[it.lc,it]));
 const nk=s=>String(s).toLowerCase().replace(/\u00a0/g," ").replace(/[“”„"]/g,'"').replace(/\s+/g," ").trim();
 const BYNK=new Map(ITEMS.map(it=>[nk(it.n),it]));

@@ -169,7 +169,9 @@ chunks.append(cur)
 for i, c in enumerate(chunks): json.dump(c, open(os.path.join(outdir, f'l-{i}.json'), 'w'), separators=(',', ':'))
 img = {n: [kidx[k], v, loc.get(kidx[k], -1), s] for n, (k, v, s) in res.items()}
 mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
-data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, cat.get('mats', {}))
+import hashlib
+lv = hashlib.sha1(json.dumps([keys, loc], sort_keys=True).encode()).hexdigest()[:10]   # changes whenever picture numbers move: no stale cached l-*.json
+data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE), 'lv': lv}, cat.get('mats', {}))
 mats = data['mats']
 json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
 st = {'fabricator': sum(1 for v in res.values() if v[2] in 'fa' and not v[1]), 'ai': sum(1 for v in res.values() if v[2] == 'a'), 'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
