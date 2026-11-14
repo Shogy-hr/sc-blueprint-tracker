@@ -123,6 +123,8 @@ img.cut.bg-fab{background:radial-gradient(ellipse 70% 60% at 50% 72%,#2c6a62 0%,
 img.cut.bg-dark{background:#0b1517}
 .hero img.cut{padding:6px;box-sizing:border-box;width:300px;max-width:100%;aspect-ratio:1;border:1px solid #2a5a55}
 .hero img.cut.bg-none{border-color:transparent}
+#lsTxt{width:100%;height:42vh;box-sizing:border-box;margin-top:10px;font:13px/1.45 ui-monospace,Consolas,monospace;background:#081416;color:#cfe;border:1px solid #2a5a55;padding:10px;resize:vertical}
+.lsrow{display:flex;align-items:center;gap:12px;margin:8px 0;flex-wrap:wrap}.lsrow>.hint{min-width:90px}
 .pbopt{display:flex;flex-wrap:wrap;gap:8px}.pbopt label{display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid #2a5a55;cursor:pointer}
 .pbopt label.on{border-color:var(--acc,#e2c46a);color:var(--acc,#e2c46a)}
 .pbopt i{display:inline-block;width:22px;height:22px;border:1px solid #4a7a75}
@@ -469,6 +471,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
       <button class="tbtn stat" id="bStat"></button>
       <button class="tbtn prof" id="bProf"></button>
       <button class="tbtn" id="bLog">⟳ GAME.LOG</button>
+      <button class="tbtn" id="bList">📋 <span data-l10n="lsBtn"></span></button>
       <button class="tbtn" id="bCrew">👥 <span data-l10n="crew"></span> <b id="crewN"></b></button>
       <button class="tbtn" id="bVid">▶ <span data-l10n="tut"></span></button>
       <button class="tbtn" id="bSet">⚙ <span data-l10n="settings"></span></button>
@@ -525,6 +528,14 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <p class="hint" data-l10n="sResetAllNote"></p></div>
   <div class="mbtns"><button class="btn" data-close data-l10n="close"></button></div>
 </div></div>
+<div class="modal" id="mList"><div class="mbox wide">
+  <h2>📋 <span data-l10n="lsT"></span></h2>
+  <div class="lsrow"><span class="hint" data-l10n="lsWhat"></span><div class="pbopt" id="lsWhat"></div></div>
+  <div class="lsrow"><span class="hint" data-l10n="lsFmt"></span><div class="pbopt" id="lsFmt"></div></div>
+  <textarea id="lsTxt" readonly spellcheck="false"></textarea>
+  <div class="mbtns left"><button class="btn pri" id="lsCopy" data-l10n="lsCopy"></button><button class="btn" id="lsDl" data-l10n="lsDl"></button><span class="hint" id="lsN"></span></div>
+  <div class="mbtns"><button class="btn" data-close data-l10n="close"></button></div>
+</div></div>
 <div class="modal" id="mCrew"><div class="mbox wide">
   <h2>👥 <span data-l10n="crewT"></span></h2>
   <p id="crewIntro"></p><p class="hint" data-l10n="crewTip"></p><p class="hint">▶ <a href="https://youtu.be/igrE-ntjhNM" target="_blank" rel="noopener noreferrer"><span data-l10n="crewVid"></span> ↗</a></p>
@@ -575,7 +586,24 @@ ITEMS.forEach(it=>{it.mats=new Set();it.r.forEach(g=>g[2].forEach(o=>it.mats.add
 const LANGS=[["en","English","en-GB"],["hr","Hrvatski","hr-HR"],["de","Deutsch","de-DE"],["pl","Polski","pl-PL"],["fr","Français","fr-FR"],["es","Español","es-ES"]];
 const TR={
  coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
- pbTitle:["Item pictures","Slike predmeta","Bilder der Gegenstände","Obrazy przedmiotów","Images des objets","Imágenes de objetos"],
+ lsBtn:["LIST","POPIS","LISTE","LISTA","LISTE","LISTA"],
+lsT:["Export a list","Izvoz popisa","Liste exportieren","Eksport listy","Exporter une liste","Exportar una lista"],
+lsWhat:["Which","Što","Welche","Które","Lesquels","Cuáles"],
+lsFmt:["Format","Format","Format","Format","Format","Formato"],
+lsView:["Current view (filters)","Trenutni prikaz (filteri)","Aktuelle Ansicht (Filter)","Bieżący widok (filtry)","Vue actuelle (filtres)","Vista actual (filtros)"],
+lsOwn:["Owned","Imam","Besessen","Posiadane","Possédés","Obtenidos"],
+lsNot:["Not owned","Nemam","Nicht besessen","Nieposiadane","Non possédés","No obtenidos"],
+lsWant:["Wishlist","Želje","Wunschliste","Lista życzeń","Liste de souhaits","Deseados"],
+lsAll:["All","Sve","Alle","Wszystkie","Tous","Todos"],
+lsGroup:["Text, grouped","Tekst po grupama","Text, gruppiert","Tekst, grupami","Texte groupé","Texto agrupado"],
+lsPlain:["Names only","Samo imena","Nur Namen","Tylko nazwy","Noms seuls","Solo nombres"],
+lsDiscord:["Discord / Reddit","Discord / Reddit","Discord / Reddit","Discord / Reddit","Discord / Reddit","Discord / Reddit"],
+lsCsv:["CSV (Excel)","CSV (Excel)","CSV (Excel)","CSV (Excel)","CSV (Excel)","CSV (Excel)"],
+lsCopy:["Copy","Kopiraj","Kopieren","Kopiuj","Copier","Copiar"],
+lsDl:["Download file","Preuzmi datoteku","Datei herunterladen","Pobierz plik","Télécharger le fichier","Descargar archivo"],
+lsCount:["{0} blueprints","{0} blueprinta","{0} Blaupausen","{0} schematów","{0} plans","{0} planos"],
+lsOwnCol:["owned","imam","besessen","posiadane","possédé","obtenido"],
+pbTitle:["Item pictures","Slike predmeta","Bilder der Gegenstände","Obrazy przedmiotów","Images des objets","Imágenes de objetos"],
 pbFab:["Fabricator","Fabrikator","Fabrikator","Fabrykator","Fabricateur","Fabricador"],
 pbNone:["No background","Bez pozadine","Ohne Hintergrund","Bez tła","Sans fond","Sin fondo"],
 pbDark:["Dark","Tamna","Dunkel","Ciemne","Sombre","Oscuro"],
@@ -1331,6 +1359,29 @@ function renderWel0(){
 function renderPB(){const sw={fab:"radial-gradient(ellipse at 50% 70%,#2c6a62,#0c2523)",none:"repeating-conic-gradient(#3a4a4a 0 25%,#202a2a 0 50%) 0 0/8px 8px",dark:"#0b1517",orig:"linear-gradient(135deg,#444,#865,#357)"};
   $("#pbOpt").innerHTML=["fab","none","dark","orig"].map(v=>`<label class="${PB===v?"on":""}"><input type="radio" name="pb" value="${v}" ${PB===v?"checked":""} hidden><i style="background:${sw[v]}"></i>${T("pb"+v[0].toUpperCase()+v.slice(1))}</label>`).join("");
   $("#pbOpt").querySelectorAll("input").forEach(r=>r.onchange=()=>{setPB(r.value);renderPB()})}
+/* list export (text / Discord / CSV), asked for on Reddit by sneakyRSI */
+const LS={what:"own",fmt:"group"};
+function lsItems(){const L=LS.what==="view"?filtered():liveItems().filter(it=>LS.what==="own"?isOwned(it):LS.what==="not"?!isOwned(it):LS.what==="want"?!!ST.want[it.n]:true);
+  const co=Object.fromEntries(CATS.map((c,i)=>[c.k,i]));return LS.what==="view"?L:L.slice().sort((a,b)=>co[a.c]-co[b.c]||CBY[a.c].subs.indexOf(a.s)-CBY[b.c].subs.indexOf(b.s)||a.lc.localeCompare(b.lc))}
+function lsText(L){
+  const who=ST.logAcct||activeName()||"",head=`${T("hdrBp")} – ${T("ls"+{view:"View",own:"Own",not:"Not",want:"Want",all:"All"}[LS.what])}${who?" – "+who:""} – ${(bnum(CAT.v)||{}).ver||CAT.v||""} – ${new Date().toLocaleDateString(LOC())}`;
+  if(LS.fmt==="plain")return L.map(i=>i.n).join("\n");
+  if(LS.fmt==="csv"){const q=x=>'"'+String(x).replace(/"/g,'""')+'"';return [["Name","Category","Type",T("lsOwnCol")].map(q).join(";"),...L.map(i=>[i.n,CN(CBY[i.c].n),CN(i.s),isOwned(i)?"1":"0"].map(q).join(";"))].join("\r\n")}
+  const md=LS.fmt==="discord";let o=md?`**${head}**\n`:head+"\n"+"=".repeat(Math.min(60,head.length))+"\n",lc="",ls="";
+  for(const i of L){if(i.c!==lc){o+=md?`\n__**${CN(CBY[i.c].n)}**__\n`:`\n${CN(CBY[i.c].n).toUpperCase()}\n`;lc=i.c;ls=""}
+    if(i.s!==ls){o+=md?`*${CN(i.s)}*\n`:`  ${CN(i.s)}\n`;ls=i.s}
+    o+=(md?"- ":"    - ")+i.n+(LS.what==="all"||LS.what==="view"?(isOwned(i)?" ✓":""):"")+"\n"}
+  return o.trim()+"\n\n"+(md?"<https://shogy-hr.com/blueprints>":"shogy-hr.com/blueprints")}
+function renderList(){
+  const opt=(id,key,vals)=>{$(id).innerHTML=vals.map(([v,l])=>`<label class="${LS[key]===v?"on":""}"><input type="radio" value="${v}" hidden ${LS[key]===v?"checked":""}>${T(l)}</label>`).join("");
+    $(id).querySelectorAll("input").forEach(r=>r.onchange=()=>{LS[key]=r.value;renderList()})};
+  opt("#lsWhat","what",[["view","lsView"],["own","lsOwn"],["not","lsNot"],["want","lsWant"],["all","lsAll"]]);
+  opt("#lsFmt","fmt",[["group","lsGroup"],["plain","lsPlain"],["discord","lsDiscord"],["csv","lsCsv"]]);
+  const L=lsItems();$("#lsTxt").value=lsText(L);$("#lsN").textContent=T("lsCount",L.length)}
+$("#bList").onclick=()=>{renderList();$("#mList").classList.add("on")};
+$("#lsCopy").onclick=()=>{const t=$("#lsTxt").value;navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(t).then(()=>toast(T("copied")),()=>{$("#lsTxt").select();toast(T("selCopy"))}):($("#lsTxt").select(),toast(T("selCopy")))};
+$("#lsDl").onclick=()=>{const csv=LS.fmt==="csv",t=(csv?"\ufeff":"")+$("#lsTxt").value,who=(ST.logAcct||activeName()||"").replace(/[^\w.-]+/g,"_");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:csv?"text/csv":"text/plain"}));a.download=`blueprints-${LS.what}${who?"-"+who:""}.${csv?"csv":"txt"}`;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},2000)};
 $("#bSet").onclick=()=>{renderProfiles();renderPB();$("#dataT").value="";$("#dataMsg").textContent="";$$(".rst").forEach(b=>{b.classList.remove("arm");b.innerHTML=T(b.dataset.l10n)});$("#mSet").classList.add("on")};
 $$("[data-close]").forEach(b=>b.onclick=()=>b.closest(".modal").classList.remove("on"));
 document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;const m=$$(".modal.on").filter(x=>x.id!=="mWel").pop();if(m){m.classList.remove("on");return}const R=$("#right");if(R&&R.classList.contains("sheet"))$("#mB").click()});
