@@ -124,6 +124,7 @@ main{padding:20px 0;display:block}
 
   <section class="step" id="s5">
    <h2><span class="n">5</span><span data-t="s5"></span></h2>
+   <label class="row hint" style="cursor:pointer"><input type="checkbox" id="cNote"> <span data-t="noteL"></span></label>
    <div class="row"><button class="btn pri big" id="bGo" data-t="make" disabled></button><button class="btn" id="bSaveCfg" data-t="saveCfg"></button></div>
    <div id="out"></div>
    <ol class="how"><li data-t="h1i"></li><li><span data-t="h2i"></span> <code>…\StarCitizen\LIVE\data\Localization\english\global.ini</code></li><li><span data-t="h3i"></span> <code>…\StarCitizen\LIVE\user.cfg</code>: <code>g_language = english</code></li></ol>
@@ -185,6 +186,7 @@ done:["Done: {0} component labels, {1} ship names.","Gotovo: {0} oznaka komponen
 h1i:["Close the game.","Zatvori igru.","Spiel schließen.","Zamknij grę.","Ferme le jeu.","Cierra el juego."],
 h2i:["Put the downloaded file here (replace the old one):","Stavi preuzeti file ovdje (zamijeni stari):","Lege die Datei hier ab (alte ersetzen):","Umieść pobrany plik tutaj (zastąp stary):","Place le fichier ici (remplace l’ancien) :","Pon el archivo aquí (sustituye el antiguo):"],
 h3i:["Only the first time – make sure this line is in","Samo prvi put – provjeri da je ova linija u","Nur beim ersten Mal – diese Zeile muss stehen in","Tylko za pierwszym razem – ta linia musi być w","Seulement la première fois – cette ligne doit être dans","Solo la primera vez: esta línea debe estar en"],
+noteL:["Add a short line to the login screen: “Component labels & ship names: ShoGy-HR Label Forge” (StarStrings’ own message stays as it is)","Dodaj kratak redak na ekran za prijavu: „Component labels & ship names: ShoGy-HR Label Forge” (poruka StarStringsa ostaje kakva jest)","Kurze Zeile auf dem Login-Bildschirm hinzufügen: „Component labels & ship names: ShoGy-HR Label Forge“ (die StarStrings-Nachricht bleibt unverändert)","Dodaj krótką linię na ekranie logowania: „Component labels & ship names: ShoGy-HR Label Forge” (komunikat StarStrings zostaje bez zmian)","Ajouter une ligne à l’écran de connexion : « Component labels & ship names: ShoGy-HR Label Forge » (le message de StarStrings reste tel quel)","Añadir una línea a la pantalla de inicio: «Component labels & ship names: ShoGy-HR Label Forge» (el mensaje de StarStrings no cambia)"],
 priv2:["Everything happens in your browser – your files are never uploaded. Unofficial fan tool, not affiliated with Cloud Imperium Games.","Sve se događa u tvom pregledniku – tvoje datoteke se nikamo ne šalju. Neslužbeni fan alat, nije povezan s Cloud Imperium Games.","Alles passiert in deinem Browser – deine Dateien werden nie hochgeladen. Inoffizielles Fan-Tool, nicht mit Cloud Imperium Games verbunden.","Wszystko dzieje się w przeglądarce – pliki nigdy nie są wysyłane. Nieoficjalne narzędzie fanowskie, niezwiązane z Cloud Imperium Games.","Tout se passe dans ton navigateur – tes fichiers ne sont jamais envoyés. Outil de fan non officiel, non affilié à Cloud Imperium Games.","Todo ocurre en tu navegador: tus archivos nunca se suben. Herramienta no oficial de fans, sin relación con Cloud Imperium Games."],
 fan:["Unofficial Star Citizen fan site · not affiliated with Cloud Imperium Games.","Neslužbena Star Citizen fan stranica · nije povezana s Cloud Imperium Games.","Inoffizielle Star-Citizen-Fanseite · nicht mit Cloud Imperium Games verbunden.","Nieoficjalna strona fanów Star Citizen · niezwiązana z Cloud Imperium Games.","Site de fans non officiel de Star Citizen · non affilié à Cloud Imperium Games.","Sitio de fans no oficial de Star Citizen · sin relación con Cloud Imperium Games."],
 notIni:["This does not look like a global.ini.","Ovo ne izgleda kao global.ini.","Das sieht nicht nach einer global.ini aus.","To nie wygląda na global.ini.","Cela ne ressemble pas à un global.ini.","Esto no parece un global.ini."],
@@ -202,7 +204,8 @@ const CLSWORD={military:"MIL",civilian:"CIV",industrial:"IND",stealth:"STL",comp
 const SSCLS={Mil:"MIL",Civ:"CIV",Ind:"IND",Sth:"STL",Stl:"STL",Cmp:"CMP"};
 let COMP={},COMPV="";         // lower-case loc key -> [type,size,grade]
 let OLD=null,BASE=null,BASEN="";   // {map:Map(lowerKey->[key,value]), text}
-let TPL=[],VEH=[];            // template tokens; [{k:key,pre,suf}]
+let TPL=[],VEH=[],NOTE=true;
+const NOTE_KEY="ui_pregame_persistentuniverse_desc",NOTE_TXT="Component labels & ship names: ShoGy-HR Label Forge - shogy-hr.com/labels";            // template tokens; [{k:key,pre,suf}]
 const LSK="scbp-labels-v1";
 
 function parseIni(text){const map=new Map();let n=0;
@@ -269,7 +272,7 @@ function detect(){
   return {tpl:best&&hits>=Math.max(3,items.length*0.3)?best:null,hits,total:items.length,veh}}
 
 /* ---------------- UI ---------------- */
-function save(){try{localStorage.setItem(LSK,JSON.stringify({tpl:TPL,veh:VEH}))}catch(e){}}
+function save(){try{localStorage.setItem(LSK,JSON.stringify({tpl:TPL,veh:VEH,note:NOTE}))}catch(e){}}
 function sample(){const base=BASE||OLD;const ks=["item_namecool_aegs_s01_tundra","item_namepowr_jspn_s01_jsrmk2","item_nameshld_godi_s01_allstop_scitem","item_nameqdrv_rsi_s01_lightfire","item_name_radr_bltr_s01_hunter"];
   const out=[];for(const k of ks.concat(Object.keys(COMP))){if(out.length>=4)break;const it=base?item(k,base):null;if(it&&!out.some(o=>o.type===it.type))out.push(it)}
   if(!out.length)out.push({type:"COOL",size:"1",grade:"D",cls:"MIL",name:"Tundra"},{type:"QDRV",size:"2",grade:"A",cls:"CMP",name:"Spectre"});
@@ -342,6 +345,9 @@ $("#bGo").onclick=()=>{
   const rep=new Map();let nc=0,nv=0;
   for(const k of compKeys(BASE)){const it=item(k,BASE);if(!it)continue;rep.set(k,isOff(TPL)?it.name:render(TPL,it));nc++}
   for(const v of VEH){const b=val(BASE,v.k);if(b==null)continue;rep.set(v.k.toLowerCase(),v.pre+b+v.suf);nv++}
+  // optional credit line, appended after StarStrings' own login message (never replaces it)
+  const lm=val(BASE,NOTE_KEY);
+  if(NOTE&&lm!=null&&!lm.includes("Label Forge"))rep.set(NOTE_KEY,lm+"\\n\\n"+NOTE_TXT);
   const lines=BASE.text.split("\n");
   for(let i=0;i<lines.length;i++){const l=lines[i],j=l.indexOf("=");if(j<=0)continue;const k=l.slice(0,j).replace(/^﻿/,"").toLowerCase();
     if(rep.has(k)){const cr=l.endsWith("\r")?"\r":"";lines[i]=l.slice(0,j+1)+rep.get(k)+cr}}
@@ -356,8 +362,9 @@ function renderAll(){
   $("#flags").innerHTML=LANGS.map(l=>`<button type="button" data-l="${l}" class="${l===LANG?"on":""}" title="${NAMES[l]}" aria-label="${NAMES[l]}">${FLAGS[l]}</button>`).join("");
   drawTpl();drawVeh()}
 $("#flags").addEventListener("click",ev=>{const b=ev.target.closest("button[data-l]");if(!b)return;LANG=b.getAttribute("data-l");try{localStorage.setItem("scbp-lang",LANG)}catch(e){}renderAll()});
-try{const s=JSON.parse(localStorage.getItem(LSK)||"null");if(s){TPL=s.tpl||[];VEH=s.veh||[]}else TPL=PRESETS.ud.map(x=>({...x}))}catch(e){TPL=PRESETS.ud.map(x=>({...x}))}
+try{const s=JSON.parse(localStorage.getItem(LSK)||"null");if(s){TPL=s.tpl||[];VEH=s.veh||[];if(s.note===false)NOTE=false}else TPL=PRESETS.ud.map(x=>({...x}))}catch(e){TPL=PRESETS.ud.map(x=>({...x}))}
 renderAll();
+$("#cNote").checked=NOTE;$("#cNote").onchange=e=>{NOTE=e.target.checked;save()};
 fetch("../blueprints/data/components.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{COMP={};for(const [k,v] of Object.entries(d.items||{}))if(/^item_name/.test(k)&&!/_default$/.test(k))COMP[k]=v;COMPV=d.v||"";drawTpl()}).catch(()=>{});
 </script>
 </body>
