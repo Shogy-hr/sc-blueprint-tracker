@@ -124,6 +124,8 @@ img.cut.bg-dark{background:#0b1517}
 .hero img.cut{padding:6px;box-sizing:border-box;width:300px;max-width:100%;aspect-ratio:1;border:1px solid #2a5a55}
 .hero img.cut.bg-none{border-color:transparent}
 #lsTxt{width:100%;height:42vh;box-sizing:border-box;margin-top:10px;font:13px/1.45 ui-monospace,Consolas,monospace;background:#081416;color:#cfe;border:1px solid #2a5a55;padding:10px;resize:vertical}
+.shopt td:last-child{white-space:nowrap;text-align:right}
+.shp{color:var(--acc,#e2c46a);font-weight:600;margin-left:6px;text-transform:none;letter-spacing:0}
 .lsrow{display:flex;align-items:center;gap:12px;margin:8px 0;flex-wrap:wrap}.lsrow>.hint{min-width:90px}
 .pbopt{display:flex;flex-wrap:wrap;gap:8px}.pbopt label{display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid #2a5a55;cursor:pointer}
 .pbopt label.on{border-color:var(--acc,#e2c46a);color:var(--acc,#e2c46a)}
@@ -550,6 +552,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
 <script type="application/json" id="catalog">__CATALOG__</script>
 <script type="application/json" id="imgs">__IMGS__</script>
+<script type="application/json" id="shops">__SHOPS__</script>
 <script>
 (function(){
 "use strict";
@@ -559,6 +562,10 @@ const CAT=JSON.parse($("#catalog").textContent);
 const POOLS=CAT.pools, MODS=CAT.mods, MATS=CAT.mats;
 const ITEMS=CAT.items.map((a,i)=>({i,n:a[0],c:a[1],s:a[2],z:a[3],g:a[4],t:a[5],r:a[6],p:a[7],def:!!a[8],x:a[9],xt:a[10],u:a[11]||"",gn:a[12]||"",nn:!!a[13],lc:a[0].toLowerCase()}));
 const IMG=JSON.parse($("#imgs").textContent);
+let SHOP={};try{SHOP=JSON.parse($("#shops").textContent)}catch(e){}   /* {name:[[terminal,location,system,price,date],...]} cheapest first; UEX community prices */
+const aUEC=n=>Number(n).toLocaleString(LOC())+" aUEC";
+function shopSec(it){const L=SHOP.i&&SHOP.i[it.n];if(!L||!L.length)return "";const mx=6,more=L.length-mx;
+  return `<div class="sec"><h5>${T("shopH")} <span class="shp">${T("fromP",aUEC(L[0][3]))}</span></h5><table class="sumt shopt">${L.slice(0,mx).map(r=>`<tr><td>${esc(r[1])}<span class="hint"> · ${esc(r[0])}${r[2]&&r[2]!=="Stanton"?" · "+esc(r[2]):""}</span></td><td>${aUEC(r[3])}</td></tr>`).join("")}</table>${more>0?`<div class="hint">${T("shopMore",more)}</div>`:""}<div class="hint">${T("shopSrc",SHOP.d||"")}</div></div>`}
 const imgOf=it=>IMG.img[it.n]||null;
 const matIc=(m,cls="")=>IMG.mats&&IMG.mats[m]!=null?`<img class="mi ${cls}" src="${IMG.thumbs[IMG.mats[m]]}" alt="" loading="lazy">`:ic((MATS[m]||["r"])[0]==="r"?"ore":"gem");
 const LARGE={},LREQ={};
@@ -586,7 +593,12 @@ ITEMS.forEach(it=>{it.mats=new Set();it.r.forEach(g=>g[2].forEach(o=>it.mats.add
 const LANGS=[["en","English","en-GB"],["hr","Hrvatski","hr-HR"],["de","Deutsch","de-DE"],["pl","Polski","pl-PL"],["fr","Français","fr-FR"],["es","Español","es-ES"]];
 const TR={
  coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
- lsBtn:["LIST","POPIS","LISTE","LISTA","LISTE","LISTA"],
+ shopH:["Buy in shops","Kupnja u trgovinama","In Shops kaufen","Kup w sklepach","Acheter en boutique","Comprar en tiendas"],
+fromP:["from {0}","od {0}","ab {0}","od {0}","dès {0}","desde {0}"],
+shopMore:["+ {0} more shops","+ još {0} trgovina","+ {0} weitere Shops","+ {0} kolejnych sklepów","+ {0} autres boutiques","+ {0} tiendas más"],
+shopSrc:["Prices reported by players to UEX (via the Star Citizen Wiki), checked {0}. They can change with patches.","Cijene koje igrači prijavljuju na UEX (preko Star Citizen Wikija), provjereno {0}. Mogu se promijeniti s patchom.","Von Spielern an UEX gemeldete Preise (über das Star Citizen Wiki), geprüft {0}. Können sich mit Patches ändern.","Ceny zgłaszane przez graczy do UEX (przez Star Citizen Wiki), sprawdzone {0}. Mogą się zmienić z patchem.","Prix signalés par les joueurs à UEX (via le Star Citizen Wiki), vérifiés le {0}. Ils peuvent changer avec les patchs.","Precios informados por jugadores a UEX (vía la Star Citizen Wiki), comprobados {0}. Pueden cambiar con los parches."],
+lsPrice:["Shop price (aUEC)","Cijena u trgovini (aUEC)","Shoppreis (aUEC)","Cena w sklepie (aUEC)","Prix en boutique (aUEC)","Precio en tienda (aUEC)"],
+lsBtn:["LIST","POPIS","LISTE","LISTA","LISTE","LISTA"],
 lsT:["Export a list","Izvoz popisa","Liste exportieren","Eksport listy","Exporter une liste","Exportar una lista"],
 lsWhat:["Which","Što","Welche","Które","Lesquels","Cuáles"],
 lsFmt:["Format","Format","Format","Format","Format","Formato"],
@@ -1366,7 +1378,7 @@ function lsItems(){const L=LS.what==="view"?filtered():liveItems().filter(it=>LS
 function lsText(L){
   const who=ST.logAcct||activeName()||"",head=`${T("hdrBp")} – ${T("ls"+{view:"View",own:"Own",not:"Not",want:"Want",all:"All"}[LS.what])}${who?" – "+who:""} – ${(bnum(CAT.v)||{}).ver||CAT.v||""} – ${new Date().toLocaleDateString(LOC())}`;
   if(LS.fmt==="plain")return L.map(i=>i.n).join("\n");
-  if(LS.fmt==="csv"){const q=x=>'"'+String(x).replace(/"/g,'""')+'"';return [["Name","Category","Type",T("lsOwnCol")].map(q).join(";"),...L.map(i=>[i.n,CN(CBY[i.c].n),CN(i.s),isOwned(i)?"1":"0"].map(q).join(";"))].join("\r\n")}
+  if(LS.fmt==="csv"){const q=x=>'"'+String(x).replace(/"/g,'""')+'"';const pr=i=>{const x=SHOP.i&&SHOP.i[i.n];return x&&x.length?x[0][3]:""};return [["Name","Category","Type",T("lsOwnCol"),T("lsPrice")].map(q).join(";"),...L.map(i=>[i.n,CN(CBY[i.c].n),CN(i.s),isOwned(i)?"1":"0",pr(i)].map(q).join(";"))].join("\r\n")}
   const md=LS.fmt==="discord";let o=md?`**${head}**\n`:head+"\n"+"=".repeat(Math.min(60,head.length))+"\n",lc="",ls="";
   for(const i of L){if(i.c!==lc){o+=md?`\n__**${CN(CBY[i.c].n)}**__\n`:`\n${CN(CBY[i.c].n).toUpperCase()}\n`;lc=i.c;ls=""}
     if(i.s!==ls){o+=md?`*${CN(i.s)}*\n`:`  ${CN(i.s)}\n`;ls=i.s}
@@ -1671,7 +1683,7 @@ function renderDetail(){
     <div class="stats"><h3>${T("statsH")}</h3>${srows?`<table><tr><th>${T("attrH")}</th><th>${T("baseH")}</th><th>${T("enhH")}</th><th>${T("deltaH")}</th></tr>${srows}</table>`:`<div class="none">${T("noMods")}</div>`}
       <div class="hint" style="padding:4px 10px 8px">${T("statsHint")}</div></div>
     ${Object.keys(CREW).length?`<div class="sec"><h5>👥 ${T("crewSec")}</h5>${(()=>{const c=crewOf(it.n);return c.length?`<div class="crewhas">${c.map(k=>`<span class="pool">✓ ${esc(CREW[k].name)}</span>`).join("")}</div>`:`<div class="hint">${T("crewNobody")}</div>`})()}</div>`:""}
-    <div class="sec"><h5>${T("whereGet")}</h5>${pools}${own&&ST.owned[it.n]?`<div class="hint">${T("gotOn",new Date(ST.owned[it.n]).toLocaleDateString(LOC()))}</div>`:""}</div>
+    <div class="sec"><h5>${T("whereGet")}</h5>${pools}${own&&ST.owned[it.n]?`<div class="hint">${T("gotOn",new Date(ST.owned[it.n]).toLocaleDateString(LOC()))}</div>`:""}</div>${shopSec(it)}
     <div class="sec"><h5>${T("disRet")}</h5>${ret}</div>
     <div class="sec"><h5>${T("note")}</h5><textarea id="note" placeholder="${T("notePh")}">${esc(ST.notes[it.n]||"")}</textarea></div>
     <div class="foot">
