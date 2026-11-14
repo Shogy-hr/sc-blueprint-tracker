@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Where can an item be bought in game? (for the photo list: items still without a proper picture)
+"""Where can an item be bought in game, and for how much? Used by the photo list (items still without a
+proper picture), the kiosk (shop prices) and Label Forge (shop price in the in-game item info).
+All items of the game are asked about (UUIDs from tools/game/desckeys.json), a few hundred per run.
 Source: api.star-citizen.wiki (prices reported by the UEX community). Shop data is no longer in the
 game files, so this is community data. Cached in tools/shops/index.json; re-checked after RECHECK_DAYS.
 Run by update.py inside the GitHub Action (the sandbox/visitors never call it).
@@ -9,6 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = 'https://api.star-citizen.wiki/api/v2/items/'
 UA = 'SC-Blueprint-Tracker/1.0 (fan site shogy-hr.com; github.com/Shogy-hr/sc-blueprint-tracker)'
 RECHECK_DAYS = 7
+MAX_PER_RUN = 600          # ~11 min at 60 requests/minute; the Action runs every 6 h
 OUT = os.path.join(HERE, 'shops', 'index.json')
 
 
@@ -35,12 +38,17 @@ def main():
     limit = int(sys.argv[sys.argv.index('--limit') + 1]) if '--limit' in sys.argv else 10 ** 9
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     idx = json.load(open(OUT, encoding='utf-8')) if os.path.exists(OUT) else {}
-    now = int(time.time()); todo = []
-    for n, u in need_photo().items():
-        e = idx.get(u)
-        if not e or now - e.get('checked', 0) > RECHECK_DAYS * 86400: todo.append((n, u))
-    todo = todo[:limit]
-    print('shops: asking for', len(todo), 'items')
+    limit = min(limit, MAX_PER_RUN) if '--limit' not in sys.argv else limit
+    now = int(time.time()); want = dict((u, n) for n, u in need_photo().items())   # photo list first
+    dk = os.path.join(HERE, 'game', 'desckeys.json')
+    if os.path.exists(dk):
+        for nk, v in json.load(open(dk, encoding='utf-8')).items():
+            if len(v) > 2 and v[2] not in want and v[1] and not v[1].startswith(('<=', '@')): want.setdefault(v[2], v[1])
+    todo = [(n, u, idx.get(u, {}).get('checked', 0)) for u, n in want.items()
+            if not idx.get(u) or now - idx[u].get('checked', 0) > RECHECK_DAYS * 86400]
+    todo.sort(key=lambda x: x[2])                      # never asked first, then the oldest answers
+    print('shops:', len(todo), 'items due,', min(len(todo), limit), 'this run')
+    todo = [(n, u) for n, u, _ in todo[:limit]]
     ok = err = 0
     for i, (n, u) in enumerate(todo):
         try:

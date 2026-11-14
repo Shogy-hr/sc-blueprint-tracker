@@ -86,7 +86,7 @@ def main():
                     images(tmp, src); changed = True
             elif images_stale():   # e.g. new in-game shop pictures (tools/shop/)
                 images(tmp, src); changed = True
-            # where the items still without a proper picture are sold (for the photo list), cached weekly
+            # where items are sold and for how much (photo list, kiosk prices, Label Forge), all items, rechecked weekly
             if os.environ.get('SKIP_SHOPS') != '1':
                 r = subprocess.run([sys.executable, os.path.join(HERE, 'fetch_shops.py')], capture_output=True, text=True)
                 print(r.stdout.strip()[-1500:], r.stderr.strip()[-500:])
