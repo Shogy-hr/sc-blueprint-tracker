@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Pick an image for every blueprint and write tools/imgdata.json + ../blueprints/img/l-*.json.
 Sources, best first:
+  f  Fabrication Kiosk preview picture (screenshots by ShoGy, import_fab_images.py into tools/fab/)
   d  Datapad (jpcoombes-byte/Datapad): renders from the game files, matched by item UUID or exact name
   g  material + category icons from the game UI (tools/game_icons, see make.py)
   w  Star Citizen Wiki page image (downloaded by fetch_wiki_images.py into tools/wiki/)
@@ -47,7 +48,15 @@ if os.path.exists(wiki_idx):
             if os.path.exists(fs):
                 W[nk(name)] = ('w:' + e['f'], fs, fl if os.path.exists(fl) else fs)
 
-# ---- in-game shop pictures
+# ---- in-game pictures: fabricator (F, best) and shop terminals (S)
+def _load(sub, pre):
+    R, f = {}, os.path.join(HERE, sub, 'index.json')
+    if os.path.exists(f):
+        for name, e in json.load(open(f, encoding='utf-8')).items():
+            fs, fl = os.path.join(HERE, sub, 'img', e['f'] + '-s.webp'), os.path.join(HERE, sub, 'img', e['f'] + '-l.webp')
+            if os.path.exists(fs): R[nk(name)] = (pre + e['f'], fs, fl if os.path.exists(fl) else fs)
+    return R
+F = _load('fab', 'f:')
 S = {}
 _si = os.path.join(HERE, 'shop', 'index.json')
 if os.path.exists(_si):
@@ -68,6 +77,8 @@ info = {i[0]: {'u': i[11], 'gn': i[12] if len(i) > 12 else '', 'cat': (i[1], i[2
 
 def exact(name):
     e = info[name]
+    for cand in (name, e['gn']):
+        if cand and nk(cand) in F: return (F[nk(cand)][0], 'f')
     if e['u'] and e['u'] in D12: return ('d:' + D12[e['u']], 'd')
     for cand in (e['gn'], name):
         if cand and nk(cand) in dp_names: return ('d:' + dp_names[nk(cand)], 'd')
@@ -119,12 +130,14 @@ def data_uri(path):
 def small(key):
     if key.startswith('d:'): return DS[key[2:]]
     if key.startswith('s:'): return data_uri(next(v[1] for v in S.values() if v[0] == key))
+    if key.startswith('f:'): return data_uri(next(v[1] for v in F.values() if v[0] == key))
     return data_uri(next(v[1] for v in W.values() if v[0] == key))
 
 
 def large(key):
     if key.startswith('d:'): return DL.get(key[2:])
     if key.startswith('s:'): return data_uri(next(v[2] for v in S.values() if v[0] == key))
+    if key.startswith('f:'): return data_uri(next(v[2] for v in F.values() if v[0] == key))
     return data_uri(next(v[2] for v in W.values() if v[0] == key))
 
 
@@ -159,7 +172,7 @@ mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
 data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, cat.get('mats', {}))
 mats = data['mats']
 json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
-st = {'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
+st = {'fabricator': sum(1 for v in res.values() if v[2] == 'f' and not v[1]), 'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
       'shop': sum(1 for v in res.values() if v[2] == 's' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)

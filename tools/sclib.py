@@ -192,8 +192,11 @@ def wiki_sig(here):
     p = os.path.join(here, 'wiki', 'index.json'); sp = os.path.join(here, 'shop', 'index.json')
     d = json.load(open(p, encoding='utf-8')) if os.path.exists(p) else {}
     s = json.load(open(sp, encoding='utf-8')) if os.path.exists(sp) else {}   # in-game shop pictures count too
-    if not d and not s: return ''
+    fp = os.path.join(here, 'fab', 'index.json')
+    fb = json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else {}   # and fabricator pictures
+    if not d and not s and not fb: return ''
     sig = {k: v.get('f') for k, v in d.items()}; sig.update({'shop:' + k: (v.get('f'), v.get('sharp')) for k, v in s.items()})
+    sig.update({'fab:' + k: (v.get('f'), v.get('sharp')) for k, v in fb.items()})
     return hashlib.sha1(json.dumps(sig, sort_keys=True).encode()).hexdigest()[:12]
 
 
