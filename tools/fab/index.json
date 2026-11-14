@@ -138,10 +138,11 @@
 "src": "ScreenShot-2026-11-14_13-57-01-6E8.jpg"
 },
 "Bendix": {
+"ai": 1,
 "date": "2026-11-14",
 "f": "fa6c7b2bfb0df870",
 "manual": 1,
-"note": "upscaled by ShoGy",
+"note": "AI-upscaled by ShoGy from a tiny in-game render",
 "sharp": 1467.3,
 "src": "cf0bceb8-image.png"
 },
@@ -363,10 +364,11 @@
 "src": "ScreenShot-2026-11-14_14-03-25-242.jpg"
 },
 "Lindstrom": {
+"ai": 1,
 "date": "2026-11-14",
 "f": "f4ec741fe984ab0d",
 "manual": 1,
-"note": "upscaled by ShoGy",
+"note": "AI-upscaled by ShoGy from a tiny in-game render",
 "sharp": 1467.3,
 "src": "cf0bceb8-image.png"
 },
@@ -413,11 +415,13 @@
 "src": "ScreenShot-2026-11-14_13-59-55-C15.jpg"
 },
 "NDB-26 Repeater": {
+"ai": 1,
 "date": "2026-11-14",
 "f": "95141b4c462478c8",
 "manual": 1,
-"sharp": 180.8,
-"src": "e0190f34-image.png"
+"note": "AI-upscaled by ShoGy from a tiny in-game render",
+"sharp": 936.7,
+"src": "a9426834-image.png"
 },
 "NDB-28 Repeater": {
 "date": "2026-11-14",

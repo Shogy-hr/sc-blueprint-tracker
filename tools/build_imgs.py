@@ -54,7 +54,7 @@ def _load(sub, pre):
     if os.path.exists(f):
         for name, e in json.load(open(f, encoding='utf-8')).items():
             fs, fl = os.path.join(HERE, sub, 'img', e['f'] + '-s.webp'), os.path.join(HERE, sub, 'img', e['f'] + '-l.webp')
-            if os.path.exists(fs): R[nk(name)] = (pre + e['f'], fs, fl if os.path.exists(fl) else fs)
+            if os.path.exists(fs): R[nk(name)] = (pre + e['f'], fs, fl if os.path.exists(fl) else fs, e.get('ai'))
     return R
 F = _load('fab', 'f:')
 S = {}
@@ -78,7 +78,7 @@ info = {i[0]: {'u': i[11], 'gn': i[12] if len(i) > 12 else '', 'cat': (i[1], i[2
 def exact(name):
     e = info[name]
     for cand in (name, e['gn']):
-        if cand and nk(cand) in F: return (F[nk(cand)][0], 'f')
+        if cand and nk(cand) in F: return (F[nk(cand)][0], 'a' if F[nk(cand)][3] else 'f')
     if e['u'] and e['u'] in D12: return ('d:' + D12[e['u']], 'd')
     for cand in (e['gn'], name):
         if cand and nk(cand) in dp_names: return ('d:' + dp_names[nk(cand)], 'd')
@@ -172,7 +172,7 @@ mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
 data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE)}, cat.get('mats', {}))
 mats = data['mats']
 json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
-st = {'fabricator': sum(1 for v in res.values() if v[2] == 'f' and not v[1]), 'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
+st = {'fabricator': sum(1 for v in res.values() if v[2] in 'fa' and not v[1]), 'ai': sum(1 for v in res.values() if v[2] == 'a'), 'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
       'shop': sum(1 for v in res.values() if v[2] == 's' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)

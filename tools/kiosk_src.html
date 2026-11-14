@@ -122,6 +122,7 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .hero img{max-width:92%;max-height:260px;object-fit:contain;filter:drop-shadow(0 8px 14px #000b)}
 .hero .imgw{position:relative;display:inline-block;max-width:92%}
 .hero .imgw img{max-width:100%;display:block;margin:auto}
+.hero .aib{position:absolute;right:4px;bottom:4px;font-size:11px;letter-spacing:.08em;padding:1px 6px;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.55);color:#cfe;cursor:help}
 .hero .vr{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);white-space:nowrap;font:700 15px var(--ff);letter-spacing:.08em;color:#ffd593;background:#2a1c08e0;border:1px solid var(--amber);padding:5px 12px;box-shadow:0 4px 12px #000a;pointer-events:none}
 .tile .tmp{position:absolute;left:0;right:0;top:50px;font:700 9.5px/1.2 var(--ff);letter-spacing:.06em;color:#ffd593;background:#2a1c08d8;border-top:1px solid #ffb24a88;border-bottom:1px solid #ffb24a88;padding:1px 0;pointer-events:none}
 .instant{border:2px solid var(--amber);background:linear-gradient(#4a330c,#2e1f07);color:#ffd593;font:700 20px var(--ff);letter-spacing:.06em;padding:8px 22px}
@@ -690,6 +691,7 @@ noMatch:["No blueprints match these filters.","Nema blueprinta za ove filtere.",
 countLine:["{0} blueprints · you own {1}","{0} blueprinta · imaš {1}","{0} Blueprints · im Besitz {1}","{0} blueprintów · masz {1}","{0} blueprints · possédés {1}","{0} blueprints · tienes {1}"],
 credit:["Images: Datapad (jpcoombes-byte) and the Star Citizen Wiki, from the game files","Slike: Datapad (jpcoombes-byte) i Star Citizen Wiki, iz datoteka igre","Bilder: Datapad (jpcoombes-byte) und Star Citizen Wiki, aus den Spieldateien","Obrazy: Datapad (jpcoombes-byte) i Star Citizen Wiki, z plików gry","Images : Datapad (jpcoombes-byte) et Star Citizen Wiki, issues des fichiers du jeu","Imágenes: Datapad (jpcoombes-byte) y Star Citizen Wiki, de los archivos del juego"],
 tmpShort:["TEMPORARY IMAGE","PRIVREMENA SLIKA","VORLÄUFIGES BILD","OBRAZ TYMCZASOWY","IMAGE PROVISOIRE","IMAGEN TEMPORAL"],
+aiTitle:["AI-upscaled from a tiny in-game render – details may differ from the game","AI povećana slika iz vrlo sitnog prikaza u igri – detalji se mogu razlikovati od igre","Mit KI vergrößert aus einer winzigen Spielansicht – Details können abweichen","Powiększone przez AI z bardzo małego podglądu w grze – szczegóły mogą się różnić","Agrandie par IA à partir d'un minuscule rendu du jeu – les détails peuvent différer","Ampliada con IA a partir de una vista diminuta del juego: los detalles pueden diferir"],
 tmpTitle:["Temporary image – base model shown","Privremena slika – prikazan je osnovni model","Vorläufiges Bild – Basismodell gezeigt","Obraz tymczasowy – pokazany model bazowy","Image provisoire – modèle de base affiché","Imagen temporal: se muestra el modelo base"],
 tmpLong:["TEMPORARY IMAGE FOR VARIANT","PRIVREMENA SLIKA ZA VARIJANTU","VORLÄUFIGES BILD FÜR VARIANTE","OBRAZ TYMCZASOWY DLA WARIANTU","IMAGE PROVISOIRE POUR LA VARIANTE","IMAGEN TEMPORAL PARA LA VARIANTE"],
 mOre:["Ores & raw materials (SCU)","Rude i sirovine (SCU)","Erze & Rohstoffe (SCU)","Rudy i surowce (SCU)","Minerais et matières premières (SCU)","Minerales y materias primas (SCU)"],
@@ -1473,7 +1475,8 @@ function tilesHTML(L,selIdx){
 }
 /* category icon from the game UI (tools/game_icons) when an item has no picture; else the drawn icon */
 function noImg(it){const u=IMG.subs&&IMG.subs[it.c==="V"?"V":it.s];return u?`<span class="gic" style="--m:url(${u})"></span>`:ic(subIc(it))}
-function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt=""${m[1]?` title="${T("tmpTitle")}"`:""} loading="lazy">`:noImg(it)}
+const imgTitle=m=>m[1]?` title="${T("tmpTitle")}"`:m[3]==="a"?` title="${T("aiTitle")}"`:"";
+function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt=""${imgTitle(m)} loading="lazy">`:noImg(it)}
 function pagerHTML(page,pages,id){return `<div class="pager" id="${id}"><button data-p="first" ${page<=0?"disabled":""}>«</button><button data-p="prev" ${page<=0?"disabled":""}>‹</button><span>${pages?page+1:0}/${pages}</span><button data-p="next" ${page>=pages-1?"disabled":""}>›</button><button data-p="last" ${page>=pages-1?"disabled":""}>»</button></div>`}
 function bindPager(id,get,set,pages){$$(`#${id} button`).forEach(b=>b.onclick=()=>{const p=get();set({first:0,prev:p-1,next:p+1,last:pages-1}[b.dataset.p]);render()})}
 
@@ -1581,7 +1584,7 @@ function renderDetail(){
     ${slots}
    </div>
    <div class="info">
-    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt=""${imgOf(it)[1]?` title="${T("tmpTitle")}"`:""}></span>`:noImg(it)}</div>
+    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt=""${imgTitle(imgOf(it))}>${imgOf(it)[3]==="a"&&!imgOf(it)[1]?`<span class="aib" title="${T("aiTitle")}">AI</span>`:""}</span>`:noImg(it)}</div>
     <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CN(CBY[it.c].n))} → <b>${esc(CN(it.s))}</b> • ${T("tierL")} <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • ${T("gradeL")} ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
       <div class="ft">${T("fabTime")}<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
     ${ptuBox(it)}

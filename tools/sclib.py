@@ -196,7 +196,7 @@ def wiki_sig(here):
     fb = json.load(open(fp, encoding='utf-8')) if os.path.exists(fp) else {}   # and fabricator pictures
     if not d and not s and not fb: return ''
     sig = {k: v.get('f') for k, v in d.items()}; sig.update({'shop:' + k: (v.get('f'), v.get('sharp')) for k, v in s.items()})
-    sig.update({'fab:' + k: (v.get('f'), v.get('sharp')) for k, v in fb.items()})
+    sig.update({'fab:' + k: (v.get('f'), v.get('sharp'), v.get('ai'), v.get('src')) for k, v in fb.items()})
     return hashlib.sha1(json.dumps(sig, sort_keys=True).encode()).hexdigest()[:12]
 
 
