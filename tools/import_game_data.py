@@ -32,6 +32,9 @@ with tempfile.TemporaryDirectory() as t:
     comp = os.path.join(HERE, '..', 'blueprints', 'data', 'components.json')
     print(subprocess.run([sys.executable, os.path.join(HERE, 'dcb_components.py'), dcb, '-o', comp, '--version', f'{a.version}-{a.channel.upper()}.{build}'],
                          check=True, capture_output=True, text=True).stdout.strip())
+    # which description belongs to which item: shop prices in the in-game item info (Label Forge)
+    if ini: print(subprocess.run([sys.executable, os.path.join(HERE, 'dcb_desckeys.py'), dcb, ini, '-o', os.path.join(out, 'desckeys.json')],
+                                 check=True, capture_output=True, text=True).stdout.strip())
 ver = f'{a.version}-{a.channel.upper()}.{build}'
 open(os.path.join(out, 'version.txt'), 'w', encoding='utf-8').write(f'{ver}\n{date}\n')
 print('game data', ver, date)

@@ -117,6 +117,7 @@ def main():
         nv = json.load(open(os.path.join(HERE, 'catalog.json'), encoding='utf-8'))['v']
         s = re.sub(r'const VERSION = "[^"]*";', f'const VERSION = "bp-{nv}";', s); open(sw, 'w', encoding='utf-8').write(s)
     py('build_photo_list.py')
+    py('build_labels.py')   # Label Forge carries the shop prices
     py('check_versions.py')
     print('DONE', 'rebuilt' if changed else 'no data change')
 
