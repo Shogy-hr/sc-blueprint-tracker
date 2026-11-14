@@ -28,6 +28,10 @@ with tempfile.TemporaryDirectory() as t:
     args = [sys.executable, os.path.join(HERE, 'dcb_blueprints.py'), dcb] + ([ini] if ini else []) + ['-o', os.path.join(out, 'blueprints.json')]
     print(subprocess.run(args, check=True, capture_output=True, text=True).stdout.strip())
     if not ini: print('WARNING: no global.ini -> names are internal keys')
+    # component size/grade for the Label Forge page
+    comp = os.path.join(HERE, '..', 'blueprints', 'data', 'components.json')
+    print(subprocess.run([sys.executable, os.path.join(HERE, 'dcb_components.py'), dcb, '-o', comp, '--version', f'{a.version}-{a.channel.upper()}.{build}'],
+                         check=True, capture_output=True, text=True).stdout.strip())
 ver = f'{a.version}-{a.channel.upper()}.{build}'
 open(os.path.join(out, 'version.txt'), 'w', encoding='utf-8').write(f'{ver}\n{date}\n')
 print('game data', ver, date)

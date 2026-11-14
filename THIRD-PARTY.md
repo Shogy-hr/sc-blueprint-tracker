@@ -14,3 +14,11 @@ This is an unofficial fan site, not affiliated with the Cloud Imperium group of 
 
 **Privacy:** the site loads nothing from other servers and has no cookies, analytics or tracking (only the hosting provider, e.g. GitHub Pages, keeps its usual server logs).
 Each visitor’s profile is stored only in their own browser (localStorage). Game.log files are read locally in the browser and never uploaded.
+
+## Label Forge (labels/)
+
+- **StarStrings** by MrKraken (https://github.com/MrKraken/StarStrings) – not stored or redistributed here.
+  Only when a visitor clicks "Get newest StarStrings", their browser downloads the file directly from
+  raw.githubusercontent.com. Nothing is sent to GitHub except that normal download request.
+- Component size and grade (`blueprints/data/components.json`) are read from the game's own data (Game2.dcb)
+  with `tools/dcb_components.py`.

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Label Forge · ShoGy-HR · Star Citizen</title>
+<meta name="description" content="Update your Star Citizen global.ini to the new patch in one click: component labels (type, class, size, grade) and your ship names are detected and carried over. Runs in your browser.">
+<link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:500;src:url(../assets/fonts/rajdhani-500-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:500;src:url(../assets/fonts/rajdhani-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:600;src:url(../assets/fonts/rajdhani-600-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:600;src:url(../assets/fonts/rajdhani-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:700;src:url(../assets/fonts/rajdhani-700-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Rajdhani';font-style:normal;font-display:swap;font-weight:700;src:url(../assets/fonts/rajdhani-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--ff:Rajdhani,"Barlow Semi Condensed","Arial Narrow",system-ui,sans-serif;--tx:#d5ece8;--dim:#7fa7a2;--mut:#55807b;--line:#24504c;--gold:#e2cf78;--ok:#79e0b4}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(ellipse at 50% 35%,#3a2418 0,#1b110c 55%,#0c0806 100%);color:var(--tx);font:500 16px/1.35 var(--ff);min-height:100vh;display:flex;flex-direction:column;padding:14px}
+.frame{flex:1;max-width:1100px;width:100%;margin:0 auto;border:1px solid #0f2322;border-radius:10px;background:radial-gradient(ellipse at 50% 0%,#174745 0,#0c2a29 45%,#081d1d 100%);box-shadow:0 0 0 6px #1b1c1d,0 0 0 8px #2b2c2d,0 20px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;padding:18px 22px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-bottom:1px solid #0a1716;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-img{width:60px;height:60px;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))}
+.logo b{display:block;font:700 30px/1 var(--ff);letter-spacing:.04em;color:#f1fbf9}
+.logo small{display:block;font:600 14px/1.2 var(--ff);letter-spacing:.14em;color:var(--dim);text-transform:uppercase;margin-top:3px}
+.sp{flex:1}
+.flags{display:flex;gap:6px;flex-wrap:wrap}
+.flags button{border:1px solid #2b5550;background:#132f2e;border-radius:4px;padding:5px;cursor:pointer;line-height:0}
+.flags button.on{border-color:var(--gold);background:#2a2d14}
+.flags svg{width:26px;height:17px;display:block;border-radius:2px}.flags svg.fhr{width:34px}
+.hnote{flex-basis:100%;font-size:12.5px;opacity:.8}
+footer a{color:inherit;text-decoration:underline;text-underline-offset:2px;opacity:.9}footer a:hover{opacity:1;color:#fff}
+footer{border-top:1px solid #0a1716;padding-top:12px;font-size:13.5px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+footer b{color:var(--dim);font-weight:600}
+@media (max-width:760px){body{padding:6px}.frame{padding:12px;box-shadow:0 0 0 3px #1b1c1d}.logo b{font-size:24px}.logo-img{width:50px;height:50px}.sp{display:none}.hello h1{font-size:24px}.vt td:nth-child(4){display:none}}
+main{padding:20px 0;display:block}
+.hello{text-align:center;margin:0 0 18px}
+.hello h1{font:700 32px/1.1 var(--ff);letter-spacing:.06em;margin:0;color:#f1fbf9;text-transform:uppercase}
+.hello p{margin:8px auto 0;color:var(--dim);font-size:17px;max-width:760px}
+.back{display:inline-block;margin:0 0 10px;color:var(--dim);text-decoration:none;font:600 14px var(--ff);letter-spacing:.08em}.back:hover{color:#fff}
+.step{border:1px solid #23504b;background:#0b2424cc;border-radius:6px;padding:14px 16px;margin:0 0 14px}
+.step h2{margin:0 0 8px;font:700 19px/1.2 var(--ff);letter-spacing:.08em;text-transform:uppercase;color:#f1fbf9;display:flex;align-items:center;gap:10px}
+.step h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#123b38;border:1px solid #2f6b65;color:var(--gold);font-size:16px}
+.step h2 .st{margin-left:auto;font:600 14px var(--ff);letter-spacing:.04em;text-transform:none;color:var(--ok)}
+.step p,.hint{color:var(--dim);margin:4px 0}.hint{font-size:14px}
+.drop{border:2px dashed #2f6b65;border-radius:6px;padding:16px;text-align:center;color:var(--dim);cursor:pointer;transition:background .2s}
+.drop:hover,.drop.hov{background:#123634;color:#fff}
+.btn{font:700 15px var(--ff);letter-spacing:.06em;text-transform:uppercase;border:1px solid #2f6b65;background:#133a37;color:#e7f6f3;padding:8px 14px;border-radius:4px;cursor:pointer}
+.btn:hover{border-color:var(--gold)}.btn.pri{background:#3a3514;border-color:#8c7a2d;color:#ffe9a0}.btn:disabled{opacity:.45;cursor:default}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}
+.ok{color:var(--ok)}.warn{color:#ffb24a}.err{color:#ff8c7a}
+/* template editor */
+.tpl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:10px;background:#081d1d;border:1px solid #1d4440;border-radius:5px;min-height:52px}
+.tok{display:inline-flex;align-items:center;gap:4px;padding:3px 4px 3px 8px;border-radius:4px;background:#173f3c;border:1px solid #2f6b65;font:600 15px var(--ff)}
+.tok.lit{background:#2a2a1c;border-color:#6b6232}
+.tok select,.tok input{font:600 15px var(--ff);background:#0b2424;color:#e7f6f3;border:1px solid #2f6b65;border-radius:3px;padding:2px 4px}
+.tok input{width:4.2em}
+.tok button{background:none;border:0;color:#9cc3bd;cursor:pointer;font-size:15px;padding:0 4px}.tok button:hover{color:#fff}
+.addt{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.addt .btn{font-size:13px;padding:5px 9px}
+.prev{margin-top:10px;display:grid;grid-template-columns:auto 1fr;gap:3px 14px;font-size:15px}
+.prev .k{color:var(--mut)}.prev .v{color:#f1fbf9;font-family:ui-monospace,Consolas,monospace;font-size:14px}
+/* vehicles */
+.vt{width:100%;border-collapse:collapse;font-size:15px}
+.vt td{padding:5px 6px;border-bottom:1px solid #1b3a37;vertical-align:middle}
+.vt input{font:600 15px var(--ff);background:#081d1d;color:#e7f6f3;border:1px solid #2f6b65;border-radius:3px;padding:3px 6px;width:6em}
+.vt .nm{color:#f1fbf9}.vt .res{color:var(--dim);font-family:ui-monospace,Consolas,monospace;font-size:13px}
+.vt button{background:#133a37;border:1px solid #2f6b65;color:#cfe;border-radius:3px;cursor:pointer;padding:1px 7px}
+.vsearch{position:relative}.vsearch input{font:600 15px var(--ff);background:#081d1d;color:#e7f6f3;border:1px solid #2f6b65;border-radius:4px;padding:7px 10px;width:min(420px,100%)}
+.vres{position:absolute;z-index:5;left:0;top:100%;width:min(420px,100%);max-height:260px;overflow:auto;background:#0b2424;border:1px solid #2f6b65;border-radius:0 0 4px 4px}
+.vres div{padding:6px 10px;cursor:pointer}.vres div:hover{background:#173f3c}
+.big{font-size:18px;padding:12px 22px}
+.how{margin:8px 0 0;padding-left:20px;color:var(--dim)}.how code{color:#f1fbf9;background:#081d1d;padding:1px 5px;border-radius:3px;font-size:14px;word-break:break-all}
+.priv{font-size:13.5px;color:var(--mut);text-align:center;margin:6px 0 0}
+</style>
+</head>
+<body>
+<div class="frame">
+ <header>
+  <div class="logo">
+   <img class="logo-img" src="../assets/logo-96.webp" srcset="../assets/logo-96.webp 1x, ../assets/logo-192.webp 2x" width="60" height="60" alt="ShoGy_HR">
+   <div><b>ShoGy-HR</b><small>Label Forge</small></div>
+  </div>
+  <span class="sp"></span>
+  <div class="flags" id="flags"></div>
+ </header>
+ <main>
+  <a class="back" href="../">‹ shogy-hr.com</a>
+  <div class="hello"><h1 data-t="h1"></h1><p data-t="lead"></p></div>
+
+  <section class="step" id="s1">
+   <h2><span class="n">1</span><span data-t="s1"></span><span class="st" id="s1st"></span></h2>
+   <p data-t="s1d"></p>
+   <div class="drop" id="dropOld"><b data-t="dropOld"></b><div class="hint" data-t="pathHint"></div></div>
+   <input type="file" id="fOld" accept=".ini,text/plain" hidden>
+   <div class="row"><button class="btn" id="bFresh" data-t="fresh"></button><button class="btn" id="bLoadCfg" data-t="loadCfg"></button><input type="file" id="fCfg" accept=".json" hidden></div>
+   <div id="detect"></div>
+  </section>
+
+  <section class="step" id="s2">
+   <h2><span class="n">2</span><span data-t="s2"></span><span class="st" id="s2st"></span></h2>
+   <p data-t="s2d"></p>
+   <div class="row"><button class="btn pri" id="bSS" data-t="getSS"></button><button class="btn" id="bOwnBase" data-t="ownBase"></button><input type="file" id="fBase" accept=".ini,text/plain" hidden></div>
+   <p class="hint" data-t="ssNote"></p>
+   <div id="baseInfo"></div>
+  </section>
+
+  <section class="step" id="s3">
+   <h2><span class="n">3</span><span data-t="s3"></span></h2>
+   <p data-t="s3d"></p>
+   <div class="row"><span class="hint" data-t="presets"></span><button class="btn" data-p="ud">COOL -MIL -1-A -Name</button><button class="btn" data-p="ss">Mil/1/A Name</button><button class="btn" data-p="br">[1A Mil] Name</button><button class="btn" data-p="off" data-t="off"></button></div>
+   <div class="tpl" id="tpl"></div>
+   <div class="addt" id="addt"></div>
+   <div class="prev" id="prev"></div>
+  </section>
+
+  <section class="step" id="s4">
+   <h2><span class="n">4</span><span data-t="s4"></span></h2>
+   <p data-t="s4d"></p>
+   <div class="vsearch"><input id="vq" type="search" autocomplete="off"><div class="vres" id="vres" hidden></div></div>
+   <table class="vt" id="vt"></table>
+   <div class="row"><button class="btn" id="bNum" data-t="renum"></button></div>
+  </section>
+
+  <section class="step" id="s5">
+   <h2><span class="n">5</span><span data-t="s5"></span></h2>
+   <div class="row"><button class="btn pri big" id="bGo" data-t="make" disabled></button><button class="btn" id="bSaveCfg" data-t="saveCfg"></button></div>
+   <div id="out"></div>
+   <ol class="how"><li data-t="h1i"></li><li><span data-t="h2i"></span> <code>…\StarCitizen\LIVE\data\Localization\english\global.ini</code></li><li><span data-t="h3i"></span> <code>…\StarCitizen\LIVE\user.cfg</code>: <code>g_language = english</code></li></ol>
+  </section>
+  <p class="priv" data-t="priv2"></p>
+ </main>
+ <footer>
+  <span data-t="fan"></span>
+  <span><b>ShoGy-HR</b> · <a href="https://github.com/Shogy-hr/sc-blueprint-tracker" target="_blank" rel="noopener noreferrer">Source code (GPL-3.0)</a></span>
+ </footer>
+</div>
+<script>
+var FLAGS={
+ en:'<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#C8102E" stroke-width="3"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="12"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="7"/></svg>',
+ hr:'<svg class="fhr" viewBox="0 0 1200 600"><rect width="1200" height="200" fill="#FF0000"/><rect y="200" width="1200" height="200" fill="#FFFFFF"/><rect y="400" width="1200" height="200" fill="#171796"/><defs><clipPath id="hrsh"><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z"/></clipPath></defs><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z" fill="#fff"/><g clip-path="url(#hrsh)" fill="#FF0000"><path d="M475 170h50v50h-50zM575 170h50v50h-50zM675 170h50v50h-50zM525 220h50v50h-50zM625 220h50v50h-50zM475 270h50v50h-50zM575 270h50v50h-50zM675 270h50v50h-50zM525 320h50v50h-50zM625 320h50v50h-50zM475 370h50v50h-50zM575 370h50v50h-50zM675 370h50v50h-50z"/></g><path d="M475 170H725V330C725 388 668 414 600 424C532 414 475 388 475 330Z" fill="none" stroke="#FF0000" stroke-width="7"/><g stroke="#FF0000" stroke-width="4" stroke-linejoin="round"><path d="M477 170V117L502 104L525 114V170Z" fill="#0093DD"/><path d="M525 170V108L550 94L575 106V170Z" fill="#0093DD"/><path d="M575 170V102L600 88L625 102V170Z" fill="#0093DD"/><path d="M625 170V106L650 94L675 108V170Z" fill="#0093DD"/><path d="M675 170V114L698 104L723 117V170Z" fill="#0093DD"/></g><path d="M501 121l3 7 7-3-4 7 7 3-7 2 2 7-6-4-5 6-1-7-7-1 6-4-4-6 7 2z" fill="#F7DB17"/><path d="M490 150a13 9 0 0 0 24 0a12 6 0 0 1-24 0z" fill="#fff"/><path d="M528 122h44v11h-44zM528 146h44v11h-44z" fill="#FF0000"/><g fill="#F7DB17"><circle cx="590" cy="118" r="7"/><circle cx="610" cy="118" r="7"/><circle cx="600" cy="145" r="7"/></g><path d="M636 154l4-14 8-6 4-10 4 2-2 8 8 3 6 9-3 8h-4l-3-7-8 1-5 9z" fill="#F7DB17"/><path d="M675 128h48v9h-48zM675 152h48v9h-48z" fill="#fff"/><path d="M675 137h48v15h-48z" fill="#FF0000"/><path d="M699 110l2 5 5-1-3 4 3 4-5-1-2 5-2-5-5 1 3-4-3-4 5 1z" fill="#F7DB17"/></svg>',
+ de:'<svg viewBox="0 0 60 40"><rect width="60" height="13.4" fill="#000"/><rect y="13.3" width="60" height="13.4" fill="#DD0000"/><rect y="26.6" width="60" height="13.4" fill="#FFCE00"/></svg>',
+ pl:'<svg viewBox="0 0 60 40"><rect width="60" height="20" fill="#fff"/><rect y="20" width="60" height="20" fill="#DC143C"/></svg>',
+ fr:'<svg viewBox="0 0 60 40"><rect width="20" height="40" fill="#0055A4"/><rect x="20" width="20" height="40" fill="#fff"/><rect x="40" width="20" height="40" fill="#EF4135"/></svg>',
+ es:'<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#AA151B"/><rect y="10" width="60" height="20" fill="#F1BF00"/></svg>'};
+var LANGS=["en","hr","de","pl","fr","es"],NAMES={en:"English",hr:"Hrvatski",de:"Deutsch",pl:"Polski",fr:"Français",es:"Español"};
+var LANG="en";try{var sl=localStorage.getItem("scbp-lang");if(sl&&LANGS.indexOf(sl)>=0)LANG=sl}catch(e){}
+const TX={
+h1:["Label Forge","Label Forge","Label Forge","Label Forge","Label Forge","Label Forge"],
+lead:["Update your global.ini to the new patch in one go. Drop in your old file: the tool recognises your component labels and ship names and rebuilds them on the newest base file.","Ažuriraj svoj global.ini na novi patch u jednom koraku. Ubaci stari file: alat prepozna tvoje oznake komponenti i imena brodova i složi ih na najnoviju osnovu.","Bring deine global.ini in einem Schritt auf den neuen Patch. Lade deine alte Datei: das Tool erkennt deine Komponenten-Labels und Schiffsnamen und baut sie auf der neuesten Basis neu auf.","Zaktualizuj global.ini do nowego patcha za jednym razem. Wrzuć stary plik: narzędzie rozpozna etykiety komponentów i nazwy statków i odtworzy je na najnowszej bazie.","Mets ton global.ini à jour pour le nouveau patch en une fois. Dépose ton ancien fichier : l’outil reconnaît tes étiquettes de composants et noms de vaisseaux et les reconstruit sur la base la plus récente.","Actualiza tu global.ini al nuevo parche de una vez. Suelta tu archivo antiguo: la herramienta reconoce tus etiquetas de componentes y nombres de naves y las reconstruye sobre la base más reciente."],
+s1:["Your current global.ini","Tvoj trenutni global.ini","Deine aktuelle global.ini","Twój obecny global.ini","Ton global.ini actuel","Tu global.ini actual"],
+s1d:["Optional – the tool reads your label format and ship names from it. No file? Start fresh below.","Nije obavezno – alat iz njega pročita format oznaka i imena brodova. Nemaš file? Kreni od nule.","Optional – das Tool liest daraus dein Label-Format und deine Schiffsnamen. Keine Datei? Unten neu beginnen.","Opcjonalnie – narzędzie odczyta z niego format etykiet i nazwy statków. Brak pliku? Zacznij od zera.","Facultatif – l’outil y lit ton format d’étiquettes et tes noms de vaisseaux. Pas de fichier ? Commence de zéro.","Opcional: la herramienta lee de él tu formato de etiquetas y nombres de naves. ¿Sin archivo? Empieza de cero."],
+dropOld:["Drop your global.ini here or click to choose","Ubaci svoj global.ini ovdje ili klikni za odabir","global.ini hier ablegen oder klicken","Upuść tu global.ini lub kliknij, aby wybrać","Dépose ton global.ini ici ou clique pour choisir","Suelta aquí tu global.ini o haz clic para elegir"],
+pathHint:["…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini","…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini","…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini","…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini","…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini","…\\StarCitizen\\LIVE\\data\\Localization\\english\\global.ini"],
+fresh:["Start fresh","Kreni od nule","Neu beginnen","Zacznij od zera","Commencer de zéro","Empezar de cero"],
+loadCfg:["Load saved settings","Učitaj spremljene postavke","Gespeicherte Einstellungen laden","Wczytaj zapisane ustawienia","Charger des réglages","Cargar ajustes guardados"],
+saveCfg:["Save settings (.json)","Spremi postavke (.json)","Einstellungen speichern (.json)","Zapisz ustawienia (.json)","Enregistrer les réglages (.json)","Guardar ajustes (.json)"],
+detOk:["Recognised: label format matches {0} of {1} components · {2} ship names","Prepoznato: format oznaka odgovara za {0} od {1} komponenti · {2} imena brodova","Erkannt: Label-Format passt bei {0} von {1} Komponenten · {2} Schiffsnamen","Rozpoznano: format etykiet pasuje do {0} z {1} komponentów · {2} nazw statków","Reconnu : le format correspond à {0} sur {1} composants · {2} noms de vaisseaux","Reconocido: el formato coincide en {0} de {1} componentes · {2} nombres de naves"],
+detNone:["No component labels found in this file – pick a format in step 3. Ship names found: {0}.","U ovom fileu nema oznaka komponenti – odaberi format u koraku 3. Pronađena imena brodova: {0}.","Keine Komponenten-Labels gefunden – wähle in Schritt 3 ein Format. Gefundene Schiffsnamen: {0}.","Brak etykiet komponentów – wybierz format w kroku 3. Znalezione nazwy statków: {0}.","Aucune étiquette de composant – choisis un format à l’étape 3. Noms de vaisseaux trouvés : {0}.","No hay etiquetas de componentes: elige un formato en el paso 3. Nombres de naves encontrados: {0}."],
+detSS:["Base looks like StarStrings – step 2 suggests the newest StarStrings.","Osnova izgleda kao StarStrings – u koraku 2 uzmi najnoviji StarStrings.","Basis sieht nach StarStrings aus – nimm in Schritt 2 das neueste StarStrings.","Baza wygląda na StarStrings – w kroku 2 pobierz najnowszy StarStrings.","La base ressemble à StarStrings – prends le StarStrings le plus récent à l’étape 2.","La base parece StarStrings: en el paso 2 usa el StarStrings más reciente."],
+s2:["New base file","Nova osnova","Neue Basisdatei","Nowy plik bazowy","Nouveau fichier de base","Nuevo archivo base"],
+s2d:["The up-to-date global.ini for the current patch that your labels are put on.","Aktualni global.ini za trenutni patch na koji se stavljaju tvoje oznake.","Die aktuelle global.ini für den laufenden Patch, auf die deine Labels kommen.","Aktualny global.ini dla bieżącego patcha, na który trafią twoje etykiety.","Le global.ini à jour pour le patch actuel, sur lequel tes étiquettes sont posées.","El global.ini actualizado del parche actual sobre el que se ponen tus etiquetas."],
+getSS:["Get newest StarStrings","Preuzmi najnoviji StarStrings","Neuestes StarStrings holen","Pobierz najnowszy StarStrings","Récupérer le dernier StarStrings","Obtener el StarStrings más reciente"],
+ownBase:["Use my own base file","Koristi svoju osnovu","Eigene Basisdatei","Użyj własnej bazy","Utiliser mon fichier","Usar mi propio archivo"],
+ssNote:["StarStrings by MrKraken (contract info, [BP] tags…) is downloaded by your browser straight from github.com when you click – nothing is sent there. For the plain game text, use the game’s own global.ini as your base.","StarStrings (MrKraken – info o ugovorima, oznake [BP]…) tvoj preglednik preuzima izravno s github.com kad klikneš – ništa se tamo ne šalje. Za čisti tekst iz igre koristi originalni global.ini iz igre kao osnovu.","StarStrings von MrKraken (Auftragsinfos, [BP]-Tags…) lädt dein Browser beim Klick direkt von github.com – es wird nichts gesendet. Für den reinen Spieltext nimm die originale global.ini als Basis.","StarStrings (MrKraken – info o kontraktach, tagi [BP]…) przeglądarka pobiera po kliknięciu prosto z github.com – nic nie jest wysyłane. Dla czystego tekstu gry użyj oryginalnego global.ini jako bazy.","StarStrings de MrKraken (infos de contrats, tags [BP]…) est téléchargé par ton navigateur directement depuis github.com au clic – rien n’y est envoyé. Pour le texte du jeu pur, utilise le global.ini d’origine comme base.","StarStrings de MrKraken (info de contratos, etiquetas [BP]…) lo descarga tu navegador directamente de github.com al hacer clic; no se envía nada. Para el texto original del juego, usa su global.ini como base."],
+loading:["Downloading…","Preuzimam…","Lade…","Pobieranie…","Téléchargement…","Descargando…"],
+baseOk:["{0} · {1} lines","{0} · {1} redaka","{0} · {1} Zeilen","{0} · {1} wierszy","{0} · {1} lignes","{0} · {1} líneas"],
+baseErr:["Could not load the base file: {0}","Nije uspjelo učitavanje osnove: {0}","Basisdatei konnte nicht geladen werden: {0}","Nie udało się wczytać bazy: {0}","Impossible de charger la base : {0}","No se pudo cargar la base: {0}"],
+s3:["Component labels","Oznake komponenti","Komponenten-Labels","Etykiety komponentów","Étiquettes de composants","Etiquetas de componentes"],
+s3d:["Coolers, power plants, shields, quantum drives and radars. Size and grade come from the game data of the current patch.","Hladnjaci, power plantovi, štitovi, quantum drive i radari. Veličina i klasa dolaze iz podataka igre za trenutni patch.","Kühler, Kraftwerke, Schilde, Quantenantriebe und Radare. Größe und Klasse stammen aus den Spieldaten des aktuellen Patches.","Chłodnice, elektrownie, osłony, napędy kwantowe i radary. Rozmiar i klasa pochodzą z danych gry bieżącego patcha.","Refroidisseurs, générateurs, boucliers, propulseurs quantiques et radars. Taille et grade viennent des données du patch actuel.","Refrigeradores, plantas de energía, escudos, motores cuánticos y radares. Tamaño y grado salen de los datos del parche actual."],
+presets:["Presets:","Predlošci:","Vorlagen:","Szablony:","Modèles :","Plantillas:"],
+off:["No labels","Bez oznaka","Keine Labels","Bez etykiet","Sans étiquettes","Sin etiquetas"],
+addTok:["Add:","Dodaj:","Hinzufügen:","Dodaj:","Ajouter :","Añadir:"],
+tType:["Type","Tip","Typ","Typ","Type","Tipo"],tClass:["Class","Klasa","Klasse","Klasa","Classe","Clase"],tSize:["Size","Veličina","Größe","Rozmiar","Taille","Tamaño"],tGrade:["Grade","Razred","Grad","Klasa jakości","Grade","Grado"],tName:["Name","Ime","Name","Nazwa","Nom","Nombre"],tText:["Text","Tekst","Text","Tekst","Texte","Texto"],
+stCode:["code (COOL / MIL)","kod (COOL / MIL)","Code (COOL / MIL)","kod (COOL / MIL)","code (COOL / MIL)","código (COOL / MIL)"],stLong:["full (Cooler / Military)","puno (Cooler / Military)","voll (Cooler / Military)","pełna (Cooler / Military)","complet (Cooler / Military)","completo (Cooler / Military)"],stShort:["short (Cool / Mil)","kratko (Cool / Mil)","kurz (Cool / Mil)","krótka (Cool / Mil)","court (Cool / Mil)","corto (Cool / Mil)"],stLetter:["letter (C / M)","slovo (C / M)","Buchstabe (C / M)","litera (C / M)","lettre (C / M)","letra (C / M)"],
+s4:["Ship names","Imena brodova","Schiffsnamen","Nazwy statków","Noms de vaisseaux","Nombres de naves"],
+s4d:["Add text before or after a ship’s name, e.g. numbers so your favourites are on top of every list.","Dodaj tekst ispred ili iza imena broda, npr. brojeve da ti omiljeni brodovi budu na vrhu svake liste.","Text vor oder nach dem Schiffsnamen, z. B. Nummern, damit deine Favoriten oben in jeder Liste stehen.","Dodaj tekst przed lub po nazwie statku, np. numery, by ulubione były na górze każdej listy.","Ajoute du texte avant ou après le nom, p. ex. des numéros pour que tes favoris soient en haut de chaque liste.","Añade texto antes o después del nombre, p. ej. números para que tus favoritas salgan arriba en cada lista."],
+vq:["Add a ship…","Dodaj brod…","Schiff hinzufügen…","Dodaj statek…","Ajouter un vaisseau…","Añadir nave…"],
+before:["before","ispred","davor","przed","avant","antes"],after:["after","iza","danach","po","après","después"],
+renum:["Number 1., 2., 3. …","Numeriraj 1., 2., 3. …","Nummerieren 1., 2., 3. …","Numeruj 1., 2., 3. …","Numéroter 1., 2., 3. …","Numerar 1., 2., 3. …"],
+s5:["Create the new global.ini","Napravi novi global.ini","Neue global.ini erstellen","Utwórz nowy global.ini","Créer le nouveau global.ini","Crear el nuevo global.ini"],
+make:["⬇ Download global.ini","⬇ Preuzmi global.ini","⬇ global.ini herunterladen","⬇ Pobierz global.ini","⬇ Télécharger global.ini","⬇ Descargar global.ini"],
+needBase:["Load a base file in step 2 first.","Prvo učitaj osnovu u koraku 2.","Lade zuerst in Schritt 2 eine Basisdatei.","Najpierw wczytaj bazę w kroku 2.","Charge d’abord une base à l’étape 2.","Primero carga una base en el paso 2."],
+done:["Done: {0} component labels, {1} ship names.","Gotovo: {0} oznaka komponenti, {1} imena brodova.","Fertig: {0} Komponenten-Labels, {1} Schiffsnamen.","Gotowe: {0} etykiet komponentów, {1} nazw statków.","Terminé : {0} étiquettes, {1} noms de vaisseaux.","Listo: {0} etiquetas, {1} nombres de naves."],
+h1i:["Close the game.","Zatvori igru.","Spiel schließen.","Zamknij grę.","Ferme le jeu.","Cierra el juego."],
+h2i:["Put the downloaded file here (replace the old one):","Stavi preuzeti file ovdje (zamijeni stari):","Lege die Datei hier ab (alte ersetzen):","Umieść pobrany plik tutaj (zastąp stary):","Place le fichier ici (remplace l’ancien) :","Pon el archivo aquí (sustituye el antiguo):"],
+h3i:["Only the first time – make sure this line is in","Samo prvi put – provjeri da je ova linija u","Nur beim ersten Mal – diese Zeile muss stehen in","Tylko za pierwszym razem – ta linia musi być w","Seulement la première fois – cette ligne doit être dans","Solo la primera vez: esta línea debe estar en"],
+priv2:["Everything happens in your browser – your files are never uploaded. Unofficial fan tool, not affiliated with Cloud Imperium Games.","Sve se događa u tvom pregledniku – tvoje datoteke se nikamo ne šalju. Neslužbeni fan alat, nije povezan s Cloud Imperium Games.","Alles passiert in deinem Browser – deine Dateien werden nie hochgeladen. Inoffizielles Fan-Tool, nicht mit Cloud Imperium Games verbunden.","Wszystko dzieje się w przeglądarce – pliki nigdy nie są wysyłane. Nieoficjalne narzędzie fanowskie, niezwiązane z Cloud Imperium Games.","Tout se passe dans ton navigateur – tes fichiers ne sont jamais envoyés. Outil de fan non officiel, non affilié à Cloud Imperium Games.","Todo ocurre en tu navegador: tus archivos nunca se suben. Herramienta no oficial de fans, sin relación con Cloud Imperium Games."],
+fan:["Unofficial Star Citizen fan site · not affiliated with Cloud Imperium Games.","Neslužbena Star Citizen fan stranica · nije povezana s Cloud Imperium Games.","Inoffizielle Star-Citizen-Fanseite · nicht mit Cloud Imperium Games verbunden.","Nieoficjalna strona fanów Star Citizen · niezwiązana z Cloud Imperium Games.","Site de fans non officiel de Star Citizen · non affilié à Cloud Imperium Games.","Sitio de fans no oficial de Star Citizen · sin relación con Cloud Imperium Games."],
+notIni:["This does not look like a global.ini.","Ovo ne izgleda kao global.ini.","Das sieht nicht nach einer global.ini aus.","To nie wygląda na global.ini.","Cela ne ressemble pas à un global.ini.","Esto no parece un global.ini."],
+compD:["Data: {0} components from patch {1}","Podaci: {0} komponenti iz patcha {1}","Daten: {0} Komponenten aus Patch {1}","Dane: {0} komponentów z patcha {1}","Données : {0} composants du patch {1}","Datos: {0} componentes del parche {1}"]
+};
+const t=(k,...a)=>{const r=TX[k];let s=r?(r[LANGS.indexOf(LANG)]||r[0]):k;a.forEach((v,i)=>{s=s.split("{"+i+"}").join(v)});return s};
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------------- data ---------------- */
+const TYPES={COOL:["COOL","Cooler","Cool","C"],POWR:["POWR","Power Plant","Powr","P"],SHLD:["SHLD","Shield Generator","Shld","S"],QDRV:["QDRV","Quantum Drive","Qdrv","Q"],RADR:["RADR","Radar","Radr","R"]};
+const CLASSES={MIL:["MIL","Military","Mil","M"],CIV:["CIV","Civilian","Civ","C"],IND:["IND","Industrial","Ind","I"],STL:["STL","Stealth","Sth","S"],CMP:["CMP","Competition","Cmp","X"]};
+const STYLE={code:0,long:1,short:2,letter:3};
+const SSTAG=/^(Mil|Civ|Ind|Sth|Stl|Cmp)\/(\d+|-)?\/([A-Z\-])? /;
+const CLSWORD={military:"MIL",civilian:"CIV",industrial:"IND",stealth:"STL",competition:"CMP"};
+const SSCLS={Mil:"MIL",Civ:"CIV",Ind:"IND",Sth:"STL",Stl:"STL",Cmp:"CMP"};
+let COMP={},COMPV="";         // lower-case loc key -> [type,size,grade]
+let OLD=null,BASE=null,BASEN="";   // {map:Map(lowerKey->[key,value]), text}
+let TPL=[],VEH=[];            // template tokens; [{k:key,pre,suf}]
+const LSK="scbp-labels-v1";
+
+function parseIni(text){const map=new Map();let n=0;
+  for(const line of text.split(/\r?\n/)){const i=line.indexOf("=");if(i<=0)continue;const k=line.slice(0,i).replace(/^﻿/,"");map.set(k.toLowerCase(),[k,line.slice(i+1)]);n++}
+  return {map,text,n}}
+const val=(ini,k)=>{const e=ini&&ini.map.get(k.toLowerCase());return e?e[1]:null};
+function plainName(v){return String(v||"").replace(SSTAG,"")}
+/* the facts for one component, taken from the game data + a base/user file */
+const KEYTYPE=[["COOL","COOL"],["POWR","POWR"],["SHLD","SHLD"],["QDRV","QDRV"],["QRDV","QDRV"],["RADR","RADR"]];
+const DESCTYPE={"cooler":"COOL","power plant":"POWR","shield generator":"SHLD","quantum drive":"QDRV","radar":"RADR"};
+function keyType(k,ini){const d=val(ini,"item_Desc"+k.slice(9))||"";const m=/Item Type:\s*([^\\\n]+)/.exec(d);
+  if(m)return DESCTYPE[m[1].trim().toLowerCase()]||null;const u=k.toUpperCase();for(const [a,b] of KEYTYPE)if(u.includes(a))return b;return null}
+/* the facts for one component: game data first, otherwise the StarStrings tag in the file */
+function item(k,ini){
+  const v=val(ini,k);if(v==null)return null;const m=SSTAG.exec(v);
+  let c=COMP[k];
+  if(!c){if(!m||!/^item_name/.test(k))return null;const ty=keyType(k,ini);if(!ty)return null;c=[ty,m[2]&&m[2]!=="-"?m[2]:"",m[3]&&m[3]!=="-"?m[3]:""]}
+  let cls=m?SSCLS[m[1]]||"":"";
+  if(!cls){const d=val(ini,"item_Desc"+k.slice(9))||"";const cm=/Class:\s*([A-Za-z]+)/.exec(d);if(cm)cls=CLSWORD[cm[1].toLowerCase()]||""}
+  return {type:c[0],size:c[1]==null?"":String(c[1]),grade:c[2]||"",cls,name:plainName(v)}}
+function compKeys(ini){const ks=new Set(Object.keys(COMP).filter(k=>ini.map.has(k)));
+  for(const [lk,[k,v]] of ini.map)if(lk.startsWith("item_name")&&SSTAG.test(v)&&keyType(lk,ini))ks.add(lk);return [...ks]}
+function tokVal(tk,it){
+  switch(tk.k){case"lit":return tk.v;case"name":return it.name;case"size":return it.size;case"grade":return it.grade;
+    case"type":return (TYPES[it.type]||[""])[STYLE[tk.s]]||"";case"class":return it.cls?(CLASSES[it.cls]||[""])[STYLE[tk.s]]||"":""}}
+/* an empty field (e.g. unknown class) takes the separator after it along, so no "COOL - -4-A" */
+const render=(tpl,it)=>{let o="",skip=false;for(const tk of tpl){const v=tokVal(tk,it);if(tk.k==="lit"){if(!skip)o+=v;skip=false;continue}skip=!v&&tk.k!=="name";o+=v}return o};
+const isOff=tpl=>tpl.length===1&&tpl[0].k==="name"||!tpl.length;
+
+/* ---------------- detection ---------------- */
+const reEsc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+/* every way the label u can be built from this component's facts; the name is "the rest" */
+function parses(u,it,cap=400){
+  const opts=[];
+  for(const s in STYLE){const tv=(TYPES[it.type]||[])[STYLE[s]];if(tv)opts.push({k:"type",s,v:tv});if(it.cls){const cv=CLASSES[it.cls][STYLE[s]];opts.push({k:"class",s,v:cv})}}
+  if(it.size)opts.push({k:"size",v:it.size});if(it.grade)opts.push({k:"grade",v:it.grade});
+  const out=[];
+  (function go(i,acc,used){if(out.length>=cap)return;if(i===u.length){if(used.has("name"))out.push(acc);return}
+    for(const o of opts){if(u.startsWith(o.v,i)&&!used.has(o.k)){const n=new Set(used);n.add(o.k);go(i+o.v.length,acc.concat([{k:o.k,s:o.s}]),n)}}
+    if(!used.has("name")&&/[A-Za-z0-9]/.test(u[i]))for(let j=u.length;j>i+1;j--){const n=new Set(used);n.add("name");go(j,acc.concat([{k:"name"}]),n);if(out.length>=cap)return}
+    if(/[A-Za-z0-9]/.test(u[i]))return;   // separators only: letters/digits belong to a field or the name
+    const last=acc[acc.length-1];
+    go(i+1,last&&last.k==="lit"?acc.slice(0,-1).concat([{k:"lit",v:last.v+u[i]}]):acc.concat([{k:"lit",v:u[i]}]),used)})(0,[],new Set());
+  return out}
+/* does label u fit template p for this component (name = anything)? */
+function fits(p,it,u){const r="^"+p.map(tk=>tk.k==="name"?"(.+?)":reEsc(tokVal(tk,it))).join("")+"$";let m=null;try{m=new RegExp(r).exec(u)}catch(e){}return m?1-(m[1]||"").length/u.length:-1}
+function detect(){
+  const items=Object.keys(COMP).filter(k=>OLD.map.has(k)).map(k=>[k,item(k,OLD)]).filter(x=>x[1]);
+  const cands=new Map();
+  for(const [k,it] of items.slice(0,40)){for(const p of parses(val(OLD,k),it)){if(p.filter(x=>x.k!=="lit"&&x.k!=="name").length<1)continue;cands.set(JSON.stringify(p),p)}}
+  let best=null,bs=-1,hits=0;
+  for(const p of cands.values()){let sc=0,ex=0;for(const [k,it] of items){const f=fits(p,it,val(OLD,k));if(f>=0){sc++;ex+=f}}
+    if(ex>bs){bs=ex;best=p;hits=sc}}
+  // ship names: text added before/after the name
+  const veh=[];
+  for(const [lk,[k,u]] of OLD.map){if(!lk.startsWith("vehicle_name")||/_short$|desc/.test(lk))continue;
+    const b=BASE?val(BASE,k):null;
+    const m=/^(\d+\s*[.)\-]\s*|\[[^\]]*\]\s*|[★☆*#]+\s*)(.+)$/.exec(u);
+    if(b!=null){if(u===b)continue;const n=x=>x.replace(/["'“”]/g,"");const nu=n(u),nb=n(b);
+      if(nu.endsWith(nb)){veh.push({k,pre:nu.slice(0,nu.length-nb.length),suf:""});continue}
+      if(nu.startsWith(nb)){veh.push({k,pre:"",suf:nu.slice(nb.length)});continue}}
+    if(m)veh.push({k,pre:m[1],suf:""})}
+  veh.sort((a,b)=>(parseInt(a.pre)||999)-(parseInt(b.pre)||999));
+  return {tpl:best&&hits>=Math.max(3,items.length*0.3)?best:null,hits,total:items.length,veh}}
+
+/* ---------------- UI ---------------- */
+function save(){try{localStorage.setItem(LSK,JSON.stringify({tpl:TPL,veh:VEH}))}catch(e){}}
+function sample(){const base=BASE||OLD;const ks=["item_namecool_aegs_s01_tundra","item_namepowr_jspn_s01_jsrmk2","item_nameshld_godi_s01_allstop_scitem","item_nameqdrv_rsi_s01_lightfire","item_name_radr_bltr_s01_hunter"];
+  const out=[];for(const k of ks.concat(Object.keys(COMP))){if(out.length>=4)break;const it=base?item(k,base):null;if(it&&!out.some(o=>o.type===it.type))out.push(it)}
+  if(!out.length)out.push({type:"COOL",size:"1",grade:"D",cls:"MIL",name:"Tundra"},{type:"QDRV",size:"2",grade:"A",cls:"CMP",name:"Spectre"});
+  return out}
+function drawTpl(){
+  const sel=(tk,i)=>tk.k==="type"||tk.k==="class"?`<select data-i="${i}">${["code","long","short","letter"].map(s=>`<option value="${s}" ${tk.s===s?"selected":""}>${t("st"+s[0].toUpperCase()+s.slice(1))}</option>`).join("")}</select>`:"";
+  const lab={type:"tType",class:"tClass",size:"tSize",grade:"tGrade",name:"tName"};
+  $("#tpl").innerHTML=TPL.map((tk,i)=>tk.k==="lit"?`<span class="tok lit">${t("tText")} <input data-i="${i}" value="${esc(tk.v)}"><button data-l="${i}" title="←">‹</button><button data-r="${i}" title="→">›</button><button data-x="${i}">✕</button></span>`
+    :`<span class="tok">${t(lab[tk.k])} ${sel(tk,i)}<button data-l="${i}">‹</button><button data-r="${i}">›</button><button data-x="${i}">✕</button></span>`).join("")||`<span class="hint">${t("off")}</span>`;
+  $("#addt").innerHTML=`<span class="hint">${t("addTok")}</span>`+["type","class","size","grade","name","lit"].map(k=>`<button class="btn" data-a="${k}">+ ${t(k==="lit"?"tText":lab[k])}</button>`).join("");
+  $("#prev").innerHTML=sample().map(it=>`<span class="k">${esc(it.name)}</span><span class="v">${esc(isOff(TPL)?it.name:render(TPL,it))}</span>`).join("")+(COMPV?`<span class="k"></span><span class="hint">${t("compD",Object.keys(COMP).length,esc(COMPV.split("-")[0]))}</span>`:"");
+  $("#tpl").querySelectorAll("select").forEach(s=>s.onchange=()=>{TPL[+s.dataset.i].s=s.value;save();drawTpl()});
+  $("#tpl").querySelectorAll("input").forEach(s=>s.oninput=()=>{TPL[+s.dataset.i].v=s.value;save();drawPrev()});
+  $("#tpl").querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{TPL.splice(+b.dataset.x,1);save();drawTpl()});
+  $("#tpl").querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{const i=+b.dataset.l;if(i>0){[TPL[i-1],TPL[i]]=[TPL[i],TPL[i-1]];save();drawTpl()}});
+  $("#tpl").querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{const i=+b.dataset.r;if(i<TPL.length-1){[TPL[i+1],TPL[i]]=[TPL[i],TPL[i+1]];save();drawTpl()}});
+  $("#addt").querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{const k=b.dataset.a;TPL.push(k==="lit"?{k,v:" "}:k==="type"||k==="class"?{k,s:"code"}:{k});save();drawTpl()})}
+function drawPrev(){$("#prev").querySelectorAll(".v").forEach((e,i)=>{const it=sample()[i];if(it)e.textContent=isOff(TPL)?it.name:render(TPL,it)})}
+const PRESETS={
+ ud:[{k:"type",s:"code"},{k:"lit",v:" -"},{k:"class",s:"code"},{k:"lit",v:" -"},{k:"size"},{k:"lit",v:"-"},{k:"grade"},{k:"lit",v:" -"},{k:"name"}],
+ ss:[{k:"class",s:"short"},{k:"lit",v:"/"},{k:"size"},{k:"lit",v:"/"},{k:"grade"},{k:"lit",v:" "},{k:"name"}],
+ br:[{k:"lit",v:"["},{k:"size"},{k:"grade"},{k:"lit",v:" "},{k:"class",s:"short"},{k:"lit",v:"] "},{k:"name"}],
+ off:[]};
+function vname(k){const b=BASE||OLD;return b?(val(b,k)||k):k}
+function drawVeh(){
+  $("#vt").innerHTML=VEH.map((v,i)=>`<tr><td><input data-p="${i}" value="${esc(v.pre)}" title="${t("before")}"></td><td class="nm">${esc(vname(v.k))}</td><td><input data-s="${i}" value="${esc(v.suf)}" title="${t("after")}"></td><td class="res">${esc(v.pre+vname(v.k)+v.suf)}</td><td><button data-u="${i}">▲</button> <button data-d="${i}">▼</button> <button data-x="${i}">✕</button></td></tr>`).join("");
+  $("#vt").querySelectorAll("[data-p]").forEach(e=>e.oninput=()=>{VEH[+e.dataset.p].pre=e.value;save();e.closest("tr").querySelector(".res").textContent=VEH[+e.dataset.p].pre+vname(VEH[+e.dataset.p].k)+VEH[+e.dataset.p].suf});
+  $("#vt").querySelectorAll("[data-s]").forEach(e=>e.oninput=()=>{VEH[+e.dataset.s].suf=e.value;save();e.closest("tr").querySelector(".res").textContent=VEH[+e.dataset.s].pre+vname(VEH[+e.dataset.s].k)+VEH[+e.dataset.s].suf});
+  $("#vt").querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{VEH.splice(+b.dataset.x,1);save();drawVeh()});
+  $("#vt").querySelectorAll("[data-u]").forEach(b=>b.onclick=()=>{const i=+b.dataset.u;if(i>0){[VEH[i-1],VEH[i]]=[VEH[i],VEH[i-1]];save();drawVeh()}});
+  $("#vt").querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{const i=+b.dataset.d;if(i<VEH.length-1){[VEH[i+1],VEH[i]]=[VEH[i],VEH[i+1]];save();drawVeh()}})}
+$("#bNum").onclick=()=>{VEH.forEach((v,i)=>{v.pre=(i+1)+". "+v.pre.replace(/^\d+\s*[.)\-]\s*/,"")});save();drawVeh()};
+$("#vq").oninput=()=>{const q=$("#vq").value.trim().toLowerCase(),b=BASE||OLD,r=$("#vres");
+  if(!q||!b){r.hidden=true;return}
+  const hits=[];for(const [lk,[k,v]] of b.map){if(lk.startsWith("vehicle_name")&&!/_short$|desc/i.test(lk)&&v.toLowerCase().includes(q)&&!VEH.some(x=>x.k.toLowerCase()===lk)){hits.push([k,v]);if(hits.length>=30)break}}
+  r.innerHTML=hits.map(([k,v])=>`<div data-k="${esc(k)}">${esc(v)}</div>`).join("");r.hidden=!hits.length;
+  r.querySelectorAll("div").forEach(d=>d.onclick=()=>{VEH.push({k:d.dataset.k,pre:"",suf:""});$("#vq").value="";r.hidden=true;save();drawVeh()})};
+
+function readFile(f){return f.text()}
+async function loadOld(f){const txt=await readFile(f);const ini=parseIni(txt);
+  if(ini.n<1000){$("#detect").innerHTML=`<p class="err">${t("notIni")}</p>`;return}
+  OLD=ini;const d=detect();
+  if(d.tpl){TPL=d.tpl}
+  VEH=d.veh;save();
+  const ss=/\[BP\]|<EM4>/.test(txt.slice(0,3000000));
+  $("#detect").innerHTML=`<p class="${d.tpl?"ok":"warn"}">${d.tpl?"✓ "+t("detOk",d.hits,d.total,d.veh.length):t("detNone",d.veh.length)}</p>`+(ss?`<p class="hint">${t("detSS")}</p>`:"");
+  $("#s1st").textContent="✓ "+f.name;drawTpl();drawVeh()}
+async function setBase(txt,label){const ini=parseIni(txt);if(ini.n<1000)throw new Error(t("notIni"));BASE=ini;BASEN=label;
+  $("#baseInfo").innerHTML=`<p class="ok">✓ ${t("baseOk",esc(label),ini.n.toLocaleString())}</p>`;$("#s2st").textContent="✓";$("#bGo").disabled=false;
+  if(OLD){const d=detect();if(!VEH.length)VEH=d.veh}drawTpl();drawVeh()}
+$("#bSS").onclick=async()=>{const bi=$("#baseInfo");bi.innerHTML=`<p class="hint">${t("loading")}</p>`;
+  try{const R="https://raw.githubusercontent.com/MrKraken/StarStrings/master/";
+    const [ini,rd]=await Promise.all([fetch(R+"src/For_Players/Data/Localization/english/global.ini",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.text()}),fetch(R+"readme.md",{cache:"no-store"}).then(r=>r.ok?r.text():"").catch(()=>"")]);
+    const b=/Build:\s*([^\]\*]+)\]/.exec(rd);await setBase(ini,"StarStrings"+(b?" · "+b[1].trim():""))}
+  catch(e){bi.innerHTML=`<p class="err">${t("baseErr",esc(e.message||e))}</p>`}};
+$("#bOwnBase").onclick=()=>$("#fBase").click();
+$("#fBase").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f)return;try{await setBase(await readFile(f),f.name)}catch(er){$("#baseInfo").innerHTML=`<p class="err">${esc(er.message)}</p>`}};
+const drop=$("#dropOld");drop.onclick=()=>$("#fOld").click();
+$("#fOld").onchange=e=>{const f=e.target.files[0];e.target.value="";if(f)loadOld(f)};
+drop.addEventListener("dragover",e=>{e.preventDefault();drop.classList.add("hov")});drop.addEventListener("dragleave",()=>drop.classList.remove("hov"));
+drop.addEventListener("drop",e=>{e.preventDefault();drop.classList.remove("hov");const f=e.dataTransfer.files[0];if(f)loadOld(f)});
+$("#bFresh").onclick=()=>{OLD=null;TPL=PRESETS.ud.map(x=>({...x}));VEH=[];save();$("#detect").innerHTML="";$("#s1st").textContent="";drawTpl();drawVeh()};
+document.querySelectorAll("[data-p]").forEach(b=>{if(b.closest("#s3"))b.onclick=()=>{TPL=PRESETS[b.dataset.p].map(x=>({...x}));save();drawTpl()}});
+$("#bSaveCfg").onclick=()=>{const blob=new Blob([JSON.stringify({app:"shogy-label-forge",v:1,tpl:TPL,veh:VEH},null,1)],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="label-forge-settings.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)};
+$("#bLoadCfg").onclick=()=>$("#fCfg").click();
+$("#fCfg").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f)return;try{const d=JSON.parse(await f.text());if(Array.isArray(d.tpl))TPL=d.tpl;if(Array.isArray(d.veh))VEH=d.veh;save();drawTpl();drawVeh();$("#s1st").textContent="✓ "+f.name}catch(er){$("#detect").innerHTML=`<p class="err">${esc(er.message)}</p>`}};
+
+$("#bGo").onclick=()=>{
+  if(!BASE){$("#out").innerHTML=`<p class="warn">${t("needBase")}</p>`;return}
+  const rep=new Map();let nc=0,nv=0;
+  for(const k of compKeys(BASE)){const it=item(k,BASE);if(!it)continue;rep.set(k,isOff(TPL)?it.name:render(TPL,it));nc++}
+  for(const v of VEH){const b=val(BASE,v.k);if(b==null)continue;rep.set(v.k.toLowerCase(),v.pre+b+v.suf);nv++}
+  const lines=BASE.text.split("\n");
+  for(let i=0;i<lines.length;i++){const l=lines[i],j=l.indexOf("=");if(j<=0)continue;const k=l.slice(0,j).replace(/^﻿/,"").toLowerCase();
+    if(rep.has(k)){const cr=l.endsWith("\r")?"\r":"";lines[i]=l.slice(0,j+1)+rep.get(k)+cr}}
+  let out=lines.join("\n");if(!out.startsWith("﻿"))out="﻿"+out;
+  const blob=new Blob([out],{type:"text/plain;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="global.ini";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+  $("#out").innerHTML=`<p class="ok">✓ ${t("done",nc,nv)} <span class="hint">(${esc(BASEN)})</span></p>`};
+
+function renderAll(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.getAttribute("data-t")));
+  $("#vq").placeholder=t("vq");
+  $("#flags").innerHTML=LANGS.map(l=>`<button type="button" data-l="${l}" class="${l===LANG?"on":""}" title="${NAMES[l]}" aria-label="${NAMES[l]}">${FLAGS[l]}</button>`).join("");
+  drawTpl();drawVeh()}
+$("#flags").addEventListener("click",ev=>{const b=ev.target.closest("button[data-l]");if(!b)return;LANG=b.getAttribute("data-l");try{localStorage.setItem("scbp-lang",LANG)}catch(e){}renderAll()});
+try{const s=JSON.parse(localStorage.getItem(LSK)||"null");if(s){TPL=s.tpl||[];VEH=s.veh||[]}else TPL=PRESETS.ud.map(x=>({...x}))}catch(e){TPL=PRESETS.ud.map(x=>({...x}))}
+renderAll();
+fetch("../blueprints/data/components.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{COMP={};for(const [k,v] of Object.entries(d.items||{}))if(/^item_name/.test(k)&&!/_default$/.test(k))COMP[k]=v;COMPV=d.v||"";drawTpl()}).catch(()=>{});
+</script>
+</body>
+</html>

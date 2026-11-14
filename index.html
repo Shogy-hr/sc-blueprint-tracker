@@ -66,6 +66,7 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:28
 .dot.ok{color:#3ee08a88}.dot.down{color:#ff525288}
 @media (prefers-reduced-motion:reduce){.dot{animation:none!important}}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card.wide{grid-column:1/-1;min-height:0}.pv-lab{height:auto;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:16px 22px;font:14px/1.3 ui-monospace,Consolas,monospace}.pv-lab code{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pv-lab i{font-style:normal;color:var(--dim)}.pv-lab b{color:#f0d264;font-weight:600}
 .card{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:var(--tx);border:1px solid #2b5550;background:linear-gradient(160deg,rgba(26,61,58,.85),rgba(8,30,31,.85));padding:26px 24px 22px;border-radius:6px;transition:border-color .15s,transform .15s,background .15s;min-height:260px}
 .card:hover,.card:focus-visible{border-color:var(--gold);transform:translateY(-2px);background:linear-gradient(160deg,rgba(42,45,20,.9),rgba(8,30,31,.9));outline:none}
 .card .ic{width:64px;height:64px;color:var(--gold)}
@@ -185,6 +186,13 @@ footer b{color:var(--dim);font-weight:600}
     <span class="meta" id="kver"></span>
     <span class="go"><span data-t="open"></span> ›</span>
    </a>
+   <a class="card wide" href="labels/" id="cLab">
+    <span class="tag live" data-t="newT"></span>
+    <div class="pv pv-lab" aria-hidden="true"><code><i>Tundra</i> → <b>COOL -MIL -1-D -Tundra</b></code><code><i>Hunter</i> → <b>RADR -STL -1-B -Hunter</b></code><code><i>RSI Polaris</i> → <b>5. RSI Polaris</b></code></div>
+    <h2><small>global.ini · Labels</small>Label Forge</h2>
+    <p data-t="labD"></p>
+    <span class="go"><span data-t="open"></span> ›</span>
+   </a>
   </div>
   <div class="vid">
    <button type="button" class="vfac" id="vFac" data-ta="vPlay"><img src="assets/tutorial-thumb-640.webp" srcset="assets/tutorial-thumb-640.webp 640w, assets/tutorial-thumb.webp 1280w" sizes="(max-width:700px) 92vw, 420px" alt="" width="640" height="360" loading="lazy"><span class="vplay" aria-hidden="true"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#e33"/><path d="M27 34.5 45 24 27 13.5z" fill="#fff"/></svg></span></button>
@@ -219,6 +227,8 @@ var TX={
  sub:["Star Citizen tools","Star Citizen alati","Star Citizen Tools","Narzędzia Star Citizen","Outils Star Citizen","Herramientas de Star Citizen"],
  h1:["Choose a tool","Odaberi alat","Werkzeug wählen","Wybierz narzędzie","Choisis un outil","Elige una herramienta"],
  lead:["Fan-made helpers for Star Citizen pilots","Pomagala za Star Citizen pilote, napravljena od zajednice","Von Fans gemachte Helfer für Star-Citizen-Piloten","Pomocnicy dla pilotów Star Citizen, stworzeni przez fanów","Des outils faits par des fans pour les pilotes de Star Citizen","Ayudas hechas por fans para pilotos de Star Citizen"],
+ newT:["New","Novo","Neu","Nowe","Nouveau","Nuevo"],
+ labD:["Update your global.ini to every new patch in one click: component labels (type, class, size, grade) and your ship names are recognised and carried over. Works with StarStrings.","Ažuriraj global.ini na svaki novi patch jednim klikom: oznake komponenti (tip, klasa, veličina, razred) i imena tvojih brodova prepoznaju se i prenesu. Radi sa StarStringsom.","Bring deine global.ini mit einem Klick auf jeden neuen Patch: Komponenten-Labels (Typ, Klasse, Größe, Grad) und deine Schiffsnamen werden erkannt und übernommen. Funktioniert mit StarStrings.","Aktualizuj global.ini do każdego patcha jednym kliknięciem: etykiety komponentów (typ, klasa, rozmiar, jakość) i nazwy statków są rozpoznawane i przenoszone. Działa ze StarStrings.","Mets ton global.ini à jour à chaque patch en un clic : étiquettes de composants (type, classe, taille, grade) et noms de vaisseaux sont reconnus et repris. Compatible StarStrings.","Actualiza tu global.ini a cada parche con un clic: las etiquetas de componentes (tipo, clase, tamaño, grado) y los nombres de tus naves se reconocen y se conservan. Funciona con StarStrings."],
  galD:["UEE xenological archive: dossiers on every known species, a timeline of first contacts and an interactive star map.","UEE ksenološki arhiv: dosjei svih poznatih vrsta, vremenska crta prvih kontakata i interaktivna zvjezdana karta.","UEE-Xenologie-Archiv: Dossiers zu allen bekannten Spezies, eine Zeitleiste der Erstkontakte und eine interaktive Sternenkarte.","Ksenologiczne archiwum UEE: dossier wszystkich znanych gatunków, oś czasu pierwszych kontaktów i interaktywna mapa gwiazd.","Archive xénologique de l'UEE : dossiers de toutes les espèces connues, chronologie des premiers contacts et carte stellaire interactive.","Archivo xenológico de la UEE: expedientes de todas las especies conocidas, cronología de primeros contactos y mapa estelar interactivo."],
  kioskD:["Track which blueprints you own, check recipes and materials, and simulate crafting like at the in-game fabricator.","Prati koje blueprinte imaš, provjeri recepte i materijale i simuliraj izradu kao na fabrikatoru u igri.","Verfolge deine Blueprints, prüfe Rezepte und Materialien und simuliere die Herstellung wie am Fabrikator im Spiel.","Śledź posiadane blueprinty, sprawdzaj receptury i materiały oraz symuluj wytwarzanie jak na fabrykatorze w grze.","Suis les blueprints que tu possèdes, consulte recettes et matériaux et simule la fabrication comme au fabricateur du jeu.","Controla los blueprints que tienes, consulta recetas y materiales y simula la fabricación como en el fabricador del juego."],
  coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
