@@ -58,9 +58,9 @@ def read_name(im, fx, fy, k):
     return None, ''
 
 
-def item_box(im, fx, fy, k):
+def item_box(im, fx, fy, k, region=None, minsize=120):
     """Square around the 3D model in the preview area (edges against the smooth teal background)."""
-    X0, Y0, X1, Y1 = int(fx - 600 * k), int(fy - 560 * k), int(fx + 290 * k), int(fy - 25 * k)
+    X0, Y0, X1, Y1 = region or (int(fx - 600 * k), int(fy - 560 * k), int(fx + 290 * k), int(fy - 25 * k))
     a = np.asarray(im.crop((X0, Y0, X1, Y1)).convert('L')).astype(float)
     a = ndimage.gaussian_filter(a, 1.5)
     e = np.hypot(ndimage.sobel(a, 0), ndimage.sobel(a, 1))
@@ -80,11 +80,13 @@ def item_box(im, fx, fy, k):
     keep = [i + 1 for i, v in enumerate(sizes) if v > sizes.max() * .08]
     ys, xs = np.nonzero(np.isin(lab, keep) & m)
     x0, x1, y0, y1 = xs.min(), xs.max(), ys.min(), ys.max()
-    if max(x1 - x0, y1 - y0) < 120 * k: return None            # model rendered tiny (not loaded yet): would only be a blur
+    if max(x1 - x0, y1 - y0) < minsize * k: return None            # model rendered tiny (not loaded yet): would only be a blur
     side = int(max(x1 - x0, y1 - y0) * 1.12) + 8
     cx, cy = (x0 + x1) // 2 + X0, (y0 + y1) // 2 + Y0
     side = min(side, int((Y1 - Y0) * 1.05))
-    return (cx - side // 2, cy - side // 2, cx + side // 2, cy + side // 2)
+    W, H = im.size; side = min(side, W, H)
+    l = min(max(cx - side // 2, 0), W - side); t = min(max(cy - side // 2, 0), H - side)   # keep the square inside the picture
+    return (int(l), int(t), int(l) + side, int(t) + side)
 
 
 def frames(paths, tmp):
@@ -95,7 +97,24 @@ def frames(paths, tmp):
         else: yield from _frames([p], tmp)
 
 
+def manual(path, name):
+    """A cropped/zoomed picture of the kiosk preview with a known name: --as "Name" file."""
+    im = Image.open(path).convert('RGB'); W, H = im.size
+    return item_box(im, 0, 0, max(W, H) / 1300, region=(0, 0, W, int(H * .78)), minsize=60)
+
+
 def main():
+    if '--as' in sys.argv:
+        i = sys.argv.index('--as'); name = match(sys.argv[i + 1]); path = sys.argv[i + 2]
+        if not name: sys.exit('not in the kiosk: ' + sys.argv[i + 1])
+        im = Image.open(path).convert('RGB'); box = manual(path, name)
+        if not box: sys.exit('no model found')
+        c = im.crop(box); idx = json.load(open(IDX, encoding='utf-8')) if os.path.exists(IDX) else {}
+        f = hashlib.sha1(('fab:' + name).encode()).hexdigest()[:16]; os.makedirs(IMG, exist_ok=True)
+        finish(c, 120).save(os.path.join(IMG, f + '-s.webp'), quality=88); finish(c, 360).save(os.path.join(IMG, f + '-l.webp'), quality=88)
+        idx[name] = {'f': f, 'sharp': round(sharpness(c), 1), 'src': os.path.basename(path), 'date': time.strftime('%Y-%m-%d'), 'manual': 1}
+        json.dump(idx, open(IDX, 'w', encoding='utf-8'), ensure_ascii=False, indent=0, sort_keys=True)
+        print('  +', name, box, c.size); return
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     dry = '--dry' in sys.argv
     idx = json.load(open(IDX, encoding='utf-8')) if os.path.exists(IDX) else {}
