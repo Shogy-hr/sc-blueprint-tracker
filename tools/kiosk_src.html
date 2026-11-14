@@ -713,7 +713,7 @@ lowQ:[" · quality too low"," · preniska kvaliteta"," · Qualität zu niedrig",
 qMinT:["Lowest quality this slot accepts: {0}","Najniža kvaliteta koju ovaj slot prima: {0}","Niedrigste Qualität, die dieser Slot annimmt: {0}","Najniższa jakość, jaką przyjmuje ten slot: {0}","Qualité minimale acceptée par ce slot : {0}","Calidad mínima que acepta este hueco: {0}"],
 qualityL:["Quality","Kvaliteta","Qualität","Jakość","Qualité","Calidad"],
 startBp:["Starter blueprint – everyone has it","Početni blueprint – svi ga imaju","Start-Blueprint – hat jeder","Blueprint startowy – ma go każdy","Blueprint de départ – tout le monde l’a","Blueprint inicial: todos lo tienen"],
-noPool:["Not in any mission pool in 4.10.2 (maybe an event or a future patch).","Nije u poolu nijedne misije u 4.10.2 (možda event ili budući patch).","In 4.10.2 in keinem Missionspool (evtl. Event oder künftiger Patch).","W 4.10.2 nie ma go w żadnej puli misji (może event lub przyszły patch).","Dans aucun pool de mission en 4.10.2 (peut-être un événement ou un futur patch).","No está en ningún pool de misiones en 4.10.2 (quizá un evento o un parche futuro)."],
+noPool:["Not in any mission pool in {0} (maybe an event or a future patch).","Nije u poolu nijedne misije u {0} (možda event ili budući patch).","In {0} in keinem Missionspool (evtl. Event oder künftiger Patch).","W {0} nie ma go w żadnej puli misji (może event lub przyszły patch).","Dans aucun pool de mission en {0} (peut-être un événement ou un futur patch).","No está en ningún pool de misiones en {0} (quizá un evento o un parche futuro)."],
 time:["Time: {0}","Vrijeme: {0}","Zeit: {0}","Czas: {0}","Durée : {0}","Tiempo: {0}"],
 noData:["No data.","Nema podataka.","Keine Daten.","Brak danych.","Aucune donnée.","Sin datos."],
 whyNotOwned:["You don’t own this blueprint – you can’t craft it.","Nemaš ovaj blueprint – ne možeš ga izraditi.","Du besitzt diesen Blueprint nicht – Herstellen nicht möglich.","Nie masz tego blueprintu – nie możesz go wytworzyć.","Tu ne possèdes pas ce blueprint – fabrication impossible.","No tienes este blueprint: no puedes fabricarlo."],
@@ -1571,7 +1571,7 @@ function renderDetail(){
     if(r.isAdd){const d=r.add;srows+=`<tr><td>${esc(nm)}</td><td>+0</td><td>${d>=0?"+":""}${d}</td><td class="${d>0?"up":d<0?"dn":""}">${r.touched&&d?(d>0?"+":"")+d:"·"}</td></tr>`;return}
     const dp=(r.mult-1)*100;const good=r.dir===0?0:Math.sign(dp)*(r.dir>0?1:-1);
     srows+=`<tr><td>${esc(nm)}</td><td>×1.00</td><td>×${r.mult.toFixed(2)}</td><td class="${good>0?"up":good<0?"dn":""}">${r.touched&&Math.abs(dp)>=0.005?(dp>0?"+":"")+dp.toFixed(2)+" %":"·"}</td></tr>`});
-  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(poolN(p))}</span>`).join(""):`<span class="hint">${T("noPool")}</span>`;
+  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(poolN(p))}</span>`).join(""):`<span class="hint">${T("noPool",esc((bnum(CAT.v)||{}).ver||CAT.v))}</span>`;
   const ret=it.x.length?`<table class="sumt">${it.x.map(r=>`<tr><td>${esc(r[0])}</td><td>${fmtA(r[1],r[2])}</td></tr>`).join("")}</table><div class="hint">${T("time",fmtT(it.xt))}</div>`:`<span class="hint">${T("noData")}</span>`;
   const allFilled=it.r.every((g,gi)=>U.fill[gi]);
   const S=ST.sim,full=S.q.length>=LIM.q&&S.p.length>=LIM.p;
