@@ -216,6 +216,10 @@
 "page": "ADP Arms Yellow",
 "url": "https://media.starcitizen.tools/thumb/9/9f/ADPSetYellow.png/600px-ADPSetYellow.png.webp?60xpt"
 },
+"ADP Core": {
+"checked": 1794666206,
+"s": 1794666206
+},
 "ADP Core (Modified)": {
 "checked": 1794619657,
 "s": 1794619657
@@ -746,6 +750,13 @@
 "page": "Arclight \"Warhawk\" Pistol",
 "url": "https://media.starcitizen.tools/thumb/3/32/Arclight_II_-_Warhawk_-_InGame_CutOut_-_Mesh_BG.jpg/600px-Arclight_II_-_Warhawk_-_InGame_CutOut_-_Mesh_BG.jpg.webp?issys"
 },
+"Arclight Pistol": {
+"checked": 1794666206,
+"f": "7d69e47e8ecd9e4e",
+"file": "Arclight_II_-_with_2_clips_-_flat.jpg",
+"page": "Arclight Pistol",
+"url": "https://media.starcitizen.tools/thumb/5/52/Arclight_II_-_with_2_clips_-_flat.jpg/600px-Arclight_II_-_with_2_clips_-_flat.jpg.webp?5w18k"
+},
 "Arclight Pistol Battery (30 cap)": {
 "checked": 1794185695,
 "f": "c3e382251e3fa5d0",
@@ -838,6 +849,31 @@
 "Argus Helmet Yellow/Grey": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Aril Arms": {
+"checked": 1794666206,
+"f": "3f05eb4d4c38cab4",
+"file": "ArilSetBase.png",
+"page": "Aril Arms",
+"url": "https://media.starcitizen.tools/thumb/2/25/ArilSetBase.png/600px-ArilSetBase.png.webp?pe153"
+},
+"Aril Core": {
+"checked": 1794666206,
+"s": 1794666206
+},
+"Aril Helmet": {
+"checked": 1794666206,
+"f": "e5af884387230c06",
+"file": "Aril_Helmet_-_Dark_BG-min.png",
+"page": "Aril Helmet",
+"url": "https://media.starcitizen.tools/thumb/b/b1/Aril_Helmet_-_Dark_BG-min.png/600px-Aril_Helmet_-_Dark_BG-min.png.webp?gcpwm"
+},
+"Aril Legs": {
+"checked": 1794666206,
+"f": "3f05eb4d4c38cab4",
+"file": "ArilSetBase.png",
+"page": "Aril Legs",
+"url": "https://media.starcitizen.tools/thumb/2/25/ArilSetBase.png/600px-ArilSetBase.png.webp?pe153"
 },
 "Arrowhead \"Boneyard\" Sniper Rifle": {
 "checked": 1794185695,
@@ -1165,6 +1201,13 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"BR-2 Shotgun": {
+"checked": 1794666206,
+"f": "39f783d59959ed3b",
+"file": "BR2_Ballistic_Shotgun.png",
+"page": "BR-2 Shotgun",
+"url": "https://media.starcitizen.tools/thumb/b/b0/BR2_Ballistic_Shotgun.png/600px-BR2_Ballistic_Shotgun.png.webp?otrjg"
+},
 "BR-2 Shotgun Magazine (12 cap)": {
 "checked": 1794185695,
 "f": "40164b866005aa58",
@@ -1186,6 +1229,13 @@
 "Balandin": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Balor HCH Helmet": {
+"checked": 1794666206,
+"f": "089725486f281a63",
+"file": "Balor_HCH_Helmet_Black_-_Dark_BG-min.png",
+"page": "Balor HCH Helmet",
+"url": "https://media.starcitizen.tools/thumb/c/ca/Balor_HCH_Helmet_Black_-_Dark_BG-min.png/600px-Balor_HCH_Helmet_Black_-_Dark_BG-min.png.webp?i7yhi"
 },
 "Balor HCH Helmet Aqua": {
 "checked": 1794619657,
@@ -1320,6 +1370,10 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"Bolt": {
+"checked": 1794666206,
+"s": 1794666206
+},
 "BroadSpec": {
 "checked": 1794619657,
 "s": 1794619657
@@ -1451,6 +1505,13 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"CQ7 Rifle": {
+"checked": 1794666206,
+"f": "6bd86f19a9cb207d",
+"file": "Behring_\"CQ7\"_Bullpup_-_Roadmap_Roundup.jpg",
+"page": "CQ7 Rifle",
+"url": "https://media.starcitizen.tools/thumb/8/85/Behring_%22CQ7%22_Bullpup_-_Roadmap_Roundup.jpg/600px-Behring_%22CQ7%22_Bullpup_-_Roadmap_Roundup.jpg.webp?n0otl"
+},
 "Calico Arms Tactical": {
 "checked": 1794185695,
 "f": "32bcb4863048c9b1",
@@ -1558,6 +1619,13 @@
 "Cirrus": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Citadel": {
+"checked": 1794666206,
+"f": "f13a386eb1c35c94",
+"file": "Citadel_armor_set.jpg",
+"page": "Citadel",
+"url": "https://media.starcitizen.tools/thumb/a/a0/Citadel_armor_set.jpg/600px-Citadel_armor_set.jpg.webp?46a1o"
 },
 "Citadel Arms (Modified)": {
 "checked": 1794619657,
@@ -2247,6 +2315,13 @@
 "page": "F55 \"Valor\" LMG",
 "url": "https://media.starcitizen.tools/thumb/0/02/F55_LMG_%22Valor%22_Variant.jpg/600px-F55_LMG_%22Valor%22_Variant.jpg.webp?1olru"
 },
+"F55 LMG": {
+"checked": 1794666206,
+"f": "63f6e5167cf2069b",
+"file": "F55_-_x2_with_2_clips_-_Flat.jpg",
+"page": "F55 LMG",
+"url": "https://media.starcitizen.tools/thumb/1/1d/F55_-_x2_with_2_clips_-_Flat.jpg/600px-F55_-_x2_with_2_clips_-_Flat.jpg.webp?d0fgl"
+},
 "F55 LMG Magazine (150 cap)": {
 "checked": 1794185695,
 "f": "df4d171a9bdeb13e",
@@ -2293,6 +2368,10 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"FR-76": {
+"checked": 1794666206,
+"s": 1794666206
+},
 "FR-86": {
 "checked": 1794619657,
 "s": 1794619657
@@ -2315,6 +2394,13 @@
 "page": "FS-9 \"Stoneface\" LMG",
 "url": "https://media.starcitizen.tools/thumb/a/a8/FS9_Stoneface_-_InGame_Cutout_-_Mesh_BG.jpg/600px-FS9_Stoneface_-_InGame_Cutout_-_Mesh_BG.jpg.webp?o62i8"
 },
+"FS-9 LMG": {
+"checked": 1794666206,
+"f": "861e231c43b988cc",
+"file": "FS-9_-_On_crate_with_extra_magazine.jpg",
+"page": "FS-9 LMG",
+"url": "https://media.starcitizen.tools/thumb/b/bd/FS-9_-_On_crate_with_extra_magazine.jpg/600px-FS-9_-_On_crate_with_extra_magazine.jpg.webp?41vc3"
+},
 "FS-9 Magazine (75 cap)": {
 "checked": 1794185695,
 "f": "13ba3a95af22d2e7",
@@ -2333,6 +2419,28 @@
 "Fidele": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Field Recon Suit Arms": {
+"checked": 1794666206,
+"f": "42086a6a61cfbf8f",
+"file": "FieldReconSet.png",
+"page": "Field Recon Suit Arms",
+"url": "https://media.starcitizen.tools/thumb/1/1d/FieldReconSet.png/600px-FieldReconSet.png.webp?hwpg6"
+},
+"Field Recon Suit Core": {
+"checked": 1794666206,
+"s": 1794666206
+},
+"Field Recon Suit Helmet": {
+"checked": 1794666206,
+"s": 1794666206
+},
+"Field Recon Suit Legs": {
+"checked": 1794666206,
+"f": "42086a6a61cfbf8f",
+"file": "FieldReconSet.png",
+"page": "Field Recon Suit Legs",
+"url": "https://media.starcitizen.tools/thumb/1/1d/FieldReconSet.png/600px-FieldReconSet.png.webp?hwpg6"
 },
 "Fissure": {
 "checked": 1794619657,
@@ -2582,6 +2690,13 @@
 "page": "Gallant \"Warhawk\" Rifle",
 "url": "https://media.starcitizen.tools/thumb/0/0b/Gallant_-_Warhawk_-_InGame_Cutout_-_Mesh_BG.jpg/600px-Gallant_-_Warhawk_-_InGame_Cutout_-_Mesh_BG.jpg.webp?0oo5v"
 },
+"Gallant Rifle": {
+"checked": 1794666206,
+"f": "733308fbdc76fb03",
+"file": "Gallant_-_with_3_clips_and_ArcLight_-_Flat.png",
+"page": "Gallant Rifle",
+"url": "https://media.starcitizen.tools/thumb/e/ef/Gallant_-_with_3_clips_and_ArcLight_-_Flat.png/600px-Gallant_-_with_3_clips_and_ArcLight_-_Flat.png.webp?ajei5"
+},
 "Gallant Rifle Battery (45 cap)": {
 "checked": 1794185695,
 "f": "b72aeee603c329b9",
@@ -2769,6 +2884,13 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"Guardian": {
+"checked": 1794666206,
+"f": "95d74121621f5fe8",
+"file": "Guardian_landed_in_ArcCorp_with_pilot_walking_towards_it_-_cropped_and_adjusted.jpg",
+"page": "Guardian",
+"url": "https://media.starcitizen.tools/thumb/0/02/Guardian_landed_in_ArcCorp_with_pilot_walking_towards_it_-_cropped_and_adjusted.jpg/600px-Guardian_landed_in_ArcCorp_with_pilot_walking_towards_it_-_cropped_and_adjusted.jpg.webp?81dus"
+},
 "HAVEN": {
 "checked": 1794619657,
 "s": 1794619657
@@ -2789,6 +2911,13 @@
 "checked": 1794619657,
 "s": 1794619657
 },
+"Helix I Mining Laser": {
+"checked": 1794666206,
+"f": "c0153d9ab3313a75",
+"file": "Helix_I_-_Terminal_Display_-_3.10.2.png",
+"page": "Helix I Mining Laser",
+"url": "https://media.starcitizen.tools/thumb/2/20/Helix_I_-_Terminal_Display_-_3.10.2.png/600px-Helix_I_-_Terminal_Display_-_3.10.2.png.webp?gu1ol"
+},
 "Hellion Scattergun": {
 "checked": 1794185695,
 "f": "876234ecd3a53b7c",
@@ -2799,6 +2928,13 @@
 "Hemera": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Hofstede-S1 Mining Laser": {
+"checked": 1794666206,
+"f": "4beb11de9dea525a",
+"file": "Hofstede-S2_-_Terminal_Display_-_3.10.2.png",
+"page": "Hofstede-S1 Mining Laser",
+"url": "https://media.starcitizen.tools/thumb/f/f5/Hofstede-S2_-_Terminal_Display_-_3.10.2.png/600px-Hofstede-S2_-_Terminal_Display_-_3.10.2.png.webp?o0dkg"
 },
 "Holdstrong": {
 "checked": 1794619657,
@@ -2823,6 +2959,13 @@
 "IceDive": {
 "checked": 1794619657,
 "s": 1794619657
+},
+"Impact I Mining Laser": {
+"checked": 1794666206,
+"f": "a227bd8af8f9b299",
+"file": "Impact-S1_-_Terminal_Display_-_3.10.2.png",
+"page": "Impact I Mining Laser",
+"url": "https://media.starcitizen.tools/thumb/d/dc/Impact-S1_-_Terminal_Display_-_3.10.2.png/600px-Impact-S1_-_Terminal_Display_-_3.10.2.png.webp?hvgv3"
 },
 "Impulse": {
 "checked": 1794619657,
@@ -3356,6 +3499,13 @@
 "page": "LH86 \"Warhawk\" Pistol",
 "url": "https://media.starcitizen.tools/thumb/c/ca/LH86_-_Warhawk_-_InGame_Cutout_-_Mesh_BG.jpg/600px-LH86_-_Warhawk_-_InGame_Cutout_-_Mesh_BG.jpg.webp?pnt3y"
 },
+"LH86 Pistol": {
+"checked": 1794666206,
+"f": "41c1b9e85f049718",
+"file": "Lh86pistol.jpg",
+"page": "LH86 Pistol",
+"url": "https://media.starcitizen.tools/thumb/d/dd/Lh86pistol.jpg/600px-Lh86pistol.jpg.webp?nz85s"
+},
 "LH86 Pistol Magazine (25 cap)": {
 "checked": 1794185695,
 "f": "e2676604eeba4cb3",
@@ -3814,6 +3964,20 @@
 "file": "Morozov-SH_Legs_Thule_-_Store_image.jpg",
 "page": "Morozov-SH Legs Thule",
 "url": "https://media.starcitizen.tools/thumb/e/e7/Morozov-SH_Legs_Thule_-_Store_image.jpg/600px-Morozov-SH_Legs_Thule_-_Store_image.jpg.webp?f05zj"
+},
+"NDB-28 Repeater": {
+"checked": 1794666206,
+"f": "d50b045f9e83a6e9",
+"file": "NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg",
+"page": "NDB-28 Repeater",
+"url": "https://media.starcitizen.tools/thumb/c/c0/NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg/600px-NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg.webp?9yr8g"
+},
+"NDB-30 Repeater": {
+"checked": 1794666206,
+"f": "d50b045f9e83a6e9",
+"file": "NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg",
+"page": "NDB-30 Repeater",
+"url": "https://media.starcitizen.tools/thumb/c/c0/NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg/600px-NDB-Series_Repeater_Sizes_1-3_-_Cutout_Left.jpg.webp?9yr8g"
 },
 "Neutrino Racing Flight Suit BlackFire": {
 "checked": 1794619657,
@@ -4645,6 +4809,13 @@
 "file": "P4-AR_Magazine_4.6_transparent.png",
 "page": "P4-AR Magazine (40 cap)",
 "url": "https://media.starcitizen.tools/thumb/5/56/P4-AR_Magazine_4.6_transparent.png/600px-P4-AR_Magazine_4.6_transparent.png.webp?njo17"
+},
+"P4-AR Rifle": {
+"checked": 1794666206,
+"f": "aba8cc42afbc46ac",
+"file": "P4-AR_4.6.png",
+"page": "P4-AR Rifle",
+"url": "https://media.starcitizen.tools/thumb/b/b2/P4-AR_4.6.png/600px-P4-AR_4.6.png.webp?h699r"
 },
 "P6-LR \"Archangel\" Sniper Rifle": {
 "checked": 1794185695,
@@ -5622,6 +5793,10 @@
 "checked": 1794619657,
 "s": 1794627805
 },
+"Spectre": {
+"checked": 1794666206,
+"s": 1794666206
+},
 "Spettro Shoes": {
 "checked": 1794185695,
 "f": "930a281e213968b5",
@@ -5647,6 +5822,13 @@
 "Stellate": {
 "checked": 1794619657,
 "s": 1794627805
+},
+"Strata Arms": {
+"checked": 1794666206,
+"f": "5e53bb06a40440de",
+"file": "StrataSetBase.png",
+"page": "Strata Arms",
+"url": "https://media.starcitizen.tools/thumb/c/ce/StrataSetBase.png/600px-StrataSetBase.png.webp?dklow"
 },
 "Strata Arms Amber": {
 "checked": 1794185695,
@@ -5689,6 +5871,13 @@
 "file": "StrataBPLevski.png",
 "page": "Strata Backpack Levski Edition",
 "url": "https://media.starcitizen.tools/thumb/5/57/StrataBPLevski.png/600px-StrataBPLevski.png.webp?7s8m1"
+},
+"Strata Core": {
+"checked": 1794666206,
+"f": "5e53bb06a40440de",
+"file": "StrataSetBase.png",
+"page": "Strata Core",
+"url": "https://media.starcitizen.tools/thumb/c/ce/StrataSetBase.png/600px-StrataSetBase.png.webp?dklow"
 },
 "Strata Core Amber": {
 "checked": 1794185695,
@@ -5778,6 +5967,13 @@
 "file": "StrataHelmetShootingStar.png",
 "page": "Strata Helmet Shooting Star",
 "url": "https://media.starcitizen.tools/thumb/f/f5/StrataHelmetShootingStar.png/600px-StrataHelmetShootingStar.png.webp?rqspq"
+},
+"Strata Legs": {
+"checked": 1794666206,
+"f": "5e53bb06a40440de",
+"file": "StrataSetBase.png",
+"page": "Strata Legs",
+"url": "https://media.starcitizen.tools/thumb/c/ce/StrataSetBase.png/600px-StrataSetBase.png.webp?dklow"
 },
 "Strata Legs Amber": {
 "checked": 1794185695,
