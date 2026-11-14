@@ -204,7 +204,7 @@ const CLSWORD={military:"MIL",civilian:"CIV",industrial:"IND",stealth:"STL",comp
 const SSCLS={Mil:"MIL",Civ:"CIV",Ind:"IND",Sth:"STL",Stl:"STL",Cmp:"CMP"};
 let COMP={},COMPV="";         // lower-case loc key -> [type,size,grade]
 let OLD=null,BASE=null,BASEN="";   // {map:Map(lowerKey->[key,value]), text}
-let TPL=[],VEH=[],NOTE=true;
+let TPL=[],VEH=[],NOTE=true,OLDTPL=null;
 const NOTE_KEY="ui_pregame_persistentuniverse_desc",NOTE_TXT="Component labels & ship names: ShoGy-HR Label Forge - shogy-hr.com/labels";            // template tokens; [{k:key,pre,suf}]
 const LSK="scbp-labels-v1";
 
@@ -234,6 +234,26 @@ function tokVal(tk,it){
 /* an empty field (e.g. unknown class) takes the separator after it along, so no "COOL - -4-A" */
 const render=(tpl,it)=>{let o="",skip=false;for(const tk of tpl){const v=tokVal(tk,it);if(tk.k==="lit"){if(!skip)o+=v;skip=false;continue}skip=!v&&tk.k!=="name";o+=v}return o};
 const isOff=tpl=>tpl.length===1&&tpl[0].k==="name"||!tpl.length;
+/* a base that already carries labels (e.g. your own labelled global.ini) must not get them twice:
+   "QDRV -STL -2-B -QDRV -STL -2-B -Bolt" / "1. 1. Crusader ..." */
+function stripLbl(name,it){
+  for(let r=0;r<4;r++){const n0=name;
+    for(const p of [TPL,OLDTPL,PRESETS.ud,PRESETS.ss,PRESETS.br]){if(!p||isOff(p))continue;
+      for(const c of [it.cls,...Object.keys(CLASSES)]){   // the old label may know the class even when the base text does not
+        const [a,b]=render(p,{...it,cls:c,name:"\u0001"}).split("\u0001");let hit=false;
+        if(a&&name.startsWith(a)&&name.length>a.length){name=name.slice(a.length);hit=true}
+        if(b&&name.endsWith(b)&&name.length>b.length){name=name.slice(0,-b.length);hit=true}
+        if(hit){if(!it.cls&&c)it.cls=c;break}}}
+    if(name===n0)break}
+  return name}
+const NUMPRE=/^\d+\s*[.)\-]\s+/;
+function vbase(v){const b=BASE||OLD;let x=b?val(b,v.k):null;if(x==null)return null;
+  for(let r=0;r<4;r++){const x0=x;
+    if(v.pre&&x.startsWith(v.pre))x=x.slice(v.pre.length);
+    if(v.suf&&x.endsWith(v.suf))x=x.slice(0,-v.suf.length);
+    if(NUMPRE.test(x)&&(!v.pre||NUMPRE.test(v.pre)))x=x.replace(NUMPRE,"");
+    if(x===x0)break}
+  return x}
 
 /* ---------------- detection ---------------- */
 const reEsc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
@@ -268,13 +288,14 @@ function detect(){
       if(nu.endsWith(nb)){veh.push({k,pre:nu.slice(0,nu.length-nb.length),suf:""});continue}
       if(nu.startsWith(nb)){veh.push({k,pre:"",suf:nu.slice(nb.length)});continue}}
     if(m)veh.push({k,pre:m[1],suf:""})}
+  for(const v of veh)v.pre=v.pre.replace(/^(?:\d+\s*[.)\-]\s*)+/,m=>(/\d+\s*[.)\-]\s*$/.exec(m)||[m])[0]);   // "1. 1. " (labelled twice) -> "1. "
   veh.sort((a,b)=>(parseInt(a.pre)||999)-(parseInt(b.pre)||999));
   return {tpl:best&&hits>=Math.max(3,items.length*0.3)?best:null,hits,total:items.length,veh}}
 
 /* ---------------- UI ---------------- */
 function save(){try{localStorage.setItem(LSK,JSON.stringify({tpl:TPL,veh:VEH,note:NOTE}))}catch(e){}}
 function sample(){const base=BASE||OLD;const ks=["item_namecool_aegs_s01_tundra","item_namepowr_jspn_s01_jsrmk2","item_nameshld_godi_s01_allstop_scitem","item_nameqdrv_rsi_s01_lightfire","item_name_radr_bltr_s01_hunter"];
-  const out=[];for(const k of ks.concat(Object.keys(COMP))){if(out.length>=4)break;const it=base?item(k,base):null;if(it&&!out.some(o=>o.type===it.type))out.push(it)}
+  const out=[];for(const k of ks.concat(Object.keys(COMP))){if(out.length>=4)break;const it=base?item(k,base):null;if(it)it.name=stripLbl(it.name,it);if(it&&!out.some(o=>o.type===it.type))out.push(it)}
   if(!out.length)out.push({type:"COOL",size:"1",grade:"D",cls:"MIL",name:"Tundra"},{type:"QDRV",size:"2",grade:"A",cls:"CMP",name:"Spectre"});
   return out}
 function drawTpl(){
@@ -296,7 +317,7 @@ const PRESETS={
  ss:[{k:"class",s:"short"},{k:"lit",v:"/"},{k:"size"},{k:"lit",v:"/"},{k:"grade"},{k:"lit",v:" "},{k:"name"}],
  br:[{k:"lit",v:"["},{k:"size"},{k:"grade"},{k:"lit",v:" "},{k:"class",s:"short"},{k:"lit",v:"] "},{k:"name"}],
  off:[]};
-function vname(k){const b=BASE||OLD;return b?(val(b,k)||k):k}
+function vname(k){const v=VEH.find(x=>x.k===k)||{k,pre:"",suf:""};const x=vbase(v);return x==null?k:x}
 function drawVeh(){
   $("#vt").innerHTML=VEH.map((v,i)=>`<tr><td><input data-p="${i}" value="${esc(v.pre)}" title="${t("before")}"></td><td class="nm">${esc(vname(v.k))}</td><td><input data-s="${i}" value="${esc(v.suf)}" title="${t("after")}"></td><td class="res">${esc(v.pre+vname(v.k)+v.suf)}</td><td><button data-u="${i}">▲</button> <button data-d="${i}">▼</button> <button data-x="${i}">✕</button></td></tr>`).join("");
   $("#vt").querySelectorAll("[data-p]").forEach(e=>e.oninput=()=>{VEH[+e.dataset.p].pre=e.value;save();e.closest("tr").querySelector(".res").textContent=VEH[+e.dataset.p].pre+vname(VEH[+e.dataset.p].k)+VEH[+e.dataset.p].suf});
@@ -304,7 +325,7 @@ function drawVeh(){
   $("#vt").querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{VEH.splice(+b.dataset.x,1);save();drawVeh()});
   $("#vt").querySelectorAll("[data-u]").forEach(b=>b.onclick=()=>{const i=+b.dataset.u;if(i>0){[VEH[i-1],VEH[i]]=[VEH[i],VEH[i-1]];save();drawVeh()}});
   $("#vt").querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{const i=+b.dataset.d;if(i<VEH.length-1){[VEH[i+1],VEH[i]]=[VEH[i],VEH[i+1]];save();drawVeh()}})}
-$("#bNum").onclick=()=>{VEH.forEach((v,i)=>{v.pre=(i+1)+". "+v.pre.replace(/^\d+\s*[.)\-]\s*/,"")});save();drawVeh()};
+$("#bNum").onclick=()=>{VEH.forEach((v,i)=>{v.pre=(i+1)+". "+v.pre.replace(/^(?:\d+\s*[.)\-]\s*)+/,"")});save();drawVeh()};
 $("#vq").oninput=()=>{const q=$("#vq").value.trim().toLowerCase(),b=BASE||OLD,r=$("#vres");
   if(!q||!b){r.hidden=true;return}
   const hits=[];for(const [lk,[k,v]] of b.map){if(lk.startsWith("vehicle_name")&&!/_short$|desc/i.test(lk)&&v.toLowerCase().includes(q)&&!VEH.some(x=>x.k.toLowerCase()===lk)){hits.push([k,v]);if(hits.length>=30)break}}
@@ -315,7 +336,7 @@ function readFile(f){return f.text()}
 async function loadOld(f){const txt=await readFile(f);const ini=parseIni(txt);
   if(ini.n<1000){$("#detect").innerHTML=`<p class="err">${t("notIni")}</p>`;return}
   OLD=ini;const d=detect();
-  if(d.tpl){TPL=d.tpl}
+  if(d.tpl){TPL=d.tpl;OLDTPL=d.tpl}
   VEH=d.veh;save();
   const ss=/\[BP\]|<EM4>/.test(txt.slice(0,3000000));
   $("#detect").innerHTML=`<p class="${d.tpl?"ok":"warn"}">${d.tpl?"✓ "+t("detOk",d.hits,d.total,d.veh.length):t("detNone",d.veh.length)}</p>`+(ss?`<p class="hint">${t("detSS")}</p>`:"");
@@ -343,8 +364,8 @@ $("#fCfg").onchange=async e=>{const f=e.target.files[0];e.target.value="";if(!f)
 $("#bGo").onclick=()=>{
   if(!BASE){$("#out").innerHTML=`<p class="warn">${t("needBase")}</p>`;return}
   const rep=new Map();let nc=0,nv=0;
-  for(const k of compKeys(BASE)){const it=item(k,BASE);if(!it)continue;rep.set(k,isOff(TPL)?it.name:render(TPL,it));nc++}
-  for(const v of VEH){const b=val(BASE,v.k);if(b==null)continue;rep.set(v.k.toLowerCase(),v.pre+b+v.suf);nv++}
+  for(const k of compKeys(BASE)){const it=item(k,BASE);if(!it)continue;it.name=stripLbl(it.name,it);rep.set(k,isOff(TPL)?it.name:render(TPL,it));nc++}
+  for(const v of VEH){const b=vbase(v);if(b==null)continue;rep.set(v.k.toLowerCase(),v.pre+b+v.suf);nv++}
   // optional credit line, appended after StarStrings' own login message (never replaces it)
   const lm=val(BASE,NOTE_KEY);
   if(NOTE&&lm!=null&&!lm.includes("Label Forge"))rep.set(NOTE_KEY,lm+"\\n\\n"+NOTE_TXT);
