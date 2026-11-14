@@ -2,3 +2,4 @@ blueprints/data/status.json
 tools/datapad/
 tools/blueprints.json
 __pycache__/
+tools/cut/pending.json

@@ -157,25 +157,56 @@ for k, fs in MATIMG.values():
 keys = sorted({v[0] for v in res.values()} | {v[0] for v in MATIMG.values()})
 kidx = {k: i for i, k in enumerate(keys)}
 thumbs = [small(k) for k in keys]
-outdir = os.path.join(HERE, '..', 'blueprints', 'img'); os.makedirs(outdir, exist_ok=True)
-for f in glob.glob(os.path.join(outdir, 'l-*.json')): os.remove(f)
-chunks, cur, size, loc = [], {}, 0, {}
+
+# ---- cut-outs (background removed, centred; made by make_cutouts.py, cached in tools/cut/)
+import hashlib
+CUT = os.path.join(HERE, 'cut'); CIDX = os.path.join(CUT, 'index.json')
+cidx = json.load(open(CIDX, encoding='utf-8')) if os.path.exists(CIDX) else {}
+item_keys = {v[0] for v in res.values()}
+pending, cut = {}, {}            # cut: kidx -> (small uri, large uri)
+LARGE = {k: large(k) for k in keys}
 for k in keys:
-    L = large(k)
-    if not L: continue
-    if size > 900_000: chunks.append(cur); cur, size = {}, 0
-    cur[str(kidx[k])] = L; size += len(L); loc[kidx[k]] = len(chunks)
-chunks.append(cur)
-for i, c in enumerate(chunks): json.dump(c, open(os.path.join(outdir, f'l-{i}.json'), 'w'), separators=(',', ':'))
+    if k not in item_keys: continue
+    src = LARGE[k] or thumbs[kidx[k]]
+    h = hashlib.sha1(src.encode()).hexdigest()[:16]
+    st_ = cidx.get(h)
+    if st_ == 'ok':
+        fs, fl = os.path.join(CUT, 'img', h + '-s.webp'), os.path.join(CUT, 'img', h + '-l.webp')
+        if os.path.exists(fs) and os.path.exists(fl): cut[kidx[k]] = (data_uri(fs), data_uri(fl)); continue
+    if st_ is None: pending[h] = src
+os.makedirs(CUT, exist_ok=True)
+json.dump(pending, open(os.path.join(CUT, 'pending.json'), 'w'))
+
+outdir = os.path.join(HERE, '..', 'blueprints', 'img'); os.makedirs(outdir, exist_ok=True)
+for f in glob.glob(os.path.join(outdir, 'l-*.json')) + glob.glob(os.path.join(outdir, 'o-*.json')): os.remove(f)
+
+
+def write_chunks(prefix, items):
+    chunks, cur, size, loc = [], {}, 0, {}
+    for i, L in items:
+        if size > 900_000: chunks.append(cur); cur, size = {}, 0
+        cur[str(i)] = L; size += len(L); loc[i] = len(chunks)
+    chunks.append(cur)
+    for n, c in enumerate(chunks): json.dump(c, open(os.path.join(outdir, f'{prefix}-{n}.json'), 'w'), separators=(',', ':'))
+    return chunks, loc
+
+
+# main pictures: the cut-out where there is one, else the original
+chunks, loc = write_chunks('l', [(kidx[k], cut[kidx[k]][1] if kidx[k] in cut else LARGE[k]) for k in keys if LARGE[k] or kidx[k] in cut])
+# originals of the cut ones, only loaded when a visitor picks "original pictures"
+ochunks, oloc = write_chunks('o', [(kidx[k], LARGE[k]) for k in keys if kidx[k] in cut and LARGE[k]])
+othumbs = {}
+for i, (cs, cl) in cut.items(): othumbs[str(i)] = thumbs[i]; thumbs[i] = cs
+json.dump({'thumbs': othumbs, 'loc': oloc}, open(os.path.join(outdir, 'o-thumbs.json'), 'w'), separators=(',', ':'))
 img = {n: [kidx[k], v, loc.get(kidx[k], -1), s] for n, (k, v, s) in res.items()}
 mats = {m: kidx[k] for m, (k, fs) in MATIMG.items()}
-import hashlib
-lv = hashlib.sha1(json.dumps([keys, loc], sort_keys=True).encode()).hexdigest()[:10]   # changes whenever picture numbers move: no stale cached l-*.json
-data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE), 'lv': lv}, cat.get('mats', {}))
+lv = hashlib.sha1(json.dumps([keys, loc, sorted(cut)], sort_keys=True).encode()).hexdigest()[:10]   # changes whenever picture numbers move: no stale cached l-*.json
+data = add_game_icons(HERE, {'thumbs': thumbs, 'img': img, 'mats': mats, 'wsig': wiki_sig(HERE), 'lv': lv, 'cut': sorted(cut)}, cat.get('mats', {}))
 mats = data['mats']
 json.dump(data, open(os.path.join(HERE, 'imgdata.json'), 'w'), separators=(',', ':'))
 st = {'fabricator': sum(1 for v in res.values() if v[2] in 'fa' and not v[1]), 'ai': sum(1 for v in res.values() if v[2] == 'a'), 'datapad': sum(1 for v in res.values() if v[2] == 'd' and not v[1]), 'wiki': sum(1 for v in res.values() if v[2] == 'w' and not v[1]),
       'shop': sum(1 for v in res.values() if v[2] == 's' and not v[1]),
       'variant': sum(1 for v in res.values() if v[1]), 'none': len(info) - len(res)}
 st['materials'] = len(mats)
-print('images:', st, '| thumbs', len(thumbs), '| chunks', len(chunks))
+st['cut-outs'] = len(cut)
+print('images:', st, '| thumbs', len(thumbs), '| chunks', len(chunks), '| to cut:', len(pending))

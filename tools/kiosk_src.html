@@ -119,6 +119,13 @@ input,select,textarea{font:inherit;color:var(--tx)}
 .hero .gic{width:130px;height:130px;color:#d8efeb}
 .tile img{width:96px;height:58px;object-fit:contain;filter:drop-shadow(0 2px 3px #000a)}
 .tile.miss img{opacity:.35;filter:grayscale(.7)}
+img.cut.bg-fab{background:radial-gradient(ellipse 70% 60% at 50% 72%,#2c6a62 0%,#17403c 55%,#0c2523 100%)}
+img.cut.bg-dark{background:#0b1517}
+.hero img.cut{padding:6px;box-sizing:border-box;width:300px;max-width:100%;aspect-ratio:1;border:1px solid #2a5a55}
+.hero img.cut.bg-none{border-color:transparent}
+.pbopt{display:flex;flex-wrap:wrap;gap:8px}.pbopt label{display:flex;align-items:center;gap:6px;padding:6px 10px;border:1px solid #2a5a55;cursor:pointer}
+.pbopt label.on{border-color:var(--acc,#e2c46a);color:var(--acc,#e2c46a)}
+.pbopt i{display:inline-block;width:22px;height:22px;border:1px solid #4a7a75}
 .hero img{max-width:92%;max-height:260px;object-fit:contain;filter:drop-shadow(0 8px 14px #000b)}
 .hero .imgw{position:relative;display:inline-block;max-width:92%}
 .hero .imgw img{max-width:100%;display:block;margin:auto}
@@ -504,6 +511,7 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
     <p class="hint" id="pMode"></p></div>
   <div class="sset"><h3 data-l10n="sSupport"></h3><p data-l10n="sSupportTxt"></p><a class="bmc big2" href="https://buymeacoffee.com/shogy_hr" target="_blank" rel="noopener noreferrer"><svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><g class="steam" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path class="s1" d="M11 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s2" d="M16 10c-1.6-1.6 1.6-3.2 0-5"/><path class="s3" d="M21 10c-1.6-1.6 1.6-3.2 0-5"/></g><path class="mug" d="M6 13h19v6.5a7.5 7.5 0 0 1-7.5 7.5h-4A7.5 7.5 0 0 1 6 19.5z" fill="currentColor"/><path d="M25 15h1.6a3.2 3.2 0 0 1 0 6.4H24.6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 29h23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-l10n="coffee"></span></a></div>
   
+  <div class="sset"><h3 data-l10n="pbTitle"></h3><div class="pbopt" id="pbOpt"></div><p class="hint" data-l10n="pbHint"></p></div>
   <div class="sset"><h3 data-l10n="sData"></h3><p data-l10n="sDataIntro"></p>
     <div class="mbtns left"><button class="btn" id="expFile" data-l10n="sExpFile"></button><button class="btn" id="cpJson" data-l10n="sCopyJson"></button><button class="btn" id="cpOwned" data-l10n="sCopyOwned"></button></div>
     <div class="mbtns left"><button class="btn" id="impFileB" data-l10n="sImpFile"></button><input type="file" id="impFile" accept=".json,application/json,text/plain" hidden></div>
@@ -543,7 +551,19 @@ const IMG=JSON.parse($("#imgs").textContent);
 const imgOf=it=>IMG.img[it.n]||null;
 const matIc=(m,cls="")=>IMG.mats&&IMG.mats[m]!=null?`<img class="mi ${cls}" src="${IMG.thumbs[IMG.mats[m]]}" alt="" loading="lazy">`:ic((MATS[m]||["r"])[0]==="r"?"ore":"gem");
 const LARGE={},LREQ={};
-function loadLarge(c){if(c<0)return Promise.resolve(null);if(LARGE[c])return Promise.resolve(LARGE[c]);if(typeof fetch!=="function")return Promise.resolve(null);if(!LREQ[c])LREQ[c]=fetch("img/l-"+c+".json"+(IMG.lv?"?v="+IMG.lv:"")).then(r=>r.ok?r.json():null).then(d=>{if(d)LARGE[c]=d;return d}).catch(()=>null);return LREQ[c]}
+/* picture background: the item pictures are cut out (no background) and drawn on one common background;
+   "orig" loads the original pictures (own backgrounds) on demand */
+const CUTSET=new Set(IMG.cut||[]);let PB="fab";try{PB=localStorage.getItem("scbp-imgbg")||"fab"}catch(e){}
+let OT=null,OTREQ=null;
+function loadOrig(){if(OT)return Promise.resolve(OT);if(!OTREQ)OTREQ=fetch("img/o-thumbs.json"+(IMG.lv?"?v="+IMG.lv:"")).then(r=>r.ok?r.json():null).then(d=>{OT=d||{thumbs:{},loc:{}};return OT}).catch(()=>{OT={thumbs:{},loc:{}};return OT});return OTREQ}
+const isOrig=i=>PB==="orig"&&CUTSET.has(i);
+const thumbSrc=i=>isOrig(i)&&OT&&OT.thumbs[i]?OT.thumbs[i]:IMG.thumbs[i];
+const cutCls=i=>CUTSET.has(i)&&!(PB==="orig"&&OT)?` class="cut bg-${PB==="orig"?"fab":PB}"`:"";
+function loadChunk(pre,c){const key=pre+c;if(c==null||c<0)return Promise.resolve(null);if(LARGE[key])return Promise.resolve(LARGE[key]);if(typeof fetch!=="function")return Promise.resolve(null);if(!LREQ[key])LREQ[key]=fetch("img/"+pre+"-"+c+".json"+(IMG.lv?"?v="+IMG.lv:"")).then(r=>r.ok?r.json():null).then(d=>{if(d)LARGE[key]=d;return d}).catch(()=>null);return LREQ[key]}
+function loadLarge(c){return loadChunk("l",c)}
+function largeOf(im){if(isOrig(im[0])&&OT&&OT.loc[im[0]]!=null)return loadChunk("o",OT.loc[im[0]]);return loadChunk("l",im[2])}
+function setPB(v){PB=v;try{localStorage.setItem("scbp-imgbg",v)}catch(e){}(v==="orig"?loadOrig():Promise.resolve()).then(()=>{render();try{renderDetail()}catch(e){}})}
+if(PB==="orig")loadOrig().then(()=>{try{render()}catch(e){}});
 const BYN=new Map(ITEMS.map(it=>[it.lc,it]));
 const nk=s=>String(s).toLowerCase().replace(/\u00a0/g," ").replace(/[“”„"]/g,'"').replace(/\s+/g," ").trim();
 const BYNK=new Map(ITEMS.map(it=>[nk(it.n),it]));
@@ -555,7 +575,13 @@ ITEMS.forEach(it=>{it.mats=new Set();it.r.forEach(g=>g[2].forEach(o=>it.mats.add
 const LANGS=[["en","English","en-GB"],["hr","Hrvatski","hr-HR"],["de","Deutsch","de-DE"],["pl","Polski","pl-PL"],["fr","Français","fr-FR"],["es","Español","es-ES"]];
 const TR={
  coffee:["Buy me a coffee","Kupi mi kavu","Spendier mir einen Kaffee","Postaw mi kawę","Offre-moi un café","Invítame a un café"],
- sSupport:["Support the project","Podrži projekt","Projekt unterstützen","Wesprzyj projekt","Soutenir le projet","Apoya el proyecto"],
+ pbTitle:["Item pictures","Slike predmeta","Bilder der Gegenstände","Obrazy przedmiotów","Images des objets","Imágenes de objetos"],
+pbFab:["Fabricator","Fabrikator","Fabrikator","Fabrykator","Fabricateur","Fabricador"],
+pbNone:["No background","Bez pozadine","Ohne Hintergrund","Bez tła","Sans fond","Sin fondo"],
+pbDark:["Dark","Tamna","Dunkel","Ciemne","Sombre","Oscuro"],
+pbOrig:["Original pictures","Originalne slike","Originalbilder","Oryginalne obrazy","Images d'origine","Imágenes originales"],
+pbHint:["Pictures come from different sources (game files, wiki, shops, fabricator). Their backgrounds are removed automatically so they all look alike; 'Original pictures' shows them as they were taken.","Slike su iz različitih izvora (datoteke igre, wiki, trgovine, fabrikator). Pozadina im je automatski uklonjena da sve izgledaju jednako; 'Originalne slike' prikazuje ih onakve kakve su snimljene.","Die Bilder stammen aus verschiedenen Quellen (Spieldateien, Wiki, Shops, Fabrikator). Ihr Hintergrund wird automatisch entfernt, damit alle gleich aussehen; 'Originalbilder' zeigt sie wie aufgenommen.","Obrazy pochodzą z różnych źródeł (pliki gry, wiki, sklepy, fabrykator). Tło jest usuwane automatycznie, aby wszystkie wyglądały jednakowo; 'Oryginalne obrazy' pokazuje je takimi, jakie były.","Les images viennent de sources différentes (fichiers du jeu, wiki, boutiques, fabricateur). Leur fond est retiré automatiquement pour qu'elles se ressemblent ; « Images d'origine » les montre telles quelles.","Las imágenes provienen de distintas fuentes (archivos del juego, wiki, tiendas, fabricador). Su fondo se quita automáticamente para que todas se vean iguales; «Imágenes originales» las muestra tal como se tomaron."],
+sSupport:["Support the project","Podrži projekt","Projekt unterstützen","Wesprzyj projekt","Soutenir le projet","Apoya el proyecto"],
  sSupportTxt:["The tracker is free and has no ads. If it helps you, a coffee keeps it running and updated.","Tracker je besplatan i bez reklama. Ako ti pomaže, kava pomaže da ostane živ i ažuran.","Der Tracker ist kostenlos und werbefrei. Wenn er dir hilft, hält ein Kaffee ihn am Laufen und aktuell.","Tracker jest darmowy i bez reklam. Jeśli ci pomaga, kawa pozwala go utrzymać i aktualizować.","Le tracker est gratuit et sans pub. S'il t'aide, un café le garde en vie et à jour.","El tracker es gratis y sin anuncios. Si te ayuda, un café lo mantiene vivo y actualizado."],
  home:["Home · ShoGy-HR","Početna · ShoGy-HR","Startseite · ShoGy-HR","Strona główna · ShoGy-HR","Accueil · ShoGy-HR","Inicio · ShoGy-HR"],
 gameName:["In-game name: {0} (several items share it)","Naziv u igri: {0} (isti naziv ima više predmeta)","Name im Spiel: {0} (mehrere Gegenstände heißen so)","Nazwa w grze: {0} (nosi ją kilka przedmiotów)","Nom en jeu : {0} (plusieurs objets portent ce nom)","Nombre en el juego: {0} (varios objetos lo comparten)"],
@@ -1302,7 +1328,10 @@ function renderWel0(){
     $("#wS").onclick=()=>$("#mWel").classList.remove("on");
   }
 }
-$("#bSet").onclick=()=>{renderProfiles();$("#dataT").value="";$("#dataMsg").textContent="";$$(".rst").forEach(b=>{b.classList.remove("arm");b.innerHTML=T(b.dataset.l10n)});$("#mSet").classList.add("on")};
+function renderPB(){const sw={fab:"radial-gradient(ellipse at 50% 70%,#2c6a62,#0c2523)",none:"repeating-conic-gradient(#3a4a4a 0 25%,#202a2a 0 50%) 0 0/8px 8px",dark:"#0b1517",orig:"linear-gradient(135deg,#444,#865,#357)"};
+  $("#pbOpt").innerHTML=["fab","none","dark","orig"].map(v=>`<label class="${PB===v?"on":""}"><input type="radio" name="pb" value="${v}" ${PB===v?"checked":""} hidden><i style="background:${sw[v]}"></i>${T("pb"+v[0].toUpperCase()+v.slice(1))}</label>`).join("");
+  $("#pbOpt").querySelectorAll("input").forEach(r=>r.onchange=()=>{setPB(r.value);renderPB()})}
+$("#bSet").onclick=()=>{renderProfiles();renderPB();$("#dataT").value="";$("#dataMsg").textContent="";$$(".rst").forEach(b=>{b.classList.remove("arm");b.innerHTML=T(b.dataset.l10n)});$("#mSet").classList.add("on")};
 $$("[data-close]").forEach(b=>b.onclick=()=>b.closest(".modal").classList.remove("on"));
 document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;const m=$$(".modal.on").filter(x=>x.id!=="mWel").pop();if(m){m.classList.remove("on");return}const R=$("#right");if(R&&R.classList.contains("sheet"))$("#mB").click()});
 $$(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m&&m.id!=="mWel")m.classList.remove("on")}));
@@ -1476,7 +1505,7 @@ function tilesHTML(L,selIdx){
 /* category icon from the game UI (tools/game_icons) when an item has no picture; else the drawn icon */
 function noImg(it){const u=IMG.subs&&IMG.subs[it.c==="V"?"V":it.s];return u?`<span class="gic" style="--m:url(${u})"></span>`:ic(subIc(it))}
 const imgTitle=m=>m[1]?` title="${T("tmpTitle")}"`:m[3]==="a"?` title="${T("aiTitle")}"`:"";
-function tileImg(it){const m=imgOf(it);return m?`<img src="${IMG.thumbs[m[0]]}" alt=""${imgTitle(m)} loading="lazy">`:noImg(it)}
+function tileImg(it){const m=imgOf(it);return m?`<img src="${thumbSrc(m[0])}"${cutCls(m[0])} alt=""${imgTitle(m)} loading="lazy">`:noImg(it)}
 function pagerHTML(page,pages,id){return `<div class="pager" id="${id}"><button data-p="first" ${page<=0?"disabled":""}>«</button><button data-p="prev" ${page<=0?"disabled":""}>‹</button><span>${pages?page+1:0}/${pages}</span><button data-p="next" ${page>=pages-1?"disabled":""}>›</button><button data-p="last" ${page>=pages-1?"disabled":""}>»</button></div>`}
 function bindPager(id,get,set,pages){$$(`#${id} button`).forEach(b=>b.onclick=()=>{const p=get();set({first:0,prev:p-1,next:p+1,last:pages-1}[b.dataset.p]);render()})}
 
@@ -1584,7 +1613,7 @@ function renderDetail(){
     ${slots}
    </div>
    <div class="info">
-    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${IMG.thumbs[imgOf(it)[0]]}" alt=""${imgTitle(imgOf(it))}>${imgOf(it)[3]==="a"&&!imgOf(it)[1]?`<span class="aib" title="${T("aiTitle")}">AI</span>`:""}</span>`:noImg(it)}</div>
+    <div class="hero" id="hero"><span class="stt ${own?"ow":"no"}">${own?T("own"):T("notOwn")}</span>${imgOf(it)?`<span class="imgw"><img id="heroImg" src="${thumbSrc(imgOf(it)[0])}"${cutCls(imgOf(it)[0])} alt=""${imgTitle(imgOf(it))}>${imgOf(it)[3]==="a"&&!imgOf(it)[1]?`<span class="aib" title="${T("aiTitle")}">AI</span>`:""}</span>`:noImg(it)}</div>
     <div class="nmrow"><div><h2>${esc(it.n)}</h2><div class="path">${titleCase(CN(CBY[it.c].n))} → <b>${esc(CN(it.s))}</b> • ${T("tierL")} <span class="tierc">T</span>${it.z?` • ${esc(it.z)}`:""}${it.g&&it.c==="P"?` • ${T("gradeL")} ${esc(it.g)}`:""}</div>${it.gn?`<div class="hint">${T("gameName",esc(it.gn))}</div>`:it.nn?`<div class="hint">${T("noGameName")}</div>`:""}</div>
       <div class="ft">${T("fabTime")}<b>${fmtT(it.t)}</b>${q>1?`<span class="hint">×${q} = ${fmtT(it.t*q)}</span>`:""}</div></div>
     ${ptuBox(it)}
@@ -1604,7 +1633,7 @@ function renderDetail(){
     </div>
    </div></div>`;
   $(".mback span").textContent=it.n;$("#mB").onclick=()=>{try{if(history.state&&history.state.sheet){history.back();return}}catch(e){}closeSheet()};
-  const im=imgOf(it);if(im&&im[2]>=0){const sel=U.sel;loadLarge(im[2]).then(d=>{const h=$("#heroImg");if(d&&h&&U.sel===sel&&d[im[0]])h.src=d[im[0]]})}
+  const im=imgOf(it);if(im&&(im[2]>=0||isOrig(im[0]))){const sel=U.sel;largeOf(im).then(d=>{const h=$("#heroImg");if(d&&h&&U.sel===sel&&d[im[0]])h.src=d[im[0]]})}
   $$("#right .opt").forEach(x=>x.onclick=()=>{const g=+x.dataset.g,o=+x.dataset.o;const s=stockOf(it.r[g][2][o][0]);U.fill[g]={o,q:U.fill[g]?.q??(s&&s.q?+s.q:500)};renderDetail()});
   $$("#right .box").forEach(x=>x.onclick=()=>{const g=+x.dataset.g;if(U.fill[g]){delete U.fill[g];renderDetail()}else{const s=it.r[g][2].findIndex(o=>stockOf(o[0]));const o=s>=0?s:0;const st=stockOf(it.r[g][2][o][0]);U.fill[g]={o,q:st&&st.q?+st.q:500};renderDetail()}});
   const optOf=gi=>it.r[gi][2][U.fill[gi].o];
