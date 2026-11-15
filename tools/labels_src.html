@@ -268,7 +268,7 @@ function detect(){
   // ship names: text added before/after the name
   const veh=[];
   for(const [lk,[k,u]] of OLD.map){if(!lk.startsWith("vehicle_name")||/_short$|desc/.test(lk))continue;
-    const b=BASE?val(BASE,k):null;
+    const b=BASE&&!BASEAUTO?val(BASE,k):null;   // compare only with a real base (StarStrings), not with an earlier copy of the same file
     const m=/^(\d+\s*[.)\-]\s*|\[[^\]]*\]\s*|[★☆*#]+\s*)(.+)$/.exec(u);
     if(b!=null){if(u===b)continue;const n=x=>x.replace(/["'“”]/g,"");const nu=n(u),nb=n(b);
       if(nu.endsWith(nb)){veh.push({k,pre:nu.slice(0,nu.length-nb.length),suf:""});continue}
