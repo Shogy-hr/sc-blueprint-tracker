@@ -26,7 +26,7 @@ prices = {}
 dkp = os.path.join(HERE, 'game', 'desckeys.json')
 if byname and os.path.exists(dkp):
     groups = {}
-    for nk, (dk, nm) in json.load(open(dkp, encoding='utf-8')).items(): groups.setdefault(dk, []).append(nm.strip().lower())
+    for nk, v in json.load(open(dkp, encoding='utf-8')).items(): groups.setdefault(v[0], []).append(v[1].strip().lower())
     for dk, nms in groups.items():
         got = [byname[n] for n in nms if n in byname]
         if got:   # 4th field 1 = only some of the items with this description are sold in shops
