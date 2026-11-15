@@ -28,6 +28,9 @@ jobs:
         run: pip install pillow
       - name: Sync game data, PTU and patch status
         run: python3 tools/update.py
+        env:
+          # shop prices take ~11 min: only on the schedule, so a push is online in a minute or two
+          SKIP_SHOPS: ${{ github.event_name == 'push' && '1' || '0' }}
       - name: Save changed game data to the repository
         run: |
           git config user.name "bp-tracker-bot"
