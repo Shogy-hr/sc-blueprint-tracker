@@ -39,7 +39,8 @@ jobs:
           git reset -q -- blueprints/data/status.json || true
           if ! git diff --cached --quiet; then
             git commit -m "Game data $(python3 -c "import json;print(json.load(open('tools/catalog.json'))['v'])")"
-            git push
+            # someone may have pushed meanwhile (the shop step takes minutes): rebase, the bot's data wins
+            for i in 1 2 3; do git push && break; git pull --rebase -X theirs -q || { git rebase --abort; break; }; done
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
