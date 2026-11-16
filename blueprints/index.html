@@ -215,6 +215,7 @@ img.mi{width:18px;height:18px;object-fit:contain;border-radius:3px;display:block
 .stats .none{padding:10px;color:var(--dim)}
 .sec{margin:0 10px 10px;padding:8px 10px;border:1px solid var(--line2);background:#0c2626}
 .sec h5{margin:0 0 6px;font:700 14px var(--ff);letter-spacing:.08em;color:#9fd0ca;text-transform:uppercase}
+button.pool.pq{cursor:pointer;color:inherit;font:inherit;font-size:13.5px}button.pool.pq:hover{border-color:var(--acc,#e2c46a);color:var(--acc,#e2c46a)}
 .pool{display:inline-block;background:#123a37;border:1px solid #2d5c57;padding:1px 7px;margin:0 4px 4px 0;font-size:13.5px}
 .sec textarea{width:100%;min-height:52px;background:#0a1f1f;border:1px solid var(--line);padding:6px;resize:vertical}
 .foot{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;padding:10px;border-top:1px solid var(--line2);margin-top:auto}
@@ -790,6 +791,7 @@ own:["✓ BLUEPRINT OWNED","✓ IMAŠ BLUEPRINT","✓ BLUEPRINT IM BESITZ","✓ 
 notOwn:["✕ BLUEPRINT NOT OWNED","✕ NEMAŠ BLUEPRINT","✕ BLUEPRINT FEHLT","✕ NIE MASZ BLUEPRINTU","✕ BLUEPRINT NON POSSÉDÉ","✕ NO TIENES EL BLUEPRINT"],
 noMods:["This recipe has no quality modifiers.","Ovaj recept nema modifikatore kvalitete.","Dieses Rezept hat keine Qualitätsmodifikatoren.","Ta receptura nie ma modyfikatorów jakości.","Cette recette n’a pas de modificateurs de qualité.","Esta receta no tiene modificadores de calidad."],
 statsHint:["Base = no quality effect (×1.00). Enhanced is an estimate from the material quality in the slots (when one stat is affected by several slots, the average is used). Base weapon values (e.g. RPM) are not in the recipe data.","Osnova = bez utjecaja kvalitete (×1.00). Poboljšano je procjena iz kvalitete materijala u slotovima (kad isti stat utječe više slotova, uzima se prosjek). Osnovne vrijednosti oružja (npr. RPM) nisu u podacima recepata.","Basis = ohne Qualitätseinfluss (×1,00). Verbessert ist eine Schätzung aus der Materialqualität (wirken mehrere Slots auf denselben Wert, wird gemittelt). Grundwerte von Waffen (z. B. RPM) fehlen in den Rezeptdaten.","Bazowa = bez wpływu jakości (×1,00). Ulepszona to szacunek na podstawie jakości materiałów (gdy kilka slotów wpływa na tę samą statystykę, liczona jest średnia). Podstawowe wartości broni (np. RPM) nie występują w danych receptur.","Base = sans effet de qualité (×1,00). Amélioré est une estimation selon la qualité des matériaux (si plusieurs emplacements affectent la même stat, on fait la moyenne). Les valeurs de base des armes (ex. RPM) ne figurent pas dans les recettes.","Base = sin efecto de calidad (×1,00). Mejorado es una estimación según la calidad de los materiales (si varias ranuras afectan a la misma estadística, se promedia). Los valores base de las armas (p. ej. RPM) no están en los datos de recetas."],
+poolAll:["Show every blueprint from this mission","Prikaži sve blueprinte iz ove misije","Alle Blaupausen aus dieser Mission zeigen","Pokaż wszystkie schematy z tej misji","Afficher tous les plans de cette mission","Mostrar todos los planos de esta misión"],
 whereGet:["Where to get it","Gdje se dobiva","Wo erhältlich","Gdzie zdobyć","Où l’obtenir","Dónde conseguirlo"],
 gotOn:["Obtained: {0}","Dobiven: {0}","Erhalten: {0}","Zdobyty: {0}","Obtenu : {0}","Obtenido: {0}"],
 disRet:["Dismantle returns","Dismantle vraća","Dismantle ergibt","Dismantle zwraca","Le démontage rend","Desmontar devuelve"],
@@ -1547,7 +1549,7 @@ function filtered(){
     if(U.ptuOnly&&!(it.ptu||PTUI.chg.has(it.n)||PTUI.rem.has(it.n)))return false;
     if(U.mat&&!it.mats.has(U.mat))return false;
     if(U.hideUn&&!affordable(it))return false;
-    if(q&&!(it.lc.includes(q)||(it.gn&&it.gn.toLowerCase().includes(q))||it.s.toLowerCase().includes(q)||(ST.notes[it.n]||"").toLowerCase().includes(q)))return false;
+    if(q&&!(it.lc.includes(q)||(it.gn&&it.gn.toLowerCase().includes(q))||it.s.toLowerCase().includes(q)||(ST.notes[it.n]||"").toLowerCase().includes(q)||it.p.some(p=>String(poolN(p)).toLowerCase().includes(q))))return false;   // mission names too: "head hunters" lists what that mission drops
     return true});
   const co=Object.fromEntries(CATS.map((c,i)=>[c.k,i]));
   L.sort((a,b)=>co[a.c]-co[b.c]||CBY[a.c].subs.indexOf(a.s)-CBY[b.c].subs.indexOf(b.s)||(U.desc?b.lc.localeCompare(a.lc):a.lc.localeCompare(b.lc)));
@@ -1580,6 +1582,9 @@ function renderFab(){
     <div id="lbody" style="display:flex;flex-direction:column;flex:1;min-height:0"></div></div>`;
   v.innerHTML=left+`<div class="col" id="right"></div>`;
   $$(".tabs2 button").forEach(b=>b.onclick=()=>{U.lt=b.dataset.t;render()});
+  document.addEventListener("click",e=>{const b=e.target.closest&&e.target.closest("button.pq");if(!b)return;
+    U.lt="bp";U.q=b.dataset.pq;U.page=0;const qi=$("#q");if(qi)qi.value=U.q;try{renderFabList()}catch(_){render()}
+    const g=$("#grid")||$("#list");if(g&&g.scrollIntoView)g.scrollIntoView({behavior:"smooth",block:"start"})});
   $("#q").oninput=e=>{if(U.lt==="bp"){U.q=e.target.value;U.page=0;renderFabList()}else{U.mq=e.target.value;renderMats()}};
   $("#clr").onclick=()=>{Object.assign(U,{q:"",mq:"",cats:new Set(),wantOnly:false,hideUn:false,hideNot:false,hideOwn:false,patchNew:false,crewHas:false,crewNo:false,mat:null,mkind:"",page:0});render()};
   $("#srt").onclick=()=>{U.desc=!U.desc;render()};
@@ -1663,7 +1668,7 @@ function renderDetail(){
     if(r.isAdd){const d=r.add;srows+=`<tr><td>${esc(nm)}</td><td>+0</td><td>${d>=0?"+":""}${d}</td><td class="${d>0?"up":d<0?"dn":""}">${r.touched&&d?(d>0?"+":"")+d:"·"}</td></tr>`;return}
     const dp=(r.mult-1)*100;const good=r.dir===0?0:Math.sign(dp)*(r.dir>0?1:-1);
     srows+=`<tr><td>${esc(nm)}</td><td>×1.00</td><td>×${r.mult.toFixed(2)}</td><td class="${good>0?"up":good<0?"dn":""}">${r.touched&&Math.abs(dp)>=0.005?(dp>0?"+":"")+dp.toFixed(2)+" %":"·"}</td></tr>`});
-  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<span class="pool">${esc(poolN(p))}</span>`).join(""):`<span class="hint">${T("noPool",esc((bnum(CAT.v)||{}).ver||CAT.v))}</span>`;
+  const pools=it.def?`<span class="pool" style="border-color:var(--ok);color:var(--ok)">${T("startBp")}</span>`:it.p.length?it.p.map(p=>`<button class="pool pq" data-pq="${esc(poolN(p))}" title="${T("poolAll")}">${esc(poolN(p))}</button>`).join(""):`<span class="hint">${T("noPool",esc((bnum(CAT.v)||{}).ver||CAT.v))}</span>`;
   const ret=it.x.length?`<table class="sumt">${it.x.map(r=>`<tr><td>${esc(r[0])}</td><td>${fmtA(r[1],r[2])}</td></tr>`).join("")}</table><div class="hint">${T("time",fmtT(it.xt))}</div>`:`<span class="hint">${T("noData")}</span>`;
   const allFilled=it.r.every((g,gi)=>U.fill[gi]);
   const S=ST.sim,full=S.q.length>=LIM.q&&S.p.length>=LIM.p;
