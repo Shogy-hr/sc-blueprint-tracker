@@ -502,6 +502,11 @@
 }
 ]
 },
+"00ab31a0-7de2-44f7-a567-7ff88fdbad49": {
+"checked": 1794901336,
+"n": "'WEAK' Repeater",
+"shops": []
+},
 "00b299c3-c705-47ed-8f2d-a10651ae7f90": {
 "checked": 1794793685,
 "n": "Overlord Helmet Polarity",
@@ -823,6 +828,11 @@
 "t": "FPS Armor MIC-L1"
 }
 ]
+},
+"01ad699f-cf07-4775-b363-75b915094740": {
+"checked": 1794901336,
+"n": "Lux Flashlight",
+"shops": []
 },
 "01b0f0a7-c064-4ce7-a0ee-0039533ea53d": {
 "checked": 1794879445,
@@ -1215,6 +1225,11 @@
 }
 ]
 },
+"02934e18-0210-4789-887c-1efcc8fc5008": {
+"checked": 1794901336,
+"n": "WillsOp Long Look Radar",
+"shops": []
+},
 "0294d935-eeff-43b2-97c7-879897ddb48e": {
 "checked": 1794769723,
 "n": "MacFlex Arms Olive",
@@ -1568,6 +1583,11 @@
 "n": "Shizhen Surgical Head Cover",
 "shops": []
 },
+"02e060ad-4f3e-49a0-89af-8ec7de30a59a": {
+"checked": 1794901336,
+"n": "Pulse \"Pyrotechnic\" Laser Pistol",
+"shops": []
+},
 "02e2de94-5804-4d67-9ca9-cb70461488eb": {
 "checked": 1794748631,
 "n": "Lynx Legs Cold Steel",
@@ -1608,6 +1628,11 @@
 "t": "Shop Terminal - Ashland"
 }
 ]
+},
+"02e848a0-d729-4826-a780-8506a2ae4a89": {
+"checked": 1794901336,
+"n": "Pulse Laser Pistol",
+"shops": []
 },
 "02f5904f-62ef-48e7-b63c-4ea3d4a7385f": {
 "checked": 1794551402,
@@ -4237,6 +4262,11 @@
 "n": "Spar-Tee Shirt",
 "shops": []
 },
+"04a30642-3fe6-4552-811d-05e0770111fd": {
+"checked": 1794901336,
+"n": "UTV Bonanza Livery",
+"shops": []
+},
 "04a3695c-cf61-4bec-a008-9f89302fd2ed": {
 "checked": 1794842996,
 "n": "Defender Ocellus Livery",
@@ -5284,6 +5314,11 @@
 }
 ]
 },
+"065dbfdb-63dc-4a30-9f50-80e540eb5696": {
+"checked": 1794901336,
+"n": "Fresnel \"Rockfall\" Energy LMG",
+"shops": []
+},
 "065e022a-3223-4fb1-9496-1404d78008d5": {
 "checked": 1794793685,
 "n": "Cordimon Jacket Twilight",
@@ -5338,6 +5373,11 @@
 "t": "Cargo Services - Stanton Gateway (Nyx)"
 }
 ]
+},
+"065e4a72-1226-42d7-8be0-62865c8b6ebc": {
+"checked": 1794901336,
+"n": "Liberator",
+"shops": []
 },
 "06606e88-d50d-4134-8829-3d4caf521b39": {
 "checked": 1794879445,
@@ -6963,6 +7003,11 @@
 "n": "Caterpillar microTech Livery",
 "shops": []
 },
+"089c5d5f-c3ea-456d-a35f-72bed985dbaf": {
+"checked": 1794901336,
+"n": "FSK-8 \"Ghost\" Combat Knife",
+"shops": []
+},
 "089f66d8-5ccf-41ee-a816-c8ead96cf2f4": {
 "checked": 1794820158,
 "n": "Hammerhead Ship Armor",
@@ -8346,6 +8391,11 @@
 "n": "Defiance Legs Hailstorm",
 "shops": []
 },
+"09cfd63f-25e8-46cb-ba5f-843faf4f1c33": {
+"checked": 1794901336,
+"n": "Zeus Hurston Livery",
+"shops": []
+},
 "09d1e163-9466-4415-aebf-877eaf274cfa": {
 "checked": 1794702420,
 "n": "Silverton Pants Sage",
@@ -8374,6 +8424,11 @@
 "09df1b07-bb85-4369-8c83-cd97900a2dca": {
 "checked": 1794793685,
 "n": "Sangar Helmet (Modified)",
+"shops": []
+},
+"09e4e202-fce6-435f-9a4c-6daa76c8fd5f": {
+"checked": 1794901336,
+"n": "Wolf Allegro Livery",
 "shops": []
 },
 "09f37928-8cb1-410b-9623-94d6af93b1b9": {
@@ -8803,6 +8858,11 @@
 "t": "Dumper's Depot - Area 18"
 }
 ]
+},
+"0a735517-a6ac-4a9a-98cb-2f5b71f12cc4": {
+"checked": 1794901336,
+"n": "Talon Wanderer Livery",
+"shops": []
 },
 "0a76542b-f550-4b1a-a8bc-180748bdcd3d": {
 "checked": 1794706301,
@@ -9637,6 +9697,11 @@
 "n": "Monolith Armor Arms Sandhawk",
 "shops": []
 },
+"0c37582b-ab78-440d-911e-c39322bccf1f": {
+"checked": 1794901336,
+"n": "Zenith Laser Sniper Rifle",
+"shops": []
+},
 "0c3a431a-6aa9-4d1e-9deb-fd87b27c2cfa": {
 "checked": 1794702420,
 "n": "ADP Arms Blue",
@@ -9707,6 +9772,11 @@
 "0c42f5a4-11f0-44f2-8381-0213dc9ae592": {
 "checked": 1794879445,
 "n": "Scorpius Avalanche Livery",
+"shops": []
+},
+"0c52ceb6-d267-4dd5-abd0-d546c4cca9f9": {
+"checked": 1794901336,
+"n": "Vulture Longhorn Livery",
 "shops": []
 },
 "0c53417e-eb43-40da-b6c2-edc045bd2e23": {
@@ -10232,6 +10302,11 @@
 "n": "Auditor Shirt Covalex Edition",
 "shops": []
 },
+"0d58aa05-4235-40a5-b6bf-9fa31c59f749": {
+"checked": 1794901336,
+"n": "Vanduul Mauler 'ANNIHILATOR' Cannon",
+"shops": []
+},
 "0d58d803-4df1-4bb7-afd6-e5f9429778d6": {
 "checked": 1794793685,
 "n": "IFR-A77 Turret",
@@ -10480,6 +10555,11 @@
 "0db6c2fd-28ca-420d-9a06-687a4d68a795": {
 "checked": 1794551402,
 "n": "Defiance Core Firestarter",
+"shops": []
+},
+"0dd2bd1b-09b3-4a95-b0f3-7aeef645ee53": {
+"checked": 1794901336,
+"n": "Parallax \"Fun Kopion Tooth\" Energy Assault Rifle",
 "shops": []
 },
 "0dd8db43-36aa-445b-99b4-d92c0c80ce9e": {
@@ -11648,9 +11728,19 @@
 "n": "Red Wind Cargo Plushie",
 "shops": []
 },
+"0fb5aa5a-21e0-44fb-a41b-d01287b41dc5": {
+"checked": 1794901336,
+"n": "Pulse \"ArcCorp\" Laser Pistol",
+"shops": []
+},
 "0fbc6d72-c870-4cfc-ba1a-dae1b1d26bef": {
 "checked": 1794842996,
 "n": "Freelancer Model \"Gold\"",
+"shops": []
+},
+"0fc8d058-2c9f-41c8-b0f3-5dc62718dea3": {
+"checked": 1794901336,
+"n": "Pulse \"Greycat\" Laser Pistol",
 "shops": []
 },
 "0fe14f78-0560-4a72-9e93-976db2cb468f": {
@@ -11850,6 +11940,11 @@
 "100ebcc3-6792-4d83-89d6-0ae4b42f4963": {
 "checked": 1794793685,
 "n": "Aztalan Tamarack Helmet",
+"shops": []
+},
+"101a4ebc-8611-4895-9731-0bb492d15a12": {
+"checked": 1794901336,
+"n": "Pulse \"Shubin\" Laser Pistol",
 "shops": []
 },
 "102a8b5c-7b4a-4740-91ad-b1a6dc6c889f": {
@@ -12183,6 +12278,11 @@
 "n": "Scrap Cable Coil",
 "shops": []
 },
+"1133333b-84f7-43bb-a833-e2581bbdbe4c": {
+"checked": 1794901336,
+"n": "VCK-1 \"Maul\" Blade",
+"shops": []
+},
 "113b8ce8-6703-4004-8b30-a73b96d48c23": {
 "checked": 1794701569,
 "n": "Aves Talon Helmet",
@@ -12286,6 +12386,11 @@
 "11970df0-5796-43b0-aff0-ad026cb61ca3": {
 "checked": 1794793685,
 "n": "Medium Artifact Fragment (Flawed)",
+"shops": []
+},
+"119c6f43-c538-427a-869e-3713d900d7c3": {
+"checked": 1794901336,
+"n": "CDF F8C Certification Pass (Gold)",
 "shops": []
 },
 "119feca0-d5ef-4883-9786-fa8e83bfcb14": {
@@ -12990,6 +13095,11 @@
 "1232857c-380c-496f-82f8-fcb097ca6e00": {
 "checked": 1794879445,
 "n": "Reclaimer Hadanite Livery",
+"shops": []
+},
+"123f7dff-f340-48f9-af35-86f986ec86d2": {
+"checked": 1794901336,
+"n": "Fresnel \"Deepwater\" Energy LMG",
 "shops": []
 },
 "124de29d-3da8-4571-8873-860f6aa8894e": {
@@ -17203,6 +17313,11 @@
 "n": "RSI Polaris Remote Turret Missile Rack",
 "shops": []
 },
+"167138ef-b585-4a7b-8808-a70ba93d0390": {
+"checked": 1794901336,
+"n": "Anvil Hornet Ghost Mk II Center Cap",
+"shops": []
+},
 "167198fb-ba5f-4ad5-97ca-b7da3f0554cd": {
 "checked": 1794856891,
 "n": "MOTH Sundial Livery",
@@ -17525,6 +17640,11 @@
 "n": "Mauler Cooler",
 "shops": []
 },
+"1705a08b-b6d5-44ad-8265-8671d12fe3c0": {
+"checked": 1794901336,
+"n": "Ursa Aja Livery",
+"shops": []
+},
 "17065bb4-fbc3-497d-8900-508a03a9b692": {
 "checked": 1794793685,
 "n": "Tailwind Flight Helmet Airwolf",
@@ -17571,6 +17691,11 @@
 "173bbdf3-44a0-465d-bec5-b034e3d13ff1": {
 "checked": 1794702420,
 "n": "ORC-mkV Legs Hurston Edition",
+"shops": []
+},
+"17417770-00b7-4de9-b693-dd266c4f6fc5": {
+"checked": 1794901336,
+"n": "Prism \"Crusader\" Laser Shotgun",
 "shops": []
 },
 "17417d27-af6d-40fc-af97-ab6db7ab313c": {
@@ -17985,6 +18110,11 @@
 "183eebbd-066f-4d88-b392-1407e9c5d8a1": {
 "checked": 1794842996,
 "n": "Eclipse Desmodus Livery",
+"shops": []
+},
+"185b2797-25e9-48be-9d43-0182162461b3": {
+"checked": 1794901336,
+"n": "Pulse \"microTech\" Laser Pistol",
 "shops": []
 },
 "18600693-df8b-4898-a9a6-e91291e69dd4": {
@@ -20762,6 +20892,11 @@
 "n": "Freelancer Model",
 "shops": []
 },
+"1b833280-efb7-4a2e-a34d-d4431c097289": {
+"checked": 1794901336,
+"n": "Quartz \"Cobalt Camo\" Energy SMG",
+"shops": []
+},
 "1b95523e-e2de-4de9-9b41-2cf79bfae59a": {
 "checked": 1794820158,
 "n": "Stormburst Bomb",
@@ -23018,6 +23153,11 @@
 }
 ]
 },
+"1da1d8a0-c37c-47b2-b826-b60f2fdfa410": {
+"checked": 1794901336,
+"n": "Zeus Keelback Livery",
+"shops": []
+},
 "1da24aff-2be4-4374-a0d0-666323ef710c": {
 "checked": 1794702420,
 "n": "PAB-1 Arms Red",
@@ -23560,6 +23700,11 @@
 "n": "Softshell Jacket",
 "shops": []
 },
+"1e12fe16-0a1e-40c0-96d3-e35d915219bd": {
+"checked": 1794901336,
+"n": "STV Electric Green Livery",
+"shops": []
+},
 "1e1e8ef2-964d-4868-9068-c759edcbc9cc": {
 "checked": 1794842996,
 "n": "Eclipse Knockout Livery",
@@ -23619,6 +23764,11 @@
 "t": "Armor - CRU-L4"
 }
 ]
+},
+"1e41df3e-f9ee-4ec5-8cfd-80c344772723": {
+"checked": 1794901336,
+"n": "Parallax \"Piconalia\" Energy Assault Rifle",
+"shops": []
 },
 "1e48d009-30aa-4657-8e7e-b90105868b02": {
 "checked": 1794748631,
@@ -23870,6 +24020,11 @@
 "t": "Cordry's - Levski"
 }
 ]
+},
+"1e860b7b-cfcc-4b94-9e87-f4052a5f68f6": {
+"checked": 1794901336,
+"n": "Fresnel \"Yormandi\" Energy LMG",
+"shops": []
 },
 "1e8c8486-7a7e-433a-9c44-81e10f611370": {
 "checked": 1794701569,
@@ -24482,6 +24637,11 @@
 "n": "Warden Backpack",
 "shops": []
 },
+"1f535425-a24a-4c6f-9274-0534bfeda63e": {
+"checked": 1794901336,
+"n": "Ramming Blade",
+"shops": []
+},
 "1f55bacf-8182-44ae-be1c-ca72c6f0cc03": {
 "checked": 1794842996,
 "n": "Lamb Tagine Combat Ration",
@@ -24565,6 +24725,11 @@
 }
 ]
 },
+"1f740502-818f-4b29-837d-24fdbc846791": {
+"checked": 1794901336,
+"n": "Zeus Lovestruck Livery",
+"shops": []
+},
 "1f74b7b3-b774-4281-ac22-f11ecb823718": {
 "checked": 1794706301,
 "n": "LeMarque Pants Purple",
@@ -24595,6 +24760,11 @@
 "1f74e62c-6093-4d2f-a560-e33df359a7e4": {
 "checked": 1794879445,
 "n": "Burke QD",
+"shops": []
+},
+"1f799599-a91a-410f-848e-eca2bd41ae5d": {
+"checked": 1794901336,
+"n": "FocalWave-30 (3x Holographic)",
 "shops": []
 },
 "1f7dbd2a-871e-42ff-907d-d4f3546c6f88": {
@@ -26226,6 +26396,11 @@
 "n": "Voidripper Dark Cloud Helmet",
 "shops": []
 },
+"201f58e3-7c17-4217-8edf-6f6a097e5ff8": {
+"checked": 1794901336,
+"n": "FarSight \"Golden Blossom\" (8x Telescopic)",
+"shops": []
+},
 "20296d51-5558-4107-a1fc-c9c43839bc9a": {
 "checked": 1794879445,
 "n": "Pulse Fortuna Livery",
@@ -26294,6 +26469,11 @@
 "208281d5-412b-46c3-b0b3-bea4c33bb17c": {
 "checked": 1794820158,
 "n": "PT2 (2x Holographic)",
+"shops": []
+},
+"2085a682-db46-4fa4-a00c-16925aaa26a4": {
+"checked": 1794901336,
+"n": "Prism \"Bonedust\" Laser Shotgun",
 "shops": []
 },
 "2085bd4c-f2f3-4630-aee6-da2d455e92ac": {
@@ -27779,6 +27959,11 @@
 "n": "PAB-1 Arms Sakura Sun Edition",
 "shops": []
 },
+"22bf25f6-00a4-458d-b3df-32a346f0268c": {
+"checked": 1794901336,
+"n": "X1 Blueshift Livery",
+"shops": []
+},
 "22c362b5-fb99-4754-a44b-dbf883328a7f": {
 "checked": 1794820158,
 "n": "Aurora Mk I Foundation Fest Livery",
@@ -28206,6 +28391,16 @@
 "n": "Guardian Sovereign Livery",
 "shops": []
 },
+"23934f46-5787-4594-8215-4ffe019345a2": {
+"checked": 1794901336,
+"n": "VCK-1 \"Payback\" Blade",
+"shops": []
+},
+"239a48af-d767-4a0f-a3da-8840901eac38": {
+"checked": 1794901336,
+"n": "MRX \"Torrent\"",
+"shops": []
+},
 "23a086bb-cb67-4fe4-914d-ac1a4e1e8cc7": {
 "checked": 1794820158,
 "n": "Avenger Splinter Livery",
@@ -28250,6 +28445,11 @@
 "n": "Creese Jacket Nine Tails",
 "shops": []
 },
+"23b81875-0c0d-44c2-a4cd-d0b1dba85380": {
+"checked": 1794901336,
+"n": "Vulture Carnival Livery",
+"shops": []
+},
 "23cb2160-f4b7-4f0f-8946-36211a5c29ee": {
 "checked": 1794769723,
 "n": "Venture Legs Lovestruck",
@@ -28267,6 +28467,11 @@
 "t": "Dumper's GrimHEX"
 }
 ]
+},
+"23d8bd97-375e-4aca-b380-4b86ad0e8417": {
+"checked": 1794901336,
+"n": "Ursa Fortuna Livery",
+"shops": []
 },
 "23dba495-9b54-4a33-be6a-365ff8eebb14": {
 "checked": 1794551402,
@@ -28322,6 +28527,11 @@
 "24578cff-1bec-4d44-9b15-42638ab6a552": {
 "checked": 1794769723,
 "n": "Davin Work Gloves \"Pathfinder\"",
+"shops": []
+},
+"2458d55f-a9cb-4281-adb9-2c73f2a1961b": {
+"checked": 1794901336,
+"n": "Zeus Mk II Monteverde Livery",
 "shops": []
 },
 "245a0669-f18b-4b30-8fdc-63e2522b8649": {
@@ -28871,6 +29081,11 @@
 "25b3d795-84c3-41c2-88d5-94c82c75e07f": {
 "checked": 1794879445,
 "n": "Prowler Hamada Livery",
+"shops": []
+},
+"25c8f0c0-c9f4-48a2-a2f0-c224ddce3eeb": {
+"checked": 1794901336,
+"n": "Vanduul Mauler 'RAGE' Cannon",
 "shops": []
 },
 "25ce3f6c-1743-4bac-a6fa-9a01495ab245": {
@@ -31166,6 +31381,11 @@
 "n": "Strata Core ArcCorp Edition",
 "shops": []
 },
+"289d12fc-29a6-4399-8f2f-68bd53d4a76d": {
+"checked": 1794901336,
+"n": "Parallax \"Fun Military Tooth\" Energy Assault Rifle",
+"shops": []
+},
 "28b327f8-954f-4fce-9628-2f212f1734b4": {
 "checked": 1794793685,
 "n": "Day One Shirt Dark Green",
@@ -32011,6 +32231,11 @@
 "n": "Artimex Core Wildwood",
 "shops": []
 },
+"2a3d6a82-b18f-4475-a4f4-85c5b6019ed1": {
+"checked": 1794901336,
+"n": "Orange QuikFlarePro",
+"shops": []
+},
 "2a3ee53f-b683-4f8c-a6b2-33e52c64635a": {
 "checked": 1794701569,
 "n": "ADP-mk4 Core (Modified)",
@@ -32784,6 +33009,11 @@
 "n": "Medium Artifact Fragment (Pristine)",
 "shops": []
 },
+"2ba5d32b-f2cc-48cf-a853-2476a30b84c9": {
+"checked": 1794901336,
+"n": "Vanduul Mauler 'IGNITER' Beam",
+"shops": []
+},
 "2bb0bbaa-2057-45c7-a3ac-d6b6c910fbfb": {
 "checked": 1794842996,
 "n": "Freelancer Deck the Hull Livery",
@@ -33032,6 +33262,11 @@
 "2d2bf13c-4f72-4679-a9ec-368898082193": {
 "checked": 1794769723,
 "n": "Campo Shoes Moss",
+"shops": []
+},
+"2d446580-f196-416a-806a-c35065c305a9": {
+"checked": 1794901336,
+"n": "Parallax \"Downburst Camo\" Energy Assault Rifle",
 "shops": []
 },
 "2d4a0321-92ce-4947-9be5-cac36f9f5150": {
@@ -33503,6 +33738,11 @@
 "2d7b9652-e70e-4e58-b945-db996cd332a5": {
 "checked": 1794879445,
 "n": "Scorpius Shock Force Livery",
+"shops": []
+},
+"2d8be48b-0cb7-4402-b7b6-20b46dc187f5": {
+"checked": 1794901336,
+"n": "Zeus MK II Starscape Livery",
 "shops": []
 },
 "2da3cdae-eae8-4aa4-b378-440b745ca1e3": {
@@ -34360,6 +34600,11 @@
 }
 ]
 },
+"2fbfdba3-54dc-4c7a-945e-f88eb254127f": {
+"checked": 1794901336,
+"n": "Vulture Outcast Livery (Modified)",
+"shops": []
+},
 "2fbff736-db29-4eda-9ac4-d7795f287b6c": {
 "checked": 1794706301,
 "n": "Prim Shoes Dark Red",
@@ -34376,6 +34621,11 @@
 "2fc161fb-75e5-4e87-91d1-83500b07bf22": {
 "checked": 1794793685,
 "n": "Chiron Core Samaritan",
+"shops": []
+},
+"2fc900c8-625b-4cff-b634-ef9e221aec86": {
+"checked": 1794901336,
+"n": "Talon Crimson Livery",
 "shops": []
 },
 "2fd2a3ae-e74c-4dd5-8513-8192887f1d22": {
@@ -35359,6 +35609,11 @@
 "n": "Tundra",
 "shops": []
 },
+"31013aa3-8656-4974-a2ae-fa2ae34dacee": {
+"checked": 1794901336,
+"n": "Vulture Assembly Livery",
+"shops": []
+},
 "310d5039-73e1-4843-aeaf-60194d767e03": {
 "checked": 1794727783,
 "n": "Geist Armor Arms Whiteout",
@@ -35627,6 +35882,11 @@
 }
 ]
 },
+"314d09da-1190-4d3c-a73a-657a4db36b32": {
+"checked": 1794901336,
+"n": "Tiburon Enforcer Livery",
+"shops": []
+},
 "314fbec7-eb9c-4ea3-942c-ffaeac60fbf0": {
 "checked": 1794769723,
 "n": "Morozov-SH Core Brushdrift",
@@ -35715,6 +35975,11 @@
 "t": "Kel-To - Cloudview Center - Orison"
 }
 ]
+},
+"316244e4-dd72-4435-8000-a3cca0952a54": {
+"checked": 1794901336,
+"n": "Zeus microTech Livery",
+"shops": []
 },
 "31629f0f-3324-4ec1-8da2-4a6ead6a62b2": {
 "checked": 1794820158,
@@ -36687,6 +36952,11 @@
 "n": "Monolith Helmet Tsunami",
 "shops": []
 },
+"3241f47d-7df6-4141-8b71-3574bbb33b0b": {
+"checked": 1794901336,
+"n": "Storm Frost Line Livery",
+"shops": []
+},
 "324425a0-c8a9-44d3-adb6-9e15373f2279": {
 "checked": 1794701569,
 "n": "Stratus Jacket Maroon",
@@ -36962,6 +37232,19 @@
 "checked": 1794879445,
 "n": "Veil",
 "shops": []
+},
+"32eba44b-1373-4843-b797-d19f4d28b539": {
+"checked": 1794901336,
+"n": "FarSight \"Landslide\" (8x Telescopic)",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1750,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
 },
 "32efc648-0489-4293-ba06-57b715e18714": {
 "checked": 1794793685,
@@ -37904,6 +38187,11 @@
 "33703021-ec76-4a91-bb45-c7c4f8da0998": {
 "checked": 1794701569,
 "n": "IAE 2955 Hat Gray",
+"shops": []
+},
+"337689dd-6227-41e9-b826-81e25cd19fdd": {
+"checked": 1794901336,
+"n": "Stingray Protocol Livery",
 "shops": []
 },
 "33784f73-4edb-4995-98f5-3fa780c2e441": {
@@ -39650,6 +39938,11 @@
 "n": "Calico Core Ultimatum",
 "shops": []
 },
+"350277c7-d1a4-485f-9046-a99cfcaa1611": {
+"checked": 1794901336,
+"n": "Vulture Foundation Guide Livery",
+"shops": []
+},
 "3505dba2-4189-49f2-ba41-43b95d405291": {
 "checked": 1794748631,
 "n": "Kiba Helmet",
@@ -39667,6 +39960,11 @@
 "t": "Casaba Outlet - Everus Harbor"
 }
 ]
+},
+"351db7bd-7a74-4be9-be02-49708063860b": {
+"checked": 1794901336,
+"n": "Syulen Ocellus Livery",
+"shops": []
 },
 "351dfd89-9884-4489-8600-30a9208a74ed": {
 "checked": 1794702420,
@@ -40396,6 +40694,11 @@
 }
 ]
 },
+"3595671c-b920-4394-9146-336e6d1d4e15": {
+"checked": 1794901336,
+"n": "Syulen Harmony Livery",
+"shops": []
+},
 "3598bc92-1257-4779-a6f7-1b90c5c99e6c": {
 "checked": 1794702420,
 "n": "Novikov \"Ascension\" Exploration Suit",
@@ -40779,6 +41082,11 @@
 }
 ]
 },
+"367cd862-1a03-426b-b297-d6d02615ca24": {
+"checked": 1794901336,
+"n": "Wolf Nighttide Camo Livery",
+"shops": []
+},
 "36857ba1-a4c3-4ee7-b67d-5d8538d8dd5c": {
 "checked": 1794702420,
 "n": "Field Recon Suit Helmet",
@@ -40817,6 +41125,11 @@
 "36db47ca-d33b-484e-a2cc-fdf51b7bd549": {
 "checked": 1794551402,
 "n": "M3A Cannon Raider Camo",
+"shops": []
+},
+"36e45d1d-3390-4614-b0f0-9bb7179663a2": {
+"checked": 1794901336,
+"n": "UTV Resistor Camo Livery",
 "shops": []
 },
 "36e48bed-c6f8-4fb1-a4fe-cc754886ecd3": {
@@ -41855,6 +42168,11 @@
 }
 ]
 },
+"383f323b-62ab-4322-9583-5f86c223daaf": {
+"checked": 1794901336,
+"n": "Syulen Xy'kara Livery",
+"shops": []
+},
 "38438c64-646a-4555-8beb-8f82c437a81c": {
 "checked": 1794769723,
 "n": "Venture Helmet Purple",
@@ -42246,9 +42564,19 @@
 "n": "Invictus Flyby T-Shirt Olive Green",
 "shops": []
 },
+"396f283b-d98e-4601-96b0-678d046a557a": {
+"checked": 1794901336,
+"n": "Tyilui Agapanthia Livery",
+"shops": []
+},
 "396f65bb-75cd-4788-b4d4-17cbd40d7328": {
 "checked": 1794706301,
 "n": "TruBarrier Hazard Suit Mask Dark Biohazard",
+"shops": []
+},
+"397b9aab-4bde-4aae-a70d-d6604a69aa01": {
+"checked": 1794901336,
+"n": "Quartz \"Lumen\" Energy SMG",
 "shops": []
 },
 "397bd43e-fdbf-45b3-ba56-79647656f23e": {
@@ -42668,6 +42996,11 @@
 "n": "Aegis Vanguard Torpedo Rack",
 "shops": []
 },
+"3a513286-3524-439c-adca-0b15f4b7c575": {
+"checked": 1794901336,
+"n": "Stingray Marina Livery",
+"shops": []
+},
 "3a5723b0-17f6-4741-b421-43ed7cb7dd29": {
 "checked": 1794551402,
 "n": "Tempest",
@@ -43045,6 +43378,11 @@
 "t": "Ship Weapons Nyx Gtwy (Pyro)"
 }
 ]
+},
+"3ac9916b-3670-4a2e-8cbe-435f7676dbc2": {
+"checked": 1794901336,
+"n": "Green QuikFlarePro",
+"shops": []
 },
 "3acd0ac9-0248-4191-ab99-ad736e2d977c": {
 "checked": 1794820158,
@@ -44159,6 +44497,11 @@
 "n": "Zeus Exploration Backpack",
 "shops": []
 },
+"3c58e888-f2f9-4cfa-bcef-50e768aefc35": {
+"checked": 1794901336,
+"n": "Wolf Riftwalker Livery",
+"shops": []
+},
 "3c5a56d9-ff6e-426c-a0dd-6fe0d64037f7": {
 "checked": 1794551402,
 "n": "Kragen",
@@ -45019,6 +45362,11 @@
 }
 ]
 },
+"3e58c8fd-19ff-47b6-9b3a-333addb2573d": {
+"checked": 1794901336,
+"n": "Parallax \"Sunstone\" Energy Assault Rifle",
+"shops": []
+},
 "3e59decb-1be4-4477-b3f5-36114f798cab": {
 "checked": 1794820158,
 "n": "P8-AR \"Blackguard\" Rifle",
@@ -45094,6 +45442,11 @@
 "3e965216-cfab-4e04-867e-a911766bbc76": {
 "checked": 1794748631,
 "n": "Lynx Legs Tan",
+"shops": []
+},
+"3e98c2a9-4edb-4501-ab3d-99c2c54d1d26": {
+"checked": 1794901336,
+"n": "Red QuikFlarePro",
 "shops": []
 },
 "3e9b3246-d5a8-415b-9857-6cc210efe871": {
@@ -47339,6 +47692,11 @@
 }
 ]
 },
+"3ffde285-d545-4e28-9fe9-b624e128be4f": {
+"checked": 1794901336,
+"n": "Storm Darkside Livery",
+"shops": []
+},
 "401d41f6-ec8d-45e6-bf3c-44ca9530d207": {
 "checked": 1794879445,
 "n": "Perseus Flintlock Livery",
@@ -48170,6 +48528,11 @@
 "n": "Antium Legs",
 "shops": []
 },
+"422759f7-0db9-41bf-83ae-eb818565e26a": {
+"checked": 1794901336,
+"n": "Vanguard Frostbite Camo Livery",
+"shops": []
+},
 "4231964d-0ab6-664b-8a4b-15b75c5b49a3": {
 "checked": 1794879445,
 "n": "Pulse Star Kitten Livery",
@@ -48243,6 +48606,11 @@
 "428d72a7-1786-4e5f-86cb-6afd248f1352": {
 "checked": 1794793685,
 "n": "Wrecker Arms",
+"shops": []
+},
+"429514fc-786a-4f18-935d-bacbe838bddd": {
+"checked": 1794901336,
+"n": "Stor*All Big Box Model H",
 "shops": []
 },
 "4295a217-453d-475c-b7b6-f486f6e98e68": {
@@ -49479,6 +49847,432 @@
 "n": "Sabre Tribunal Livery",
 "shops": []
 },
+"44512a35-3a37-48b9-bf0e-c1bf87b4503b": {
+"checked": 1794901336,
+"n": "Stor*All 1 SCU Self-Storage Container",
+"shops": [
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 1995,
+"s": "Stanton",
+"t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 1995,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1995,
+"s": "Stanton",
+"t": "Platinum Bay - Everus Harbor"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1995,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-09",
+"l": "New Babbage",
+"p": 2100,
+"s": "Stanton",
+"t": "Shubin Interstellar - Commons - New Babbage"
+},
+{
+"d": "2026-11-09",
+"l": "New Babbage",
+"p": 2100,
+"s": "Stanton",
+"t": "Omega Pro - New Babbage"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-18",
+"l": "MIC-L5 Modern Icarus Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L5"
+},
+{
+"d": "2026-10-07",
+"l": "ARC-L1 Wide Forest Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L1"
+},
+{
+"d": "2026-09-30",
+"l": "HUR-L3 Thundering Express Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L3"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L2"
+},
+{
+"d": "2026-09-24",
+"l": "Orison",
+"p": 2100,
+"s": "Stanton",
+"t": "Cousin Crow's - Providence Platform - Orison"
+},
+{
+"d": "2026-09-19",
+"l": "HUR-L5 High Course Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - Port Tressler"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 2100,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Port Tressler"
+},
+{
+"d": "2026-09-13",
+"l": "Baijini Point",
+"p": 2100,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L1"
+},
+{
+"d": "2026-09-10",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L2 Lively Pathway Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L2"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 2100,
+"s": "Stanton",
+"t": "Dumper's Depot - GrimHEX"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Seraphim"
+},
+{
+"d": "2026-09-03",
+"l": "Orison",
+"p": 2100,
+"s": "Stanton",
+"t": "Covalex Shipping - Providence Platform - Orison"
+},
+{
+"d": "2026-08-30",
+"l": "Baijini Point",
+"p": 2100,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 2100,
+"s": "Stanton",
+"t": "Dumper's Depot - Area 18"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-08-28",
+"l": "ARC-L4 Faint Glen Station",
+"p": 2100,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L4"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 1995,
+"s": "Nyx",
+"t": "Cargo Services - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-11-12",
+"l": "Levski",
+"p": 2100,
+"s": "Nyx",
+"t": "Cargo Services - Levski"
+},
+{
+"d": "2026-10-14",
+"l": "Levski",
+"p": 2100,
+"s": "Nyx",
+"t": "Refinery Shop - Levski"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 2100,
+"s": "Nyx",
+"t": "Platinum Bay - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 2100,
+"s": "Nyx",
+"t": "Refinery Shop - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Nyx",
+"t": "Platinum Bay - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Nyx",
+"t": "Cargo Services - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Nyx",
+"t": "Refinery Shop - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-13",
+"l": "Orbituary",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Orbituary"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Platinum Bay - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Center Supplies - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Refinery Shop - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Refinery Shop - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 2100,
+"s": "Pyro",
+"t": "Platinum Bay - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 2100,
+"s": "Pyro",
+"t": "Refinery Shop - Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Checkmate"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Ruin Station"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 2100,
+"s": "Pyro",
+"t": "Refinery Shop - Ruin Station"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Megumi Refueling"
+},
+{
+"d": "2026-08-30",
+"l": "Orbituary",
+"p": 2100,
+"s": "Pyro",
+"t": "Refinery Shop - Orbituary"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 2100,
+"s": "Pyro",
+"t": "Cargo Services - Gaslight"
+}
+]
+},
 "445ab204-d97a-4745-9cf5-8006f2da7005": {
 "checked": 1794551402,
 "n": "Artimex Core Hurston Dynamics Executive Security",
@@ -49918,6 +50712,16 @@
 "452886b0-90dd-4b79-b865-3975844d9d64": {
 "checked": 1794706301,
 "n": "Bibiana Shirt",
+"shops": []
+},
+"4534b4a3-6427-490a-a557-9e7a8114c3e9": {
+"checked": 1794901336,
+"n": "FSK-8 \"Mirage\" Combat Knife",
+"shops": []
+},
+"453d25d5-0ecf-33b7-2a34-0c4d0bb5a49c": {
+"checked": 1794901336,
+"n": "Terrapin Seabed Livery",
 "shops": []
 },
 "45402114-63a5-4ac6-8465-9949ec7198ac": {
@@ -51721,6 +52525,11 @@
 }
 ]
 },
+"481b8386-80b5-4cde-b081-8e236c59f461": {
+"checked": 1794901336,
+"n": "Wolf Lycan Livery",
+"shops": []
+},
 "4822ce40-491f-4d30-9eb1-0a4b64837b98": {
 "checked": 1794748631,
 "n": "Citadel-SE Legs White",
@@ -51749,6 +52558,11 @@
 "484cc311-5ef6-4d07-ab75-a75452e7d244": {
 "checked": 1794856891,
 "n": "HG-2 Jaeger (2x Holographic)",
+"shops": []
+},
+"485001d5-fbba-4135-8f52-2ed401a673ea": {
+"checked": 1794901336,
+"n": "Wolf Rosso Livery",
 "shops": []
 },
 "4856e1ee-9205-407f-8156-9ad61c055663": {
@@ -51806,6 +52620,11 @@
 "t": "Armor - ARC-L4"
 }
 ]
+},
+"485c299b-8784-4f3f-9253-0eb66fcd9e68": {
+"checked": 1794901336,
+"n": "Tyilui Uamchuai Livery",
+"shops": []
 },
 "48609392-c78c-4909-8714-387900059785": {
 "checked": 1794748631,
@@ -52924,6 +53743,11 @@
 "n": "ADP-mk4 Core Justified",
 "shops": []
 },
+"4a372618-6776-4993-ace0-d0614b5672e4": {
+"checked": 1794901336,
+"n": "Vanduul Mauler 'STRIKER' Repeater",
+"shops": []
+},
 "4a378cc9-435f-4703-af86-ca15ceaebe6a": {
 "checked": 1794769723,
 "n": "Tussock Boots Hematite",
@@ -53514,9 +54338,24 @@
 }
 ]
 },
+"4acefded-90e4-4308-a923-1f364dc135f9": {
+"checked": 1794901336,
+"n": "X1 Supersonic Livery",
+"shops": []
+},
 "4ad1c5eb-53c7-4192-ad21-e3a394606b7d": {
 "checked": 1794842996,
 "n": "ReadyMeal (Chicken Patty and Noodles)",
+"shops": []
+},
+"4ad97a25-df39-41b3-b31e-405c2b6ba601": {
+"checked": 1794901336,
+"n": "Stingray Manta Livery",
+"shops": []
+},
+"4ada1c1b-ed19-106c-013a-5b487905caaf": {
+"checked": 1794901336,
+"n": "Terrapin Felicity Livery",
 "shops": []
 },
 "4adb053e-bc0a-34a1-a3bd-7c9fc2267e84": {
@@ -54712,6 +55551,19 @@
 "n": "Sol-III Core Aviator",
 "shops": []
 },
+"4df44fd1-acd3-4bb4-bc56-eee0cccc4834": {
+"checked": 1794901336,
+"n": "FarSight \"Thunderstrike\" (8x Telescopic)",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1750,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
+},
 "4df4557d-6c24-421a-9db6-36d731dcffe4": {
 "checked": 1794551402,
 "n": "HeatSink",
@@ -55591,6 +56443,11 @@
 }
 ]
 },
+"4f305eb1-38c3-4d5c-ba7e-ab6eebc8d27f": {
+"checked": 1794901336,
+"n": "Zeus ArcCorp Livery",
+"shops": []
+},
 "4f374a14-98ec-5481-2c07-dd369c257dbe": {
 "checked": 1794856891,
 "n": "Apollo Tier 2 Module Right",
@@ -55663,6 +56520,11 @@
 "t": "FPS Armor ARC-L4"
 }
 ]
+},
+"4f585d9e-37bc-24f4-887e-09b325df3783": {
+"checked": 1794901336,
+"n": "Terrapin Vitality Livery",
+"shops": []
 },
 "4f5ecfda-446b-414f-9a6a-53aebc7ecf73": {
 "checked": 1794769723,
@@ -56006,6 +56868,11 @@
 "4f8c2158-24ab-4afe-9087-cae704370530": {
 "checked": 1794842996,
 "n": "Guardian Vector Livery",
+"shops": []
+},
+"4f90232a-2a34-45d4-bf47-1985139de61d": {
+"checked": 1794901336,
+"n": "Valkyrie Foundation Guide Livery",
 "shops": []
 },
 "4f9781e1-cd4d-4f39-b9ad-306ba1704439": {
@@ -56735,6 +57602,11 @@
 "n": "Drassik",
 "shops": []
 },
+"506e8192-ca9c-4c3a-8115-36e90e432148": {
+"checked": 1794901336,
+"n": "Fresnel \"Icebox\" Energy LMG",
+"shops": []
+},
 "5075adb4-7170-4751-a30a-38a4e87a5e30": {
 "checked": 1794842996,
 "n": "CitizenCon '54 Coin",
@@ -56775,6 +57647,11 @@
 "5094c533-d9ae-4440-87cb-ca3c28189906": {
 "checked": 1794748631,
 "n": "Inquisitor Core Roughshod",
+"shops": []
+},
+"50993a8a-a31a-4e41-8616-0839be025e50": {
+"checked": 1794901336,
+"n": "Wolf HighSec Livery",
 "shops": []
 },
 "50a21fb7-c45d-408a-8aa3-4d12e1728811": {
@@ -56893,6 +57770,11 @@
 "5113545b-0df3-4c3f-89f8-a151fb024764": {
 "checked": 1794856891,
 "n": "Hornet Frostbite Camo Livery",
+"shops": []
+},
+"5114824e-5a3a-4708-b7ac-1e8a6d892667": {
+"checked": 1794901336,
+"n": "Ursa Deck the Hull Livery",
 "shops": []
 },
 "511ab0de-9cf3-45be-ac7a-8d3420f2c98a": {
@@ -57637,6 +58519,11 @@
 "n": "Hammerhead Fortuna Livery",
 "shops": []
 },
+"5319c0a9-ec91-44e5-9e44-1f1c3a1770b0": {
+"checked": 1794901336,
+"n": "Quartz \"Clawed Steel\" Energy SMG",
+"shops": []
+},
 "5319c853-3cbe-4447-986f-6b5133862f68": {
 "checked": 1794793685,
 "n": "IndVest Jacket Sienna",
@@ -57749,6 +58636,11 @@
 "5372cfc8-96dd-4749-9c82-51f3ae71b40a": {
 "checked": 1794856891,
 "n": "Intrepid Foundation Fest Livery",
+"shops": []
+},
+"53740116-8e1e-44eb-9e61-8b9f28bb35a5": {
+"checked": 1794901336,
+"n": "Terrapin IceBreak Livery",
 "shops": []
 },
 "53741591-226f-4a5f-ab96-f091f1d60d37": {
@@ -61937,6 +62829,11 @@
 "n": "ParaMed \"AA Defense\" Medical Device",
 "shops": []
 },
+"57579003-0269-4112-9a96-0b37a2514066": {
+"checked": 1794901336,
+"n": "Terrapin Deck the Hull Livery",
+"shops": []
+},
 "57637d2b-a480-4c22-8fd8-f9964f0c9088": {
 "checked": 1794702420,
 "n": "The Butcher Helmet",
@@ -62410,6 +63307,11 @@
 "58393b91-3003-4467-b3b6-d8017ae3a083": {
 "checked": 1794820158,
 "n": "Stinger Ship Armor",
+"shops": []
+},
+"58401159-8339-4e4c-828e-c8765a6faeed": {
+"checked": 1794901336,
+"n": "Thorshu Grey",
 "shops": []
 },
 "5840dde8-7a06-488e-933d-a4c30f98eafa": {
@@ -62980,6 +63882,11 @@
 "n": "Aegis Gladius - Decoy Launcher",
 "shops": []
 },
+"595b8f46-2037-43f8-bfb8-6cbd984f2212": {
+"checked": 1794901336,
+"n": "San'tok.yāi Gimbal Mount",
+"shops": []
+},
 "596c9311-b3b9-47ab-a3ca-fe13391eeeef": {
 "checked": 1794793685,
 "n": "Artisan Apron Whammer's",
@@ -63086,6 +63993,11 @@
 "t": "Dumper's Depot - Area 18"
 }
 ]
+},
+"59a459cf-9cbd-4c6f-8cb5-4b5013cf205f": {
+"checked": 1794901336,
+"n": "X1 2954 Auspicious Red Dragon Livery",
+"shops": []
 },
 "59d58bc0-e998-4ff1-8709-5ee0ef44d355": {
 "checked": 1794702420,
@@ -63644,6 +64556,11 @@
 }
 ]
 },
+"5a63d2c5-508b-4c3e-8dbb-524ceb09a771": {
+"checked": 1794901336,
+"n": "Talon Harmony Livery",
+"shops": []
+},
 "5a704f96-c339-43e7-b918-7fc9957673ed": {
 "checked": 1794551402,
 "n": "Pitman Mining Laser",
@@ -64130,6 +65047,11 @@
 }
 ]
 },
+"5afd39f5-4d20-4d2c-a137-ed06f4aa736e": {
+"checked": 1794901336,
+"n": "Tiburon Pinnacle Livery",
+"shops": []
+},
 "5affd21e-97eb-4c79-a3d6-3a59a5069788": {
 "checked": 1794769723,
 "n": "Davin Work Gloves Olive",
@@ -64497,6 +65419,11 @@
 }
 ]
 },
+"5b31eacf-b3dd-492c-acd3-c1b3d0adfdb5": {
+"checked": 1794901336,
+"n": "Talon Cobalt Livery",
+"shops": []
+},
 "5b3d19d0-23ef-4678-943b-225a0eeb76f1": {
 "checked": 1794793685,
 "n": "Aztalan Tamarack Core",
@@ -64510,6 +65437,11 @@
 "5b4da9fc-aa05-4dd9-bccb-e96352fcee27": {
 "checked": 1794856891,
 "n": "Hull B First Light Livery",
+"shops": []
+},
+"5b4e5231-1e81-4914-b096-a0c1861034d6": {
+"checked": 1794901336,
+"n": "Vanguard Solar Winds Livery",
 "shops": []
 },
 "5b57d31b-a123-4094-a2ef-935d7285b99d": {
@@ -64631,6 +65563,11 @@
 "t": "Wear & Tear - Levski"
 }
 ]
+},
+"5b5f24e2-c088-4fb6-9ca8-3d7f194fd620": {
+"checked": 1794901336,
+"n": "Vanduul Noise Launcher",
+"shops": []
 },
 "5b7cd764-c1d8-44f0-b63f-8fafd8c229ff": {
 "checked": 1794856891,
@@ -66275,6 +67212,11 @@
 "n": "Spirit IceBreak Livery",
 "shops": []
 },
+"5e6640fc-f841-4335-b09a-2e95633a5f69": {
+"checked": 1794901336,
+"n": "Parallax \"Hurston\" Energy Assault Rifle",
+"shops": []
+},
 "5e798b5e-17a2-4e77-9585-863d6d65c8c7": {
 "checked": 1794727783,
 "n": "Monde Core",
@@ -66396,6 +67338,11 @@
 "t": "Cordry's - Levski"
 }
 ]
+},
+"5ed1f1ec-6ebc-463b-9529-83382e20624d": {
+"checked": 1794901336,
+"n": "Liberator Prime",
+"shops": []
 },
 "5ed3e5f5-2fe5-480b-8018-03e3cb2f3605": {
 "checked": 1794551402,
@@ -67117,6 +68064,11 @@
 }
 ]
 },
+"60047bc9-a814-4966-b074-58e46bd0dc0a": {
+"checked": 1794901336,
+"n": "Banded Fessle",
+"shops": []
+},
 "600b0177-763b-4d45-85cf-24205d6e895d": {
 "checked": 1794769723,
 "n": "Tona Shoes Red",
@@ -67147,6 +68099,11 @@
 "6019a9e5-e370-48a9-8a25-221bafe7622a": {
 "checked": 1794769723,
 "n": "Venture Undersuit Starwalker",
+"shops": []
+},
+"601a0c77-6e96-4bbd-ae76-15c0fa1e5928": {
+"checked": 1794901336,
+"n": "Zenith \"Snow Camo\" Laser Sniper Rifle",
 "shops": []
 },
 "601ab389-99ba-48a0-8c9b-5937f27db2e1": {
@@ -67272,6 +68229,11 @@
 "n": "Drake Buccaneer Standard Flight Blade",
 "shops": []
 },
+"60a7a08c-9450-421e-ae10-3acf1b0686f0": {
+"checked": 1794901336,
+"n": "Parallax \"ArcCorp\" Energy Assault Rifle",
+"shops": []
+},
 "60a89f06-91da-4941-b77e-2c9b3f5f57e4": {
 "checked": 1794551402,
 "n": "Harkin",
@@ -67354,6 +68316,11 @@
 "t": "Aparelli - New Babbage"
 }
 ]
+},
+"60f46f40-e933-4a8e-a0c3-1c33b816903e": {
+"checked": 1794901336,
+"n": "Fresnel \"Elysium\" Energy LMG",
+"shops": []
 },
 "60fab7a8-617c-4962-8391-69221ed761d6": {
 "checked": 1794879445,
@@ -70359,6 +71326,11 @@
 }
 ]
 },
+"66033ed4-504c-4824-bf45-be6cfc5ac40e": {
+"checked": 1794901336,
+"n": "STV Finish Line Livery",
+"shops": []
+},
 "660df6a1-e7dd-417a-b4a5-90b81f41b453": {
 "checked": 1794842996,
 "n": "Guardian Black Magic Livery",
@@ -70465,6 +71437,11 @@
 "663faded-8283-400f-9f1d-a0bcc5a1c48e": {
 "checked": 1794701569,
 "n": "Chrome Dome Head Gear Calavera",
+"shops": []
+},
+"6645ee2e-5a58-4db0-a3d7-5cdad7bf8d8a": {
+"checked": 1794901336,
+"n": "FarSight \"Snow Camo\" (8x Telescopic)",
 "shops": []
 },
 "665e7556-3173-48b7-a3ff-48430cff16db": {
@@ -70708,6 +71685,11 @@
 "t": "Casaba Outlet - HUR-L1"
 }
 ]
+},
+"66c4ebd3-3053-4d71-aabd-6d55a81987b9": {
+"checked": 1794901336,
+"n": "Syulen Tao'moa Livery",
+"shops": []
 },
 "66cba05f-9d37-4725-add1-d77f4ae36c87": {
 "checked": 1794820158,
@@ -71754,6 +72736,11 @@
 "n": "Kruger Stingray S4 Missile Rack - Right",
 "shops": []
 },
+"67b55d61-4b48-441f-9c17-4f5429466e09": {
+"checked": 1794901336,
+"n": "Zeus XenoThreat Purge Livery",
+"shops": []
+},
 "67b6c401-1017-4c39-93f6-8305c4c67f69": {
 "checked": 1794551402,
 "n": "AbsoluteZero",
@@ -72761,6 +73748,11 @@
 "6972dedc-cf78-4335-af87-e95dbb6ba1d2": {
 "checked": 1794842996,
 "n": "Emoto “Luminalia” Dashbot",
+"shops": []
+},
+"698e8cec-2e45-406d-86b1-b9855440d48d": {
+"checked": 1794901336,
+"n": "Quartz \"Jungle Camo\" Energy SMG",
 "shops": []
 },
 "69960efa-0a33-4066-b038-85fafa550d95": {
@@ -73918,6 +74910,11 @@
 "n": "Morningstar Helmet Roughshod",
 "shops": []
 },
+"6af44286-2198-4da6-8461-d6658a256bc8": {
+"checked": 1794901336,
+"n": "Tiburon Colmillos Livery",
+"shops": []
+},
 "6afd91f0-8053-4bd7-9093-84dc16bdf9c4": {
 "checked": 1794793685,
 "n": "ClipVest Work Harness White",
@@ -74013,6 +75010,11 @@
 }
 ]
 },
+"6b1ecb0a-5142-49b1-8eb5-2ae9257d09bc": {
+"checked": 1794901336,
+"n": "Ursa Starwalker Livery",
+"shops": []
+},
 "6b1fb5e8-f9ec-49bc-befb-c81b7c08c5ea": {
 "checked": 1794842996,
 "n": "A03 Sniper Rifle",
@@ -74101,6 +75103,11 @@
 "n": "Strode Pants",
 "shops": []
 },
+"6b390f80-d93e-47c7-9ca4-717dd388be4c": {
+"checked": 1794901336,
+"n": "Parallax \"microTech\" Energy Assault Rifle",
+"shops": []
+},
 "6b526bcf-646e-4c70-86af-7f0adab11e4a": {
 "checked": 1794701569,
 "n": "Geist Backpack Desert",
@@ -74139,6 +75146,11 @@
 "t": "Armor - Seraphim"
 }
 ]
+},
+"6b6bb110-e497-4d5e-807d-27e77a9f6682": {
+"checked": 1794901336,
+"n": "Storm Landfall Livery",
+"shops": []
 },
 "6b6f6653-7fff-4358-9cde-82f2e2b281d7": {
 "checked": 1794748631,
@@ -75370,6 +76382,11 @@
 "n": "Overlord Core Mirador",
 "shops": []
 },
+"6daa8955-750e-4c47-bbb7-7f9882c33513": {
+"checked": 1794901336,
+"n": "Vulture Skullcrusher Livery",
+"shops": []
+},
 "6db7bafc-dfa4-4ce5-ad52-de1be2de2855": {
 "checked": 1794820158,
 "n": "Red Wind Container Model",
@@ -76037,6 +77054,11 @@
 "t": "Armor - Seraphim"
 }
 ]
+},
+"6e27e43c-d5df-4012-9de5-ce101ef83c43": {
+"checked": 1794901336,
+"n": "Vanguard New Dawn Livery",
+"shops": []
 },
 "6e2d0ddb-6969-41e3-83ef-07f49d4f044e": {
 "checked": 1794706301,
@@ -79111,6 +80133,11 @@
 "n": "Omarof \"Igniter\" (16x Telescopic)",
 "shops": []
 },
+"713bc5fa-4092-47f6-b07d-88f34c9e57f9": {
+"checked": 1794901336,
+"n": "CDF F8C Certification Pass (Platinum)",
+"shops": []
+},
 "713c5fd6-20ea-48e4-8c9b-a4c67db5e50c": {
 "checked": 1794551402,
 "n": "Argus Helmet Black/Silver/Blue",
@@ -79760,6 +80787,11 @@
 }
 ]
 },
+"7221fd5d-2ac3-4dd9-a735-0b5fafe7f587": {
+"checked": 1794901336,
+"n": "Prism \"Hazard\" Laser Shotgun",
+"shops": []
+},
 "72256518-19bd-47ac-b39f-0f7504b025f3": {
 "checked": 1794842996,
 "n": "ReadyMeal (Beef Chunks)",
@@ -80280,6 +81312,16 @@
 }
 ]
 },
+"725b2bc7-57b5-49cd-806c-0110433eab65": {
+"checked": 1794901336,
+"n": "X1 Scarlet Livery",
+"shops": []
+},
+"726f9f92-e050-4879-b3b8-15de487a256b": {
+"checked": 1794901336,
+"n": "Vanguard Timberline Livery",
+"shops": []
+},
 "72717f0f-ff1c-4194-bca5-9899f0d4502d": {
 "checked": 1794551402,
 "n": "Artimex Helmet Wildwood",
@@ -80288,6 +81330,11 @@
 "727263cc-fe27-483b-bd3a-9c411e2e65dd": {
 "checked": 1794701569,
 "n": "CFP Hat",
+"shops": []
+},
+"727599b7-effe-411a-b848-3eb596389ef3": {
+"checked": 1794901336,
+"n": "Syulen Thlun Livery",
 "shops": []
 },
 "72764009-523d-4f75-bbc5-112302f2557b": {
@@ -81281,6 +82328,551 @@
 "n": "Mantis PHB Flight Blade",
 "shops": []
 },
+"73267ade-62c9-4ea3-9aaf-9469bf878d31": {
+"checked": 1794901336,
+"n": "Novian Bolt Magazine (5 Cap)",
+"shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 622,
+"s": "Stanton",
+"t": "Cubby Area 18"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 622,
+"s": "Stanton",
+"t": "Kel-To Aspire Grand"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Everus"
+},
+{
+"d": "2026-10-26",
+"l": "Orison",
+"p": 622,
+"s": "Stanton",
+"t": "Kel-To Cloudview Center"
+},
+{
+"d": "2026-09-29",
+"l": "HUR-L1 Green Glade Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor HUR-L1"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire HUR-L2"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Tressler"
+},
+{
+"d": "2026-09-12",
+"l": "Zephyr",
+"p": 622,
+"s": "Stanton",
+"t": "Shop Zephyr"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L4 Melodic Fields Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire HUR-L4"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L5 High Course Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire HUR-L5"
+},
+{
+"d": "2026-09-12",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire MIC-L1"
+},
+{
+"d": "2026-09-12",
+"l": "Lorville",
+"p": 622,
+"s": "Stanton",
+"t": "Tammany and Sons"
+},
+{
+"d": "2026-09-11",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor MIC-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire CRU-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L3 Endless Odyssey Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire MIC-L3"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor MIC-L4"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor ARC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L4 Faint Glen Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor ARC-L4"
+},
+{
+"d": "2026-09-04",
+"l": "Frostbite",
+"p": 622,
+"s": "Stanton",
+"t": "Frostbite"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 622,
+"s": "Stanton",
+"t": "Skutters Grim"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 622,
+"s": "Stanton",
+"t": "FPS Armor Seraphim"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire Seraphim"
+},
+{
+"d": "2026-09-01",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire CRU-L5"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 622,
+"s": "Stanton",
+"t": "Live Fire MIC-L2"
+},
+{
+"d": "2026-08-27",
+"l": "Astor's Clearing",
+"p": 622,
+"s": "Stanton",
+"t": "Shop Astor's"
+},
+{
+"d": "2026-08-27",
+"l": "Dunboro",
+"p": 622,
+"s": "Stanton",
+"t": "Shop Dunboro"
+},
+{
+"d": "2026-11-12",
+"l": "People's Service Station Delta",
+"p": 622,
+"s": "Nyx",
+"t": "Weapons & Armor PSSD"
+},
+{
+"d": "2026-11-12",
+"l": "People's Service Station Alpha",
+"p": 622,
+"s": "Nyx",
+"t": "Weapons & Armor PSSA"
+},
+{
+"d": "2026-10-12",
+"l": "Levski",
+"p": 622,
+"s": "Nyx",
+"t": "Conscientious Levski"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 622,
+"s": "Nyx",
+"t": "FPS Armor Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 622,
+"s": "Nyx",
+"t": "Live Fire Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-10",
+"l": "People's Service Station Theta",
+"p": 622,
+"s": "Nyx",
+"t": "Weapons & Armor PSST"
+},
+{
+"d": "2026-09-10",
+"l": "People's Service Station Lambda",
+"p": 622,
+"s": "Nyx",
+"t": "Weapons & Armor PSSL"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 622,
+"s": "Nyx",
+"t": "FPS Armor Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 622,
+"s": "Nyx",
+"t": "Live Fire Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-15",
+"l": "Rod's Fuel 'N Supplies",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Rod's Fuel"
+},
+{
+"d": "2026-09-07",
+"l": "Stanton Gateway",
+"p": 622,
+"s": "Pyro",
+"t": "FPS Armor Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 622,
+"s": "Pyro",
+"t": "Live Fire Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 622,
+"s": "Pyro",
+"t": "Live Fire Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 622,
+"s": "Pyro",
+"t": "FPS Armor Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Jackson's Swap",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Jackson's Swap"
+},
+{
+"d": "2026-09-05",
+"l": "Arid Reach",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Arid Reach"
+},
+{
+"d": "2026-09-04",
+"l": "Shepherd's Rest",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Shepherd's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Narena's Rest",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Narena's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Frigid Knot",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Frigid Knot"
+},
+{
+"d": "2026-09-03",
+"l": "Orbituary",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Orbituary"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 622,
+"s": "Pyro",
+"t": "Shooters Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Checkmate"
+},
+{
+"d": "2026-09-02",
+"l": "Sacren's Plot",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Sacren's Plot"
+},
+{
+"d": "2026-09-02",
+"l": "Goner's Deal",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Goner's Deal"
+},
+{
+"d": "2026-09-02",
+"l": "Prophet's Peak",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Prophet's Peak"
+},
+{
+"d": "2026-09-02",
+"l": "Fallow Field",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Fallow Field"
+},
+{
+"d": "2026-09-01",
+"l": "Ashland",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Ashland"
+},
+{
+"d": "2026-09-01",
+"l": "Rough Landing",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Rough Landing"
+},
+{
+"d": "2026-09-01",
+"l": "Bullock's Reach",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Bullock's Reach"
+},
+{
+"d": "2026-09-01",
+"l": "Blackrock Exchange",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Blackrock Exchange"
+},
+{
+"d": "2026-09-01",
+"l": "Canard View",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Canard View"
+},
+{
+"d": "2026-08-31",
+"l": "Ruin Station",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Ruin"
+},
+{
+"d": "2026-08-31",
+"l": "Dudley & Daughters",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Dudley"
+},
+{
+"d": "2026-08-31",
+"l": "Rat's Nest",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Rat's Nest"
+},
+{
+"d": "2026-08-31",
+"l": "Patch City",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Patch City"
+},
+{
+"d": "2026-08-31",
+"l": "Endgame",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Endgame"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Megumi"
+},
+{
+"d": "2026-08-30",
+"l": "Starlight Service Station",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Starlight"
+},
+{
+"d": "2026-08-30",
+"l": "Kabir's Post",
+"p": 622,
+"s": "Pyro",
+"t": "Shop Kabir's Post"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 622,
+"s": "Pyro",
+"t": "Guns Gaslight"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 778,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
+},
 "7327ea89-c9dc-462b-9517-1739dbfaa184": {
 "checked": 1794793685,
 "n": "Paladin Helmet Black/Silver",
@@ -81737,6 +83329,11 @@
 "73fb9b7d-0fc4-4cf6-ac1f-cfd03170341e": {
 "checked": 1794793685,
 "n": "Chiron Helmet",
+"shops": []
+},
+"74051a0e-e812-47ac-88eb-bf85c8f47038": {
+"checked": 1794901336,
+"n": "Reliant Utility Mount Cap",
 "shops": []
 },
 "7408404d-d1f9-4941-bf7f-93886fac4bc9": {
@@ -83529,6 +85126,11 @@
 }
 ]
 },
+"758cb316-8138-49cd-86ef-9621cb13e507": {
+"checked": 1794901336,
+"n": "Syulen Ch.iing Livery",
+"shops": []
+},
 "75903fea-f957-46d1-a45b-77bcb3fbf2cb": {
 "checked": 1794748631,
 "n": "Testudo Core Nightveil",
@@ -83648,6 +85250,11 @@
 "75be95dc-3679-458a-b41f-728b8422fdc4": {
 "checked": 1794879445,
 "n": "WowBlast Desperado Toy Pistol Orange",
+"shops": []
+},
+"75ca08ba-6edc-46ed-a13c-56d788e258f9": {
+"checked": 1794901336,
+"n": "Parallax \"Sanguine\" Energy Assault Rifle",
 "shops": []
 },
 "75ce606e-4407-46a1-bed2-06adad2766b0": {
@@ -84377,6 +85984,11 @@
 "n": "EE16 (16x Telescopic)",
 "shops": []
 },
+"777110d2-78f4-48db-a306-ca005e515d0b": {
+"checked": 1794901336,
+"n": "Novian \"Shroud\" Crossbow",
+"shops": []
+},
 "7795a2b5-9fc8-4712-a23b-d6bb27a640a9": {
 "checked": 1794856891,
 "n": "HoverQuad Lightspeed Livery",
@@ -84385,6 +85997,11 @@
 "7799b79b-2753-4b6a-9965-c99cedff4924": {
 "checked": 1794706301,
 "n": "Aril Helmet Black Cherry",
+"shops": []
+},
+"779a3412-7278-4ba7-9074-94cb7f541edc": {
+"checked": 1794901336,
+"n": "Pulse \"Piconalia\" Laser Pistol",
 "shops": []
 },
 "779f9ff9-f023-47ee-9004-113d8183d284": {
@@ -85953,6 +87570,16 @@
 }
 ]
 },
+"7a614151-6b3f-4119-9cba-9df617e7dce0": {
+"checked": 1794901336,
+"n": "Vanguard Invictus Blue and Gold Livery",
+"shops": []
+},
+"7a646838-b4cc-4e39-85e7-744a6465fde3": {
+"checked": 1794901336,
+"n": "UTV Wilderness Camo Livery",
+"shops": []
+},
 "7a7348b2-d68d-4234-ae67-7807a9eddc02": {
 "checked": 1794727783,
 "n": "Second Tevarin War White Dress Jacket",
@@ -86183,6 +87810,11 @@
 }
 ]
 },
+"7ae99572-7b4a-4281-9296-f29d64723786": {
+"checked": 1794901336,
+"n": "Conference Table",
+"shops": []
+},
 "7aedcc5b-bc1f-48ef-8031-4dca8e2fc9fc": {
 "checked": 1794701569,
 "n": "Harlowe Shirt Yellow",
@@ -86245,6 +87877,19 @@
 "checked": 1794879445,
 "n": "Railen Insularis Livery",
 "shops": []
+},
+"7b02ea9f-ba9a-48a9-89c4-e557155bd471": {
+"checked": 1794901336,
+"n": "FarSight (8x Telescopic)",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1750,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
 },
 "7b0c2445-5f43-4a87-83da-1687c6cd0f64": {
 "checked": 1794748631,
@@ -88417,6 +90062,11 @@
 }
 ]
 },
+"7d5de3f3-47be-4e2a-af46-40cc2abecf8c": {
+"checked": 1794901336,
+"n": "Valkyrie 2950 Best In Show Livery",
+"shops": []
+},
 "7d72580c-23a2-4258-9bd5-4275da1f08c8": {
 "checked": 1794748631,
 "n": "Lynx Arms Sienna",
@@ -89051,6 +90701,11 @@
 "n": "Citadel Arms Earthwork",
 "shops": []
 },
+"7dd1988f-77cf-40f0-a29e-dac5e2186aad": {
+"checked": 1794901336,
+"n": "Prism Laser Shotgun",
+"shops": []
+},
 "7de8c10f-ec20-4044-9e01-2229ab9bce99": {
 "checked": 1794702420,
 "n": "PYAM Supervisor Keycard",
@@ -89199,6 +90854,11 @@
 "7e320fe2-8d67-4aef-999d-bace4e6e38d7": {
 "checked": 1794793685,
 "n": "Castillo Jacket Formal",
+"shops": []
+},
+"7e37741d-8090-48b3-ab84-b60fd138761d": {
+"checked": 1794901336,
+"n": "Zenith \"Darkwave\" Laser Sniper Rifle",
 "shops": []
 },
 "7e44b7bc-71af-461d-9617-3d15d828ce00": {
@@ -90563,6 +92223,11 @@
 }
 ]
 },
+"80ab18bb-9bc2-4e4f-a407-06c28e69bea7": {
+"checked": 1794901336,
+"n": "'WASP' Repeater",
+"shops": []
+},
 "80ac0aec-d3ba-42a5-ba4e-454f313d5467": {
 "checked": 1794879445,
 "n": "Sabre Starlight Livery",
@@ -90962,6 +92627,11 @@
 }
 ]
 },
+"811dad07-e8f7-4efd-8631-2c73fe3fe51a": {
+"checked": 1794901336,
+"n": "Prism \"Hurston\" Laser Shotgun",
+"shops": []
+},
 "8121f249-7c41-4559-8aba-817079b45052": {
 "checked": 1794879445,
 "n": "300 Series First Response Paint",
@@ -91090,6 +92760,11 @@
 "8166a3fb-d7af-496b-bba3-08db32bbc6ef": {
 "checked": 1794793685,
 "n": "Xanthule Tahn Flight Suit",
+"shops": []
+},
+"816aa854-7615-4add-a2ca-2d39ada7fea7": {
+"checked": 1794901336,
+"n": "'WAR' Cannon",
 "shops": []
 },
 "81719bc1-39d2-4343-9d62-cd0c10b7aecc": {
@@ -92094,6 +93769,11 @@
 "n": "Perth Pants Maroon",
 "shops": []
 },
+"81cd000c-69a7-4125-848a-e91c649a61c1": {
+"checked": 1794901336,
+"n": "Quartz \"Crusader\" Energy SMG",
+"shops": []
+},
 "81d120b2-d7a4-413a-8f9e-a1ebbb8ae1e2": {
 "checked": 1794842996,
 "n": "OxyTorch Cutter Attachment",
@@ -92715,6 +94395,11 @@
 }
 ]
 },
+"82d9d4a8-d9b1-4502-88bc-17efeb1182c2": {
+"checked": 1794901336,
+"n": "Vulture Pyrite Livery",
+"shops": []
+},
 "82dac526-dedb-40d6-88cb-a597a82e76ba": {
 "checked": 1794702420,
 "n": "Ridgely Jacket Grotto",
@@ -92727,6 +94412,11 @@
 "t": "Shop Terminal - Shepherd's Rest"
 }
 ]
+},
+"82f191d3-0619-4d22-8b80-bba00e084e20": {
+"checked": 1794901336,
+"n": "Vulture IceBreak Livery",
+"shops": []
 },
 "82f2f53e-763c-4733-be8d-db1e73334696": {
 "checked": 1794842996,
@@ -93089,6 +94779,579 @@
 "n": "Stirling Exploration Helmet Olympian Edition",
 "shops": []
 },
+"83ac5196-05d0-45a1-8982-aa549650f9d9": {
+"checked": 1794901336,
+"n": "Quartz Energy SMG Battery (45 cap)",
+"shops": [
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 428,
+"s": "Stanton",
+"t": "FPS Armor Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 428,
+"s": "Stanton",
+"t": "Live Fire Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 473,
+"s": "Stanton",
+"t": "FPS Armor Everus"
+},
+{
+"d": "2026-09-12",
+"l": "Lorville",
+"p": 473,
+"s": "Stanton",
+"t": "Tammany and Sons"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 495,
+"s": "Stanton",
+"t": "Cubby Area 18"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 495,
+"s": "Stanton",
+"t": "CenterMass New Babbage"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 495,
+"s": "Stanton",
+"t": "Kel-To Aspire Grand"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-26",
+"l": "Orison",
+"p": 495,
+"s": "Stanton",
+"t": "Kel-To Cloudview Center"
+},
+{
+"d": "2026-09-29",
+"l": "HUR-L1 Green Glade Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor HUR-L1"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire HUR-L2"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor Tressler"
+},
+{
+"d": "2026-09-12",
+"l": "Zephyr",
+"p": 495,
+"s": "Stanton",
+"t": "Shop Zephyr"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L4 Melodic Fields Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire HUR-L4"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L5 High Course Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire HUR-L5"
+},
+{
+"d": "2026-09-12",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire MIC-L1"
+},
+{
+"d": "2026-09-11",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor MIC-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire CRU-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L3 Endless Odyssey Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire MIC-L3"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor MIC-L4"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor ARC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L4 Faint Glen Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor ARC-L4"
+},
+{
+"d": "2026-09-04",
+"l": "Frostbite",
+"p": 495,
+"s": "Stanton",
+"t": "Frostbite"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 495,
+"s": "Stanton",
+"t": "FPS Armor Seraphim"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire Seraphim"
+},
+{
+"d": "2026-09-01",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire CRU-L5"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 495,
+"s": "Stanton",
+"t": "CenterMass Area 18"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 495,
+"s": "Stanton",
+"t": "Live Fire MIC-L2"
+},
+{
+"d": "2026-08-27",
+"l": "Astor's Clearing",
+"p": 495,
+"s": "Stanton",
+"t": "Shop Astor's"
+},
+{
+"d": "2026-08-27",
+"l": "Dunboro",
+"p": 495,
+"s": "Stanton",
+"t": "Shop Dunboro"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 500,
+"s": "Stanton",
+"t": "Skutters Grim"
+},
+{
+"d": "2026-11-12",
+"l": "People's Service Station Delta",
+"p": 495,
+"s": "Nyx",
+"t": "Weapons & Armor PSSD"
+},
+{
+"d": "2026-11-12",
+"l": "People's Service Station Alpha",
+"p": 495,
+"s": "Nyx",
+"t": "Weapons & Armor PSSA"
+},
+{
+"d": "2026-10-12",
+"l": "Levski",
+"p": 495,
+"s": "Nyx",
+"t": "Conscientious Levski"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 495,
+"s": "Nyx",
+"t": "FPS Armor Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 495,
+"s": "Nyx",
+"t": "Live Fire Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-10",
+"l": "People's Service Station Theta",
+"p": 495,
+"s": "Nyx",
+"t": "Weapons & Armor PSST"
+},
+{
+"d": "2026-09-10",
+"l": "People's Service Station Lambda",
+"p": 495,
+"s": "Nyx",
+"t": "Weapons & Armor PSSL"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 495,
+"s": "Nyx",
+"t": "FPS Armor Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 495,
+"s": "Nyx",
+"t": "Live Fire Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-15",
+"l": "Rod's Fuel 'N Supplies",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Rod's Fuel"
+},
+{
+"d": "2026-09-07",
+"l": "Stanton Gateway",
+"p": 495,
+"s": "Pyro",
+"t": "FPS Armor Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 495,
+"s": "Pyro",
+"t": "Live Fire Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 495,
+"s": "Pyro",
+"t": "Live Fire Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 495,
+"s": "Pyro",
+"t": "FPS Armor Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Jackson's Swap",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Jackson's Swap"
+},
+{
+"d": "2026-09-05",
+"l": "Arid Reach",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Arid Reach"
+},
+{
+"d": "2026-09-04",
+"l": "Shepherd's Rest",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Shepherd's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Narena's Rest",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Narena's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Frigid Knot",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Frigid Knot"
+},
+{
+"d": "2026-09-03",
+"l": "Orbituary",
+"p": 495,
+"s": "Pyro",
+"t": "Shooters Orbituary"
+},
+{
+"d": "2026-09-03",
+"l": "Orbituary",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Orbituary"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 495,
+"s": "Pyro",
+"t": "Shooters Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Checkmate"
+},
+{
+"d": "2026-09-02",
+"l": "Sacren's Plot",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Sacren's Plot"
+},
+{
+"d": "2026-09-02",
+"l": "Goner's Deal",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Goner's Deal"
+},
+{
+"d": "2026-09-02",
+"l": "Prophet's Peak",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Prophet's Peak"
+},
+{
+"d": "2026-09-02",
+"l": "Fallow Field",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Fallow Field"
+},
+{
+"d": "2026-09-01",
+"l": "Ashland",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Ashland"
+},
+{
+"d": "2026-09-01",
+"l": "Rough Landing",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Rough Landing"
+},
+{
+"d": "2026-09-01",
+"l": "Bullock's Reach",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Bullock's Reach"
+},
+{
+"d": "2026-09-01",
+"l": "Blackrock Exchange",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Blackrock Exchange"
+},
+{
+"d": "2026-09-01",
+"l": "Canard View",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Canard View"
+},
+{
+"d": "2026-08-31",
+"l": "Ruin Station",
+"p": 495,
+"s": "Pyro",
+"t": "Shooters Ruin"
+},
+{
+"d": "2026-08-31",
+"l": "Ruin Station",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Ruin"
+},
+{
+"d": "2026-08-31",
+"l": "Dudley & Daughters",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Dudley"
+},
+{
+"d": "2026-08-31",
+"l": "Rat's Nest",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Rat's Nest"
+},
+{
+"d": "2026-08-31",
+"l": "Patch City",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Patch City"
+},
+{
+"d": "2026-08-31",
+"l": "Endgame",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Endgame"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Megumi"
+},
+{
+"d": "2026-08-30",
+"l": "Starlight Service Station",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Starlight"
+},
+{
+"d": "2026-08-30",
+"l": "Kabir's Post",
+"p": 495,
+"s": "Pyro",
+"t": "Shop Kabir's Post"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 495,
+"s": "Pyro",
+"t": "Guns Gaslight"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 625,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
+},
 "83b3857b-d7d5-40bd-b79c-058026f29ec6": {
 "checked": 1794820158,
 "n": "Durus Tractor Beam",
@@ -93102,6 +95365,11 @@
 "83b65e20-381d-4238-b379-5c041c71d125": {
 "checked": 1794879445,
 "n": "RAFT Deck the Hull Livery",
+"shops": []
+},
+"83b6c014-63a2-4516-b2bd-36b762d208f4": {
+"checked": 1794901336,
+"n": "Anvil Hornet Ghost Center Cap",
 "shops": []
 },
 "83b6e655-d767-4b0c-862e-8894ae30d046": {
@@ -93366,6 +95634,11 @@
 "t": "Cargo Services - Gaslight"
 }
 ]
+},
+"84451f94-fc31-41c4-ba0f-77f671a6e99c": {
+"checked": 1794901336,
+"n": "Wolf Sylvan Camo Livery",
+"shops": []
 },
 "845dc675-ab4c-4bd5-8b14-11e9c29f3399": {
 "checked": 1794879445,
@@ -95227,6 +97500,11 @@
 }
 ]
 },
+"86a2ad62-8eab-4601-b972-a2ca92b5ff93": {
+"checked": 1794901336,
+"n": "X1 2954 Auspicious Red Dog Livery",
+"shops": []
+},
 "86a53f79-8bd7-4d12-8c79-ee08ec1e1e74": {
 "checked": 1794769723,
 "n": "Venture Arms Tan",
@@ -96302,6 +98580,11 @@
 "n": "Haruspec Goggles",
 "shops": []
 },
+"87e6dac9-8efa-4f1f-8078-3dcf2754e0b8": {
+"checked": 1794901336,
+"n": "Ursa Skullcrusher Livery",
+"shops": []
+},
 "87e8b78b-91e0-40d3-9f42-b406df1e7fbb": {
 "checked": 1794551402,
 "n": "TrueDef-Pro Core Yellow/Grey",
@@ -96623,6 +98906,11 @@
 }
 ]
 },
+"8872fed7-09bc-4334-9f7f-7958d6f512a1": {
+"checked": 1794901336,
+"n": "Pulse \"Hurston\" Laser Pistol",
+"shops": []
+},
 "88749b9e-cd29-43e7-99c7-87465f6734a8": {
 "checked": 1794856891,
 "n": "Meteor Nightbreak Livery",
@@ -96891,6 +99179,11 @@
 "t": "Armor - Seraphim"
 }
 ]
+},
+"88f0530e-44de-4df5-a722-a615d1c3de9f": {
+"checked": 1794901336,
+"n": "CitizenCon 2955 Trophy",
+"shops": []
 },
 "88f06c35-bca3-4ab0-b375-21540e548101": {
 "checked": 1794706301,
@@ -99257,6 +101550,11 @@
 "n": "Aves Shrike Core",
 "shops": []
 },
+"8c7efc81-3742-4539-8dc4-102a25032c57": {
+"checked": 1794901336,
+"n": "Zeus Headhunters Trauma Livery",
+"shops": []
+},
 "8c866f86-07c3-4ad8-8edc-9f6fc9fb3d01": {
 "checked": 1794706301,
 "n": "Giotto Jacket Crusader Edition",
@@ -100853,9 +103151,19 @@
 "n": "Spartan Ranger Livery",
 "shops": []
 },
+"8de73e6a-c0ad-4cc9-931b-3f65c0d25da7": {
+"checked": 1794901336,
+"n": "Storm Summit Livery",
+"shops": []
+},
 "8defaafe-7b61-42f0-baf0-d18581beb366": {
 "checked": 1794701569,
 "n": "Ketchum Beanie Black",
+"shops": []
+},
+"8df5d8a3-8052-4504-91ff-4a4c9d33218d": {
+"checked": 1794901336,
+"n": "Zenith \"Thunderstrike\" Laser Sniper Rifle",
 "shops": []
 },
 "8e0c6c26-f8fa-4c31-bdd1-1d5ee9ea3a63": {
@@ -103923,6 +106231,11 @@
 }
 ]
 },
+"9103a4a7-4ab1-4a18-aec0-e5442f65766d": {
+"checked": 1794901336,
+"n": "Vulture Oriole Livery",
+"shops": []
+},
 "91080094-3753-4c6d-8286-ed79d8bfe9a3": {
 "checked": 1794856891,
 "n": "Liberator Valhalla Livery",
@@ -104308,6 +106621,11 @@
 "91914070-df29-4be8-a6bb-0710532c6a08": {
 "checked": 1794842996,
 "n": "Agrodolce Delight Kacho",
+"shops": []
+},
+"91ce5cb3-3a52-49b1-a37a-511004973dbe": {
+"checked": 1794901336,
+"n": "Wolf Ranger Camo Livery",
 "shops": []
 },
 "91cfb7dc-660b-4505-b86a-6028c9a3f54d": {
@@ -104982,6 +107300,11 @@
 "91ed5cd2-a953-4dcf-83d1-68dc52aa188a": {
 "checked": 1794793685,
 "n": "Chiron Backpack Foundation",
+"shops": []
+},
+"91f45c5e-0509-4e82-821c-f522a5a475e7": {
+"checked": 1794901336,
+"n": "Vanguard True Valor Livery",
 "shops": []
 },
 "91fe75da-ee46-47f7-9968-26acbedab5d1": {
@@ -106594,6 +108917,11 @@
 "t": "Shop Terminal - Shepherd's Rest"
 }
 ]
+},
+"93ae8a77-efd2-4eb1-933f-f436a5789bb6": {
+"checked": 1794901336,
+"n": "Fresnel \"Shadow Gild\" Energy LMG",
+"shops": []
 },
 "93cc91da-f89d-4fd8-805b-2ad85db26e6c": {
 "checked": 1794748631,
@@ -108432,6 +110760,11 @@
 }
 ]
 },
+"9568282c-af1c-4b74-a6ed-e1b638c9f67b": {
+"checked": 1794901336,
+"n": "Vanguard Clawed Steel Livery",
+"shops": []
+},
 "956ddf19-a9e8-4044-8857-eab7e563fd2a": {
 "checked": 1794706301,
 "n": "Deo Shirt Twilight",
@@ -108648,6 +110981,11 @@
 "95c59f5f-6d09-46ea-89d4-f6b52f3079ec": {
 "checked": 1794879445,
 "n": "Retaliator Backlash Livery",
+"shops": []
+},
+"95c672b4-b598-40b3-a009-c7db703ae332": {
+"checked": 1794901336,
+"n": "Vulture Abomination Livery",
 "shops": []
 },
 "95c85f25-ccd9-402e-b02a-522f5a97a654": {
@@ -109331,6 +111669,11 @@
 "n": "MTC Baracus Livery",
 "shops": []
 },
+"9713a915-4920-4298-8f2e-903f06d6901f": {
+"checked": 1794901336,
+"n": "Vulture Deck the Hull Livery",
+"shops": []
+},
 "971a5272-a0f1-46a1-aee1-44955fe528e4": {
 "checked": 1794820158,
 "n": "S-38 \"One Empire\" Pistol",
@@ -109589,6 +111932,26 @@
 "checked": 1794820158,
 "n": "Aurora Mk II Model",
 "shops": []
+},
+"972a37f2-e4b2-4ae2-8e56-e2d43692eb0e": {
+"checked": 1794901336,
+"n": "Valkyrie Light Grey Livery",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 225000,
+"s": "Stanton",
+"t": "Dumper's Depot - GrimHEX"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 225000,
+"s": "Stanton",
+"t": "Dumper's Depot - Area 18"
+}
+]
 },
 "972c562f-bc9b-441c-a2fb-785293e54eda": {
 "checked": 1794842996,
@@ -109954,6 +112317,11 @@
 "t": "Omega New Babbage"
 }
 ]
+},
+"979be032-a7e7-472c-9322-dbde7537ac25": {
+"checked": 1794901336,
+"n": "Prism \"Irradiated\" Laser Shotgun",
+"shops": []
 },
 "979c18d6-3e59-4038-be76-8364bb0196fc": {
 "checked": 1794701569,
@@ -111551,6 +113919,11 @@
 "t": "Platinum Bay - Nyx Gateway (Pyro)"
 }
 ]
+},
+"98efd8ff-b0ba-48cf-bb48-3ff4e1bd3b3f": {
+"checked": 1794901336,
+"n": "Parallax \"Shock Trooper\" Energy Assault Rifle",
+"shops": []
 },
 "98fc2303-daae-4f4a-b8c4-0bf992535def": {
 "checked": 1794701569,
@@ -114056,6 +116429,11 @@
 "9c81d1a4-5108-4776-a904-ac93209b71ee": {
 "checked": 1794842996,
 "n": "Golem Foundation Fest Livery",
+"shops": []
+},
+"9c86b8cf-28de-49fc-aded-5b1a5bff2d42": {
+"checked": 1794901336,
+"n": "FSK-8 Combat Knife",
 "shops": []
 },
 "9c8a751a-b2ad-4e81-a83e-79e48ef97c3c": {
@@ -116587,6 +118965,11 @@
 "n": "Inquisitor Core Orange",
 "shops": []
 },
+"a134062c-f767-4872-bef5-56d171db3665": {
+"checked": 1794901336,
+"n": "Zeus Mk II Firmament Livery",
+"shops": []
+},
 "a13542f1-e244-4cb4-a39d-54634ca0115e": {
 "checked": 1794727783,
 "n": "Geist Armor Helmet Whiteout",
@@ -116601,6 +118984,26 @@
 "checked": 1794820158,
 "n": "Cutter Citizens for Prosperity Garnet Livery",
 "shops": []
+},
+"a144a4b6-ad84-489c-8607-313b614350d7": {
+"checked": 1794901336,
+"n": "Valkyrie Sage Livery",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 219000,
+"s": "Stanton",
+"t": "Dumper's Depot - GrimHEX"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 219000,
+"s": "Stanton",
+"t": "Dumper's Depot - Area 18"
+}
+]
 },
 "a147bd26-7e93-410f-95f4-166da8d79a9c": {
 "checked": 1794551402,
@@ -117131,6 +119534,11 @@
 }
 ]
 },
+"a297ea4e-6b1e-4192-bf97-b8dc18408949": {
+"checked": 1794901336,
+"n": "STV Cobalt Grey Livery",
+"shops": []
+},
 "a2a10efe-30bb-4a6d-ab78-e86d0de2ee15": {
 "checked": 1794727783,
 "n": "Trekker Boots",
@@ -117139,6 +119547,11 @@
 "a2a8fc05-772e-4b2d-ad27-34fd97b499ba": {
 "checked": 1794706301,
 "n": "Pisces Standard Flight Blade",
+"shops": []
+},
+"a2b14491-b76e-4cb2-bab2-7a0bed66481f": {
+"checked": 1794901336,
+"n": "Parallax \"Crusader\" Energy Assault Rifle",
 "shops": []
 },
 "a2b48d42-5798-4e2f-b610-198538a70b6e": {
@@ -117353,6 +119766,11 @@
 "a2cd25f0-5377-4625-a06e-57774414c6b7": {
 "checked": 1794706301,
 "n": "Strata Legs ArcCorp Edition",
+"shops": []
+},
+"a2d90b2a-7f1a-4ab9-9b02-f7f1c88be2cf": {
+"checked": 1794901336,
+"n": "X1 Shadow Livery",
 "shops": []
 },
 "a2dd47d0-3d8c-4a04-ae91-8be9bcf6bb24": {
@@ -118051,6 +120469,11 @@
 "a421dc6f-7906-4999-ae8f-b410013f9f45": {
 "checked": 1794856891,
 "n": "HoverQuad Copperhead Livery",
+"shops": []
+},
+"a4297f14-1746-4050-b93d-50fd87eb5819": {
+"checked": 1794901336,
+"n": "Talon Luminary Livery",
 "shops": []
 },
 "a4384f78-a3aa-4e5a-a4e8-83f238595e04": {
@@ -119740,6 +122163,11 @@
 "n": "Monde Arms Streamline",
 "shops": []
 },
+"a6b254ad-61b9-4893-b4ea-33dba18a1976": {
+"checked": 1794901336,
+"n": "UTV Keystone Livery",
+"shops": []
+},
 "a6b4604a-358b-4ee7-8c0f-f3f43427154d": {
 "checked": 1794702420,
 "n": "Adze",
@@ -120803,6 +123231,11 @@
 }
 ]
 },
+"a84e7c2d-ced5-4ea0-bbb4-0acf81b0d096": {
+"checked": 1794901336,
+"n": "Wolf Iceflash Livery",
+"shops": []
+},
 "a85d4ed6-162b-4b0f-9984-88f738cae065": {
 "checked": 1794793685,
 "n": "Edgewear Pants Red",
@@ -121672,6 +124105,11 @@
 "t": "Refinery Shop - Orbituary"
 }
 ]
+},
+"a9780953-9488-4644-9b56-61464e9dd6b9": {
+"checked": 1794901336,
+"n": "Yeng’tu Repeater",
+"shops": []
 },
 "a979dbc0-1549-42d9-aec0-686a1b2e68c5": {
 "checked": 1794879445,
@@ -123753,6 +126191,11 @@
 "n": "Inquisitor Arms Grey",
 "shops": []
 },
+"aae90c25-7b6a-44ca-a586-d7ea60324d78": {
+"checked": 1794901336,
+"n": "Ursa Respite Livery",
+"shops": []
+},
 "aaef023e-9f0a-48c3-a8b7-cc8c02e124a9": {
 "checked": 1794748631,
 "n": "Oracle Helmet Bloodstorm",
@@ -124051,6 +126494,11 @@
 "n": "Storage Container Access Card",
 "shops": []
 },
+"ab93ef85-493c-4fb7-a9ff-bfc790f46ae3": {
+"checked": 1794901336,
+"n": "Quartz \"Hunter Camo\" Energy SMG",
+"shops": []
+},
 "ab9943d9-acb9-4e38-b729-cb907c36ef9c": {
 "checked": 1794842996,
 "n": "CitizenCon 2948 Special Edition Trophy",
@@ -124285,6 +126733,11 @@
 "n": "Chiron Backpack Lifesaver",
 "shops": []
 },
+"ac3cc8f1-c96f-4f1a-aedc-500f97a8c29a": {
+"checked": 1794901336,
+"n": "Zeus Citizens for Prosperity Garnet Livery",
+"shops": []
+},
 "ac482ff8-7ade-4fd9-9f08-46decffef303": {
 "checked": 1794702420,
 "n": "Frontier 11 Classic Horizon",
@@ -124413,6 +126866,11 @@
 "t": "Armor - Nyx Gateway (Pyro)"
 }
 ]
+},
+"aca07eeb-b79e-4707-9215-c56a9a588021": {
+"checked": 1794901336,
+"n": "Vulture Heartthrob Livery",
+"shops": []
 },
 "acb16b1e-6f95-42d3-a05d-4792e501e273": {
 "checked": 1794748631,
@@ -124961,6 +127419,11 @@
 }
 ]
 },
+"ad311d60-9923-4d97-b336-1f325153f73b": {
+"checked": 1794901336,
+"n": "Syulen Purple Haze Livery",
+"shops": []
+},
 "ad41bd3f-b1a6-4b01-84e5-6cf2f7bab8a4": {
 "checked": 1794727783,
 "n": "Corbel Arms Crush",
@@ -124969,6 +127432,11 @@
 "ad476d90-3130-4d50-9d46-e64fadcd6f6e": {
 "checked": 1794793685,
 "n": "Defiance Helmet Ultimatum",
+"shops": []
+},
+"ad48b8cb-b0a1-41c9-b72b-70d8f865903d": {
+"checked": 1794901336,
+"n": "UTV Reckoner Livery",
 "shops": []
 },
 "ad4a47ed-a1c2-43e9-987c-9561d53019df": {
@@ -125600,6 +128068,11 @@
 }
 ]
 },
+"adc38a8e-1972-4632-97ec-c9eb067490f1": {
+"checked": 1794901336,
+"n": "Zeus Mk II Solstice Livery",
+"shops": []
+},
 "adc58623-3f7b-467c-b7f8-6034416febce": {
 "checked": 1794820158,
 "n": "ATLS Carbon Black Livery",
@@ -125849,6 +128322,11 @@
 "n": "Lynx Arms Orange",
 "shops": []
 },
+"ae38dde9-256e-4431-8dc7-a6f2ca1e26b5": {
+"checked": 1794901336,
+"n": "Pink QuikFlare",
+"shops": []
+},
 "ae4acdd4-0224-4f71-8e65-d8bb5e89cbc6": {
 "checked": 1794793685,
 "n": "TrueDef-Pro Arms Red/Silver",
@@ -125935,6 +128413,11 @@
 "ae8e946a-8c02-41ff-a2b1-273dbec6c571": {
 "checked": 1794748631,
 "n": "Lynx Arms Violet",
+"shops": []
+},
+"ae9081fd-58c2-4346-a71e-bb834d00df89": {
+"checked": 1794901336,
+"n": "Quartz \"New Dawn\" Energy SMG",
 "shops": []
 },
 "ae9a9156-49d1-419b-b346-f7d438f7a1b8": {
@@ -126076,6 +128559,11 @@
 "n": "Arden-SL Core Balefire",
 "shops": []
 },
+"af446ac1-0502-4b18-b7be-850fb8ea8cd1": {
+"checked": 1794901336,
+"n": "Quartz \"Piconalia\" Energy SMG",
+"shops": []
+},
 "af450721-ef5a-439b-9e1c-1535b2172d6a": {
 "checked": 1794706301,
 "n": "Toughlife Boots Red",
@@ -126181,6 +128669,11 @@
 "af4fe2de-7944-4a21-89d7-92be9920877f": {
 "checked": 1794727783,
 "n": "Lamont Umbra Undersuit",
+"shops": []
+},
+"af55f514-d7fd-49fd-89c8-6aee01f25859": {
+"checked": 1794901336,
+"n": "Fresnel Energy LMG",
 "shops": []
 },
 "af593aa3-3ef6-4406-b40e-819dbe75a241": {
@@ -126368,6 +128861,11 @@
 "t": "Casaba Outlet - Seraphim"
 }
 ]
+},
+"afea861e-01c3-433a-8f7a-56b655b05ffc": {
+"checked": 1794901336,
+"n": "Zeus Crusader Livery",
+"shops": []
 },
 "afee958a-8da3-48a3-aac7-14047d9de20e": {
 "checked": 1794551402,
@@ -127700,6 +130198,11 @@
 "n": "Corbel Core Mire",
 "shops": []
 },
+"b144a16c-bba4-427e-9f78-bd379f9509f8": {
+"checked": 1794901336,
+"n": "Parallax Energy Assault Rifle",
+"shops": []
+},
 "b1454c7b-859d-4e78-9429-e05391242ca7": {
 "checked": 1794793685,
 "n": "Steward",
@@ -128210,6 +130713,11 @@
 "n": "Sabre Black Magic Livery",
 "shops": []
 },
+"b1662474-624e-453d-93fa-64638bcf9317": {
+"checked": 1794901336,
+"n": "Zenith \"Landslide\" Laser Sniper Rifle",
+"shops": []
+},
 "b16cbb47-7dc7-4be4-b95e-de7275f9cd2d": {
 "checked": 1794820158,
 "n": "Anvil Gladiator - Decoy Launcher",
@@ -128246,6 +130754,11 @@
 "b19bcc93-5294-4f62-b93c-b060b9e3be46": {
 "checked": 1794820158,
 "n": "Aurora Mk I  Dread Pirate Livery",
+"shops": []
+},
+"b1a26026-5993-4b16-bf17-8bd9070853cb": {
+"checked": 1794901336,
+"n": "Quartz \"Black Op\" Energy SMG",
 "shops": []
 },
 "b1a5da75-67bb-417f-85bd-7f97102afa68": {
@@ -129151,6 +131664,11 @@
 }
 ]
 },
+"b368883e-722d-4f11-a139-681612067aeb": {
+"checked": 1794901336,
+"n": "VCK-1 \"Carver\" Blade",
+"shops": []
+},
 "b36b3203-545b-4693-9a4b-ffa981a3f2da": {
 "checked": 1794820158,
 "n": "Freelancer Ship Armor",
@@ -129222,6 +131740,11 @@
 "t": "Casaba Outlet - Seraphim"
 }
 ]
+},
+"b3755c3d-08cc-4b7d-b13b-5b331efa1671": {
+"checked": 1794901336,
+"n": "Quartz \"ArcCorp\" Energy SMG",
+"shops": []
 },
 "b384d795-f260-4944-abb5-8d53052fd7b3": {
 "checked": 1794701569,
@@ -134158,6 +136681,11 @@
 "n": "Morozov-SH Legs Iceflow",
 "shops": []
 },
+"b6ad06f5-4e7d-4d16-9d8e-45a4bebe84fc": {
+"checked": 1794901336,
+"n": "Wolf Antilles Livery",
+"shops": []
+},
 "b6ae18bb-cac5-4c90-aaca-bf662d34c4cd": {
 "checked": 1794879445,
 "n": "Hazardous Cargo Chair",
@@ -134171,6 +136699,11 @@
 "b6d25fdc-38b2-455a-a36c-63545734da97": {
 "checked": 1794701569,
 "n": "CSP-68L Backpack Epoque",
+"shops": []
+},
+"b6dd5e0a-202c-4385-88f7-284583cd6528": {
+"checked": 1794901336,
+"n": "Parallax \"GCD-Army\" Rifle",
 "shops": []
 },
 "b6e16af7-7c01-4f5c-b66c-5eeafe7e07fd": {
@@ -135230,6 +137763,11 @@
 }
 ]
 },
+"b792f73f-d0c7-4651-b546-3127835aa1e5": {
+"checked": 1794901336,
+"n": "Vanduul Decoy Launcher",
+"shops": []
+},
 "b7956187-f53e-4710-bc65-ada2a2760e18": {
 "checked": 1794820158,
 "n": "Avenger Olive Green Livery",
@@ -136186,6 +138724,11 @@
 }
 ]
 },
+"b82a3996-9e29-4839-8177-00a44ee57710": {
+"checked": 1794901336,
+"n": "Stor*All 8 SCU Self-Storage Container",
+"shops": []
+},
 "b82c64c5-0a2f-4e64-91fd-78aac1d1216b": {
 "checked": 1794727783,
 "n": "Samya Tank Storm",
@@ -136799,6 +139342,11 @@
 "n": "Shiv \"Slasher\" Bodykit Rear Right",
 "shops": []
 },
+"b9778ac5-26bf-4876-ae49-deabf83ab9ff": {
+"checked": 1794901336,
+"n": "STV Blue Carbon Livery",
+"shops": []
+},
 "b97cb8af-5c2b-4d88-bdec-02c01457d72b": {
 "checked": 1794769723,
 "n": "Horizon Helmet Dark Red",
@@ -136921,6 +139469,11 @@
 "b9cab30e-8ab3-4037-b758-790eb69f502e": {
 "checked": 1794701569,
 "n": "100 Series Foundation Fest Livery",
+"shops": []
+},
+"b9fab048-54ca-4a3a-8658-b2320dd1de30": {
+"checked": 1794901336,
+"n": "Wolf Frost Camo Livery",
 "shops": []
 },
 "ba065183-57e1-451e-a2c1-dcc248be6293": {
@@ -137631,6 +140184,11 @@
 "n": "Frontier 11 Classic Brick",
 "shops": []
 },
+"bb665a28-e501-411c-b806-8dcc5edd08fb": {
+"checked": 1794901336,
+"n": "Zeus Best in Show 2955 Livery",
+"shops": []
+},
 "bb7a01d8-8c82-4b48-9a65-7706cf85e65f": {
 "checked": 1794727783,
 "n": "Monolith Backpack Blackheart",
@@ -138157,6 +140715,16 @@
 "bc0f6356-3cfa-4a54-875b-5456ac03ff0e": {
 "checked": 1794879445,
 "n": "Polaris Nightbreak Livery",
+"shops": []
+},
+"bc328b41-ebc6-4d85-aba1-9e04cb752fa7": {
+"checked": 1794901336,
+"n": "Prism \"Firesteel\" Laser Shotgun",
+"shops": []
+},
+"bc38563b-284d-4437-8095-9088073236ad": {
+"checked": 1794901336,
+"n": "Zeus Mk II Sunswept Livery",
 "shops": []
 },
 "bc3c5ded-5192-42aa-90b4-fa122aaf676f": {
@@ -140505,6 +143073,11 @@
 }
 ]
 },
+"bf262b5e-71dc-4376-8afb-48eafe885d6d": {
+"checked": 1794901336,
+"n": "Quartz Energy SMG",
+"shops": []
+},
 "bf3859ac-bdd7-4b11-95f9-319d3b4eaecc": {
 "checked": 1794702420,
 "n": "K7 Pants Green",
@@ -140836,6 +143409,11 @@
 "t": "Armor - Nyx Gateway (Pyro)"
 }
 ]
+},
+"bfa300f0-cd7c-4ba4-b786-b3da26932622": {
+"checked": 1794901336,
+"n": "FocalWave-20 (2x Holographic)",
+"shops": []
 },
 "bfa503cd-cf8d-407c-abf5-0d89ceeae639": {
 "checked": 1794820158,
@@ -143919,6 +146497,11 @@
 }
 ]
 },
+"c384575f-a3f8-4a1d-84a4-1fe467093004": {
+"checked": 1794901336,
+"n": "Parallax \"Fun Military Skull\" Energy Assault Rifle",
+"shops": []
+},
 "c3880dcd-c3ec-4973-a3d6-edb923485c0a": {
 "checked": 1794748631,
 "n": "Nyman Jacket White",
@@ -144372,6 +146955,16 @@
 "c3e0e250-cb52-4812-9c32-966532a005ed": {
 "checked": 1794727783,
 "n": "Waylite Shoes Gold",
+"shops": []
+},
+"c3e7a9e5-9782-4fdb-849f-86f8eb40e1a0": {
+"checked": 1794901336,
+"n": "Wolf Heatsink Livery",
+"shops": []
+},
+"c3f4df2e-b978-47e9-b56c-7a27773d733b": {
+"checked": 1794901336,
+"n": "Storm GCD-Army Livery",
 "shops": []
 },
 "c40b7e8e-0f04-43d7-ac3a-7ffb8df071d8": {
@@ -145357,6 +147950,194 @@
 }
 ]
 },
+"c49c3aab-3499-4029-94d8-d305e542939a": {
+"checked": 1794901336,
+"n": "Stor*All 1/8 SCU Storage Box",
+"shops": [
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 1175,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1175,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 1237,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Port Tressler"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 1237,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-08",
+"l": "Baijini Point",
+"p": 1237,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 1237,
+"s": "Stanton",
+"t": "Dumper's Depot - GrimHEX"
+},
+{
+"d": "2026-09-03",
+"l": "Orison",
+"p": 1237,
+"s": "Stanton",
+"t": "Providence Surplus - Providence Platform - Orison"
+},
+{
+"d": "2026-09-03",
+"l": "Orison",
+"p": 1237,
+"s": "Stanton",
+"t": "Covalex Shipping - Providence Platform - Orison"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 1237,
+"s": "Stanton",
+"t": "Dumper's Depot - Area 18"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Seraphim"
+},
+{
+"d": "2026-09-05",
+"l": "Jackson's Swap",
+"p": 1080,
+"s": "Pyro",
+"t": "Shop Terminal - Jackson's Swap"
+},
+{
+"d": "2026-09-02",
+"l": "Sacren's Plot",
+"p": 1080,
+"s": "Pyro",
+"t": "Shop Terminal - Sacren's Plot"
+},
+{
+"d": "2026-09-01",
+"l": "Canard View",
+"p": 1080,
+"s": "Pyro",
+"t": "Shop Terminal - Canard View"
+},
+{
+"d": "2026-08-30",
+"l": "Kabir's Post",
+"p": 1080,
+"s": "Pyro",
+"t": "Shop Terminal - Kabir's Post"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 1175,
+"s": "Nyx",
+"t": "Cargo Services - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-11-12",
+"l": "Levski",
+"p": 1237,
+"s": "Nyx",
+"t": "Cargo Services - Levski"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 1237,
+"s": "Nyx",
+"t": "Cargo Services - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-13",
+"l": "Orbituary",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Orbituary"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Center Supplies - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Checkmate"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Ruin Station"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Megumi Refueling"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 1237,
+"s": "Pyro",
+"t": "Cargo Services - Gaslight"
+},
+{
+"d": "2026-09-02",
+"l": "Fallow Field",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Terminal - Fallow Field"
+},
+{
+"d": "2026-09-02",
+"l": "Ashland",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Terminal - Ashland"
+}
+]
+},
 "c49f68c1-ecec-432d-9418-1f940952b131": {
 "checked": 1794727783,
 "n": "Microid Battle Suit Helmet Nomad",
@@ -145493,6 +148274,11 @@
 "c510bee5-bb69-4eae-9466-4fdb9664561e": {
 "checked": 1794842996,
 "n": "2945 Bond Plaque",
+"shops": []
+},
+"c51a2f70-145d-4a28-83f3-c9262dc963f7": {
+"checked": 1794901336,
+"n": "Zeus MK II Solar Livery",
 "shops": []
 },
 "c51d801c-a4f2-4f3d-b5c3-77ddcc6167dd": {
@@ -145853,6 +148639,11 @@
 "t": "Casaba Outlet - Area 18"
 }
 ]
+},
+"c57281a9-b879-47f5-b7b5-16929d79ee5d": {
+"checked": 1794901336,
+"n": "Parallax \"Fun Kopion Skull\" Energy Assault Rifle",
+"shops": []
 },
 "c57f0db6-c53d-4740-8167-eae52065981d": {
 "checked": 1794820158,
@@ -146274,6 +149065,11 @@
 "c665ffbe-8dac-4eda-8be2-c0ebcb8e151d": {
 "checked": 1794879445,
 "n": "Hercules Starlifter Sylvan Livery",
+"shops": []
+},
+"c6708253-bef5-480b-ad18-90a25c8f5f08": {
+"checked": 1794901336,
+"n": "Syulen Chui'a Livery",
 "shops": []
 },
 "c6762ef5-6063-407e-99a4-144cb2e33ef4": {
@@ -148936,6 +151732,11 @@
 "n": "Carrack Miniature \"2952 Best in Show\"",
 "shops": []
 },
+"ca19298f-a111-46ed-bc88-870148c6d2b7": {
+"checked": 1794901336,
+"n": "Prism \"Deep Sea\" Laser Shotgun",
+"shops": []
+},
 "ca2e1fdd-cbe5-4894-9886-f535e8361829": {
 "checked": 1794856891,
 "n": "Hyperion Revenant Pawn",
@@ -149438,6 +152239,11 @@
 "n": "Odyssey II Racing Helmet Purple",
 "shops": []
 },
+"cb3c6f8d-a856-4c65-86c0-7fa9271a5cfa": {
+"checked": 1794901336,
+"n": "Zeus Mk II Obsidian Livery",
+"shops": []
+},
 "cb46a3c5-c624-4dee-9a5b-8f0e07655e81": {
 "checked": 1794793685,
 "n": "ToolSafe Vest Falstaff",
@@ -149451,6 +152257,11 @@
 "cb499a8b-3f84-4684-a638-f6a159ec1488": {
 "checked": 1794701569,
 "n": "DCP Armor Core Cobalt Camo",
+"shops": []
+},
+"cb57dee1-c2f2-4328-bd7f-8ff1c8481008": {
+"checked": 1794901336,
+"n": "Novian Crossbow",
 "shops": []
 },
 "cb5a5452-021d-49d1-9eed-308dc94bc7c9": {
@@ -149479,6 +152290,11 @@
 "t": "FPS Armor CRU-L1"
 }
 ]
+},
+"cb5bca92-7d32-40db-8f11-1fe9fdae9f6f": {
+"checked": 1794901336,
+"n": "Zeus Mk II Frontier Livery",
+"shops": []
 },
 "cb5e7074-4397-4bd3-8803-02ef0265bd72": {
 "checked": 1794769723,
@@ -150275,6 +153091,11 @@
 "t": "Aparelli New Babbage"
 }
 ]
+},
+"cd4f7742-6ce7-4879-9c91-051ab292ba4c": {
+"checked": 1794901336,
+"n": "Prism \"microTech\" Laser Shotgun",
+"shops": []
 },
 "cd5150eb-beff-45ec-a608-a4c881e37d93": {
 "checked": 1794769723,
@@ -151529,6 +154350,131 @@
 "checked": 1794727783,
 "n": "Monolith Armor Arms",
 "shops": []
+},
+"ced4ab55-c8d0-42d9-86d9-71f97eb38872": {
+"checked": 1794901336,
+"n": "Stor*All 4 SCU Self-Storage Container",
+"shops": [
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 8075,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 8075,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 8500,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 8500,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Port Tressler"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 8500,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-08",
+"l": "Baijini Point",
+"p": 8500,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 8500,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Seraphim"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 8075,
+"s": "Nyx",
+"t": "Cargo Services - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-11-12",
+"l": "Levski",
+"p": 8500,
+"s": "Nyx",
+"t": "Cargo Services - Levski"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 8500,
+"s": "Nyx",
+"t": "Cargo Services - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-13",
+"l": "Orbituary",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Orbituary"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Center Supplies - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Checkmate"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Ruin Station"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Megumi Refueling"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 8500,
+"s": "Pyro",
+"t": "Cargo Services - Gaslight"
+}
+]
 },
 "ced580a6-0327-4aef-b36e-afa8db60de33": {
 "checked": 1794820158,
@@ -154219,6 +157165,11 @@
 "n": "Roughneck Pants (Modified)",
 "shops": []
 },
+"d18fdc66-e468-409f-8349-9fc547c60158": {
+"checked": 1794901336,
+"n": "Quartz \"GCD-Army\" SMG",
+"shops": []
+},
 "d195eb47-24b8-45c0-a4d0-1771d60dc1a8": {
 "checked": 1794856891,
 "n": "Suckerpunch Cannon",
@@ -154800,6 +157751,11 @@
 }
 ]
 },
+"d2399780-8e0e-4557-b038-b379e5c312d5": {
+"checked": 1794901336,
+"n": "Ursa Oasis Livery",
+"shops": []
+},
 "d23be257-e6f2-41bb-a296-16c213bf8bc5": {
 "checked": 1794706301,
 "n": "Prim Shoes Violet",
@@ -155299,6 +158255,11 @@
 "d2da6df5-7f4f-4ef3-ada2-92de87d7487a": {
 "checked": 1794856891,
 "n": "TS-25 Basara (2.5x Telescopic)",
+"shops": []
+},
+"d2e37335-ba9d-429b-9854-b4d93e43e19b": {
+"checked": 1794901336,
+"n": "Cyan QuikFlarePro",
 "shops": []
 },
 "d2f0e07a-5c64-4e63-a256-59c894b90e31": {
@@ -156195,6 +159156,11 @@
 "t": "Shop Terminal - Kabir's Post"
 }
 ]
+},
+"d48da057-c82c-468a-83c2-837579f4b43d": {
+"checked": 1794901336,
+"n": "Stingray Domain Camo Livery",
+"shops": []
 },
 "d491d293-a7d9-4cb6-af21-e42dcbdabe06": {
 "checked": 1794793685,
@@ -157306,10 +160272,420 @@
 "n": "Ardor-2 Salvaged Repeater",
 "shops": []
 },
+"d6ebfa6f-082c-46a3-bb3a-3afeed9f94a3": {
+"checked": 1794901336,
+"n": "Prism \"Disrupt Camo\" Laser Shotgun",
+"shops": []
+},
 "d6ed781b-4ca1-46ec-bd0f-23673bbc0ce5": {
 "checked": 1794701569,
 "n": "Snarling Vanduul Helmet",
 "shops": []
+},
+"d6f1b600-353d-42d7-a592-450172889f00": {
+"checked": 1794901336,
+"n": "Stor*All 2 SCU Self-Storage Container",
+"shops": [
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 4038,
+"s": "Stanton",
+"t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 4038,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 4038,
+"s": "Stanton",
+"t": "Platinum Bay - Everus Harbor"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 4038,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-09",
+"l": "New Babbage",
+"p": 4250,
+"s": "Stanton",
+"t": "Shubin Interstellar - Commons - New Babbage"
+},
+{
+"d": "2026-11-09",
+"l": "New Babbage",
+"p": 4250,
+"s": "Stanton",
+"t": "Omega Pro - New Babbage"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-18",
+"l": "MIC-L5 Modern Icarus Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L5"
+},
+{
+"d": "2026-10-07",
+"l": "ARC-L1 Wide Forest Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L1"
+},
+{
+"d": "2026-09-30",
+"l": "HUR-L3 Thundering Express Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L3"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L2"
+},
+{
+"d": "2026-09-24",
+"l": "Orison",
+"p": 4250,
+"s": "Stanton",
+"t": "Cousin Crow's - Providence Platform - Orison"
+},
+{
+"d": "2026-09-19",
+"l": "HUR-L5 High Course Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - Port Tressler"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 4250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Port Tressler"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L1"
+},
+{
+"d": "2026-09-10",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "Baijini Point",
+"p": 4250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L2 Lively Pathway Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L2"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Seraphim"
+},
+{
+"d": "2026-08-30",
+"l": "Baijini Point",
+"p": 4250,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-08-28",
+"l": "ARC-L4 Faint Glen Station",
+"p": 4250,
+"s": "Stanton",
+"t": "Refinery Shop - ARC-L4"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 4038,
+"s": "Nyx",
+"t": "Cargo Services - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-11-12",
+"l": "Levski",
+"p": 4250,
+"s": "Nyx",
+"t": "Cargo Services - Levski"
+},
+{
+"d": "2026-10-14",
+"l": "Levski",
+"p": 4250,
+"s": "Nyx",
+"t": "Refinery Shop - Levski"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 4250,
+"s": "Nyx",
+"t": "Platinum Bay - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 4250,
+"s": "Nyx",
+"t": "Refinery Shop - Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Nyx",
+"t": "Platinum Bay - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Nyx",
+"t": "Cargo Services - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Nyx",
+"t": "Refinery Shop - Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-13",
+"l": "Orbituary",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Orbituary"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Platinum Bay - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Center Supplies - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Refinery Shop - Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Refinery Shop - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 4250,
+"s": "Pyro",
+"t": "Platinum Bay - Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 4250,
+"s": "Pyro",
+"t": "Refinery Shop - Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Checkmate"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Ruin Station"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 4250,
+"s": "Pyro",
+"t": "Refinery Shop - Ruin Station"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Megumi Refueling"
+},
+{
+"d": "2026-08-30",
+"l": "Orbituary",
+"p": 4250,
+"s": "Pyro",
+"t": "Refinery Shop - Orbituary"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 4250,
+"s": "Pyro",
+"t": "Cargo Services - Gaslight"
+}
+]
 },
 "d6f8b191-d343-4b66-b611-8aa7802c7b42": {
 "checked": 1794856891,
@@ -157735,6 +161111,11 @@
 "t": "Armor - CRU-L4"
 }
 ]
+},
+"d759133b-94ff-4076-a302-16bc7f41d561": {
+"checked": 1794901336,
+"n": "Ursa IceBreak Livery",
+"shops": []
 },
 "d75eae08-f688-4b42-9c7b-ee510c0f66c6": {
 "checked": 1794820158,
@@ -158729,6 +162110,474 @@
 "checked": 1794769723,
 "n": "Morozov-SH-C Helmet Terrene",
 "shops": []
+},
+"d867b41f-23ad-44dc-b0ea-686d287b1f9a": {
+"checked": 1794901336,
+"n": "GEO Resource Pod",
+"shops": [
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 1188,
+"s": "Stanton",
+"t": "Refinery Pyro Gtwy (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 1188,
+"s": "Stanton",
+"t": "Cargo Supplies Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1188,
+"s": "Stanton",
+"t": "Platinum Everus"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1188,
+"s": "Stanton",
+"t": "Cargo Everus"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 1250,
+"s": "Stanton",
+"t": "Omega New Babbage"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery Terra Gtwy (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum Bay Terra (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Supplies Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-29",
+"l": "Pyro Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-18",
+"l": "MIC-L5 Modern Icarus Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery MIC-L5"
+},
+{
+"d": "2026-10-07",
+"l": "ARC-L1 Wide Forest Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery ARC-L1"
+},
+{
+"d": "2026-09-30",
+"l": "HUR-L3 Thundering Express Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum HUR-L3"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery HUR-L2"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum HUR-L2"
+},
+{
+"d": "2026-09-21",
+"l": "Orison",
+"p": 1250,
+"s": "Stanton",
+"t": "Cousin Crow's Orison"
+},
+{
+"d": "2026-09-19",
+"l": "HUR-L5 High Course Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum HUR-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum CRU-L5"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum Tressler"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Tressler"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum CRU-L1"
+},
+{
+"d": "2026-09-10",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery MIC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Supplies Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery Nyx Gtwy (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "Baijini Point",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Baijini"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L2 Lively Pathway Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery ARC-L2"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 1250,
+"s": "Stanton",
+"t": "Dumper's GrimHEX"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Cargo Seraphim"
+},
+{
+"d": "2026-09-03",
+"l": "Orison",
+"p": 1250,
+"s": "Stanton",
+"t": "Providence Surplus"
+},
+{
+"d": "2026-09-03",
+"l": "Orison",
+"p": 1250,
+"s": "Stanton",
+"t": "Covalex Orison"
+},
+{
+"d": "2026-08-30",
+"l": "Baijini Point",
+"p": 1250,
+"s": "Stanton",
+"t": "Platinum Baijini"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 1250,
+"s": "Stanton",
+"t": "Dumper's Area 18"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery MIC-L2"
+},
+{
+"d": "2026-08-28",
+"l": "ARC-L4 Faint Glen Station",
+"p": 1250,
+"s": "Stanton",
+"t": "Refinery ARC-L4"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 1188,
+"s": "Nyx",
+"t": "Cargo Services Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-11-12",
+"l": "Levski",
+"p": 1250,
+"s": "Nyx",
+"t": "Cargo Levski"
+},
+{
+"d": "2026-10-14",
+"l": "Levski",
+"p": 1250,
+"s": "Nyx",
+"t": "Refinery Levski"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 1250,
+"s": "Nyx",
+"t": "Platinum Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-10",
+"l": "Pyro Gateway",
+"p": 1250,
+"s": "Nyx",
+"t": "Refinery Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Nyx",
+"t": "Platinum Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Nyx",
+"t": "Cargo Services Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Nyx",
+"t": "Refinery Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-13",
+"l": "Orbituary",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Orbituary"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Platinum Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Supplies Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Refinery Stanton Gtwy (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Refinery Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Services Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 1250,
+"s": "Pyro",
+"t": "Platinum Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Jackson's Swap",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Jackson's Swap"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1250,
+"s": "Pyro",
+"t": "Refinery Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Checkmate"
+},
+{
+"d": "2026-09-02",
+"l": "Sacren's Plot",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Sacren's Plot"
+},
+{
+"d": "2026-09-02",
+"l": "Fallow Field",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Fallow Field"
+},
+{
+"d": "2026-09-02",
+"l": "Ashland",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Ashland"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Ruin"
+},
+{
+"d": "2026-09-01",
+"l": "Ruin Station",
+"p": 1250,
+"s": "Pyro",
+"t": "Refinery Ruin"
+},
+{
+"d": "2026-09-01",
+"l": "Canard View",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Canard View"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Megumi"
+},
+{
+"d": "2026-08-30",
+"l": "Orbituary",
+"p": 1250,
+"s": "Pyro",
+"t": "Refinery Orbituary"
+},
+{
+"d": "2026-08-30",
+"l": "Kabir's Post",
+"p": 1250,
+"s": "Pyro",
+"t": "Shop Kabir's Post"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 1250,
+"s": "Pyro",
+"t": "Cargo Gaslight"
+}
+]
 },
 "d87d68f4-d74a-4f2b-9d0e-185c8bc0f19f": {
 "checked": 1794706301,
@@ -162664,6 +166513,11 @@
 }
 ]
 },
+"dc9d5f24-013f-4925-b06d-4a4102956e69": {
+"checked": 1794901336,
+"n": "VCK-1 Blade",
+"shops": []
+},
 "dcb558ae-4d30-4c49-9714-9281150f62ce": {
 "checked": 1794769723,
 "n": "Venture Undersuit Lovestruck",
@@ -163563,6 +167417,11 @@
 "n": "Golem Deck the Hull Livery",
 "shops": []
 },
+"dd8aadee-2831-4bc3-9c1a-7c8a497f0204": {
+"checked": 1794901336,
+"n": "Tyilui Tatomidae Livery",
+"shops": []
+},
 "dd8d8a58-385d-4db2-a8ab-edb71af814e3": {
 "checked": 1794727783,
 "n": "Enkel Shirt Saddle",
@@ -163755,6 +167614,11 @@
 }
 ]
 },
+"ddcb5aa0-f3f7-4a18-80a1-840e13ba5b1c": {
+"checked": 1794901336,
+"n": "Vulture 2953 Best in Show Livery",
+"shops": []
+},
 "ddd355af-0b39-40a5-8e37-ff43460cc2a2": {
 "checked": 1794842996,
 "n": "Bravo Team Tank Action Figure (Imperator Edition)",
@@ -163940,6 +167804,11 @@
 "de759022-125e-42dc-8b8e-c8739bd6a776": {
 "checked": 1794748631,
 "n": "Lynx Arms Grey",
+"shops": []
+},
+"de76d4a8-c71c-4368-8b57-1474b4a4a3a6": {
+"checked": 1794901336,
+"n": "Liberator Ultra",
 "shops": []
 },
 "de8d3153-cdca-46a2-b205-644a1180e31a": {
@@ -164268,6 +168137,11 @@
 "n": "Radford Shirt White Pinstripe",
 "shops": []
 },
+"df034c8f-f65f-48b6-9870-1fe4b4f9f12a": {
+"checked": 1794901336,
+"n": "Syulen Luminary Livery",
+"shops": []
+},
 "df040b13-b043-42c2-b4e5-3fd8f9f3f23c": {
 "checked": 1794551402,
 "n": "ViseLock S2 Tractor Beam",
@@ -164417,6 +168291,11 @@
 "df13db2c-cb89-49b7-acb8-28f54e7ad1d7": {
 "checked": 1794702420,
 "n": "ADP Legs Crusader Edition",
+"shops": []
+},
+"df14dca8-9592-46b7-b934-98145f8ce593": {
+"checked": 1794901336,
+"n": "Tiburon Vermillion Livery",
 "shops": []
 },
 "df31dabb-e9b3-43ab-ab9f-3a23f668a752": {
@@ -166611,6 +170490,11 @@
 "n": "Skylark Blackthorn Livery",
 "shops": []
 },
+"e1704491-defc-4b51-ac66-341f9a157767": {
+"checked": 1794901336,
+"n": "FSK-8 \"Bloodline\" Combat Knife",
+"shops": []
+},
 "e17c5b05-9113-4607-8eac-de48e3f71e9a": {
 "checked": 1794769723,
 "n": "Morozov-SH Core Terrene",
@@ -166745,6 +170629,11 @@
 "n": "Chiron Legs Heartthrob",
 "shops": []
 },
+"e1e59a86-ec92-4c20-a33c-e5a2834af2c4": {
+"checked": 1794901336,
+"n": "Tumbril Storm Turret",
+"shops": []
+},
 "e1e90ddc-f3eb-47c1-b21e-b07ceb38f13b": {
 "checked": 1794842996,
 "n": "R97 \"Runic\" Shotgun",
@@ -166781,6 +170670,11 @@
 "e1ede578-27a0-4d52-bfcb-035e1c4072a3": {
 "checked": 1794769723,
 "n": "Morozov-SH-I Helmet Pyrotechnic",
+"shops": []
+},
+"e1f0bdd3-c8e4-4e8a-b722-ec112f16f712": {
+"checked": 1794901336,
+"n": "Quartz \"Deadfall\" Energy SMG",
 "shops": []
 },
 "e1f6f394-8ffc-4691-bac7-8d8bee0d1557": {
@@ -166845,6 +170739,11 @@
 "e22947ac-8964-4c1a-a715-9974ceb5cc56": {
 "checked": 1794702420,
 "n": "Pembroke Exploration Suit RSI Edition (Modified)",
+"shops": []
+},
+"e22bcfed-04be-4d66-9bb1-28f0164b4145": {
+"checked": 1794901336,
+"n": "Vulture Carbonide Livery",
 "shops": []
 },
 "e22eaa6a-cbf9-4af4-8763-6b1da8a31cf7": {
@@ -169280,6 +173179,11 @@
 "n": "600i 2953 Ship Showdown Poster",
 "shops": []
 },
+"e66ef17b-0a71-4885-b0ac-fd6025ea0347": {
+"checked": 1794901336,
+"n": "Zeus Frontier Fighters Camo Livery",
+"shops": []
+},
 "e6720b13-ea37-44bd-ac16-418d1b879fbc": {
 "checked": 1794879445,
 "n": "Prowler Harmony Livery",
@@ -169552,6 +173456,11 @@
 "e6cb0703-a25b-4adb-b51c-4799b6e55bf5": {
 "checked": 1794706301,
 "n": "Concept Shirt",
+"shops": []
+},
+"e6d3ccde-1a9d-4a10-965a-202982afc778": {
+"checked": 1794901336,
+"n": "Zenith \"Golden Blossom\" Laser Sniper Rifle",
 "shops": []
 },
 "e6d6521b-e40e-4b56-ab61-3a2a3fa5f7df": {
@@ -170607,6 +174516,31 @@
 }
 ]
 },
+"e7e359cc-abb6-4efb-8c92-2fdc1bdbdcb3": {
+"checked": 1794901336,
+"n": "Valkyrie Splinter Livery",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 222500,
+"s": "Stanton",
+"t": "Dumper's Depot - GrimHEX"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 222500,
+"s": "Stanton",
+"t": "Dumper's Depot - Area 18"
+}
+]
+},
+"e7eee612-ee83-4a90-be4c-c587f915d2b3": {
+"checked": 1794901336,
+"n": "Zeus MK II Purple Haze Livery",
+"shops": []
+},
 "e7f783d0-8772-4da8-aab2-dca84e417fcd": {
 "checked": 1794702420,
 "n": "Rhodes Jacket White",
@@ -170874,6 +174808,11 @@
 "e8d10cda-0991-4dbf-ba98-21246465b24e": {
 "checked": 1794701569,
 "n": "DCP Armor Helmet Clawed Steel",
+"shops": []
+},
+"e8d1c8b4-bfd1-4b89-a435-1cbac4717161": {
+"checked": 1794901336,
+"n": "Terrapin 2954 Best in Show Livery",
 "shops": []
 },
 "e8d5ea81-fe4c-4763-8b8c-39e42cec0387": {
@@ -172225,6 +176164,24 @@
 "n": "Artimex Helmet Red Alert",
 "shops": []
 },
+"ec6dab4e-a4c2-4e4e-ab23-d9b573bd0b76": {
+"checked": 1794901336,
+"n": "Yellow QuikFlarePro",
+"shops": []
+},
+"ec7eb40a-d88c-44f8-8f3b-0f20025adbd2": {
+"checked": 1794901336,
+"n": "FarSight \"Darkwave\" (8x Telescopic)",
+"shops": [
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 1750,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
+},
 "ec96a58f-4675-4fc4-bbd7-33e3332e105f": {
 "checked": 1794769723,
 "n": "Stirling Exploration Backpack",
@@ -172295,6 +176252,11 @@
 "ecb5466a-f8cd-4871-ae4c-83ea786ca7fe": {
 "checked": 1794727783,
 "n": "Bellator Shirt Midas",
+"shops": []
+},
+"ecbad13b-d965-4852-8e4c-6c7a813f6241": {
+"checked": 1794901336,
+"n": "Tyilui Insularis Livery",
 "shops": []
 },
 "ecbc4c11-95f3-4bd3-9fad-49bba798a942": {
@@ -174168,6 +178130,11 @@
 "n": "DCHS-02 Security Encryption Comp-Board",
 "shops": []
 },
+"f0ea7fd5-ad93-4ac7-9c63-66399bc3110f": {
+"checked": 1794901336,
+"n": "Prism \"ArcCorp\" Laser Shotgun",
+"shops": []
+},
 "f1073c2c-900c-4c62-a866-46aa402ee1b2": {
 "checked": 1794842996,
 "n": "Pyro RYT Multi-Tool Battery",
@@ -175275,6 +179242,16 @@
 "n": "Redeemer 2953 Ship Showdown Poster",
 "shops": []
 },
+"f2fa54ca-345b-4542-b62f-c3cb692b1c93": {
+"checked": 1794901336,
+"n": "STV Whirlwind Livery",
+"shops": []
+},
+"f3188dc4-264e-433e-93dc-e244e0e3ddf1": {
+"checked": 1794901336,
+"n": "Quartz \"True Valor\" Energy SMG",
+"shops": []
+},
 "f32047cd-91ad-4a4d-a551-cfe9254990a7": {
 "checked": 1794820158,
 "n": "Archibald Hurston Figurine",
@@ -175301,6 +179278,11 @@
 "f32ee968-4d3d-4a8e-b225-2d8e2a1b5792": {
 "checked": 1794727783,
 "n": "Monolith Helmet Sandhawk",
+"shops": []
+},
+"f33036f7-1764-46d2-be5b-c1d80e85ebc2": {
+"checked": 1794901336,
+"n": "Vulture Dying Star Livery (Modified)",
 "shops": []
 },
 "f331749a-d9de-44e8-b975-68a0b6648492": {
@@ -175715,6 +179697,11 @@
 }
 ]
 },
+"f45c120b-a5a1-437d-8ebc-804a9993aa7d": {
+"checked": 1794901336,
+"n": "Wolf Nightbreak Livery",
+"shops": []
+},
 "f4769b2b-0997-4c68-8b47-38cc93041a22": {
 "checked": 1794769723,
 "n": "MacFlex Core",
@@ -176040,6 +180027,11 @@
 "f536fd69-3c41-4962-9d9a-52949ac9f9ed": {
 "checked": 1794820158,
 "n": "Asgard Sand Sea Livery",
+"shops": []
+},
+"f541c6f3-3e97-4dd0-b919-6bb2c763f317": {
+"checked": 1794901336,
+"n": "Vulture Ghoulish Green Livery",
 "shops": []
 },
 "f549b612-0be0-41fe-91d1-12a479af2ac8": {
@@ -177489,6 +181481,11 @@
 "n": "ATLS Foreman Livery",
 "shops": []
 },
+"f7dde345-0bf3-4313-8105-d2d164f1eacf": {
+"checked": 1794901336,
+"n": "Pulse \"Crusader\" Laser Pistol",
+"shops": []
+},
 "f7edd487-2a8e-4a24-bb0e-cfd013827c7a": {
 "checked": 1794748631,
 "n": "Lynx Arms Twilight",
@@ -177835,6 +181832,11 @@
 "f8b0fa46-02ef-45fb-ab05-d8e1e7306e0a": {
 "checked": 1794727783,
 "n": "Monde Helmet",
+"shops": []
+},
+"f8b6355d-cae4-4b8c-bfdb-1176cbcde43c": {
+"checked": 1794901336,
+"n": "Vanguard Fortuna Livery",
 "shops": []
 },
 "f8bd0865-7c7e-48a4-8fdb-2c9e94dd40bf": {
@@ -178236,6 +182238,11 @@
 "n": "ADP-mk4 Helmet Woodland",
 "shops": []
 },
+"f9a6a6b9-4ff0-4670-a8c6-3aa2f34f7e01": {
+"checked": 1794901336,
+"n": "Ursa Red Livery",
+"shops": []
+},
 "f9a755a1-5be3-49b7-b90e-a65c32ca0c99": {
 "checked": 1794820158,
 "n": "Luminalia Gift Box",
@@ -178404,6 +182411,544 @@
 "checked": 1794748631,
 "n": "Inquisitor Legs Purple",
 "shops": []
+},
+"fa12a7a5-6fdd-4e7b-9237-1f2e131a43c4": {
+"checked": 1794901336,
+"n": "Zenith Laser Sniper Rifle Battery (22 Cap)",
+"shops": [
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 300,
+"s": "Stanton",
+"t": "FPS Armor Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-30",
+"l": "Pyro Gateway",
+"p": 300,
+"s": "Stanton",
+"t": "Live Fire Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 331,
+"s": "Stanton",
+"t": "FPS Armor Everus"
+},
+{
+"d": "2026-09-12",
+"l": "Lorville",
+"p": 331,
+"s": "Stanton",
+"t": "Tammany and Sons"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 347,
+"s": "Stanton",
+"t": "CenterMass New Babbage"
+},
+{
+"d": "2026-11-08",
+"l": "New Babbage",
+"p": 347,
+"s": "Stanton",
+"t": "Kel-To Aspire Grand"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire Terra Gateway (Stanton)"
+},
+{
+"d": "2026-10-26",
+"l": "Orison",
+"p": 347,
+"s": "Stanton",
+"t": "Kel-To Cloudview Center"
+},
+{
+"d": "2026-09-29",
+"l": "HUR-L1 Green Glade Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor HUR-L1"
+},
+{
+"d": "2026-09-27",
+"l": "HUR-L1 Green Glade Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire HUR-L1"
+},
+{
+"d": "2026-09-26",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire HUR-L2"
+},
+{
+"d": "2026-09-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor CRU-L4"
+},
+{
+"d": "2026-09-16",
+"l": "Port Tressler",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor Tressler"
+},
+{
+"d": "2026-09-12",
+"l": "Zephyr",
+"p": 347,
+"s": "Stanton",
+"t": "Shop Zephyr"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L4 Melodic Fields Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire HUR-L4"
+},
+{
+"d": "2026-09-12",
+"l": "HUR-L5 High Course Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire HUR-L5"
+},
+{
+"d": "2026-09-12",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire MIC-L1"
+},
+{
+"d": "2026-09-11",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor MIC-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor CRU-L1"
+},
+{
+"d": "2026-09-11",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire CRU-L1"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L3 Endless Odyssey Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire MIC-L3"
+},
+{
+"d": "2026-09-09",
+"l": "Nyx Gateway",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-09-09",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor MIC-L4"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor ARC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L4 Faint Glen Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor ARC-L4"
+},
+{
+"d": "2026-09-04",
+"l": "Frostbite",
+"p": 347,
+"s": "Stanton",
+"t": "Frostbite"
+},
+{
+"d": "2026-09-04",
+"l": "Astor's Clearing",
+"p": 347,
+"s": "Stanton",
+"t": "Shop Astor's"
+},
+{
+"d": "2026-09-04",
+"l": "Dunboro",
+"p": 347,
+"s": "Stanton",
+"t": "Shop Dunboro"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 347,
+"s": "Stanton",
+"t": "FPS Armor Seraphim"
+},
+{
+"d": "2026-09-03",
+"l": "Seraphim Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire Seraphim"
+},
+{
+"d": "2026-09-01",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire CRU-L5"
+},
+{
+"d": "2026-08-29",
+"l": "Area18",
+"p": 347,
+"s": "Stanton",
+"t": "CenterMass Area 18"
+},
+{
+"d": "2026-08-28",
+"l": "MIC-L2 Long Forest Station",
+"p": 347,
+"s": "Stanton",
+"t": "Live Fire MIC-L2"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 349,
+"s": "Stanton",
+"t": "Cubby Area 18"
+},
+{
+"d": "2026-09-03",
+"l": "Grim HEX",
+"p": 350,
+"s": "Stanton",
+"t": "Skutters Grim"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 347,
+"s": "Nyx",
+"t": "FPS Armor Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-09-11",
+"l": "Pyro Gateway",
+"p": 347,
+"s": "Nyx",
+"t": "Live Fire Pyro Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 347,
+"s": "Nyx",
+"t": "FPS Armor Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-08-30",
+"l": "Stanton Gateway",
+"p": 347,
+"s": "Nyx",
+"t": "Live Fire Stanton Gateway (Nyx)"
+},
+{
+"d": "2026-10-15",
+"l": "Rod's Fuel 'N Supplies",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Rod's Fuel"
+},
+{
+"d": "2026-09-07",
+"l": "Stanton Gateway",
+"p": 347,
+"s": "Pyro",
+"t": "FPS Armor Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-06",
+"l": "Stanton Gateway",
+"p": 347,
+"s": "Pyro",
+"t": "Live Fire Stanton Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 347,
+"s": "Pyro",
+"t": "Live Fire Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Nyx Gateway",
+"p": 347,
+"s": "Pyro",
+"t": "FPS Armor Nyx Gateway (Pyro)"
+},
+{
+"d": "2026-09-05",
+"l": "Jackson's Swap",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Jackson's Swap"
+},
+{
+"d": "2026-09-05",
+"l": "Arid Reach",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Arid Reach"
+},
+{
+"d": "2026-09-04",
+"l": "Shepherd's Rest",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Shepherd's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Narena's Rest",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Narena's Rest"
+},
+{
+"d": "2026-09-04",
+"l": "Frigid Knot",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Frigid Knot"
+},
+{
+"d": "2026-09-03",
+"l": "Orbituary",
+"p": 347,
+"s": "Pyro",
+"t": "Shooters Orbituary"
+},
+{
+"d": "2026-09-03",
+"l": "Orbituary",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Orbituary"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 347,
+"s": "Pyro",
+"t": "Shooters Checkmate"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Checkmate"
+},
+{
+"d": "2026-09-02",
+"l": "Sacren's Plot",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Sacren's Plot"
+},
+{
+"d": "2026-09-02",
+"l": "Goner's Deal",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Goner's Deal"
+},
+{
+"d": "2026-09-02",
+"l": "Prophet's Peak",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Prophet's Peak"
+},
+{
+"d": "2026-09-02",
+"l": "Fallow Field",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Fallow Field"
+},
+{
+"d": "2026-09-01",
+"l": "Ashland",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Ashland"
+},
+{
+"d": "2026-09-01",
+"l": "Rough Landing",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Rough Landing"
+},
+{
+"d": "2026-09-01",
+"l": "Bullock's Reach",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Bullock's Reach"
+},
+{
+"d": "2026-09-01",
+"l": "Blackrock Exchange",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Blackrock Exchange"
+},
+{
+"d": "2026-09-01",
+"l": "Canard View",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Canard View"
+},
+{
+"d": "2026-08-31",
+"l": "Ruin Station",
+"p": 347,
+"s": "Pyro",
+"t": "Shooters Ruin"
+},
+{
+"d": "2026-08-31",
+"l": "Ruin Station",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Ruin"
+},
+{
+"d": "2026-08-31",
+"l": "Dudley & Daughters",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Dudley"
+},
+{
+"d": "2026-08-31",
+"l": "Rat's Nest",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Rat's Nest"
+},
+{
+"d": "2026-08-31",
+"l": "Patch City",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Patch City"
+},
+{
+"d": "2026-08-31",
+"l": "Endgame",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Endgame"
+},
+{
+"d": "2026-08-31",
+"l": "Megumi Refueling",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Megumi"
+},
+{
+"d": "2026-08-30",
+"l": "Starlight Service Station",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Starlight"
+},
+{
+"d": "2026-08-30",
+"l": "Kabir's Post",
+"p": 347,
+"s": "Pyro",
+"t": "Shop Kabir's Post"
+},
+{
+"d": "2026-08-29",
+"l": "Gaslight",
+"p": 347,
+"s": "Pyro",
+"t": "Guns Gaslight"
+},
+{
+"d": "2026-09-03",
+"l": "Checkmate",
+"p": 438,
+"s": "Pyro",
+"t": "CZ Checkmate"
+}
+]
 },
 "fa13c56c-3664-46e8-8ed9-af6e4bac3b67": {
 "checked": 1794769723,
@@ -178759,6 +183304,11 @@
 }
 ]
 },
+"fadb8d2f-ae39-4ca1-8d64-3fc7423d2154": {
+"checked": 1794901336,
+"n": "FocalWave-10 (1x Holographic)",
+"shops": []
+},
 "fade1db1-e166-4e5d-bc7c-332a83019817": {
 "checked": 1794769723,
 "n": "Arden-SL Arms Coramor Edition \"Fate\"",
@@ -179084,6 +183634,11 @@
 "fb22581f-3d5a-4672-aea7-d50509fd4d35": {
 "checked": 1794727783,
 "n": "Canelo Pants Laurel",
+"shops": []
+},
+"fb335d47-b37b-44a8-9d1a-8384f2d828ba": {
+"checked": 1794901336,
+"n": "Terrapin Purple Haze Livery",
 "shops": []
 },
 "fb4c8baa-4d8e-4a2e-8102-675d3bd72640": {
@@ -179904,6 +184459,11 @@
 "n": "XL-1",
 "shops": []
 },
+"fcec7a3c-6ae7-4c11-9710-145b7978e690": {
+"checked": 1794901336,
+"n": "Vanduul Mauler 'ERADICATOR' Cannon",
+"shops": []
+},
 "fcf0cee0-94f6-4bfb-aed3-e255d7f1e12c": {
 "checked": 1794856891,
 "n": "MSD-423 Missile Rack",
@@ -180134,6 +184694,11 @@
 "t": "Shop Terminal - Seer's Canyon"
 }
 ]
+},
+"fd1869d9-d88c-4a1c-84b4-27bd473d2ade": {
+"checked": 1794901336,
+"n": "Quartz \"microTech\" Energy SMG",
+"shops": []
 },
 "fd24fbf9-d204-4230-952e-4e7b89154c91": {
 "checked": 1794551402,
@@ -180518,6 +185083,11 @@
 "fde88d59-a8ef-42ec-ac77-c440103a1938": {
 "checked": 1794727783,
 "n": "Atavi Shirt \"Pathfinder\"",
+"shops": []
+},
+"fde9335b-a9b7-4d7d-a4a4-69b1158de320": {
+"checked": 1794901336,
+"n": "'WRATH' Cannon",
 "shops": []
 },
 "fdee87a2-f94a-45eb-9080-78ceaefea156": {
@@ -181084,6 +185654,11 @@
 }
 ]
 },
+"fec0eafa-22d7-4494-a74e-1f385a488371": {
+"checked": 1794901336,
+"n": "Stinger Meridian Livery",
+"shops": []
+},
 "fec6388a-e902-41b2-a6e4-f0a6c8853e72": {
 "checked": 1794727783,
 "n": "Li-Tok Boots Aqua",
@@ -181343,6 +185918,11 @@
 "ff0b5154-dffb-41bb-b94e-cea75e70c870": {
 "checked": 1794769723,
 "n": "Zeus Exploration Suit Keelback",
+"shops": []
+},
+"ff0d9d08-6852-41d0-b30d-8dd60b0b43a0": {
+"checked": 1794901336,
+"n": "Talon Ocellus Livery",
 "shops": []
 },
 "ff15f00d-918e-460c-9abb-5bfa5941a4ab": {
