@@ -341,7 +341,7 @@
 "shops": []
 },
 "0040add3-7c01-45cf-99c4-66036eb76d86": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Brown",
 "shops": [
 {
@@ -460,7 +460,7 @@
 "shops": []
 },
 "0090e00a-4340-4032-82b8-32def1b39d99": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet Guava",
 "shops": []
 },
@@ -656,7 +656,7 @@
 "shops": []
 },
 "00f22d52-208c-471d-9211-da281490498b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Red",
 "shops": [
 {
@@ -669,7 +669,7 @@
 ]
 },
 "00fd8adb-9306-44cf-b285-1f9b3f5e2a98": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Dark Red",
 "shops": [
 {
@@ -1190,7 +1190,7 @@
 ]
 },
 "02729161-d872-4b37-baa9-830a40b48fcf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Neoni Jami Helmet",
 "shops": []
 },
@@ -1579,7 +1579,7 @@
 ]
 },
 "02d7d9cb-80f2-45af-aa4d-e9bfdd00c560": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Shizhen Surgical Head Cover",
 "shops": []
 },
@@ -2089,12 +2089,12 @@
 ]
 },
 "02f8aba6-608e-4826-b2b2-83cb4bb6a7f9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet True Valor",
 "shops": []
 },
 "03003f2e-578d-49fa-897c-48d659beefec": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Purple",
 "shops": []
 },
@@ -2132,7 +2132,7 @@
 "shops": []
 },
 "0337fb43-2015-453a-bcd3-fa70bfea2766": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Neoni Tengubi Helmet",
 "shops": [
 {
@@ -3211,7 +3211,7 @@
 ]
 },
 "03be34c2-c181-417c-9b06-798ea768d157": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-Green Hat",
 "shops": [
 {
@@ -3243,6 +3243,34 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 740,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 740,
@@ -3255,13 +3283,6 @@
 "p": 740,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -3334,27 +3355,6 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 740,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 740,
@@ -3383,7 +3383,7 @@
 "shops": []
 },
 "03caed87-84be-4674-ad09-8c4afcfa419c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i 2951 Best in Show Livery",
 "shops": []
 },
@@ -3461,7 +3461,7 @@
 "shops": []
 },
 "03f5ecd2-d90a-4b5e-9ac6-29994b7a1450": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs Clawed Steel",
 "shops": []
 },
@@ -4240,7 +4240,7 @@
 "shops": []
 },
 "04898f0d-030c-42de-878c-0e36d79dc8ef": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Gray",
 "shops": [
 {
@@ -4283,7 +4283,7 @@
 "shops": []
 },
 "04d1d6d4-9e4b-48fa-8a2d-743072c67b90": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Duotone Duster",
 "shops": [
 {
@@ -4464,7 +4464,7 @@
 "shops": []
 },
 "0510b7db-8059-4cfa-9486-eba1542526ae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Red",
 "shops": []
 },
@@ -4821,7 +4821,7 @@
 "shops": []
 },
 "057ab3d9-c6a7-4b1b-bdf0-604d704b2d6c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UEEx T-Shirt",
 "shops": [
 {
@@ -5167,7 +5167,7 @@
 "shops": []
 },
 "05d2d567-0575-42b4-803b-88655162c6f0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Teal",
 "shops": [
 {
@@ -5271,7 +5271,7 @@
 ]
 },
 "061dd6f4-adf6-4ec0-b667-0278807063ec": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Purple",
 "shops": [
 {
@@ -5297,7 +5297,7 @@
 ]
 },
 "06589c88-7a42-4241-90ed-7f659be507cd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Foundation Festival Beanie Black",
 "shops": []
 },
@@ -5424,7 +5424,7 @@
 ]
 },
 "0666e952-e434-4f17-8b06-199f411b533f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms SecondWind",
 "shops": []
 },
@@ -5454,7 +5454,7 @@
 "shops": []
 },
 "068920d7-06fc-49a5-8ad5-c4c29f791139": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MISC Hat",
 "shops": []
 },
@@ -6182,7 +6182,7 @@
 ]
 },
 "06cb7683-3ce9-4500-846a-4cfd1526ea72": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Origin Jumpworks Hat",
 "shops": [
 {
@@ -6311,7 +6311,7 @@
 ]
 },
 "070141dc-b82a-4fed-a9f6-26def39d7187": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Navoi Boots and Pants",
 "shops": []
 },
@@ -6364,12 +6364,12 @@
 ]
 },
 "07429259-869a-492f-9580-ac277381cf53": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs Justified",
 "shops": []
 },
 "0743319c-2ee2-4db3-b3ff-ce9cc5757242": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ITG Hat",
 "shops": []
 },
@@ -6394,7 +6394,7 @@
 "shops": []
 },
 "077087a0-4316-4219-8345-495a306f407a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Deck the Hull Livery",
 "shops": []
 },
@@ -6616,7 +6616,7 @@
 ]
 },
 "07c40bb5-38d3-4859-954c-73612179c8a1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grammercy Food Service Cover",
 "shops": []
 },
@@ -6644,7 +6644,7 @@
 "shops": []
 },
 "07cdfeb5-cab1-49c1-9e86-754781bc437d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 338-10 Medical Gown Primrose",
 "shops": []
 },
@@ -6659,7 +6659,7 @@
 "shops": []
 },
 "07f0b793-c414-4771-9f66-09c8afaa5621": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core Justified",
 "shops": []
 },
@@ -6794,7 +6794,7 @@
 ]
 },
 "0819eba5-1055-48e4-96b4-0844e8e73fb5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cassidy Shirt",
 "shops": [
 {
@@ -7284,7 +7284,7 @@
 "shops": []
 },
 "08f861c1-5b11-4b6c-bebe-8ca9224b33f4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms SecondWind",
 "shops": []
 },
@@ -7371,22 +7371,22 @@
 "shops": []
 },
 "091fc83c-aa96-44af-a850-45c381af311b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms Arctic Digital",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 604,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 604,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 604,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -7469,7 +7469,7 @@
 ]
 },
 "094f1bf4-0cc1-4e70-8a62-d876a5595245": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Constellation Mk V Coin",
 "shops": []
 },
@@ -8688,7 +8688,7 @@
 ]
 },
 "0a2186df-58b5-48e3-b678-b0372b6e9578": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taberna Jacket Crimson",
 "shops": [
 {
@@ -8727,7 +8727,7 @@
 "shops": []
 },
 "0a4ab374-648d-4ebc-87eb-43c4a7ed3173": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tekaw Pants Crimson",
 "shops": [
 {
@@ -8962,7 +8962,7 @@
 "shops": []
 },
 "0aba253a-f590-4ea0-88ae-fa34a5c2d030": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ajax Security Uniform Jacket",
 "shops": []
 },
@@ -9321,12 +9321,12 @@
 ]
 },
 "0b98f172-5ab8-403b-8a82-093a96911833": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Penumbra Livery",
 "shops": []
 },
 "0b9fb0aa-2489-4c5c-90ec-615efdcb0e88": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Nivala Shoes Ash",
 "shops": [
 {
@@ -9633,7 +9633,7 @@
 ]
 },
 "0bc1af6e-9d84-4365-a459-1141f2598673": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taberna Jacket",
 "shops": [
 {
@@ -10152,7 +10152,7 @@
 "shops": []
 },
 "0d0bf429-f318-41d5-beca-113d79bd7b15": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Purple",
 "shops": []
 },
@@ -10223,7 +10223,7 @@
 ]
 },
 "0d385856-b8fc-46b7-b0e6-4a242c7c9c67": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2953 Hat White",
 "shops": []
 },
@@ -10449,7 +10449,7 @@
 ]
 },
 "0d87f341-023d-442e-afe8-c3d2c0911400": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt Purple",
 "shops": []
 },
@@ -10518,7 +10518,7 @@
 "shops": []
 },
 "0d94a5a8-a282-41bb-a898-c04acb4b9da3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Red Wind Hat",
 "shops": []
 },
@@ -10910,12 +10910,12 @@
 ]
 },
 "0e4e810b-845d-4897-a23f-44c66cfbaef5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Lost Plague Helmet Radioactive Yellow",
 "shops": []
 },
 "0e55f9a0-dfc6-4586-9d81-960056420ffd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest Saddle",
 "shops": [
 {
@@ -11388,29 +11388,29 @@
 ]
 },
 "0eb8f884-d644-4c26-af5b-ec91b88b732c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs Desert Digital",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 723,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 850,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 850,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 850,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -11587,7 +11587,7 @@
 "shops": []
 },
 "0f2f9441-015c-4473-a713-7c73ea72768e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Flyby Hat Grey",
 "shops": []
 },
@@ -11706,7 +11706,7 @@
 ]
 },
 "0f901e72-dc3c-4f89-abcd-e14e1290b9f4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat Phill's Fill-Up",
 "shops": [
 {
@@ -11928,7 +11928,7 @@
 ]
 },
 "0ffbe6c7-c098-49bc-9f4a-ed0ff78f3e61": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants Teal",
 "shops": []
 },
@@ -11990,7 +11990,7 @@
 "shops": []
 },
 "10417679-641d-4ad9-bfc8-a504cf311601": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Skellig Pants Dirt",
 "shops": [
 {
@@ -12148,17 +12148,17 @@
 ]
 },
 "10c4b93e-6d3d-45fe-86c8-30fda217a116": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Rust Society",
 "shops": []
 },
 "10d3f0ac-e8de-4200-a3c6-10582d66211a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Yellow",
 "shops": []
 },
 "10ef6de6-f333-41c8-8c8b-e01d87a19625": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Scarlet",
 "shops": [
 {
@@ -12284,7 +12284,7 @@
 "shops": []
 },
 "113b8ce8-6703-4004-8b30-a73b96d48c23": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Talon Helmet",
 "shops": []
 },
@@ -14321,7 +14321,7 @@
 "shops": []
 },
 "136c3ccb-627c-4a10-a367-817cbdad33e5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GCD-Army Arms",
 "shops": []
 },
@@ -14581,7 +14581,7 @@
 "shops": []
 },
 "13dc5de5-7e9a-49cf-9473-627c26ec5db5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Scarlet",
 "shops": [
 {
@@ -14604,7 +14604,7 @@
 "shops": []
 },
 "1411a87f-0544-465f-ac18-d06e70b1c640": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ASD Technician Hat",
 "shops": []
 },
@@ -16330,7 +16330,7 @@
 ]
 },
 "15456f3d-5b7b-40ef-a750-cb5b5a8d669a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Yellow",
 "shops": []
 },
@@ -16628,7 +16628,7 @@
 "shops": []
 },
 "15987396-c9e2-4d19-a7c8-a3f7a6932806": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i 2954 Auspicious Red Dog Livery",
 "shops": []
 },
@@ -16643,7 +16643,7 @@
 "shops": []
 },
 "15b3b18c-6370-4fa1-9a05-458b76f00f46": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Yellow",
 "shops": []
 },
@@ -16901,7 +16901,7 @@
 "shops": []
 },
 "160b0acb-5134-43ec-a931-6172928428d0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-Pinhead Hat \"Voyager\"",
 "shops": []
 },
@@ -17256,7 +17256,7 @@
 "shops": []
 },
 "163e5edf-fc57-4ee7-a90a-6a93864c005b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Aqua",
 "shops": []
 },
@@ -17616,7 +17616,7 @@
 ]
 },
 "16c0b543-198d-416b-af9f-cb084fe1408a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i 2953 Best in Show Livery",
 "shops": []
 },
@@ -17899,7 +17899,7 @@
 ]
 },
 "1782c749-a756-4244-96f9-26362c81abeb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i Foundation Guide Livery",
 "shops": []
 },
@@ -18143,7 +18143,7 @@
 "shops": []
 },
 "1885c7c5-0077-4f61-9aad-d99bf0de3cb8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Brown",
 "shops": []
 },
@@ -18402,12 +18402,12 @@
 ]
 },
 "1897a39f-f9b3-4ac3-86a3-8336d4500ad7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cargo Hat",
 "shops": []
 },
 "18b194ba-a8ab-4c00-aa79-65e5bea59ea3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants White",
 "shops": [
 {
@@ -18512,7 +18512,7 @@
 "shops": []
 },
 "18efa5a5-38f5-4ef5-82c6-77658b554b90": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Flyby Hat Blue",
 "shops": []
 },
@@ -20860,7 +20860,7 @@
 "shops": []
 },
 "1b261147-6914-47de-9364-41fba0098f51": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Foundation Festival Hat Black",
 "shops": []
 },
@@ -21773,22 +21773,22 @@
 "shops": []
 },
 "1c25ab55-8414-44e8-bca3-286d83d8e25d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core Arctic Digital",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1471,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1471,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1471,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -21967,11 +21967,11 @@
 ]
 },
 "1c3a0ff1-a58b-4903-b242-ff3a84d0eabc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Arctic",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -22150,12 +22150,12 @@
 "shops": []
 },
 "1c824ad7-84cf-46a1-b58e-202b5cf25a3c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Yellow",
 "shops": []
 },
 "1ca4eb22-7f4a-496d-9536-913f62cb3ed3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Sienna",
 "shops": [
 {
@@ -22280,7 +22280,7 @@
 "shops": []
 },
 "1d1e2e3c-f7af-44fb-b788-32da136db275": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Legs",
 "shops": []
 },
@@ -23696,7 +23696,7 @@
 ]
 },
 "1e10eeee-49a8-45de-89c9-384919239d7b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Softshell Jacket",
 "shops": []
 },
@@ -23988,11 +23988,11 @@
 "shops": []
 },
 "1e78adb9-8db6-4458-a712-bf61fae22e13": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Desert",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -24027,7 +24027,7 @@
 "shops": []
 },
 "1e8c8486-7a7e-433a-9c44-81e10f611370": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2951 Hat Blue",
 "shops": []
 },
@@ -24149,7 +24149,7 @@
 ]
 },
 "1ecf001d-2746-4868-a7fa-74163c2f2fab": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marhsal Sleeveless Vest Steel Blue",
 "shops": []
 },
@@ -24653,7 +24653,7 @@
 "shops": []
 },
 "1f5ae92e-620d-4234-82cd-89aa90f0eacc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack ASD Edition",
 "shops": []
 },
@@ -25351,11 +25351,11 @@
 "shops": []
 },
 "1f9286a2-1181-4129-a2ac-450b63271082": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Autumn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -25383,18 +25383,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -27013,7 +27013,7 @@
 "shops": []
 },
 "215a8f06-b59d-4c5b-8b29-81a6e18dd2d7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Pants Primrose",
 "shops": []
 },
@@ -27408,11 +27408,11 @@
 "shops": []
 },
 "21c17af8-5a87-4c56-ba1a-091926192b60": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Desert",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -27440,18 +27440,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -27491,7 +27491,7 @@
 ]
 },
 "21c17eec-d684-4dbd-a6d5-694a136ff1f3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Righteous",
 "shops": []
 },
@@ -27577,7 +27577,7 @@
 ]
 },
 "2219397c-3944-4975-b484-72dc84d23ca7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Daredevil Jacket",
 "shops": [
 {
@@ -27662,7 +27662,7 @@
 "shops": []
 },
 "2234981b-41bf-4b20-bceb-225fe99730f6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core (Modified)",
 "shops": []
 },
@@ -27721,7 +27721,7 @@
 ]
 },
 "223fb006-5deb-4350-9de8-43f39e23c9a6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Curser T-Shirt",
 "shops": [
 {
@@ -27869,7 +27869,7 @@
 "shops": []
 },
 "226926dd-924e-4098-a127-325f26cd8710": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Amaris Shirt",
 "shops": []
 },
@@ -27990,7 +27990,7 @@
 "shops": []
 },
 "22eb018b-376e-4718-b1fa-42b14d07e5a6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68L Backpack Cayman",
 "shops": []
 },
@@ -28320,7 +28320,7 @@
 ]
 },
 "2364ccda-e3fa-4d7a-a2cf-30af731705a2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chokehold Gloves Sleet",
 "shops": []
 },
@@ -28685,7 +28685,7 @@
 "shops": []
 },
 "2490c899-b38c-410e-8869-4894d79ccf97": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Dark Green",
 "shops": []
 },
@@ -29121,7 +29121,7 @@
 "shops": []
 },
 "25e0b4e7-f6da-4caa-b17b-23083b1ee697": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bannock Jumpsuit Black",
 "shops": []
 },
@@ -29177,7 +29177,7 @@
 "shops": []
 },
 "26296f0c-c8e6-42e9-a748-e63ccadf8c49": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms (Modified)",
 "shops": []
 },
@@ -29187,7 +29187,7 @@
 "shops": []
 },
 "2648af10-4d30-4f86-95ad-b0e1295ad662": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core SecondWind",
 "shops": []
 },
@@ -29292,7 +29292,7 @@
 ]
 },
 "26887e82-4683-4ef2-b7e7-9e308911b069": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2954 Hat White",
 "shops": []
 },
@@ -29345,7 +29345,7 @@
 ]
 },
 "26929685-659d-460c-b6c9-d3286ff9ab44": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ajax Security Uniform Shoes",
 "shops": []
 },
@@ -29924,7 +29924,7 @@
 "shops": []
 },
 "270e1803-7753-49ab-a6ac-9db7cb959c3c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Green",
 "shops": []
 },
@@ -30149,7 +30149,7 @@
 "shops": []
 },
 "277913db-ceaf-4898-b792-82363aa27547": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Red",
 "shops": [
 {
@@ -31070,7 +31070,7 @@
 ]
 },
 "28236e4c-d685-412a-b007-ac11ed3c4df9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants Black",
 "shops": [
 {
@@ -31650,7 +31650,7 @@
 ]
 },
 "28e937a8-6d94-408f-bac2-e9f61b5484f1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders",
 "shops": [
 {
@@ -31999,12 +31999,12 @@
 "shops": []
 },
 "2985a5c0-9908-41d3-b125-108b95b9fa32": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Teal",
 "shops": []
 },
 "29a1a3b7-ee1c-4884-9b7b-b7acd98623a8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Purple",
 "shops": [
 {
@@ -32063,7 +32063,7 @@
 "shops": []
 },
 "29c5b17a-07f4-49a9-bb4a-a2fab66c609d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ASD Hat",
 "shops": []
 },
@@ -32237,7 +32237,7 @@
 "shops": []
 },
 "2a3ee53f-b683-4f8c-a6b2-33e52c64635a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core (Modified)",
 "shops": []
 },
@@ -32574,7 +32574,7 @@
 "shops": []
 },
 "2a7363c4-793a-49d9-b388-6d0d38a28816": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants (Modified)",
 "shops": []
 },
@@ -32818,7 +32818,7 @@
 ]
 },
 "2ad12fcf-6fdb-4ead-9559-ee7d2d5cacaa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68L Backpack Night Camo",
 "shops": []
 },
@@ -33181,7 +33181,7 @@
 ]
 },
 "2ca63637-dad8-41f3-b3bd-2443b76b81fa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms Cobalt Camo",
 "shops": []
 },
@@ -33211,7 +33211,7 @@
 "shops": []
 },
 "2cf575b1-925b-42c7-9e0a-5fb888a069a6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i Cold Forge Livery",
 "shops": []
 },
@@ -33545,7 +33545,7 @@
 ]
 },
 "2d6415ba-097f-49d2-922c-ae86e77e3194": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Yellow",
 "shops": [
 {
@@ -33760,7 +33760,7 @@
 "shops": []
 },
 "2da3cdae-eae8-4aa4-b378-440b745ca1e3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Navoi Boots and Pants Dust Storm",
 "shops": []
 },
@@ -33842,7 +33842,7 @@
 "shops": []
 },
 "2dd42197-7d07-490d-be2a-36b10247c2bc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Red Alert",
 "shops": []
 },
@@ -33983,7 +33983,7 @@
 "shops": []
 },
 "2e1b8cb3-ea8d-44f5-aeff-ed091d392b99": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Red",
 "shops": []
 },
@@ -34061,7 +34061,7 @@
 "shops": []
 },
 "2e80c1d2-4c78-4b39-8fd8-41682ffae3c0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs New Dawn",
 "shops": []
 },
@@ -34481,12 +34481,12 @@
 "shops": []
 },
 "2f5fb647-7770-44f2-904b-c5bf101ea524": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Katla Mask",
 "shops": []
 },
 "2f622225-c03f-4c45-a829-171c42b1d32d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt Blue",
 "shops": [
 {
@@ -34911,7 +34911,7 @@
 ]
 },
 "3052d7b7-53b4-4843-bc47-37763751f2aa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Righteous",
 "shops": []
 },
@@ -34934,7 +34934,7 @@
 "shops": []
 },
 "305dbfd0-e44e-4654-afe3-1ce02f396840": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms True Valor",
 "shops": []
 },
@@ -35261,7 +35261,7 @@
 ]
 },
 "3093b322-1de0-4125-ade3-71cb55c5b9ca": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Allpa Pants Olive",
 "shops": []
 },
@@ -35300,7 +35300,7 @@
 ]
 },
 "30a103e5-c48b-43d1-8b01-31a3cb153393": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Berserker Helmet",
 "shops": []
 },
@@ -35482,7 +35482,7 @@
 "shops": []
 },
 "30c3740a-7d45-409d-a860-10936fd171ce": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tekaw Pants Ash",
 "shops": []
 },
@@ -35609,7 +35609,7 @@
 ]
 },
 "30f3d430-7097-4f1b-b47a-63e7fb342028": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms Righteous",
 "shops": []
 },
@@ -35770,7 +35770,7 @@
 ]
 },
 "312b9243-2d66-46d2-98f8-c46fbcf01fb3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet Blueberry",
 "shops": []
 },
@@ -36843,7 +36843,7 @@
 "shops": []
 },
 "31e87ff5-9256-41c7-91ff-d0471b93b2fa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Parway Gloves",
 "shops": []
 },
@@ -36853,7 +36853,7 @@
 "shops": []
 },
 "31f70364-4c4d-4b03-826e-9e4e4d0a0e75": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Crusader Hat",
 "shops": []
 },
@@ -36972,7 +36972,7 @@
 "shops": []
 },
 "324425a0-c8a9-44d3-adb6-9e15373f2279": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Maroon",
 "shops": [
 {
@@ -37193,7 +37193,7 @@
 ]
 },
 "32a8a688-a5f5-41df-ad00-e7c42f95d544": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Olive",
 "shops": []
 },
@@ -38199,7 +38199,7 @@
 "shops": []
 },
 "33703021-ec76-4a91-bb45-c7c4f8da0998": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2955 Hat Gray",
 "shops": []
 },
@@ -39619,7 +39619,7 @@
 ]
 },
 "34927b3d-ca77-48d1-8fee-04fbaa598f5a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Maroon",
 "shops": []
 },
@@ -39994,7 +39994,7 @@
 ]
 },
 "351eacb5-9494-46fd-ad43-84beffc6b448": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket (Modified)",
 "shops": []
 },
@@ -40602,12 +40602,12 @@
 ]
 },
 "35610109-b8e8-4e69-a850-a14aff31a8da": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 240-15 Patient Slippers Primrose",
 "shops": []
 },
 "3562b50a-5ff3-4086-b949-f6330b4111ea": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Skellig Pants Rot",
 "shops": [
 {
@@ -40648,7 +40648,7 @@
 ]
 },
 "35630f33-308d-42f2-8e2b-268759ad1166": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Emerald",
 "shops": [
 {
@@ -40870,7 +40870,7 @@
 "shops": []
 },
 "35f74a89-b98b-4683-bd15-72c0d98be5d8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Justified",
 "shops": []
 },
@@ -40930,7 +40930,7 @@
 "shops": []
 },
 "3635c7e0-56c9-407b-8ecf-b40b3c0dfc37": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Purple",
 "shops": [
 {
@@ -41127,7 +41127,7 @@
 "shops": []
 },
 "36b4bc1f-88cf-470c-b23b-cd30d99aa9d9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ajax Security Uniform Hat",
 "shops": []
 },
@@ -41356,7 +41356,7 @@
 "shops": []
 },
 "37656f65-c75c-4b68-a09c-5c200392c98c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Teal",
 "shops": []
 },
@@ -41597,7 +41597,7 @@
 ]
 },
 "37a17a4f-6b04-4713-bd72-7b045960d298": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt White",
 "shops": [
 {
@@ -41986,22 +41986,22 @@
 ]
 },
 "3807da5c-488a-4ef6-bd9c-7528c51e081a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Crusader Industries Hat",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -43177,7 +43177,7 @@
 "shops": []
 },
 "3a9c9fac-d4d4-47a6-b268-bc71f3cf6cfe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Deri Gloves Crimson",
 "shops": [
 {
@@ -43872,7 +43872,7 @@
 "shops": []
 },
 "3b094603-c015-4d52-b990-630e6dc27ac8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Misfit Jacket",
 "shops": []
 },
@@ -43882,11 +43882,11 @@
 "shops": []
 },
 "3b12c3bd-bfd9-4aab-b21b-092af0500bc8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Singularity",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -43907,18 +43907,18 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -44092,7 +44092,7 @@
 "shops": []
 },
 "3b8cafc9-822e-456a-886b-5f0bfc3a509b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Legs Big Boss",
 "shops": []
 },
@@ -44276,7 +44276,7 @@
 ]
 },
 "3bb81f10-c0a1-4096-be19-e785d02b9fbf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taos Balaclava and Goggles",
 "shops": [
 {
@@ -44497,7 +44497,7 @@
 "shops": []
 },
 "3c53bb3c-0777-443e-95b1-c5af4750e601": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "The Hill Horror Reborn Helmet",
 "shops": []
 },
@@ -44532,11 +44532,11 @@
 "shops": []
 },
 "3c6998f3-edcd-4098-a7eb-49ad75743bbf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Helmet Iceborn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2455,
 "s": "Stanton",
@@ -44928,7 +44928,7 @@
 "shops": []
 },
 "3d3ad894-769a-44ce-b824-90454e9d51ad": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Shrike Legs",
 "shops": []
 },
@@ -44953,11 +44953,11 @@
 "shops": []
 },
 "3d5525ba-387e-4a03-ba6c-fa4e9a36fa3b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Autumn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -45064,7 +45064,7 @@
 ]
 },
 "3d92e380-e6c8-49f3-8ef4-465815452a30": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Melrose Livery",
 "shops": []
 },
@@ -45387,7 +45387,7 @@
 "shops": []
 },
 "3e59ed2b-93c3-4043-bac9-15c68212fb5d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cirrus Boots Gray",
 "shops": []
 },
@@ -45469,7 +45469,7 @@
 "shops": []
 },
 "3eb44d12-1489-4838-9a3f-a1b255b0d501": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Violet",
 "shops": []
 },
@@ -45715,7 +45715,7 @@
 ]
 },
 "3ede508c-8658-43f0-b6c7-d30411d5262e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Blue",
 "shops": [
 {
@@ -47189,7 +47189,7 @@
 ]
 },
 "3f5fe236-be87-46a9-b06e-7110cdf9d303": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Gray",
 "shops": []
 },
@@ -47717,7 +47717,7 @@
 "shops": []
 },
 "4027c62b-cfb1-44f0-a016-f4ff33305614": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Hat Beige",
 "shops": []
 },
@@ -48042,7 +48042,7 @@
 "shops": []
 },
 "40cb5e9c-2d30-41eb-a672-93a4e8ae207c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat URW",
 "shops": []
 },
@@ -48144,7 +48144,7 @@
 "shops": []
 },
 "40db1cc3-db01-4c3c-97a7-3f6a902c4d99": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Helmet Righteous",
 "shops": []
 },
@@ -48281,7 +48281,7 @@
 ]
 },
 "413c4a13-81fe-4a47-bc02-86909a9ecbe4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Maroon",
 "shops": [
 {
@@ -48490,7 +48490,7 @@
 "shops": []
 },
 "41d598bf-77fe-4b39-9e46-af9ee37f8498": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet Cobalt Camo",
 "shops": []
 },
@@ -48523,7 +48523,7 @@
 "shops": []
 },
 "42197fc4-d1d3-4edb-9974-d3a0dba0a653": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Misfit Jacket Striker",
 "shops": []
 },
@@ -48578,12 +48578,12 @@
 "shops": []
 },
 "424d7ac4-a5c0-46b2-b50f-728c4aa71cf8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taberna Jacket Arctic",
 "shops": []
 },
 "424e65a6-88da-4913-b621-67a7cdd5cb16": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chokehold Gloves Molten",
 "shops": []
 },
@@ -48628,7 +48628,7 @@
 "shops": []
 },
 "4295a217-453d-475c-b7b6-f486f6e98e68": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i 2954 Auspicious Red Dragon Livery",
 "shops": []
 },
@@ -49445,9 +49445,16 @@
 "shops": []
 },
 "43af1721-316e-4d1f-8af7-8849c79bf11e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Brown",
 "shops": [
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
 {
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
@@ -49461,13 +49468,6 @@
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-14",
@@ -49560,7 +49560,7 @@
 "shops": []
 },
 "43ce2666-ab9a-4c05-a2ba-c4ac648fc381": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Helmet Righteous",
 "shops": []
 },
@@ -51032,7 +51032,7 @@
 ]
 },
 "45ef5db5-b81e-4a46-94b9-bca1c005545a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest",
 "shops": [
 {
@@ -51287,11 +51287,11 @@
 "shops": []
 },
 "464c599a-8bcf-482f-9ff9-60d12c133641": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Helmet Singularity",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2455,
 "s": "Stanton",
@@ -51312,18 +51312,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2894,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2894,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2894,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -51855,7 +51855,7 @@
 "shops": []
 },
 "46c44ce6-4522-4776-ba05-c569f5738b0a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Pants",
 "shops": []
 },
@@ -52047,7 +52047,7 @@
 ]
 },
 "46f648b2-d6a2-4c9c-82a4-9dd1ee5f516b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2953 Hat Purple",
 "shops": []
 },
@@ -52109,7 +52109,7 @@
 ]
 },
 "4720718b-c902-4cbd-81cb-7e29aa686005": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series IceBreak Livery",
 "shops": []
 },
@@ -52168,7 +52168,7 @@
 "shops": []
 },
 "47698727-a43f-4172-9441-e3dabaa6954b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Starchaser Helmet",
 "shops": []
 },
@@ -52456,7 +52456,7 @@
 "shops": []
 },
 "47f9cbee-1449-419e-8209-e8c448a33d4e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Desert",
 "shops": [
 {
@@ -52550,7 +52550,7 @@
 "shops": []
 },
 "482d8bd9-9eba-46b9-bdc8-a2387b6ddb6d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Purple",
 "shops": []
 },
@@ -52938,7 +52938,7 @@
 "shops": []
 },
 "488e8177-44c4-431b-ae9e-2b5615f37282": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders Primrose",
 "shops": [
 {
@@ -53020,7 +53020,7 @@
 ]
 },
 "48a09919-29f8-4bbb-83c1-25662fc90686": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aegis Dynamics Hat",
 "shops": [
 {
@@ -53187,7 +53187,7 @@
 ]
 },
 "4934d321-650b-43e7-85b0-8472b24b93fe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cassidy Shirt Stonewall",
 "shops": [
 {
@@ -53604,7 +53604,7 @@
 "shops": []
 },
 "4a0a2b97-95ac-46aa-8b55-1940d981c130": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Dark Green",
 "shops": [
 {
@@ -53714,7 +53714,7 @@
 ]
 },
 "4a202cdb-394a-471b-a772-dc46cd33541e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Deri Gloves Arctic",
 "shops": [
 {
@@ -53753,7 +53753,7 @@
 "shops": []
 },
 "4a2b83a2-6be7-4638-86bf-442fb0257db4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Justified",
 "shops": []
 },
@@ -54580,7 +54580,7 @@
 "shops": []
 },
 "4b9b86da-af4d-4bc2-b9df-26977494681d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest Valencia",
 "shops": [
 {
@@ -54759,11 +54759,11 @@
 "shops": []
 },
 "4c0b18d0-4039-479e-afc2-655d9c76fea0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Twilight",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -54777,18 +54777,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 973,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 973,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 973,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -54806,7 +54806,7 @@
 ]
 },
 "4c1d7930-8609-4c77-bbb7-fa9bee467f27": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Lister Surgical Shoes",
 "shops": []
 },
@@ -54816,7 +54816,7 @@
 "shops": []
 },
 "4c3b48ba-1b77-4fa6-800a-5ad54cb0c832": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Helmet Epoque",
 "shops": []
 },
@@ -54921,7 +54921,7 @@
 "shops": []
 },
 "4cd4f142-0aba-4dfa-afa8-bcef1c8587d5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Green",
 "shops": []
 },
@@ -55676,7 +55676,7 @@
 ]
 },
 "4e0ad41d-d313-4170-84bd-0ff528429af5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Purple",
 "shops": [
 {
@@ -56022,7 +56022,7 @@
 ]
 },
 "4e87f809-96b3-4b9f-8e42-dc000b63b296": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Skellig Pants Blueband",
 "shops": [
 {
@@ -56068,12 +56068,12 @@
 "shops": []
 },
 "4e89c612-59ef-45d5-a61d-a095eadd9cbe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chairman's Club Coin",
 "shops": []
 },
 "4e8d6ec6-4aff-4250-8606-9e8b7b864387": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Gold",
 "shops": [
 {
@@ -56194,17 +56194,17 @@
 ]
 },
 "4ec71867-d197-4047-8d20-e6b32328c48e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grappler Gloves",
 "shops": []
 },
 "4eceb130-96be-4028-b0e5-6762df5f0321": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders Horizon",
 "shops": []
 },
 "4ee19374-ae87-407a-996b-da376546f8c8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Helmet (Modified)",
 "shops": []
 },
@@ -56400,7 +56400,7 @@
 ]
 },
 "4f1dbf8f-a8bc-4499-bbe4-c54b027ae73d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Grey",
 "shops": [
 {
@@ -56702,7 +56702,7 @@
 ]
 },
 "4f5f518e-1438-43a8-9feb-0fae2d2b48f7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Deri Gloves Ash",
 "shops": [
 {
@@ -56770,7 +56770,7 @@
 ]
 },
 "4f69045d-8af3-4f6c-9fa3-ebb32ab6fe72": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taberna Jacket Ash",
 "shops": [
 {
@@ -57093,9 +57093,16 @@
 "shops": []
 },
 "4fde13d8-5baa-4383-b981-896138238e54": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Purple",
 "shops": [
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
 {
 "d": "2026-11-09",
 "l": "New Babbage",
@@ -57116,13 +57123,6 @@
 "p": 1340,
 "s": "Stanton",
 "t": "Refinery Shop - MIC-L1"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 }
 ]
 },
@@ -57292,7 +57292,7 @@
 "shops": []
 },
 "4ffb6e07-e7c6-4db5-8735-c35179a723d0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs Hunter Camo",
 "shops": []
 },
@@ -57463,7 +57463,7 @@
 "shops": []
 },
 "50569cd6-3f95-4321-b33e-17f1db229840": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Tan",
 "shops": [
 {
@@ -57739,7 +57739,7 @@
 "shops": []
 },
 "50d7c496-4ef4-4e85-bef8-61d095288b1f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Violet",
 "shops": [
 {
@@ -57826,7 +57826,7 @@
 "shops": []
 },
 "511ff0e3-8983-4862-b971-38283d0e1909": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "890 Jump Meridian Livery",
 "shops": []
 },
@@ -57904,7 +57904,7 @@
 ]
 },
 "51aa5d93-667d-4895-8a81-d5bd988d3828": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Strode Pants Molehill Brown",
 "shops": []
 },
@@ -58231,7 +58231,7 @@
 ]
 },
 "5259937d-54bf-454c-9fa5-44ff6bddaeb8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Teal",
 "shops": []
 },
@@ -58697,11 +58697,11 @@
 "shops": []
 },
 "53870a00-c231-454d-a748-8bcf394108ed": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Core Singularity",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2721,
 "s": "Stanton",
@@ -58722,6 +58722,13 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 3200,
@@ -58729,25 +58736,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3207,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3207,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3207,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -58803,7 +58803,7 @@
 "shops": []
 },
 "539f7797-f5fc-4793-ae35-0142f3522936": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Brown",
 "shops": [
 {
@@ -58826,7 +58826,7 @@
 "shops": []
 },
 "53b5ba64-da21-4edc-b73c-ed3095a45699": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Green",
 "shops": [
 {
@@ -58859,7 +58859,7 @@
 "shops": []
 },
 "53d6bec6-477c-4ff7-bc66-a356db06decf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Nightfire",
 "shops": [
 {
@@ -58870,6 +58870,13 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 971,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 971,
@@ -58877,25 +58884,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 971,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 973,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 973,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 973,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -58928,7 +58928,7 @@
 ]
 },
 "53d7644e-809f-48d3-b1b4-c9da49e28c9b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taos Balaclava and Goggles Ash",
 "shops": [
 {
@@ -59016,7 +59016,7 @@
 ]
 },
 "53e54022-e45c-48bd-9161-55881219a4c7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Green",
 "shops": []
 },
@@ -59026,7 +59026,7 @@
 "shops": []
 },
 "53eddde8-4bcb-4675-85fe-765d1b75ae69": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Advocacy Interceptor Racing Flight Suit",
 "shops": []
 },
@@ -60386,7 +60386,7 @@
 ]
 },
 "542fea35-ae07-451c-94cb-b658fbd7c728": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Foundation Festival Hat Grey",
 "shops": []
 },
@@ -60431,7 +60431,7 @@
 ]
 },
 "54726173-0bfb-48d7-8889-4fe195534405": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Horizon",
 "shops": []
 },
@@ -60708,7 +60708,7 @@
 ]
 },
 "551e9712-2692-403f-a4fe-0a441d8f7be1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs Jungle Camo",
 "shops": []
 },
@@ -61853,7 +61853,7 @@
 ]
 },
 "55b2567d-507b-4e82-9242-45cdf8e4d753": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Brown",
 "shops": []
 },
@@ -61968,7 +61968,7 @@
 "shops": []
 },
 "5621e3f1-e55f-48f6-bc5f-2641a4e88b24": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Face Melter T-Shirt",
 "shops": [
 {
@@ -62023,7 +62023,7 @@
 ]
 },
 "562944d1-9e2e-49be-8a3c-aef4860c3ceb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Top",
 "shops": []
 },
@@ -62139,7 +62139,7 @@
 "shops": []
 },
 "5678c25a-cb19-4075-9b46-f9620a34668a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Pants Honeycomb",
 "shops": []
 },
@@ -62527,7 +62527,7 @@
 "shops": []
 },
 "5692dd55-2269-40f7-8d2e-f6566ce39301": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Blue",
 "shops": [
 {
@@ -62809,7 +62809,7 @@
 "shops": []
 },
 "573b1907-e52f-4753-9286-ce66915a64d4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Dark Umber",
 "shops": [
 {
@@ -62986,7 +62986,7 @@
 ]
 },
 "577b08ae-a78f-417b-abc9-aaae869541cb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core (Modified)",
 "shops": []
 },
@@ -63213,7 +63213,7 @@
 ]
 },
 "57f14363-ce4b-4b48-968e-451709a69ede": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Invictus Blue and Gold Livery",
 "shops": []
 },
@@ -64013,7 +64013,7 @@
 ]
 },
 "599dd9a6-f2d5-4702-8349-c57d9126434b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Legs Rigteous",
 "shops": []
 },
@@ -64264,7 +64264,7 @@
 "shops": []
 },
 "5a3ffc3c-0ca5-4648-bfb0-f890591b80dc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest Primrose",
 "shops": [
 {
@@ -65314,11 +65314,11 @@
 ]
 },
 "5b1235e2-65bc-4c4a-a5b6-5a047cfa3f8c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Consolidated Outland Hat",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 820,
 "s": "Stanton",
@@ -65560,7 +65560,7 @@
 "shops": []
 },
 "5b5d8165-6147-49bb-830d-2aaaa345aa40": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Liar T-Shirt",
 "shops": [
 {
@@ -66702,7 +66702,7 @@
 ]
 },
 "5d477e72-320b-4024-a226-89f48602b7a7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Nivala Shoes Crimson",
 "shops": []
 },
@@ -66769,7 +66769,7 @@
 ]
 },
 "5d4fc095-7a9f-44a6-b9e6-adbd124fcc9c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Snow Camo",
 "shops": []
 },
@@ -67127,7 +67127,7 @@
 "shops": []
 },
 "5e1ddd8d-8d1a-4abe-92cd-4763f85f842d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Tactical",
 "shops": [
 {
@@ -67451,7 +67451,7 @@
 "shops": []
 },
 "5ef4deda-6da8-45aa-a2f2-159071532468": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Navoi Boots and Pants Veritas",
 "shops": []
 },
@@ -67882,12 +67882,12 @@
 "shops": []
 },
 "5f8f99e3-a9e1-438b-92c3-074fb5a474e8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Helmet Big Boss",
 "shops": []
 },
 "5f9f69de-7e80-49e0-99e5-91d462bea6e0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marshal Sleeveless Vest Horizon",
 "shops": []
 },
@@ -68021,7 +68021,7 @@
 ]
 },
 "5fdf0c0b-02b5-425a-b966-1ec2b3480f32": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Charcoal",
 "shops": [
 {
@@ -68170,11 +68170,11 @@
 "shops": []
 },
 "60561eb9-5fe6-48cf-b00b-faf04ca3b139": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Helmet Arctic",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2434,
 "s": "Stanton",
@@ -68335,7 +68335,7 @@
 "shops": []
 },
 "60eceb13-cf4e-49ae-8814-4a793fb38f38": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cassidy Shirt Cloudcover",
 "shops": [
 {
@@ -68348,7 +68348,7 @@
 ]
 },
 "60f01e05-cacd-4671-8984-562760a6ad82": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Silver",
 "shops": [
 {
@@ -68515,12 +68515,12 @@
 "shops": []
 },
 "612dc3d1-67f4-4677-ae92-87a2dbe47b23": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms Clawed Steel",
 "shops": []
 },
 "61346f85-70eb-4442-9634-ab67e2a70b86": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-DFA Hat",
 "shops": [
 {
@@ -68552,6 +68552,13 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 740,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 740,
@@ -68573,13 +68580,6 @@
 "t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 740,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 740,
@@ -68592,6 +68592,13 @@
 "p": 785,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 792,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-10",
@@ -68622,13 +68629,6 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 792,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
 "d": "2026-09-12",
 "l": "HUR-L4 Melodic Fields Station",
 "p": 797,
@@ -68636,7 +68636,7 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 846,
 "s": "Stanton",
@@ -68648,6 +68648,13 @@
 "p": 865,
 "s": "Stanton",
 "t": "KC Trending - GrimHEX"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 866,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-09-12",
@@ -68676,13 +68683,6 @@
 "p": 866,
 "s": "Stanton",
 "t": "FPS Shop - Dunboro"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 966,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -68702,7 +68702,7 @@
 "shops": []
 },
 "615b6668-69f5-4bb1-91e5-a142349ef390": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Helmet (Modified)",
 "shops": []
 },
@@ -68759,7 +68759,7 @@
 ]
 },
 "61877a59-553f-495e-84a2-9655bcdd5a46": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2951 Hat White",
 "shops": []
 },
@@ -68935,7 +68935,7 @@
 "shops": []
 },
 "62173a57-ce47-465a-bc03-e83dfbc2a4eb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Teal",
 "shops": []
 },
@@ -69465,7 +69465,7 @@
 "shops": []
 },
 "62e2fc15-8391-4607-bbd0-37b133e4f601": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms (XenoThreat)",
 "shops": []
 },
@@ -69483,7 +69483,7 @@
 ]
 },
 "62e99ace-7332-4f2e-99f7-513f678794ed": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "TABA Hat",
 "shops": []
 },
@@ -70537,7 +70537,7 @@
 ]
 },
 "6400df60-19b1-4c4b-97ba-809da6fc99a2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Amaris Shirt Ochre",
 "shops": []
 },
@@ -70642,7 +70642,7 @@
 ]
 },
 "64631198-28b5-49f0-893f-92b9bfadf95e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Arms",
 "shops": []
 },
@@ -70829,7 +70829,7 @@
 ]
 },
 "64e7b9fd-1e81-46fc-9079-a0faf470c1f4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marhsal Sleeveless Vest Hunter Green",
 "shops": [
 {
@@ -70987,7 +70987,7 @@
 "shops": []
 },
 "6515e7ed-b1c5-4585-a744-9257bc37171c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 338-10 Medical Gown Honeycomb",
 "shops": []
 },
@@ -70997,7 +70997,7 @@
 "shops": []
 },
 "651a72fe-cd4f-409a-bfd7-e88772b919f4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Hurston Hat",
 "shops": []
 },
@@ -71047,7 +71047,7 @@
 ]
 },
 "6569b675-955e-40ed-b431-371b1d3b3e62": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Yellow",
 "shops": []
 },
@@ -71415,7 +71415,7 @@
 ]
 },
 "66242a93-b551-4966-a73c-10d1360e3590": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Nivala Shoes Tactical",
 "shops": [
 {
@@ -71500,7 +71500,7 @@
 ]
 },
 "663faded-8283-400f-9f1d-a0bcc5a1c48e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chrome Dome Head Gear Calavera",
 "shops": []
 },
@@ -72417,7 +72417,7 @@
 ]
 },
 "672c4f4f-3155-4549-bd63-b7e9aec01414": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms Red Alert",
 "shops": []
 },
@@ -72721,11 +72721,11 @@
 "shops": []
 },
 "67afb1c7-681a-4da6-94fd-2ce7efd53451": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms Desert Digital",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 514,
 "s": "Stanton",
@@ -72739,32 +72739,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 604,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 604,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 604,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 604,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 604,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -72874,7 +72874,7 @@
 ]
 },
 "6808c1ae-430b-4c1e-8a7d-137b8db82ab9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Pants",
 "shops": []
 },
@@ -73213,7 +73213,7 @@
 "shops": []
 },
 "68536df1-3317-48a3-8fc1-deedeb4dcfaf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Stronghold",
 "shops": []
 },
@@ -73409,7 +73409,7 @@
 "shops": []
 },
 "68bfd780-1024-4c6b-95e3-e214c1964fe0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Violet",
 "shops": [
 {
@@ -73422,7 +73422,7 @@
 ]
 },
 "68c90cf0-16b6-4fac-a0b9-d67a64685504": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Navoi Boots and Pants Shale",
 "shops": []
 },
@@ -73669,7 +73669,7 @@
 ]
 },
 "691717bf-8019-4d69-8bf7-092f3d92439b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grappler Gloves Veritas",
 "shops": []
 },
@@ -73859,7 +73859,7 @@
 ]
 },
 "69c1c388-67b3-490d-a022-b4fcea81812f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ArcCorp Hat",
 "shops": []
 },
@@ -74751,7 +74751,7 @@
 "shops": []
 },
 "6aa7a09c-e18a-4de2-b492-ee3c786a129a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-Black Hat",
 "shops": [
 {
@@ -74783,6 +74783,34 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 740,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 740,
@@ -74795,13 +74823,6 @@
 "p": 740,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -74874,27 +74895,6 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 740,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 740,
@@ -74928,7 +74928,7 @@
 "shops": []
 },
 "6ac8256f-bca6-4b7d-9506-65833bead805": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Red",
 "shops": [
 {
@@ -75164,7 +75164,7 @@
 ]
 },
 "6b2b1b2f-1037-4d0d-9195-a058320b6794": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Strode Pants",
 "shops": []
 },
@@ -75174,7 +75174,7 @@
 "shops": []
 },
 "6b526bcf-646e-4c70-86af-7f0adab11e4a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Desert",
 "shops": []
 },
@@ -75517,7 +75517,7 @@
 "shops": []
 },
 "6bdab5a8-e691-412a-ae64-96c1fc914920": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket Black",
 "shops": [
 {
@@ -75530,7 +75530,7 @@
 ]
 },
 "6bdbfc8e-14b6-4ce2-aa7c-7b84e674be1f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Navoi Boot and Pants Striker",
 "shops": []
 },
@@ -75610,7 +75610,7 @@
 "shops": []
 },
 "6c26a414-6537-45b4-9304-ffa216f1f15d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Good Gift Sweater",
 "shops": []
 },
@@ -75873,7 +75873,7 @@
 ]
 },
 "6cb8150c-6e2d-4d93-9f11-3ba743227215": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Maroon",
 "shops": [
 {
@@ -75882,6 +75882,34 @@
 "p": 713,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -75912,25 +75940,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -75941,24 +75955,10 @@
 },
 {
 "d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
 "l": "ARC-L2 Lively Pathway Station",
 "p": 750,
 "s": "Stanton",
 "t": "Refinery Shop - ARC-L2"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -75991,7 +75991,7 @@
 ]
 },
 "6cba6778-4e76-4bbb-9135-ca5a787e7228": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Shrike Arms",
 "shops": []
 },
@@ -76199,7 +76199,7 @@
 "shops": []
 },
 "6d0a9de6-5b40-461c-8221-b4358594befc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Allpa Pants Brown",
 "shops": []
 },
@@ -76214,7 +76214,7 @@
 "shops": []
 },
 "6d3712a7-b1f3-4d23-9921-85ba93ae5824": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Hat Blue",
 "shops": []
 },
@@ -76746,7 +76746,7 @@
 "shops": []
 },
 "6de4f3d6-00c4-4b3b-bc63-b53f482d138e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UDF Hat",
 "shops": []
 },
@@ -77249,7 +77249,7 @@
 ]
 },
 "6e812753-7ef7-4241-aea3-adbfae4390bf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Nivala Shoes",
 "shops": [
 {
@@ -77343,7 +77343,7 @@
 "shops": []
 },
 "6e9aea3c-1849-4e21-b79d-6178498a5cc8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taos Balaclava and Goggles Tactical",
 "shops": [
 {
@@ -77377,7 +77377,7 @@
 ]
 },
 "6e9b4da7-bcdf-441e-bb81-e5b69297d3ab": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Orange",
 "shops": [
 {
@@ -77920,7 +77920,7 @@
 "shops": []
 },
 "6f6c2153-0e56-4f89-b958-2818538e343b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Lost Plague Helmet Explosive Orange",
 "shops": []
 },
@@ -79420,7 +79420,7 @@
 "shops": []
 },
 "707de227-4ec3-4afb-bf8d-a180d807f7eb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Red",
 "shops": [
 {
@@ -80109,7 +80109,7 @@
 ]
 },
 "71019193-981b-4fd2-8bff-11afc1924bee": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Orange",
 "shops": [
 {
@@ -80769,7 +80769,7 @@
 ]
 },
 "71e90d1f-7a4a-467a-8fe5-72bde27b5447": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Courser Jeans Lead",
 "shops": [
 {
@@ -81295,7 +81295,7 @@
 "shops": []
 },
 "722e7191-5e99-4499-bae5-2ab817c8de17": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Nivala Shoes Arctic",
 "shops": [
 {
@@ -81393,7 +81393,7 @@
 "shops": []
 },
 "727263cc-fe27-483b-bd3a-9c411e2e65dd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CFP Hat",
 "shops": []
 },
@@ -81426,7 +81426,7 @@
 "shops": []
 },
 "7294b67f-ecbb-4c85-8654-bf97491a1446": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Olive",
 "shops": [
 {
@@ -81457,7 +81457,7 @@
 ]
 },
 "72a6cf25-e9e4-48e8-b20a-0c57ad47b3e4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-Gray Hat",
 "shops": [
 {
@@ -81489,6 +81489,34 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 740,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 740,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 740,
@@ -81501,13 +81529,6 @@
 "p": 740,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -81578,27 +81599,6 @@
 "p": 740,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 740,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 740,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-08-28",
@@ -83276,7 +83276,7 @@
 "shops": []
 },
 "73788c89-6015-460d-9227-8c3a6f45c4f4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "microTech Hat",
 "shops": []
 },
@@ -83286,7 +83286,7 @@
 "shops": []
 },
 "73882e93-2dbf-423a-b498-719f8e194876": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Franz Pants",
 "shops": []
 },
@@ -83364,7 +83364,7 @@
 "shops": []
 },
 "73bd98d8-8d41-4ff2-8234-375bc9fb72f6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat Badger Bad",
 "shops": [
 {
@@ -85475,7 +85475,7 @@
 ]
 },
 "762b1a5c-55c5-4976-8633-c438aa4d811a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet Orange",
 "shops": []
 },
@@ -85605,7 +85605,7 @@
 ]
 },
 "767e592b-f750-43d9-ae17-2dda3395dcc6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat TABA",
 "shops": [
 {
@@ -85989,12 +85989,12 @@
 ]
 },
 "7703d292-d9a5-4c0a-a11a-b05ed6e7f1d1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Brown",
 "shops": []
 },
 "77080f6f-e3d0-434a-b43b-1b5d5c99e06f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68L Backpack Forest Camo",
 "shops": []
 },
@@ -87178,7 +87178,7 @@
 "shops": []
 },
 "78f7c755-0282-45af-9ddd-77f9e79f559e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs True Valor",
 "shops": []
 },
@@ -87188,7 +87188,7 @@
 "shops": []
 },
 "78faee2d-53cc-42b5-be99-678ac6b33864": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fractus Gloves Brown",
 "shops": []
 },
@@ -87198,12 +87198,12 @@
 "shops": []
 },
 "7911e8b2-06b3-4d81-a2f4-11ef40269f19": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Green",
 "shops": []
 },
 "7928692a-2a2f-4649-96bb-75bf772a163b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68H Backpack Red Alert",
 "shops": []
 },
@@ -87238,7 +87238,7 @@
 "shops": []
 },
 "79741092-6bee-4e89-9b10-6f3decf616d0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MISC Hat Blue and White",
 "shops": [
 {
@@ -87581,12 +87581,12 @@
 "shops": []
 },
 "7a3ab62a-479d-4579-a9bf-cb0ab1bd3ee6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs SecondWind",
 "shops": []
 },
 "7a407dec-173c-4767-a783-d3218fe80377": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core Righteous",
 "shops": []
 },
@@ -87681,7 +87681,7 @@
 ]
 },
 "7a8b13af-7de4-4569-ab59-ddaf36e695a9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 338-10 Medical Gown",
 "shops": []
 },
@@ -87881,7 +87881,7 @@
 "shops": []
 },
 "7aedcc5b-bc1f-48ef-8031-4dca8e2fc9fc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Yellow",
 "shops": [
 {
@@ -87912,7 +87912,7 @@
 ]
 },
 "7afc67af-f00f-47c3-bda2-867068cbb3ac": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest Sirocco",
 "shops": [
 {
@@ -87990,7 +87990,7 @@
 ]
 },
 "7b21462f-b0ad-433e-9809-d1a97f9e511e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100i 2954 Auspicious Red Dog Livery",
 "shops": []
 },
@@ -88442,7 +88442,7 @@
 "shops": []
 },
 "7bf6fbca-b47d-41ca-8ae9-9145c48315ae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt Dark Blue",
 "shops": [
 {
@@ -88533,7 +88533,7 @@
 ]
 },
 "7c2c61b4-99b3-46f2-9b4e-a595ce082dd7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Green",
 "shops": [
 {
@@ -88632,7 +88632,7 @@
 "shops": []
 },
 "7c805d6b-bf0a-4767-a9f8-c5a54a9c9bfc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loudmouth T-Shirt",
 "shops": [
 {
@@ -88678,7 +88678,7 @@
 "shops": []
 },
 "7c92e4f4-bd40-46e2-bef7-7f9284ce94cb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "BC-Grey Hat",
 "shops": []
 },
@@ -88809,7 +88809,7 @@
 "shops": []
 },
 "7d15dcc0-a97e-428e-8657-c9e8f3cfb3d1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Dark Purple",
 "shops": []
 },
@@ -90138,7 +90138,7 @@
 "shops": []
 },
 "7d741b69-6961-46a4-8949-7d7efbf5f5cd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms Imperial Red",
 "shops": [
 {
@@ -90156,32 +90156,32 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 606,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 606,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 606,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 606,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 606,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -90846,7 +90846,7 @@
 ]
 },
 "7e00cc1f-cbcd-4d6c-823d-f5347782d4c1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mainframe Access Card",
 "shops": []
 },
@@ -91003,7 +91003,7 @@
 "shops": []
 },
 "7e8d18e6-9636-48f5-b492-796702a213d7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Ash",
 "shops": [
 {
@@ -91334,7 +91334,7 @@
 "shops": []
 },
 "7ef52f9d-cecf-43d4-af38-7e89202a0783": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Teal",
 "shops": [
 {
@@ -91343,6 +91343,13 @@
 "p": 1273,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -91357,13 +91364,6 @@
 "p": 1340,
 "s": "Stanton",
 "t": "Refinery Shop - ARC-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -91821,7 +91821,7 @@
 "shops": []
 },
 "7fad90cd-39c2-420b-82d4-106353582bec": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core Jungle Camo",
 "shops": []
 },
@@ -91865,7 +91865,7 @@
 ]
 },
 "7fd39c72-66f2-47de-a959-d167d6ccebda": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Purple",
 "shops": [
 {
@@ -92006,7 +92006,7 @@
 ]
 },
 "80099a63-cfac-4a1d-81b9-633b991aca54": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Talon Legs",
 "shops": []
 },
@@ -92376,7 +92376,7 @@
 "shops": []
 },
 "80f49f8f-d2e2-41ea-81e6-86c9135dc9f8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bannock Jumpsuit Warm Ash",
 "shops": []
 },
@@ -92813,7 +92813,7 @@
 "shops": []
 },
 "815e69f2-d0e3-4bca-b8a7-a000c53d33dd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Neoni Yuki Onna Helmet",
 "shops": []
 },
@@ -94072,7 +94072,7 @@
 "shops": []
 },
 "81eed668-bc58-482e-818d-869743c6aa5f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core True Valor",
 "shops": []
 },
@@ -94149,7 +94149,7 @@
 "shops": []
 },
 "820d0921-5a7c-47f4-a618-9df459b383d3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Sable",
 "shops": [
 {
@@ -94279,7 +94279,7 @@
 "shops": []
 },
 "824428be-669c-43e0-a91d-3ac080afaff9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs Imperial Red",
 "shops": [
 {
@@ -94297,32 +94297,32 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 852,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 852,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 852,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 852,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 852,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -94429,7 +94429,7 @@
 "shops": []
 },
 "82ab3c96-dfcc-4d53-8589-8a489a96cced": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Covalex Hat",
 "shops": []
 },
@@ -94489,7 +94489,7 @@
 "shops": []
 },
 "82f49acc-8156-4e69-89aa-c84854ce2042": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms (Modified)",
 "shops": []
 },
@@ -94542,7 +94542,7 @@
 ]
 },
 "83052c6c-2ea1-4f7b-9c10-2715f9519de3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Starchaser Arms",
 "shops": []
 },
@@ -94742,7 +94742,7 @@
 "shops": []
 },
 "83462bdc-21c1-47e7-b315-76d505dfa1cf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Helmet",
 "shops": []
 },
@@ -94815,7 +94815,7 @@
 ]
 },
 "836cdbe4-601b-42ad-ad38-dd841ca07a07": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Pants Honeycomb",
 "shops": []
 },
@@ -95423,7 +95423,7 @@
 "shops": []
 },
 "83b60822-7428-4913-99b8-0d177c8d42fb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Foundation Festival Beanie Teal",
 "shops": []
 },
@@ -95443,7 +95443,7 @@
 "shops": []
 },
 "83cba1b0-098e-49c1-a45a-d43a6c13a40a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat DMC",
 "shops": [
 {
@@ -95622,7 +95622,7 @@
 ]
 },
 "842e4d6b-a00d-436e-b130-9356c92b1fe2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Helmet (Modified)",
 "shops": []
 },
@@ -95632,7 +95632,7 @@
 "shops": []
 },
 "843a165d-31c2-4e1c-801c-5c83a01ce09f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders Sirocco",
 "shops": [
 {
@@ -95925,7 +95925,7 @@
 ]
 },
 "848f77d4-ab81-4a6e-ae73-dd024a82e244": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Seagreen",
 "shops": [
 {
@@ -96396,7 +96396,7 @@
 "shops": []
 },
 "850439d1-2689-44d0-872f-86e06d437ff9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2952 Hat Red",
 "shops": []
 },
@@ -96461,7 +96461,7 @@
 "shops": []
 },
 "8515df3e-3f3a-4765-b858-935bab92ba7c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Argo Astronautics Hat",
 "shops": [
 {
@@ -96580,7 +96580,7 @@
 "shops": []
 },
 "85626d7f-ff67-405d-a25e-3f1e6ca6cdde": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bannock Jumpsuit Blue",
 "shops": []
 },
@@ -96865,7 +96865,7 @@
 "shops": []
 },
 "85cba80f-4284-4880-9070-fbbac78d9fd7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Helmet Nightfire",
 "shops": [
 {
@@ -96876,18 +96876,18 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2894,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2894,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2894,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -97137,7 +97137,7 @@
 "shops": []
 },
 "861056ca-6659-4be1-bba3-63ea9eb4c453": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taos Balaclava and Goggles Crimson",
 "shops": [
 {
@@ -97433,7 +97433,7 @@
 "shops": []
 },
 "867fc361-f3b4-4496-aed0-1e6a56bbf12c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Stratus Livery",
 "shops": []
 },
@@ -98367,7 +98367,7 @@
 "shops": []
 },
 "87350c7e-d9d6-4e77-ad9b-570027d99dff": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Forest",
 "shops": []
 },
@@ -99364,7 +99364,7 @@
 "shops": []
 },
 "8948a26f-f2e3-42ea-b4b7-8e6ae160fe67": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt microTech",
 "shops": []
 },
@@ -99397,7 +99397,7 @@
 ]
 },
 "896c85e1-7754-43bb-ac69-219eb2b4489a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Imperial",
 "shops": [
 {
@@ -99512,7 +99512,7 @@
 "shops": []
 },
 "8a03b67e-99c7-46a9-9ccc-f4082c1c2cbb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Red",
 "shops": []
 },
@@ -99597,7 +99597,7 @@
 "shops": []
 },
 "8a31caa9-41b9-482c-bfd3-3f89876b12a9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Yellow",
 "shops": []
 },
@@ -99612,7 +99612,7 @@
 "shops": []
 },
 "8a528e68-1870-4292-8c88-63659254ec89": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Strode Pants Sleet",
 "shops": []
 },
@@ -100015,11 +100015,11 @@
 ]
 },
 "8ad97a3a-0a2b-40ca-8b67-5315b891fb82": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Singularity",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -100040,18 +100040,18 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 973,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 973,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 973,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -100127,7 +100127,7 @@
 "shops": []
 },
 "8b2969cc-defb-46ee-a801-6d44a05ae4ee": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Polar Livery",
 "shops": []
 },
@@ -101654,7 +101654,7 @@
 ]
 },
 "8c717a1f-7f67-448c-b340-b4322fc7481a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Shrike Core",
 "shops": []
 },
@@ -101876,7 +101876,7 @@
 "shops": []
 },
 "8cc236dc-c8c3-4053-892f-603059ee3820": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt",
 "shops": [
 {
@@ -102739,7 +102739,7 @@
 ]
 },
 "8d00de6b-2a79-405b-8945-8fabe611390c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ling Hat",
 "shops": []
 },
@@ -102924,9 +102924,16 @@
 ]
 },
 "8d67a382-7002-46a7-a2c6-fe31fd89c38b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Courser Jeans Smoke",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 313,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
+},
 {
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
@@ -102954,13 +102961,6 @@
 "p": 313,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 313,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -103265,7 +103265,7 @@
 "shops": []
 },
 "8defaafe-7b61-42f0-baf0-d18581beb366": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Black",
 "shops": []
 },
@@ -103285,7 +103285,7 @@
 "shops": []
 },
 "8e16bb42-430d-4d1c-bdc8-3295ceae8afe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marhsal Sleeveless Vest Copper",
 "shops": []
 },
@@ -104266,7 +104266,7 @@
 "shops": []
 },
 "8f01818c-80d8-4e2b-95dd-0916b48ace6c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Emerald",
 "shops": []
 },
@@ -104296,7 +104296,7 @@
 "shops": []
 },
 "8f2abcfc-4206-45e9-a693-7aa390993102": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants Blue",
 "shops": [
 {
@@ -104332,7 +104332,7 @@
 "shops": []
 },
 "8f3d228d-c1d8-4b0e-8428-5de925370c8c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat Stor*All",
 "shops": [
 {
@@ -104639,7 +104639,7 @@
 ]
 },
 "8fd7cb44-f692-499e-9769-77f40e916bd2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Helmet Red Alert",
 "shops": []
 },
@@ -104685,7 +104685,7 @@
 "shops": []
 },
 "900c3839-b99a-4c30-8c54-934d262b3464": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Gray",
 "shops": [
 {
@@ -104959,7 +104959,7 @@
 "shops": []
 },
 "903c737a-9cda-4967-a72e-f47f8040d110": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Brown",
 "shops": []
 },
@@ -106491,7 +106491,7 @@
 ]
 },
 "91288bdc-44ee-4125-8f0b-cc95ed7ffa1e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Yellow",
 "shops": [
 {
@@ -107330,11 +107330,11 @@
 "shops": []
 },
 "91e37b74-cbf8-4a72-82e4-419d0874a84e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Nightfire",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -107348,6 +107348,13 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
@@ -107355,25 +107362,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -107416,7 +107416,7 @@
 "shops": []
 },
 "91fe75da-ee46-47f7-9968-26acbedab5d1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms Righteous",
 "shops": []
 },
@@ -109457,7 +109457,7 @@
 "shops": []
 },
 "945fab49-c444-411d-afe1-7f79f207ef65": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Core Epoque",
 "shops": []
 },
@@ -110452,7 +110452,7 @@
 ]
 },
 "94cecfcb-7e58-433d-adf1-ad8fcaa92218": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Purple",
 "shops": [
 {
@@ -110907,7 +110907,7 @@
 ]
 },
 "9573db27-601e-4c9e-8c94-f56929773a85": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Amaris Shirt Falstaff",
 "shops": []
 },
@@ -111072,7 +111072,7 @@
 ]
 },
 "95b716b0-d87c-4ed0-9ced-ea723a5dff92": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Drake Hat Yellow Logo",
 "shops": []
 },
@@ -111384,7 +111384,7 @@
 ]
 },
 "96283179-6513-4c52-b107-91964ea78242": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i IceBreak Livery",
 "shops": []
 },
@@ -111587,7 +111587,7 @@
 "shops": []
 },
 "968334d4-0dc5-44d0-89df-63b73579dfb1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marshal Sleeveless Vest",
 "shops": [
 {
@@ -111649,7 +111649,7 @@
 "shops": []
 },
 "96a868c8-8d8a-48a4-b77d-d772d10b1e27": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Starchaser Legs",
 "shops": []
 },
@@ -112032,7 +112032,7 @@
 ]
 },
 "97254d3c-2acd-4e8b-930f-feb02e06ad0a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet",
 "shops": []
 },
@@ -112315,12 +112315,12 @@
 ]
 },
 "97526d66-1b33-4d66-b446-a06a2eb0e478": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i 2954 Auspicious Red Dragon Livery",
 "shops": []
 },
 "97591280-4c49-4b2a-8e1f-bde0da440a95": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Loscha Work Vest Horizon",
 "shops": []
 },
@@ -112399,7 +112399,7 @@
 ]
 },
 "97849417-fbb7-40b6-9599-e691761b7f77": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Helmet SecondWind",
 "shops": []
 },
@@ -112432,7 +112432,7 @@
 "shops": []
 },
 "979c18d6-3e59-4038-be76-8364bb0196fc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Variable Service Shoes",
 "shops": []
 },
@@ -113544,7 +113544,7 @@
 ]
 },
 "98593a28-e7bc-4ddc-8d9f-0350e73809fc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Top Honeycomb",
 "shops": []
 },
@@ -114034,12 +114034,12 @@
 "shops": []
 },
 "98fc2303-daae-4f4a-b8c4-0bf992535def": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms (XenoThreat v2)",
 "shops": []
 },
 "9901cce1-5d50-4a4f-8b14-d47816ac4fae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Purple",
 "shops": []
 },
@@ -114982,12 +114982,12 @@
 "shops": []
 },
 "99840963-8d8b-4b87-90d6-4ac7dfc64a9d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet New Dawn",
 "shops": []
 },
 "9994d652-cdb1-4450-9d65-b9d273e6eee7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Orange",
 "shops": [
 {
@@ -115044,7 +115044,7 @@
 "shops": []
 },
 "99c2ef40-b340-4337-8254-7cab8f758bae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ignaz Surgical Gloves",
 "shops": []
 },
@@ -115677,7 +115677,7 @@
 "shops": []
 },
 "9acc4629-465b-4e08-b84d-f6d8edc3117c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Allpa Pants Shadow",
 "shops": []
 },
@@ -115995,12 +115995,12 @@
 ]
 },
 "9b450f54-4073-4e13-b8f0-e6ea9f5e542f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Pants Primrose",
 "shops": []
 },
 "9b4ae63f-1fc5-4551-8345-a04a45dcb916": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Argo Hat Slate",
 "shops": []
 },
@@ -116043,7 +116043,7 @@
 "shops": []
 },
 "9b7fb756-93c9-4626-bebd-31f0005dd370": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Frost",
 "shops": [
 {
@@ -116418,7 +116418,7 @@
 ]
 },
 "9c478af1-acfd-4e88-b065-c5ebeb05f507": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Legion Jacket",
 "shops": [
 {
@@ -116742,7 +116742,7 @@
 ]
 },
 "9d3bcfe2-80c3-4ed1-a864-3f5100a6bd73": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Deri Gloves Tactical",
 "shops": [
 {
@@ -116795,7 +116795,7 @@
 "shops": []
 },
 "9d4b3c3b-0463-4bc6-99d6-da3adc84aa3d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Talon Arms",
 "shops": []
 },
@@ -117821,7 +117821,7 @@
 "shops": []
 },
 "9e7b253c-f2c4-4923-9cec-246a97fe6dbc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grappler Gloves Smoke",
 "shops": []
 },
@@ -117874,7 +117874,7 @@
 "shops": []
 },
 "9ecc270d-fcb6-4639-82b2-1d149b776230": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders Saddle",
 "shops": [
 {
@@ -118110,7 +118110,7 @@
 "shops": []
 },
 "9f1437b2-f9cf-44c4-a171-e8dad0412053": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Sienna",
 "shops": [
 {
@@ -119182,7 +119182,7 @@
 "shops": []
 },
 "a194d548-ba3b-4670-b366-8a447f0de60f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2955 Hat Black",
 "shops": []
 },
@@ -119305,7 +119305,7 @@
 ]
 },
 "a1b7348b-5208-448f-9f25-91a87a5ae0ac": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cassidy Shirt Finch",
 "shops": [
 {
@@ -119673,12 +119673,12 @@
 "shops": []
 },
 "a2bd7c9c-204f-48b0-b4bc-a6d45fea9152": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Salluq Mask Brown",
 "shops": []
 },
 "a2c1969c-c12f-4e62-8c8f-4ca3ec9c79dc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taberna Jacket Tactical",
 "shops": [
 {
@@ -119882,7 +119882,7 @@
 "shops": []
 },
 "a2dd47d0-3d8c-4a04-ae91-8be9bcf6bb24": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Legs Red Alert",
 "shops": []
 },
@@ -120040,7 +120040,7 @@
 ]
 },
 "a2ef9447-44e6-4cba-898d-86ae387ea3ea": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Grey",
 "shops": [
 {
@@ -120243,7 +120243,7 @@
 "shops": []
 },
 "a36483e1-8051-441f-86d9-953a4827180d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Misfit Jacket Rawhide",
 "shops": []
 },
@@ -120390,22 +120390,22 @@
 "shops": []
 },
 "a3d6dd14-85ee-4feb-baeb-e92ca171714c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs Arctic Digital",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 850,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 850,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 850,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -120677,7 +120677,7 @@
 "shops": []
 },
 "a4c61f14-0d28-473a-a3b5-2aeeea391c08": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 240-15 Patient Slippers Honeycomb",
 "shops": []
 },
@@ -121109,7 +121109,7 @@
 ]
 },
 "a51139f3-4547-4ba8-adfe-e6dbbbdd85fa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Orange",
 "shops": [
 {
@@ -121320,7 +121320,7 @@
 "shops": []
 },
 "a5989f0f-1607-4402-84eb-5babd0a20c4e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt White",
 "shops": [
 {
@@ -121333,7 +121333,7 @@
 ]
 },
 "a59ca72b-9230-48f9-871f-a7e897da0067": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tekaw Pants",
 "shops": [
 {
@@ -121504,7 +121504,7 @@
 "shops": []
 },
 "a5ee22fd-009a-4a6a-9f47-a3e4ddc09167": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Grey",
 "shops": []
 },
@@ -121545,9 +121545,16 @@
 "shops": []
 },
 "a610c3b8-3cf4-40cd-8237-8b9e34645ad8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Courser Jeans Rust",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 313,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
+},
 {
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
@@ -121589,13 +121596,6 @@
 "p": 313,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 313,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -122233,7 +122233,7 @@
 ]
 },
 "a6adc5eb-0e87-4b35-a917-cc8c75f9e7eb": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cassidy Shirt Daylight",
 "shops": [
 {
@@ -122317,11 +122317,11 @@
 "shops": []
 },
 "a6ec85a5-feba-4239-88e4-02e1a6e521e1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Iceborn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -122342,18 +122342,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 971,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 971,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 971,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -122431,7 +122431,7 @@
 ]
 },
 "a71c0ad8-0cff-47e1-b81d-31faeb18f17b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Timberline Livery",
 "shops": []
 },
@@ -122537,7 +122537,7 @@
 "shops": []
 },
 "a737d3f7-dadb-4c60-b1cc-ba48a79376a9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket Red",
 "shops": [
 {
@@ -122665,7 +122665,7 @@
 ]
 },
 "a75d3d97-cff2-4a27-a8fe-ea6bb27bcf61": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "The Hill Horror Helmet",
 "shops": []
 },
@@ -123089,7 +123089,7 @@
 "shops": []
 },
 "a81af902-320b-4668-813e-47d76474b901": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grappler Gloves Bone",
 "shops": []
 },
@@ -123384,7 +123384,7 @@
 "shops": []
 },
 "a86d001d-64e0-4d48-9db3-ed779bd7bfe7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Legs Cobalt Camo",
 "shops": []
 },
@@ -123464,12 +123464,12 @@
 "shops": []
 },
 "a8b32edc-5abb-4863-9f8f-5dc7f6d1bcae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Marshal Sleeveless Vest Sycamore",
 "shops": []
 },
 "a8b97d1a-8933-4547-a428-5fe2ef7de5e6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Katla Mask Blue",
 "shops": [
 {
@@ -123581,7 +123581,7 @@
 ]
 },
 "a8e32536-61af-420b-be89-11cacc341da0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Drake Hat Red Logo",
 "shops": [
 {
@@ -123592,7 +123592,7 @@
 "t": "Casaba Everus"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1350,
 "s": "Stanton",
@@ -123618,7 +123618,7 @@
 "shops": []
 },
 "a8fef630-d37a-4e7e-afd7-58bcd57d5798": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Teal",
 "shops": [
 {
@@ -123627,6 +123627,13 @@
 "p": 713,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 750,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -123648,13 +123655,6 @@
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 750,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -123685,7 +123685,7 @@
 "shops": []
 },
 "a910c243-1510-42fa-b64e-e09cab638469": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Hat Olive Green",
 "shops": []
 },
@@ -124525,7 +124525,7 @@
 "shops": []
 },
 "a9c07f97-d02f-4b11-9c93-c8c1dba063e8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Teal",
 "shops": [
 {
@@ -124998,7 +124998,7 @@
 ]
 },
 "aa3b2e59-f126-4ffe-a6a2-c08ed10eb8fa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket Green",
 "shops": [
 {
@@ -126205,7 +126205,7 @@
 ]
 },
 "aaa16f7f-1a5a-435a-bc10-cfe19774f2c3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs Righteous",
 "shops": []
 },
@@ -126613,7 +126613,7 @@
 "shops": []
 },
 "abb98b3b-bca3-49f7-97e3-747cea55a284": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket Teal",
 "shops": [
 {
@@ -126641,7 +126641,7 @@
 "shops": []
 },
 "abeddda6-93c6-42a8-b10a-167039e9bc22": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slacker T-Shirt",
 "shops": [
 {
@@ -126900,7 +126900,7 @@
 "shops": []
 },
 "ac9f15b5-cb6b-4ae3-a77d-49234111fecf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core Imperial Red",
 "shops": [
 {
@@ -126918,32 +126918,32 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1474,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1474,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1474,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1474,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1474,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -126991,9 +126991,16 @@
 "shops": []
 },
 "acb69739-1688-498b-a4fb-41e3ae669a7a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Hyper Vanguard Force T-Shirt",
 "shops": [
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 900,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
 {
 "d": "2026-10-31",
 "l": "Terra Gateway",
@@ -127007,13 +127014,6 @@
 "p": 900,
 "s": "Stanton",
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 900,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-11-09",
@@ -127494,11 +127494,11 @@
 "shops": []
 },
 "ad233b20-771e-43d5-af37-ec6e80036eb6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Core Iceborn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2721,
 "s": "Stanton",
@@ -127907,7 +127907,7 @@
 ]
 },
 "ad9f23dd-8107-410d-ba4c-77cb95319e4d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Purple",
 "shops": []
 },
@@ -128770,7 +128770,7 @@
 ]
 },
 "af49445f-eb7f-438b-8200-3a8f968b6525": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Strode Pants Molten",
 "shops": []
 },
@@ -128916,7 +128916,7 @@
 "shops": []
 },
 "afe865e8-c514-45e9-91c8-dad4e8d35a87": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket Purple",
 "shops": [
 {
@@ -128925,6 +128925,27 @@
 "p": 6175,
 "s": "Stanton",
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 6500,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 6500,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 6500,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-11-09",
@@ -128941,32 +128962,11 @@
 "t": "Casaba Outlet - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 6500,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
-},
-{
 "d": "2026-09-12",
 "l": "HUR-L4 Melodic Fields Station",
 "p": 6500,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 6500,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 6500,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -129049,7 +129049,7 @@
 ]
 },
 "aff73778-73a4-450e-b6dd-56817adac3cf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Teal",
 "shops": [
 {
@@ -129731,7 +129731,7 @@
 ]
 },
 "b049e04b-daa2-45ab-ba66-761f80cbc40e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chrome Dome Head Gear Grey Camo",
 "shops": []
 },
@@ -129761,7 +129761,7 @@
 "shops": []
 },
 "b06569c0-391f-4e1d-b796-d115092a8fc3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grammercy Food Service Jacket",
 "shops": []
 },
@@ -130115,7 +130115,7 @@
 "shops": []
 },
 "b11c148e-8f08-4152-beeb-d35b2d0fc31b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "MC-Pinhead Hat",
 "shops": [
 {
@@ -130189,6 +130189,13 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 883,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-09-10",
 "l": "ARC-L5 Yellow Core Station",
 "p": 883,
@@ -130217,13 +130224,6 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 883,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
 "d": "2026-09-12",
 "l": "HUR-L4 Melodic Fields Station",
 "p": 889,
@@ -130231,7 +130231,7 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 943,
 "s": "Stanton",
@@ -130243,6 +130243,13 @@
 "p": 965,
 "s": "Stanton",
 "t": "KC Trending - GrimHEX"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 966,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-09-12",
@@ -130257,13 +130264,6 @@
 "p": 966,
 "s": "Stanton",
 "t": "Frostbite"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 966,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-08-27",
@@ -130855,7 +130855,7 @@
 ]
 },
 "b190d5a9-90da-4ceb-a262-cb789dd17d4f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ace Interceptor Racing Flight Suit",
 "shops": []
 },
@@ -131409,7 +131409,7 @@
 "shops": []
 },
 "b272fd03-33c5-43ba-aec7-d2296f1be1a2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms Big Boss",
 "shops": []
 },
@@ -131513,7 +131513,7 @@
 "shops": []
 },
 "b2b1c158-9c3b-4d29-82c0-61a0a27f5bd9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Green",
 "shops": [
 {
@@ -131544,12 +131544,12 @@
 "shops": []
 },
 "b2bae259-e5c1-4a99-8ec0-3f6eb432778b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Grammercy Food Service Pants",
 "shops": []
 },
 "b2c23ca6-0ed9-473e-b2e6-18cc00e768d4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Slate Camo Livery",
 "shops": []
 },
@@ -131569,7 +131569,7 @@
 "shops": []
 },
 "b2e217db-549b-4f2e-93cd-a82550e00a9c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Starchaser Core",
 "shops": []
 },
@@ -131658,7 +131658,7 @@
 "shops": []
 },
 "b32c8292-3509-45c2-8420-77587156319a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Whiteout",
 "shops": []
 },
@@ -131742,7 +131742,7 @@
 ]
 },
 "b348a315-1f87-49e0-bb9d-8e039f26928e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet Hunter Camo",
 "shops": []
 },
@@ -131783,7 +131783,7 @@
 "shops": []
 },
 "b37171e2-2d67-4324-99f3-66e6d165cbd5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Helmet Justified",
 "shops": []
 },
@@ -131855,7 +131855,7 @@
 "shops": []
 },
 "b384d795-f260-4944-abb5-8d53052fd7b3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt Green",
 "shops": [
 {
@@ -131914,7 +131914,7 @@
 "shops": []
 },
 "b3d3dcdc-ca07-4b4a-b017-881e9c3c0c96": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "M80 \"Beauty Is Power\" Poster",
 "shops": []
 },
@@ -132134,7 +132134,7 @@
 ]
 },
 "b40c698a-38ce-411d-b151-bd532042a679": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i Fortuna Livery",
 "shops": []
 },
@@ -132242,16 +132242,16 @@
 "shops": []
 },
 "b43b2149-0059-4063-a9f6-67d4ec7ec9f9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms (Modified)",
 "shops": []
 },
 "b43d3e2f-952a-4970-a4bd-b12018a3c80b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Twilight",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -132272,6 +132272,13 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
@@ -132279,25 +132286,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -133145,7 +133145,7 @@
 ]
 },
 "b4e402ec-222f-4946-b25b-2a80dc13a73a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chrome Dome Head Gear",
 "shops": []
 },
@@ -133790,7 +133790,7 @@
 ]
 },
 "b509215c-58f2-4754-b86e-9da5431f321e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Dark Blue",
 "shops": [
 {
@@ -133908,7 +133908,7 @@
 ]
 },
 "b5358d0d-3022-491f-8540-5e631363befc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Shizhen Surgical Gown",
 "shops": []
 },
@@ -136584,7 +136584,7 @@
 ]
 },
 "b62eedeb-b03e-4a76-b115-a40dd33b2c59": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Sienna",
 "shops": []
 },
@@ -136878,12 +136878,12 @@
 "shops": []
 },
 "b6c91d7a-28b5-4148-8384-2eca4f1d7d0e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Misfit Jacket Veritas",
 "shops": []
 },
 "b6d25fdc-38b2-455a-a36c-63545734da97": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68L Backpack Epoque",
 "shops": []
 },
@@ -136898,7 +136898,7 @@
 "shops": []
 },
 "b6e9a9eb-25e8-4256-a1ad-7a07e9eb89db": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Crimson",
 "shops": [
 {
@@ -137918,7 +137918,7 @@
 "shops": []
 },
 "b787426a-4159-47cd-9137-1a1ee6214c8d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i Sterling Livery",
 "shops": []
 },
@@ -138056,7 +138056,7 @@
 "shops": []
 },
 "b7c1bbdb-93bf-49fb-bb9e-ea73bdaffbc9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie",
 "shops": [
 {
@@ -138114,7 +138114,7 @@
 "shops": []
 },
 "b7ee874f-a7cf-4250-a190-64d59c771a3f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs (Modified)",
 "shops": []
 },
@@ -138124,7 +138124,7 @@
 "shops": []
 },
 "b7fdb295-0a31-453d-8cbc-c4daa116ac19": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Top Primrose",
 "shops": []
 },
@@ -139219,7 +139219,7 @@
 "shops": []
 },
 "b8969809-ae7b-429d-b4cd-a30ebe4f4e94": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Hat Blue",
 "shops": []
 },
@@ -139334,7 +139334,7 @@
 "shops": []
 },
 "b9019a07-0ace-4cf5-927b-3d58c2800235": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Blue Ametrine Livery",
 "shops": []
 },
@@ -139643,7 +139643,7 @@
 "shops": []
 },
 "b9c61e6d-a393-4bf7-a290-a1b46ed9a998": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tekaw Pants Arctic",
 "shops": []
 },
@@ -139653,7 +139653,7 @@
 "shops": []
 },
 "b9cab30e-8ab3-4037-b758-790eb69f502e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Foundation Fest Livery",
 "shops": []
 },
@@ -139720,7 +139720,7 @@
 "shops": []
 },
 "ba384045-842a-4a6f-9029-26b73c712d9f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Mil-Green",
 "shops": [
 {
@@ -139758,7 +139758,7 @@
 "shops": []
 },
 "ba6d5257-39c7-480a-878b-e5ca64d0dc3c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Calacatta Livery",
 "shops": []
 },
@@ -140309,7 +140309,7 @@
 "shops": []
 },
 "bb51768f-5a1f-4164-bfae-04d4e3ad60d1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Galen Surgical Scrub Top",
 "shops": []
 },
@@ -140869,7 +140869,7 @@
 ]
 },
 "bbfc48f5-b10b-4701-98ed-1c694bc32d49": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Lost Plague Helmet Biohazard Blue",
 "shops": []
 },
@@ -140884,17 +140884,17 @@
 "shops": []
 },
 "bc050f2b-b0a3-48f0-8891-926536346507": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Seagreen",
 "shops": []
 },
 "bc079d07-34ff-46c1-938b-d8a617118760": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs (Modified)",
 "shops": []
 },
 "bc0c7bfb-1b14-4c45-b407-9a39c1c296f3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "890 Jump Penumbra Livery",
 "shops": []
 },
@@ -140924,7 +140924,7 @@
 "shops": []
 },
 "bc3e5699-023e-4eda-95d9-202e48d7dd94": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Flame Livery",
 "shops": []
 },
@@ -141363,7 +141363,7 @@
 "shops": []
 },
 "bc842c39-1fbd-4a65-b466-351f6ec72069": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Dawn",
 "shops": [
 {
@@ -141588,7 +141588,7 @@
 "shops": []
 },
 "bcd5f19d-6ddc-43e8-9e64-214956c215fc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ThermoWeave Boots ASD Edition",
 "shops": []
 },
@@ -141995,7 +141995,7 @@
 ]
 },
 "bd400419-0774-4be2-8a0e-5c8d1035bf35": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taussig Surgical Pants",
 "shops": []
 },
@@ -142388,7 +142388,7 @@
 ]
 },
 "bdc57882-359e-4ba1-a8d3-9bb645ebea8b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Justified",
 "shops": []
 },
@@ -142398,7 +142398,7 @@
 "shops": []
 },
 "bdfed6de-7e10-4b47-a229-5493ab7576a6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ajax Security Uniform Pants",
 "shops": []
 },
@@ -142815,7 +142815,7 @@
 "shops": []
 },
 "bea49ef6-2415-4627-b1f1-dd48e167daa3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Arms Justified",
 "shops": []
 },
@@ -143158,7 +143158,7 @@
 "shops": []
 },
 "bef9a1d6-a8d9-4975-89af-899d833f52ed": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Red",
 "shops": [
 {
@@ -143622,7 +143622,7 @@
 "shops": []
 },
 "bfc4076a-bf6d-4cf4-966a-84f76908c896": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Golden Blossom",
 "shops": []
 },
@@ -143701,7 +143701,7 @@
 "shops": []
 },
 "bfdb7f10-0969-4235-8130-25a2a77540b4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Fortuna Livery",
 "shops": []
 },
@@ -144077,7 +144077,7 @@
 ]
 },
 "c099e0e2-2bc3-4fe2-9e01-61f6f3875b3a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Pampero Boots Maroon",
 "shops": [
 {
@@ -145003,7 +145003,7 @@
 ]
 },
 "c1497637-e863-405a-8c0b-fd3e2ae350bc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Black",
 "shops": [
 {
@@ -145229,7 +145229,7 @@
 ]
 },
 "c1d1cc22-1b9f-4a47-8f8f-9b748323806d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms New Dawn",
 "shops": []
 },
@@ -146054,7 +146054,7 @@
 ]
 },
 "c1faef05-e1d3-4f47-8b13-829631c941fd": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Twilight",
 "shops": [
 {
@@ -146152,7 +146152,7 @@
 ]
 },
 "c2753823-8519-4d54-9fd1-00cff7b1543d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Burgundy Paisley Bandana",
 "shops": [
 {
@@ -146402,7 +146402,7 @@
 ]
 },
 "c2f17b28-eb6a-4f3c-8105-7057b7da91f3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Dark Blue",
 "shops": []
 },
@@ -146412,7 +146412,7 @@
 "shops": []
 },
 "c30ab793-03d7-4322-a894-429182c28b69": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tuvic Outerwear Jacket Arctic",
 "shops": [
 {
@@ -146530,16 +146530,16 @@
 "shops": []
 },
 "c34bc189-440b-4abe-b257-2663f09ec833": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Skellig Pants Dark",
 "shops": []
 },
 "c34e38fa-7339-4353-9ca9-ed6d21b75d84": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Green",
 "shops": [
 {
-"d": "2026-09-26",
+"d": "2026-11-19",
 "l": "HUR-L2 Faithful Dream Station",
 "p": 1340,
 "s": "Stanton",
@@ -146671,7 +146671,7 @@
 "shops": []
 },
 "c37d4eb1-1ee1-4e31-ab3f-b14247f8a692": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants Green",
 "shops": [
 {
@@ -146704,7 +146704,7 @@
 "shops": []
 },
 "c39d6475-f85a-4084-9b4b-c5d13d976046": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Arms Epoque",
 "shops": []
 },
@@ -148017,7 +148017,7 @@
 ]
 },
 "c4409ebd-1cd2-4de1-a720-0d5ba889497d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Shrike Helmet",
 "shops": []
 },
@@ -148430,7 +148430,7 @@
 "shops": []
 },
 "c4dc71ec-3335-422f-a309-33c68253c710": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Arcus Gloves Purple",
 "shops": []
 },
@@ -148605,7 +148605,7 @@
 "shops": []
 },
 "c546f921-2a4c-4fd7-8e47-3f119a7f9bb8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Dark Red",
 "shops": []
 },
@@ -148997,7 +148997,7 @@
 ]
 },
 "c5dee096-247f-4251-8304-43c4e482bdb4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Justified",
 "shops": []
 },
@@ -149163,7 +149163,7 @@
 "shops": []
 },
 "c64b0fd2-94a7-4084-99d1-a5e1e192b109": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bannock Jumpsuit Cool Ash",
 "shops": []
 },
@@ -149239,7 +149239,7 @@
 "shops": []
 },
 "c65f469b-cdf3-4537-b863-7a36b17bd5fe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Invictus Hat Dark Green",
 "shops": []
 },
@@ -150085,7 +150085,7 @@
 ]
 },
 "c74fb9b8-e3de-40e5-8a26-1d6f02be2f37": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "RSI Hat",
 "shops": [
 {
@@ -150494,7 +150494,7 @@
 "shops": []
 },
 "c81d20d8-291c-4fba-af05-d36582c674cf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms SecondWind",
 "shops": []
 },
@@ -151029,7 +151029,7 @@
 "shops": []
 },
 "c8c97418-ec43-4db4-aff5-93a69f3d959a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Courser Jeans Charcoal",
 "shops": [
 {
@@ -151156,7 +151156,7 @@
 ]
 },
 "c92273b0-2d7f-41b3-9fdd-af07e190a0f3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ace Interceptor Helmet",
 "shops": []
 },
@@ -151314,7 +151314,7 @@
 ]
 },
 "c938355a-00b5-477e-87b0-fa06d1b17594": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Seagreen",
 "shops": [
 {
@@ -151591,7 +151591,7 @@
 "shops": []
 },
 "c9d5caba-98e9-4402-8232-4689d51b281f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core SecondWind",
 "shops": []
 },
@@ -152040,7 +152040,7 @@
 "shops": []
 },
 "ca506d0e-7b7d-45d6-afd2-f252cc23e96c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Legs (Modified)",
 "shops": []
 },
@@ -152378,7 +152378,7 @@
 ]
 },
 "cb1c403e-2718-43ed-af58-b634d0d806c3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Chocolate Mint",
 "shops": [
 {
@@ -152436,12 +152436,12 @@
 "shops": []
 },
 "cb482c13-b4f6-4738-a487-4424e1dee09e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Legs SecondWind",
 "shops": []
 },
 "cb499a8b-3f84-4684-a638-f6a159ec1488": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core Cobalt Camo",
 "shops": []
 },
@@ -152759,7 +152759,7 @@
 "shops": []
 },
 "cc3ce841-eb78-476c-bcee-1b000fe464b6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Pants Brown",
 "shops": []
 },
@@ -152963,7 +152963,7 @@
 "shops": []
 },
 "cc820abe-5826-49a7-83e0-4d6fbfe79f3e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Top Primrose",
 "shops": []
 },
@@ -153032,7 +153032,7 @@
 ]
 },
 "ccb2ffc8-0229-4f7e-a5fb-3f515c8df8d0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2954 Hat Purple",
 "shops": []
 },
@@ -153137,7 +153137,7 @@
 "shops": []
 },
 "cd0972ef-156d-4be6-9037-d8ded9810855": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Katla Mask Green",
 "shops": []
 },
@@ -153194,7 +153194,7 @@
 ]
 },
 "cd23a5c4-f027-4a49-baf4-40993a6b13ff": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet Grape",
 "shops": []
 },
@@ -153712,7 +153712,7 @@
 "shops": []
 },
 "cd964495-3340-4036-ae44-47c7e3c4074f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Anvil Hat Olive",
 "shops": [
 {
@@ -154115,7 +154115,7 @@
 "shops": []
 },
 "ce0e1baa-7357-45bd-8427-192f73745c81": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "890 Jump Skyline Livery",
 "shops": []
 },
@@ -154275,7 +154275,7 @@
 ]
 },
 "ce8b08dc-0962-4a30-944b-32330fdfb40e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Basher T-Shirt",
 "shops": [
 {
@@ -154384,7 +154384,7 @@
 "shops": []
 },
 "ceaa6278-769c-407f-b678-b470d757dbde": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Legs (Modified)",
 "shops": []
 },
@@ -156297,7 +156297,7 @@
 ]
 },
 "cfcff8c6-0a9d-4a87-adfd-ca73a2edfca4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt",
 "shops": [
 {
@@ -156382,7 +156382,7 @@
 ]
 },
 "d000b52d-ceb8-4e5d-acea-e610b7f36359": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Faction Jacket White",
 "shops": []
 },
@@ -156449,7 +156449,7 @@
 "shops": []
 },
 "d029bbf7-378a-4c2d-84ff-fb765183059a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DefenseCon '56 Hat",
 "shops": []
 },
@@ -156705,7 +156705,7 @@
 ]
 },
 "d045a041-607e-411b-885f-c269d871af35": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Mahoney Nurse Scrub Top Honeycomb",
 "shops": []
 },
@@ -156881,7 +156881,7 @@
 "shops": []
 },
 "d0a4e9f2-b2f4-496d-8f81-3ac4b3e4d5d6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Good Gift Gloves",
 "shops": []
 },
@@ -157128,7 +157128,7 @@
 "shops": []
 },
 "d176699d-7032-4eeb-a351-3e27d567e4a7": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68L Backpack",
 "shops": [
 {
@@ -157144,6 +157144,41 @@
 "p": 1378,
 "s": "Stanton",
 "t": "Armor - Everus Harbor"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 1450,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1450,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1450,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1450,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1450,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
 },
 {
 "d": "2026-10-31",
@@ -157167,13 +157202,6 @@
 "t": "Armor - HUR-L1"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1450,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1450,
@@ -157188,27 +157216,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1450,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1450,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1450,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
 "d": "2026-09-08",
 "l": "ARC-L4 Faint Glen Station",
 "p": 1450,
@@ -157216,14 +157223,7 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
-"p": 1450,
-"s": "Stanton",
-"t": "Armor - Seraphim"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1511,
 "s": "Stanton",
@@ -157869,7 +157869,7 @@
 ]
 },
 "d2342185-bf81-4576-ae2b-626462471561": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Slickdry Waders Valencia",
 "shops": [
 {
@@ -158834,7 +158834,7 @@
 ]
 },
 "d3a56045-9adf-42b2-8540-71c3622b3880": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Taos Balaclava and Goggles Arctic",
 "shops": [
 {
@@ -158891,7 +158891,7 @@
 "shops": []
 },
 "d3c22aee-6473-466a-975c-ecde2eaba580": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Core",
 "shops": []
 },
@@ -159282,7 +159282,7 @@
 "shops": []
 },
 "d4695634-ff5a-488f-8bce-2d26cd3b1481": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Good Gift Sweater Blue",
 "shops": []
 },
@@ -159359,12 +159359,12 @@
 "shops": []
 },
 "d4af9e5f-73e0-4d22-84f0-4d25a90407b1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Amaris Shirt Fogforest",
 "shops": []
 },
 "d4b19973-810d-4453-ae07-877d7c7ca672": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Tan",
 "shops": [
 {
@@ -159695,7 +159695,7 @@
 "shops": []
 },
 "d559ddae-2784-4d72-8da8-a2bcf558c441": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "People's Alliance Hat",
 "shops": []
 },
@@ -160177,7 +160177,7 @@
 "shops": []
 },
 "d63caeed-4086-4964-9f3c-b36f1c2b237b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Stratus Jacket Teal",
 "shops": [
 {
@@ -160317,7 +160317,7 @@
 "shops": []
 },
 "d69c8927-4518-4848-9727-21d3303429c8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "UrbEx Boots Grey",
 "shops": [
 {
@@ -160464,7 +160464,7 @@
 "shops": []
 },
 "d6ed781b-4ca1-46ec-bd0f-23673bbc0ce5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Snarling Vanduul Helmet",
 "shops": []
 },
@@ -161405,7 +161405,7 @@
 ]
 },
 "d785d10e-4b77-4a3a-a35f-fba6510b5b95": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Blue",
 "shops": []
 },
@@ -161435,7 +161435,7 @@
 ]
 },
 "d7bf624e-6c62-4a31-ab14-aba9254bfc55": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt White",
 "shops": []
 },
@@ -161515,7 +161515,7 @@
 "shops": []
 },
 "d7faaf51-b1b6-4635-b62e-203687973144": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms Jungle Camo",
 "shops": []
 },
@@ -161525,7 +161525,7 @@
 "shops": []
 },
 "d8036474-f729-4bdf-95dd-6c592200d364": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Volatus Balaclava Stealth Kitten",
 "shops": []
 },
@@ -161550,7 +161550,7 @@
 ]
 },
 "d80c8d06-9687-411f-9d8c-ddaa81d1f6de": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Dark Red",
 "shops": [
 {
@@ -162860,7 +162860,7 @@
 "shops": []
 },
 "d8ae58b1-4bff-4294-95e6-44879ffe2f73": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Frostbite Camo Livery",
 "shops": []
 },
@@ -163305,7 +163305,7 @@
 ]
 },
 "d96be049-c272-448c-bc81-72e19b84deb6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Torreto Pants Dark Purple",
 "shops": []
 },
@@ -163859,7 +163859,7 @@
 "shops": []
 },
 "d9d6c217-aef4-449b-8259-2a05c8a56da8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Helmet SecondWind",
 "shops": []
 },
@@ -164757,7 +164757,7 @@
 "shops": []
 },
 "da739f16-1141-4fd7-9a3e-acc6d67cd5fa": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Imperial",
 "shops": [
 {
@@ -166394,16 +166394,16 @@
 ]
 },
 "dbd9d3dd-e844-44ba-b1dd-28a42983796c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants Red",
 "shops": []
 },
 "dbe0522a-da6c-481b-8060-0466c35087ce": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Arctic",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -166562,12 +166562,12 @@
 ]
 },
 "dc21809a-2889-4aae-a53d-c54205b8791a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Talon Core",
 "shops": []
 },
 "dc365f25-1357-44ff-8063-36aa7c265a11": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2950 Hat",
 "shops": []
 },
@@ -166878,7 +166878,7 @@
 "shops": []
 },
 "dd1865f0-7246-4206-b5f4-3ce0481f08d2": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Purple",
 "shops": [
 {
@@ -167518,7 +167518,7 @@
 ]
 },
 "dd41b53e-03fa-4084-ae19-d17b045dacdc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Skellig Pants Silver",
 "shops": [
 {
@@ -167678,7 +167678,7 @@
 ]
 },
 "dd8f059f-b38b-4ec7-8be7-fb9b50c6e6ad": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Meridian Livery",
 "shops": []
 },
@@ -167701,7 +167701,7 @@
 "shops": []
 },
 "dd9cd32c-7b68-4522-9d8c-493fc555db61": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chokehold Gloves Molehill Brown",
 "shops": []
 },
@@ -167876,7 +167876,7 @@
 "shops": []
 },
 "de1dd8f9-511e-4547-83f3-806a1336fa0d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Deck the Hull Livery",
 "shops": []
 },
@@ -168174,7 +168174,7 @@
 ]
 },
 "ded5074b-b50c-40b2-a8bf-a49e92c8255a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Blue",
 "shops": [
 {
@@ -168783,7 +168783,7 @@
 ]
 },
 "dfa621c1-849e-4370-bf1d-f359f3cac40b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet Jungle Camo",
 "shops": []
 },
@@ -169050,7 +169050,7 @@
 ]
 },
 "e02ff738-464c-40e4-b140-fae0c0a7b2e0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Advocacy Interceptor Helmet",
 "shops": []
 },
@@ -169488,7 +169488,7 @@
 "shops": []
 },
 "e0985785-fc61-416f-8a6c-cf9b5db86bbc": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Fieldsbury Dark Bear Helmet Lime",
 "shops": []
 },
@@ -169571,7 +169571,7 @@
 "shops": []
 },
 "e0d55691-c8cf-4865-9003-b6f69c81278c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Arms Justified",
 "shops": []
 },
@@ -169772,7 +169772,7 @@
 ]
 },
 "e10688f1-e657-4583-a08d-4679f88a17c5": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Deri Gloves",
 "shops": [
 {
@@ -171142,7 +171142,7 @@
 ]
 },
 "e2d17acd-f65b-47bd-9ad1-805d5c604b21": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Adrift Shirt Black",
 "shops": []
 },
@@ -171415,29 +171415,29 @@
 "shops": []
 },
 "e33e7860-2683-4aca-8fc8-269526986fae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "FBL-8a Core Desert Digital",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1251,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1471,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1471,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1471,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -171551,7 +171551,7 @@
 "shops": []
 },
 "e3b4803a-83cf-44f5-9db9-6af06a1cfa42": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chokehold Gloves",
 "shops": []
 },
@@ -171561,7 +171561,7 @@
 "shops": []
 },
 "e3c42e35-2d1c-495f-baa5-226f662b4ab4": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Anvil Aerospace Hat",
 "shops": []
 },
@@ -171576,7 +171576,7 @@
 "shops": []
 },
 "e3c8d1cf-bfbf-4cfe-97c9-ae6bef0fa592": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chokehold Gloves Grime Blue",
 "shops": []
 },
@@ -172165,7 +172165,7 @@
 ]
 },
 "e4c28233-e258-49e3-b115-53186c055f0b": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "2949 Intergalactic Aerospace Expo Hat",
 "shops": []
 },
@@ -173236,7 +173236,7 @@
 "shops": []
 },
 "e6405005-0330-494e-9edd-54f9e34c7b5e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Sterling Silver",
 "shops": []
 },
@@ -173635,7 +173635,7 @@
 "shops": []
 },
 "e6c279ca-4f3d-4f3e-a85f-4b761c1fe084": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Katla Mask Crimson",
 "shops": []
 },
@@ -173966,7 +173966,7 @@
 "shops": []
 },
 "e742fa9a-dc65-43b0-912a-f6a772a6d309": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Arms Hunter Camo",
 "shops": []
 },
@@ -174954,7 +174954,7 @@
 "shops": []
 },
 "e87b0230-efaf-4719-a8ac-de98b3b7c576": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Horde Jacket",
 "shops": [
 {
@@ -174982,7 +174982,7 @@
 "shops": []
 },
 "e8b102de-975e-4d83-a349-c70d3f0f9495": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "IAE 2956 Hat",
 "shops": []
 },
@@ -174992,7 +174992,7 @@
 "shops": []
 },
 "e8d10cda-0991-4dbf-ba98-21246465b24e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Helmet Clawed Steel",
 "shops": []
 },
@@ -175690,12 +175690,12 @@
 ]
 },
 "eac45929-9c11-496b-9f50-3401de9fba16": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100i 2954 Auspicious Red Dragon Livery",
 "shops": []
 },
 "ead43470-3c23-4acc-99f1-f3dd0a3ecfe8": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Aves Legs Epoque",
 "shops": []
 },
@@ -175757,7 +175757,7 @@
 ]
 },
 "eb104969-1b37-4fed-8fab-c86581d8c506": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Twilight",
 "shops": [
 {
@@ -175846,7 +175846,7 @@
 ]
 },
 "eb1d0d76-6a2d-48fd-9eac-9c40e3aabc1e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Union Pants (Modified)",
 "shops": []
 },
@@ -175924,7 +175924,7 @@
 "shops": []
 },
 "eb5db470-1763-4297-80f4-0b48d1654cca": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cliffback T-Shirt Aqua",
 "shops": [
 {
@@ -176018,7 +176018,7 @@
 "shops": []
 },
 "ebd3cf9f-b0a2-4208-baa1-cd9e6097c25e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Arms Scorched",
 "shops": []
 },
@@ -176165,9 +176165,16 @@
 ]
 },
 "ec0cc130-be78-486b-9ab2-2e875c16fcf6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Olive",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 963,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
+},
 {
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
@@ -176188,13 +176195,6 @@
 "p": 963,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 963,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -176431,7 +176431,7 @@
 ]
 },
 "ec992f2a-4316-4a4d-93cb-45e1e37d594c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Tan",
 "shops": []
 },
@@ -176701,7 +176701,7 @@
 "shops": []
 },
 "ed345298-87d0-4938-bc08-9f1c37e1a6cf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack Rogue",
 "shops": []
 },
@@ -176711,7 +176711,7 @@
 "shops": []
 },
 "ed3d10d6-970e-4ab6-9731-4dd951de636e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Gale Head Cover Maroon",
 "shops": [
 {
@@ -176720,6 +176720,34 @@
 "p": 1273,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1340,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -176750,20 +176778,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
 "d": "2026-09-10",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 1340,
@@ -176772,24 +176786,10 @@
 },
 {
 "d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
 "l": "ARC-L2 Lively Pathway Station",
 "p": 1340,
 "s": "Stanton",
 "t": "Refinery Shop - ARC-L2"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 1340,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -176827,12 +176827,12 @@
 "shops": []
 },
 "ed5e3fb1-de20-42ec-b321-05b69dac3cf1": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Misfit Jacket Crossdraw",
 "shops": []
 },
 "ed791706-62f6-415c-8729-e96b90a5ffd0": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Dark Green",
 "shops": [
 {
@@ -176998,7 +176998,7 @@
 "shops": []
 },
 "edb7d4b6-5461-4eb6-8ec9-1467ce8f0a84": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Courser Jeans Pitch",
 "shops": [
 {
@@ -177025,7 +177025,7 @@
 ]
 },
 "edc6b651-1bf9-492d-b7e4-dd7d3abf8c45": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bannock Jumpsuit Green",
 "shops": []
 },
@@ -177165,7 +177165,7 @@
 ]
 },
 "ee3bd1ab-ed48-4944-87aa-543320c4193f": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "100 Series Sand Wave Livery",
 "shops": []
 },
@@ -177238,7 +177238,7 @@
 ]
 },
 "ee484573-758e-4dae-a069-17565ee46371": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Thrasher T-Shirt",
 "shops": [
 {
@@ -177313,7 +177313,7 @@
 "shops": []
 },
 "ee9048f4-0dd9-4945-ae5d-155d370683fe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Twilight",
 "shops": []
 },
@@ -177360,7 +177360,7 @@
 "shops": []
 },
 "eec3094a-3af5-4771-b969-ac6ff48ffb45": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie White",
 "shops": []
 },
@@ -177921,7 +177921,7 @@
 "shops": []
 },
 "efbee2b8-39bb-47ab-8c54-ae7e06aaf284": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Aqua",
 "shops": [
 {
@@ -178042,7 +178042,7 @@
 ]
 },
 "f0341939-97c7-46d9-8423-ad11adbcaa8a": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Yellow",
 "shops": [
 {
@@ -178114,7 +178114,7 @@
 "shops": []
 },
 "f05afbb9-4a11-4db0-b16f-dedf73dfb421": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Afterglow Livery",
 "shops": []
 },
@@ -178777,7 +178777,7 @@
 "shops": []
 },
 "f1407119-418f-44e3-8982-c49161126f40": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Chrome Dome Head Gear Minefield",
 "shops": []
 },
@@ -178817,7 +178817,7 @@
 "shops": []
 },
 "f180875b-484c-41be-a252-4c69432de0d9": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Bantam Hat Orange",
 "shops": [
 {
@@ -178907,7 +178907,7 @@
 "shops": []
 },
 "f1fb1b85-8e33-4762-8a89-bdfa1395c470": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ADP-mk4 Core Big Boss",
 "shops": []
 },
@@ -179370,7 +179370,7 @@
 "shops": []
 },
 "f2b5d03c-2637-471b-a7c4-fee89d98a33d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Katla Mask Yellow",
 "shops": []
 },
@@ -179703,7 +179703,7 @@
 "shops": []
 },
 "f3e516b1-1fed-4f98-86fd-970e84786ddf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Geist Backpack",
 "shops": []
 },
@@ -179718,7 +179718,7 @@
 "shops": []
 },
 "f403a9b5-b3cf-464a-b171-76a078fdacdf": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tumbril Hat",
 "shops": []
 },
@@ -179931,7 +179931,7 @@
 ]
 },
 "f48ef7c4-6d76-447e-a894-e1a27dc84c99": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core Clawed Steel",
 "shops": []
 },
@@ -180236,7 +180236,7 @@
 "shops": []
 },
 "f590cae6-9e24-427f-86a3-26fc7797742e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Col Head Cover Yellow",
 "shops": []
 },
@@ -180430,7 +180430,7 @@
 ]
 },
 "f5d02ab9-5be9-4cae-a566-e13a9dafbfae": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Black",
 "shops": [
 {
@@ -180481,22 +180481,22 @@
 "shops": []
 },
 "f5fbd0ef-8f54-47a5-94ff-f7f9b4c323d3": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68M Backpack",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2578,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2578,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2578,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-10-09",
@@ -180534,7 +180534,7 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2690,
 "s": "Stanton",
@@ -180555,7 +180555,7 @@
 "shops": []
 },
 "f60af5b8-f119-4925-9bd7-272c115c1e2e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core New Dawn",
 "shops": []
 },
@@ -180590,7 +180590,7 @@
 "shops": []
 },
 "f66babbd-4b85-451b-80ad-1688b895f04c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "DCP Armor Core Hunter Camo",
 "shops": []
 },
@@ -181329,7 +181329,7 @@
 ]
 },
 "f77ec3e0-bc04-4acc-9edc-dfb538101a7c": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tekaw Pants Tactical",
 "shops": [
 {
@@ -181947,11 +181947,11 @@
 "shops": []
 },
 "f8a4bdca-fbec-4b71-b593-dc4472eda053": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Legs Iceborn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -181972,18 +181972,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -182272,11 +182272,11 @@
 ]
 },
 "f94f4f75-a1ec-40d3-80ea-34cdf0ec9205": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "ORC-mkX Core Nightfire",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2721,
 "s": "Stanton",
@@ -182290,18 +182290,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3207,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3207,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3207,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -182410,7 +182410,7 @@
 ]
 },
 "f993309d-6a69-4d7e-bd9e-cee0b93b1243": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Imperial",
 "shops": []
 },
@@ -182465,7 +182465,7 @@
 "shops": []
 },
 "f9c11af1-1b13-4694-836c-612fa23e867d": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Pants Brown",
 "shops": [
 {
@@ -183682,7 +183682,7 @@
 ]
 },
 "faf58736-b8a2-46d4-bc59-5c92deced973": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "GME 240-15 Patient Slippers",
 "shops": []
 },
@@ -183697,7 +183697,7 @@
 "shops": []
 },
 "fb1416ad-1c22-49be-a3e4-d419480fa389": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Harlowe Shirt Green",
 "shops": [
 {
@@ -183846,7 +183846,7 @@
 "shops": []
 },
 "fb5f7ed4-46ec-47ef-90d3-ca5a8bf336be": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempo Jacket Golden Brown",
 "shops": []
 },
@@ -183871,7 +183871,7 @@
 "shops": []
 },
 "fb904353-c334-4674-874c-874b64a4c6db": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "CSP-68H Backpack",
 "shops": [
 {
@@ -183889,6 +183889,27 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 2500,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2500,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2500,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2500,
@@ -183896,28 +183917,7 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2500,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2500,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
-"l": "Seraphim Station",
-"p": 2500,
-"s": "Stanton",
-"t": "Armor - Seraphim"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2604,
 "s": "Stanton",
@@ -184022,7 +184022,7 @@
 "shops": []
 },
 "fbe1f014-022e-496d-ac0e-e754851cbf54": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Ketchum Beanie Yellow",
 "shops": []
 },
@@ -185309,7 +185309,7 @@
 ]
 },
 "fe0e531c-7e92-495b-a82b-faa9a7a453c6": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Cumulus Jacket Yellow",
 "shops": [
 {
@@ -185466,9 +185466,16 @@
 "shops": []
 },
 "fe35b83f-3417-4107-80eb-704d8187eabe": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "Tempus Tank Grey",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 963,
+"s": "Pyro",
+"t": "Guns Dudley"
+},
 {
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
@@ -185496,13 +185503,6 @@
 "p": 963,
 "s": "Pyro",
 "t": "Guns Ruin"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 963,
-"s": "Pyro",
-"t": "Guns Dudley"
 },
 {
 "d": "2026-08-31",
@@ -185568,7 +185568,7 @@
 "shops": []
 },
 "fe66c2d6-3139-4f6e-94bd-05a25accec2e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "600i 2954 Auspicious Red Dog Livery",
 "shops": []
 },
@@ -185667,7 +185667,7 @@
 ]
 },
 "fe83f9f3-32fc-4d06-aa43-9692b1e2a50e": {
-"checked": 1794701569,
+"checked": 1795311188,
 "n": "400i Stormbringer Livery",
 "shops": []
 },
