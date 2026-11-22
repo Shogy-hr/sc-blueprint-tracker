@@ -81,11 +81,11 @@
 ]
 },
 "001a34eb-b3a0-4c39-807a-63e43dc467b0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 300,
 "s": "Stanton",
@@ -1114,11 +1114,11 @@
 "shops": []
 },
 "022b7d7e-85a4-4be2-b00e-c412f8e79921": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 300,
 "s": "Stanton",
@@ -1132,7 +1132,7 @@
 "shops": []
 },
 "02406d0f-eb4d-4976-8764-2cfff4c56745": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Sienna",
 "shops": [
 {
@@ -1170,7 +1170,7 @@
 "shops": []
 },
 "026d1f58-9437-48c9-8778-8061f371a229": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Red",
 "shops": [
 {
@@ -1200,7 +1200,7 @@
 "shops": []
 },
 "02826a44-68c2-42a1-8270-36734610fa57": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Orison Shipyards T-Shirt White",
 "shops": [
 {
@@ -2099,7 +2099,7 @@
 "shops": []
 },
 "0306a3b9-f4d7-482a-a1ad-81542331067f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Stalker Standard Flight Blade",
 "shops": []
 },
@@ -2150,7 +2150,7 @@
 "shops": []
 },
 "034569d7-8453-4d9d-b018-18ea66eac310": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Greycat Edition",
 "shops": []
 },
@@ -2160,13 +2160,13 @@
 "shops": []
 },
 "0360d3ac-2ad8-4120-931c-000bfff5e28a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Warlock PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -2239,7 +2239,7 @@
 ]
 },
 "037946a4-9744-4f65-b9d1-13482253b606": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Hurston Black",
 "shops": []
 },
@@ -3850,7 +3850,7 @@
 ]
 },
 "040f1b65-c351-49da-af08-b9bd3928646f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Rescue Required T-Shirt",
 "shops": []
 },
@@ -3975,7 +3975,7 @@
 "shops": []
 },
 "04566a34-467a-4622-8a23-71f0f38cdfc7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Landlite Boots Red",
 "shops": [
 {
@@ -3993,18 +3993,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 235,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-08",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 235,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 235,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -4014,7 +4014,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 235,
 "s": "Nyx",
@@ -4111,7 +4111,7 @@
 "shops": []
 },
 "045a9c14-ad28-454d-ac98-843a983f9ec4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Grey",
 "shops": [
 {
@@ -4212,7 +4212,7 @@
 "shops": []
 },
 "047724ce-fc19-4cde-96c6-ca1971394437": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Tonk T-Shirt",
 "shops": [
 {
@@ -5439,7 +5439,7 @@
 "shops": []
 },
 "0673155b-2b19-4e2a-ad79-e6a42305b6f8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Gloves ASD Edition",
 "shops": []
 },
@@ -5459,11 +5459,11 @@
 "shops": []
 },
 "068b179e-bb1b-471e-9bf8-2f27b0ff2d26": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core",
 "shops": [
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 10722,
 "s": "Nyx",
@@ -6070,7 +6070,7 @@
 "shops": []
 },
 "06a90691-c551-46fa-977b-f7831222884f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes",
 "shops": [
 {
@@ -6095,6 +6095,13 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 220,
@@ -6102,14 +6109,7 @@
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 220,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 302,
 "s": "Stanton",
@@ -6910,7 +6910,7 @@
 ]
 },
 "086214a4-3164-4a74-bf2e-80174a7730a2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Moss",
 "shops": [
 {
@@ -7259,7 +7259,7 @@
 "shops": []
 },
 "08de725e-377d-4145-ab12-ed51cfac2f70": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Crusader Edition Purple Pinstripe",
 "shops": []
 },
@@ -7442,7 +7442,7 @@
 "shops": []
 },
 "09475a75-d375-477c-bfc4-ad6423f0ad6f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Yellow",
 "shops": [
 {
@@ -7460,7 +7460,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 460,
 "s": "Stanton",
@@ -8865,12 +8865,12 @@
 "shops": []
 },
 "0a76542b-f550-4b1a-a8bc-180748bdcd3d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Hurston Edition",
 "shops": []
 },
 "0a78e20c-f62d-424a-9f49-2445d5c1bb8f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Grey",
 "shops": [
 {
@@ -8913,7 +8913,7 @@
 "shops": []
 },
 "0a8662f7-3dac-49a0-8f12-c5c0eed60209": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lorville Blues T-Shirt",
 "shops": []
 },
@@ -8967,7 +8967,7 @@
 "shops": []
 },
 "0ac0979f-710f-4cd6-a11a-5eb2c867b204": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Black",
 "shops": [
 {
@@ -8978,7 +8978,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2285,
 "s": "Stanton",
@@ -10147,7 +10147,7 @@
 "shops": []
 },
 "0d08ab87-18e7-41e8-a8a7-3d31852a2b5b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Amber",
 "shops": []
 },
@@ -10255,7 +10255,7 @@
 ]
 },
 "0d46bcd1-94f0-4685-9cfa-47a115ef7ea1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Olive",
 "shops": [
 {
@@ -10266,7 +10266,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 300,
 "s": "Stanton",
@@ -10642,7 +10642,7 @@
 "shops": []
 },
 "0df281eb-15d8-48b8-861f-1c5e6e9f2f23": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves White",
 "shops": [
 {
@@ -10947,7 +10947,7 @@
 "shops": []
 },
 "0e5a9e57-7da9-4452-aa03-b2a20604f76a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Seagreen",
 "shops": [
 {
@@ -11004,7 +11004,7 @@
 ]
 },
 "0e790ea4-8034-4eae-b1d9-a742e46bb27f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack Hazard",
 "shops": [
 {
@@ -11036,7 +11036,49 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 1900,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 1900,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 1900,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1900,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 1900,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1900,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 1900,
 "s": "Stanton",
@@ -11071,13 +11113,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 1900,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1900,
@@ -11085,39 +11120,11 @@
 "t": "Cargo Center Supplies - Port Tressler"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1900,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 1900,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
-},
-{
 "d": "2026-09-09",
 "l": "Nyx Gateway",
 "p": 1900,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1900,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 1900,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -11139,13 +11146,6 @@
 "p": 1900,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 1900,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -11350,7 +11350,7 @@
 ]
 },
 "0ea9e1a2-cc41-4114-ac39-559d655c57d0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8R Pisces TSB Flight Blade",
 "shops": [
 {
@@ -11491,11 +11491,11 @@
 ]
 },
 "0ecb635a-7234-474a-a39d-9dff366683d6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Tan",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 2285,
 "s": "Stanton",
@@ -11582,7 +11582,7 @@
 "shops": []
 },
 "0f0e52b8-1e54-4107-aaaf-0ccea3732690": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2955 T-Shirt Gray",
 "shops": []
 },
@@ -12184,7 +12184,7 @@
 ]
 },
 "10f73fb9-c725-4238-8625-3723714775e7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Aqua",
 "shops": [
 {
@@ -12202,7 +12202,7 @@
 "shops": []
 },
 "10ff7a53-3400-46f1-bec2-c2876861a59c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core microTech Edition",
 "shops": []
 },
@@ -12299,7 +12299,7 @@
 "shops": []
 },
 "11449a60-8066-4059-9932-50323bbcc897": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Grey",
 "shops": [
 {
@@ -12361,7 +12361,7 @@
 ]
 },
 "118b43e3-3007-4fe6-a4d3-b02d65eecaa0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Sienna",
 "shops": [
 {
@@ -12535,7 +12535,7 @@
 "shops": []
 },
 "11c73427-0a60-41e2-a15d-0f5bf2e0b66f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt (Modified)",
 "shops": []
 },
@@ -13023,7 +13023,7 @@
 ]
 },
 "1219dabc-5ff1-4025-851e-752ad5f3478c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Manaslu Jacket",
 "shops": [
 {
@@ -13475,7 +13475,7 @@
 ]
 },
 "12a6c897-6020-4fc8-a820-71f1b69b9601": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Talen T-Shirt",
 "shops": []
 },
@@ -13485,7 +13485,7 @@
 "shops": []
 },
 "12bbf500-5f7c-437e-a317-11ff5bb677ad": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Warning",
 "shops": []
 },
@@ -13534,7 +13534,7 @@
 "shops": []
 },
 "13069c8c-dad2-436a-a46f-a0f4d56bb564": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Crusader Edition Purple/Ivory",
 "shops": []
 },
@@ -14344,7 +14344,7 @@
 ]
 },
 "13814aae-488c-48c0-80a2-5501cb76343c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms",
 "shops": [
 {
@@ -14594,7 +14594,7 @@
 ]
 },
 "13f24921-b9c2-4d3d-9231-86e97bd95c01": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2953 Shirt White",
 "shops": []
 },
@@ -15330,7 +15330,7 @@
 ]
 },
 "14e008ab-b58b-4149-9892-d7c909ae331f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots Nomad",
 "shops": [
 {
@@ -15411,7 +15411,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 225,
 "s": "Nyx",
@@ -16117,7 +16117,7 @@
 ]
 },
 "14f5d0a2-1ab5-4b23-bf07-eb3f7d426b71": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Dark Green",
 "shops": [
 {
@@ -16571,7 +16571,7 @@
 "shops": []
 },
 "157bbee8-0dca-4206-8fc1-fa1974b3c569": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Buccaneer PHB Flight Blade",
 "shops": [
 {
@@ -16623,7 +16623,7 @@
 ]
 },
 "1592dd21-3634-4778-a284-24ef5d393389": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Amber",
 "shops": []
 },
@@ -17304,7 +17304,7 @@
 ]
 },
 "1669abe8-5d5c-4a89-a747-e44f74f5fef6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Tru Barrier Hazard Suit Cinnabar",
 "shops": []
 },
@@ -17656,7 +17656,7 @@
 "shops": []
 },
 "1714e5cb-00ed-414f-bea7-61585c628bb6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Lodestar",
 "shops": []
 },
@@ -17671,7 +17671,7 @@
 "shops": []
 },
 "173269f1-e6fe-494a-99df-e390a63dac84": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack",
 "shops": [
 {
@@ -17831,7 +17831,7 @@
 ]
 },
 "175ab9c1-b42e-466c-b1df-97655b37c49d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Pants ASD Edition",
 "shops": []
 },
@@ -18040,7 +18040,7 @@
 "shops": []
 },
 "1806ffa5-84ed-4252-9daf-947fde440f9c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MISC T-Shirt White",
 "shops": []
 },
@@ -18252,11 +18252,11 @@
 ]
 },
 "188c663a-7cf2-42bf-af64-ff090540f3af": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -18278,7 +18278,7 @@
 ]
 },
 "188f0e43-18ab-4092-b64b-0196b5ea1a91": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Light Blue",
 "shops": [
 {
@@ -18435,7 +18435,7 @@
 "shops": []
 },
 "18d2af08-b04a-4500-8041-50f361749e44": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Grey",
 "shops": [
 {
@@ -18460,6 +18460,20 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 375,
@@ -18472,20 +18486,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-08-28",
@@ -18658,7 +18658,7 @@
 ]
 },
 "191b33b3-8c34-420c-8a84-518e5e3a9920": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Harvester",
 "shops": []
 },
@@ -19341,7 +19341,7 @@
 "shops": []
 },
 "19cb730c-bf9a-401a-9284-63027b359ea1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs Black Cherry",
 "shops": []
 },
@@ -19361,7 +19361,7 @@
 "shops": []
 },
 "19ff245a-dd6b-4e4e-992a-8a6176a9d8b2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Taurus TSB Flight Blade",
 "shops": []
 },
@@ -19401,7 +19401,7 @@
 "shops": []
 },
 "1a7b010d-ac45-4749-bc2e-22ec924de710": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Cobalt",
 "shops": [
 {
@@ -19927,7 +19927,7 @@
 "shops": []
 },
 "1abea099-a3b6-479f-a505-b213d7ee0dc2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Red",
 "shops": [
 {
@@ -19945,6 +19945,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 220,
@@ -19952,11 +19959,11 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 220,
+"d": "2026-11-15",
+"l": "Area18",
+"p": 280,
 "s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -19964,13 +19971,6 @@
 "p": 280,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 280,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -22080,9 +22080,16 @@
 "shops": []
 },
 "1c3f6350-4c77-4fee-a3ef-f6e64d8c5cf0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Argo T-Shirt Slate",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Baijini"
+},
 {
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
@@ -22096,13 +22103,6 @@
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Tressler"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Baijini"
 }
 ]
 },
@@ -22252,7 +22252,7 @@
 "shops": []
 },
 "1cef6daf-6b4c-4811-9b47-960c7094d677": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2955 T-Shirt Black",
 "shops": []
 },
@@ -22929,7 +22929,7 @@
 "shops": []
 },
 "1d81b82c-7916-4ab4-9580-abc86c21551b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II CL TSB Flight Blade",
 "shops": []
 },
@@ -23275,7 +23275,7 @@
 "shops": []
 },
 "1dea02f9-7a4a-4c55-a899-22a6b2461b9b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Grey",
 "shops": [
 {
@@ -23325,7 +23325,7 @@
 "shops": []
 },
 "1dfde792-2f34-47df-913a-7c829a19888f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Meteor PHB Flight Blade",
 "shops": []
 },
@@ -23776,7 +23776,7 @@
 "shops": []
 },
 "1e53d473-30a7-417b-bbf6-f482be36395b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Olive",
 "shops": [
 {
@@ -23785,6 +23785,13 @@
 "p": 233,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 245,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-10-31",
@@ -23862,13 +23869,6 @@
 "p": 245,
 "s": "Stanton",
 "t": "Providence Surplus - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 245,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -24713,7 +24713,7 @@
 "shops": []
 },
 "1f6cd323-cdaf-4544-b66b-c5326dde79b1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Aqua",
 "shops": [
 {
@@ -24731,9 +24731,16 @@
 "shops": []
 },
 "1f74b7b3-b774-4281-ac22-f11ecb823718": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Purple",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
@@ -24747,13 +24754,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -26462,7 +26462,7 @@
 ]
 },
 "207b99e1-2ec1-4bb6-bb49-70a9480f1208": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Esteril",
 "shops": []
 },
@@ -27023,7 +27023,7 @@
 "shops": []
 },
 "216ccbac-2460-472f-af63-801afa270f19": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt White Wide Pinstripe",
 "shops": [
 {
@@ -27551,7 +27551,7 @@
 "shops": []
 },
 "2203a993-73f7-4ade-95b8-4fc2039e45d2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Orison T-Shirt Black",
 "shops": [
 {
@@ -27667,7 +27667,7 @@
 "shops": []
 },
 "2236ff93-0390-48ac-9a4b-7e88f719c924": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Black",
 "shops": [
 {
@@ -27678,7 +27678,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 260,
 "s": "Stanton",
@@ -27781,7 +27781,7 @@
 "shops": []
 },
 "224ecbae-a531-4da0-8226-f1970c57c0e0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Blue",
 "shops": [
 {
@@ -27846,7 +27846,7 @@
 "shops": []
 },
 "226656e9-0732-4b9b-8f00-423e0ba2c9be": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Orange",
 "shops": [
 {
@@ -27937,13 +27937,13 @@
 "shops": []
 },
 "22a62ddb-3fcb-4a2f-9232-be1fdcda98c2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-22 AlphaWolf PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 262500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -28005,7 +28005,7 @@
 "shops": []
 },
 "23039d2b-596d-413f-b619-6042df1af3b3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Olive",
 "shops": [
 {
@@ -28016,7 +28016,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 550,
 "s": "Stanton",
@@ -28456,7 +28456,7 @@
 "shops": []
 },
 "23d3333b-2bf2-405b-8b2e-9b8acf2bd0e2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Shiv PHB Flight Blade",
 "shops": [
 {
@@ -28502,7 +28502,7 @@
 "shops": []
 },
 "24439606-8c70-40a5-87ed-51a9fef0dcfa": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Opus Gloves",
 "shops": []
 },
@@ -28512,11 +28512,11 @@
 "shops": []
 },
 "245424cb-f2fc-4ac5-8959-a971009e8607": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs",
 "shops": [
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 4233,
 "s": "Nyx",
@@ -29192,7 +29192,7 @@
 "shops": []
 },
 "264fe967-3f63-410d-8653-36cb98cb9caa": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ahmanson Gloves",
 "shops": []
 },
@@ -29297,7 +29297,7 @@
 "shops": []
 },
 "268dc38b-55aa-43c4-abe8-920110dbc24e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "55-GR Pants",
 "shops": [
 {
@@ -29315,18 +29315,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 365,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 365,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 365,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -29336,7 +29336,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 366,
 "s": "Stanton",
@@ -29378,7 +29378,7 @@
 "shops": []
 },
 "269bfab5-e97a-4d71-a053-06d7abbf765c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Pyrotechnic Edition",
 "shops": []
 },
@@ -30197,7 +30197,7 @@
 "shops": []
 },
 "27969031-d671-4eeb-bef0-a082fdf76cf1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Shubin Edition",
 "shops": []
 },
@@ -30972,7 +30972,7 @@
 "shops": []
 },
 "27bd3e82-8d50-4435-86c6-1aee031a6928": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Taurus PHB Flight Blade",
 "shops": []
 },
@@ -31377,7 +31377,7 @@
 ]
 },
 "289af7c0-5fdf-44de-9af4-375fff44e1f4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core ArcCorp Edition",
 "shops": []
 },
@@ -32017,7 +32017,7 @@
 ]
 },
 "29a81172-9a88-43cf-827d-db1006d03c20": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koya Pants Dark Blue",
 "shops": [
 {
@@ -32030,11 +32030,11 @@
 ]
 },
 "29a98f61-d24a-46de-9284-c863ee69fb26": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet",
 "shops": [
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 3308,
 "s": "Nyx",
@@ -32242,7 +32242,7 @@
 "shops": []
 },
 "2a43efee-2b7a-4b2a-b46a-98d8ce3616bb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "RSI T-Shirt",
 "shops": [
 {
@@ -32564,12 +32564,12 @@
 ]
 },
 "2a6597be-f456-4751-830b-2284e14c9f77": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Hood ASD Edition",
 "shops": []
 },
 "2a725eee-a719-467a-9073-71e78971a2d7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition White Pinstripe",
 "shops": []
 },
@@ -32602,7 +32602,7 @@
 "shops": []
 },
 "2a88c528-7062-4abe-a240-089a0cf08de8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Origin Jumpworks T-Shirt",
 "shops": [
 {
@@ -32787,7 +32787,7 @@
 ]
 },
 "2ab53264-4365-4285-926a-96b5f8e698d2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koya Pants Dark Teal",
 "shops": [
 {
@@ -33201,7 +33201,7 @@
 "shops": []
 },
 "2ccbd0c3-9d79-4734-97eb-1bb84d679031": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Barrymore Pumps",
 "shops": []
 },
@@ -33477,22 +33477,29 @@
 ]
 },
 "2d57b196-4c74-4f04-a7a4-186e437d677a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Sienna",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 375,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -33514,13 +33521,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -33852,7 +33852,7 @@
 "shops": []
 },
 "2ddeaeb6-fd84-450a-9dbb-9f9869ed68a3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ectio Glasses",
 "shops": []
 },
@@ -34028,7 +34028,7 @@
 "shops": []
 },
 "2e59147f-00a1-47ff-beb0-ebb1de5fc8f0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Crusader Edition Dark Blue",
 "shops": []
 },
@@ -34096,7 +34096,7 @@
 "shops": []
 },
 "2ec9519a-232e-45b6-8310-5480387f295f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Shire",
 "shops": []
 },
@@ -34620,7 +34620,7 @@
 "shops": []
 },
 "2fbff736-db29-4eda-9ac4-d7795f287b6c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Dark Red",
 "shops": [
 {
@@ -34643,7 +34643,7 @@
 "shops": []
 },
 "2fd2a3ae-e74c-4dd5-8513-8192887f1d22": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Black",
 "shops": [
 {
@@ -34654,7 +34654,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 300,
 "s": "Stanton",
@@ -34724,7 +34724,7 @@
 "shops": []
 },
 "2ffe84b3-a881-4b82-bb1d-9cbf3b1e340c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack Red Alert",
 "shops": []
 },
@@ -34789,7 +34789,7 @@
 "shops": []
 },
 "300d5e23-c623-42f4-8ea3-1349d5777d5b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Frozen Spring",
 "shops": []
 },
@@ -35472,7 +35472,7 @@
 ]
 },
 "30bf223f-73f9-4d8a-9a8d-f787b884f83c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koya Pants",
 "shops": []
 },
@@ -35687,7 +35687,7 @@
 ]
 },
 "311ae67d-2598-4186-ba13-e1f2c1d7c1a9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Corsair TSB Flight Blade",
 "shops": [
 {
@@ -35705,7 +35705,7 @@
 "shops": []
 },
 "3122a1ea-c354-42c5-a7b5-3a3e4222e0ce": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koya Pants Grey",
 "shops": [
 {
@@ -35978,7 +35978,7 @@
 ]
 },
 "31509d6a-2a2f-4d48-9b24-39a1e2a5ca29": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Orison Shipyards T-Shirt Black",
 "shops": [
 {
@@ -36001,7 +36001,7 @@
 "shops": []
 },
 "3166a12f-e35d-42b3-b54e-77aeb4f5abca": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Martel Dress",
 "shops": []
 },
@@ -36833,12 +36833,12 @@
 "shops": []
 },
 "31c99f94-9523-43ed-941e-4fc6d55847f3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Scorched",
 "shops": []
 },
 "31cd13ad-f75f-48ab-9c3e-16d024fefffd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Clipper Standard Flight Blade",
 "shops": []
 },
@@ -37137,11 +37137,11 @@
 "shops": []
 },
 "3293c787-c3d2-41d9-9ecf-07bfd16621f9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Tan",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 410,
 "s": "Stanton",
@@ -37155,7 +37155,7 @@
 "shops": []
 },
 "329aa5ee-1cb2-46ce-ad27-b7717902d9a4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Shiv TSB Flight Blade",
 "shops": [
 {
@@ -37291,9 +37291,16 @@
 "shops": []
 },
 "330e8aa0-9960-44b3-90f2-a3e878f52aa3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Orange",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
@@ -37307,13 +37314,6 @@
 "p": 220,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -37344,7 +37344,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 280,
 "s": "Stanton",
@@ -37537,7 +37537,7 @@
 "shops": []
 },
 "33251b3f-ff0c-412d-80d2-2dc02a35c088": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Amber",
 "shops": []
 },
@@ -38166,7 +38166,7 @@
 ]
 },
 "334fe8d6-c86e-4491-89e8-c4b74eb46717": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Twilight",
 "shops": [
 {
@@ -38378,7 +38378,7 @@
 "shops": []
 },
 "33be7a7a-6d63-45a4-9e70-924c7c553a62": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs microTech Edition",
 "shops": []
 },
@@ -38976,7 +38976,7 @@
 ]
 },
 "3451df7e-1b60-4e47-a793-9c15e63b6478": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Benaderet Dress",
 "shops": []
 },
@@ -39599,22 +39599,22 @@
 ]
 },
 "349270a6-2bdc-4d13-85d3-fb11a702650d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Purple",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 521,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 521,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 521,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -39963,7 +39963,7 @@
 "shops": []
 },
 "3518081c-9a6d-4549-8aad-9455fa433f6f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Aqua",
 "shops": [
 {
@@ -40009,7 +40009,7 @@
 "shops": []
 },
 "353aeb58-30bc-42ee-9b36-066ad88153ef": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Grey",
 "shops": [
 {
@@ -40027,6 +40027,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 220,
@@ -40041,14 +40048,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 220,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 302,
 "s": "Stanton",
@@ -40589,13 +40589,13 @@
 ]
 },
 "356013cd-1a32-4947-8ee4-4d123549ad6d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hammerhead TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 3710940,
+"p": 4296880,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -40968,7 +40968,7 @@
 "shops": []
 },
 "366a829c-7bf8-455b-b411-9240047ecdb1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Aqua",
 "shops": [
 {
@@ -41107,7 +41107,7 @@
 "shops": []
 },
 "368801d1-f112-4813-ab17-3855939cfded": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs Harvester",
 "shops": []
 },
@@ -41202,7 +41202,7 @@
 ]
 },
 "3701c987-4726-4a83-a72a-70a1e7c7f9e7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1P TSB Flight Blade",
 "shops": [
 {
@@ -41868,7 +41868,7 @@
 ]
 },
 "37cb7e4e-3904-42b5-9702-54d6503fcc20": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil T-Shirt Olive",
 "shops": []
 },
@@ -41900,11 +41900,11 @@
 ]
 },
 "37d3680b-5620-451d-b294-548504858ad4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2285,
 "s": "Stanton",
@@ -42483,7 +42483,7 @@
 "shops": []
 },
 "390de0a3-b247-4ab3-a236-bf32cfbc0f22": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Valkyrie T-Shirt",
 "shops": []
 },
@@ -42498,7 +42498,7 @@
 "shops": []
 },
 "393f44c1-b00e-400b-b1ee-765071735760": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-01 Executive Access Protocols Comp-Board",
 "shops": []
 },
@@ -42542,7 +42542,7 @@
 "shops": []
 },
 "395d0b37-7379-409a-a8d9-16b40ad8518d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Orange",
 "shops": [
 {
@@ -42560,7 +42560,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 410,
 "s": "Stanton",
@@ -42574,7 +42574,7 @@
 "shops": []
 },
 "39650719-7e97-44bb-8ff7-0b526fd2b786": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus Flyby T-Shirt Olive Green",
 "shops": []
 },
@@ -42584,7 +42584,7 @@
 "shops": []
 },
 "396f65bb-75cd-4788-b4d4-17cbd40d7328": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Dark Biohazard",
 "shops": []
 },
@@ -42907,7 +42907,7 @@
 ]
 },
 "39f98c32-8fc6-45d8-a9ed-0c726f9c49ed": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Future Navy Pilot T-Shirt",
 "shops": []
 },
@@ -43034,7 +43034,7 @@
 ]
 },
 "3a580346-3e9e-4f69-815b-b2d6d0e6eb7f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Forest Shade",
 "shops": []
 },
@@ -43225,7 +43225,7 @@
 ]
 },
 "3a9cdda4-d92f-4cfe-9160-0d9f8b06bb55": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Red Alert",
 "shops": []
 },
@@ -44057,7 +44057,7 @@
 "shops": []
 },
 "3b511237-26ea-4e5b-98d1-2bfcf9577c97": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Barrymore Pumps",
 "shops": []
 },
@@ -44205,7 +44205,7 @@
 ]
 },
 "3ba85dd2-d1ce-40e3-b8b7-d512d882912c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2950 T-Shirt",
 "shops": []
 },
@@ -44296,7 +44296,7 @@
 ]
 },
 "3bb8ddf3-d6e3-4709-894b-9abfa4260c05": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack ArcCorp Edition",
 "shops": []
 },
@@ -44559,7 +44559,7 @@
 ]
 },
 "3c733ed1-4f5f-42c5-a485-e5b91773ab3a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition",
 "shops": []
 },
@@ -44908,7 +44908,7 @@
 ]
 },
 "3d08d773-96c0-4d27-aae8-06f0b598d22c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Carrack T-Shirt",
 "shops": []
 },
@@ -45123,12 +45123,12 @@
 ]
 },
 "3dba9382-8f30-42f6-882b-0a3067a9d2b0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Last Resort Keycard",
 "shops": []
 },
 "3dbb4ed7-44ba-4b78-bfc2-39782c60e5ab": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms ArcCorp Edition",
 "shops": []
 },
@@ -45288,7 +45288,7 @@
 "shops": []
 },
 "3e5146de-a75a-46b7-9a72-e20fda768476": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Green",
 "shops": [
 {
@@ -45306,18 +45306,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -45339,13 +45346,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -46364,7 +46364,7 @@
 "shops": []
 },
 "3f28d3a6-db30-4519-a1d7-620091e497ab": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Yellow",
 "shops": [
 {
@@ -46382,7 +46382,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2285,
 "s": "Stanton",
@@ -47134,7 +47134,7 @@
 "shops": []
 },
 "3f5cfa2d-30f3-4ac2-96da-d42b16f22f53": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Cinnabar",
 "shops": [
 {
@@ -47204,13 +47204,13 @@
 "shops": []
 },
 "3f6cbda6-6ad5-4c64-b8ab-52adb2c5951b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Titan TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -47478,7 +47478,7 @@
 ]
 },
 "3fb9f0c7-cf6a-41e2-8981-0f6072eb9d7c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Hi-Vis Yellow",
 "shops": [
 {
@@ -47737,7 +47737,7 @@
 "shops": []
 },
 "404697e5-efac-4da8-9870-93166f942682": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Olive",
 "shops": [
 {
@@ -47748,7 +47748,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 260,
 "s": "Stanton",
@@ -48386,7 +48386,7 @@
 "shops": []
 },
 "418ddc06-7081-4236-9c6f-dbe157db2fa3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Eclipse T-Shirt",
 "shops": []
 },
@@ -48396,11 +48396,11 @@
 "shops": []
 },
 "4194fa59-617c-4cc5-8b51-77a583154c86": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Tan",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 460,
 "s": "Stanton",
@@ -48513,7 +48513,7 @@
 "shops": []
 },
 "420fe0da-40b1-4db6-94d6-72055715cdff": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Pyrotechnic Edition",
 "shops": []
 },
@@ -48573,7 +48573,7 @@
 ]
 },
 "423cb5a3-ba6c-43ea-a053-64a4a4e6be93": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Yenny Shirt",
 "shops": []
 },
@@ -48661,7 +48661,7 @@
 "shops": []
 },
 "42a4e6e4-a6cf-4a51-998b-5131f8fe821c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Titan Standard Flight Blade",
 "shops": []
 },
@@ -49259,7 +49259,7 @@
 "shops": []
 },
 "4357b059-b6cd-48d7-9ece-948308ecd101": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Olive",
 "shops": [
 {
@@ -49270,7 +49270,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 410,
 "s": "Stanton",
@@ -49294,11 +49294,11 @@
 "shops": []
 },
 "43696e42-7d70-41e2-bc25-0d2f2478cccd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Archibald Jacket Smoke",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1033,
 "s": "Stanton",
@@ -49319,18 +49319,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1215,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 1215,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1215,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-10",
@@ -49347,7 +49347,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1218,
 "s": "Stanton",
@@ -49381,7 +49381,7 @@
 ]
 },
 "437d5974-713c-4384-bafd-8b2149f727ea": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2954 T-Shirt Purple",
 "shops": []
 },
@@ -49425,7 +49425,7 @@
 ]
 },
 "43911da1-4f8b-4ef4-a2e0-a1c1b8b2d1f5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Crusader Edition",
 "shops": []
 },
@@ -49618,7 +49618,7 @@
 "shops": []
 },
 "44139e7a-2b48-413f-b42e-9797b2dbda6e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants White",
 "shops": [
 {
@@ -50339,7 +50339,7 @@
 "shops": []
 },
 "44becf27-6e0a-48dd-b339-70764b668d9f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Swirling Ash",
 "shops": []
 },
@@ -50724,7 +50724,7 @@
 "shops": []
 },
 "452886b0-90dd-4b79-b865-3975844d9d64": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Bibiana Shirt",
 "shops": []
 },
@@ -50861,7 +50861,7 @@
 ]
 },
 "45823952-1cad-458f-a8a3-02cb83ad548d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2953 Shirt Purple",
 "shops": []
 },
@@ -50937,11 +50937,11 @@
 "shops": []
 },
 "45c8f478-08ec-420e-89eb-a058874aed8e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Sienna",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 550,
 "s": "Stanton",
@@ -50965,7 +50965,7 @@
 "shops": []
 },
 "45edd712-ed38-4998-9379-47a6983198b7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Flatcat Fail T-Shirt",
 "shops": []
 },
@@ -51254,7 +51254,7 @@
 ]
 },
 "46108452-8462-4fa0-9b32-f0d93090ac28": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Crusader Edition",
 "shops": []
 },
@@ -52089,7 +52089,7 @@
 ]
 },
 "4702b22c-c820-4a6f-a489-25f867ddae6f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants",
 "shops": [
 {
@@ -52565,7 +52565,7 @@
 "shops": []
 },
 "484908e5-38c3-432c-8600-233237b1f875": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Black Cherry",
 "shops": []
 },
@@ -53174,7 +53174,7 @@
 "shops": []
 },
 "490501c8-baea-4734-b0a5-62a0cd6bd1d6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core",
 "shops": [
 {
@@ -53228,9 +53228,16 @@
 ]
 },
 "493e6e61-96e7-47b9-9961-03c911c36e33": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Consolidated Outland T-Shirt",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
@@ -53244,13 +53251,6 @@
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -53536,7 +53536,7 @@
 "shops": []
 },
 "49b5e97b-6699-469e-8803-388a7553d7e4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-04 Power Processing Comp-Board",
 "shops": []
 },
@@ -53660,7 +53660,7 @@
 "shops": []
 },
 "4a1d0b28-d8ff-4f26-9fca-fd1b9dbf48e4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Clipper TSB Flight Blade",
 "shops": [
 {
@@ -54426,7 +54426,7 @@
 "shops": []
 },
 "4b14d8de-e925-4564-ac58-50c4266dcab6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Mantis Standard Flight Blade",
 "shops": []
 },
@@ -54502,7 +54502,7 @@
 ]
 },
 "4b633779-56b5-4e81-8206-a7a068e6a31b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Dark Red",
 "shops": [
 {
@@ -54515,7 +54515,7 @@
 ]
 },
 "4b6c615e-f196-476b-9639-580430587af0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Violet",
 "shops": [
 {
@@ -54540,18 +54540,18 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -54561,7 +54561,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 514,
 "s": "Stanton",
@@ -54826,7 +54826,7 @@
 "shops": []
 },
 "4c8005d2-36e1-4186-ac90-023267cd21c1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aurora Mk II PHB Flight Blade",
 "shops": []
 },
@@ -54868,7 +54868,7 @@
 "shops": []
 },
 "4ca81b2d-a601-4bb0-bc03-302b9958d67a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Shubin Edition",
 "shops": []
 },
@@ -54936,7 +54936,7 @@
 "shops": []
 },
 "4cf1eda3-ab29-4ab0-b51d-a3a0d4634437": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pyro Crab T-Shirt",
 "shops": [
 {
@@ -55142,7 +55142,7 @@
 "shops": []
 },
 "4d2ecda6-83dc-4236-9e54-bdd0afd2056a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Heatwave",
 "shops": []
 },
@@ -55912,12 +55912,12 @@
 ]
 },
 "4e48da7b-31c9-46e4-a924-fb5391acc485": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Hurston Edition",
 "shops": []
 },
 "4e62dc1a-c7da-4170-a482-c5e5e4270355": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Teal",
 "shops": [
 {
@@ -55935,7 +55935,7 @@
 "shops": []
 },
 "4e7a4cee-4a74-4691-8a9b-086ab0fc2a81": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "microTech T-Shirt",
 "shops": []
 },
@@ -56331,7 +56331,7 @@
 ]
 },
 "4f13fa60-7837-46ec-ae16-6862e2676bda": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Balboa Shirt",
 "shops": [
 {
@@ -56349,18 +56349,32 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 350,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 350,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 350,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 350,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 350,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-09-10",
@@ -56370,20 +56384,6 @@
 "t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 350,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 350,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 350,
@@ -56391,7 +56391,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 351,
 "s": "Stanton",
@@ -56418,7 +56418,7 @@
 "shops": []
 },
 "4f2ad480-bcc0-4f0c-9c69-35b5ea316b42": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Moss",
 "shops": [
 {
@@ -57656,7 +57656,7 @@
 "shops": []
 },
 "507718a6-f77f-4302-b637-ca3ccf90a5bb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Black",
 "shops": [
 {
@@ -57667,7 +57667,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 410,
 "s": "Stanton",
@@ -57716,7 +57716,7 @@
 "shops": []
 },
 "50c0b216-ffa6-463b-a815-a8e6a92a1b6b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Dark Blue",
 "shops": [
 {
@@ -57729,7 +57729,7 @@
 ]
 },
 "50c96e42-c3e0-43ad-912f-5b0dbed65fab": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Stuck at Olisar T-Shirt",
 "shops": []
 },
@@ -57891,11 +57891,11 @@
 "shops": []
 },
 "51a16178-3bf2-4269-a9c8-579211767cea": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "microTech T-Shirt",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 540,
 "s": "Stanton",
@@ -58147,7 +58147,7 @@
 "shops": []
 },
 "52351b58-5caf-4b49-af13-7c78f9c24ec1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Builders of Tomorrow T-Shirt Black",
 "shops": [
 {
@@ -58218,7 +58218,7 @@
 "shops": []
 },
 "525403b8-7811-4b8f-8ee9-c6e4a093090f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt",
 "shops": [
 {
@@ -58785,13 +58785,13 @@
 "shops": []
 },
 "539caf3f-0894-4587-915f-1648374d9ab7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hammerhead PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 3710940,
+"p": 4296880,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -60373,13 +60373,13 @@
 ]
 },
 "5428d0f1-4580-430d-aed0-bfde5074aa4f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Titan PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -60471,7 +60471,7 @@
 "shops": []
 },
 "54c52467-9f63-46a3-b71b-49831f494b42": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Yellow",
 "shops": [
 {
@@ -61888,7 +61888,7 @@
 "shops": []
 },
 "55d4413e-35ce-412a-9904-6d6b7ed17c66": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Seagreen",
 "shops": [
 {
@@ -61906,6 +61906,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 375,
@@ -61920,13 +61927,6 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 375,
@@ -61934,7 +61934,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 514,
 "s": "Stanton",
@@ -61958,7 +61958,7 @@
 "shops": []
 },
 "5602b501-84c8-492d-bf59-a1b7f5ade010": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Big Winner T-Shirt",
 "shops": []
 },
@@ -62203,7 +62203,7 @@
 ]
 },
 "568737c3-6dfc-4500-bac7-b7e7588a905d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots Base",
 "shops": [
 {
@@ -62973,7 +62973,7 @@
 ]
 },
 "57787f1a-4989-4ec1-8a6a-99c70dec9574": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Furtimo Pants",
 "shops": [
 {
@@ -63107,7 +63107,7 @@
 "shops": []
 },
 "57c743cc-b7ea-4d97-81ac-5626bdb56f76": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core Quicksilver",
 "shops": []
 },
@@ -63231,7 +63231,7 @@
 ]
 },
 "5811b9fa-abc3-4b4c-b32b-d11d14dae8e8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pisces TSB Flight Blade",
 "shops": [
 {
@@ -63323,7 +63323,7 @@
 "shops": []
 },
 "582d39cd-5ff9-4280-8b83-b2e2d7583e81": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Phoenix PHB Flight Blade",
 "shops": []
 },
@@ -64183,7 +64183,7 @@
 "shops": []
 },
 "5a05f916-1ade-4201-b550-a4668f67dfde": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Grey",
 "shops": [
 {
@@ -64296,7 +64296,7 @@
 "shops": []
 },
 "5a402f2d-aedf-4708-b927-f8841a85167e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Violet",
 "shops": [
 {
@@ -64321,7 +64321,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 280,
 "s": "Stanton",
@@ -64430,7 +64430,7 @@
 ]
 },
 "5a55ae78-960a-498b-b1cc-91e179a4d8f9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Esteril Lab Coat",
 "shops": []
 },
@@ -64913,7 +64913,7 @@
 ]
 },
 "5ad2a1f4-46d7-431d-99cd-41212397483a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Red",
 "shops": [
 {
@@ -64931,7 +64931,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 410,
 "s": "Stanton",
@@ -65354,7 +65354,7 @@
 ]
 },
 "5b1a2e56-77e0-45e1-8a96-22e7935f75d8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt White",
 "shops": [
 {
@@ -65367,11 +65367,11 @@
 ]
 },
 "5b1a6eed-7a7c-485c-93e2-20ced47560f6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Sienna",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 2285,
 "s": "Stanton",
@@ -65380,7 +65380,7 @@
 ]
 },
 "5b1b3eee-2b48-4ac5-887c-a7e62168acb0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hannu Shirt",
 "shops": [
 {
@@ -65398,6 +65398,27 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 330,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 330,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 330,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 330,
@@ -65410,27 +65431,6 @@
 "p": 330,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 330,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 330,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 330,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-08-28",
@@ -66227,7 +66227,7 @@
 "shops": []
 },
 "5c2ae312-5db8-45ce-b2ba-b1d2ad506456": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Phoenix Standard Flight Blade",
 "shops": []
 },
@@ -66423,7 +66423,7 @@
 ]
 },
 "5d09f182-57a0-456f-a263-36634d76744d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2952 T-shirt Red",
 "shops": []
 },
@@ -67177,7 +67177,7 @@
 "shops": []
 },
 "5e578b7d-fc39-437e-a9ac-1bb8336f2ec4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Hurston Edition",
 "shops": []
 },
@@ -67780,7 +67780,7 @@
 ]
 },
 "5f5d35be-3d86-49b6-bcf8-e877921d2d61": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II ES TSB Flight Blade",
 "shops": []
 },
@@ -68202,7 +68202,7 @@
 "shops": []
 },
 "607ee9a7-71d0-4e2c-9efb-6f5fcf6dcb13": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1C Standard Flight Blade",
 "shops": []
 },
@@ -68268,7 +68268,7 @@
 ]
 },
 "60a09ab7-1c17-4726-b321-889b5dd29ab5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Buccaneer Standard Flight Blade",
 "shops": []
 },
@@ -68315,7 +68315,7 @@
 "shops": []
 },
 "60c6e3ab-c510-4eaf-87a4-93d1b10c6a89": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Neptune",
 "shops": []
 },
@@ -68774,7 +68774,7 @@
 "shops": []
 },
 "619fe08f-92f0-405c-9ac0-3b986dd07cdd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Quicksilver",
 "shops": []
 },
@@ -68820,7 +68820,7 @@
 ]
 },
 "61a4e6ba-b201-4ffd-a1ee-6d9755d6604e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Shubin Edition",
 "shops": []
 },
@@ -68887,7 +68887,7 @@
 "shops": []
 },
 "61d7efaf-c389-4807-acc8-c70a645ef3cc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Neptune",
 "shops": []
 },
@@ -68991,7 +68991,7 @@
 ]
 },
 "6227ba71-1b64-4cdc-997a-fca6ac7d1cbe": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Amber",
 "shops": []
 },
@@ -69265,7 +69265,7 @@
 "shops": []
 },
 "629da527-2855-4870-a5b9-932006046fa7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Yellow",
 "shops": [
 {
@@ -69332,7 +69332,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 245,
 "s": "Nyx",
@@ -69589,7 +69589,7 @@
 "shops": []
 },
 "6305f242-6f39-4688-b4dc-66171dd66ff1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Cubby Blast T-Shirt",
 "shops": []
 },
@@ -69709,7 +69709,7 @@
 "shops": []
 },
 "633ee9c9-44d2-4f41-a2d2-2a6d2ba74fe0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs Quicksilver",
 "shops": []
 },
@@ -70476,7 +70476,7 @@
 "shops": []
 },
 "63b9b570-863e-4cda-aeda-a8ff2e579f92": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Twilight",
 "shops": [
 {
@@ -70977,7 +70977,7 @@
 ]
 },
 "64fdf455-f0aa-443a-85ce-2dc0a5fde7a1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus Flyby T-Shirt Blue",
 "shops": []
 },
@@ -71027,7 +71027,7 @@
 "shops": []
 },
 "6553d84f-d20e-42e5-84e5-77c91b9434b8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Imperial",
 "shops": [
 {
@@ -71402,7 +71402,7 @@
 "shops": []
 },
 "66110a0d-a301-4b59-a368-aae72c67a9fa": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1T TSB Flight Blade",
 "shops": [
 {
@@ -71591,7 +71591,7 @@
 "shops": []
 },
 "667a39eb-314b-47ce-970e-ea645ad5d476": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius Antares Standard Flight Blade",
 "shops": []
 },
@@ -72380,7 +72380,7 @@
 ]
 },
 "6712fb50-049a-4f54-89c8-332a67197e3a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition White Grid",
 "shops": []
 },
@@ -72652,7 +72652,7 @@
 ]
 },
 "678baa6a-8cda-4459-a505-f9cfe836c154": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Skyhigh City T-Shirt Black",
 "shops": [
 {
@@ -73399,7 +73399,7 @@
 ]
 },
 "6897d4f9-86f2-4789-841a-155ba2884df6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Carrack Standard Flight Blade",
 "shops": []
 },
@@ -73913,7 +73913,7 @@
 "shops": []
 },
 "69d17a6c-0338-4f06-a42e-4c6bb2e3bca2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Backdraft",
 "shops": []
 },
@@ -74226,11 +74226,11 @@
 ]
 },
 "6a0556e6-ac1c-4f07-a7de-4ab83aca909e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 550,
 "s": "Stanton",
@@ -74506,7 +74506,7 @@
 "shops": []
 },
 "6a6f3e8f-8c0d-49c0-8813-d44072cd573a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Twilight",
 "shops": [
 {
@@ -74524,7 +74524,7 @@
 "shops": []
 },
 "6a755192-2295-4e1f-a77a-c039f8be5e5a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Pyrotechnic Edition",
 "shops": []
 },
@@ -74946,7 +74946,7 @@
 "shops": []
 },
 "6ad44dd0-bcff-4d6b-b2a6-826f7a767217": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2956 T-Shirt",
 "shops": []
 },
@@ -75063,7 +75063,7 @@
 ]
 },
 "6b17edf9-fff3-45bb-bf43-c41ecada9e53": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Builders of Tomorrow T-Shirt White",
 "shops": [
 {
@@ -75297,7 +75297,7 @@
 ]
 },
 "6b9438fe-6559-4c7d-b242-7235100321ab": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Human Food Bars T-Shirt",
 "shops": [
 {
@@ -75567,7 +75567,7 @@
 "shops": []
 },
 "6bf651ce-1f3f-4fe3-8b59-034bcdc7de33": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Cloud City T-Shirt Black",
 "shops": [
 {
@@ -75615,11 +75615,11 @@
 "shops": []
 },
 "6c2e33da-3d3b-4ac7-8bd4-d63a6d3f2944": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -76174,12 +76174,12 @@
 "shops": []
 },
 "6ce8e19a-645a-4314-8537-6e36aeea7222": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt (Modified)",
 "shops": []
 },
 "6cedf8cd-51e3-4be2-9daf-8a30612329eb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Theaters of War: Supreme Glasses",
 "shops": []
 },
@@ -76374,11 +76374,11 @@
 "shops": []
 },
 "6d7c10f4-2b48-4aa8-8a0e-eb9685b12fb2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2901,
 "s": "Stanton",
@@ -76825,7 +76825,7 @@
 "shops": []
 },
 "6df991fa-cb82-4e1f-b74f-c6acdad6adf5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Red",
 "shops": [
 {
@@ -77126,11 +77126,11 @@
 "shops": []
 },
 "6e2d0ddb-6969-41e3-83ef-07f49d4f044e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 410,
 "s": "Stanton",
@@ -77154,7 +77154,7 @@
 "shops": []
 },
 "6e57ffb9-9189-4e9e-ba6a-08eb29004e6f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Imperial",
 "shops": [
 {
@@ -77279,7 +77279,7 @@
 "shops": []
 },
 "6e85856e-02dc-47e5-8db0-1a5bad822081": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Blue",
 "shops": [
 {
@@ -77390,13 +77390,13 @@
 ]
 },
 "6ea5e07f-0e7f-42d7-ad78-2bdee19e9d5a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-21 Wolf PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 262500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -77930,7 +77930,7 @@
 "shops": []
 },
 "6f71ba7a-97a9-43d5-bb65-d6ac15fcff2b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LifeCore Boots",
 "shops": [
 {
@@ -77955,18 +77955,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 265,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
 "d": "2026-09-09",
 "l": "Nyx Gateway",
 "p": 265,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 265,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-03",
@@ -77997,7 +77997,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 265,
 "s": "Nyx",
@@ -78783,7 +78783,7 @@
 "shops": []
 },
 "6fdb2d68-1045-469b-a10a-e1081e2db86d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus 2953 T-Shirt Blue",
 "shops": []
 },
@@ -78832,7 +78832,7 @@
 "shops": []
 },
 "6ff5cf07-4976-4bb8-8125-d3f1b6d69efc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Dark Green",
 "shops": [
 {
@@ -78901,7 +78901,7 @@
 "shops": []
 },
 "70262488-00c4-4607-b735-7528736c799a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Sarrab Glasses",
 "shops": []
 },
@@ -79021,7 +79021,7 @@
 "shops": []
 },
 "703499dc-c294-44b3-9f3d-c5c98b5ac566": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hardean Jacket and Shirt Croon",
 "shops": []
 },
@@ -79182,7 +79182,7 @@
 "shops": []
 },
 "70517964-6996-417a-b114-203ced148192": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Pyrotechnic Edition",
 "shops": []
 },
@@ -79331,11 +79331,11 @@
 ]
 },
 "7057fde4-8b64-4899-b762-e146ccfeae26": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 381,
 "s": "Stanton",
@@ -80458,7 +80458,7 @@
 "shops": []
 },
 "718f8ba9-792c-40cd-a905-c689537c5203": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Slate",
 "shops": [
 {
@@ -80746,7 +80746,7 @@
 ]
 },
 "71bdf45a-a250-4417-85c0-634185808d6a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2951 T-Shirt White",
 "shops": []
 },
@@ -81365,7 +81365,7 @@
 ]
 },
 "72539b38-17d5-4f5f-982d-c476305e5a25": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Purple Pinstripe",
 "shops": [
 {
@@ -81403,7 +81403,7 @@
 "shops": []
 },
 "72764009-523d-4f75-bbc5-112302f2557b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Orange",
 "shops": [
 {
@@ -82237,7 +82237,7 @@
 "shops": []
 },
 "72f0bcb6-ff7f-4f77-a6ba-b6a817d1729f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Black",
 "shops": [
 {
@@ -82253,6 +82253,13 @@
 "p": 233,
 "s": "Stanton",
 "t": "Tammany and Sons - Metro Center - Lorville"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 245,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-10-31",
@@ -82333,13 +82340,6 @@
 },
 {
 "d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 245,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-28",
 "l": "ARC-L4 Faint Glen Station",
 "p": 245,
 "s": "Stanton",
@@ -82389,7 +82389,7 @@
 "shops": []
 },
 "732106ac-827c-443c-b762-e720790acb54": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Mantis PHB Flight Blade",
 "shops": []
 },
@@ -83639,7 +83639,7 @@
 "shops": []
 },
 "7422ea55-36f5-49a5-bb0b-69c6756f6602": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Red Alert",
 "shops": []
 },
@@ -83903,7 +83903,7 @@
 ]
 },
 "744b5541-a4a3-406d-855b-3e15b01a9710": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus 2953 T-Shirt Grey",
 "shops": []
 },
@@ -83931,11 +83931,11 @@
 "shops": []
 },
 "746ba64e-08a2-434f-a5d9-eed795843f4b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 550,
 "s": "Stanton",
@@ -84293,7 +84293,7 @@
 "shops": []
 },
 "74c4ef6b-d3b6-4bff-a148-6330c12ed016": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants White",
 "shops": [
 {
@@ -84304,18 +84304,18 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 476,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 476,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 476,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -84696,7 +84696,7 @@
 ]
 },
 "7524df82-4578-464b-a917-d3b6c31462f6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Heatwave",
 "shops": []
 },
@@ -84969,7 +84969,7 @@
 "shops": []
 },
 "758633f1-9c0e-4031-99e3-fb91cc5bb743": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Grey",
 "shops": [
 {
@@ -84992,6 +84992,13 @@
 "p": 233,
 "s": "Stanton",
 "t": "Tammany and Sons - Metro Center - Lorville"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 245,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-10-31",
@@ -85065,13 +85072,6 @@
 },
 {
 "d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 245,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-28",
 "l": "ARC-L4 Faint Glen Station",
 "p": 245,
 "s": "Stanton",
@@ -85085,7 +85085,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 245,
 "s": "Nyx",
@@ -85207,20 +85207,20 @@
 "shops": []
 },
 "75979329-9381-425d-a2c9-24efa4d96eb9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-22 AlphaWolf TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 262500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
 ]
 },
 "759b9c5e-1f30-436e-b91a-d86a8feaf1db": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Violet",
 "shops": [
 {
@@ -85366,7 +85366,7 @@
 "shops": []
 },
 "761c25cf-fac6-4ad3-aab3-7e000e977040": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius TSB Flight Blade",
 "shops": [
 {
@@ -85462,11 +85462,11 @@
 ]
 },
 "7629ed50-7a3b-4e8b-83db-9f500961ca30": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Imperial",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 410,
 "s": "Stanton",
@@ -85480,7 +85480,7 @@
 "shops": []
 },
 "763ca0bf-02ec-4447-aec7-41537cd0417d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Crusader Black",
 "shops": []
 },
@@ -85618,7 +85618,7 @@
 ]
 },
 "7680edb9-a9f1-4595-8c0e-8fe355963510": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Snow Hearth",
 "shops": []
 },
@@ -86022,13 +86022,13 @@
 "shops": []
 },
 "772e7f0f-e290-4bf3-82e8-aba24d140b52": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Redeemer PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 1484380,
+"p": 1718750,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -86060,7 +86060,7 @@
 "shops": []
 },
 "7799b79b-2753-4b6a-9965-c99cedff4924": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Black Cherry",
 "shops": []
 },
@@ -86191,7 +86191,7 @@
 ]
 },
 "77dcf251-20ac-4cce-9cb6-e6c7e9f62844": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Desert",
 "shops": [
 {
@@ -86202,7 +86202,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -86228,7 +86228,7 @@
 "shops": []
 },
 "7804b7ee-fee4-4f45-9e50-9935472e7913": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "QV Secure Storage Keycard",
 "shops": []
 },
@@ -86638,7 +86638,7 @@
 "shops": []
 },
 "785d359a-69c8-44c3-84e3-7ad8f5f93f38": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Olive",
 "shops": [
 {
@@ -86649,7 +86649,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2285,
 "s": "Stanton",
@@ -86680,7 +86680,7 @@
 "shops": []
 },
 "78846075-d7cd-41a6-a552-870e44bb3848": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II ES PHB Flight Blade",
 "shops": []
 },
@@ -86690,12 +86690,12 @@
 "shops": []
 },
 "78a576ee-dd67-4f81-956f-c253d398eef7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aurora Mk II TSB Flight Blade",
 "shops": []
 },
 "78b9ad7b-461c-480f-b624-aef33dc8013e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Big Barrys T-Shirt",
 "shops": [
 {
@@ -87125,7 +87125,7 @@
 ]
 },
 "78dd3b58-5a77-46d6-8921-24daff3bb718": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Crusader Industries T-Shirt White",
 "shops": [
 {
@@ -87193,7 +87193,7 @@
 "shops": []
 },
 "7902359a-6e60-4710-b962-a483b67a2646": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Greycat Edition",
 "shops": []
 },
@@ -87263,7 +87263,7 @@
 "shops": []
 },
 "7976b488-7caf-4bb3-8b97-73601177ef51": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Torpedo Burrito T-Shirt",
 "shops": []
 },
@@ -87310,7 +87310,7 @@
 "shops": []
 },
 "79a637cb-c61f-4306-9086-c61ca851e72e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Asgard TSB Flight Blade",
 "shops": [
 {
@@ -87323,7 +87323,7 @@
 ]
 },
 "79ab505c-1ee4-4111-8f53-732e9ca2e91d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Neptune",
 "shops": []
 },
@@ -87343,7 +87343,7 @@
 "shops": []
 },
 "79cc0411-027b-42ed-a6c1-9d18f111e1f9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-21 Wolf Standard Flight Blade",
 "shops": []
 },
@@ -87393,7 +87393,7 @@
 "shops": []
 },
 "79ffa833-298c-4ea1-8a47-191b632a23ee": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Landlite Boots",
 "shops": [
 {
@@ -87416,6 +87416,34 @@
 "p": 224,
 "s": "Stanton",
 "t": "Tammany and Sons - Metro Center - Lorville"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 235,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 235,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 235,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 235,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -87446,20 +87474,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 235,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 235,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
 "d": "2026-09-10",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 235,
@@ -87472,13 +87486,6 @@
 "p": 235,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 235,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -87500,13 +87507,6 @@
 "p": 235,
 "s": "Stanton",
 "t": "Providence Surplus - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 235,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -87807,7 +87807,7 @@
 ]
 },
 "7a9eab58-3244-4719-98b3-8f8ec573d754": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8X Pisces TSB Flight Blade",
 "shops": [
 {
@@ -87825,7 +87825,7 @@
 "shops": []
 },
 "7aa2a9fb-839a-45e0-b8ba-6f510a363597": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Dark Red",
 "shops": [
 {
@@ -87848,7 +87848,7 @@
 "shops": []
 },
 "7ad1e532-9af6-476d-a8c7-5048b92b3f88": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Normstar T-Shirt",
 "shops": []
 },
@@ -87972,7 +87972,7 @@
 "shops": []
 },
 "7b1bfb5c-a26c-4244-b2af-4ba1dd243193": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Coat ASD Edition",
 "shops": []
 },
@@ -88224,7 +88224,7 @@
 "shops": []
 },
 "7bbb1088-0369-425e-893f-0c5253545ee7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Green",
 "shops": [
 {
@@ -88256,7 +88256,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 245,
 "s": "Nyx",
@@ -88566,7 +88566,7 @@
 "shops": []
 },
 "7c500142-0254-4507-a8ea-0da7f4ed6f61": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Argo Astronautics T-Shirt",
 "shops": []
 },
@@ -88929,7 +88929,7 @@
 "shops": []
 },
 "7d2d71de-993f-4a41-aeef-fcb431962974": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Shooting Star",
 "shops": []
 },
@@ -90595,11 +90595,11 @@
 ]
 },
 "7da72e2d-9fc1-4514-a0e6-54d66aee83f5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Sienna",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 460,
 "s": "Stanton",
@@ -90927,7 +90927,7 @@
 "shops": []
 },
 "7e44b7bc-71af-461d-9617-3d15d828ce00": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Dumper's Depot T-Shirt",
 "shops": []
 },
@@ -90998,7 +90998,7 @@
 "shops": []
 },
 "7e7e8e3c-8a87-425a-9e51-19afe4893d22": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Tumbril T-Shirt",
 "shops": []
 },
@@ -91467,7 +91467,7 @@
 "shops": []
 },
 "7f2786bf-bf9a-4115-a14c-9fc0506be204": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-05 Orbital Positioning Comp-Board",
 "shops": []
 },
@@ -91487,7 +91487,7 @@
 "shops": []
 },
 "7f6a1b89-8c13-452c-85c9-13aed12db06f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus Launch Week Coin",
 "shops": []
 },
@@ -91502,7 +91502,7 @@
 "shops": []
 },
 "7f7b14af-fd4d-488a-bce5-2767771c2087": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Dark Green",
 "shops": [
 {
@@ -91541,7 +91541,7 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 514,
 "s": "Stanton",
@@ -91591,12 +91591,12 @@
 ]
 },
 "7f85c5a3-101f-4a8c-ab27-ad8a45dc671b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Esteril Lab Coat ASD Edition",
 "shops": []
 },
 "7f86d9cf-d1d1-4fe9-b125-3e4dee76929c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Blue/Beige",
 "shops": [
 {
@@ -91776,7 +91776,7 @@
 ]
 },
 "7f967ac9-fd18-42ce-8002-9e86469cb7e1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Tan",
 "shops": [
 {
@@ -91888,12 +91888,12 @@
 "shops": []
 },
 "7fda157c-fe3a-4b81-8747-35dbb072aa8e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Big Benny's T-Shirt",
 "shops": []
 },
 "7fdd79ca-f01e-4560-8db2-09d450de563a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Hurston Edition",
 "shops": []
 },
@@ -92064,27 +92064,27 @@
 ]
 },
 "80343b92-87be-460a-957e-6cb716be12ff": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Aquila TSB Flight Blade",
 "shops": []
 },
 "80572af7-bdec-43a7-82f6-d0f545fe1f7a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Imperial",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 220,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -92108,7 +92108,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 280,
 "s": "Stanton",
@@ -92358,11 +92358,11 @@
 "shops": []
 },
 "80ebb28f-cf3f-4a06-82f4-981a2467a9eb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms",
 "shops": [
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 1916,
 "s": "Nyx",
@@ -93549,11 +93549,11 @@
 "shops": []
 },
 "81a42eba-6c97-4f2c-b2e7-f5c1efe6be7c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Imperial",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 550,
 "s": "Stanton",
@@ -93789,9 +93789,16 @@
 "shops": []
 },
 "81b7a449-ab70-433b-9768-69116c4fbce5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Aerospace T-Shirt",
 "shops": [
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
 {
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
@@ -93812,13 +93819,6 @@
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -94424,7 +94424,7 @@
 ]
 },
 "82a4c2ba-34e7-4e84-bf66-cd4dd53c9ada": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2954 T-Shirt White",
 "shops": []
 },
@@ -94672,7 +94672,7 @@
 ]
 },
 "8313f0ea-1285-4fe2-86e4-f0ad32788ebb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Meteor Standard Flight Blade",
 "shops": []
 },
@@ -95438,7 +95438,7 @@
 "shops": []
 },
 "83b6e655-d767-4b0c-862e-8894ae30d046": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1P Standard Flight Blade",
 "shops": []
 },
@@ -95711,7 +95711,7 @@
 "shops": []
 },
 "845e1eeb-174a-4396-b368-4a0dacc5bf93": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lost Wallet T-Shirt",
 "shops": []
 },
@@ -95778,7 +95778,7 @@
 ]
 },
 "84702509-d7d1-4d0d-825d-9a72808401b4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Tan",
 "shops": [
 {
@@ -95817,7 +95817,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 245,
 "s": "Nyx",
@@ -95912,7 +95912,7 @@
 ]
 },
 "8487a67a-d47c-42bb-aa53-2f85c7f1d7f1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Coat",
 "shops": [
 {
@@ -97192,7 +97192,7 @@
 "shops": []
 },
 "8656b5d0-0202-4bc6-846b-a0a55b2e5ea0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koal Pants",
 "shops": []
 },
@@ -98722,7 +98722,7 @@
 ]
 },
 "880dd867-b169-4cc6-8391-774062ad71aa": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Yellow",
 "shops": [
 {
@@ -98740,7 +98740,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 410,
 "s": "Stanton",
@@ -98759,7 +98759,7 @@
 "shops": []
 },
 "88182a8b-a8da-42f3-a19e-35a2a8574328": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Aquila PHB Flight Blade",
 "shops": []
 },
@@ -98959,13 +98959,13 @@
 ]
 },
 "885e8b70-2d19-4645-a11a-a1fb368be693": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Stalker TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -99014,7 +99014,7 @@
 ]
 },
 "888adbc8-ccfc-4de6-99a5-abeccd65b468": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Dark Red",
 "shops": [
 {
@@ -99251,11 +99251,11 @@
 "shops": []
 },
 "88f06c35-bca3-4ab0-b375-21540e548101": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Archibald Jacket Hearth",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1147,
 "s": "Stanton",
@@ -99384,7 +99384,7 @@
 "shops": []
 },
 "8969b443-ec80-42a1-8b53-42961fd342e9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Arrow TSB Flight Blade",
 "shops": [
 {
@@ -99517,7 +99517,7 @@
 "shops": []
 },
 "8a180042-12e3-47f3-9220-69ad5ec072cd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Montara Gloves",
 "shops": [
 {
@@ -99592,7 +99592,7 @@
 ]
 },
 "8a2675e7-839a-462d-845b-009f3527a7d5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Warlock Standard Flight Blade",
 "shops": []
 },
@@ -99711,7 +99711,7 @@
 "shops": []
 },
 "8a92b937-8df3-4891-a96f-f6224b3db4ee": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Quicksilver",
 "shops": []
 },
@@ -101573,7 +101573,7 @@
 ]
 },
 "8c505189-76de-43ae-a10a-7ab42dea987c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Neptune",
 "shops": []
 },
@@ -101664,7 +101664,7 @@
 "shops": []
 },
 "8c866f86-07c3-4ad8-8edc-9f6fc9fb3d01": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Crusader Edition",
 "shops": []
 },
@@ -101889,7 +101889,7 @@
 ]
 },
 "8cc29b89-44d7-4b31-8229-4c10173b78cb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Purple",
 "shops": [
 {
@@ -102789,7 +102789,7 @@
 "shops": []
 },
 "8d29adb6-6998-4c92-b67f-8911fac9742e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Vacuums Kill T-Shirt",
 "shops": []
 },
@@ -103026,7 +103026,7 @@
 "shops": []
 },
 "8d74f8a5-75a3-4968-8fc6-45c5ffd537f0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Yellow",
 "shops": [
 {
@@ -103197,7 +103197,7 @@
 "shops": []
 },
 "8dd9f9b6-d7e2-4a65-9e22-212912392689": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Lodestar",
 "shops": []
 },
@@ -103280,7 +103280,7 @@
 "shops": []
 },
 "8e0d98ad-7fe0-440e-9b32-1f1b1530533d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hardean Jacket and Shirt Sunday",
 "shops": []
 },
@@ -103370,7 +103370,7 @@
 ]
 },
 "8e3b50aa-62bb-442f-8088-2ed1e5a64bfe": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack microTech Edition",
 "shops": []
 },
@@ -103388,7 +103388,7 @@
 ]
 },
 "8e4c19c1-9973-42b8-8ca9-07528c749320": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt",
 "shops": [
 {
@@ -103424,7 +103424,7 @@
 ]
 },
 "8e6d5ab6-7135-4129-b302-30e355fa3589": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Hurston Black",
 "shops": []
 },
@@ -103439,7 +103439,7 @@
 "shops": []
 },
 "8e7e53fb-2179-40d4-ba72-f32d6d89604d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Tan",
 "shops": [
 {
@@ -103450,7 +103450,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 280,
 "s": "Stanton",
@@ -104281,7 +104281,7 @@
 "shops": []
 },
 "8f1cf8c5-705c-4326-acc5-c3cfd9211c07": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-06 Communication Comp-Board",
 "shops": []
 },
@@ -104390,7 +104390,7 @@
 "shops": []
 },
 "8f63a459-3017-4ec8-aeea-48b271894df0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Dark Green",
 "shops": [
 {
@@ -104468,7 +104468,7 @@
 ]
 },
 "8f95050d-6df6-4fe5-868a-137e3a492a1f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-22 AlphaWolf Standard Flight Blade",
 "shops": []
 },
@@ -104989,7 +104989,7 @@
 "shops": []
 },
 "908a6214-090d-457c-964e-24509cdf0ed0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Twilight",
 "shops": [
 {
@@ -105005,6 +105005,13 @@
 "p": 209,
 "s": "Stanton",
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-10-18",
@@ -105028,13 +105035,6 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 220,
@@ -105042,7 +105042,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 302,
 "s": "Stanton",
@@ -105056,7 +105056,7 @@
 "shops": []
 },
 "909561b0-830a-4d74-8798-8de89e6f31a1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Arrow Standard Flight Blade",
 "shops": []
 },
@@ -106299,7 +106299,7 @@
 "shops": []
 },
 "90d0dc82-1cbb-4bce-ae7e-220e011d8fe7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Stronger Together T-Shirt",
 "shops": [
 {
@@ -106601,7 +106601,7 @@
 ]
 },
 "9159d31d-b3ad-418d-9503-0093c440ac1f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Heatwave",
 "shops": []
 },
@@ -107320,7 +107320,7 @@
 "shops": []
 },
 "91dd0aa2-fe69-4721-a55c-bdc54367a50e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II ES Standard Flight Blade",
 "shops": []
 },
@@ -108196,7 +108196,7 @@
 "shops": []
 },
 "925e3e44-2c5e-4f77-a1b1-4e470018ca65": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Sienna",
 "shops": [
 {
@@ -108207,18 +108207,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 245,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
 "d": "2026-09-10",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 245,
 "s": "Stanton",
 "t": "Refinery Shop - MIC-L1"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 245,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 }
 ]
 },
@@ -108608,7 +108608,7 @@
 "shops": []
 },
 "92fca370-8578-4bcd-b13d-c063d0bf4afd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Purple",
 "shops": [
 {
@@ -108633,7 +108633,7 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 302,
 "s": "Stanton",
@@ -108768,7 +108768,7 @@
 ]
 },
 "934b6be5-af09-41bc-a804-c0857200548e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2952 T-shirt Black",
 "shops": []
 },
@@ -109009,7 +109009,7 @@
 ]
 },
 "938fdde8-45e6-479a-acc7-8c8c4694a2bf": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes (Modified)",
 "shops": []
 },
@@ -109241,12 +109241,12 @@
 ]
 },
 "93e88edf-36cf-445b-a266-832c78cf9394": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet microTech Black",
 "shops": []
 },
 "9402e5e0-d045-4e31-b1a8-dcfab67bd7a5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Aqua",
 "shops": [
 {
@@ -109287,7 +109287,7 @@
 ]
 },
 "940519da-d8b3-425c-b333-f2f5a2ebe88a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8X Pisces Standard Flight Blade",
 "shops": []
 },
@@ -109462,11 +109462,11 @@
 "shops": []
 },
 "9468dc21-fabf-49bc-ad74-7cd117005652": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Imperial",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 460,
 "s": "Stanton",
@@ -109502,7 +109502,7 @@
 ]
 },
 "94764285-2c27-4a9d-8e7d-c4156751805e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots \"Pathfinder\"",
 "shops": []
 },
@@ -110763,7 +110763,7 @@
 ]
 },
 "94e8f98e-fff4-4ac0-836a-ecdc90fcc145": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Buccaneer TSB Flight Blade",
 "shops": [
 {
@@ -110874,7 +110874,7 @@
 "shops": []
 },
 "956ddf19-a9e8-4044-8857-eab7e563fd2a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Twilight",
 "shops": [
 {
@@ -111229,7 +111229,7 @@
 ]
 },
 "95dcff43-fbf6-4ea2-a55f-7f904273285f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Dark Red",
 "shops": [
 {
@@ -111254,14 +111254,14 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 477,
 "s": "Stanton",
@@ -111451,7 +111451,7 @@
 ]
 },
 "96337cf5-d1b3-4b86-a086-09342d91f917": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Shubin Edition",
 "shops": []
 },
@@ -111582,7 +111582,7 @@
 ]
 },
 "967fe120-742f-4745-8a85-a144e6044912": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pips T-Shirt",
 "shops": []
 },
@@ -111788,7 +111788,7 @@
 "shops": []
 },
 "97254847-0046-40e6-af83-f71ec35f4ac5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core Hazard",
 "shops": [
 {
@@ -111820,7 +111820,42 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 5168,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 5168,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 5168,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 5168,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 5168,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 5168,
 "s": "Stanton",
@@ -111855,25 +111890,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 5168,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 5168,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 5168,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -111888,20 +111909,6 @@
 "p": 5168,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 5168,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 5168,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -111923,13 +111930,6 @@
 "p": 5168,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 5168,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -112645,7 +112645,7 @@
 ]
 },
 "97c84e7b-76dc-4045-b41f-cdbbdec2bdf3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Andromeda TSB Flight Blade",
 "shops": []
 },
@@ -112766,7 +112766,7 @@
 ]
 },
 "97f26dc9-49a4-4b73-85b1-b8aaff88ffea": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Yellow",
 "shops": [
 {
@@ -112784,6 +112784,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 375,
@@ -112798,13 +112805,6 @@
 "t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 375,
@@ -112812,7 +112812,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 476,
 "s": "Stanton",
@@ -113461,7 +113461,7 @@
 ]
 },
 "98590b81-8fd2-4069-9ff8-d1aa66a59c2d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Orange",
 "shops": [
 {
@@ -114289,7 +114289,7 @@
 ]
 },
 "9928de35-4e7d-4210-985f-0daf4f55e152": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Dark Green",
 "shops": [
 {
@@ -115408,7 +115408,7 @@
 "shops": []
 },
 "9a55a9ae-f48c-4233-88ce-eb057acce8d9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core Harvester",
 "shops": []
 },
@@ -115593,12 +115593,12 @@
 "shops": []
 },
 "9aa83b58-32de-45f2-b273-7d5e21e7a174": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Shire",
 "shops": []
 },
 "9abc859a-7140-4c82-9936-12a3351eae37": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Slate",
 "shops": [
 {
@@ -115947,7 +115947,7 @@
 "shops": []
 },
 "9b34de55-b285-4910-93ca-9941c3e24fb6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Archibald Jacket Canvas",
 "shops": [
 {
@@ -115972,25 +115972,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 1215,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1215,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1215,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 1215,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -116346,12 +116346,12 @@
 ]
 },
 "9c1395b5-a1c8-4365-ba1a-0d9246382384": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II CL Standard Flight Blade",
 "shops": []
 },
 "9c20742f-d7f6-4327-9179-f2f72a5cbf64": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Crusader Edition",
 "shops": []
 },
@@ -116545,7 +116545,7 @@
 "shops": []
 },
 "9c8a751a-b2ad-4e81-a83e-79e48ef97c3c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Shire",
 "shops": []
 },
@@ -116810,7 +116810,7 @@
 "shops": []
 },
 "9d6244fc-eca0-4a07-959b-08802ad88dde": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Grey",
 "shops": [
 {
@@ -117643,11 +117643,11 @@
 ]
 },
 "9deee6d1-b4b1-4f22-9d22-93f805250e51": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 331,
 "s": "Stanton",
@@ -117831,7 +117831,7 @@
 "shops": []
 },
 "9e85fa88-ab74-4368-a59a-f519c79a3bf6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes",
 "shops": [
 {
@@ -118164,11 +118164,11 @@
 ]
 },
 "9f15b6a9-c59f-4028-88a7-b28f8b564d05": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 410,
 "s": "Stanton",
@@ -118224,7 +118224,7 @@
 "shops": []
 },
 "9f69fbf7-b71e-4255-a91d-4f47cc65cc29": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Shire",
 "shops": []
 },
@@ -118540,7 +118540,7 @@
 "shops": []
 },
 "a03c4c8e-e555-448a-a916-53c3af014635": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Breathing Apparatus",
 "shops": []
 },
@@ -118751,7 +118751,7 @@
 ]
 },
 "a10082d0-39a0-44bc-a75f-1477692dc721": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Clipper PHB Flight Blade",
 "shops": [
 {
@@ -119139,7 +119139,7 @@
 "shops": []
 },
 "a15ab92a-927e-4da8-b195-26880be50343": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt",
 "shops": [
 {
@@ -119287,7 +119287,7 @@
 "shops": []
 },
 "a1a74fb1-856b-4c6c-913a-816d17333b7d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Shiv Standard Flight Blade",
 "shops": []
 },
@@ -119371,7 +119371,7 @@
 "shops": []
 },
 "a1d627a1-0f84-4fe7-a04c-365080f7dc76": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "99-GR/BL Pants",
 "shops": [
 {
@@ -119499,7 +119499,7 @@
 ]
 },
 "a1fcf0eb-4770-4026-8daa-227891624656": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Gloves",
 "shops": [
 {
@@ -119623,7 +119623,7 @@
 "shops": []
 },
 "a27edb06-852d-42d9-badd-0a903579b824": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Tan",
 "shops": [
 {
@@ -119653,7 +119653,7 @@
 "shops": []
 },
 "a2a8fc05-772e-4b2d-ad27-34fd97b499ba": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pisces Standard Flight Blade",
 "shops": []
 },
@@ -119872,7 +119872,7 @@
 ]
 },
 "a2cd25f0-5377-4625-a06e-57774414c6b7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs ArcCorp Edition",
 "shops": []
 },
@@ -120058,7 +120058,7 @@
 "shops": []
 },
 "a30f85f8-cac5-489e-83a3-4c80ab5cb11b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots",
 "shops": [
 {
@@ -120291,7 +120291,7 @@
 "shops": []
 },
 "a3ab9174-82c5-4251-9d38-ecc4d60029b0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Dark Green",
 "shops": [
 {
@@ -120585,7 +120585,7 @@
 "shops": []
 },
 "a4384f78-a3aa-4e5a-a4e8-83f238595e04": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Arrow PHB Flight Blade",
 "shops": [
 {
@@ -121295,7 +121295,7 @@
 "shops": []
 },
 "a577eeb0-69f7-41fb-bdd8-67cc04204a76": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus Flyby T-Shirt Dark Green",
 "shops": []
 },
@@ -121420,11 +121420,11 @@
 ]
 },
 "a5bb46f9-c728-46c6-a4b2-53f21d96813a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack",
 "shops": [
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 1900,
 "s": "Nyx",
@@ -121514,7 +121514,7 @@
 "shops": []
 },
 "a60acd60-5a23-4700-952d-655a8ae1b656": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius PHB Flight Blade",
 "shops": [
 {
@@ -121527,7 +121527,7 @@
 ]
 },
 "a60cc9db-66fa-4d40-86ca-f3fc2715e9d7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Imperial",
 "shops": [
 {
@@ -121667,7 +121667,7 @@
 "shops": []
 },
 "a651994a-d819-44bb-91a5-fd5bb6278c35": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Shubin Edition",
 "shops": []
 },
@@ -121721,7 +121721,7 @@
 "shops": []
 },
 "a675654f-7da7-420d-a829-a8e6d87016e5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Worthy Journey T-Shirt White",
 "shops": [
 {
@@ -122680,7 +122680,7 @@
 "shops": []
 },
 "a77cc64a-216b-49d1-b894-be226647c051": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Idris-P T-Shirt",
 "shops": []
 },
@@ -122738,7 +122738,7 @@
 ]
 },
 "a79a4fc8-acb2-458e-bc58-4ed9c9807b55": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Crusader Edition Blue/Beige",
 "shops": []
 },
@@ -123256,11 +123256,11 @@
 "shops": []
 },
 "a8309e5f-c7c3-401d-a5bd-5b2a0bb94da1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Tan",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 550,
 "s": "Stanton",
@@ -123299,7 +123299,7 @@
 "shops": []
 },
 "a84ad620-a9ed-431c-9029-b6292e911d90": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Dark Red",
 "shops": [
 {
@@ -123308,6 +123308,13 @@
 "p": 209,
 "s": "Stanton",
 "t": "Casaba Outlet - Everus Harbor"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-10-18",
@@ -123322,13 +123329,6 @@
 "p": 220,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -123389,7 +123389,7 @@
 "shops": []
 },
 "a870e97f-75c7-4ba1-8ae0-7cd9ff975472": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Hi-Vis Yellow",
 "shops": [
 {
@@ -123449,7 +123449,7 @@
 "shops": []
 },
 "a8918f8f-4862-4eec-8b1a-243d9b0c7d6b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Stony Brae",
 "shops": []
 },
@@ -123784,7 +123784,7 @@
 ]
 },
 "a9305217-006d-4e46-833e-dff89c913b25": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Hazard",
 "shops": [
 {
@@ -123816,7 +123816,42 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 2924,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 2924,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2924,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 2924,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 2924,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 2924,
 "s": "Stanton",
@@ -123851,25 +123886,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 2924,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 2924,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 2924,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -123884,20 +123905,6 @@
 "p": 2924,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2924,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 2924,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -123919,13 +123926,6 @@
 "p": 2924,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 2924,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -124828,7 +124828,7 @@
 "shops": []
 },
 "a9d70cb4-a444-4221-bf36-119219432d6f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wasteland Keycard",
 "shops": []
 },
@@ -124851,13 +124851,13 @@
 ]
 },
 "aa13256a-403c-49ef-8f4e-3f3c112c5969": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Redeemer TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 1484380,
+"p": 1718750,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -125532,12 +125532,12 @@
 ]
 },
 "aa80fd9b-8209-4eb7-a84e-f328db6dff54": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Autumn Amber",
 "shops": []
 },
 "aa8d386c-696b-4fef-bf64-0aef10190072": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Hi-Vis Biohazard",
 "shops": []
 },
@@ -126270,7 +126270,7 @@
 ]
 },
 "aae2b8ad-5f86-46dd-9d8f-7a146c8928b5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes White",
 "shops": [
 {
@@ -126384,7 +126384,7 @@
 "shops": []
 },
 "ab1361e0-6d23-46e0-af58-22e899e14be4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Zeus Mk II CL PHB Flight Blade",
 "shops": []
 },
@@ -126409,7 +126409,7 @@
 ]
 },
 "ab25a81e-03b5-4527-816d-b72aca854310": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Greycat Edition",
 "shops": []
 },
@@ -126550,7 +126550,7 @@
 "shops": []
 },
 "ab373de8-95fb-4780-a9f2-d30c5b679a16": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Carrack PHB Flight Blade",
 "shops": [
 {
@@ -126852,7 +126852,7 @@
 "shops": []
 },
 "ac489d5c-a45b-4b1d-ad5d-4d51d6083a76": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Lodestar",
 "shops": []
 },
@@ -126870,7 +126870,7 @@
 ]
 },
 "ac632bd1-78c9-4cac-b4e1-21fb197a09a6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-03 Vehicle Management Comp-Board",
 "shops": []
 },
@@ -127116,7 +127116,7 @@
 "shops": []
 },
 "acbb7178-ef6a-454c-8e1a-9f4998bbeddb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Greycat Edition",
 "shops": []
 },
@@ -127456,7 +127456,7 @@
 ]
 },
 "ad08cdd6-01e1-4a4b-a5d7-7368e6737b87": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake T-Shirt Red Logo",
 "shops": [
 {
@@ -128481,7 +128481,7 @@
 "shops": []
 },
 "ae5ff0a6-a95e-4ad4-9c9d-0d51e57fe68e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Corsair PHB Flight Blade",
 "shops": [
 {
@@ -128640,7 +128640,7 @@
 "shops": []
 },
 "af0a2fd5-cbf4-46bb-99a7-59b64b30c3c9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Dark Red",
 "shops": [
 {
@@ -128673,7 +128673,7 @@
 "shops": []
 },
 "af450721-ef5a-439b-9e1c-1535b2172d6a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Red",
 "shops": [
 {
@@ -128719,7 +128719,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 245,
 "s": "Nyx",
@@ -128868,7 +128868,7 @@
 "shops": []
 },
 "af9c7aec-c85c-45db-b86b-44a694a8e92a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Orange",
 "shops": []
 },
@@ -129756,7 +129756,7 @@
 ]
 },
 "b05e445d-dc87-420b-93b7-5a6eb964b440": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet ArcCorp Black",
 "shops": []
 },
@@ -129776,7 +129776,7 @@
 "shops": []
 },
 "b07c855e-79ac-4c5c-b7b7-aa8df9b1a987": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet",
 "shops": [
 {
@@ -130090,7 +130090,7 @@
 "shops": []
 },
 "b0e84e8c-321d-4cd9-9d2c-33d657b05639": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet (Modified)",
 "shops": []
 },
@@ -130511,7 +130511,7 @@
 "shops": []
 },
 "b15a41bc-8e63-4762-9781-92d290b0a78e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Green",
 "shops": [
 {
@@ -130880,7 +130880,7 @@
 "shops": []
 },
 "b1b4921e-87bb-4716-afef-d60c9cbbfce4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Orison T-Shirt White",
 "shops": [
 {
@@ -131653,7 +131653,7 @@
 "shops": []
 },
 "b326aad9-70bd-4b38-ae18-c26140bdbb68": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Phoenix TSB Flight Blade",
 "shops": []
 },
@@ -131747,7 +131747,7 @@
 "shops": []
 },
 "b34f33bd-7df5-4bfb-b1e5-8297ddd5e0cc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1T PHB Flight Blade",
 "shops": [
 {
@@ -131873,11 +131873,11 @@
 "shops": []
 },
 "b3a7f0ce-9cbb-42fd-bbbb-3a5d458f6bb6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -133150,9 +133150,16 @@
 "shops": []
 },
 "b4ec294c-94e3-47cb-a1a8-fa48a223b7a6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Olive",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
@@ -133166,13 +133173,6 @@
 "p": 220,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -133803,7 +133803,7 @@
 ]
 },
 "b519786e-bab8-460b-b95f-b1e476b354d1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition Blue Wide Pinstripe",
 "shops": []
 },
@@ -133913,7 +133913,7 @@
 "shops": []
 },
 "b5408369-a6af-4313-a063-4910695304aa": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt White",
 "shops": [
 {
@@ -137923,7 +137923,7 @@
 "shops": []
 },
 "b78859fb-7083-4fce-8cc3-e393cc96c249": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Orange",
 "shops": [
 {
@@ -137941,7 +137941,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 460,
 "s": "Stanton",
@@ -137989,7 +137989,7 @@
 ]
 },
 "b79e1385-7ecc-4916-a748-d2fe5052c3fe": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Archibald Jacket Autumn",
 "shops": [
 {
@@ -138014,6 +138014,20 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 1215,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 1215,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 1215,
@@ -138026,20 +138040,6 @@
 "p": 1215,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 1215,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 1215,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-08-28",
@@ -138096,7 +138096,7 @@
 ]
 },
 "b7e59bfa-b6b5-418d-9e7b-f1b2f41b7fe5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "78-WH Pants",
 "shops": [
 {
@@ -138134,7 +138134,7 @@
 "shops": []
 },
 "b80a76eb-9243-4a00-941a-40a0f1ae60f2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Core Shire",
 "shops": []
 },
@@ -139224,7 +139224,7 @@
 "shops": []
 },
 "b896c933-d555-4091-8ce2-61b497444b00": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Green",
 "shops": [
 {
@@ -139256,7 +139256,7 @@
 "shops": []
 },
 "b8af1efa-10e0-445d-bdad-f7d876799956": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Crusader Edition Teal",
 "shops": []
 },
@@ -139266,7 +139266,7 @@
 "shops": []
 },
 "b8b8e24d-9f77-49a9-a95c-37e5ec0c33d1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition Light Blue",
 "shops": []
 },
@@ -139276,7 +139276,7 @@
 "shops": []
 },
 "b8ca88ad-79fe-4220-8647-8ea9b2dbd403": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius Antares PHB Flight Blade",
 "shops": [
 {
@@ -139324,7 +139324,7 @@
 "shops": []
 },
 "b8f6e23e-8a06-47e4-81c9-3f22c34b99e9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Asgard Standard Flight Blade",
 "shops": []
 },
@@ -139620,13 +139620,13 @@
 "shops": []
 },
 "b9b7b8f4-cb08-438f-82e5-56e39f4ec1f6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Gladius PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -140279,7 +140279,7 @@
 "shops": []
 },
 "bb0573b4-14b6-4649-8c64-0ba862231fbe": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Meteor TSB Flight Blade",
 "shops": []
 },
@@ -140353,7 +140353,7 @@
 "shops": []
 },
 "bb551027-74c9-4909-ba31-8ca8c981ce46": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Marias Suit",
 "shops": [
 {
@@ -140487,11 +140487,11 @@
 "shops": []
 },
 "bba4b420-5e5e-48a4-a53d-450ebe0caca0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -141222,7 +141222,7 @@
 "shops": []
 },
 "bc6b38f1-dd14-49a5-b56b-a8abba329ebb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Crusader Industries T-Shirt",
 "shops": [
 {
@@ -141231,6 +141231,27 @@
 "p": 779,
 "s": "Stanton",
 "t": "Casaba Outlet - Everus Harbor"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 820,
+"s": "Stanton",
+"t": "Casaba Outlet - CRU-L4"
 },
 {
 "d": "2026-10-26",
@@ -141247,25 +141268,11 @@
 "t": "Clothing Shop - MIC-L5"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 820,
-"s": "Stanton",
-"t": "Casaba Outlet - CRU-L4"
-},
-{
 "d": "2026-09-10",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 820,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -141301,13 +141308,6 @@
 "p": 820,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
 },
 {
 "d": "2026-08-28",
@@ -141530,7 +141530,7 @@
 "shops": []
 },
 "bcb3fcff-6502-4adf-b77d-4b2be3e32571": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Gladius Standard Flight Blade",
 "shops": []
 },
@@ -141959,7 +141959,7 @@
 "shops": []
 },
 "bd1c4014-649f-49c9-846e-a4500e914d34": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Orange",
 "shops": [
 {
@@ -142075,7 +142075,7 @@
 ]
 },
 "bd59d65a-35af-45fc-b4f5-70af925537ec": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Blue",
 "shops": [
 {
@@ -142093,6 +142093,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 220,
@@ -142107,11 +142114,11 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 220,
+"d": "2026-11-15",
+"l": "Area18",
+"p": 280,
 "s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -142119,13 +142126,6 @@
 "p": 280,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 280,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -143143,7 +143143,7 @@
 ]
 },
 "bee3ecd9-d2bf-4acf-bd28-38d7e78e3c78": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Crusader Edition",
 "shops": []
 },
@@ -143293,12 +143293,12 @@
 "shops": []
 },
 "bf6026f8-9795-4219-b38d-55299d02866e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Manaslu Jacket Rust Society",
 "shops": []
 },
 "bf71167b-debd-4252-96de-0c24ccdd6acd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Imperial",
 "shops": [
 {
@@ -143789,7 +143789,7 @@
 ]
 },
 "bfe9a4fb-b273-4d04-a327-e4670793678a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Twilight",
 "shops": [
 {
@@ -143857,7 +143857,7 @@
 ]
 },
 "c005c021-af84-4e63-a29f-f45d0869398f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Summer Cedar",
 "shops": []
 },
@@ -144036,7 +144036,7 @@
 ]
 },
 "c054c520-2074-4278-a4fc-9399e8914dca": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Cutlass T-Shirt",
 "shops": []
 },
@@ -144046,7 +144046,7 @@
 "shops": []
 },
 "c090a184-a48d-4706-b907-379ffdb81f4e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Black",
 "shops": [
 {
@@ -145085,7 +145085,7 @@
 "shops": []
 },
 "c18f4bbe-e9a0-4a43-b1ba-7fad5a3387d1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pisces PHB Flight Blade",
 "shops": [
 {
@@ -146092,7 +146092,7 @@
 "shops": []
 },
 "c23979ae-40db-4951-bd24-ce1bbf6c718f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Red",
 "shops": [
 {
@@ -146110,7 +146110,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 460,
 "s": "Stanton",
@@ -146139,7 +146139,7 @@
 ]
 },
 "c2665234-c23e-4c30-976c-af29db9a4dbd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kinolo Shoes",
 "shops": [
 {
@@ -146219,7 +146219,7 @@
 ]
 },
 "c2904256-5ac1-4380-a356-99228156f7ac": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hardean Jacket and Shirt Dallas",
 "shops": []
 },
@@ -146244,7 +146244,7 @@
 "shops": []
 },
 "c2cf6c51-0fe1-4c00-ac6d-ca240739118e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Skyhigh City T-Shirt White",
 "shops": [
 {
@@ -146296,7 +146296,7 @@
 ]
 },
 "c2e04302-10c2-47cd-aff2-1fde85e2b9ee": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition Dark Blue",
 "shops": []
 },
@@ -146463,7 +146463,7 @@
 "shops": []
 },
 "c3399e8e-5235-4812-b05a-ca2f213f7001": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Mask Cobalt",
 "shops": [
 {
@@ -146666,7 +146666,7 @@
 ]
 },
 "c367fff0-b946-4873-acfd-bbf270f5d2f5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Duck Sword T-Shirt",
 "shops": []
 },
@@ -146722,7 +146722,7 @@
 ]
 },
 "c3aab17a-cc16-4c8a-afae-0ffa0a5eb3f0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1P PHB Flight Blade",
 "shops": [
 {
@@ -148435,13 +148435,13 @@
 "shops": []
 },
 "c4e95e93-0f73-436b-b70a-98a07fea330c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Stalker PHB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -149002,7 +149002,7 @@
 "shops": []
 },
 "c5df0679-9088-4265-a724-68fee184979f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Worthy Journey T-Shirt Black",
 "shops": [
 {
@@ -149072,7 +149072,7 @@
 "shops": []
 },
 "c61a88dc-bf68-4d01-961b-d6f923c5ff6d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8R Pisces PHB Flight Blade",
 "shops": [
 {
@@ -149234,7 +149234,7 @@
 ]
 },
 "c65bd5d4-d629-4111-b21e-3ea7a6c6f9ce": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Crusader Edition White Wide Pinstripe",
 "shops": []
 },
@@ -149259,7 +149259,7 @@
 "shops": []
 },
 "c6762ef5-6063-407e-99a4-144cb2e33ef4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1C PHB Flight Blade",
 "shops": [
 {
@@ -149297,7 +149297,7 @@
 "shops": []
 },
 "c6acb5a1-0b64-4202-871f-efd90d7ac42d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Sienna",
 "shops": [
 {
@@ -149315,18 +149315,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 220,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -149350,7 +149350,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 302,
 "s": "Stanton",
@@ -150281,7 +150281,7 @@
 "shops": []
 },
 "c7b9de5a-0887-4c57-a4b7-d8a6699218f9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Neptune",
 "shops": []
 },
@@ -150991,7 +150991,7 @@
 ]
 },
 "c8a18f9f-bdea-4bcf-b011-68e0959ee297": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8R Pisces Standard Flight Blade",
 "shops": []
 },
@@ -151001,7 +151001,7 @@
 "shops": []
 },
 "c8ba470c-0bc4-4cd8-a9bc-01409ea52e64": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Seagreen",
 "shops": [
 {
@@ -151823,7 +151823,7 @@
 ]
 },
 "c9ea8c57-dceb-4804-967f-8828bb53b967": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "99-BR/BL Pants",
 "shops": [
 {
@@ -151934,7 +151934,7 @@
 "shops": []
 },
 "ca35b3f2-5f25-4334-b7c4-f2c69efbf94f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt Blue Wide Pinstripe",
 "shops": [
 {
@@ -152216,22 +152216,22 @@
 "shops": []
 },
 "cab5bd0c-713b-4abb-a121-a965403e8e2c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aegis Dynamics T-Shirt",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 820,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 820,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -152296,13 +152296,13 @@
 ]
 },
 "cace347f-c077-4311-9093-86984e941389": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kruger L-21 Wolf TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 262500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -152314,7 +152314,7 @@
 "shops": []
 },
 "cad74bcb-b5aa-451c-ab1d-3732913b3ced": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Greycat Edition",
 "shops": []
 },
@@ -152548,7 +152548,7 @@
 "shops": []
 },
 "cbb13aa7-acea-4e50-8526-372fcbcf6bac": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Crusader Edition",
 "shops": []
 },
@@ -152683,11 +152683,11 @@
 ]
 },
 "cc0efa71-16f2-42b5-b8e6-2817e50e13ec": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Aqua",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -152769,7 +152769,7 @@
 "shops": []
 },
 "cc4874e4-0f51-4f88-ba2e-ff31360bb918": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots Twilight",
 "shops": [
 {
@@ -152796,11 +152796,11 @@
 ]
 },
 "cc5026ba-dd1b-4538-a8de-0b1ce21ff09a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 300,
 "s": "Stanton",
@@ -153117,12 +153117,12 @@
 "shops": []
 },
 "ccf4a001-4581-48f1-b084-ca4a922ccdf4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Backpack Hurston Black",
 "shops": []
 },
 "ccf6ce52-02b4-4e13-8294-03d00a929153": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core Black Cherry",
 "shops": []
 },
@@ -153147,7 +153147,7 @@
 "shops": []
 },
 "cd1ecb82-8830-4a19-8a26-0e1361ebad79": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Dark Green",
 "shops": [
 {
@@ -153403,7 +153403,7 @@
 "shops": []
 },
 "cd86a6ff-0abc-4bf0-bce3-00be8cc3643e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs Hazard",
 "shops": [
 {
@@ -153435,7 +153435,42 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 1790,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 1790,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1790,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 1790,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1790,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 1790,
 "s": "Stanton",
@@ -153470,25 +153505,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 1790,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1790,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1790,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -153503,20 +153524,6 @@
 "p": 1790,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1790,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 1790,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -153538,13 +153545,6 @@
 "p": 1790,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 1790,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -154036,7 +154036,7 @@
 "shops": []
 },
 "cdec504b-22e9-4193-9e90-764204cd23c9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius Standard Flight Blade",
 "shops": []
 },
@@ -154054,7 +154054,7 @@
 ]
 },
 "cdf3ba22-36a1-48c4-903f-0e69b069293c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hardean Jacket and Shirt Parker",
 "shops": []
 },
@@ -154394,7 +154394,7 @@
 "shops": []
 },
 "ceb4434a-0c5d-41fc-bfa4-07bd68bd8a30": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots Rocky",
 "shops": [
 {
@@ -155756,7 +155756,7 @@
 "shops": []
 },
 "cf17d2ab-cf32-45c6-80af-0affe6c2f0bc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aurora Mk II Standard Flight Blade",
 "shops": []
 },
@@ -155766,7 +155766,7 @@
 "shops": []
 },
 "cf258b0f-534f-4e2d-bd92-a6ba04e63751": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Lodestar",
 "shops": []
 },
@@ -155921,7 +155921,7 @@
 ]
 },
 "cf59794d-9c57-46ff-8367-a78e061c1a63": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Torga Shoes",
 "shops": [
 {
@@ -156310,7 +156310,7 @@
 ]
 },
 "cfdd6879-f3db-4ab0-842d-f169994f36a2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "88-RD Pants",
 "shops": [
 {
@@ -156439,7 +156439,7 @@
 ]
 },
 "d01bb888-e787-463a-8d9c-68fcaae49826": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "IAE 2951 T-Shirt Blue",
 "shops": []
 },
@@ -157121,7 +157121,7 @@
 "shops": []
 },
 "d1692bba-95d3-4a05-b893-3dcc4864382f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Seagreen",
 "shops": [
 {
@@ -157160,7 +157160,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 280,
 "s": "Stanton",
@@ -157345,7 +157345,7 @@
 ]
 },
 "d1788ca8-ee86-4ca6-bbbc-e80b70d86f40": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Shackleton Shirt",
 "shops": [
 {
@@ -157731,7 +157731,7 @@
 ]
 },
 "d1c6f376-4e59-4568-8a29-b5c1f8e666e9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Aqua",
 "shops": [
 {
@@ -157749,18 +157749,18 @@
 "t": "Casaba Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Seraphim"
+},
+{
 "d": "2026-09-12",
 "l": "HUR-L4 Melodic Fields Station",
 "p": 220,
 "s": "Stanton",
 "t": "Casaba HUR-L4"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 220,
-"s": "Stanton",
-"t": "Casaba Seraphim"
 }
 ]
 },
@@ -157871,7 +157871,7 @@
 "shops": []
 },
 "d211d188-d57e-4efc-a71f-8f081fe83e28": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1C TSB Flight Blade",
 "shops": [
 {
@@ -157894,13 +157894,13 @@
 "shops": []
 },
 "d21e1dc6-a7c3-40ba-b3de-8acba4e8a073": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Gladius TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -158021,11 +158021,11 @@
 "shops": []
 },
 "d23be257-e6f2-41bb-a296-16c213bf8bc5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 260,
 "s": "Stanton",
@@ -158039,7 +158039,7 @@
 "shops": []
 },
 "d2585b66-0aa1-4f0a-b894-a31ef46cb687": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Hardean Jacket and Shirt Ash",
 "shops": []
 },
@@ -158457,7 +158457,7 @@
 "shops": []
 },
 "d2acbe0d-3d10-420d-a272-5355741cc4d0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Red",
 "shops": [
 {
@@ -158475,7 +158475,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2285,
 "s": "Stanton",
@@ -158484,7 +158484,7 @@
 ]
 },
 "d2ae95d8-ba4a-4a5c-aab4-8cbeeea05893": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms microTech Edition",
 "shops": []
 },
@@ -158499,7 +158499,7 @@
 "shops": []
 },
 "d2d301ea-7b3f-48fd-bf1a-faf96db62390": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Asgard PHB Flight Blade",
 "shops": [
 {
@@ -158974,7 +158974,7 @@
 "shops": []
 },
 "d3e092fb-5676-4191-9389-380a2817a271": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs Red Alert",
 "shops": []
 },
@@ -159067,12 +159067,12 @@
 ]
 },
 "d4066637-1cfa-4246-909c-72226f6c4ca0": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wally's Bar Retro T-Shirt",
 "shops": []
 },
 "d410f968-8aed-4426-9120-a3fb4648c2e1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket",
 "shops": [
 {
@@ -159175,11 +159175,11 @@
 ]
 },
 "d4445c8b-24b5-4373-86b4-3f7b089a8744": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Violet",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 410,
 "s": "Stanton",
@@ -159365,7 +159365,7 @@
 "shops": []
 },
 "d46bdb78-6e0a-49d2-aeb0-4b90ae6de4a6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Aqua",
 "shops": [
 {
@@ -159981,7 +159981,7 @@
 ]
 },
 "d5c01391-1d1a-4403-ab99-760ac05a1a8a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Hi-Vis Biohazard",
 "shops": []
 },
@@ -160088,7 +160088,7 @@
 ]
 },
 "d5cf1bd9-d347-4954-95f1-290151197672": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket",
 "shops": [
 {
@@ -160116,7 +160116,7 @@
 "shops": []
 },
 "d5e0392e-7ba1-40a8-83a5-89ab191ed44d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Pants",
 "shops": [
 {
@@ -160147,11 +160147,11 @@
 "shops": []
 },
 "d5f52524-03c8-4f39-9549-95bdc3520573": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 699,
 "s": "Stanton",
@@ -160288,7 +160288,7 @@
 ]
 },
 "d65a432e-7016-4eb2-8436-3f0b400b5cfe": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lux Pants",
 "shops": []
 },
@@ -160372,7 +160372,7 @@
 ]
 },
 "d66f9346-cdec-4379-93e2-a9d19118c8b6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Cloud City T-Shirt White",
 "shops": [
 {
@@ -160436,7 +160436,7 @@
 ]
 },
 "d6a2e5f5-c390-4399-ae1a-85997e018029": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Intergalactic Aerospace Expo T-Shirt",
 "shops": []
 },
@@ -160977,11 +160977,11 @@
 "shops": []
 },
 "d7091a0b-a443-4424-8c29-1a5615b35abb": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2285,
 "s": "Stanton",
@@ -162338,7 +162338,7 @@
 ]
 },
 "d85011cb-e47b-476c-95b5-ac3e2a1314f9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Black",
 "shops": [
 {
@@ -162358,7 +162358,7 @@
 ]
 },
 "d8550cab-e57f-4cfa-990b-2fece7649724": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Scorpius Antares TSB Flight Blade",
 "shops": [
 {
@@ -162844,7 +162844,7 @@
 ]
 },
 "d87d68f4-d74a-4f2b-9d0e-185c8bc0f19f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Dark Red",
 "shops": [
 {
@@ -162943,7 +162943,7 @@
 "shops": []
 },
 "d8be4209-eb85-4d5d-8717-ee027051c8f4": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus T-Shirt Beige",
 "shops": []
 },
@@ -163303,7 +163303,7 @@
 ]
 },
 "d95171d9-52c2-4969-b30e-a36581e8d27f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Archibald Jacket Cinder",
 "shops": [
 {
@@ -163335,18 +163335,18 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 1215,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 1215,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 1215,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -163356,7 +163356,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1218,
 "s": "Stanton",
@@ -164094,22 +164094,22 @@
 ]
 },
 "da3a0745-38eb-464f-af0b-4969ab5ee02e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Tan",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -164894,7 +164894,7 @@
 "shops": []
 },
 "da7b43f4-12b2-4bcb-b734-b85dd8cebcf1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Geoffrey Jacket",
 "shops": [
 {
@@ -165532,7 +165532,7 @@
 ]
 },
 "dac65e4a-9b35-41dd-8941-b9f9df71c2fc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots Forest",
 "shops": [
 {
@@ -165564,7 +165564,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 225,
 "s": "Nyx",
@@ -165732,7 +165732,7 @@
 ]
 },
 "db545c69-1241-4310-849c-b9b055800fdf": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Aquila Standard Flight Blade",
 "shops": []
 },
@@ -165849,7 +165849,7 @@
 ]
 },
 "dbaf3e0d-754d-47f2-a852-d7530c700f17": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Hurston Edition",
 "shops": []
 },
@@ -166627,11 +166627,11 @@
 ]
 },
 "dc1b64f4-819c-4b90-adb0-92ee5ab601ec": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2285,
 "s": "Stanton",
@@ -166827,7 +166827,7 @@
 ]
 },
 "dcc62706-c387-43b3-a8cf-83fbe36bbe9c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "EQ-B Pants",
 "shops": [
 {
@@ -166838,18 +166838,18 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 360,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 360,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 360,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -167799,7 +167799,7 @@
 "shops": []
 },
 "ddb37221-84a0-4768-aa69-88ac1c40115d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Green",
 "shops": [
 {
@@ -167817,7 +167817,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 556,
 "s": "Stanton",
@@ -168001,7 +168001,7 @@
 "shops": []
 },
 "de5247b1-ca7b-4af1-9079-bb4997168881": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes White",
 "shops": [
 {
@@ -168033,7 +168033,7 @@
 "shops": []
 },
 "de57616d-0fbd-47b2-a264-dcdfec6bb51a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Parvat Jacket Mosaic Marble",
 "shops": []
 },
@@ -168051,7 +168051,7 @@
 ]
 },
 "de5b1185-7287-4341-9b11-dd2df19e2d59": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack Quicksilver",
 "shops": []
 },
@@ -168397,7 +168397,7 @@
 ]
 },
 "def88141-6d05-4a0c-b0f9-edcec0f64a08": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt White Pinstripe",
 "shops": []
 },
@@ -168772,7 +168772,7 @@
 "shops": []
 },
 "df914121-324f-4e45-9eb1-24bb838472d2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves",
 "shops": [
 {
@@ -168792,7 +168792,7 @@
 ]
 },
 "df93b950-031f-4b7d-9710-ae0276b376d3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Twilight",
 "shops": [
 {
@@ -168810,11 +168810,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-09",
@@ -168836,20 +168850,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 },
 {
 "d": "2026-09-27",
@@ -168876,7 +168876,7 @@
 "shops": []
 },
 "dfc67794-2b20-40e1-a18a-d8d4023647d5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Yellow",
 "shops": [
 {
@@ -169664,7 +169664,7 @@
 "shops": []
 },
 "e0e0b7d0-527f-4f2e-b85b-9f6ee791d323": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Green",
 "shops": [
 {
@@ -169682,7 +169682,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 623,
 "s": "Stanton",
@@ -170765,7 +170765,7 @@
 "shops": []
 },
 "e17c69d2-a50e-467d-8baa-b923b010faf2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Hurston Black",
 "shops": []
 },
@@ -170909,11 +170909,11 @@
 "shops": []
 },
 "e1ea77e9-23d5-42fe-aef4-b088ad3cdbf6": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Imperial",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 2285,
 "s": "Stanton",
@@ -171095,7 +171095,7 @@
 ]
 },
 "e27da687-b025-4b82-97d5-58ce5c6e3181": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Deo Shirt Black",
 "shops": [
 {
@@ -171106,7 +171106,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 460,
 "s": "Stanton",
@@ -171168,7 +171168,7 @@
 ]
 },
 "e2b59279-ef03-4b31-9f6c-f20247d06248": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Crusader Industries T-Shirt Black",
 "shops": [
 {
@@ -171257,7 +171257,7 @@
 "shops": []
 },
 "e3026bc6-e2f8-429e-8f07-acc929ff68e2": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "ThermoWeave Hood",
 "shops": [
 {
@@ -171634,7 +171634,7 @@
 "shops": []
 },
 "e3c2c886-3fea-4480-954b-3c1d4a10596f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Crypt Keycard",
 "shops": []
 },
@@ -171644,7 +171644,7 @@
 "shops": []
 },
 "e3c59d62-f2c4-40bd-bf93-36dce86e9089": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Core Red Alert",
 "shops": []
 },
@@ -171733,7 +171733,7 @@
 ]
 },
 "e3feed1b-f5e7-46bf-ad18-ade15c3232f5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Andromeda PHB Flight Blade",
 "shops": []
 },
@@ -172268,15 +172268,22 @@
 "shops": []
 },
 "e52145a2-c49d-4a96-b55d-5c51dd1fadd9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "CS-L Pants",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 350,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 370,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-27",
@@ -172284,13 +172291,6 @@
 "p": 370,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 370,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -172619,13 +172619,13 @@
 ]
 },
 "e5458897-035a-46f8-88a2-cf148fcb4daf": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Avenger Warlock TSB Flight Blade",
 "shops": [
 {
-"d": "2026-11-08",
+"d": "2026-11-18",
 "l": "New Babbage",
-"p": 237500,
+"p": 275000,
 "s": "Stanton",
 "t": "Omega New Babbage"
 }
@@ -172647,7 +172647,7 @@
 "shops": []
 },
 "e5882903-64ef-492f-8925-824e87d12e40": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Scorched",
 "shops": []
 },
@@ -172795,7 +172795,7 @@
 "shops": []
 },
 "e5d0837a-2aac-4fbe-96c1-ff33d336b0b5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "C8X Pisces PHB Flight Blade",
 "shops": [
 {
@@ -173148,7 +173148,7 @@
 "shops": []
 },
 "e60ea44a-642d-4957-b6ea-38028b4879d1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "G-Loc T-Shirt",
 "shops": []
 },
@@ -173454,7 +173454,7 @@
 "shops": []
 },
 "e6866305-a37e-4e63-b49f-56a29547e17b": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Wanderer Boots Redline",
 "shops": [
 {
@@ -173521,7 +173521,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 225,
 "s": "Nyx",
@@ -173591,7 +173591,7 @@
 "shops": []
 },
 "e68c18b9-c538-4e68-a875-5bb0cc60c132": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Dark Red",
 "shops": [
 {
@@ -173718,7 +173718,7 @@
 "shops": []
 },
 "e6cb0703-a25b-4adb-b51c-4799b6e55bf5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt",
 "shops": []
 },
@@ -174533,7 +174533,7 @@
 "shops": []
 },
 "e78b6f08-3f9c-4a0c-89ad-a7f2e1fa73bd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Heatwave",
 "shops": []
 },
@@ -174707,7 +174707,7 @@
 ]
 },
 "e7df3807-737a-4f09-984c-e68fb3e0a1b9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Amber",
 "shops": []
 },
@@ -174859,7 +174859,7 @@
 ]
 },
 "e80b04d2-24e5-4f01-9068-2920ca050b8e": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Koya Pants White Pinstripe",
 "shops": [
 {
@@ -174997,7 +174997,7 @@
 ]
 },
 "e83f76c3-fee6-4599-bad7-ec27673ceb2a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet microTech Edition",
 "shops": []
 },
@@ -175065,7 +175065,7 @@
 "shops": []
 },
 "e8bc26f1-fa5e-43cf-bb62-373b64ff756d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-07 Engineering Maintenance Comp-Board",
 "shops": []
 },
@@ -175173,7 +175173,7 @@
 ]
 },
 "e914a57b-69a5-4d50-aaab-6be11891e7c7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Toughlife Boots White",
 "shops": [
 {
@@ -175200,7 +175200,7 @@
 ]
 },
 "e9186bee-0812-4576-8878-4766bb3a31c9": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake Corsair Standard Flight Blade",
 "shops": []
 },
@@ -175444,7 +175444,7 @@
 "shops": []
 },
 "e9e980f2-5949-442b-83c9-d94adb627f1f": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Olive",
 "shops": [
 {
@@ -175455,7 +175455,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 375,
 "s": "Stanton",
@@ -175546,7 +175546,7 @@
 "shops": []
 },
 "ea32bd43-280d-4674-b3cd-920326245f9d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MPUV-1T Standard Flight Blade",
 "shops": []
 },
@@ -175808,7 +175808,7 @@
 "shops": []
 },
 "eb0b6443-b5e7-4a8b-95d1-b1b7d96f472d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ventra Gloves Red",
 "shops": [
 {
@@ -175987,7 +175987,7 @@
 ]
 },
 "eb317ed0-685b-451f-91df-50df5598f0cd": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack Black Cherry",
 "shops": []
 },
@@ -176091,7 +176091,7 @@
 "shops": []
 },
 "ebd17800-785d-4743-a52b-27dabc6faf64": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet ArcCorp Edition",
 "shops": []
 },
@@ -176230,7 +176230,7 @@
 ]
 },
 "ec0b705a-ae5a-4ab6-92ff-1fe9c07d5e55": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Anvil Carrack TSB Flight Blade",
 "shops": [
 {
@@ -176333,7 +176333,7 @@
 ]
 },
 "ec1b1120-cee3-4c28-82cd-234515d52c13": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Warning",
 "shops": []
 },
@@ -177020,7 +177020,7 @@
 ]
 },
 "ed98d39b-8a66-4b44-a202-f43c09722695": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket White",
 "shops": [
 {
@@ -177058,7 +177058,7 @@
 ]
 },
 "eda71787-41d7-49b3-8a7a-bd7ddffa2d37": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Dream Wishes T-Shirt",
 "shops": [
 {
@@ -177443,7 +177443,7 @@
 "shops": []
 },
 "eed876cf-4d93-4f5e-9d20-77290e8c9876": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Purple/Ivory",
 "shops": [
 {
@@ -177456,7 +177456,7 @@
 ]
 },
 "eee19707-3e2d-436a-9a6e-0a447c28fd07": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Backpack Harvester",
 "shops": []
 },
@@ -177599,7 +177599,7 @@
 "shops": []
 },
 "ef22e563-0ff2-4ad0-8ba3-c4e94f910c57": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Arms Hazard",
 "shops": [
 {
@@ -177631,7 +177631,42 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 923,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 923,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 923,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 923,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 923,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 923,
 "s": "Stanton",
@@ -177666,25 +177701,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 923,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 923,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 923,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -177699,20 +177720,6 @@
 "p": 923,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 923,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 923,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -177734,13 +177741,6 @@
 "p": 923,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 923,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -178094,11 +178094,11 @@
 "shops": []
 },
 "f01890f1-f376-49a1-a7e4-27a844379ff8": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Blue",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 260,
 "s": "Stanton",
@@ -178182,7 +178182,7 @@
 "shops": []
 },
 "f050da8e-7460-4275-beb0-d4ea6caead73": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Helmet Hurston Black",
 "shops": []
 },
@@ -178380,7 +178380,7 @@
 ]
 },
 "f0e43ba1-b299-422e-9b91-a228d6481451": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Andromeda Standard Flight Blade",
 "shops": []
 },
@@ -178390,7 +178390,7 @@
 "shops": []
 },
 "f0ea72bf-2da6-4d70-8ddf-3e369c29c83c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "DCHS-02 Security Encryption Comp-Board",
 "shops": []
 },
@@ -178827,7 +178827,7 @@
 "shops": []
 },
 "f11bfe23-249c-450b-a5e8-3363b1f6be53": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Radford Shirt White Grid",
 "shops": [
 {
@@ -178926,7 +178926,7 @@
 ]
 },
 "f1a07fef-7357-45f6-846c-94b587ae8c28": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Yellow",
 "shops": [
 {
@@ -178944,7 +178944,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 550,
 "s": "Stanton",
@@ -179058,7 +179058,7 @@
 ]
 },
 "f254ba07-da76-463c-a26b-c3a6f54cd168": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "MISC T-Shirt",
 "shops": [
 {
@@ -179069,25 +179069,25 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-10-18",
-"l": "MIC-L5 Modern Icarus Station",
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
 "p": 820,
 "s": "Stanton",
-"t": "Clothing Shop - MIC-L5"
+"t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 820,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
+"d": "2026-10-18",
+"l": "MIC-L5 Modern Icarus Station",
 "p": 820,
 "s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
+"t": "Clothing Shop - MIC-L5"
 },
 {
 "d": "2026-08-30",
@@ -179302,7 +179302,7 @@
 "shops": []
 },
 "f272692c-304d-4f84-945f-3c9755a814ee": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Redeemer Standard Flight Blade",
 "shops": []
 },
@@ -179366,11 +179366,11 @@
 "shops": []
 },
 "f298edad-644e-4b3f-b5f0-752d4a5ca11c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Green",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 2285,
 "s": "Stanton",
@@ -179425,7 +179425,7 @@
 "shops": []
 },
 "f2a825ae-b359-4eae-98ea-5bea7f309395": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Giotto Jacket Dark Blue",
 "shops": [
 {
@@ -179458,7 +179458,7 @@
 "shops": []
 },
 "f2c1b30f-7ec6-4175-a114-1e524ec12f6a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Lodestar",
 "shops": []
 },
@@ -179588,7 +179588,7 @@
 ]
 },
 "f372934a-f016-4803-8b72-b0db18c11379": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Dark Green",
 "shops": [
 {
@@ -179606,6 +179606,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 220,
@@ -179613,14 +179620,7 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 220,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
-},
-{
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 280,
 "s": "Stanton",
@@ -179878,7 +179878,7 @@
 "shops": []
 },
 "f4255f29-7e56-424e-9d1f-9ef52c7458a5": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs",
 "shops": [
 {
@@ -179972,7 +179972,7 @@
 "shops": []
 },
 "f479378d-2d74-4910-a072-aa95f3fa2d6d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ejection Rejection T-Shirt",
 "shops": []
 },
@@ -180029,11 +180029,11 @@
 "shops": []
 },
 "f4bc642d-fdce-4f7b-b7fa-cc0ce0e49208": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Sienna",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 410,
 "s": "Stanton",
@@ -180220,9 +180220,16 @@
 ]
 },
 "f534460a-50bc-4b55-9687-92e4d6e1305c": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Black",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
 {
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
@@ -180243,13 +180250,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -180521,7 +180521,7 @@
 ]
 },
 "f5dc3c80-10c6-4858-83f5-31dcc7a71e34": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Ati Jacket Dark Green",
 "shops": [
 {
@@ -180658,7 +180658,7 @@
 "shops": []
 },
 "f652aeee-00e1-4a1e-ba3c-bf280bb67a4d": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "TruBarrier Hazard Suit Dark Biohazard",
 "shops": []
 },
@@ -181377,7 +181377,7 @@
 "shops": []
 },
 "f7687158-06e5-4973-a051-d906a8cfbc8a": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Mantis TSB Flight Blade",
 "shops": []
 },
@@ -181564,7 +181564,7 @@
 "shops": []
 },
 "f7bf395a-bee3-462b-92fd-12b79e1b02c3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Orange",
 "shops": [
 {
@@ -181582,25 +181582,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-18",
-"l": "MIC-L5 Modern Icarus Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-10",
+"d": "2026-11-21",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-10-18",
+"l": "MIC-L5 Modern Icarus Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L5"
 },
 {
 "d": "2026-09-09",
@@ -181631,7 +181631,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 514,
 "s": "Stanton",
@@ -181660,22 +181660,29 @@
 "shops": []
 },
 "f7ce4655-e424-45db-a948-156481ea2dcc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Kino Shoes Green",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 220,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 220,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 220,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 220,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -181697,13 +181704,6 @@
 "p": 220,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 220,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -181728,7 +181728,7 @@
 ]
 },
 "f7db9094-baa3-42ab-b626-0186eb16a457": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Purple Plaid/Blue Pinstripe",
 "shops": [
 {
@@ -181802,7 +181802,7 @@
 "shops": []
 },
 "f80504b7-5a13-4529-b7a4-dfdb1193ece3": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aranda Shirt Crusader Edition Purple Plaid/Blue Pinstripe",
 "shops": []
 },
@@ -182251,12 +182251,12 @@
 "shops": []
 },
 "f9376a41-f4a1-49ec-9863-dc7b3c427f79": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Helmet Harvester",
 "shops": []
 },
 "f9394ae7-6eab-4f45-b4c0-4bd6a10f2890": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Red",
 "shops": [
 {
@@ -182274,7 +182274,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 550,
 "s": "Stanton",
@@ -182389,7 +182389,7 @@
 "shops": []
 },
 "f965bfdf-024b-4099-ae79-67514ea963ed": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Drake T-Shirt Yellow Logo",
 "shops": []
 },
@@ -183318,7 +183318,7 @@
 ]
 },
 "fa162310-e01e-4b90-81ff-f449f5d6f571": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Aril Legs (Modified)",
 "shops": []
 },
@@ -183919,7 +183919,7 @@
 ]
 },
 "fb5abac9-35bc-4ee3-800e-f5ff709720dc": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Pyrotechnic Edition",
 "shops": []
 },
@@ -184542,11 +184542,11 @@
 ]
 },
 "fc6502c1-5639-4037-a53a-a173f8c5feee": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Prim Shoes Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 260,
 "s": "Stanton",
@@ -184599,7 +184599,7 @@
 "shops": []
 },
 "fc9c3112-e2e3-48b0-b9d4-3484fd2dc6ec": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "LeMarque Pants Aqua",
 "shops": [
 {
@@ -184617,25 +184617,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-26",
-"l": "Orison",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 375,
 "s": "Stanton",
-"t": "Makau - Clothing Shop -  Cloudview Center - Orison"
+"t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
+"d": "2026-10-26",
+"l": "Orison",
 "p": 375,
 "s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
+"t": "Makau - Clothing Shop -  Cloudview Center - Orison"
 },
 {
 "d": "2026-09-27",
@@ -185121,7 +185121,7 @@
 "shops": []
 },
 "fd50e4bf-dd23-433d-9531-f863f4e51115": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Invictus T-Shirt Blue",
 "shops": []
 },
@@ -185439,7 +185439,7 @@
 "shops": []
 },
 "fe193701-90d8-4cfe-99a2-a845c82ec7c1": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Lillo Pants Green",
 "shops": [
 {
@@ -185457,7 +185457,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 745,
 "s": "Stanton",
@@ -185750,7 +185750,7 @@
 "shops": []
 },
 "fe85d341-0909-496d-883c-f20afb9665a7": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Constellation Mk IV Taurus Standard Flight Blade",
 "shops": []
 },
@@ -185829,7 +185829,7 @@
 "shops": []
 },
 "feae9249-75e3-4b7f-9437-4596fd88c496": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Pacifica Hat",
 "shops": [
 {
@@ -185881,7 +185881,7 @@
 ]
 },
 "feb84493-af0e-49e3-b638-462bfef25856": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Legs Heatwave",
 "shops": []
 },
@@ -186492,7 +186492,7 @@
 "shops": []
 },
 "ff615419-6632-4e61-91b1-5043613252ad": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Concept Shirt Twilight",
 "shops": [
 {
@@ -186598,7 +186598,7 @@
 "shops": []
 },
 "ffb072df-980c-4a52-856c-af6ca1f84030": {
-"checked": 1794706301,
+"checked": 1795353662,
 "n": "Strata Arms Crusader Edition",
 "shops": []
 },
