@@ -297,7 +297,7 @@
 ]
 },
 "00357d5f-9c55-4362-b1de-3be9b88c5ebe": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Omnitrek Jacket Backwoods",
 "shops": [
 {
@@ -354,7 +354,7 @@
 ]
 },
 "004c9406-31c4-45d4-a052-2d2453315726": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Green",
 "shops": []
 },
@@ -490,7 +490,7 @@
 ]
 },
 "00a7a4ee-b8b0-4731-9be8-2070ef48e22d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Green",
 "shops": [
 {
@@ -728,7 +728,7 @@
 "shops": []
 },
 "0140c71f-56db-4d37-b98e-0a7a0ee6188d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ASD Bomber Jacket",
 "shops": []
 },
@@ -1091,7 +1091,7 @@
 "shops": []
 },
 "0208e4e8-1463-4749-a6ff-1f289cfc5353": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "FBL-8u Undersuit Arctic Digital",
 "shops": [
 {
@@ -1195,7 +1195,7 @@
 "shops": []
 },
 "0282627a-aeea-4c64-ac18-3afc7e27a2af": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Keystone Jacket Onyx",
 "shops": []
 },
@@ -2178,7 +2178,7 @@
 "shops": []
 },
 "0368d9db-58d5-48ea-8a1b-5d646c4ad66a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Red",
 "shops": [
 {
@@ -2189,23 +2189,23 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
 "036bd7d8-d487-4069-ba7c-873a26afc9a1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit (Refurbished)",
 "shops": [
 {
@@ -3163,7 +3163,7 @@
 ]
 },
 "03bb3f37-a122-4a1d-be72-11e799fbd221": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Red",
 "shops": [
 {
@@ -3174,7 +3174,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 2675,
 "s": "Stanton",
@@ -3202,7 +3202,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
@@ -4065,7 +4065,7 @@
 ]
 },
 "0456e210-a99a-4708-b83c-103c1d02923a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket",
 "shops": [
 {
@@ -4074,6 +4074,13 @@
 "p": 2542,
 "s": "Stanton",
 "t": "Casaba Outlet - Everus Harbor"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -4088,13 +4095,6 @@
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-27",
@@ -4793,7 +4793,7 @@
 ]
 },
 "055c3ff0-e24c-4d87-ab0d-274440b74be7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Purple",
 "shops": [
 {
@@ -5118,7 +5118,7 @@
 "shops": []
 },
 "05b4566e-8979-4269-ae7f-37babd08889d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kaswal Jacket Brick",
 "shops": [
 {
@@ -5231,7 +5231,7 @@
 "shops": []
 },
 "05fee1e8-7a26-42a7-8462-f497fa9ddf7c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves",
 "shops": []
 },
@@ -5241,7 +5241,7 @@
 "shops": []
 },
 "0602b4d4-00bd-41a7-84a2-4f6e48879156": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Lifeforce",
 "shops": []
 },
@@ -5302,7 +5302,7 @@
 "shops": []
 },
 "065a00be-c9f9-4762-b44a-49ffecc6dbc0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants White",
 "shops": [
 {
@@ -6125,7 +6125,7 @@
 ]
 },
 "06abb013-c6da-4852-9185-61d4422f5da9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PYAM Security Keycard",
 "shops": []
 },
@@ -6202,7 +6202,7 @@
 ]
 },
 "06cbc938-0b97-4c1b-a4e1-8c5334152deb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Siebe Helmet",
 "shops": [
 {
@@ -6298,7 +6298,7 @@
 ]
 },
 "06f1e34a-fead-41f7-a4dd-24b5a8bcfb89": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ridgely Jacket Mafic",
 "shops": [
 {
@@ -6654,7 +6654,7 @@
 "shops": []
 },
 "07ed2516-d212-41d0-8bad-0dadd8cfd507": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Siebe Helmet Tidal Wave",
 "shops": []
 },
@@ -6856,7 +6856,7 @@
 "shops": []
 },
 "0860d4f1-efa4-4ec9-93e4-557337d644ba": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Yellow",
 "shops": [
 {
@@ -7396,7 +7396,7 @@
 "shops": []
 },
 "0938581e-1fb6-4b17-bddc-898bf10160f4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Carbide Jacket",
 "shops": [
 {
@@ -8328,7 +8328,7 @@
 "shops": []
 },
 "09a03303-cc65-4fa3-9d23-160944399b06": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Imperial",
 "shops": [
 {
@@ -8397,7 +8397,7 @@
 "shops": []
 },
 "09d1e163-9466-4415-aebf-877eaf274cfa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants Sage",
 "shops": [
 {
@@ -8591,7 +8591,7 @@
 ]
 },
 "0a190bad-bbb1-4988-9622-61b7af717d6f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cryo-Star",
 "shops": [
 {
@@ -8607,6 +8607,13 @@
 "p": 16000,
 "s": "Nyx",
 "t": "Teach's Item Shop - Levski"
+},
+{
+"d": "2026-11-20",
+"l": "Dudley & Daughters",
+"p": 16000,
+"s": "Pyro",
+"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-11-13",
@@ -8628,13 +8635,6 @@
 "p": 16000,
 "s": "Pyro",
 "t": "Ship Parts - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 16000,
-"s": "Pyro",
-"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -8747,11 +8747,11 @@
 ]
 },
 "0a577d55-3893-4b33-afe0-0fefafc01cf6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Twilight",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 851,
 "s": "Stanton",
@@ -8772,6 +8772,13 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1000,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1000,
@@ -8784,13 +8791,6 @@
 "p": 1000,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1000,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -9021,7 +9021,7 @@
 ]
 },
 "0ad851e9-678a-4a36-9af9-1f3818f1f142": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Omnitrek Jacket Permafrost",
 "shops": [
 {
@@ -9164,7 +9164,7 @@
 "shops": []
 },
 "0b727012-b73d-43d7-8a82-4dd25733a188": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Legs Exec",
 "shops": []
 },
@@ -9653,12 +9653,12 @@
 ]
 },
 "0bcd0305-b5a4-4ddc-b69c-861886a6b3ee": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack Mire",
 "shops": []
 },
 "0bd45a67-121e-46bd-a25d-a7b6d84cc431": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Camion Jacket",
 "shops": []
 },
@@ -9703,7 +9703,7 @@
 "shops": []
 },
 "0c3a431a-6aa9-4d1e-9deb-fd87b27c2cfa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Blue",
 "shops": [
 {
@@ -9721,18 +9721,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -9785,7 +9785,7 @@
 "shops": []
 },
 "0c55ab6d-33c6-46bf-8539-cfa512f96be0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Carbide Jacket Bramble",
 "shops": [
 {
@@ -10696,7 +10696,7 @@
 ]
 },
 "0df9b852-94b7-410c-86dc-a1643825dbe0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Imperial",
 "shops": [
 {
@@ -10855,7 +10855,7 @@
 ]
 },
 "0e476efa-b76d-4300-ba37-677569084781": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stitcher Core",
 "shops": [
 {
@@ -10942,7 +10942,7 @@
 ]
 },
 "0e5a402d-b8d1-41fb-9da8-a61719b6cfe5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Balor HCH Helmet microTech Edition",
 "shops": []
 },
@@ -11316,7 +11316,7 @@
 "shops": []
 },
 "0e9adeb1-78b2-42a2-b26e-a821f8b20b55": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Twilight",
 "shops": [
 {
@@ -11341,7 +11341,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2675,
 "s": "Stanton",
@@ -11415,7 +11415,7 @@
 ]
 },
 "0ebc2c2d-7aae-40d1-abda-168688da4b1e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Cap Blue",
 "shops": []
 },
@@ -11524,7 +11524,7 @@
 ]
 },
 "0edd3669-a5eb-405c-889b-3ce3b4660880": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Dark Green",
 "shops": []
 },
@@ -12086,7 +12086,7 @@
 ]
 },
 "10bd760e-5fef-4ca4-a767-d3911549ff69": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Yellow",
 "shops": [
 {
@@ -12545,7 +12545,7 @@
 "shops": []
 },
 "11d57a99-e741-41b2-93e9-4a9ecd910a1f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Greycat Edition",
 "shops": []
 },
@@ -12560,7 +12560,7 @@
 "shops": []
 },
 "11f3c184-5fe3-4a5e-b807-8daf35d9f609": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Twilight",
 "shops": [
 {
@@ -12571,18 +12571,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -12615,7 +12615,7 @@
 ]
 },
 "1208181e-d6ff-4407-a9e6-c2e91bfcfa2e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms",
 "shops": [
 {
@@ -12633,11 +12633,46 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 584,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-11-09",
@@ -12675,46 +12710,11 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
 "d": "2026-09-08",
 "l": "ARC-L4 Faint Glen Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - ARC-L4"
-},
-{
-"d": "2026-09-03",
-"l": "Seraphim Station",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Seraphim"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 584,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-09-11",
@@ -13175,7 +13175,7 @@
 ]
 },
 "125e6c46-0d4e-4b1c-a521-faad7dc01f74": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet RSI Sunburst Edition",
 "shops": []
 },
@@ -13544,7 +13544,7 @@
 "shops": []
 },
 "13149b27-1ab5-499b-aaab-9692a932f3f0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Armor",
 "shops": []
 },
@@ -14515,7 +14515,7 @@
 "shops": []
 },
 "13a8f1c2-9679-4e0f-8281-f88c20925a1a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit",
 "shops": [
 {
@@ -14609,7 +14609,7 @@
 "shops": []
 },
 "1413865b-d376-4724-8d54-16b8fce508b2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants Black",
 "shops": [
 {
@@ -14733,7 +14733,7 @@
 "shops": []
 },
 "1481eb65-dca8-4bbc-acbb-64d00d14d9c9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Coloma Coat Blue and Brick",
 "shops": []
 },
@@ -16150,21 +16150,21 @@
 "shops": []
 },
 "150f637f-362d-4f3d-b69a-4e8d7d730ff9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Coloma Coat Ice and Iron",
 "shops": []
 },
 "1510e7e4-2384-4e6b-9f1f-55281361e769": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Exploration Suit (Modified)",
 "shops": []
 },
 "1516552d-9a25-40f5-9aed-e99e2dae8017": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Field Recon Suit Core",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1514,
 "s": "Stanton",
@@ -16192,6 +16192,27 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1780,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1780,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1780,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1780,
@@ -16204,13 +16225,6 @@
 "p": 1780,
 "s": "Stanton",
 "t": "Armor - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1780,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -16227,20 +16241,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1780,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1780,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-09",
 "l": "ARC-L1 Wide Forest Station",
 "p": 1780,
@@ -16255,18 +16255,18 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1784,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1784,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1784,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -16299,7 +16299,7 @@
 ]
 },
 "152fdaec-10af-4b47-b29e-a5014b3cc2eb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Lanxi Jacket Gray",
 "shops": []
 },
@@ -16317,11 +16317,11 @@
 ]
 },
 "1545424c-74cb-4a94-804c-919ea103d1e8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "FBL-8u Undersuit Desert Digital",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1063,
 "s": "Stanton",
@@ -16668,7 +16668,7 @@
 ]
 },
 "15b9d1ac-2fe0-4d7b-aa6d-dc0d3fdb6e8e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Dark Red",
 "shops": [
 {
@@ -16679,18 +16679,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2680,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2680,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -16764,7 +16764,7 @@
 ]
 },
 "15d804c1-9610-488a-97f3-7ea6033a4064": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "DefenseCon '56 Pants",
 "shops": []
 },
@@ -17689,7 +17689,7 @@
 "shops": []
 },
 "173bbdf3-44a0-465d-bec5-b034e3d13ff1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Hurston Edition",
 "shops": []
 },
@@ -17836,7 +17836,7 @@
 "shops": []
 },
 "175c8c1c-0b57-4db9-9b40-1b1b6b3fb637": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Coloma Coat Iron and Silver",
 "shops": []
 },
@@ -17909,7 +17909,7 @@
 "shops": []
 },
 "1795ef21-9985-4543-8fa8-8be93eba261f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Bello T-Shirt Blue",
 "shops": []
 },
@@ -18425,7 +18425,7 @@
 "shops": []
 },
 "18b9dd5d-b093-4d1d-adcc-9ba048bfbdc6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Core (XenoThreat v2)",
 "shops": []
 },
@@ -18517,12 +18517,12 @@
 "shops": []
 },
 "18f560ef-cf68-439b-9eec-4d9167268417": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core microTech Edition",
 "shops": []
 },
 "18f7c6d8-c003-4ada-b272-4526017f08ac": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Platinum",
 "shops": []
 },
@@ -19293,7 +19293,7 @@
 "shops": []
 },
 "19986a8a-ecfa-4f0c-ac68-47839a6e80a6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Yellow",
 "shops": [
 {
@@ -19311,7 +19311,7 @@
 "shops": []
 },
 "19b443a4-b5d2-42f2-85a6-6849d9a4ca38": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Violet",
 "shops": [
 {
@@ -21247,7 +21247,7 @@
 ]
 },
 "1bc4abfc-9c0d-4132-8c0a-90dfe2ab8c13": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Trace Pants",
 "shops": []
 },
@@ -22863,7 +22863,7 @@
 "shops": []
 },
 "1d5a40cc-84c7-48e9-8bb0-8851e716a3aa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Violet",
 "shops": [
 {
@@ -22876,22 +22876,22 @@
 ]
 },
 "1d6987f1-51c0-4a3a-b564-0e599d24f905": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Red",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -23159,22 +23159,22 @@
 "shops": []
 },
 "1da24aff-2be4-4374-a0d0-666323ef710c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Red",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -23711,7 +23711,7 @@
 "shops": []
 },
 "1e1edec0-3bd3-45dd-a5c1-581ad4f12208": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Violet",
 "shops": [
 {
@@ -23722,18 +23722,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2680,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2680,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -24281,7 +24281,7 @@
 "shops": []
 },
 "1ef5ffb8-c584-47cd-8f23-e41e5f63eb8a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Prestige Murray Cup Racing Jacket",
 "shops": []
 },
@@ -26312,7 +26312,7 @@
 ]
 },
 "1ffc8d57-5293-4e60-b0e9-9669ec9615dc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Green",
 "shops": [
 {
@@ -26325,7 +26325,7 @@
 ]
 },
 "1ffe9071-a197-4bb6-811c-fbf617514036": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Black",
 "shops": [
 {
@@ -26343,18 +26343,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -26709,7 +26709,7 @@
 ]
 },
 "20eceede-2f6b-426b-93a6-1ddb71ff21ad": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Gauntlet Gloves",
 "shops": [
 {
@@ -26741,6 +26741,41 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 160,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 160,
@@ -26769,25 +26804,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 160,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -26802,20 +26823,6 @@
 "p": 160,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 160,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -26847,13 +26854,6 @@
 },
 {
 "d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-28",
 "l": "ARC-L4 Faint Glen Station",
 "p": 160,
 "s": "Stanton",
@@ -26867,7 +26867,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 160,
 "s": "Nyx",
@@ -27378,7 +27378,7 @@
 ]
 },
 "217f7a33-6635-4006-be06-f1ecf238946c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants Grey",
 "shops": [
 {
@@ -27521,22 +27521,22 @@
 "shops": []
 },
 "21e4238f-5563-4c25-9014-b0e64e3697b0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Orange",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -27879,7 +27879,7 @@
 "shops": []
 },
 "228eef67-ec80-44ca-a6c8-dd962fe7d6b9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "RangeFinder Jacket Arctic",
 "shops": [
 {
@@ -27892,7 +27892,7 @@
 ]
 },
 "229667b8-fb14-465f-9113-2143b9fb0b94": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Imperial",
 "shops": [
 {
@@ -27955,7 +27955,7 @@
 "shops": []
 },
 "22ac3ff5-1059-40ff-90f3-e36b41564ab8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Sakura Sun Edition",
 "shops": []
 },
@@ -28357,22 +28357,22 @@
 "shops": []
 },
 "23799159-4649-468e-aef5-758e808a4b47": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Saskia Jacket",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2850,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 2850,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2850,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -28690,7 +28690,7 @@
 "shops": []
 },
 "24b20f66-0a75-471e-a03e-7ebd4d146a01": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants",
 "shops": []
 },
@@ -28739,7 +28739,7 @@
 "shops": []
 },
 "24eae38f-0ea4-4d51-96c6-e5d0dbadf682": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "RangeFinder Jacket Element",
 "shops": []
 },
@@ -29042,7 +29042,7 @@
 "shops": []
 },
 "257b1282-0d72-4795-8f32-fe05a8fd7f4a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Black",
 "shops": []
 },
@@ -29126,7 +29126,7 @@
 "shops": []
 },
 "25e50bbb-0e97-4c29-95e7-b84f6a416f6b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Levin Undersuit (Refurbished)",
 "shops": [
 {
@@ -29197,22 +29197,22 @@
 "shops": []
 },
 "2650dcb6-59b9-4275-ba92-7524d4ddbd33": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "FBL-8u Undersuit Imperial Red",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1063,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1063,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1063,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -29408,7 +29408,7 @@
 "shops": []
 },
 "26ae8404-354e-4071-98b4-f09ec5db03aa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Covalex Edition",
 "shops": []
 },
@@ -29457,7 +29457,7 @@
 ]
 },
 "26cac158-8e28-419e-a0e5-4e7419b14a1b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Sienna",
 "shops": [
 {
@@ -29817,7 +29817,7 @@
 ]
 },
 "26f34f18-206a-485e-bf5e-ddda6852a8c5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack Halcyon",
 "shops": []
 },
@@ -29919,7 +29919,7 @@
 ]
 },
 "270bbd9c-71c3-46f7-b1ad-c5f97b4002e5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Chroma Edition",
 "shops": []
 },
@@ -30124,22 +30124,22 @@
 "shops": []
 },
 "2762c5fb-4246-4d07-9cf7-7339c89bc470": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Violet",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 584,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 584,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -30182,7 +30182,7 @@
 "shops": []
 },
 "278f244d-4dff-411e-bf23-c795135a6852": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack Patina",
 "shops": []
 },
@@ -31178,7 +31178,7 @@
 ]
 },
 "283f255c-75b7-4258-bdc0-ffd5f34d40c1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Dark Red",
 "shops": [
 {
@@ -31189,25 +31189,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1288,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -31291,29 +31291,29 @@
 ]
 },
 "286d9720-cdf9-48c3-b07b-12317153cf31": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Seagreen",
 "shops": [
 {
-"d": "2026-09-16",
-"l": "Port Tressler",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1046,
 "s": "Stanton",
-"t": "Armor - Port Tressler"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-09-16",
+"l": "Port Tressler",
 "p": 1046,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Port Tressler"
 }
 ]
 },
@@ -31733,11 +31733,11 @@
 ]
 },
 "28f05d54-b617-43f2-b492-29883836e3d4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Aqua",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1053,
 "s": "Stanton",
@@ -32048,7 +32048,7 @@
 "shops": []
 },
 "29b8275f-edfc-45d0-8802-0580d1de3872": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs (XenoThreat)",
 "shops": []
 },
@@ -32615,7 +32615,7 @@
 ]
 },
 "2aaa174c-0af8-45bb-a26b-0587ddd60923": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Sakura Sun Edition",
 "shops": []
 },
@@ -32921,7 +32921,7 @@
 "shops": []
 },
 "2b3adcf0-d968-4752-b87a-bf083e97fa7e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants CFP",
 "shops": []
 },
@@ -33039,7 +33039,7 @@
 "shops": []
 },
 "2bcfdf4f-091f-43db-8bb7-fad268eb3d52": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Sienna",
 "shops": [
 {
@@ -33121,7 +33121,7 @@
 ]
 },
 "2c41954e-6707-4cde-b894-42c4f3103bbd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Tan",
 "shops": [
 {
@@ -33148,7 +33148,7 @@
 ]
 },
 "2c66dda7-ffab-4f55-9a2d-edc1f25d2ac7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Executive",
 "shops": []
 },
@@ -33239,7 +33239,7 @@
 "shops": []
 },
 "2d1536b0-1757-45af-b1a9-d82e854a97b9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Olive",
 "shops": []
 },
@@ -33249,11 +33249,11 @@
 "shops": []
 },
 "2d1af572-a455-444f-83c6-3ea3b8e729f2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Desert",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -33765,7 +33765,7 @@
 "shops": []
 },
 "2da53b97-2d4f-4db6-9b92-3f86a7f068d5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Tungsten Edition",
 "shops": []
 },
@@ -33814,7 +33814,7 @@
 ]
 },
 "2db7871c-23bd-495b-afd6-8dc75fafff07": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Balor HCH Helmet Platinum",
 "shops": []
 },
@@ -34076,7 +34076,7 @@
 "shops": []
 },
 "2eb29dba-ada5-48ff-b88b-8634a64d0a63": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Gloves Olivine",
 "shops": []
 },
@@ -34086,7 +34086,7 @@
 "shops": []
 },
 "2ebe092b-e1e6-40f0-8697-cb6b68cc4d28": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit Pyrotechnic",
 "shops": []
 },
@@ -34595,22 +34595,22 @@
 "shops": []
 },
 "2fb6bcac-f717-4600-be64-b9590565c91c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Seagreen",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -34929,7 +34929,7 @@
 ]
 },
 "305c8b36-61a3-4065-b514-199719de9ac0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Helmet",
 "shops": []
 },
@@ -34944,7 +34944,7 @@
 "shops": []
 },
 "30711b13-cc9c-435e-977c-e2caf09cb1ce": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Red",
 "shops": [
 {
@@ -35661,7 +35661,7 @@
 ]
 },
 "3113564f-c411-4b6c-a856-996f5d4a3dfd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mountaintop Jacket Hazard",
 "shops": [
 {
@@ -36011,7 +36011,7 @@
 "shops": []
 },
 "317c1bbf-9a74-4ab9-b4fb-ed94e885b93f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Violet",
 "shops": [
 {
@@ -36022,25 +36022,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3200,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -36909,7 +36909,7 @@
 "shops": []
 },
 "321a0aa4-c3ac-4f43-a991-a2d622fb118a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit RSI Ivory Edition",
 "shops": []
 },
@@ -37132,7 +37132,7 @@
 "shops": []
 },
 "32786c0f-5be6-4110-b360-37cab7349806": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Levin Undersuit Greyscale (Refurbished)",
 "shops": []
 },
@@ -37223,7 +37223,7 @@
 "shops": []
 },
 "32d430f2-8135-491f-9b8c-1a4344269e4c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves Sage",
 "shops": [
 {
@@ -38115,7 +38115,7 @@
 ]
 },
 "334d3f18-e18c-45dd-9209-aaa7c6f1f23a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves (Modified)",
 "shops": []
 },
@@ -38179,7 +38179,7 @@
 ]
 },
 "335cb29d-af24-46f0-bb07-f65286757e8b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Guri Pants Lime",
 "shops": []
 },
@@ -38237,11 +38237,11 @@
 "shops": []
 },
 "339e2d46-80aa-4eed-84cd-9efd5725b52b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Desert",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 851,
 "s": "Stanton",
@@ -38269,32 +38269,32 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1000,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1000,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1000,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1000,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1000,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -38373,7 +38373,7 @@
 ]
 },
 "33aed3ba-e1c0-49c0-964e-840defe4f741": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Prestige Origin Racing Jacket",
 "shops": []
 },
@@ -38613,11 +38613,11 @@
 "shops": []
 },
 "33f0bca9-3e7f-4412-8f1f-aea1e2cceb3f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2721,
 "s": "Stanton",
@@ -38631,18 +38631,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -39797,7 +39797,7 @@
 "shops": []
 },
 "34f855f7-5055-4853-aa09-769390bfcf05": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Selby Jacket Black",
 "shops": []
 },
@@ -39981,7 +39981,7 @@
 "shops": []
 },
 "351dfd89-9884-4489-8600-30a9208a74ed": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Twilight",
 "shops": [
 {
@@ -40714,7 +40714,7 @@
 "shops": []
 },
 "3598bc92-1257-4779-a6f7-1b90c5c99e6c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Ascension\" Exploration Suit",
 "shops": []
 },
@@ -40747,7 +40747,7 @@
 "shops": []
 },
 "35c3fa48-0b58-4eb1-8ed4-60a020de25d1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Green",
 "shops": [
 {
@@ -40777,7 +40777,7 @@
 "shops": []
 },
 "35e498db-02e4-4963-9afa-ee08970c2036": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Balor HCH Helmet",
 "shops": [
 {
@@ -40795,6 +40795,20 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 5306,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 5306,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 5306,
@@ -40802,32 +40816,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 5306,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 5306,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 5317,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 5317,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 5317,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -40888,7 +40888,7 @@
 ]
 },
 "360975a4-2088-452d-be3d-dc4bb7c2428b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Grey",
 "shops": [
 {
@@ -40899,18 +40899,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -41102,7 +41102,7 @@
 "shops": []
 },
 "36857ba1-a4c3-4ee7-b67d-5d8538d8dd5c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Field Recon Suit Helmet",
 "shops": []
 },
@@ -41240,7 +41240,7 @@
 ]
 },
 "3714af80-6da5-4c42-8b78-60166d1b5987": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs",
 "shops": [
 {
@@ -41258,6 +41258,27 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1046,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-29",
 "l": "HUR-L1 Green Glade Station",
 "p": 1046,
@@ -41265,25 +41286,11 @@
 "t": "Armor - HUR-L1"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
-},
-{
 "d": "2026-09-11",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - MIC-L1"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
 },
 {
 "d": "2026-09-09",
@@ -41300,25 +41307,18 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1046,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1049,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1049,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1049,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -41821,7 +41821,7 @@
 ]
 },
 "37bbda5f-0657-4ed7-b01b-a00e827f3640": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Tan",
 "shops": [
 {
@@ -41873,7 +41873,7 @@
 "shops": []
 },
 "37d289d8-c7f9-4b04-96d3-647465eb4146": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cardona Jacket Sand",
 "shops": [
 {
@@ -41928,7 +41928,7 @@
 "shops": []
 },
 "37f72bbd-9f5f-4018-80a6-4ef5d25886f0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit RSI Sunburst Edition",
 "shops": []
 },
@@ -42156,7 +42156,7 @@
 "shops": []
 },
 "38354858-f9cb-45ed-8d60-fc930ef43060": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs White",
 "shops": [
 {
@@ -42167,18 +42167,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -42463,7 +42463,7 @@
 "shops": []
 },
 "38ec64d5-e99f-447b-899f-cb5392b3a236": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Backpack RSI Edition (Modified)",
 "shops": []
 },
@@ -42725,7 +42725,7 @@
 ]
 },
 "39ace1a3-3ed2-41a6-ad6f-788c2fe8e300": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "GCD-Army Undersuit",
 "shops": []
 },
@@ -44102,11 +44102,11 @@
 "shops": []
 },
 "3b9444ff-3e2d-4e46-a351-a81574a01b5f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Aqua",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1326,
 "s": "Stanton",
@@ -44127,18 +44127,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -44384,7 +44384,7 @@
 "shops": []
 },
 "3c33ac15-c543-4462-86ce-75a2e965bfd0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs White",
 "shops": [
 {
@@ -44395,23 +44395,23 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
 "3c38120f-ed09-4459-b8f8-3788665c83b2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Imperial",
 "shops": [
 {
@@ -44431,7 +44431,7 @@
 ]
 },
 "3c3e5108-171d-43be-913d-805a6ee2733b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Violet",
 "shops": [
 {
@@ -44442,7 +44442,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1053,
 "s": "Stanton",
@@ -44783,11 +44783,11 @@
 "shops": []
 },
 "3d06b920-80a4-4db2-b5be-51268afb09b5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Base",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1383,
 "s": "Stanton",
@@ -44806,6 +44806,27 @@
 "p": 1545,
 "s": "Stanton",
 "t": "Tammany and Sons - Metro Center - Lorville"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1626,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1626,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1626,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
 },
 {
 "d": "2026-10-31",
@@ -44829,32 +44850,11 @@
 "t": "Armor - HUR-L1"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1626,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
-},
-{
 "d": "2026-09-11",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 1626,
 "s": "Stanton",
 "t": "Armor - MIC-L1"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1626,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1626,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-08",
@@ -44864,18 +44864,18 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1630,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1630,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1630,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -44918,7 +44918,7 @@
 "shops": []
 },
 "3d1c919f-a17b-4e58-9b4f-33634b50b292": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Covalex Edition",
 "shops": []
 },
@@ -44948,7 +44948,7 @@
 "shops": []
 },
 "3d53e2d3-ea0f-4ef5-ab1a-1fd94075ff2d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Greenwater Shirt Olive",
 "shops": []
 },
@@ -44993,7 +44993,7 @@
 ]
 },
 "3d57d3c4-185a-4426-8d92-239fc8f0a59a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Black",
 "shops": [
 {
@@ -45163,7 +45163,7 @@
 "shops": []
 },
 "3dfc5dbd-c000-4fb6-82f6-579b97775bce": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mountaintop Jacket Multitone",
 "shops": []
 },
@@ -45439,7 +45439,7 @@
 "shops": []
 },
 "3e7f28bd-41bb-4887-b4fb-0b5e94c6ff12": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Core Platinum",
 "shops": []
 },
@@ -45474,7 +45474,7 @@
 "shops": []
 },
 "3ebf0955-87bb-42eb-9a0a-74b5357f39c5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Greycat Edition",
 "shops": []
 },
@@ -46327,7 +46327,7 @@
 ]
 },
 "3f16bfca-14b1-48a4-bd39-1f50db97b599": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Orange",
 "shops": [
 {
@@ -46338,18 +46338,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -47556,7 +47556,7 @@
 "shops": []
 },
 "3fed2653-885b-4c77-ac54-84544e05de55": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Crusader Edition",
 "shops": []
 },
@@ -47987,11 +47987,11 @@
 "shops": []
 },
 "409def54-f7ff-468c-be29-2a7715091164": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Olive",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2279,
 "s": "Stanton",
@@ -48047,7 +48047,7 @@
 "shops": []
 },
 "40d587f0-3929-4fef-b46b-4c3585f81a2e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 05 Pants Classic",
 "shops": [
 {
@@ -48593,7 +48593,7 @@
 "shops": []
 },
 "4266a145-86ea-4162-8731-b3ef03809b5f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Yellow",
 "shops": [
 {
@@ -48613,7 +48613,7 @@
 ]
 },
 "42681059-b715-4690-8d48-25bd830962a8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Core Executive",
 "shops": []
 },
@@ -48791,7 +48791,7 @@
 ]
 },
 "42f20a21-f22b-4303-baca-d36ad7878aff": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mercury Star Runner Flight Jacket",
 "shops": []
 },
@@ -49496,7 +49496,7 @@
 "shops": []
 },
 "43b3e729-5fb2-4396-a9d7-02b7ab9e6844": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core",
 "shops": [
 {
@@ -49507,6 +49507,13 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3200,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 3200,
@@ -49514,25 +49521,18 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3200,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3207,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3207,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3207,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -49555,7 +49555,7 @@
 "shops": []
 },
 "43ca5bd7-4b6c-4b0f-aefe-53e2bb6b765f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Performance T-Shirt",
 "shops": []
 },
@@ -49852,7 +49852,7 @@
 "shops": []
 },
 "444728ec-27d8-449c-aa81-8aba0d2db4b4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Crusader Edition",
 "shops": []
 },
@@ -50306,7 +50306,7 @@
 ]
 },
 "446addf8-d821-4edb-a269-1da2d9caacd6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Black",
 "shops": [
 {
@@ -50827,7 +50827,7 @@
 ]
 },
 "457f27cb-80a9-419f-b230-7c1a8fbfa033": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants Olive",
 "shops": [
 {
@@ -50955,7 +50955,7 @@
 "shops": []
 },
 "45df29fe-8932-40f1-843e-c0e2ce8371ae": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet RSI Edition (Modified)",
 "shops": []
 },
@@ -51272,7 +51272,7 @@
 ]
 },
 "4636c4de-6f00-4197-a0d8-0fab36761e94": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Sienna",
 "shops": []
 },
@@ -51799,7 +51799,7 @@
 ]
 },
 "4670540c-7d6a-47d4-bb92-c5709b67be05": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Helmet",
 "shops": []
 },
@@ -51901,7 +51901,7 @@
 ]
 },
 "46cfe7f3-410c-4923-9461-3d0cd8b5a19b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Sienna",
 "shops": [
 {
@@ -51912,18 +51912,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -52020,7 +52020,7 @@
 ]
 },
 "46f303ef-6d23-42ae-bcd2-f42867677216": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Purple",
 "shops": [
 {
@@ -52031,7 +52031,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 584,
 "s": "Stanton",
@@ -52254,7 +52254,7 @@
 "shops": []
 },
 "47bbf85b-5063-4238-871e-6c757b2e4a65": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Cry-Astro Edition",
 "shops": []
 },
@@ -52497,7 +52497,7 @@
 ]
 },
 "47fcf5a3-c00d-4a75-906b-0183f1aa32e0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket Brown",
 "shops": [
 {
@@ -52522,7 +52522,7 @@
 "shops": []
 },
 "4810a027-0914-4b2f-85c9-87582f63a3d0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Keystone Jacket Taupe",
 "shops": []
 },
@@ -52870,7 +52870,7 @@
 ]
 },
 "486d2684-a5f6-4146-bf6c-e72876f08ff7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Shirt Blue",
 "shops": []
 },
@@ -53467,7 +53467,7 @@
 "shops": []
 },
 "497606c0-7367-47df-8d12-d4a921bac524": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Executive",
 "shops": []
 },
@@ -53911,7 +53911,7 @@
 "shops": []
 },
 "4a72f7c9-745d-4b22-b233-2b11bc22bb5d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket White",
 "shops": [
 {
@@ -53936,11 +53936,18 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3396,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -53948,13 +53955,6 @@
 "p": 3396,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3396,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -53969,7 +53969,7 @@
 "shops": []
 },
 "4a8738c7-c9dc-4e35-b8d6-05ed5c891812": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Sinkhole Backpack",
 "shops": [
 {
@@ -54057,6 +54057,13 @@
 "t": "Shop Terminal - Kabir's Post"
 },
 {
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 1881,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
+},
+{
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
 "p": 1881,
@@ -54097,13 +54104,6 @@
 "p": 1881,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 1881,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -54456,7 +54456,7 @@
 ]
 },
 "4b47b36c-eff7-48c2-ab02-fc7536f3d2b7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Sakura Sun Edition",
 "shops": []
 },
@@ -54575,7 +54575,7 @@
 "shops": []
 },
 "4b81eda7-ceba-45a5-ae78-361bddf2e05e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Greenwater Shirt Iron",
 "shops": []
 },
@@ -54721,7 +54721,7 @@
 "shops": []
 },
 "4bb0c6a8-add3-4b66-ad44-d63fac24ad6d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Keystone Jacket Silver",
 "shops": [
 {
@@ -54734,12 +54734,12 @@
 ]
 },
 "4bc3c1c6-4a23-41d1-a4c0-9f40786d8631": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Imperial",
 "shops": []
 },
 "4bd0e1d1-57dc-4672-9ef3-838cef1ec26f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Performance T-Shirt",
 "shops": []
 },
@@ -54926,7 +54926,7 @@
 "shops": []
 },
 "4ceb0ca3-1ebd-41be-a5ff-bd1e57db89c0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "RangeFinder Jacket Aqua",
 "shops": []
 },
@@ -54949,7 +54949,7 @@
 ]
 },
 "4cf3f9b9-4de9-41e2-bf33-3db65123cb7f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Crusader Edition",
 "shops": []
 },
@@ -55152,7 +55152,7 @@
 "shops": []
 },
 "4d397ebd-29ac-4c32-84bc-d41ec06404f4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants Khaki",
 "shops": []
 },
@@ -55940,7 +55940,7 @@
 "shops": []
 },
 "4e7b8533-a5cb-4821-b007-2c6b8bf1a488": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Dark Green",
 "shops": [
 {
@@ -55958,25 +55958,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1559,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -56063,7 +56063,7 @@
 ]
 },
 "4e897f93-9733-402c-ac76-a17a42547d00": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Hazard Helmet",
 "shops": []
 },
@@ -56224,7 +56224,7 @@
 "shops": []
 },
 "4ef3c42b-1993-4776-adbe-97a32785760e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Sienna",
 "shops": [
 {
@@ -56847,11 +56847,11 @@
 "shops": []
 },
 "4f7dae90-0366-431c-9f65-79b17f571512": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -56865,18 +56865,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -57683,7 +57683,7 @@
 ]
 },
 "5093dd01-c276-4fe0-a966-347443bab6c7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Executive",
 "shops": []
 },
@@ -57861,7 +57861,7 @@
 "shops": []
 },
 "5172964d-7d58-4339-841c-5a4eebfef9d8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Performance T-Shirt",
 "shops": []
 },
@@ -58667,7 +58667,7 @@
 "shops": []
 },
 "534caecf-9f27-4ef4-a1f2-177995e95e20": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Cry-Astro Edition",
 "shops": []
 },
@@ -58821,7 +58821,7 @@
 "shops": []
 },
 "53a6ae6f-5113-4325-920f-b3681bcd0ebc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Grey",
 "shops": []
 },
@@ -58962,7 +58962,7 @@
 ]
 },
 "53dd1aa3-74c4-487f-90ba-7c2c8eeb6abb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Roughneck Pants",
 "shops": [
 {
@@ -60411,7 +60411,7 @@
 "shops": []
 },
 "54688289-a2ff-4eca-a22c-62ade17ce1c6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Sienna",
 "shops": [
 {
@@ -60501,7 +60501,7 @@
 "shops": []
 },
 "54d3bbea-24d7-44b2-9bc1-7f0034c83116": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Covalex Edition",
 "shops": []
 },
@@ -60683,7 +60683,7 @@
 ]
 },
 "5513c5e9-b4e8-47d8-831f-97f35b7d7c2b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Grey",
 "shops": []
 },
@@ -60755,7 +60755,7 @@
 "shops": []
 },
 "5557b02e-d6c1-4b59-b1dd-8069f7ef15a6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants Olive",
 "shops": []
 },
@@ -61963,7 +61963,7 @@
 "shops": []
 },
 "56135181-441b-4fc9-be12-5d2a3abe4294": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Desert",
 "shops": []
 },
@@ -62033,7 +62033,7 @@
 "shops": []
 },
 "565946ca-0722-4545-b882-0b6563eea3f8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Sienna",
 "shops": []
 },
@@ -62144,7 +62144,7 @@
 "shops": []
 },
 "5678c265-729d-4963-87a2-660d558d5c95": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Black",
 "shops": [
 {
@@ -62169,7 +62169,7 @@
 "shops": []
 },
 "5687180c-e590-4d7d-9d61-fbf0ce7f238f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ridgely Jacket Wavelength",
 "shops": [
 {
@@ -62446,7 +62446,7 @@
 ]
 },
 "568b97c6-8474-4b13-9d9a-a15fee167c62": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms White",
 "shops": [
 {
@@ -62464,32 +62464,32 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 584,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 584,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -62709,11 +62709,39 @@
 "shops": []
 },
 "572580a2-c164-4f99-beaa-d71cd1bd99a7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "FullFrost",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 32000,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 32000,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 32000,
+"s": "Stanton",
+"t": "Platinum Bay - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 32000,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L4"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 32000,
 "s": "Stanton",
@@ -62732,34 +62760,6 @@
 "p": 32000,
 "s": "Stanton",
 "t": "Platinum Bay - Pyro Gateway (Stanton)"
-},
-{
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 32000,
-"s": "Stanton",
-"t": "Platinum Bay - HUR-L2"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 32000,
-"s": "Stanton",
-"t": "Platinum Bay - CRU-L4"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 32000,
-"s": "Stanton",
-"t": "Platinum Bay - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 32000,
-"s": "Stanton",
-"t": "Platinum Bay - Baijini Point"
 },
 {
 "d": "2026-08-29",
@@ -62858,7 +62858,7 @@
 "shops": []
 },
 "5748cdbc-5a26-477a-a4ad-b20a593bde59": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Glacier",
 "shops": []
 },
@@ -62878,7 +62878,7 @@
 "shops": []
 },
 "57637d2b-a480-4c22-8fd8-f9964f0c9088": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "The Butcher Helmet",
 "shops": [
 {
@@ -63097,12 +63097,12 @@
 ]
 },
 "57b6c0d2-23a4-4962-9712-ea488182b030": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Olive",
 "shops": []
 },
 "57bea4cf-d6ab-45ae-82af-e44a0e577745": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Undersuit Blue",
 "shops": []
 },
@@ -63158,7 +63158,7 @@
 "shops": []
 },
 "57df0c92-4f29-4fb5-a6b4-9980fa81c90e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Imperial",
 "shops": [
 {
@@ -63169,18 +63169,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -63249,7 +63249,7 @@
 "shops": []
 },
 "5825831c-7158-4300-81da-6520e384bd06": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Hardy Boots",
 "shops": [
 {
@@ -63318,7 +63318,7 @@
 ]
 },
 "582d09b8-76df-4e87-8a57-f60a1fd0ec49": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Prestige MISC Racing Jacket",
 "shops": []
 },
@@ -63328,7 +63328,7 @@
 "shops": []
 },
 "5831f7ee-1eca-46e5-a231-70380178773b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 05 Pants Spring",
 "shops": [
 {
@@ -63713,7 +63713,7 @@
 "shops": []
 },
 "58f93ac5-24c5-4e87-a016-0622938bc869": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Cap Red",
 "shops": []
 },
@@ -64043,22 +64043,22 @@
 "shops": []
 },
 "59d58bc0-e998-4ff1-8709-5ee0ef44d355": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Dark Red",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1559,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1559,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -64615,7 +64615,7 @@
 "shops": []
 },
 "5a8a85c8-aa4f-423d-bb89-4348ecfcf736": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cardona Jacket Carmine",
 "shops": [
 {
@@ -65291,7 +65291,7 @@
 ]
 },
 "5b00ebda-fb53-4c21-8c08-4a7fc1c74a0c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Crusader Edition",
 "shops": []
 },
@@ -65493,7 +65493,7 @@
 "shops": []
 },
 "5b588435-e363-42ca-8bf5-951af4e8be72": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Dark Red",
 "shops": [
 {
@@ -65504,25 +65504,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1053,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -65767,7 +65767,7 @@
 "shops": []
 },
 "5bad52f0-3c9e-40b1-b624-74cad3f5936c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Crusader Edition",
 "shops": []
 },
@@ -65823,7 +65823,7 @@
 "shops": []
 },
 "5c007fa0-4354-47c6-b1e3-03c9fd9d2be3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Ascension\" Backpack",
 "shops": []
 },
@@ -66779,7 +66779,7 @@
 "shops": []
 },
 "5d57c2bd-3b1a-4eb1-b4fc-cb284d7ccae5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket CFP",
 "shops": []
 },
@@ -67122,7 +67122,7 @@
 ]
 },
 "5e0efbc9-a766-4f8f-ba7d-ac2fe52b619c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Greycat Edition",
 "shops": []
 },
@@ -67154,7 +67154,7 @@
 ]
 },
 "5e1f9272-492c-45dd-a57c-b2aaa22676a7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Black",
 "shops": [
 {
@@ -67167,7 +67167,7 @@
 ]
 },
 "5e2ed1ce-cc7b-4be5-9e96-cbac2fea76a9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Omnitrek Jacket",
 "shops": []
 },
@@ -67182,9 +67182,23 @@
 "shops": []
 },
 "5e5e363e-2ae2-455f-8062-49189906fdc9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Gelid",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 35200,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 35200,
+"s": "Stanton",
+"t": "Platinum Bay - Nyx Gateway (Stanton)"
+},
 {
 "d": "2026-10-31",
 "l": "Terra Gateway",
@@ -67198,20 +67212,6 @@
 "p": 35200,
 "s": "Stanton",
 "t": "Platinum Bay - Pyro Gateway (Stanton)"
-},
-{
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 35200,
-"s": "Stanton",
-"t": "Platinum Bay - HUR-L2"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 35200,
-"s": "Stanton",
-"t": "Platinum Bay - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-08-29",
@@ -67281,16 +67281,16 @@
 "shops": []
 },
 "5e8fcde1-e30f-43b4-937b-ddf404adc8dd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Wikelo Emporium Jacket",
 "shops": []
 },
 "5e9b758a-6189-4190-ba21-9e8fd258f3e7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Dark Green",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 890,
 "s": "Stanton",
@@ -67356,11 +67356,11 @@
 "shops": []
 },
 "5ec336b7-9a12-4ad1-91fd-4302c0b55128": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Autumn",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 851,
 "s": "Stanton",
@@ -67551,7 +67551,7 @@
 "shops": []
 },
 "5f139f83-a414-4e85-88fd-7c177213f530": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Aqua",
 "shops": [
 {
@@ -67562,25 +67562,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 584,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -67613,7 +67613,7 @@
 ]
 },
 "5f2aedcb-486c-4e60-8dcb-976816c736f2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit Deadwood (Refurbished)",
 "shops": [
 {
@@ -67857,7 +67857,7 @@
 "shops": []
 },
 "5f6f389e-1f32-4e81-88c2-466bdbd5df55": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Core Justified",
 "shops": []
 },
@@ -67985,7 +67985,7 @@
 "shops": []
 },
 "5fcc0203-a02e-4e44-bfe0-dbf6b089fff0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Expo\" Exploration Suit",
 "shops": []
 },
@@ -68088,7 +68088,7 @@
 "shops": []
 },
 "5ffb1abc-c4ed-4413-b882-ccd848ca09a2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ultra-Flow",
 "shops": [
 {
@@ -68428,7 +68428,7 @@
 ]
 },
 "61048224-f5c9-4c6f-94d2-38cd39e086da": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Sienna",
 "shops": [
 {
@@ -68446,18 +68446,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -68825,7 +68825,7 @@
 "shops": []
 },
 "61a5bb90-aad2-4cb5-ac61-8e360924bb38": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Performance T-Shirt (Modified)",
 "shops": []
 },
@@ -68835,7 +68835,7 @@
 "shops": []
 },
 "61ab724d-269e-4056-8ccf-17f3f4bd567e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs (Modified)",
 "shops": []
 },
@@ -68902,7 +68902,7 @@
 "shops": []
 },
 "61e84df8-0cfe-4be7-8eb1-2faa25996714": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Blue",
 "shops": []
 },
@@ -68945,7 +68945,7 @@
 "shops": []
 },
 "621b11aa-8e95-4536-a40a-5792e7abbc5e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Gloves Graphite",
 "shops": []
 },
@@ -68996,12 +68996,12 @@
 "shops": []
 },
 "6235c5cd-097b-420a-bc9e-0c8b924720f0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Sandstorm Edition",
 "shops": []
 },
 "624585d4-a288-40a9-a2ee-37d9996e217c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Grey",
 "shops": [
 {
@@ -69019,32 +69019,32 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -69353,22 +69353,22 @@
 "shops": []
 },
 "62bb2ac1-d1e5-44e4-a0d0-1e66badaab59": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Lorber Shoes",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 250,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 250,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 250,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -69574,7 +69574,7 @@
 "shops": []
 },
 "62f7b4b0-7737-46a8-9dc6-446ad0dd66e6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Aqua",
 "shops": []
 },
@@ -69599,7 +69599,7 @@
 "shops": []
 },
 "63101831-4900-4a61-9f90-9fea0679f138": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Orange",
 "shops": [
 {
@@ -70061,7 +70061,7 @@
 "shops": []
 },
 "63adf032-98af-41fe-a4bd-34be9cc66a83": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Yellow",
 "shops": [
 {
@@ -70507,7 +70507,7 @@
 ]
 },
 "63de3464-11ee-45df-bc7c-1ef4df879a91": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Greycat Edition",
 "shops": []
 },
@@ -70782,7 +70782,7 @@
 "shops": []
 },
 "64e04605-9152-4a69-8fbe-6bebd2c8bcd4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Dark Green",
 "shops": [
 {
@@ -70793,18 +70793,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1053,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1053,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -71007,7 +71007,7 @@
 "shops": []
 },
 "653342e1-8196-4ccb-ad2c-4567c71759e1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "GCD-Army Legs",
 "shops": []
 },
@@ -71201,11 +71201,11 @@
 "shops": []
 },
 "657d2013-11e3-4703-b7e9-0cf841d77e2d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Aqua",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2279,
 "s": "Stanton",
@@ -71219,18 +71219,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -71308,7 +71308,7 @@
 "shops": []
 },
 "65cfb9a4-e98a-4aba-8bc7-3a3d08d41f2b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Seagreen",
 "shops": [
 {
@@ -71319,18 +71319,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3207,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3207,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3207,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -71340,7 +71340,7 @@
 "shops": []
 },
 "65d8cbde-ba26-45c1-8da3-5bc5dc199e20": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Aqua",
 "shops": []
 },
@@ -71510,7 +71510,7 @@
 "shops": []
 },
 "665e7556-3173-48b7-a3ff-48430cff16db": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Dark Green",
 "shops": [
 {
@@ -71535,25 +71535,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3200,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -72665,7 +72665,7 @@
 ]
 },
 "67985f0c-9d48-44f6-ab8c-ea9ba38b211a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Woodland",
 "shops": [
 {
@@ -72683,25 +72683,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2680,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2686,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2686,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2686,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -72711,7 +72711,7 @@
 "shops": []
 },
 "679f5a5b-2ad8-49d1-933f-c9668be38129": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "2956 Best in Show Bomber Jacket",
 "shops": []
 },
@@ -72854,7 +72854,7 @@
 "shops": []
 },
 "68007094-1e33-4cc2-bb04-361c76cdb8f2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Siebe Helmet Thundercloud",
 "shops": [
 {
@@ -73593,7 +73593,7 @@
 "shops": []
 },
 "6909c564-75b1-4b76-8673-efec8e7c3374": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Grey",
 "shops": [
 {
@@ -73611,32 +73611,32 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1288,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1288,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -74141,7 +74141,7 @@
 ]
 },
 "69e83c93-c4bc-4aba-8ec7-f9a786727ce0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Sakura Sun Edition",
 "shops": []
 },
@@ -74519,7 +74519,7 @@
 ]
 },
 "6a717799-51a3-48ec-bded-917b870216f6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CSR-RP",
 "shops": []
 },
@@ -75223,12 +75223,12 @@
 "shops": []
 },
 "6b89d308-07cb-4500-9f73-5495acf99022": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Scorched",
 "shops": []
 },
 "6b8a0f0e-a370-4aa7-a5ab-e8b70fc7e450": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Desert",
 "shops": [
 {
@@ -75237,6 +75237,20 @@
 "p": 3040,
 "s": "Stanton",
 "t": "Armor - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3200,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-10-31",
@@ -75251,20 +75265,6 @@
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3200,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-09-11",
@@ -75779,7 +75779,7 @@
 "shops": []
 },
 "6c9954ef-7fae-48aa-806e-42cf41bd7f20": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Sand",
 "shops": [
 {
@@ -76146,12 +76146,12 @@
 ]
 },
 "6cd07586-9492-4731-8869-7166f995e11c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "H4-PBF Ammo Carrier",
 "shops": []
 },
 "6cde2140-e233-44f1-88a8-8af1690263ce": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Twilight",
 "shops": [
 {
@@ -76189,7 +76189,7 @@
 "shops": []
 },
 "6cf5606f-6a40-4a9a-b9bc-8fc60bac0589": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Helmet Graphite",
 "shops": []
 },
@@ -76369,7 +76369,7 @@
 "shops": []
 },
 "6d7bb7cd-ad17-4711-98cb-df29fcd04d11": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Helmet Woodland",
 "shops": []
 },
@@ -77580,12 +77580,12 @@
 ]
 },
 "6edb6cce-863e-4b25-ae08-63d27fe4ecad": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Granite Edition",
 "shops": []
 },
 "6ee8024f-13b5-48b5-81ae-ddbe65ca3bfc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants Charcoal",
 "shops": [
 {
@@ -77610,7 +77610,7 @@
 "shops": []
 },
 "6eec764f-f5df-4760-90bc-594c8c16fa86": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack",
 "shops": [
 {
@@ -77626,6 +77626,13 @@
 "p": 8105,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 8531,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-16",
@@ -77647,13 +77654,6 @@
 "p": 8531,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 8531,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-03",
@@ -77691,7 +77691,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 8531,
 "s": "Nyx",
@@ -79192,11 +79192,11 @@
 "shops": []
 },
 "7057209c-1430-44c1-a5c5-02b433701058": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Field Recon Suit Arms",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 493,
 "s": "Stanton",
@@ -79224,7 +79224,21 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 579,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 579,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 579,
 "s": "Stanton",
@@ -79266,20 +79280,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 579,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 579,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-08",
 "l": "ARC-L4 Faint Glen Station",
 "p": 579,
@@ -79287,18 +79287,18 @@
 "t": "Armor - ARC-L4"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 581,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 581,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 581,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -79351,7 +79351,7 @@
 ]
 },
 "70584358-a029-422b-bf5f-23d39c3629cb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Armor SteelTek",
 "shops": []
 },
@@ -79612,22 +79612,22 @@
 "shops": []
 },
 "70be6209-58ab-4e7f-927d-5d6f2755f168": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Aqua",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1626,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1626,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1626,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-08-31",
@@ -80122,7 +80122,7 @@
 ]
 },
 "711208e1-0378-42f3-a503-cdac8ee56e31": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit",
 "shops": [
 {
@@ -80133,18 +80133,18 @@
 "t": "FPS Armor Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 23120,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 23120,
 "s": "Stanton",
 "t": "FPS Armor Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 23120,
-"s": "Stanton",
-"t": "FPS Armor Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -80229,9 +80229,16 @@
 "shops": []
 },
 "71496f52-dc9b-481f-841c-5f02b560ac02": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Yellow",
 "shops": [
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 2675,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
 {
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
@@ -80245,13 +80252,6 @@
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 2675,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -80323,7 +80323,7 @@
 "shops": []
 },
 "71657a75-3fb0-49ac-8cea-6ab010366dfb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet RSI Ivory Edition",
 "shops": []
 },
@@ -80821,7 +80821,7 @@
 "shops": []
 },
 "7217e929-f89a-4f91-9a14-1fbd0cbd7a53": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Backpack RSI Ivory Edition",
 "shops": []
 },
@@ -81624,7 +81624,7 @@
 ]
 },
 "72b8d295-fcbd-45ae-a155-389ecdae8c3c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Yellow",
 "shops": [
 {
@@ -81635,18 +81635,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -83576,7 +83576,7 @@
 ]
 },
 "7415bc2b-5554-4222-977d-a88b1e3f2837": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Cry-Astro Edition",
 "shops": []
 },
@@ -83662,7 +83662,7 @@
 "shops": []
 },
 "743be4e4-f6d3-41d1-aec9-c5880520eb97": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Red",
 "shops": [
 {
@@ -83673,32 +83673,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -84391,7 +84391,7 @@
 "shops": []
 },
 "750ab5dc-ebea-46ec-a880-8a9498ce7198": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stitcher Legs",
 "shops": [
 {
@@ -84701,7 +84701,7 @@
 "shops": []
 },
 "752dbb5f-e8b2-4dbb-82b5-3b3ef5b120e0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Tungsten Edition",
 "shops": []
 },
@@ -85343,7 +85343,7 @@
 "shops": []
 },
 "75dad1b1-17ed-4a00-a420-ced2b36f6cdf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Rokmor Suit Jacket",
 "shops": [
 {
@@ -86070,7 +86070,7 @@
 "shops": []
 },
 "779f9ff9-f023-47ee-9004-113d8183d284": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Omnitrek Jacket Sandbar",
 "shops": []
 },
@@ -87218,7 +87218,7 @@
 "shops": []
 },
 "794f3335-8fa6-4a8d-aa88-de7ff608b889": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Invictus Flight Jacket",
 "shops": []
 },
@@ -87348,7 +87348,7 @@
 "shops": []
 },
 "79cc1609-86aa-428b-8763-64defc51302f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Tan",
 "shops": [
 {
@@ -87623,7 +87623,7 @@
 ]
 },
 "7a568db7-76bd-46f9-9125-e80e3e35ef76": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Blue",
 "shops": [
 {
@@ -87661,7 +87661,7 @@
 "shops": []
 },
 "7a84d329-ec99-420b-8a40-3d6521e5602e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Blue",
 "shops": [
 {
@@ -88094,7 +88094,7 @@
 "shops": []
 },
 "7b5b3053-c65b-4e2f-82ca-94a1832b8547": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mountaintop Jacket Neutral",
 "shops": [
 {
@@ -88107,7 +88107,7 @@
 ]
 },
 "7b5c4a78-e680-42ee-9aa8-266ab4ba8060": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Cry-Astro Edition",
 "shops": []
 },
@@ -88117,7 +88117,7 @@
 "shops": []
 },
 "7b620f81-b65d-4242-a6a8-56e668fd43ee": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Black/Grey",
 "shops": [
 {
@@ -88130,7 +88130,7 @@
 ]
 },
 "7b64fb12-e2f5-4adb-a449-76a57c8434bf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Astley Pants Black",
 "shops": []
 },
@@ -88312,7 +88312,7 @@
 "shops": []
 },
 "7bc2c62b-4278-4349-89dd-22354c531496": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Twilight",
 "shops": []
 },
@@ -88546,7 +88546,7 @@
 ]
 },
 "7c3ca522-2dc3-4ad2-9cca-c2f87f2d4174": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Expo\" Backpack",
 "shops": []
 },
@@ -88770,7 +88770,7 @@
 "shops": []
 },
 "7cfd4d7c-66c0-48a6-8db2-0b7c60d81add": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Carbide Jacket Buckthorn",
 "shops": [
 {
@@ -88934,7 +88934,7 @@
 "shops": []
 },
 "7d30bd19-ae8f-4415-bdca-7202901387ea": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Imperial",
 "shops": [
 {
@@ -88952,18 +88952,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -90608,27 +90608,27 @@
 ]
 },
 "7da789ac-8865-4bbc-a6cd-b6cea65e6933": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Greycat Edition",
 "shops": []
 },
 "7daa0c89-f14e-4cb9-ae4c-411332ebcaf9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Red",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -90772,7 +90772,7 @@
 "shops": []
 },
 "7de8c10f-ec20-4044-9e01-2229ab9bce99": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PYAM Supervisor Keycard",
 "shops": []
 },
@@ -91031,7 +91031,7 @@
 "shops": []
 },
 "7ec912bd-9b83-40ea-9f5d-9067d535b207": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Hurston Edition",
 "shops": []
 },
@@ -91472,7 +91472,7 @@
 "shops": []
 },
 "7f32cfb7-57d5-4d33-af9b-ee69d9161a80": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "RangeFinder Jacket Sandstone",
 "shops": []
 },
@@ -91816,7 +91816,7 @@
 ]
 },
 "7fac7127-200f-4152-bed5-2b7362981d75": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Executive",
 "shops": []
 },
@@ -91898,7 +91898,7 @@
 "shops": []
 },
 "7fde8c0e-cf97-4f01-8926-bf4915d9ae48": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs (XenoThreat v2)",
 "shops": []
 },
@@ -91952,7 +91952,7 @@
 "shops": []
 },
 "80056f51-1cbc-4339-90b1-ce8826bd6751": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kaswal Jacket Taupe",
 "shops": [
 {
@@ -92371,7 +92371,7 @@
 ]
 },
 "80ee3b95-5665-4548-9e2d-d2067895c0ac": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Crusader Edition",
 "shops": []
 },
@@ -92713,7 +92713,7 @@
 "shops": []
 },
 "81471107-53e9-4978-9490-b242d5474f36": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Woodland",
 "shops": [
 {
@@ -92738,6 +92738,20 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3247,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3247,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 3247,
@@ -92745,32 +92759,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3247,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3247,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3254,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3254,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3254,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -92833,7 +92833,7 @@
 "shops": []
 },
 "81719bc1-39d2-4343-9d62-cd0c10b7aecc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Blue",
 "shops": []
 },
@@ -93830,7 +93830,7 @@
 ]
 },
 "81b7daa5-7ce5-401f-aa74-021aef0e31b8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Perth Pants Maroon",
 "shops": []
 },
@@ -94264,7 +94264,7 @@
 ]
 },
 "821aa902-605b-4e1c-9d1b-2a0c9687b021": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Sakura Sun Edition",
 "shops": []
 },
@@ -94466,7 +94466,7 @@
 "shops": []
 },
 "82dac526-dedb-40d6-88cb-a597a82e76ba": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ridgely Jacket Grotto",
 "shops": [
 {
@@ -94830,7 +94830,7 @@
 "shops": []
 },
 "837ab689-2505-4329-bb5a-3a56ea3e24e6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "600i Flight Jacket",
 "shops": []
 },
@@ -94840,7 +94840,7 @@
 "shops": []
 },
 "8393d934-246c-4285-9aab-62062136eea1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Olympian Edition",
 "shops": []
 },
@@ -96299,7 +96299,7 @@
 "shops": []
 },
 "84b54d13-592e-48d8-8f0b-3ea78d467e32": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Twilight",
 "shops": [
 {
@@ -96317,18 +96317,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -96366,7 +96366,7 @@
 "shops": []
 },
 "84c76b3b-7011-4b32-b7b1-1219e2ba8d2d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs Justified",
 "shops": []
 },
@@ -96505,12 +96505,12 @@
 "shops": []
 },
 "852a72e1-d37d-4845-8960-94a74758a58d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Seagreen",
 "shops": []
 },
 "85318886-74c4-484f-80ad-7482d4cea1a1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Imperial",
 "shops": [
 {
@@ -96521,18 +96521,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -96565,7 +96565,7 @@
 ]
 },
 "85339dd1-0333-4d28-b7c5-0864995c26a8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Levin Undersuit Ochre (Refurbished)",
 "shops": []
 },
@@ -96575,7 +96575,7 @@
 "shops": []
 },
 "855aabae-2c59-4a79-9e81-0376f9ddc7f6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack Smolder",
 "shops": []
 },
@@ -96989,7 +96989,7 @@
 ]
 },
 "85f1ce17-dc5b-42f7-bf69-fc879a47517c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Purple",
 "shops": [
 {
@@ -97000,23 +97000,23 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1053,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1053,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
 "85f3bb3f-4902-4427-8529-cc1cb82a2e0e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Covalex Edition",
 "shops": []
 },
@@ -97472,7 +97472,7 @@
 ]
 },
 "868f8e45-f712-48a3-95d3-a4826782ca4a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves Charcoal",
 "shops": [
 {
@@ -97497,11 +97497,11 @@
 "shops": []
 },
 "86968efd-3f2f-460e-947f-10f8d5de22ef": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Dark Green",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2279,
 "s": "Stanton",
@@ -97522,18 +97522,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -98362,7 +98362,7 @@
 "shops": []
 },
 "872dc920-9598-42e4-82fd-31e33f07b676": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "GCD-Army Helmet",
 "shops": []
 },
@@ -98557,7 +98557,7 @@
 "shops": []
 },
 "87bf8c56-c86a-4732-b6b0-51783d174a8c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Orange",
 "shops": [
 {
@@ -98568,32 +98568,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 3200,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 3200,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -98789,7 +98789,7 @@
 "shops": []
 },
 "883d13c8-cd3c-4ada-9851-a2ec83d39bcd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Crusader Edition",
 "shops": []
 },
@@ -99283,7 +99283,7 @@
 "shops": []
 },
 "8904bbde-09dc-4b12-8353-6e452983cf8c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Bellito Shirt",
 "shops": []
 },
@@ -99298,7 +99298,7 @@
 "shops": []
 },
 "8910021e-a2f6-46c9-971f-436e14cc380b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Dark Green",
 "shops": [
 {
@@ -99323,14 +99323,14 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -99379,7 +99379,7 @@
 "shops": []
 },
 "895ed7c8-e6f7-4b25-973e-133f2e6cc114": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs Righteous",
 "shops": []
 },
@@ -99507,7 +99507,7 @@
 "shops": []
 },
 "89f443ed-9358-4f72-a728-f5841c36532c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet RSI Graphite Edition",
 "shops": []
 },
@@ -99530,7 +99530,7 @@
 ]
 },
 "8a24e0e2-7bba-4e95-879d-6c864a6d758a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Black",
 "shops": [
 {
@@ -99548,18 +99548,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -99617,7 +99617,7 @@
 "shops": []
 },
 "8a5e2762-f3ad-4298-8fe8-dbb02322618b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mountaintop Jacket Dune",
 "shops": [
 {
@@ -99630,7 +99630,7 @@
 ]
 },
 "8a5ffcee-61b3-4306-963d-2e3117e8c462": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Seagreen",
 "shops": [
 {
@@ -99641,18 +99641,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 586,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 586,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 586,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -100556,7 +100556,7 @@
 ]
 },
 "8b8d7a88-96b4-49fd-b135-5532c72f8ee0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cardona Jacket Blue",
 "shops": [
 {
@@ -100707,7 +100707,7 @@
 ]
 },
 "8b98c7ca-35a1-4c8e-ad7e-a24eef4d6aab": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket AA Collections",
 "shops": []
 },
@@ -100717,7 +100717,7 @@
 "shops": []
 },
 "8bc00125-5d79-494d-9354-1c0d29048e02": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit RSI Graphite Edition",
 "shops": []
 },
@@ -102764,7 +102764,7 @@
 ]
 },
 "8d06c93a-976c-4038-9d2d-3349427d7dc0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Alignment Blade",
 "shops": []
 },
@@ -102873,7 +102873,7 @@
 "shops": []
 },
 "8d4e342c-5984-44a5-9643-2eb1cdc080d8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Alkaline Edition",
 "shops": []
 },
@@ -103192,7 +103192,7 @@
 ]
 },
 "8dbec337-9a0b-400d-887f-790e53d0b2e2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Shirt Red",
 "shops": []
 },
@@ -103295,7 +103295,7 @@
 "shops": []
 },
 "8e324694-2487-4ac2-83c0-63adea162d6b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Dark Green",
 "shops": [
 {
@@ -103306,18 +103306,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1288,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1288,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 },
 {
 "d": "2026-09-01",
@@ -103658,7 +103658,7 @@
 ]
 },
 "8ebd7671-bd35-49a2-a914-e6e68c2e6431": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Chamar Pants",
 "shops": []
 },
@@ -104276,7 +104276,7 @@
 "shops": []
 },
 "8f17c496-c12b-4f2e-93e2-c7b5c4ce9524": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "H4-PBF Ammo Carrier Snow Camo",
 "shops": []
 },
@@ -104403,7 +104403,7 @@
 ]
 },
 "8f684f3a-c270-42c0-9ffe-eae8e3253659": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Seagreen",
 "shops": [
 {
@@ -104421,7 +104421,7 @@
 "shops": []
 },
 "8f7dfb1e-6f79-4361-838f-fdd5fcc0f493": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Red",
 "shops": [
 {
@@ -104598,7 +104598,7 @@
 "shops": []
 },
 "8fd1742f-d8d6-46bb-a2a6-bf07dd7a5bd6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Woodland",
 "shops": [
 {
@@ -104616,25 +104616,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1559,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1563,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1563,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1563,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -104974,7 +104974,7 @@
 "shops": []
 },
 "906c950f-ec53-4671-8e02-fdfcc5167cdf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Undersuit Teal",
 "shops": []
 },
@@ -105076,7 +105076,7 @@
 "shops": []
 },
 "90a3923f-ba5d-403b-a0e5-c85290a22e1e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet",
 "shops": [
 {
@@ -105087,18 +105087,18 @@
 "t": "FPS Armor Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 26780,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 26780,
 "s": "Stanton",
 "t": "FPS Armor Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 26780,
-"s": "Stanton",
-"t": "FPS Armor Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -106522,7 +106522,7 @@
 ]
 },
 "913ec563-307f-4e5a-88f5-05fe04a4dd6b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Yellow",
 "shops": []
 },
@@ -106606,7 +106606,7 @@
 "shops": []
 },
 "915f57e4-a00b-416f-8c19-e4b88cd071e7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Blue",
 "shops": [
 {
@@ -106617,18 +106617,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -107310,7 +107310,7 @@
 ]
 },
 "91d4c4bd-d197-4da1-b570-27fc18e00dd7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Helmet (XenoThreat v2)",
 "shops": []
 },
@@ -108039,7 +108039,7 @@
 "shops": []
 },
 "924ac206-9122-4584-8682-af7d61f56929": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Helmet",
 "shops": [
 {
@@ -108057,6 +108057,13 @@
 "t": "Cargo Center Supplies - Everus Harbor"
 },
 {
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 11734,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 11734,
@@ -108069,13 +108076,6 @@
 "p": 11734,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-13",
-"l": "Baijini Point",
-"p": 11734,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-09",
@@ -108106,7 +108106,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 11734,
 "s": "Nyx",
@@ -108176,7 +108176,7 @@
 "shops": []
 },
 "925506f1-1c34-498b-81c7-38d93fa939cc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Transistor Edition",
 "shops": []
 },
@@ -108677,11 +108677,11 @@
 ]
 },
 "930b0e7e-3989-48ee-a0e5-12d346932137": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Aqua",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2760,
 "s": "Stanton",
@@ -108915,7 +108915,7 @@
 "shops": []
 },
 "93699fae-dfa4-4c7c-80a0-d50b1ab9fda0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Imperial",
 "shops": [
 {
@@ -108940,14 +108940,14 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
@@ -110694,7 +110694,7 @@
 ]
 },
 "94e46e68-570d-4cc6-abae-a9f719e23786": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Green",
 "shops": [
 {
@@ -110712,18 +110712,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -111082,7 +111082,7 @@
 "shops": []
 },
 "95c5685e-02c3-4730-9bfa-e7b5ea48de1c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Levin Undersuit Electrum (Refurbished)",
 "shops": []
 },
@@ -111714,7 +111714,7 @@
 ]
 },
 "96ce2bcb-ab1c-4125-8be4-91885ef1085e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Armor Stronghold",
 "shops": []
 },
@@ -112409,7 +112409,7 @@
 "shops": []
 },
 "978726a2-90b7-4c93-a4f5-80b25faa5cbf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Scorched",
 "shops": []
 },
@@ -112442,7 +112442,7 @@
 "shops": []
 },
 "97a7bf97-3100-4ba0-ad35-86c9255391f5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Blue",
 "shops": [
 {
@@ -112458,6 +112458,13 @@
 "p": 2542,
 "s": "Stanton",
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-18",
@@ -112481,13 +112488,6 @@
 "t": "Clothing Shop - MIC-L1"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
 "d": "2026-08-28",
 "l": "MIC-L2 Long Forest Station",
 "p": 2675,
@@ -112495,7 +112495,7 @@
 "t": "Clothing Shop - MIC-L2"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 3397,
 "s": "Stanton",
@@ -112523,7 +112523,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -113229,7 +113229,7 @@
 ]
 },
 "983bef68-e1cf-407c-af9e-f3913c870282": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants",
 "shops": [
 {
@@ -114269,22 +114269,22 @@
 ]
 },
 "99202bc9-5db7-4e0d-b8c6-7c038e8053ab": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Red",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -114327,7 +114327,7 @@
 "shops": []
 },
 "99352ead-13f6-4c87-a27c-79835077989d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves White",
 "shops": []
 },
@@ -114957,7 +114957,7 @@
 "shops": []
 },
 "995f29cf-2038-4076-bf74-ab3341a72966": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Core Righteous",
 "shops": []
 },
@@ -114972,7 +114972,7 @@
 "shops": []
 },
 "9978e476-921c-4e4d-9a3e-3692c1943ce6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Hazard Suit",
 "shops": []
 },
@@ -115054,7 +115054,7 @@
 "shops": []
 },
 "99d1661c-6494-4268-8a0d-64ce04b1ca38": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket AA Defense",
 "shops": []
 },
@@ -115214,22 +115214,22 @@
 "shops": []
 },
 "9a1f56b5-5cf2-4755-94a3-3e1d9a8d0efe": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Orange",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -116033,7 +116033,7 @@
 "shops": []
 },
 "9b769a2d-2737-4d70-93c9-719eedc5aa57": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Core SecondWind",
 "shops": []
 },
@@ -116161,7 +116161,7 @@
 ]
 },
 "9beed295-b9e9-4293-b65a-331e919764e1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Alkaline Edition",
 "shops": []
 },
@@ -116438,7 +116438,7 @@
 ]
 },
 "9c480668-5132-45a8-887a-91ca8a156c4c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket Blue",
 "shops": []
 },
@@ -116477,7 +116477,7 @@
 ]
 },
 "9c6305c4-cff5-4b65-b4ff-2c699c481e25": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Violet",
 "shops": []
 },
@@ -116550,7 +116550,7 @@
 "shops": []
 },
 "9c8ac38c-3614-4711-9c30-74f91abf6057": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mercury Gloves (Modified)",
 "shops": []
 },
@@ -116560,7 +116560,7 @@
 "shops": []
 },
 "9ca55e72-6065-40a7-9092-5495ff19f2bb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Arms Exec",
 "shops": []
 },
@@ -116580,7 +116580,7 @@
 "shops": []
 },
 "9cecfdb3-c7e8-4b19-a2b6-fdd3d0f8eba9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Dark Green",
 "shops": [
 {
@@ -116591,18 +116591,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 584,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 584,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -116612,7 +116612,7 @@
 "shops": []
 },
 "9d17991a-4f2b-4521-87a2-3b7d4e90bf94": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "LeMarque Pants",
 "shops": [
 {
@@ -116621,6 +116621,20 @@
 "p": 357,
 "s": "Stanton",
 "t": "Casaba Outlet - Everus Harbor"
+},
+{
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 375,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 375,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -116635,13 +116649,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 375,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -116663,13 +116670,6 @@
 "p": 375,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 375,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -116860,7 +116860,7 @@
 "shops": []
 },
 "9d8876f0-95da-4ed5-a70b-0febf3eba61b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Rhodes Jacket (Modified)",
 "shops": []
 },
@@ -117719,7 +117719,7 @@
 "shops": []
 },
 "9e167a65-fa52-44c4-8cd7-ed01542edf6e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Ammo Carrier Stronghold",
 "shops": []
 },
@@ -117729,22 +117729,22 @@
 "shops": []
 },
 "9e2d5873-d585-457c-b7e3-44438fb3a2b9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Violet",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1559,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1559,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -118239,7 +118239,7 @@
 "shops": []
 },
 "9f88dd1f-8e47-4104-98e6-be0bdd2b5c06": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Levin Undersuit Limelight (Refurbished)",
 "shops": []
 },
@@ -118486,7 +118486,7 @@
 "shops": []
 },
 "9fe29632-ec8c-4748-b906-865278d00c6b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Blue",
 "shops": []
 },
@@ -118717,7 +118717,7 @@
 "shops": []
 },
 "a0f45272-8dcd-45b7-850a-ed4160d435c6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kaswal Jacket Iron",
 "shops": [
 {
@@ -119157,7 +119157,7 @@
 "shops": []
 },
 "a15e8a38-f90c-47e8-b68c-c81a700c47a5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Helmet Snow Camo",
 "shops": []
 },
@@ -119512,7 +119512,7 @@
 ]
 },
 "a2049dec-d59c-4b66-9cce-df6cd68bd5c7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Olive",
 "shops": [
 {
@@ -119523,18 +119523,18 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 2675,
+"s": "Stanton",
+"t": "Clothing Shop - MIC-L1"
+},
+{
 "d": "2026-10-18",
 "l": "MIC-L5 Modern Icarus Station",
 "p": 2675,
 "s": "Stanton",
 "t": "Clothing Shop - MIC-L5"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 2675,
-"s": "Stanton",
-"t": "Clothing Shop - MIC-L1"
 },
 {
 "d": "2026-08-28",
@@ -119576,7 +119576,7 @@
 ]
 },
 "a21e7b95-f7f1-4634-9d45-348edfda3d1a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants (Modified)",
 "shops": []
 },
@@ -119586,7 +119586,7 @@
 "shops": []
 },
 "a22fde95-6b3e-44b5-8bb1-ccebe8916ad3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Dark Red",
 "shops": []
 },
@@ -120118,7 +120118,7 @@
 "shops": []
 },
 "a32d3418-e09a-4715-90fd-80ea7e521070": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Red Alert",
 "shops": []
 },
@@ -120158,7 +120158,7 @@
 "shops": []
 },
 "a3509d0d-e42f-42aa-a3c3-b1e186e58821": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Tan",
 "shops": [
 {
@@ -120178,7 +120178,7 @@
 ]
 },
 "a35400a7-cd40-423a-beec-8115df104445": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Keystone Jacket Gold",
 "shops": []
 },
@@ -120770,7 +120770,7 @@
 ]
 },
 "a4dbc3a2-4294-4c90-b496-87ca955837f9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kaswal Jacket Pine",
 "shops": []
 },
@@ -121127,7 +121127,7 @@
 "shops": []
 },
 "a514dfdf-fe27-4921-87ef-81b47b49b844": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Seagreen",
 "shops": [
 {
@@ -121138,18 +121138,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -121209,7 +121209,7 @@
 ]
 },
 "a52245d7-a95e-46d5-a933-32267371e156": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Avalanche",
 "shops": []
 },
@@ -121453,7 +121453,7 @@
 ]
 },
 "a5d7a9ee-7d85-467b-afbf-1ff8d74b3f22": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Helmet SteelTek",
 "shops": []
 },
@@ -121540,7 +121540,7 @@
 ]
 },
 "a60fcc9c-89e2-4222-a227-114e33960bf6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Astley Pants Sunset",
 "shops": []
 },
@@ -122277,7 +122277,7 @@
 "shops": []
 },
 "a6b4604a-358b-4ee7-8c0f-f3f43427154d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adze",
 "shops": []
 },
@@ -122441,7 +122441,7 @@
 "shops": []
 },
 "a723b4e0-f764-4fa2-89d8-b5ec82f749d3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Green",
 "shops": [
 {
@@ -122459,6 +122459,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-19",
+"l": "ARC-L5 Yellow Core Station",
+"p": 2675,
+"s": "Stanton",
+"t": "Clothing Shop - ARC-L5"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 2675,
@@ -122471,13 +122478,6 @@
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-09-10",
-"l": "ARC-L5 Yellow Core Station",
-"p": 2675,
-"s": "Stanton",
-"t": "Clothing Shop - ARC-L5"
 },
 {
 "d": "2026-09-09",
@@ -122501,14 +122501,14 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -122822,7 +122822,7 @@
 "shops": []
 },
 "a7af4686-ac14-4b58-8d18-3bd6d2ae6ad2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Dark Red",
 "shops": [
 {
@@ -122854,7 +122854,7 @@
 "t": "Casaba Outlet - HUR-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -122863,11 +122863,11 @@
 ]
 },
 "a7b17816-d8ba-4795-8c59-64413227ce29": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Purple",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1559,
 "s": "Stanton",
@@ -122876,7 +122876,7 @@
 ]
 },
 "a7c713dc-b6d5-4fe7-a19f-ff50fd1a5c0d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Green",
 "shops": [
 {
@@ -122894,7 +122894,7 @@
 "shops": []
 },
 "a7d9d23d-be2f-4e84-af5a-6d1d34c295d0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stitcher Arms",
 "shops": [
 {
@@ -123379,7 +123379,7 @@
 ]
 },
 "a85f88c8-ad54-4785-9a96-a4c8c84b796c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet ASD Edition",
 "shops": []
 },
@@ -123613,7 +123613,7 @@
 "shops": []
 },
 "a8e77bfb-5882-4b2d-ab97-3067088387d0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Sakura Sun Edition",
 "shops": []
 },
@@ -124889,7 +124889,7 @@
 "shops": []
 },
 "aa1cecfa-f9ce-459f-beb1-4459e381bb83": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Grey",
 "shops": [
 {
@@ -124900,18 +124900,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -124921,7 +124921,7 @@
 "shops": []
 },
 "aa269a17-f49a-42c3-a1ce-6e09048cf029": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Coloma Coat Navy and Sage",
 "shops": []
 },
@@ -125241,7 +125241,7 @@
 ]
 },
 "aa589dc1-2cb7-4c58-9062-4810ad134844": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Grey",
 "shops": [
 {
@@ -125266,32 +125266,32 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1559,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1559,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -125461,11 +125461,11 @@
 ]
 },
 "aa63b636-4870-4470-8507-309a883a4c5c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit Arctic",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 851,
 "s": "Stanton",
@@ -125479,25 +125479,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-16",
-"l": "Port Tressler",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1000,
 "s": "Stanton",
-"t": "Armor - Port Tressler"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1000,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-09-16",
+"l": "Port Tressler",
 "p": 1000,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Port Tressler"
 }
 ]
 },
@@ -126847,7 +126847,7 @@
 "shops": []
 },
 "ac482ff8-7ade-4fd9-9f08-46decffef303": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Horizon",
 "shops": []
 },
@@ -127025,7 +127025,7 @@
 ]
 },
 "acb79b6d-ad70-40c7-918b-5ec9da00284a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Orange",
 "shops": [
 {
@@ -127043,32 +127043,32 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1046,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1046,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -127229,7 +127229,7 @@
 "shops": []
 },
 "ace93f5a-ec11-4a8c-9158-8c4ff5dfaa8d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Greycat Edition",
 "shops": []
 },
@@ -127299,7 +127299,7 @@
 "shops": []
 },
 "ad0434c4-0244-461a-b45a-ee1105153d06": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms White",
 "shops": [
 {
@@ -127310,32 +127310,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1053,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1053,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -127548,7 +127548,7 @@
 "shops": []
 },
 "ad4a47ed-a1c2-43e9-987c-9561d53019df": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms (Modified)",
 "shops": []
 },
@@ -127566,11 +127566,11 @@
 ]
 },
 "ad55fa01-fcde-4ada-9edf-d110cbc40878": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Dark Red",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 497,
 "s": "Stanton",
@@ -127584,18 +127584,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -127807,7 +127807,7 @@
 ]
 },
 "ad7d541d-27b1-4b69-ade2-3d38802066eb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Covalex Edition",
 "shops": []
 },
@@ -128192,7 +128192,7 @@
 "shops": []
 },
 "adeaa62d-2ddf-46b3-baad-44aa7e643dd4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Executive",
 "shops": []
 },
@@ -128392,7 +128392,7 @@
 ]
 },
 "ae2ccd9b-b429-44c2-9112-d4e55f6cf8ca": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves Olive",
 "shops": [
 {
@@ -128509,12 +128509,12 @@
 "shops": []
 },
 "ae883eec-d5ce-480e-b7e7-2b1e36e66086": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "RangeFinder Jacket Gunmetal",
 "shops": []
 },
 "ae8958f2-b753-4891-bacb-8810950e5f07": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "FBL-8u Undersuit SecondWind",
 "shops": []
 },
@@ -128810,7 +128810,7 @@
 "shops": []
 },
 "af8854a4-8fd8-40ea-8316-86d26bda2adb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket AA Transport",
 "shops": []
 },
@@ -128863,7 +128863,7 @@
 ]
 },
 "af97fead-bd65-4aff-b43d-7622bdb71945": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Twilight",
 "shops": []
 },
@@ -128906,7 +128906,7 @@
 "shops": []
 },
 "afcaac97-79a6-4e67-93f4-013a9c9679ef": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs SecondWind",
 "shops": []
 },
@@ -129789,7 +129789,7 @@
 ]
 },
 "b082f5ea-c134-48be-bff3-bfa9a354c1b5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Executive",
 "shops": []
 },
@@ -129909,7 +129909,7 @@
 ]
 },
 "b0d891a5-f143-4793-9c9c-a6957610eed6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Greycat Edition",
 "shops": []
 },
@@ -130100,7 +130100,7 @@
 "shops": []
 },
 "b0f45c33-4fe5-444b-9604-22222a848f0b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Sakura Sun Edition",
 "shops": []
 },
@@ -130870,7 +130870,7 @@
 "shops": []
 },
 "b1a5da75-67bb-417f-85bd-7f97102afa68": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Dark Green",
 "shops": []
 },
@@ -130993,7 +130993,7 @@
 ]
 },
 "b1f48740-6129-4b33-b079-557d217d1d78": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Greenwater Shirt Walnut",
 "shops": []
 },
@@ -131023,7 +131023,7 @@
 "shops": []
 },
 "b2279e37-c5fb-49ab-b008-b32f3c528706": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Eco-Flow",
 "shops": [
 {
@@ -131034,18 +131034,18 @@
 "t": "Platinum Bay - Everus Harbor"
 },
 {
-"d": "2026-11-09",
-"l": "New Babbage",
-"p": 43200,
-"s": "Stanton",
-"t": "Omega Pro - New Babbage"
-},
-{
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 43200,
 "s": "Stanton",
 "t": "Platinum Bay - CRU-L4"
+},
+{
+"d": "2026-11-18",
+"l": "New Babbage",
+"p": 43200,
+"s": "Stanton",
+"t": "Omega Pro - New Babbage"
 }
 ]
 },
@@ -131488,7 +131488,7 @@
 ]
 },
 "b29cf453-505d-4b48-8944-d6deb6205037": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Purple",
 "shops": [
 {
@@ -131499,7 +131499,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1046,
 "s": "Stanton",
@@ -131539,7 +131539,7 @@
 ]
 },
 "b2b6d33d-38fd-4aad-b445-f91d9cf4a6d6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Pine",
 "shops": []
 },
@@ -131574,7 +131574,7 @@
 "shops": []
 },
 "b2e2dfd2-84ed-419d-b38b-8b8f8ee6f263": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms White",
 "shops": [
 {
@@ -131585,32 +131585,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1559,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 1559,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -131760,7 +131760,7 @@
 ]
 },
 "b364b092-7cd2-4f4e-96a9-819bd9d6690c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kaswal Jacket Sand",
 "shops": [
 {
@@ -131949,7 +131949,7 @@
 ]
 },
 "b3ee21ef-a873-464d-a171-61f29cc40239": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Twilight",
 "shops": [
 {
@@ -131960,18 +131960,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -132031,11 +132031,11 @@
 ]
 },
 "b400fde5-495b-47b1-a9d8-210b1d5cb4fd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Legs Woodland",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2223,
 "s": "Stanton",
@@ -132056,6 +132056,27 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 2615,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2615,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2615,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2615,
@@ -132068,27 +132089,6 @@
 "p": 2615,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2615,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2615,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
-"l": "Seraphim Station",
-"p": 2615,
-"s": "Stanton",
-"t": "Armor - Seraphim"
 },
 {
 "d": "2026-09-11",
@@ -132144,7 +132144,7 @@
 "shops": []
 },
 "b418034e-d9e9-43aa-9f43-1b50b85f2883": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Dark Red",
 "shops": []
 },
@@ -132154,11 +132154,11 @@
 "shops": []
 },
 "b42ecd28-d8e0-402e-aaf9-86c4a9d97169": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Legs Woodland",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1095,
 "s": "Stanton",
@@ -132179,6 +132179,13 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
@@ -132186,25 +132193,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -132330,7 +132330,7 @@
 ]
 },
 "b4545643-195c-4b70-977c-55d680ec34c2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet",
 "shops": [
 {
@@ -132357,7 +132357,7 @@
 ]
 },
 "b45986d8-2360-4488-a9df-da6120b87136": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Coloma Coat Sage and Navy",
 "shops": []
 },
@@ -134382,7 +134382,7 @@
 ]
 },
 "b570d867-d9be-4946-acca-a5d785cf06bd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Dark Red",
 "shops": [
 {
@@ -134393,18 +134393,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3200,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3200,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
 }
 ]
 },
@@ -134509,7 +134509,7 @@
 "shops": []
 },
 "b5c3262c-936a-4f82-8b4a-ff97c3d1cafe": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Aqua",
 "shops": [
 {
@@ -134520,25 +134520,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1288,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -134576,11 +134576,11 @@
 "shops": []
 },
 "b5deb872-f379-4a22-b943-44a169fdacfe": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Olive",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1326,
 "s": "Stanton",
@@ -134608,18 +134608,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -135481,7 +135481,7 @@
 ]
 },
 "b60125c7-ce19-4f38-92d3-e39300642510": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Red",
 "shops": []
 },
@@ -136001,7 +136001,7 @@
 "shops": []
 },
 "b61678bc-4b05-4b15-ba60-7fbe22a88caa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 05 Pants Noble",
 "shops": []
 },
@@ -136745,7 +136745,7 @@
 "shops": []
 },
 "b654ca2a-6d3d-4d75-ae91-9d8820845105": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Twilight",
 "shops": [
 {
@@ -136756,18 +136756,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -136928,7 +136928,7 @@
 "shops": []
 },
 "b702cb56-c153-4d3d-bd1f-919bc4e908e7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Orange",
 "shops": []
 },
@@ -138109,7 +138109,7 @@
 ]
 },
 "b7ede6b4-7379-4fb5-9680-ba8c7441ca66": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "MPUV-1C Flight Jacket",
 "shops": []
 },
@@ -139261,7 +139261,7 @@
 "shops": []
 },
 "b8b1992c-11ff-44b4-a381-11ca5a667c89": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Helmet Starchaser Edition",
 "shops": []
 },
@@ -139615,7 +139615,7 @@
 "shops": []
 },
 "b989ed06-0037-4949-b247-603770d2c267": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Undersuit Red",
 "shops": []
 },
@@ -139633,7 +139633,7 @@
 ]
 },
 "b9b8af89-265a-40a8-94a1-bba1340348cf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Invictus Flight Jacket Steel",
 "shops": []
 },
@@ -140047,7 +140047,7 @@
 ]
 },
 "ba835a71-1bdb-4bac-9c59-e7105837ad3f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Tan",
 "shops": [
 {
@@ -140289,7 +140289,7 @@
 "shops": []
 },
 "bb1acaec-70a1-487c-905a-e6ac5de1a680": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 05 Pants Harvest",
 "shops": []
 },
@@ -140366,7 +140366,7 @@
 ]
 },
 "bb55b431-8793-44fc-b5df-f424c6a72f6e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Brick",
 "shops": []
 },
@@ -141593,7 +141593,7 @@
 "shops": []
 },
 "bcd929fd-09e7-4c5d-bf4c-4d4469e9cd93": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Grey",
 "shops": [
 {
@@ -141611,32 +141611,32 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 3200,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 3200,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -142020,7 +142020,7 @@
 ]
 },
 "bd427a2d-81db-47be-95a4-0ab6c4224b6d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves Jade",
 "shops": [
 {
@@ -142145,7 +142145,7 @@
 "shops": []
 },
 "bd7a1487-f335-410a-964d-d612fa689cfb": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Core Black",
 "shops": [
 {
@@ -142170,18 +142170,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 5693,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 5693,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 5693,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -142433,7 +142433,7 @@
 "shops": []
 },
 "be1669d9-4b51-4971-8cbe-6828201c2916": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Dark Red",
 "shops": [
 {
@@ -142444,25 +142444,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1046,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -142937,7 +142937,7 @@
 ]
 },
 "beb6b7e0-d315-431e-8422-ab612d8fd71a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Bello T-Shirt Maroon",
 "shops": []
 },
@@ -143171,11 +143171,11 @@
 ]
 },
 "bef9cd69-24f0-434a-ba7a-2bf751228093": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Arms Woodland",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1293,
 "s": "Stanton",
@@ -143189,25 +143189,25 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-16",
-"l": "Port Tressler",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 1521,
 "s": "Stanton",
-"t": "Armor - Port Tressler"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 1521,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-09-16",
+"l": "Port Tressler",
 "p": 1521,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Port Tressler"
 }
 ]
 },
@@ -143265,7 +143265,7 @@
 "shops": []
 },
 "bf3859ac-bdd7-4b11-95f9-319d3b4eaecc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Green",
 "shops": [
 {
@@ -143514,7 +143514,7 @@
 "shops": []
 },
 "bf9e7f98-fee7-4d17-8588-02238efcb637": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs",
 "shops": [
 {
@@ -143532,6 +143532,20 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1288,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1288,
@@ -143539,32 +143553,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1288,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1291,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1291,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1291,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -143862,7 +143862,7 @@
 "shops": []
 },
 "c00d68ac-b124-474d-aeac-9f5892d458d9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Onyx",
 "shops": []
 },
@@ -144271,7 +144271,7 @@
 ]
 },
 "c0dc8da1-c569-4291-891f-60fd0e6a7f40": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Helmet Justified",
 "shops": []
 },
@@ -144343,7 +144343,7 @@
 ]
 },
 "c1132860-1c02-407c-a600-607bc44d605f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Omnitrek Jacket Frost Point",
 "shops": [
 {
@@ -144377,7 +144377,7 @@
 ]
 },
 "c11fcc95-323b-47e3-8288-03b08306364c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Twilight",
 "shops": [
 {
@@ -144397,7 +144397,7 @@
 ]
 },
 "c128176f-b971-45e0-a314-6c11b1e4d3ab": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mercury Gloves \"Voyager\"",
 "shops": []
 },
@@ -145031,7 +145031,7 @@
 "shops": []
 },
 "c158930e-d8e5-469c-9d5e-a509f4002158": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Hurston Edition",
 "shops": []
 },
@@ -145103,7 +145103,7 @@
 "shops": []
 },
 "c1b15afb-991e-41d5-86ef-2f4772fa06ca": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Backpack RSI Graphite Edition",
 "shops": []
 },
@@ -146015,7 +146015,7 @@
 ]
 },
 "c1e712aa-80dc-4567-8a46-04483d5b309b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit ASD Edition",
 "shops": []
 },
@@ -146224,7 +146224,7 @@
 "shops": []
 },
 "c29241e7-68bd-4e87-a5fa-7d93c3af5515": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Sediment Edition",
 "shops": []
 },
@@ -146694,7 +146694,7 @@
 "shops": []
 },
 "c38d5709-6956-49fb-8cce-d55e23b57ee5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket Pine",
 "shops": []
 },
@@ -147129,7 +147129,7 @@
 ]
 },
 "c3cb1b86-2df0-42fa-b1d1-37d0b2f4a558": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Backpack RSI Sunburst Edition",
 "shops": []
 },
@@ -147940,7 +147940,7 @@
 ]
 },
 "c42cf235-268a-407c-ba7f-e586f37ed1e2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Siebe Helmet Beachhead",
 "shops": [
 {
@@ -148032,12 +148032,12 @@
 "shops": []
 },
 "c45d28e4-17fa-47a0-8c4c-7cb948e32935": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Covalex Edition",
 "shops": []
 },
 "c46728a2-3922-4e08-9e12-b3536b83c368": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Executive",
 "shops": []
 },
@@ -148055,7 +148055,7 @@
 ]
 },
 "c4805592-13bf-4bb0-aecb-d197708f3d49": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mountaintop Jacket Vivid",
 "shops": [
 {
@@ -148366,7 +148366,7 @@
 ]
 },
 "c4a34e0d-5716-4341-a6bc-580b9b04375e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Carbide Jacket Outback",
 "shops": [
 {
@@ -148415,7 +148415,7 @@
 "shops": []
 },
 "c4c73b17-28b2-4f81-be63-0ee903f67926": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Crusader Edition",
 "shops": []
 },
@@ -148772,7 +148772,7 @@
 "shops": []
 },
 "c56fe43b-b69d-46d5-92d2-6538d8e0e6e5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Purple",
 "shops": [
 {
@@ -148797,7 +148797,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2675,
 "s": "Stanton",
@@ -148811,18 +148811,18 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 3396,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 3396,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 3396,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -148904,7 +148904,7 @@
 "shops": []
 },
 "c5a21a61-1a3b-4afc-86de-1075b139826d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "GCD-Army Core",
 "shops": []
 },
@@ -148914,7 +148914,7 @@
 "shops": []
 },
 "c5a5cd6a-0087-44b2-8e4b-9a13ebc73245": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 11 Classic Navy",
 "shops": []
 },
@@ -149521,7 +149521,7 @@
 ]
 },
 "c6d373f8-359c-448d-b82f-8acb7e86e1b0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Mercury Gloves",
 "shops": [
 {
@@ -149553,6 +149553,41 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 160,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 160,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 160,
@@ -149581,25 +149616,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 160,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -149614,20 +149635,6 @@
 "p": 160,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 160,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -149659,13 +149666,6 @@
 },
 {
 "d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 160,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-28",
 "l": "ARC-L4 Faint Glen Station",
 "p": 160,
 "s": "Stanton",
@@ -149679,7 +149679,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 160,
 "s": "Nyx",
@@ -149834,7 +149834,7 @@
 ]
 },
 "c6ead4a8-1769-4d2e-b48d-452651801cd8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Seagreen",
 "shops": [
 {
@@ -149852,6 +149852,13 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1053,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1053,
@@ -149859,25 +149866,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1053,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1056,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1056,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1056,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -150212,7 +150212,7 @@
 ]
 },
 "c78616f0-6bd7-48fc-ad17-dee9841635e2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cardona Jacket Iron",
 "shops": [
 {
@@ -150230,7 +150230,7 @@
 "shops": []
 },
 "c790b326-5270-47bb-a0ef-a0ed8829767a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Covalex Edition",
 "shops": []
 },
@@ -150253,7 +150253,7 @@
 "shops": []
 },
 "c7ac5259-82b4-4bb4-b376-1f5566a7c078": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Sturgis Jacket Original",
 "shops": []
 },
@@ -150263,7 +150263,7 @@
 "shops": []
 },
 "c7af9b9e-0933-4701-b1ac-a90d13acd0b9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Imperial",
 "shops": [
 {
@@ -150441,7 +150441,7 @@
 "shops": []
 },
 "c7db14ad-37c5-4745-a253-c4f577cedbdf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Seagreen",
 "shops": [
 {
@@ -150484,7 +150484,7 @@
 "shops": []
 },
 "c80ac343-70c2-485b-b624-20d74c0c83de": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Orange",
 "shops": []
 },
@@ -150504,7 +150504,7 @@
 "shops": []
 },
 "c841b95c-1b80-4738-9516-f06d2b4cf787": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Cardona Jacket Yellow",
 "shops": [
 {
@@ -150971,7 +150971,7 @@
 "shops": []
 },
 "c89da07f-a856-4113-8e5e-56db79306ad3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit Jasper (Refurbished)",
 "shops": [
 {
@@ -151138,7 +151138,7 @@
 ]
 },
 "c90aed91-bb4a-4c54-901a-224775e73499": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Chroma Edition",
 "shops": []
 },
@@ -151849,7 +151849,7 @@
 ]
 },
 "c9eb28ff-e673-4942-86df-1858401d7034": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket Tan",
 "shops": [
 {
@@ -151869,11 +151869,18 @@
 ]
 },
 "c9eecfff-8ab2-4cd1-b7f8-1ea6aa86fd5a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Kelvid",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 8800,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L4"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 8800,
 "s": "Stanton",
@@ -151885,13 +151892,6 @@
 "p": 8800,
 "s": "Stanton",
 "t": "Cousin Crow's - Providence Platform - Orison"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 8800,
-"s": "Stanton",
-"t": "Platinum Bay - CRU-L4"
 }
 ]
 },
@@ -152334,7 +152334,7 @@
 "shops": []
 },
 "cae6ba4d-4be2-4af6-a64e-1b9a929c69b3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit Basalt (Refurbished)",
 "shops": []
 },
@@ -152391,22 +152391,22 @@
 ]
 },
 "cb27c023-fb27-4bd6-b799-8fb6deb8b4cd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core White",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -152622,7 +152622,7 @@
 "shops": []
 },
 "cbe5fb56-a16e-4353-8fad-d607ebc740af": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Rabat Hat Covalex",
 "shops": []
 },
@@ -152819,11 +152819,11 @@
 "shops": []
 },
 "cc7aa50a-e09d-4d23-a417-1386a35b0a2b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Field Recon Suit Legs",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 456,
 "s": "Stanton",
@@ -152851,6 +152851,41 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 536,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 536,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 536,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 536,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 536,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 536,
@@ -152863,13 +152898,6 @@
 "p": 536,
 "s": "Stanton",
 "t": "Armor - HUR-L1"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 536,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
 },
 {
 "d": "2026-09-16",
@@ -152886,27 +152914,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 536,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 536,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 536,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
 "d": "2026-09-09",
 "l": "ARC-L1 Wide Forest Station",
 "p": 536,
@@ -152919,13 +152926,6 @@
 "p": 536,
 "s": "Stanton",
 "t": "Armor - ARC-L4"
-},
-{
-"d": "2026-09-03",
-"l": "Seraphim Station",
-"p": 536,
-"s": "Stanton",
-"t": "Armor - Seraphim"
 },
 {
 "d": "2026-09-11",
@@ -153037,7 +153037,7 @@
 "shops": []
 },
 "ccb97cb5-70c5-4977-b50a-ca27a40fce91": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Carbide Jacket Sandpiper",
 "shops": [
 {
@@ -153199,7 +153199,7 @@
 "shops": []
 },
 "cd2815a5-bc11-4327-8c8c-ad7a1db289e7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Blue",
 "shops": [
 {
@@ -153208,6 +153208,13 @@
 "p": 994,
 "s": "Stanton",
 "t": "Armor - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -153222,13 +153229,6 @@
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -153304,7 +153304,7 @@
 "shops": []
 },
 "cd5f4f54-3426-4030-ae86-addf74c94d96": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Yellow",
 "shops": [
 {
@@ -153315,18 +153315,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -153992,7 +153992,7 @@
 ]
 },
 "cdd246df-3680-438a-af7b-6133fba4ee37": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Ascension\" Helmet",
 "shops": []
 },
@@ -154031,7 +154031,7 @@
 ]
 },
 "cdddc807-70b4-4eb8-b6a4-bbbd6e85772f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Balor HCH Helmet Executive",
 "shops": []
 },
@@ -154041,7 +154041,7 @@
 "shops": []
 },
 "cdf17d88-1408-42ea-8339-74e4078f80de": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Sienna",
 "shops": [
 {
@@ -154125,9 +154125,16 @@
 "shops": []
 },
 "ce4f5f12-448b-4b1c-a79a-077fccbd82b0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Sienna",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
@@ -154148,13 +154155,6 @@
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L4"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-27",
@@ -155726,7 +155726,7 @@
 "shops": []
 },
 "cf055d20-61b5-4cee-a7fb-f2c1ed74bfd5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Desert",
 "shops": [
 {
@@ -155737,7 +155737,7 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 584,
 "s": "Stanton",
@@ -155934,7 +155934,7 @@
 ]
 },
 "cf63d187-71bb-4934-ba8b-c455f0350444": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Violet",
 "shops": [
 {
@@ -155952,11 +155952,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 2675,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L5"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-09",
@@ -155980,13 +155987,6 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 3370,
@@ -155994,7 +155994,7 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -156008,7 +156008,7 @@
 "shops": []
 },
 "cf98d3f9-24d1-47b2-9cb9-f7ba09e3571f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Core",
 "shops": [
 {
@@ -156026,6 +156026,20 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 5693,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 5693,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 5693,
@@ -156033,32 +156047,18 @@
 "t": "Armor - Terra Gateway (Stanton)"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 5693,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 5693,
-"s": "Stanton",
-"t": "Cubby Blast - Area 18"
-},
-{
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 5705,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 5705,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 5705,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 },
 {
 "d": "2026-09-11",
@@ -156241,7 +156241,7 @@
 ]
 },
 "cfb071eb-791e-4c86-9778-1e44436cde70": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Sakura Sun Edition",
 "shops": []
 },
@@ -156944,9 +156944,87 @@
 "shops": []
 },
 "d134f428-2f9e-47c4-8e69-2edbcd68cce4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core",
-"shops": []
+"shops": [
+{
+"d": "2026-10-28",
+"l": "Everus Harbor",
+"p": 1447,
+"s": "Stanton",
+"t": "Armor - Everus Harbor"
+},
+{
+"d": "2026-09-12",
+"l": "Lorville",
+"p": 1447,
+"s": "Stanton",
+"t": "Tammany and Sons - Metro Center - Lorville"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1523,
+"s": "Stanton",
+"t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-09-29",
+"l": "HUR-L1 Green Glade Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - HUR-L1"
+},
+{
+"d": "2026-09-11",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - MIC-L1"
+},
+{
+"d": "2026-09-09",
+"l": "ARC-L1 Wide Forest Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - ARC-L1"
+},
+{
+"d": "2026-09-08",
+"l": "ARC-L4 Faint Glen Station",
+"p": 1523,
+"s": "Stanton",
+"t": "Armor - ARC-L4"
+},
+{
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 1527,
+"s": "Stanton",
+"t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1527,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
+}
+]
 },
 "d13b0e28-004e-4ce4-ac98-024e8af90d82": {
 "checked": 1794793685,
@@ -157028,7 +157106,7 @@
 ]
 },
 "d156f2cb-2391-4d0b-8fdd-7c6ac0725fa8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "TCS-4 Undersuit",
 "shops": []
 },
@@ -157315,9 +157393,16 @@
 ]
 },
 "d1790ef8-ec9e-4193-887c-e92d0889e326": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ZeroRush",
 "shops": [
+{
+"d": "2026-11-20",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 44000,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L5"
+},
 {
 "d": "2026-11-09",
 "l": "New Babbage",
@@ -157331,13 +157416,6 @@
 "p": 44000,
 "s": "Stanton",
 "t": "Cousin Crow's - Providence Platform - Orison"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L5 Beautiful Glen Station",
-"p": 44000,
-"s": "Stanton",
-"t": "Platinum Bay - CRU-L5"
 }
 ]
 },
@@ -157347,7 +157425,7 @@
 "shops": []
 },
 "d18826b8-a146-4bf1-a8c9-46d72dbf7135": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Roughneck Pants (Modified)",
 "shops": []
 },
@@ -157806,7 +157884,7 @@
 ]
 },
 "d218b2b0-a4ba-47c1-9ebc-9ff87032cb55": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Imperial",
 "shops": []
 },
@@ -158046,7 +158124,7 @@
 ]
 },
 "d28364fa-e46b-4e7f-b4da-62cded070559": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Transistor Edition",
 "shops": []
 },
@@ -158631,7 +158709,7 @@
 "shops": []
 },
 "d35482d9-48f0-4f3e-81f8-6b683436014e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Helmet Sandstorm Edition",
 "shops": []
 },
@@ -158745,7 +158823,7 @@
 ]
 },
 "d3814df9-6fca-4ecc-aad7-6cbe2e4d8066": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "GCD-Army Backpack",
 "shops": []
 },
@@ -159120,7 +159198,7 @@
 "shops": []
 },
 "d457e8da-3fbf-4bb3-8c6e-b9643bad279a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Keystone Jacket Red",
 "shops": []
 },
@@ -159310,7 +159388,7 @@
 "shops": []
 },
 "d48cdbef-41da-48e5-bd8b-4323216b6e2e": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Jacket Onyx",
 "shops": [
 {
@@ -159626,7 +159704,7 @@
 ]
 },
 "d51598e2-3af3-42b9-ac3c-f56e4d92a159": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Core Crusader Edition",
 "shops": []
 },
@@ -159636,12 +159714,12 @@
 "shops": []
 },
 "d52dff9c-70ff-40e7-a640-0f559c8f47be": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Bello T-Shirt Navy",
 "shops": []
 },
 "d52f5083-1dfa-42f4-ab17-06a0387206aa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Executive",
 "shops": []
 },
@@ -159680,7 +159758,7 @@
 ]
 },
 "d53605d4-6919-4859-9038-ec861df53ea2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Core (XenoThreat)",
 "shops": []
 },
@@ -159762,7 +159840,7 @@
 ]
 },
 "d58002fa-7cb6-4af2-93d1-e9e1327eaef3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Shirt Teal",
 "shops": []
 },
@@ -160167,7 +160245,7 @@
 "shops": []
 },
 "d628a920-cdfe-40f3-b2c2-9298a484ff18": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Holiday Butcher Helmet",
 "shops": []
 },
@@ -160190,22 +160268,22 @@
 ]
 },
 "d6415769-ff23-430c-a326-d40c6d62ca59": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Emilion Pants",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 450,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 450,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 450,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -161216,12 +161294,12 @@
 ]
 },
 "d7380828-0d08-437c-bc26-d0faeb4a50c0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Greycat Edition",
 "shops": []
 },
 "d73fc595-1268-47fc-a965-c86522928e37": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants Indigo",
 "shops": [
 {
@@ -161314,7 +161392,7 @@
 "shops": []
 },
 "d76fb7cd-cff4-4735-9667-d9dfa10e95db": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Grey",
 "shops": [
 {
@@ -161568,7 +161646,7 @@
 "shops": []
 },
 "d8177e36-e202-470f-8465-8f57dbebd1d7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Red",
 "shops": [
 {
@@ -161579,32 +161657,32 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 2680,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 2680,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -161667,7 +161745,7 @@
 "shops": []
 },
 "d83b35bf-d498-4c13-bac8-b3d81ecabf0a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Black",
 "shops": [
 {
@@ -162895,12 +162973,12 @@
 "shops": []
 },
 "d8d3a498-68ff-4505-a05e-1107628cb66b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Executive",
 "shops": []
 },
 "d8e8a84d-812a-4969-8965-95f7b96b0081": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Blue",
 "shops": [
 {
@@ -162968,7 +163046,7 @@
 ]
 },
 "d90c510b-3f4e-485c-9be9-3a704bba197d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Scorched",
 "shops": []
 },
@@ -163894,7 +163972,7 @@
 "shops": []
 },
 "d9e66956-5621-4c5f-9528-885276e1d9f4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Olympian Edition",
 "shops": []
 },
@@ -164072,7 +164150,7 @@
 "shops": []
 },
 "da4b51b9-b8c1-457a-a146-cbee110bb9e6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Black",
 "shops": [
 {
@@ -165436,7 +165514,7 @@
 ]
 },
 "daa51c80-7720-4ece-8de3-598cdc8929d1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Hurston Edition",
 "shops": []
 },
@@ -166786,12 +166864,12 @@
 "shops": []
 },
 "dcdd9be5-3fac-42c1-bf33-fe77c3291e63": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Gloves Deadwood",
 "shops": []
 },
 "dce181cb-f4f4-47d6-aa19-12ae712e5cf0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ridgely Jacket",
 "shops": [
 {
@@ -166853,7 +166931,7 @@
 "shops": []
 },
 "dd0311d2-1eb4-4c7d-9cd1-be1d1377e04c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Sediment Edition",
 "shops": []
 },
@@ -166873,7 +166951,7 @@
 "shops": []
 },
 "dd14f975-4b73-4551-80d5-f1aa32babcd0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Tan",
 "shops": []
 },
@@ -167457,7 +167535,7 @@
 ]
 },
 "dd23f409-5885-48e7-b8ac-4beb5de4064f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit Starchaser Edition",
 "shops": []
 },
@@ -167559,7 +167637,7 @@
 ]
 },
 "dd4d7cd3-38fc-4338-b9cb-30d0b926e968": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Crusader Edition",
 "shops": []
 },
@@ -167683,7 +167761,7 @@
 "shops": []
 },
 "dd8fc7fd-74d8-4492-9055-66bfcf3beb5b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Tan",
 "shops": [
 {
@@ -167711,7 +167789,7 @@
 "shops": []
 },
 "dda5fe81-7978-4bb9-86e5-c551f4d66e12": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CSP-68M Backpack Epoque",
 "shops": []
 },
@@ -167866,7 +167944,7 @@
 "shops": []
 },
 "ddfe7c2d-b6d7-4f30-a1aa-e10704a6470d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Cry-Astro Edition",
 "shops": []
 },
@@ -168475,7 +168553,7 @@
 ]
 },
 "df13db2c-cb89-49b7-acb8-28f54e7ad1d7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Crusader Edition",
 "shops": []
 },
@@ -168676,7 +168754,7 @@
 "shops": []
 },
 "df7b47f1-f6bc-4b0d-b315-eae6afc109f9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Violet",
 "shops": [
 {
@@ -168689,7 +168767,7 @@
 ]
 },
 "df7d2881-7962-4ebd-b68e-e23e57684a11": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Cry-Astro Edition",
 "shops": []
 },
@@ -169068,7 +169146,7 @@
 ]
 },
 "e04391b4-6ef1-42c5-b23f-20a4a3709770": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Exploration Suit",
 "shops": [
 {
@@ -169084,6 +169162,13 @@
 "p": 15311,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 16116,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-16",
@@ -169107,13 +169192,6 @@
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 16116,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
-},
-{
 "d": "2026-09-03",
 "l": "Grim HEX",
 "p": 16116,
@@ -169135,7 +169213,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 16116,
 "s": "Nyx",
@@ -169982,7 +170060,7 @@
 ]
 },
 "e147e31d-4a5b-4d6b-ab5c-852d5e2121db": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Twilight",
 "shops": [
 {
@@ -170007,7 +170085,7 @@
 "shops": []
 },
 "e14cec8b-8599-4b3a-90d7-3ccb0a15befc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Helmet (XenoThreat)",
 "shops": []
 },
@@ -170605,7 +170683,7 @@
 "shops": []
 },
 "e1624ad3-24b9-48da-8bdb-ab20d6b807e2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Covalex Edition",
 "shops": []
 },
@@ -170826,7 +170904,7 @@
 "shops": []
 },
 "e1ea64d1-abf5-4088-aab1-b3e5eb1c8bbf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Green",
 "shops": []
 },
@@ -170844,7 +170922,7 @@
 ]
 },
 "e1ed489d-ece8-4b2f-b44f-37654fbc2ca7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Green",
 "shops": []
 },
@@ -170879,7 +170957,7 @@
 "shops": []
 },
 "e20fe5a9-0a6b-4d63-b54d-7ea70be8e40d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Silverton Pants Jade",
 "shops": []
 },
@@ -170923,7 +171001,7 @@
 ]
 },
 "e22947ac-8964-4c1a-a715-9974ceb5cc56": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Exploration Suit RSI Edition (Modified)",
 "shops": []
 },
@@ -171077,7 +171155,7 @@
 "shops": []
 },
 "e2a49720-8110-43a7-a15f-28d048764e95": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Sienna",
 "shops": [
 {
@@ -171300,7 +171378,7 @@
 "shops": []
 },
 "e339d52e-721c-4dab-9928-8e410ec2cf44": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Aqua",
 "shops": [
 {
@@ -171495,11 +171573,11 @@
 ]
 },
 "e38bac8b-2e1f-4b41-9b1b-ccc16ed9b17d": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Arms Woodland",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 826,
 "s": "Stanton",
@@ -171520,18 +171598,18 @@
 "t": "Armor - Port Tressler"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 973,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 973,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 973,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -171821,7 +171899,7 @@
 "shops": []
 },
 "e433a9c7-776b-41e1-8bb7-a5bc0312a375": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Black",
 "shops": [
 {
@@ -171961,7 +172039,7 @@
 ]
 },
 "e4abb70c-0d56-4549-be9f-58dceaf0f83a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier 05 Pants Winter",
 "shops": [
 {
@@ -172991,7 +173069,7 @@
 "shops": []
 },
 "e5ecaf59-5342-4330-a127-db5af83477cd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Stirling Exploration Suit Granite Edition",
 "shops": []
 },
@@ -173065,7 +173143,7 @@
 ]
 },
 "e60e1386-51d1-488a-9ad9-04f98d7ee81c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov \"Expo\" Helmet",
 "shops": []
 },
@@ -173241,18 +173319,18 @@
 "shops": []
 },
 "e64a507a-66d2-4c34-93dd-4c18f294c125": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Seagreen",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 3397,
 "s": "Stanton",
@@ -173356,7 +173434,7 @@
 ]
 },
 "e66e49a8-1ee7-4207-927a-59a59d07c12b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Rabat Hat Blue",
 "shops": []
 },
@@ -173981,7 +174059,7 @@
 "shops": []
 },
 "e754c08a-b7bd-4f50-a2df-350a923ec078": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Dark Green",
 "shops": [
 {
@@ -174040,7 +174118,7 @@
 "shops": []
 },
 "e76d0e26-cd03-4b93-8abd-e94813ccec43": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Violet",
 "shops": [
 {
@@ -174051,7 +174129,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1046,
 "s": "Stanton",
@@ -174570,7 +174648,7 @@
 ]
 },
 "e7bd263e-83c5-4440-a231-d070a47eb6d7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves Indigo",
 "shops": [
 {
@@ -174728,7 +174806,7 @@
 "shops": []
 },
 "e7f783d0-8772-4da8-aab2-dca84e417fcd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Rhodes Jacket White",
 "shops": []
 },
@@ -174794,7 +174872,7 @@
 ]
 },
 "e80ebc00-69b1-4320-b85b-f36dcaf1d860": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Platinum",
 "shops": []
 },
@@ -174850,7 +174928,7 @@
 ]
 },
 "e822bea6-453a-49aa-81f7-ec48d6548da8": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Aqua",
 "shops": [
 {
@@ -174868,6 +174946,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 2675,
@@ -174875,14 +174960,7 @@
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 3397,
 "s": "Stanton",
@@ -174910,7 +174988,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 3664,
 "s": "Stanton",
@@ -175288,7 +175366,7 @@
 "shops": []
 },
 "e9850a9f-4f01-4cb7-bbd1-fb53f4e70b01": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Grey",
 "shops": [
 {
@@ -175299,7 +175377,7 @@
 "t": "Casaba Outlet - Everus Harbor"
 },
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 2675,
 "s": "Stanton",
@@ -175327,7 +175405,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3396,
 "s": "Stanton",
@@ -175351,7 +175429,7 @@
 "shops": []
 },
 "e9c0e96c-6f0c-4841-ab5d-6dcc498993e1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkX Helmet Righteous",
 "shops": []
 },
@@ -175632,7 +175710,7 @@
 "shops": []
 },
 "ea8aa707-ceb2-4690-a418-ad3ab8f25b55": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Foundation Pants Desert",
 "shops": [
 {
@@ -175677,7 +175755,7 @@
 "shops": []
 },
 "eac33b3c-6a21-4e04-84e7-6f42e00110f4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants Dark Red",
 "shops": [
 {
@@ -175914,7 +175992,7 @@
 "shops": []
 },
 "eb34de82-ec46-4d5d-90db-f34318c2e8cd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Perth Pants",
 "shops": []
 },
@@ -175975,7 +176053,7 @@
 "shops": []
 },
 "eb6f6b5d-9fc2-4db2-b61e-d53d829b6839": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adroit Gloves CFP",
 "shops": []
 },
@@ -176023,7 +176101,7 @@
 "shops": []
 },
 "ebd4d90b-c276-4d7e-9bf0-99741e3a71af": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Green",
 "shops": [
 {
@@ -176034,18 +176112,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 3200,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 3200,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 3200,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -177097,7 +177175,7 @@
 "shops": []
 },
 "ede951e2-8a67-49a5-ab04-8b001761629c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Purple",
 "shops": []
 },
@@ -177211,7 +177289,7 @@
 ]
 },
 "ee473fc2-9edd-4c01-adff-2f97a14a9d9c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs White",
 "shops": [
 {
@@ -177222,18 +177300,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1288,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1288,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1288,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -177323,7 +177401,7 @@
 "shops": []
 },
 "eeaec661-8544-4554-947a-e685fbe6c418": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Novikov Backpack Crush",
 "shops": []
 },
@@ -177466,7 +177544,7 @@
 ]
 },
 "eeef5072-9099-44a3-8950-efec5769fdf2": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Orange",
 "shops": [
 {
@@ -177477,18 +177555,18 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -177516,7 +177594,7 @@
 "shops": []
 },
 "ef128c23-b709-48ed-8ab3-05d3040762ae": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Skullcap Helmet",
 "shops": []
 },
@@ -177765,11 +177843,11 @@
 ]
 },
 "ef2d8746-0dbd-4022-90ac-d2a9453f2242": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Desert",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1053,
 "s": "Stanton",
@@ -177778,7 +177856,7 @@
 ]
 },
 "ef42816f-1b5a-4d20-985a-d6d938f271df": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Aqua",
 "shops": [
 {
@@ -177789,7 +177867,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 3200,
 "s": "Stanton",
@@ -178006,7 +178084,7 @@
 "shops": []
 },
 "f009df9e-97c8-45cc-b0af-76ea257698f3": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "One Light Cap Teal",
 "shops": []
 },
@@ -178710,11 +178788,11 @@
 ]
 },
 "f1183bfe-f860-465f-94bb-9c6d463e0de4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 896,
 "s": "Stanton",
@@ -178728,18 +178806,18 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 1056,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1056,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 1056,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -178767,12 +178845,12 @@
 "shops": []
 },
 "f1234b24-a673-4748-8c0a-e92abb88a778": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Razorback Pants Tan",
 "shops": []
 },
 "f13c5d01-0d94-48a0-9674-5b8f85228fa4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Badami Helmet Olivine",
 "shops": []
 },
@@ -178835,7 +178913,7 @@
 "shops": []
 },
 "f19e6228-940c-4a60-aace-266a930955c1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "K7 Pants White",
 "shops": [
 {
@@ -178882,7 +178960,7 @@
 ]
 },
 "f1ab7f13-671a-47d2-8e74-28adf80cb0fa": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Frontier Pants (Modified)",
 "shops": []
 },
@@ -179046,7 +179124,7 @@
 ]
 },
 "f25afa5d-1fca-4343-bab9-f7578fcf99fc": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Hurston Edition",
 "shops": []
 },
@@ -179125,7 +179203,7 @@
 ]
 },
 "f2601857-f93d-4c98-a61a-90506a998ca4": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Markanda Undersuit Silt (Refurbished)",
 "shops": [
 {
@@ -179143,7 +179221,7 @@
 "shops": []
 },
 "f26950df-7f53-4afa-9575-397543dcbfbd": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Grey",
 "shops": [
 {
@@ -179161,32 +179239,32 @@
 "t": "Tammany and Sons - Metro Center - Lorville"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 2680,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 2680,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -179342,7 +179420,7 @@
 ]
 },
 "f2a15cd0-ada8-4b8a-ae25-18b7a6986fd1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "BUL-H4 Armor Snow Camo",
 "shops": []
 },
@@ -179723,7 +179801,7 @@
 "shops": []
 },
 "f415b965-5e2c-4e43-a115-d1cf49e1cb1a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Desert",
 "shops": [
 {
@@ -179734,25 +179812,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1046,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -179818,7 +179896,7 @@
 "shops": []
 },
 "f4416f4e-d60e-4184-81aa-a7b842c3c82c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "CBH-3 Helmet Executive",
 "shops": []
 },
@@ -179904,7 +179982,7 @@
 "shops": []
 },
 "f48257c7-d224-4d32-8279-6368e3c2a09b": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Pembroke Backpack",
 "shops": [
 {
@@ -179989,12 +180067,12 @@
 "shops": []
 },
 "f4faf578-bbf9-40ee-adc4-70cc163813ae": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "G-2 Helmet Cry-Astro Edition",
 "shops": []
 },
 "f50cc3fd-dd83-4aec-b74a-270428f22797": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "SnowBlind",
 "shops": []
 },
@@ -180550,7 +180628,7 @@
 ]
 },
 "f60a05d0-609f-4446-8a49-310bc6a777a6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Hercules Starlifter Flight Jacket",
 "shops": []
 },
@@ -180610,7 +180688,7 @@
 "shops": []
 },
 "f686308f-c08d-49bb-a6db-ebf76ab9d610": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Core Exec",
 "shops": []
 },
@@ -180645,7 +180723,7 @@
 "shops": []
 },
 "f6a29736-045a-4293-84f2-ced8d89e8a57": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "H4-PBF Ammo Carrier SteelTek",
 "shops": []
 },
@@ -180849,7 +180927,7 @@
 "shops": []
 },
 "f7027963-d703-4fa6-8642-6abbba27605f": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Helmet Exec",
 "shops": []
 },
@@ -181309,22 +181387,22 @@
 "shops": []
 },
 "f77d51be-57d7-4761-bb56-4d0c7bfe8107": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Seagreen",
 "shops": [
 {
-"d": "2026-09-09",
-"l": "MIC-L4 Red Crossroads Station",
-"p": 2680,
-"s": "Stanton",
-"t": "Armor - MIC-L4"
-},
-{
-"d": "2026-09-03",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2680,
 "s": "Stanton",
 "t": "Armor - Seraphim"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L4 Red Crossroads Station",
+"p": 2680,
+"s": "Stanton",
+"t": "Armor - MIC-L4"
 }
 ]
 },
@@ -181402,7 +181480,7 @@
 "shops": []
 },
 "f7a124a8-f5c8-4b6f-8d00-ddc77378c6d9": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Blue",
 "shops": []
 },
@@ -181567,7 +181645,7 @@
 "shops": []
 },
 "f7c53896-fc72-4c78-bc84-6a5916cfdcf1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Debnam Gloves Purple",
 "shops": []
 },
@@ -181630,7 +181708,7 @@
 ]
 },
 "f7cff000-a26b-4f5b-a8ae-14c94b2ce9e0": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Legs Yellow",
 "shops": [
 {
@@ -181823,7 +181901,7 @@
 "shops": []
 },
 "f8537aee-df0c-4d44-bdd8-340bdf4c2a30": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Legs Aqua",
 "shops": [
 {
@@ -181834,25 +181912,25 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
-"p": 1046,
-"s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "Nyx Gateway",
 "p": 1046,
 "s": "Stanton",
 "t": "Armor - Nyx Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1046,
 "s": "Stanton",
 "t": "Cubby Blast - Area 18"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 1046,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -182026,7 +182104,7 @@
 "shops": []
 },
 "f8bd0865-7c7e-48a4-8fdb-2c9e94dd40bf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Tan",
 "shops": [
 {
@@ -182158,7 +182236,7 @@
 "shops": []
 },
 "f9189dcf-9a10-46ea-ab92-8edec6336bc6": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Arms Cry-Astro Edition",
 "shops": []
 },
@@ -182321,7 +182399,7 @@
 "shops": []
 },
 "f96b59a9-6670-48b0-b51b-5894d40f0bbf": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "PAB-1 Arms Orange",
 "shops": [
 {
@@ -182339,32 +182417,32 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-10-31",
-"l": "Terra Gateway",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 584,
 "s": "Stanton",
-"t": "Armor - Terra Gateway (Stanton)"
+"t": "Armor - Seraphim"
 },
 {
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 584,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
+"d": "2026-11-18",
 "l": "MIC-L4 Red Crossroads Station",
 "p": 584,
 "s": "Stanton",
 "t": "Armor - MIC-L4"
 },
 {
-"d": "2026-09-03",
-"l": "Seraphim Station",
+"d": "2026-11-18",
+"l": "Nyx Gateway",
 "p": 584,
 "s": "Stanton",
-"t": "Armor - Seraphim"
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-10-31",
+"l": "Terra Gateway",
+"p": 584,
+"s": "Stanton",
+"t": "Armor - Terra Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -182420,7 +182498,7 @@
 "shops": []
 },
 "f99a1f5e-7bed-444f-82cc-570b85e0fbb7": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP-mk4 Helmet Woodland",
 "shops": []
 },
@@ -182435,7 +182513,7 @@
 "shops": []
 },
 "f9a7f34d-547f-47d9-9b68-cf56d6bcbfc1": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Tan",
 "shops": [
 {
@@ -183287,7 +183365,7 @@
 "shops": []
 },
 "fa48bd6d-b05e-4ecc-a71a-c19876ad5211": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Astley Pants (Modified)",
 "shops": []
 },
@@ -183414,7 +183492,7 @@
 "shops": []
 },
 "faa0a963-75b8-4f1c-9806-57f9c52d1d92": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Tan",
 "shops": [
 {
@@ -184212,7 +184290,7 @@
 ]
 },
 "fc1dbf5c-f386-473d-8099-d3bc27598896": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Arms Yellow",
 "shops": [
 {
@@ -184223,18 +184301,18 @@
 "t": "Armor - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1559,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1559,
 "s": "Stanton",
 "t": "Armor - Terra Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1559,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-11",
@@ -184602,7 +184680,7 @@
 "shops": []
 },
 "fcdb3335-3856-402f-b4c1-e4b3c6f9f1be": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Black",
 "shops": [
 {
@@ -184620,18 +184698,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 2675,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 2675,
 "s": "Stanton",
 "t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 2675,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -185202,7 +185280,7 @@
 "shops": []
 },
 "fdd475c2-df2f-421a-b2f7-02116b19ed8c": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Ridgely Jacket Highland",
 "shops": [
 {
@@ -185821,7 +185899,7 @@
 ]
 },
 "febdefcd-df09-43ef-8cae-436aa68867e5": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ADP Legs Purple",
 "shops": [
 {
@@ -185832,7 +185910,7 @@
 "t": "Armor - Everus Harbor"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 2680,
 "s": "Stanton",
@@ -185936,7 +186014,7 @@
 "shops": []
 },
 "fee6494b-5b5e-472b-87ee-7917c7fa653a": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "ORC-mkV Core Hurston Edition",
 "shops": []
 },
@@ -186434,11 +186512,11 @@
 ]
 },
 "ff67d4da-c106-4447-ba3e-3b0725e1b698": {
-"checked": 1794702420,
+"checked": 1795332948,
 "n": "Adiva Jacket Orange",
 "shops": [
 {
-"d": "2026-09-10",
+"d": "2026-11-19",
 "l": "ARC-L5 Yellow Core Station",
 "p": 2675,
 "s": "Stanton",
