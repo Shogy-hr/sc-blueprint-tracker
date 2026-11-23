@@ -99,12 +99,12 @@
 "shops": []
 },
 "0029eeb3-9062-47d6-82bd-27246f31427b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Imperial",
 "shops": []
 },
 "002dc8a3-2aa4-4717-a077-4db7f29be8bc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Yellow",
 "shops": []
 },
@@ -331,7 +331,7 @@
 ]
 },
 "003c7a4d-1874-42ef-ba5d-11c7dd89e423": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Twilight",
 "shops": []
 },
@@ -552,7 +552,7 @@
 ]
 },
 "00c35078-4161-468c-8cd2-7bad6ba58992": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Sandstorm",
 "shops": [
 {
@@ -723,7 +723,7 @@
 ]
 },
 "01159d0d-5212-4587-964e-595be7a73469": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Tan",
 "shops": []
 },
@@ -793,7 +793,7 @@
 "shops": []
 },
 "018cf498-5ff0-4382-9549-372dc92c6a9c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms",
 "shops": []
 },
@@ -894,7 +894,7 @@
 "shops": []
 },
 "01dda009-9587-4184-b682-f2a8cc199164": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Tan",
 "shops": []
 },
@@ -1155,7 +1155,7 @@
 "shops": []
 },
 "024e0420-6902-40f7-8f1a-0c13e92064a3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Sunstone",
 "shops": []
 },
@@ -1589,7 +1589,7 @@
 "shops": []
 },
 "02e2de94-5804-4d67-9ca9-cb70461488eb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Cold Steel",
 "shops": [
 {
@@ -2173,7 +2173,7 @@
 ]
 },
 "03684512-8a00-423e-8b59-0798da4f5512": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Core Wao",
 "shops": []
 },
@@ -3388,7 +3388,7 @@
 "shops": []
 },
 "03cdfb37-d44b-4a89-a323-f6526909217c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Red",
 "shops": [
 {
@@ -3406,18 +3406,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-29",
@@ -4106,7 +4106,7 @@
 ]
 },
 "045877db-4103-4ebc-bf9f-9929e8107a64": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Violet",
 "shops": []
 },
@@ -4273,12 +4273,12 @@
 "shops": []
 },
 "04ae0ab4-1398-4d3f-ba84-fc69ab50f255": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Dark Red",
 "shops": []
 },
 "04bd1d94-9240-4c63-91d9-8f9c76bbfd57": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Dark Red",
 "shops": []
 },
@@ -5180,7 +5180,7 @@
 ]
 },
 "05d400eb-2cd2-41f4-9054-ba8e87bbdcd1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Metropolis",
 "shops": []
 },
@@ -5236,7 +5236,7 @@
 "shops": []
 },
 "05ff08a5-d702-4f47-9e8a-7f6108132ccc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Draas",
 "shops": []
 },
@@ -5444,7 +5444,7 @@
 "shops": []
 },
 "06854bc6-995c-4e69-904b-b62e99df27d3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Icefall",
 "shops": []
 },
@@ -6145,7 +6145,7 @@
 "shops": []
 },
 "06c21092-cc23-4e05-9193-a058908e2e3d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Green",
 "shops": []
 },
@@ -6326,7 +6326,7 @@
 "shops": []
 },
 "07244e7f-81af-428e-a49e-ae1b9a940997": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Aqua",
 "shops": [
 {
@@ -6384,7 +6384,7 @@
 "shops": []
 },
 "07598ef6-7a56-49ca-b7ff-8c82e1f96789": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Rager",
 "shops": []
 },
@@ -6639,7 +6639,7 @@
 ]
 },
 "07ca7b3a-4a3a-4259-99b5-1d4470f745ec": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Ignitor",
 "shops": []
 },
@@ -6851,7 +6851,7 @@
 "shops": []
 },
 "08449933-d4ef-4c85-bcd2-bdcece18e824": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Lichen",
 "shops": []
 },
@@ -7264,7 +7264,7 @@
 "shops": []
 },
 "08e03240-d9e7-4242-b76e-2b85296ba2d9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms",
 "shops": []
 },
@@ -7328,7 +7328,7 @@
 "shops": []
 },
 "0907f3f9-ef08-446f-8a0c-003876d53bf9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Black",
 "shops": []
 },
@@ -7723,7 +7723,7 @@
 ]
 },
 "098603e0-7866-47d3-a4f2-dbc98b653971": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "MagnaBloom",
 "shops": [
 {
@@ -9169,7 +9169,7 @@
 "shops": []
 },
 "0b758584-4cc6-4306-85dd-07e1b81d6852": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "DynaFlux",
 "shops": []
 },
@@ -9250,7 +9250,7 @@
 ]
 },
 "0b78eb45-6529-4646-aaa6-e052551301da": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Base",
 "shops": []
 },
@@ -10157,9 +10157,16 @@
 "shops": []
 },
 "0d1169c1-65e4-4ee0-bb1a-f967ab0f3c45": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Voyage",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 42000,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
 {
 "d": "2026-09-21",
 "l": "Orison",
@@ -10173,18 +10180,11 @@
 "p": 42000,
 "s": "Stanton",
 "t": "Platinum Bay - CRU-L4"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 42000,
-"s": "Stanton",
-"t": "Platinum Bay - Baijini Point"
 }
 ]
 },
 "0d20cc30-0d6f-48b4-b2a1-79ff88e52204": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Abyss",
 "shops": []
 },
@@ -10523,11 +10523,11 @@
 "shops": []
 },
 "0da5705b-b3c5-4041-b8f2-2533c58cf84f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Orange",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 750,
 "s": "Stanton",
@@ -10637,7 +10637,7 @@
 "shops": []
 },
 "0df18692-2cc7-4d9d-af85-95b8a7a45419": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "MG Scrip",
 "shops": []
 },
@@ -10719,7 +10719,7 @@
 "shops": []
 },
 "0e0a054a-a950-414a-bd49-aa600c59290c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Purple",
 "shops": []
 },
@@ -11473,12 +11473,12 @@
 ]
 },
 "0ec29c10-875e-44a9-8e5f-08f831fdaf3e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Lichen",
 "shops": []
 },
 "0ec53953-9ce1-4e1d-9ea9-3193e086d6fc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Green",
 "shops": [
 {
@@ -11948,12 +11948,12 @@
 "shops": []
 },
 "102a8b5c-7b4a-4740-91ad-b1a6dc6c889f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants (Modified)",
 "shops": []
 },
 "1031be2c-2a20-497c-9076-0f7bee416822": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Legs Wao",
 "shops": []
 },
@@ -12324,7 +12324,7 @@
 "shops": []
 },
 "11670a31-10ce-4aea-b1fe-a27ea4068943": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Sienna",
 "shops": []
 },
@@ -12374,12 +12374,12 @@
 ]
 },
 "119012bb-c04a-4a86-a89b-58d4a1a6bfd0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit Daybreaker",
 "shops": []
 },
 "1195a275-41de-4b75-b141-929e17267af1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Deadlock",
 "shops": []
 },
@@ -12394,7 +12394,7 @@
 "shops": []
 },
 "119feca0-d5ef-4883-9786-fa8e83bfcb14": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Red",
 "shops": [
 {
@@ -12419,7 +12419,7 @@
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1741,
 "s": "Stanton",
@@ -12512,7 +12512,7 @@
 ]
 },
 "11b32878-7b39-4854-8598-ec5120c1e570": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Helmet Chairman's Club",
 "shops": []
 },
@@ -12530,7 +12530,7 @@
 ]
 },
 "11bfd42b-929a-4e45-88d7-11aab92e6176": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Nightveil",
 "shops": []
 },
@@ -13257,7 +13257,7 @@
 "shops": []
 },
 "127fb2c6-6566-4e17-8e6c-ce214e2ec408": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Arms",
 "shops": []
 },
@@ -13434,7 +13434,7 @@
 "shops": []
 },
 "129dc3f2-f047-4eb9-a2bd-d556c70bed49": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants",
 "shops": [
 {
@@ -13452,25 +13452,25 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-10-26",
-"l": "Orison",
+"d": "2026-11-20",
+"l": "Seraphim Station",
 "p": 750,
 "s": "Stanton",
-"t": "Makau - Clothing Shop -  Cloudview Center - Orison"
+"t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-08-29",
-"l": "Seraphim Station",
+"d": "2026-10-26",
+"l": "Orison",
 "p": 750,
 "s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
+"t": "Makau - Clothing Shop -  Cloudview Center - Orison"
 }
 ]
 },
@@ -13549,7 +13549,7 @@
 "shops": []
 },
 "1324b3d7-77cc-4fc3-9e0b-f87ac3cbb219": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Rager",
 "shops": []
 },
@@ -14331,11 +14331,11 @@
 "shops": []
 },
 "1376ec64-6a00-4104-8fa6-d09648b4c323": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Raven",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1430,
 "s": "Stanton",
@@ -14431,7 +14431,7 @@
 ]
 },
 "138ffa9b-26b2-4b6f-b831-425948234fb2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet",
 "shops": []
 },
@@ -14451,18 +14451,18 @@
 "shops": []
 },
 "13960fb4-de5c-4cb7-80e3-c3a273a559fc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Orange",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 1705,
 "s": "Stanton",
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1947,
 "s": "Stanton",
@@ -14671,7 +14671,7 @@
 "shops": []
 },
 "144aac81-8453-4acb-89ea-3d9b5df06fba": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Imperial",
 "shops": []
 },
@@ -14681,7 +14681,7 @@
 "shops": []
 },
 "1458af3d-cdbd-4ad0-862c-e2bc0de06958": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Mark I",
 "shops": []
 },
@@ -14753,7 +14753,7 @@
 "shops": []
 },
 "14a639e6-71c8-4007-8d91-9b8e0f5d20c0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit Ultimatum",
 "shops": []
 },
@@ -16145,7 +16145,7 @@
 "shops": []
 },
 "150f53ce-f168-4951-bec2-18349861b21e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Olive",
 "shops": []
 },
@@ -16304,7 +16304,7 @@
 "shops": []
 },
 "153c23bc-b453-4183-9139-f5dbd282dc22": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Jacket Black",
 "shops": [
 {
@@ -16566,7 +16566,7 @@
 ]
 },
 "157125aa-4309-4899-a47a-73b3a9d42af0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Rager",
 "shops": []
 },
@@ -16589,7 +16589,7 @@
 "shops": []
 },
 "158b8ac2-551a-4dae-b13a-e5107c8c5425": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Imperial",
 "shops": [
 {
@@ -16648,7 +16648,7 @@
 "shops": []
 },
 "15b94cf3-80f5-45e2-a34e-f3b9d75f9ec0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Twilight",
 "shops": [
 {
@@ -17324,7 +17324,7 @@
 "shops": []
 },
 "167623eb-929c-44a0-9005-2942fc69de7c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Olive",
 "shops": []
 },
@@ -17904,7 +17904,7 @@
 "shops": []
 },
 "1783a4d9-666f-4b37-a329-b6cba798a703": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Core Maroon",
 "shops": []
 },
@@ -18025,7 +18025,7 @@
 "shops": []
 },
 "17d9c6b5-8a2c-4900-9639-2026707570b6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Earthshake",
 "shops": []
 },
@@ -18050,7 +18050,7 @@
 "shops": []
 },
 "18109941-ef7c-425e-ab7c-df32ab75486a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Tan",
 "shops": [
 {
@@ -18068,6 +18068,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 750,
@@ -18080,13 +18087,6 @@
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-29",
@@ -18133,7 +18133,7 @@
 "shops": []
 },
 "187b3606-649f-41e3-bab6-4903d7758a85": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Legs Dark Green",
 "shops": []
 },
@@ -19288,7 +19288,7 @@
 ]
 },
 "19963664-f89b-4252-a8a1-42120939a371": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Ignitor",
 "shops": []
 },
@@ -19907,7 +19907,7 @@
 "shops": []
 },
 "1a984351-9e1b-43fa-a4bd-7c2ef7e4c5fc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Blue",
 "shops": []
 },
@@ -20855,7 +20855,7 @@
 ]
 },
 "1b0b51c5-b6e4-4bd7-b4fe-d763909e429a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Necropolis",
 "shops": []
 },
@@ -21126,12 +21126,12 @@
 "shops": []
 },
 "1ba906e1-5150-4bce-8f03-0fe08dd1afab": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Twilight",
 "shops": []
 },
 "1bc01620-1781-4a5d-ad27-6251653c071d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Necropolis",
 "shops": []
 },
@@ -22262,11 +22262,11 @@
 "shops": []
 },
 "1cfbeee0-543d-4009-8100-a7f70dc14ae9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Aqua",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 798,
 "s": "Stanton",
@@ -23255,7 +23255,7 @@
 ]
 },
 "1db80d63-12a7-4940-8705-8e0945ebcacb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Ferrum",
 "shops": []
 },
@@ -23753,11 +23753,11 @@
 "shops": []
 },
 "1e4144b4-b08b-4282-bd67-79e9a1162976": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Raven",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 4402,
 "s": "Stanton",
@@ -23771,7 +23771,7 @@
 "shops": []
 },
 "1e48d009-30aa-4657-8e7e-b90105868b02": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Purple",
 "shops": []
 },
@@ -23936,7 +23936,7 @@
 ]
 },
 "1e5820ef-6627-476d-9201-7bf4493267eb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit Year of the Rat",
 "shops": []
 },
@@ -23973,7 +23973,7 @@
 ]
 },
 "1e59c0b9-37ae-484f-a8ee-894a99b8e385": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Akuma",
 "shops": []
 },
@@ -26615,7 +26615,7 @@
 "shops": []
 },
 "20cf959a-e66d-41c1-8140-6cba12459fa5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Tan",
 "shops": []
 },
@@ -27008,7 +27008,7 @@
 "shops": []
 },
 "2146dce8-da07-4c37-adda-4ea98b5ab1d0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Shadow Gild",
 "shops": []
 },
@@ -27776,7 +27776,7 @@
 ]
 },
 "224d3dcf-4671-41ae-8062-3916928b374c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Disrupt Camo",
 "shops": []
 },
@@ -27859,7 +27859,7 @@
 ]
 },
 "2267db02-b727-42e2-b9ad-509bf7dc4017": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Purple",
 "shops": []
 },
@@ -27980,12 +27980,12 @@
 "shops": []
 },
 "22dc0bfb-aca0-4d71-9ae2-3baf2251fa21": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Ignitor",
 "shops": []
 },
 "22e68459-2580-4e44-bb4e-269e0a428953": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Hurston Dynamics Executive Security",
 "shops": []
 },
@@ -27995,7 +27995,7 @@
 "shops": []
 },
 "22edf1e7-1e76-4a48-a2bf-74ef062600e0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Roughshod",
 "shops": []
 },
@@ -28263,7 +28263,7 @@
 ]
 },
 "23336c99-54c1-4c76-beac-ee1104ec3bba": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Base",
 "shops": [
 {
@@ -28300,7 +28300,7 @@
 "shops": []
 },
 "2348dc0a-1512-4aa0-a9aa-ff999c292ddd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ivers Boots Blue",
 "shops": [
 {
@@ -28749,7 +28749,7 @@
 "shops": []
 },
 "2534602c-060c-4739-8ee9-1f8c14ba6a54": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Twilight",
 "shops": []
 },
@@ -29089,7 +29089,7 @@
 "shops": []
 },
 "25ce3f6c-1743-4bac-a6fa-9a01495ab245": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Imperial",
 "shops": [
 {
@@ -29107,7 +29107,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1530,
 "s": "Stanton",
@@ -29172,7 +29172,7 @@
 "shops": []
 },
 "261904de-e9c4-43da-af2b-9b2b4c9afe7a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Shadow Gild",
 "shops": []
 },
@@ -29217,22 +29217,22 @@
 ]
 },
 "2673f6cb-3092-41f9-97e5-bc76637499d1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Dark Red",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1340,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 1340,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1340,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-18",
@@ -29368,7 +29368,7 @@
 ]
 },
 "269611ac-9ad2-4b4d-b564-47158e31a76a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Ferrum",
 "shops": []
 },
@@ -29418,7 +29418,7 @@
 "shops": []
 },
 "26b97bf7-d618-4175-b1ea-484327f42e4b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Imperial",
 "shops": []
 },
@@ -30119,7 +30119,7 @@
 "shops": []
 },
 "27594935-abdd-4721-85ab-1f1fedd4136a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Stronghold",
 "shops": []
 },
@@ -30192,7 +30192,7 @@
 "shops": []
 },
 "2795e5a7-ac03-4790-9c70-371bbef1fd71": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Orange",
 "shops": []
 },
@@ -31017,12 +31017,12 @@
 "shops": []
 },
 "2821c4a9-6eb5-4cde-91e3-e2d862bb419a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Necropolis",
 "shops": []
 },
 "28235dfd-a4bf-4cbb-bc15-4fa98cca132e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Twilight",
 "shops": [
 {
@@ -31040,18 +31040,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 750,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-18",
@@ -31088,17 +31088,17 @@
 "shops": []
 },
 "282f92f8-1bda-41d2-9ba6-b4b5eee4dd57": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Ignitor",
 "shops": []
 },
 "28364e25-63ee-4acc-bf78-d3ae3308cc5b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Helmet Wao",
 "shops": []
 },
 "2836e624-23ad-4f76-a6fd-d3f25c5fd1ea": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Olive",
 "shops": [
 {
@@ -31323,7 +31323,7 @@
 "shops": []
 },
 "287409d3-2ee8-42ee-801e-8bed193fdfb3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Aqua",
 "shops": [
 {
@@ -31348,7 +31348,7 @@
 "t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1741,
 "s": "Stanton",
@@ -31968,7 +31968,7 @@
 ]
 },
 "290d5c7a-e71e-419e-9d7e-0b8973ddb82c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Pants Black",
 "shops": [
 {
@@ -32181,7 +32181,7 @@
 "shops": []
 },
 "2a208940-f250-4b5f-b352-1ed9463a9ab5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Cerrado Boots Bronze",
 "shops": [
 {
@@ -32597,7 +32597,7 @@
 ]
 },
 "2a86c2e0-26f5-49e7-b009-96ba7eee1739": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Grey",
 "shops": []
 },
@@ -32906,12 +32906,12 @@
 "shops": []
 },
 "2b12c637-eb2d-4f1c-8531-d559f4e787a1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Twilight",
 "shops": []
 },
 "2b1b977e-3326-4959-97ec-6aed99aaa6be": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lavelle Pants",
 "shops": []
 },
@@ -33091,7 +33091,7 @@
 ]
 },
 "2c010f15-4e9b-481d-93ae-71ea4c739d69": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Blue",
 "shops": []
 },
@@ -33229,7 +33229,7 @@
 ]
 },
 "2d05b029-1dfa-4d6b-885d-ab6eee86a237": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Turfwar",
 "shops": []
 },
@@ -33269,7 +33269,7 @@
 ]
 },
 "2d216b25-a317-49d5-888d-a28df20f3a9b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Arms White",
 "shops": []
 },
@@ -34038,7 +34038,7 @@
 "shops": []
 },
 "2e70e815-a09e-44ea-b897-db2789acffd0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Pants Blue",
 "shops": [
 {
@@ -34106,7 +34106,7 @@
 "shops": []
 },
 "2ee042ec-8dd1-44fe-a584-d3824adb5323": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Roughshod",
 "shops": []
 },
@@ -34176,7 +34176,7 @@
 ]
 },
 "2f055639-b2e4-4482-a435-49d80706f6b2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Jacket Blue",
 "shops": [
 {
@@ -34504,7 +34504,7 @@
 "shops": []
 },
 "2f67ac96-ab81-461a-b54d-fcd159137477": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Scorched",
 "shops": []
 },
@@ -34826,7 +34826,7 @@
 ]
 },
 "303d5646-8614-4d39-991c-78db6984632b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Sienna",
 "shops": []
 },
@@ -34884,7 +34884,7 @@
 "shops": []
 },
 "304fbb02-3fd4-4d75-b39e-a4b1f7634d91": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Base",
 "shops": [
 {
@@ -35775,7 +35775,7 @@
 "shops": []
 },
 "31355140-da8d-4c5a-bf6f-2036bb1d77bc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket",
 "shops": [
 {
@@ -36848,7 +36848,7 @@
 "shops": []
 },
 "31e8ff2d-5e6a-44ba-8697-e75fb2fdbcb3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet White",
 "shops": []
 },
@@ -36914,7 +36914,7 @@
 "shops": []
 },
 "321bbb6e-7742-43e5-8b8d-7d467fe5cd6f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Tan",
 "shops": []
 },
@@ -37213,7 +37213,7 @@
 "shops": []
 },
 "32c5e55b-2504-493f-94cf-e8482db6226f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Olive",
 "shops": []
 },
@@ -37276,12 +37276,12 @@
 "shops": []
 },
 "32fe4759-e37e-4644-b5fe-79629cc7a65f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Purple",
 "shops": []
 },
 "33090eaf-b61e-4ffb-b398-040c7b88129e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Green",
 "shops": []
 },
@@ -38194,7 +38194,7 @@
 "shops": []
 },
 "336e2289-16ea-4c51-934c-39aca677b21b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Metropolis",
 "shops": []
 },
@@ -38232,7 +38232,7 @@
 "shops": []
 },
 "339c0845-7cba-478a-b61c-61d51784e079": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Protean Boots (Modified)",
 "shops": []
 },
@@ -38416,7 +38416,7 @@
 ]
 },
 "33d41ef5-a992-4644-b6b2-761123fc6073": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ivers Boots White",
 "shops": [
 {
@@ -38953,7 +38953,7 @@
 ]
 },
 "3433646d-3d11-4125-80de-c2b2f8e9051c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Olive",
 "shops": []
 },
@@ -39663,7 +39663,7 @@
 ]
 },
 "34b01931-3eb1-4fea-b02a-d243d3474514": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Shadow Gild",
 "shops": []
 },
@@ -39958,7 +39958,7 @@
 "shops": []
 },
 "3505dba2-4189-49f2-ba41-43b95d405291": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Helmet",
 "shops": []
 },
@@ -40724,7 +40724,7 @@
 "shops": []
 },
 "359c3615-a454-46e5-8a7a-7029d03641c7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Rager",
 "shops": []
 },
@@ -40742,7 +40742,7 @@
 ]
 },
 "35b59600-e2b5-4bf2-ad7b-b30f8966acd0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Dark Red",
 "shops": []
 },
@@ -40943,12 +40943,12 @@
 ]
 },
 "3639d7f9-9a29-4939-b0e1-2f98687300b3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Seagreen",
 "shops": []
 },
 "3645918b-e7ec-498a-9836-65a52e4a1471": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet (Modified)",
 "shops": []
 },
@@ -40958,7 +40958,7 @@
 "shops": []
 },
 "3657fc5f-0a96-4a39-bc56-0010ac4882b1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Brimstone",
 "shops": []
 },
@@ -42151,7 +42151,7 @@
 ]
 },
 "38313cd3-7f86-473d-8434-73140099d22d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Embark",
 "shops": []
 },
@@ -42443,7 +42443,7 @@
 ]
 },
 "38c739ba-9d2c-4dd2-a3c1-3bf47be0ffef": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Imperial",
 "shops": []
 },
@@ -42949,11 +42949,11 @@
 ]
 },
 "3a201894-d25e-4869-b327-bb604848ae62": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Dark Green",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1525,
 "s": "Stanton",
@@ -42967,7 +42967,7 @@
 "shops": []
 },
 "3a25bba9-f70f-429a-b1ba-e42c5c60836c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Imperial",
 "shops": []
 },
@@ -44171,7 +44171,7 @@
 ]
 },
 "3b977c63-9a6b-45b8-ad94-98568f7aff79": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Base",
 "shops": [
 {
@@ -44258,7 +44258,7 @@
 ]
 },
 "3bb156ec-b515-4318-8633-4decddaac368": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet (Modified)",
 "shops": []
 },
@@ -44369,7 +44369,7 @@
 ]
 },
 "3c09b16a-0c8b-41df-84c9-e0a4a271c0fa": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Core",
 "shops": []
 },
@@ -44778,7 +44778,7 @@
 "shops": []
 },
 "3ce9726c-05ed-4ad4-8b6e-50768040434f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Black",
 "shops": []
 },
@@ -44913,7 +44913,7 @@
 "shops": []
 },
 "3d103e2c-2322-4647-9c82-b2f7ebc9dea1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Disrupt Camo",
 "shops": []
 },
@@ -45230,7 +45230,7 @@
 "shops": []
 },
 "3e48d826-1663-497e-8f21-3eaa67dab60f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Sandstorm",
 "shops": [
 {
@@ -45429,7 +45429,7 @@
 "shops": []
 },
 "3e79b1d5-d213-4c0d-b212-eba3399bcfa2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack",
 "shops": []
 },
@@ -45449,12 +45449,12 @@
 "shops": []
 },
 "3e954276-5977-48d9-9385-fcc00cc8224b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Helmet Starchaser",
 "shops": []
 },
 "3e965216-cfab-4e04-867e-a911766bbc76": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Tan",
 "shops": []
 },
@@ -46359,7 +46359,7 @@
 "shops": []
 },
 "3f1c3650-9760-48be-b285-a24ad58caff4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Sienna",
 "shops": []
 },
@@ -46391,12 +46391,12 @@
 ]
 },
 "3f2d07fa-20bc-44ea-a7da-324890122fea": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Abyss",
 "shops": []
 },
 "3f31149c-b9cc-4700-9585-f924cda83daf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Starchaser",
 "shops": []
 },
@@ -46984,7 +46984,7 @@
 ]
 },
 "3f4af48b-5d66-4e7d-a208-13b0670307db": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Yellow",
 "shops": [
 {
@@ -46993,6 +46993,20 @@
 "p": 395,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -47016,13 +47030,6 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 415,
@@ -47035,13 +47042,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L5"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -47727,7 +47727,7 @@
 "shops": []
 },
 "403bd2f7-7978-4072-8603-5d5f279d4bb6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Grey",
 "shops": []
 },
@@ -48037,7 +48037,7 @@
 ]
 },
 "40bf4581-9232-4f16-9c7e-e56caa885547": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Black",
 "shops": []
 },
@@ -48129,7 +48129,7 @@
 ]
 },
 "40d944eb-b415-4888-a7c3-c867bc36908a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Dark Green",
 "shops": []
 },
@@ -48149,22 +48149,29 @@
 "shops": []
 },
 "40dc3e8d-eccf-4baf-b605-07b27749c862": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Purple",
 "shops": [
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 415,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
 },
 {
 "d": "2026-09-10",
@@ -48193,13 +48200,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -48235,12 +48235,12 @@
 ]
 },
 "41259023-b551-433b-bd83-8143c928a6eb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Dark Red",
 "shops": []
 },
 "41314061-7d4d-4a40-b642-d4736a32565a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Cold Steel",
 "shops": [
 {
@@ -48309,7 +48309,7 @@
 "shops": []
 },
 "415b30c0-9c1c-4a11-82fc-410e0ca50d5b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Neon Pink",
 "shops": []
 },
@@ -48538,7 +48538,7 @@
 "shops": []
 },
 "4221af8b-ae76-423e-b178-169756aa1757": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Legs",
 "shops": []
 },
@@ -48633,7 +48633,7 @@
 "shops": []
 },
 "42977ad5-7264-43e1-98e3-3124ce3901ca": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Orange",
 "shops": []
 },
@@ -49289,7 +49289,7 @@
 "shops": []
 },
 "4364d2ea-3516-474b-8f45-ae146c120ee7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fulgur",
 "shops": []
 },
@@ -49435,7 +49435,7 @@
 "shops": []
 },
 "43a9467d-e153-447f-af53-31b18cd3fbb4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Ignitor",
 "shops": []
 },
@@ -49491,7 +49491,7 @@
 "shops": []
 },
 "43b057f4-38db-486b-b153-2ab4d33ce56c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Pariah",
 "shops": []
 },
@@ -50509,7 +50509,7 @@
 ]
 },
 "44cd257f-5443-45ac-a1ee-a3c75c521445": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Violet",
 "shops": []
 },
@@ -50669,9 +50669,16 @@
 "shops": []
 },
 "45058ef0-f8f3-43dc-a237-9eb118dfd5ed": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Dark Green",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1340,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
@@ -50685,13 +50692,6 @@
 "p": 1340,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1340,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -50744,7 +50744,7 @@
 "shops": []
 },
 "45409060-cb8b-41fd-aed5-65c958724bfd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Wan Shoes",
 "shops": []
 },
@@ -51277,7 +51277,7 @@
 "shops": []
 },
 "46400a70-d299-4fd9-8d7a-285538740bb4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Arms Midnight Sun",
 "shops": []
 },
@@ -51328,7 +51328,7 @@
 ]
 },
 "464e15a1-fa60-459c-80f1-82d6096f6b48": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Ignitor",
 "shops": []
 },
@@ -52545,7 +52545,7 @@
 "shops": []
 },
 "4822ce40-491f-4d30-9eb1-0a4b64837b98": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Legs White",
 "shops": []
 },
@@ -52560,7 +52560,7 @@
 "shops": []
 },
 "483d87dc-d93a-4c8b-9661-1f6f6b55d36c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Aqua",
 "shops": []
 },
@@ -52590,7 +52590,7 @@
 "shops": []
 },
 "485a2685-0e3c-4840-89d1-84c3432517a4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Imperial",
 "shops": []
 },
@@ -52641,7 +52641,7 @@
 "shops": []
 },
 "48609392-c78c-4909-8714-387900059785": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms",
 "shops": [
 {
@@ -52659,7 +52659,21 @@
 "t": "FPS Armor Everus"
 },
 {
-"d": "2026-11-09",
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 470,
+"s": "Stanton",
+"t": "FPS Armor CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 470,
+"s": "Stanton",
+"t": "FPS Armor Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 470,
 "s": "Stanton",
@@ -52694,25 +52708,18 @@
 "t": "FPS Armor MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 470,
-"s": "Stanton",
-"t": "FPS Armor CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 470,
-"s": "Stanton",
-"t": "FPS Armor Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-08",
 "l": "ARC-L4 Faint Glen Station",
 "p": 470,
 "s": "Stanton",
 "t": "FPS Armor ARC-L4"
+},
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 423,
+"s": "Pyro",
+"t": "Guns Dudley"
 },
 {
 "d": "2026-10-15",
@@ -52748,13 +52755,6 @@
 "p": 423,
 "s": "Pyro",
 "t": "Guns Ruin"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 423,
-"s": "Pyro",
-"t": "Guns Dudley"
 },
 {
 "d": "2026-08-31",
@@ -53054,11 +53054,11 @@
 ]
 },
 "48a1d3c4-1a77-4f02-96e6-80400cadf04e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket White",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 1705,
 "s": "Stanton",
@@ -53164,7 +53164,7 @@
 "shops": []
 },
 "48f6ebad-1041-4906-8937-3ebc23a1bfb0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Aqua",
 "shops": []
 },
@@ -53307,7 +53307,7 @@
 ]
 },
 "494e01b3-f990-4c73-b0fa-b7cb98d7dea1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Blue",
 "shops": [
 {
@@ -53316,6 +53316,13 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 415,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-10-07",
@@ -53339,13 +53346,6 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 415,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
-},
-{
 "d": "2026-09-03",
 "l": "Grim HEX",
 "p": 415,
@@ -53360,7 +53360,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 415,
 "s": "Nyx",
@@ -53421,7 +53421,7 @@
 "shops": []
 },
 "496c9877-e606-4d98-b39b-71f249c069b4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Dark Green",
 "shops": [
 {
@@ -53439,18 +53439,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 750,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-29",
@@ -53462,7 +53462,7 @@
 ]
 },
 "4974a180-0a7b-436f-9eae-bbb9ccfdd35c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Deadlock",
 "shops": []
 },
@@ -53748,7 +53748,7 @@
 ]
 },
 "4a25377f-70dc-4291-b58a-78601360d9c7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Lichen",
 "shops": []
 },
@@ -53964,7 +53964,7 @@
 "shops": []
 },
 "4a867717-1fe5-4c58-82ce-08ab51eabef1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Seagreen",
 "shops": []
 },
@@ -54226,11 +54226,11 @@
 ]
 },
 "4a8d0265-7476-401a-a50f-5780cd212656": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Burst",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 42000,
 "s": "Stanton",
@@ -54386,12 +54386,12 @@
 ]
 },
 "4aeeae6c-c596-4327-a804-cb966ed7ae16": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet",
 "shops": []
 },
 "4afec779-8571-4c7c-8a18-e77bcff8c305": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core White",
 "shops": []
 },
@@ -55147,7 +55147,7 @@
 "shops": []
 },
 "4d3306d3-f749-4422-80a4-06705556e963": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Maroon",
 "shops": []
 },
@@ -55185,22 +55185,22 @@
 "shops": []
 },
 "4d7083e2-0d0e-4f21-aced-cbdda58343ad": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Dark Red",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 857,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 857,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 857,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -55466,7 +55466,7 @@
 ]
 },
 "4db99faa-eb48-4f97-a757-99cd29add137": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Disrupt Camo",
 "shops": []
 },
@@ -55853,27 +55853,27 @@
 ]
 },
 "4e2be512-e054-4453-a878-c139ddf0b8af": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Olive",
 "shops": []
 },
 "4e2d202e-4336-4afc-bada-fbb20450755f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sojourn",
 "shops": [
+{
+"d": "2026-11-20",
+"l": "CRU-L5 Beautiful Glen Station",
+"p": 84000,
+"s": "Stanton",
+"t": "Platinum Bay - CRU-L5"
+},
 {
 "d": "2026-09-21",
 "l": "Orison",
 "p": 84000,
 "s": "Stanton",
 "t": "Cousin Crow's - Providence Platform - Orison"
-},
-{
-"d": "2026-09-18",
-"l": "CRU-L5 Beautiful Glen Station",
-"p": 84000,
-"s": "Stanton",
-"t": "Platinum Bay - CRU-L5"
 }
 ]
 },
@@ -56842,7 +56842,7 @@
 "shops": []
 },
 "4f7a0a87-41f7-4157-bd67-faf15c29934b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Moonfall",
 "shops": []
 },
@@ -57287,7 +57287,7 @@
 ]
 },
 "4fe62ba3-74f7-4235-a22b-13269fce951a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Twilight",
 "shops": []
 },
@@ -57448,7 +57448,7 @@
 ]
 },
 "503a2df0-f032-431d-8d4a-3895d65c32af": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Lichen",
 "shops": []
 },
@@ -57476,7 +57476,7 @@
 ]
 },
 "5056e6f9-4a55-4902-9190-ce4d8e5dfc5e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Disrupt Camo",
 "shops": []
 },
@@ -57688,7 +57688,7 @@
 "shops": []
 },
 "5094c533-d9ae-4440-87cb-ca3c28189906": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Roughshod",
 "shops": []
 },
@@ -57836,7 +57836,7 @@
 "shops": []
 },
 "5134ba67-3c3c-4a72-99af-e7641c4d1a69": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Yellow",
 "shops": []
 },
@@ -57881,12 +57881,12 @@
 "shops": []
 },
 "519f7ed4-ecc4-44ec-a365-9aed460f6d6f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Dark Green",
 "shops": []
 },
 "51a0c0bc-a673-42d5-bba7-9441d4b6e775": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Deathblow",
 "shops": []
 },
@@ -57941,7 +57941,7 @@
 "shops": []
 },
 "51cc7a86-a0fc-4f4f-8c75-6e48c520ee0c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Black",
 "shops": []
 },
@@ -58074,7 +58074,7 @@
 "shops": []
 },
 "521ecb9b-f144-434a-8bbc-f11e27198973": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket",
 "shops": [
 {
@@ -58092,14 +58092,14 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1873,
 "s": "Stanton",
 "t": "Casaba Outlet - Seraphim"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1947,
 "s": "Stanton",
@@ -58160,7 +58160,7 @@
 ]
 },
 "523963bf-a1f5-4e5b-97bb-7a853a68f610": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Black",
 "shops": [
 {
@@ -58178,6 +58178,20 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 750,
@@ -58190,20 +58204,6 @@
 "p": 750,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -58236,7 +58236,7 @@
 "shops": []
 },
 "527556a2-b385-4a76-9996-e77cf86df5c6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Cerrado Boots Slate",
 "shops": [
 {
@@ -58309,7 +58309,7 @@
 "shops": []
 },
 "52a0a4b4-61c4-43a2-a423-342312070ac0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Earthwork",
 "shops": []
 },
@@ -58509,9 +58509,16 @@
 ]
 },
 "52dd2b59-058f-4f56-864c-5df4ae18587e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Tan",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 1705,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
@@ -58520,11 +58527,11 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 1705,
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1947,
 "s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-26",
@@ -58532,18 +58539,11 @@
 "p": 1947,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1947,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
 "52e9f375-3ff6-40a8-be01-4967e2db8db6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Yellow",
 "shops": []
 },
@@ -58687,7 +58687,7 @@
 "shops": []
 },
 "53741591-226f-4a5f-ab96-f091f1d60d37": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Helmet Endro",
 "shops": []
 },
@@ -59036,7 +59036,7 @@
 "shops": []
 },
 "53f51fd5-b913-4d28-8464-8ad0ebfa1ecf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Grey",
 "shops": []
 },
@@ -60446,7 +60446,7 @@
 "shops": []
 },
 "5483e12a-ea5a-4f33-ba5b-aebeab803c8e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Twilight",
 "shops": []
 },
@@ -60496,7 +60496,7 @@
 "shops": []
 },
 "54d19c1c-d538-4111-bcb5-ee117b8c4c16": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Abyss",
 "shops": []
 },
@@ -60575,7 +60575,7 @@
 ]
 },
 "54e26c28-c3d8-40df-9681-f69fd755875c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket White",
 "shops": [
 {
@@ -60607,18 +60607,18 @@
 "t": "Casaba Outlet - Seraphim"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1741,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 1741,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1741,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -60628,11 +60628,11 @@
 "shops": []
 },
 "5512d873-28bb-4e2c-a452-f2474ec26d36": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1290,
 "s": "Stanton",
@@ -60800,7 +60800,7 @@
 "shops": []
 },
 "559b8809-100e-4d9c-852d-ff40b9503939": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Lodestone",
 "shops": []
 },
@@ -62799,7 +62799,7 @@
 ]
 },
 "572a21b6-4c39-4311-89af-93bbfefbef6a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Helmet Jet",
 "shops": []
 },
@@ -63051,7 +63051,7 @@
 ]
 },
 "57a903e4-44a7-4af1-aebe-939af5718ab2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Dark Green",
 "shops": []
 },
@@ -63244,7 +63244,7 @@
 ]
 },
 "581c94cc-1502-4ccb-82cd-f36ec2a60f2c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Shadow Gild",
 "shops": []
 },
@@ -63363,7 +63363,7 @@
 "shops": []
 },
 "58412166-9986-48d9-a9d8-18cfe3215902": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Grey",
 "shops": [
 {
@@ -63663,7 +63663,7 @@
 "shops": []
 },
 "588b2565-ae51-4bc1-85e2-ffaebba632f5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Imperial",
 "shops": []
 },
@@ -63954,7 +63954,7 @@
 "shops": []
 },
 "59814847-c7a3-4744-a40c-2496e9c2f7d9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Nightveil",
 "shops": []
 },
@@ -64063,7 +64063,7 @@
 ]
 },
 "59db00e0-8dfa-41f4-a3ea-d9b58c459780": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Black",
 "shops": []
 },
@@ -64196,7 +64196,7 @@
 ]
 },
 "5a0e34e1-472f-4d94-a8ef-673be7d4cc53": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Violet",
 "shops": [
 {
@@ -64291,7 +64291,7 @@
 ]
 },
 "5a400291-2a72-4221-aca7-1d8c8012f0ae": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Brimstone",
 "shops": []
 },
@@ -64440,7 +64440,7 @@
 "shops": []
 },
 "5a5c7bb2-13a6-481e-bb0a-03513ea6426f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Grey",
 "shops": [
 {
@@ -64449,6 +64449,48 @@
 "p": 395,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-31",
@@ -64479,13 +64521,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 415,
@@ -64493,32 +64528,11 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
-},
-{
 "d": "2026-09-10",
 "l": "ARC-L5 Yellow Core Station",
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L5"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -64554,20 +64568,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -65757,7 +65757,7 @@
 "shops": []
 },
 "5b987cf9-4c8a-4c54-9f12-6807ac054b97": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Dark Red",
 "shops": []
 },
@@ -65818,7 +65818,7 @@
 "shops": []
 },
 "5bfd0bd4-8aca-48dd-9b37-72817435cb29": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs (Modified)",
 "shops": []
 },
@@ -65833,7 +65833,7 @@
 "shops": []
 },
 "5c144503-21bf-409c-808b-5119b885846d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Arms Wao",
 "shops": []
 },
@@ -66222,7 +66222,7 @@
 ]
 },
 "5c2499c9-4158-4feb-9b87-ace0e2769f99": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs White",
 "shops": []
 },
@@ -66276,7 +66276,7 @@
 "shops": []
 },
 "5c599276-b05c-45df-a449-5a7243c70478": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Violet",
 "shops": [
 {
@@ -66311,7 +66311,7 @@
 "shops": []
 },
 "5cc032f7-c82e-425e-be2f-1031a0f66b43": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Legs Maroon",
 "shops": []
 },
@@ -66331,7 +66331,7 @@
 "shops": []
 },
 "5cda15be-9b98-436d-a9a8-7f7faea64ff9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Sienna",
 "shops": [
 {
@@ -66349,18 +66349,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1525,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-09-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1525,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1525,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-29",
@@ -66377,7 +66377,7 @@
 "shops": []
 },
 "5ce49f2a-62f5-4a76-b948-6acff599b41c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Metropolis",
 "shops": []
 },
@@ -66400,7 +66400,7 @@
 ]
 },
 "5d00db0e-c92b-4379-ab41-79708c02d7dd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Sunstone",
 "shops": []
 },
@@ -66985,7 +66985,7 @@
 ]
 },
 "5db93be6-1fa1-450f-b539-fedf8690cab2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Centurion",
 "shops": []
 },
@@ -67056,7 +67056,7 @@
 ]
 },
 "5df9fe17-bda5-433d-a2cd-bff6b29eeac9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "TurboDrive",
 "shops": []
 },
@@ -67320,7 +67320,7 @@
 ]
 },
 "5e9de553-ae0b-42c0-b316-f61f6e71da69": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Seagreen",
 "shops": [
 {
@@ -67497,12 +67497,12 @@
 ]
 },
 "5efce443-201d-420b-90f6-df2253591609": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Arms Maroon",
 "shops": []
 },
 "5f02e112-5dea-402f-9105-5eeaaa1eeb68": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Olive",
 "shops": [
 {
@@ -67862,17 +67862,17 @@
 "shops": []
 },
 "5f7161bc-36a1-443e-aace-59ff91ab8a06": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Turfwar",
 "shops": []
 },
 "5f770275-5813-44df-80f1-b45887072614": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Rager",
 "shops": []
 },
 "5f7c3f05-c351-4dcb-bd0e-e98b2b4e3ffe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Calva Helmet Daybreaker",
 "shops": []
 },
@@ -67897,7 +67897,7 @@
 "shops": []
 },
 "5fac1c59-a35b-468b-805c-cc273faa02bb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "MegaFlux",
 "shops": []
 },
@@ -68150,7 +68150,7 @@
 "shops": []
 },
 "601ab389-99ba-48a0-8c9b-5937f27db2e1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Yellow",
 "shops": []
 },
@@ -68217,7 +68217,7 @@
 "shops": []
 },
 "60865948-2c95-4cd9-b7e0-c6974b1eed01": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Core Chairman's Club",
 "shops": []
 },
@@ -68330,7 +68330,7 @@
 "shops": []
 },
 "60d89692-e306-46fb-8259-7bcca61f7deb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Red",
 "shops": []
 },
@@ -68920,7 +68920,7 @@
 ]
 },
 "61f488da-7fd1-4ab9-b295-d93bb891bf23": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Sunstone",
 "shops": []
 },
@@ -69569,7 +69569,7 @@
 "shops": []
 },
 "62f4655f-7fbb-40c0-92bb-9bf82d531fe8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Metropolis",
 "shops": []
 },
@@ -69579,7 +69579,7 @@
 "shops": []
 },
 "6300f7b8-e8af-487c-8df3-4f73929aa9a0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Clanguard",
 "shops": []
 },
@@ -69672,7 +69672,7 @@
 ]
 },
 "6319f9f7-034a-44a9-8674-e6a981f302a8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Earthwork",
 "shops": []
 },
@@ -69704,7 +69704,7 @@
 ]
 },
 "633c07d0-c6e7-4952-b2e3-e330df979552": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Deadlock",
 "shops": []
 },
@@ -69928,7 +69928,7 @@
 ]
 },
 "6384133d-4fc0-49e5-9481-0e5160c0e383": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Clanguard",
 "shops": []
 },
@@ -70777,7 +70777,7 @@
 ]
 },
 "64d4fc3f-1682-43a8-bb99-d45ca9a76018": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms (Modified)",
 "shops": []
 },
@@ -70957,11 +70957,11 @@
 ]
 },
 "64fb8d1b-50c0-4919-8048-fa813356bbc5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Flash",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 84000,
 "s": "Stanton",
@@ -70982,7 +70982,7 @@
 "shops": []
 },
 "6514f103-dc40-4f90-ba79-f1a041c7dfac": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Earthshake",
 "shops": []
 },
@@ -71335,7 +71335,7 @@
 ]
 },
 "65d7e6df-14c0-404b-a35a-0184d457760f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Dark Green",
 "shops": []
 },
@@ -72355,23 +72355,23 @@
 "shops": []
 },
 "6708804f-b781-40b7-b691-608f83641aec": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Pariah",
 "shops": []
 },
 "670c55b0-a6a0-4109-9e71-6585f20ed286": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Violet",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 1705,
 "s": "Stanton",
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1814,
 "s": "Stanton",
@@ -72447,7 +72447,7 @@
 ]
 },
 "677297d2-5f25-4e6c-afc0-f75f5f9244f7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Dark Red",
 "shops": []
 },
@@ -73306,7 +73306,7 @@
 "shops": []
 },
 "688acbee-3feb-4c39-b76c-a66b82fbb9b1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Akuma",
 "shops": []
 },
@@ -73583,7 +73583,7 @@
 ]
 },
 "68fd65e6-6017-4ad6-a770-b164253c204f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Core Dark Green",
 "shops": []
 },
@@ -73841,7 +73841,7 @@
 "shops": []
 },
 "69aff2c2-dc52-41b9-9308-85a13d073b34": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Roughshod",
 "shops": []
 },
@@ -74478,7 +74478,7 @@
 ]
 },
 "6a42da28-8905-4639-af9d-ce9f2c368d98": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Brimstone",
 "shops": []
 },
@@ -74951,18 +74951,18 @@
 "shops": []
 },
 "6ad48848-17a2-4bc8-8fa0-55cae91dfd51": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Aqua",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1705,
 "s": "Stanton",
@@ -74971,7 +74971,7 @@
 ]
 },
 "6ad56155-8312-4b3d-b564-f6b1bd2b8b68": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Roughshod",
 "shops": []
 },
@@ -75015,9 +75015,16 @@
 ]
 },
 "6b15415e-fd25-4b68-a64c-fd92687fb0db": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Imperial",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-09-16",
 "l": "Port Tressler",
@@ -75052,13 +75059,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -75218,7 +75218,7 @@
 "shops": []
 },
 "6b6f6653-7fff-4358-9cde-82f2e2b281d7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Outcrop",
 "shops": []
 },
@@ -75480,7 +75480,7 @@
 ]
 },
 "6bd54e97-7a6a-4daa-823b-491c031d7932": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Shadow Gild",
 "shops": []
 },
@@ -75512,7 +75512,7 @@
 ]
 },
 "6bd949ad-cb9d-41d1-b6a5-2ac931bc61d5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit Red Festival",
 "shops": []
 },
@@ -75580,18 +75580,18 @@
 ]
 },
 "6bfa3cf9-b399-402b-a6f7-d811656a426d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Grey",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1705,
 "s": "Stanton",
@@ -75600,7 +75600,7 @@
 ]
 },
 "6c139104-ea89-41cb-8347-0922e6ed7bec": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Outcrop",
 "shops": []
 },
@@ -75680,7 +75680,7 @@
 "shops": []
 },
 "6c53806f-80f6-48c8-8f6c-93d866948d5e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Dark Green",
 "shops": []
 },
@@ -76194,7 +76194,7 @@
 "shops": []
 },
 "6d0485b9-f793-46aa-8b37-9413d588a6bc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Dark Red",
 "shops": []
 },
@@ -76349,7 +76349,7 @@
 "shops": []
 },
 "6d3e0441-f24e-4c38-94b5-ada3af8a4609": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Arden-CL Backpack Elysium",
 "shops": []
 },
@@ -76387,7 +76387,7 @@
 ]
 },
 "6d8d3c54-19f3-4ed1-bfe4-43caa62acd90": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Neon Pink",
 "shops": []
 },
@@ -76924,7 +76924,7 @@
 "shops": []
 },
 "6e0b78ef-3bab-49d1-abb0-aa8f092918de": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Helmet Midnight Sun",
 "shops": []
 },
@@ -77194,7 +77194,7 @@
 ]
 },
 "6e7e0bfc-78bc-49a6-9bb9-93c328efe74c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Dark Red",
 "shops": [
 {
@@ -77233,18 +77233,18 @@
 "t": "Casaba Outlet - CRU-L4"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1741,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 1741,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1741,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -77766,7 +77766,7 @@
 "shops": []
 },
 "6f0c55f8-fe90-4a32-b2c5-33c4fd722f91": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Starchaser",
 "shops": []
 },
@@ -80418,7 +80418,7 @@
 ]
 },
 "7176bf25-ae7d-45d7-b99b-7974d3e8b599": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack",
 "shops": []
 },
@@ -80547,7 +80547,7 @@
 "shops": []
 },
 "71a869a5-74ec-4fd8-85a6-e1a5813615fc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Tan",
 "shops": [
 {
@@ -80556,6 +80556,13 @@
 "p": 395,
 "s": "Stanton",
 "t": "Refinery Shop - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -80598,13 +80605,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -81416,7 +81416,7 @@
 ]
 },
 "7276eed8-e1be-453b-a2b0-e8aca32c7447": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Ferrum",
 "shops": []
 },
@@ -83271,7 +83271,7 @@
 ]
 },
 "73754ce9-d505-4510-9a7e-e7be4c1943bc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Icefall",
 "shops": []
 },
@@ -83377,7 +83377,7 @@
 ]
 },
 "73bdb20b-547f-4134-a89c-1727248fd9cb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Red",
 "shops": []
 },
@@ -83402,7 +83402,7 @@
 "shops": []
 },
 "7408404d-d1f9-4941-bf7f-93886fac4bc9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Embark",
 "shops": [
 {
@@ -83420,6 +83420,27 @@
 "t": "Armor - Everus Harbor"
 },
 {
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1456,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1456,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L4 Shallow Fields Station",
+"p": 1456,
+"s": "Stanton",
+"t": "Armor - CRU-L4"
+},
+{
 "d": "2026-10-31",
 "l": "Terra Gateway",
 "p": 1456,
@@ -83434,32 +83455,11 @@
 "t": "Armor - HUR-L1"
 },
 {
-"d": "2026-09-18",
-"l": "CRU-L4 Shallow Fields Station",
-"p": 1456,
-"s": "Stanton",
-"t": "Armor - CRU-L4"
-},
-{
 "d": "2026-09-11",
 "l": "MIC-L1 Shallow Frontier Station",
 "p": 1456,
 "s": "Stanton",
 "t": "Armor - MIC-L1"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1456,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1456,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -83474,6 +83474,13 @@
 "p": 1456,
 "s": "Stanton",
 "t": "Armor - ARC-L4"
+},
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 1311,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-10-15",
@@ -83495,13 +83502,6 @@
 "p": 1311,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 1311,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -83634,7 +83634,7 @@
 "shops": []
 },
 "74214901-360c-46fa-9ff8-2d60d8260290": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Dark Red",
 "shops": []
 },
@@ -83731,7 +83731,7 @@
 ]
 },
 "7440e342-3c54-4a15-93f5-7cf041bbb57c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Calva Helmet Red Racing Festival",
 "shops": []
 },
@@ -83951,7 +83951,7 @@
 ]
 },
 "746bee07-54dd-4cb8-9c15-d09deb9e37e2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Protean Boots",
 "shops": [
 {
@@ -83974,6 +83974,48 @@
 "p": 532,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 560,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 560,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 560,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 560,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 560,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 560,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -84004,13 +84046,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 560,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 560,
@@ -84023,20 +84058,6 @@
 "p": 560,
 "s": "Stanton",
 "t": "Shop Terminal - Zephyr"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 560,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 560,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
 },
 {
 "d": "2026-09-10",
@@ -84054,13 +84075,6 @@
 },
 {
 "d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 560,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
 "l": "ARC-L2 Lively Pathway Station",
 "p": 560,
 "s": "Stanton",
@@ -84072,13 +84086,6 @@
 "p": 560,
 "s": "Stanton",
 "t": "Refinery Shop - ARC-L2"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 560,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -84131,13 +84138,6 @@
 },
 {
 "d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 560,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-28",
 "l": "ARC-L4 Faint Glen Station",
 "p": 560,
 "s": "Stanton",
@@ -84165,7 +84165,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 560,
 "s": "Nyx",
@@ -84229,7 +84229,7 @@
 ]
 },
 "7491b9a8-f601-47d4-97ff-148924704363": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Helmet",
 "shops": []
 },
@@ -84706,7 +84706,7 @@
 "shops": []
 },
 "753e394f-472a-4853-b91b-73a5802a2564": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ivers Boots Black",
 "shops": [
 {
@@ -85197,7 +85197,7 @@
 "shops": []
 },
 "75903fea-f957-46d1-a45b-77bcb3fbf2cb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Nightveil",
 "shops": []
 },
@@ -85268,7 +85268,7 @@
 ]
 },
 "75a2e15a-60c1-49cd-838e-de3cad6c2037": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Pants White",
 "shops": []
 },
@@ -85300,11 +85300,11 @@
 ]
 },
 "75b3b850-02ff-4646-9704-33f6b6b50c5c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Sienna",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
@@ -85495,7 +85495,7 @@
 "shops": []
 },
 "765597cb-b501-42e9-b42b-a3598dce5433": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Purple",
 "shops": [
 {
@@ -85529,7 +85529,7 @@
 ]
 },
 "7656c45c-d301-4503-b404-fc4126ac7139": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Chairman's Club",
 "shops": []
 },
@@ -85896,7 +85896,7 @@
 "shops": []
 },
 "76e780fb-7029-48f3-8a4d-a241a1efb7c5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Ferrum",
 "shops": []
 },
@@ -86017,7 +86017,7 @@
 ]
 },
 "7729b33e-1167-4a10-b70c-45b9e7774f41": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Dark Green",
 "shops": []
 },
@@ -86075,7 +86075,7 @@
 "shops": []
 },
 "77d67708-5f1f-49c7-b845-b8e68796c7d2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Torreto Shirt",
 "shops": []
 },
@@ -86223,7 +86223,7 @@
 "shops": []
 },
 "77e6c484-ffb7-45e4-934a-cac4f762b48d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Earthwork",
 "shops": []
 },
@@ -86263,7 +86263,7 @@
 ]
 },
 "7824c3f1-40ce-47c3-9f8b-6775037479ef": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Combustion",
 "shops": []
 },
@@ -86670,12 +86670,12 @@
 "shops": []
 },
 "787a2c0a-1311-44b9-b195-3793100ca518": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Core Starchaser",
 "shops": []
 },
 "78835c61-f743-4239-b560-6e33a1e93569": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Neon Pink",
 "shops": []
 },
@@ -87228,7 +87228,7 @@
 "shops": []
 },
 "796b201a-bc50-43de-b116-4b6c4179d18e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Turfwar",
 "shops": []
 },
@@ -87368,7 +87368,7 @@
 ]
 },
 "79e349ea-5dcb-427d-81f6-7fd567d807a6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Seagreen",
 "shops": [
 {
@@ -87853,7 +87853,7 @@
 "shops": []
 },
 "7ad4b3e9-343d-4fc5-a4a7-951350eef978": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Combustion",
 "shops": []
 },
@@ -87899,7 +87899,7 @@
 "shops": []
 },
 "7afbaddb-6dff-47e1-bf1b-2d38854b5a37": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Aqua",
 "shops": [
 {
@@ -87957,7 +87957,7 @@
 ]
 },
 "7b0c2445-5f43-4a87-83da-1687c6cd0f64": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Bloodstorm",
 "shops": []
 },
@@ -88145,7 +88145,7 @@
 "shops": []
 },
 "7b756dc5-ad76-47e2-9e48-d398d6f25827": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Dark Green",
 "shops": []
 },
@@ -88322,7 +88322,7 @@
 "shops": []
 },
 "7bc5259c-6462-4c30-84ab-2ac895895ba3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Earthshake",
 "shops": []
 },
@@ -88437,7 +88437,7 @@
 ]
 },
 "7be74532-d5a3-46ba-85b5-6865f4bd88fe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Olive",
 "shops": []
 },
@@ -90133,7 +90133,7 @@
 "shops": []
 },
 "7d72580c-23a2-4258-9bd5-4275da1f08c8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Sienna",
 "shops": []
 },
@@ -90762,7 +90762,7 @@
 ]
 },
 "7dd10213-c4dd-4f18-8eb2-7242471db025": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Earthwork",
 "shops": []
 },
@@ -90937,7 +90937,7 @@
 "shops": []
 },
 "7e4e3cd2-ee45-4f96-be39-92b5ffdeebce": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Grey",
 "shops": []
 },
@@ -91026,7 +91026,7 @@
 "shops": []
 },
 "7ebf7cf8-1ffc-40d5-97f8-75d4225d36c1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Red Alert",
 "shops": []
 },
@@ -91324,7 +91324,7 @@
 "shops": []
 },
 "7ede913f-4bce-4934-9312-40e4e754452d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask",
 "shops": []
 },
@@ -91389,7 +91389,7 @@
 ]
 },
 "7ef5780d-9ced-47ad-b70b-ba0755dacb44": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Aqua",
 "shops": [
 {
@@ -91796,7 +91796,7 @@
 ]
 },
 "7fa687ac-50b2-4db0-886e-b0e4d7e7bccc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Blue",
 "shops": [
 {
@@ -91807,7 +91807,7 @@
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1530,
 "s": "Stanton",
@@ -92243,7 +92243,7 @@
 ]
 },
 "80720f8a-00ad-4bf5-b04b-42fcb146446e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Elysium",
 "shops": []
 },
@@ -92338,7 +92338,7 @@
 ]
 },
 "80cb3a30-5626-45c7-b6c1-2015481f5b7c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Red",
 "shops": []
 },
@@ -92381,7 +92381,7 @@
 "shops": []
 },
 "80f66f6f-8b0b-4517-87e9-8f094dcb2b55": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Moonfall",
 "shops": []
 },
@@ -92803,7 +92803,7 @@
 ]
 },
 "81565c8e-9099-4400-941f-2f9fd38568a0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Sienna",
 "shops": []
 },
@@ -94355,7 +94355,7 @@
 ]
 },
 "824c2f79-8316-438f-91ad-72eafde6c00c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Orange",
 "shops": []
 },
@@ -94547,9 +94547,23 @@
 "shops": []
 },
 "83127ccc-80ff-4e38-8e92-59bf6cd2167a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Orange",
 "shops": [
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-07",
 "l": "ARC-L1 Wide Forest Station",
@@ -94570,13 +94584,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -94605,13 +94612,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-28",
@@ -95504,7 +95504,7 @@
 "shops": []
 },
 "840e1940-466c-4a42-962e-238f8bc4460d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Violet",
 "shops": []
 },
@@ -95562,7 +95562,7 @@
 "shops": []
 },
 "84241e79-fb77-4fba-8783-1df8c6744dce": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Yellow",
 "shops": []
 },
@@ -95716,7 +95716,7 @@
 "shops": []
 },
 "846fc398-dbb0-4af7-98e3-f9d4aed7f371": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Dark Green",
 "shops": [
 {
@@ -95725,6 +95725,13 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-16",
@@ -95753,13 +95760,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Covalex Shipping - Providence Platform - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-27",
@@ -96570,7 +96570,7 @@
 "shops": []
 },
 "85534b59-220e-4a92-9c8e-77a23e81ecf2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Purple",
 "shops": []
 },
@@ -97318,7 +97318,7 @@
 "shops": []
 },
 "8670a3d2-82c4-4a31-9e7c-7284aa3859af": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Blue",
 "shops": [
 {
@@ -97336,7 +97336,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1525,
 "s": "Stanton",
@@ -98471,7 +98471,7 @@
 ]
 },
 "877290d3-a275-414f-9eb1-7d2fce3c4fdb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Mark I",
 "shops": []
 },
@@ -98481,7 +98481,7 @@
 "shops": []
 },
 "879b619e-05e1-4f2c-9f37-f6158fa7321b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Aqua",
 "shops": [
 {
@@ -98522,12 +98522,12 @@
 ]
 },
 "87a6a734-412c-4c9a-9cbd-b285247180d8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Grey",
 "shops": []
 },
 "87ad4aac-4ab8-4a4d-a76e-91b785eb0026": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Core White",
 "shops": []
 },
@@ -98631,7 +98631,7 @@
 "shops": []
 },
 "87d2313a-20fb-4b52-9e80-405b71008b64": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Dark Green",
 "shops": []
 },
@@ -98764,7 +98764,7 @@
 "shops": []
 },
 "8821103e-f5fa-46d9-99c4-f3d6b5e5cb24": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Helmet",
 "shops": []
 },
@@ -99445,7 +99445,7 @@
 "shops": []
 },
 "89c498b0-7154-4f28-885c-28b3300892a5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Sienna",
 "shops": [
 {
@@ -99463,7 +99463,7 @@
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1530,
 "s": "Stanton",
@@ -99472,7 +99472,7 @@
 ]
 },
 "89c91b5c-3006-4777-a870-9059b4f3efb2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Sunstone",
 "shops": []
 },
@@ -99602,7 +99602,7 @@
 "shops": []
 },
 "8a3ac00f-58ab-4638-9022-0e026d350361": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Deadlock",
 "shops": []
 },
@@ -99662,7 +99662,7 @@
 "shops": []
 },
 "8a67752c-20a4-4ca9-a6e6-0a3797f2e9c3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Neon Pink",
 "shops": []
 },
@@ -100285,7 +100285,7 @@
 "shops": []
 },
 "8b7770f5-b664-466b-80d8-1ed97923c0be": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Embark",
 "shops": [
 {
@@ -100301,6 +100301,20 @@
 "p": 1226,
 "s": "Stanton",
 "t": "Armor - Everus Harbor"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 1290,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 1290,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -100331,20 +100345,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 1290,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 1290,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-08",
 "l": "ARC-L4 Faint Glen Station",
 "p": 1290,
@@ -100352,18 +100352,18 @@
 "t": "Armor - ARC-L4"
 },
 {
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 1161,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
+},
+{
 "d": "2026-10-15",
 "l": "Rod's Fuel 'N Supplies",
 "p": 1161,
 "s": "Pyro",
 "t": "Guns - Rod's Fuel 'N Supplies"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 1161,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -100617,9 +100617,16 @@
 ]
 },
 "8b9815ab-1500-4858-b9f1-38fd92b2121b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots White",
 "shops": [
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
 {
 "d": "2026-10-07",
 "l": "ARC-L1 Wide Forest Station",
@@ -100633,13 +100640,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
 },
 {
 "d": "2026-09-10",
@@ -100712,7 +100712,7 @@
 "shops": []
 },
 "8bbb69d3-9233-4a6d-b23c-53694de7e08b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Bokto Arms",
 "shops": []
 },
@@ -100770,7 +100770,7 @@
 ]
 },
 "8bd6634f-b34a-4e31-b2c5-6e2b792b55f4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Firebrick",
 "shops": [
 {
@@ -101848,11 +101848,11 @@
 ]
 },
 "8c995ee7-389f-4a8c-ae2d-7231ea4d5ff9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Green",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 1705,
 "s": "Stanton",
@@ -102878,7 +102878,7 @@
 "shops": []
 },
 "8d57ed44-08f2-420b-9a35-deac7e6b09f9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Wildwood",
 "shops": []
 },
@@ -103174,7 +103174,7 @@
 ]
 },
 "8db3dd5f-0e44-41b7-b438-fd1268290699": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel-SE Arms Dark Green",
 "shops": []
 },
@@ -103401,7 +103401,7 @@
 ]
 },
 "8e4c40b3-f9eb-40f3-811d-01a5099fdcd6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Legs Midnight Sun",
 "shops": []
 },
@@ -104236,7 +104236,7 @@
 ]
 },
 "8ed52b69-ddbe-4d56-8bcb-e71aaa5c8a6d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Draas",
 "shops": []
 },
@@ -104322,7 +104322,7 @@
 ]
 },
 "8f2ef086-d443-4714-a186-cf38f04a5da2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Seagreen",
 "shops": []
 },
@@ -105051,7 +105051,7 @@
 ]
 },
 "908dc912-937f-4b43-9741-97bfd4ba9b6c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Blue",
 "shops": []
 },
@@ -105066,7 +105066,7 @@
 "shops": []
 },
 "9098c171-5633-4aa6-b360-82713b5258c2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Stronghold",
 "shops": []
 },
@@ -107431,7 +107431,7 @@
 "shops": []
 },
 "921e82ea-0ae8-461d-9822-b26c64958c10": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Roughshod",
 "shops": []
 },
@@ -107446,7 +107446,7 @@
 "shops": []
 },
 "922bb8a8-e61a-4ff1-93c8-557ece576d69": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Wildwood",
 "shops": []
 },
@@ -108603,7 +108603,7 @@
 ]
 },
 "92fc134c-4d10-48fb-b439-aec44e36fe4e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Slipstream",
 "shops": []
 },
@@ -108745,17 +108745,17 @@
 ]
 },
 "93436f11-e667-4f23-96c8-77f0f72a1017": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Cerrado Boots Wood",
 "shops": []
 },
 "9349eae9-9072-4333-a9e1-520866ad7d32": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Icefall",
 "shops": []
 },
 "934ac478-9c87-48d1-8fd3-e5359171983c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Atlas",
 "shops": [
 {
@@ -109032,7 +109032,7 @@
 "shops": []
 },
 "93cc91da-f89d-4fd8-805b-2ad85db26e6c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Roughshod",
 "shops": []
 },
@@ -109452,7 +109452,7 @@
 "shops": []
 },
 "94576f65-72e5-418a-ac46-56aea3e0d81d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Base",
 "shops": []
 },
@@ -110191,7 +110191,7 @@
 ]
 },
 "94bb9fd0-a6d7-4015-bb42-8fb4acf3f793": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Violet",
 "shops": []
 },
@@ -110465,7 +110465,7 @@
 ]
 },
 "94dadfef-0c9f-47cc-96f6-9fa81fe6de12": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Black",
 "shops": [
 {
@@ -110481,6 +110481,41 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -110511,32 +110546,11 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 415,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
 },
 {
 "d": "2026-09-10",
@@ -110551,13 +110565,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Nyx Gateway (Stanton)"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-09-09",
@@ -110600,13 +110607,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -111038,9 +111038,23 @@
 ]
 },
 "95ab2312-05c5-405e-9d13-0bf473015afd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Twilight",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 1705,
+"s": "Stanton",
+"t": "Clothing Shop - Baijini Point"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1705,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
@@ -111054,20 +111068,6 @@
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 1705,
-"s": "Stanton",
-"t": "Clothing Shop - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1705,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -111639,7 +111639,7 @@
 "shops": []
 },
 "96a017e7-fb9c-4098-8180-4bb8575839e1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Calva Racing Helmet Year of the Rat",
 "shops": []
 },
@@ -112348,7 +112348,7 @@
 "shops": []
 },
 "976c0c1e-3724-4d2b-9192-7b27d7f2e6b0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Twilight",
 "shops": []
 },
@@ -112650,7 +112650,7 @@
 "shops": []
 },
 "97ddc9d3-efcd-40ee-94bd-c676085c099c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Black",
 "shops": [
 {
@@ -112668,18 +112668,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1525,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 1525,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1525,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-29",
@@ -112863,7 +112863,7 @@
 "shops": []
 },
 "98114206-c54f-4157-90c9-7e1781fdc10d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Desert",
 "shops": [
 {
@@ -112879,6 +112879,48 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 415,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - Nyx Gateway (Stanton)"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-10-31",
@@ -112916,34 +112958,6 @@
 "t": "Casaba Outlet - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-09",
 "l": "ARC-L2 Lively Pathway Station",
 "p": 415,
@@ -112951,25 +112965,11 @@
 "t": "Refinery Shop - ARC-L2"
 },
 {
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 415,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
-},
-{
 "d": "2026-09-03",
 "l": "Orison",
 "p": 415,
 "s": "Stanton",
 "t": "Providence Surplus - Providence Platform - Orison"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-28",
@@ -112986,7 +112986,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 415,
 "s": "Nyx",
@@ -113242,7 +113242,7 @@
 ]
 },
 "98451bdd-049b-47ce-9d7e-d4d236bf6601": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Sienna",
 "shops": []
 },
@@ -113662,7 +113662,7 @@
 "shops": []
 },
 "986906da-1cd1-4a0b-b237-6d246a4b1687": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core",
 "shops": [
 {
@@ -113699,7 +113699,7 @@
 "shops": []
 },
 "987c74f3-73bc-40fa-b3ba-71fc6379321d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs",
 "shops": []
 },
@@ -114952,7 +114952,7 @@
 ]
 },
 "995c2de5-f7e6-4646-83e3-4627ba5a5865": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "VK-00",
 "shops": []
 },
@@ -115336,7 +115336,7 @@
 "shops": []
 },
 "9a3b2954-2c3b-4953-8cbe-6a2229d97ac9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "GP-XP Industrial Battery",
 "shops": []
 },
@@ -116010,7 +116010,7 @@
 "shops": []
 },
 "9b57d452-10ab-4473-9235-19da966ebadb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs",
 "shops": []
 },
@@ -116028,7 +116028,7 @@
 ]
 },
 "9b6d2a06-c408-4b25-a234-488523cd8d2b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Green",
 "shops": []
 },
@@ -116056,7 +116056,7 @@
 ]
 },
 "9b8cd51e-a5f4-4b09-83cd-5ff6e729c8f3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Turfwar",
 "shops": []
 },
@@ -116443,7 +116443,7 @@
 "shops": []
 },
 "9c5b4134-7205-4725-9d59-99b8a3db1f23": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Purple",
 "shops": [
 {
@@ -116461,18 +116461,18 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-20",
+"l": "Seraphim Station",
+"p": 1705,
+"s": "Stanton",
+"t": "Casaba Outlet - Seraphim"
+},
+{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Seraphim Station",
-"p": 1705,
-"s": "Stanton",
-"t": "Casaba Outlet - Seraphim"
 }
 ]
 },
@@ -116607,7 +116607,7 @@
 ]
 },
 "9d0b2ced-fef4-4a38-b7ab-5b4686e2b59d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oni Kiba Helmet",
 "shops": []
 },
@@ -117521,7 +117521,7 @@
 ]
 },
 "9dc4078f-9598-4453-92e8-d479acadfca8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Daystar",
 "shops": []
 },
@@ -118491,7 +118491,7 @@
 "shops": []
 },
 "9fe4afb0-284a-48b4-bd9a-5fdc873d86a2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Firebrick",
 "shops": [
 {
@@ -118545,7 +118545,7 @@
 "shops": []
 },
 "a041e702-f711-408b-b3b0-96ecb8649ab1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask Flush",
 "shops": []
 },
@@ -119069,7 +119069,7 @@
 "shops": []
 },
 "a1321639-6bb0-4729-a1dd-5839dd5ebfaf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Orange",
 "shops": []
 },
@@ -119119,7 +119119,7 @@
 "shops": []
 },
 "a1490b6f-36f9-46fa-bca5-45c1e4830094": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit Starchaser",
 "shops": []
 },
@@ -119167,7 +119167,7 @@
 "shops": []
 },
 "a16e9087-8f85-4765-a7c6-732790437727": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Orange",
 "shops": []
 },
@@ -119292,7 +119292,7 @@
 "shops": []
 },
 "a1b11659-1f1a-4e6b-b5f7-66242442e641": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Waldron Jacket White",
 "shops": [
 {
@@ -119581,7 +119581,7 @@
 "shops": []
 },
 "a22612b1-4479-43fb-9bfb-7c054a0f1de1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Nightveil",
 "shops": []
 },
@@ -120113,7 +120113,7 @@
 ]
 },
 "a31defa6-6c83-4605-a743-61b683df64cf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Roughshod",
 "shops": []
 },
@@ -120370,12 +120370,12 @@
 ]
 },
 "a3ce6502-8004-4c58-9788-bc391d77ad3f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Deathblow",
 "shops": []
 },
 "a3d2c4b2-1e97-4522-8ff5-0769bf0f62bd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Aqua",
 "shops": []
 },
@@ -120410,17 +120410,17 @@
 ]
 },
 "a3d71588-8963-48a2-841e-26271ebe23dc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Bokto Legs",
 "shops": []
 },
 "a3d72f0c-37de-4368-904e-ef175b6f18ba": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Black",
 "shops": []
 },
 "a3da9c06-e722-428e-bca6-b853979d18a4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Deathblow",
 "shops": []
 },
@@ -120611,7 +120611,7 @@
 ]
 },
 "a459ce52-9acd-42cc-8679-26463fc44bf2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lavelle Pants (Modified)",
 "shops": []
 },
@@ -120662,7 +120662,7 @@
 ]
 },
 "a490f534-4324-4fd9-8cc2-cab32a70fb71": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet White",
 "shops": []
 },
@@ -120996,7 +120996,7 @@
 ]
 },
 "a4f58559-692b-40a7-8b22-72b354a074e6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Violet",
 "shops": []
 },
@@ -121214,7 +121214,7 @@
 "shops": []
 },
 "a5327582-23fb-43db-a5ec-f3961e1761a3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Clanguard",
 "shops": []
 },
@@ -121290,7 +121290,7 @@
 ]
 },
 "a554ed13-c5d6-46df-a7b0-dce25cefe9d2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Moonfall",
 "shops": []
 },
@@ -122191,7 +122191,7 @@
 "shops": []
 },
 "a68db5c5-7f6b-4372-9819-856150eb59fb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Base",
 "shops": []
 },
@@ -122302,7 +122302,7 @@
 "shops": []
 },
 "a6d81a00-c652-4551-b28f-cc36709ea83c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tetsudo Legs Stronghold",
 "shops": []
 },
@@ -122527,7 +122527,7 @@
 "shops": []
 },
 "a731f917-1e40-441a-8885-30328adcdbae": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Shogun Kiba Helmet Stronghold",
 "shops": []
 },
@@ -122675,7 +122675,7 @@
 "shops": []
 },
 "a76b255e-e7d3-4171-bfd7-aa5ac6a21da7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Arms Endro",
 "shops": []
 },
@@ -122889,7 +122889,7 @@
 ]
 },
 "a7d15d5d-ccbc-4f22-bc73-aa449a9827cf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Earthshake",
 "shops": []
 },
@@ -123444,7 +123444,7 @@
 ]
 },
 "a88fda49-54dc-4b2b-8e19-33559c29df55": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Abyss",
 "shops": []
 },
@@ -123459,7 +123459,7 @@
 "shops": []
 },
 "a8a95e72-157d-415d-bbe4-08fad4445c85": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Purple",
 "shops": []
 },
@@ -123558,7 +123558,7 @@
 ]
 },
 "a8c4dba6-592d-4049-a242-7026ec8f826a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Red",
 "shops": []
 },
@@ -123568,11 +123568,11 @@
 "shops": []
 },
 "a8d6d619-15f8-4f9e-9bee-28f9ea0b2dce": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Black Steel",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 3749,
 "s": "Stanton",
@@ -123766,7 +123766,7 @@
 ]
 },
 "a91f41b3-1a29-44b2-b2c8-6780793d783a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Icefall",
 "shops": []
 },
@@ -124980,7 +124980,7 @@
 "shops": []
 },
 "aa3a3eeb-9d03-414e-8ef2-0988a9b88fb6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Sunstone",
 "shops": []
 },
@@ -125016,7 +125016,7 @@
 "shops": []
 },
 "aa446b0b-eb56-4413-b455-639617e7c330": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Sandstorm",
 "shops": [
 {
@@ -126247,7 +126247,7 @@
 "shops": []
 },
 "aabb8547-1215-46fd-9688-40ba0e4e84e3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Shogun Kiba Helmet Akuma",
 "shops": []
 },
@@ -126295,7 +126295,7 @@
 "shops": []
 },
 "aae8c380-283b-475b-8a61-1b32afcdeb1c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Grey",
 "shops": []
 },
@@ -126305,7 +126305,7 @@
 "shops": []
 },
 "aaef023e-9f0a-48c3-a8b7-cc8c02e124a9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Bloodstorm",
 "shops": []
 },
@@ -126379,7 +126379,7 @@
 ]
 },
 "ab06c2dd-33bb-4f2a-a4c8-de991b501f16": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Dark Red",
 "shops": []
 },
@@ -126389,7 +126389,7 @@
 "shops": []
 },
 "ab153446-92cf-461d-9a0f-514961a6bdf6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Tan",
 "shops": [
 {
@@ -126636,7 +126636,7 @@
 "shops": []
 },
 "abde0f88-24cb-4404-8fc1-baf37e855a67": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Draas",
 "shops": []
 },
@@ -126696,7 +126696,7 @@
 ]
 },
 "abf5bbf0-7ae5-4d35-a608-5a8591350edb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Carragio Jacket Grey",
 "shops": []
 },
@@ -126706,7 +126706,7 @@
 "shops": []
 },
 "ac0dee23-9ba5-4a44-aaf5-d06df4bf0213": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Green",
 "shops": [
 {
@@ -126717,11 +126717,18 @@
 "t": "Cargo Center Supplies - Everus Harbor"
 },
 {
-"d": "2026-09-26",
+"d": "2026-11-19",
 "l": "HUR-L2 Faithful Dream Station",
 "p": 415,
 "s": "Stanton",
 "t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-10",
@@ -126771,13 +126778,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L3"
-},
-{
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-08-30",
@@ -126981,7 +126981,7 @@
 "shops": []
 },
 "acb16b1e-6f95-42d3-a05d-4792e501e273": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Frostline",
 "shops": []
 },
@@ -127121,7 +127121,7 @@
 "shops": []
 },
 "acbd923b-42d3-4993-bb47-ab6a1d7ddac5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms White",
 "shops": []
 },
@@ -127131,7 +127131,7 @@
 "shops": []
 },
 "acc632e0-5547-485a-8bb7-a11c4713709a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Orange",
 "shops": []
 },
@@ -127368,7 +127368,7 @@
 ]
 },
 "ad06a0c7-98ff-4f95-8cee-f4922e18253f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Green",
 "shops": []
 },
@@ -127628,22 +127628,22 @@
 ]
 },
 "ad59f651-83d0-42f3-839a-8f055243ba6b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Defiant",
 "shops": [
 {
-"d": "2026-11-09",
-"l": "New Babbage",
-"p": 59400,
-"s": "Stanton",
-"t": "Omega Pro - New Babbage"
-},
-{
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 59400,
 "s": "Stanton",
 "t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "New Babbage",
+"p": 59400,
+"s": "Stanton",
+"t": "Omega Pro - New Babbage"
 },
 {
 "d": "2026-11-13",
@@ -127651,6 +127651,13 @@
 "p": 59400,
 "s": "Nyx",
 "t": "Teach's Item Shop - Levski"
+},
+{
+"d": "2026-11-20",
+"l": "Dudley & Daughters",
+"p": 59400,
+"s": "Pyro",
+"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-11-13",
@@ -127672,13 +127679,6 @@
 "p": 59400,
 "s": "Pyro",
 "t": "Ship Parts - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 59400,
-"s": "Pyro",
-"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -127812,7 +127812,7 @@
 "shops": []
 },
 "ad80acdd-719e-49eb-bc06-cfce78591598": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Outcrop",
 "shops": []
 },
@@ -128254,7 +128254,7 @@
 ]
 },
 "ae12527b-8cf5-4ec0-9853-682dd9f69500": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Green",
 "shops": []
 },
@@ -128426,7 +128426,7 @@
 ]
 },
 "ae3019a1-4f0f-4a41-8451-8b6b84c632e8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Orange",
 "shops": []
 },
@@ -128504,7 +128504,7 @@
 "shops": []
 },
 "ae7a6249-33ae-42b0-bfa1-f3fa6f9ffa3e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Dark Green",
 "shops": []
 },
@@ -128519,7 +128519,7 @@
 "shops": []
 },
 "ae8e946a-8c02-41ff-a2b1-273dbec6c571": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Violet",
 "shops": []
 },
@@ -128888,11 +128888,11 @@
 "shops": []
 },
 "afbe1f75-0e68-4e80-8d79-88279c8c52e5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Black Steel",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1239,
 "s": "Stanton",
@@ -129072,7 +129072,7 @@
 "shops": []
 },
 "b0272a6d-67a4-4838-a3e4-1abcef0e4476": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sabine Undersuit",
 "shops": []
 },
@@ -129953,7 +129953,7 @@
 ]
 },
 "b0e2153f-190c-4ae8-981e-2de0096cd6d4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Red",
 "shops": [
 {
@@ -129964,18 +129964,25 @@
 "t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 415,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
 "d": "2026-09-27",
 "l": "HUR-L1 Green Glade Station",
 "p": 415,
 "s": "Stanton",
 "t": "Casaba Outlet - HUR-L1"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
 },
 {
 "d": "2026-09-10",
@@ -129990,13 +129997,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Clothing Shop - ARC-L2"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 415,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
 },
 {
 "d": "2026-09-08",
@@ -130020,7 +130020,7 @@
 "t": "Clothing Shop - ARC-L3"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 512,
 "s": "Stanton",
@@ -130034,7 +130034,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 415,
 "s": "Nyx",
@@ -130282,7 +130282,7 @@
 ]
 },
 "b12adbab-eba8-4c27-b44c-de4501b8394e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Metropolis",
 "shops": []
 },
@@ -130898,7 +130898,7 @@
 "shops": []
 },
 "b1ce5cbf-e953-4061-b0ee-8e762b1aa545": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Imperial",
 "shops": [
 {
@@ -131444,7 +131444,7 @@
 ]
 },
 "b29853e7-3aa1-4de8-9429-d690f79fb646": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Earthwork",
 "shops": []
 },
@@ -131564,7 +131564,7 @@
 "shops": []
 },
 "b2de6ee0-b010-4134-befc-c342767456cc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Outcrop",
 "shops": []
 },
@@ -131891,7 +131891,7 @@
 "shops": []
 },
 "b3aebd44-acf3-4b2b-a171-7770d1eade90": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Helmet Elysium",
 "shops": []
 },
@@ -132121,11 +132121,11 @@
 ]
 },
 "b403c4a7-136f-4b4e-897c-6dd9f9bba9f0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Raven",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 3749,
 "s": "Stanton",
@@ -132389,7 +132389,7 @@
 ]
 },
 "b461e2c0-5f5a-4f1f-b119-4e92bbb3df1c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Core Endro",
 "shops": []
 },
@@ -132432,7 +132432,7 @@
 ]
 },
 "b48bd712-6f2e-4e53-bc33-8dfcc34a86d1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Moonfall",
 "shops": []
 },
@@ -134465,7 +134465,7 @@
 "shops": []
 },
 "b5aa2a2f-7763-4b19-b96b-24428b8089d4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Violet",
 "shops": [
 {
@@ -134805,9 +134805,16 @@
 ]
 },
 "b5f12620-8f8f-44ad-9880-943be43b1a1a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Seagreen",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-07",
 "l": "ARC-L1 Wide Forest Station",
@@ -134835,13 +134842,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Port Tressler"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-03",
@@ -135454,7 +135454,7 @@
 ]
 },
 "b5fc6485-a787-476c-aa05-e784e75b32b4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Olive",
 "shops": [
 {
@@ -135472,7 +135472,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1705,
 "s": "Stanton",
@@ -135996,7 +135996,7 @@
 ]
 },
 "b60c7b5c-bb32-4c39-854b-7c55de0d9657": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Bloodstorm",
 "shops": []
 },
@@ -136943,7 +136943,7 @@
 "shops": []
 },
 "b73ab0ef-5a5e-44f7-b74c-d686297d5bb5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ana Legs Endro",
 "shops": []
 },
@@ -137042,7 +137042,7 @@
 "shops": []
 },
 "b75d74b1-312f-4d47-aec6-f9f767cf64a5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Embark",
 "shops": [
 {
@@ -137058,6 +137058,20 @@
 "p": 789,
 "s": "Stanton",
 "t": "Armor - Everus Harbor"
+},
+{
+"d": "2026-11-20",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 830,
+"s": "Stanton",
+"t": "Armor - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 830,
+"s": "Stanton",
+"t": "Armor - Nyx Gateway (Stanton)"
 },
 {
 "d": "2026-10-31",
@@ -137088,20 +137102,6 @@
 "t": "Armor - MIC-L1"
 },
 {
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 830,
-"s": "Stanton",
-"t": "Armor - CRU-L1"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 830,
-"s": "Stanton",
-"t": "Armor - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-09",
 "l": "ARC-L1 Wide Forest Station",
 "p": 830,
@@ -137114,6 +137114,13 @@
 "p": 830,
 "s": "Stanton",
 "t": "Armor - ARC-L4"
+},
+{
+"d": "2026-11-19",
+"l": "Dudley & Daughters",
+"p": 747,
+"s": "Pyro",
+"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-10-15",
@@ -137149,13 +137156,6 @@
 "p": 747,
 "s": "Pyro",
 "t": "Guns - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 747,
-"s": "Pyro",
-"t": "Guns - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -138176,7 +138176,7 @@
 "shops": []
 },
 "b81baf63-09bd-445b-9f4f-6ba781ee818f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Chairman's Club",
 "shops": []
 },
@@ -139076,7 +139076,7 @@
 "shops": []
 },
 "b84ce874-f4e9-4921-9c75-2e4a5855b186": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Invictus Patch Collection",
 "shops": []
 },
@@ -139251,7 +139251,7 @@
 ]
 },
 "b8a27e7e-6bbb-4dd9-9e5d-36958012fc0b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Icefall",
 "shops": []
 },
@@ -139271,7 +139271,7 @@
 "shops": []
 },
 "b8c861ca-fe1d-4c52-9a1e-66c335a7c2e3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Blue",
 "shops": []
 },
@@ -139319,7 +139319,7 @@
 "shops": []
 },
 "b8f41207-e945-4be7-9c3b-7097ba9f7fb1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core White",
 "shops": []
 },
@@ -139763,7 +139763,7 @@
 "shops": []
 },
 "ba712733-e052-4cca-8349-c5ec1c24659a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Blue",
 "shops": []
 },
@@ -140294,7 +140294,7 @@
 "shops": []
 },
 "bb24483b-8822-4325-9368-0507d45e1be8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Green",
 "shops": []
 },
@@ -140500,7 +140500,7 @@
 ]
 },
 "bbad4646-c86e-43a7-b95c-bed0acb38213": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Orange",
 "shops": [
 {
@@ -140518,7 +140518,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1525,
 "s": "Stanton",
@@ -140879,7 +140879,7 @@
 "shops": []
 },
 "bc01680a-2d65-4572-b1b5-c09af2783c0c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core Daystar",
 "shops": []
 },
@@ -141217,7 +141217,7 @@
 ]
 },
 "bc64ccce-a776-463e-bf6c-ebf17a9e17d9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Yellow",
 "shops": []
 },
@@ -141525,7 +141525,7 @@
 ]
 },
 "bcadecab-e062-4b97-8d82-8b52e795bdec": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Moonfall",
 "shops": []
 },
@@ -142000,22 +142000,22 @@
 "shops": []
 },
 "bd423b9c-4115-4785-909a-77d621fd2bc4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Sedulity",
 "shops": [
 {
-"d": "2026-11-09",
-"l": "New Babbage",
-"p": 237600,
-"s": "Stanton",
-"t": "Omega Pro - New Babbage"
-},
-{
-"d": "2026-09-11",
+"d": "2026-11-19",
 "l": "CRU-L1 Ambitious Dream Station",
 "p": 237600,
 "s": "Stanton",
 "t": "Platinum Bay - CRU-L1"
+},
+{
+"d": "2026-11-18",
+"l": "New Babbage",
+"p": 237600,
+"s": "Stanton",
+"t": "Omega Pro - New Babbage"
 }
 ]
 },
@@ -142130,7 +142130,7 @@
 ]
 },
 "bd63d750-e7ba-4670-8948-1d89fbe633bb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Mark I",
 "shops": []
 },
@@ -142393,7 +142393,7 @@
 "shops": []
 },
 "bdd9ac06-1c2b-43d6-8601-aff88d2d752e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Rager",
 "shops": []
 },
@@ -142423,12 +142423,12 @@
 "shops": []
 },
 "be146639-a34c-4280-89db-36e8a4d9f4da": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Lodestone",
 "shops": []
 },
 "be161018-5142-4f44-8929-9ba409abb509": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Pariah",
 "shops": []
 },
@@ -142500,7 +142500,7 @@
 "shops": []
 },
 "be1ffc25-c87f-4c26-8a55-692f752a80fe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs",
 "shops": []
 },
@@ -142515,7 +142515,7 @@
 "shops": []
 },
 "be3eb52b-243a-4ed9-833a-d348f910a32a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Diligence",
 "shops": [
 {
@@ -142976,7 +142976,7 @@
 ]
 },
 "bebdb237-80b4-4eb1-9f0d-9fc332b6b538": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Purple",
 "shops": []
 },
@@ -144291,7 +144291,7 @@
 "shops": []
 },
 "c0fe4313-db92-49c4-96d9-ffd10937ce4c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Black",
 "shops": [
 {
@@ -144985,7 +144985,7 @@
 "shops": []
 },
 "c134cd92-c19e-49e6-9a7a-bc8ef272a5f8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Sienna",
 "shops": []
 },
@@ -145070,7 +145070,7 @@
 ]
 },
 "c17e3812-5939-4508-ae14-2f696520bbad": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Elysium",
 "shops": []
 },
@@ -145108,7 +145108,7 @@
 "shops": []
 },
 "c1c986a8-5a4c-4a6f-b508-8da3d3a7bd20": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Pariah",
 "shops": []
 },
@@ -146077,7 +146077,7 @@
 "shops": []
 },
 "c21b349e-2fff-4aee-afa2-96c0c97c4853": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Sienna",
 "shops": []
 },
@@ -146689,7 +146689,7 @@
 "shops": []
 },
 "c3880dcd-c3ec-4973-a3d6-edb923485c0a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket White",
 "shops": []
 },
@@ -147979,7 +147979,7 @@
 "shops": []
 },
 "c438ac68-6b55-4e20-be3d-f37d41a39ec5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Purple",
 "shops": [
 {
@@ -148085,12 +148085,12 @@
 "shops": []
 },
 "c488aefd-c738-4cae-a558-fe12cfa0bcb1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Core",
 "shops": []
 },
 "c49230b7-fb17-49d4-85bf-3006284a399d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Sienna",
 "shops": [
 {
@@ -148410,7 +148410,7 @@
 "shops": []
 },
 "c4b6af14-cd65-49c0-afb3-487042f15e31": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Helmet Ultimatum",
 "shops": []
 },
@@ -148425,7 +148425,7 @@
 "shops": []
 },
 "c4d91251-ef35-425d-ac6a-4c40f653f304": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms White",
 "shops": []
 },
@@ -148615,7 +148615,7 @@
 "shops": []
 },
 "c5626a80-16b7-4a8a-9f80-77c183518bc9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Yellow",
 "shops": [
 {
@@ -148640,7 +148640,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1873,
 "s": "Stanton",
@@ -148924,7 +148924,7 @@
 "shops": []
 },
 "c5b10269-79b0-46b0-bb1a-f245ba66f5d3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Yellow",
 "shops": []
 },
@@ -149015,11 +149015,11 @@
 ]
 },
 "c5eaa2a6-1259-47b5-b713-8e7cab5163ea": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Black Steel",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 4402,
 "s": "Stanton",
@@ -149244,7 +149244,7 @@
 "shops": []
 },
 "c6608ba6-3318-4477-b6a6-3d6c3a7461e2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Black",
 "shops": []
 },
@@ -150161,7 +150161,7 @@
 "shops": []
 },
 "c7714630-8e01-4be4-9fd4-f123a192a3eb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Deathblow",
 "shops": []
 },
@@ -150258,7 +150258,7 @@
 "shops": []
 },
 "c7af38cb-0172-49bb-b075-2815349ce59c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Combustion",
 "shops": []
 },
@@ -150320,11 +150320,18 @@
 ]
 },
 "c7c3faeb-1d23-410d-9f75-8b36fd0d58ba": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "LumaCore",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 242000,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 242000,
 "s": "Stanton",
@@ -150336,13 +150343,6 @@
 "p": 242000,
 "s": "Stanton",
 "t": "Cousin Crow's - Providence Platform - Orison"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 242000,
-"s": "Stanton",
-"t": "Platinum Bay - Baijini Point"
 },
 {
 "d": "2026-08-29",
@@ -150454,7 +150454,7 @@
 ]
 },
 "c7e772e7-a99f-4881-b0ef-bfe0093807c6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Blue",
 "shops": []
 },
@@ -150469,7 +150469,7 @@
 "shops": []
 },
 "c7fb0fc2-20b5-4c23-9a22-de9c7d5052d9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Daystar",
 "shops": []
 },
@@ -150499,7 +150499,7 @@
 "shops": []
 },
 "c81d84a1-e16f-4043-9514-b9f7c65098a2": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tetsudo Arms Stronghold",
 "shops": []
 },
@@ -150966,7 +150966,7 @@
 ]
 },
 "c88b3131-7cad-4e90-a288-ca6be6b9328d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Seagreen",
 "shops": []
 },
@@ -151327,7 +151327,7 @@
 ]
 },
 "c94881f7-6ce1-4fb3-8bd7-018e71d1d19a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Red",
 "shops": []
 },
@@ -151586,7 +151586,7 @@
 "shops": []
 },
 "c9d44046-13f2-4882-9db3-dd89eed1728d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Brimstone",
 "shops": []
 },
@@ -151601,7 +151601,7 @@
 "shops": []
 },
 "c9e29740-b5cf-40d8-8e3c-90c8871daba8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots",
 "shops": [
 {
@@ -151610,6 +151610,34 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Everus Harbor"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - HUR-L2"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-10-07",
@@ -151626,13 +151654,6 @@
 "t": "Refinery Shop - HUR-L1"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - HUR-L2"
-},
-{
 "d": "2026-09-16",
 "l": "Port Tressler",
 "p": 415,
@@ -151645,20 +151666,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Shop Terminal - Zephyr"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
 },
 {
 "d": "2026-09-09",
@@ -151687,13 +151694,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Seraphim"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-08-27",
@@ -152060,7 +152060,7 @@
 "shops": []
 },
 "ca5d29ea-e118-401f-9da0-c36594958867": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core Turfwar",
 "shops": []
 },
@@ -152206,7 +152206,7 @@
 ]
 },
 "ca7c4320-be86-41e8-9c3c-fa6aec0e5129": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Tan",
 "shops": []
 },
@@ -152262,7 +152262,7 @@
 "shops": []
 },
 "cac6f8a0-6305-47a2-b169-8ebae08a0901": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Firebrick",
 "shops": [
 {
@@ -152498,12 +152498,12 @@
 "shops": []
 },
 "cb8be778-fb01-4dad-85e4-aa99a7a69c9d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms",
 "shops": []
 },
 "cb8c777f-1393-485c-8e41-a516cfcd6ed8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Twilight",
 "shops": [
 {
@@ -154105,7 +154105,7 @@
 ]
 },
 "ce095413-724c-492b-8e25-7ec2cb532988": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Bokto Helmet",
 "shops": []
 },
@@ -154176,7 +154176,7 @@
 "shops": []
 },
 "ce726c1c-b0c9-499e-998c-249ae2fca47c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Brimstone",
 "shops": []
 },
@@ -154374,7 +154374,7 @@
 "shops": []
 },
 "cea4af31-612e-4d1c-9a03-e358898b5691": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Council Scrip",
 "shops": []
 },
@@ -155716,7 +155716,7 @@
 "shops": []
 },
 "cef54c0b-81d1-4ccb-a67f-f7304f198184": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Core",
 "shops": []
 },
@@ -156003,7 +156003,7 @@
 ]
 },
 "cf8dcddd-a095-4b1b-851d-274a53cfc833": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Daystar",
 "shops": []
 },
@@ -156207,7 +156207,7 @@
 ]
 },
 "cfad8c46-2b62-4a61-9219-8910b210aa6b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Aqua",
 "shops": [
 {
@@ -157889,7 +157889,7 @@
 "shops": []
 },
 "d21cbe8a-84c8-47fa-86b3-0079f7ecc6ec": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Icefall",
 "shops": []
 },
@@ -157907,11 +157907,11 @@
 ]
 },
 "d22422fa-7584-4cfb-8f7d-556e3aaf453a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Thorby Shirt",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 860,
 "s": "Stanton",
@@ -157927,18 +157927,18 @@
 ]
 },
 "d228a102-4054-475c-b03f-02b4be7e7b15": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Blue",
 "shops": [
 {
-"d": "2026-08-30",
+"d": "2026-11-19",
 "l": "Baijini Point",
 "p": 1705,
 "s": "Stanton",
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1947,
 "s": "Stanton",
@@ -158044,12 +158044,12 @@
 "shops": []
 },
 "d2585ecb-f52e-43fd-b4dd-3cf2bd09ca9a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Giocoso Racing Helmet Ivory",
 "shops": []
 },
 "d26ac5f7-f80f-4310-a66c-5833d6c9a7ac": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Cold Steel",
 "shops": [
 {
@@ -158090,7 +158090,7 @@
 ]
 },
 "d27c5682-3b69-442a-8e9d-b4b4f3522734": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Yellow",
 "shops": [
 {
@@ -158108,7 +158108,7 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 750,
 "s": "Stanton",
@@ -158545,7 +158545,7 @@
 "shops": []
 },
 "d313a06b-1fdb-4a45-992a-3a282ffdf342": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Necropolis",
 "shops": []
 },
@@ -158871,7 +158871,7 @@
 ]
 },
 "d3a17668-90c2-481a-9bf2-28b2a3966319": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Tan",
 "shops": [
 {
@@ -158964,7 +158964,7 @@
 ]
 },
 "d3c1b1cf-47e9-4389-8bc2-382e5a88ce37": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Green",
 "shops": []
 },
@@ -159355,7 +159355,7 @@
 ]
 },
 "d463ff3b-ada2-4fd3-8155-6e8c5ecc6bbc": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Backpack Combustion",
 "shops": []
 },
@@ -159510,7 +159510,7 @@
 ]
 },
 "d4d203a9-5169-4b86-8b63-e169e8cbbb9d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Red Alert",
 "shops": []
 },
@@ -159590,7 +159590,7 @@
 "shops": []
 },
 "d4ff8c75-4169-4056-abaf-1f433522cdfe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Quantum Fuel Tank",
 "shops": []
 },
@@ -159763,7 +159763,7 @@
 "shops": []
 },
 "d53bfc07-aabf-4e6f-b7fa-74d41b343db8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Dark Red",
 "shops": []
 },
@@ -160006,7 +160006,7 @@
 ]
 },
 "d5c52258-f451-4b5b-a126-f754ba4085e8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Dark Red",
 "shops": [
 {
@@ -160031,7 +160031,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1873,
 "s": "Stanton",
@@ -160385,7 +160385,7 @@
 ]
 },
 "d674a92d-bcc0-4901-b5b1-3e335fdd9c38": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Giocoso Racing Helmet Obsidian",
 "shops": []
 },
@@ -161554,7 +161554,7 @@
 "shops": []
 },
 "d7eed5fc-86c9-455b-a816-1db0a5e77c81": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Firebrick",
 "shops": [
 {
@@ -161725,7 +161725,7 @@
 "shops": []
 },
 "d82a35f5-26ca-4a44-bb67-b845be8b7d46": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Rager",
 "shops": []
 },
@@ -162895,7 +162895,7 @@
 "shops": []
 },
 "d8a56b78-c95d-4ed9-b6ae-f03a6ad37448": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Green",
 "shops": [
 {
@@ -162953,7 +162953,7 @@
 "shops": []
 },
 "d8cb0851-17f3-407d-9420-dfbd5e7278fd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Icefall",
 "shops": []
 },
@@ -163263,11 +163263,11 @@
 "shops": []
 },
 "d92ffcf6-2601-4b55-9ad6-4c7e74e08286": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Raven",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1239,
 "s": "Stanton",
@@ -165519,7 +165519,7 @@
 "shops": []
 },
 "dabd2d8d-c06c-4ebf-8791-192ace67ac33": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "FullForce",
 "shops": [
 {
@@ -165668,11 +165668,11 @@
 "shops": []
 },
 "db1d1700-8ec0-43cf-9cfb-8bb68e191647": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Black Steel",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1430,
 "s": "Stanton",
@@ -165691,7 +165691,7 @@
 "shops": []
 },
 "db40dfef-4eac-4ad2-af15-48a6bbabc888": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Blue",
 "shops": [
 {
@@ -166559,7 +166559,7 @@
 ]
 },
 "dbee9f04-0939-4657-9f8a-96a3c99b7db5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Dark Red",
 "shops": []
 },
@@ -167647,22 +167647,22 @@
 "shops": []
 },
 "dd68c297-41d1-45db-bb80-db92fda0eb9b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants White",
 "shops": [
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 750,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
 {
 "d": "2026-10-26",
 "l": "Orison",
 "p": 750,
 "s": "Stanton",
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 750,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 }
 ]
 },
@@ -167794,7 +167794,7 @@
 "shops": []
 },
 "ddaa7dda-b8f8-4df4-9acf-4fc976134ecb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Legs Disrupt Camo",
 "shops": []
 },
@@ -167833,7 +167833,7 @@
 ]
 },
 "ddb57a14-88c9-416e-bb38-b5da0bea94a0": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Base",
 "shops": []
 },
@@ -167991,7 +167991,7 @@
 "shops": []
 },
 "de45351f-8bb1-4e5a-b7cc-e3e560d14ee6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Dark Red",
 "shops": []
 },
@@ -168038,7 +168038,7 @@
 "shops": []
 },
 "de5a222c-66b2-4fee-baca-30fa53011c75": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Grey",
 "shops": [
 {
@@ -168061,12 +168061,12 @@
 "shops": []
 },
 "de6425e3-468e-499b-a0ba-f3e39b5ccee9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs",
 "shops": []
 },
 "de759022-125e-42dc-8b8e-c8739bd6a776": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Grey",
 "shops": []
 },
@@ -168169,7 +168169,7 @@
 "shops": []
 },
 "de9ad7fc-5171-416c-b3a3-8f3c1702e93c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Grey",
 "shops": []
 },
@@ -168179,7 +168179,7 @@
 "shops": []
 },
 "deba27c8-96da-4510-9112-2106d9827819": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask Greed",
 "shops": []
 },
@@ -168265,7 +168265,7 @@
 ]
 },
 "dedd80f6-374b-4974-b666-1169e003ec8a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Frostline",
 "shops": []
 },
@@ -168695,7 +168695,7 @@
 "shops": []
 },
 "df4210b0-584d-4fc1-ac59-64ca32d09dc3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Arms Canuto",
 "shops": []
 },
@@ -168744,12 +168744,12 @@
 ]
 },
 "df6526ae-3a5c-498c-b268-6fc649ba1470": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Tan",
 "shops": []
 },
 "df77730e-1d7e-45ee-9364-3f86a38d7008": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Canuto",
 "shops": []
 },
@@ -169619,7 +169619,7 @@
 ]
 },
 "e0ad7d35-7d48-462a-b56d-b7d4547f7606": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Violet",
 "shops": []
 },
@@ -169654,12 +169654,12 @@
 "shops": []
 },
 "e0d81a8e-43da-4a87-99f4-12fb3f209e64": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Seagreen",
 "shops": []
 },
 "e0d886f5-a721-4f1d-ae5a-ac8d14d2415c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Arms Mark I",
 "shops": []
 },
@@ -169691,11 +169691,11 @@
 ]
 },
 "e0e7791f-c577-4925-9a33-2912ad6de98f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Imperial",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
@@ -169709,7 +169709,7 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1947,
 "s": "Stanton",
@@ -169718,17 +169718,17 @@
 ]
 },
 "e0ea0ccd-736b-47ef-a57e-6bca61e8e1e1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Backpack Daystar",
 "shops": []
 },
 "e0f3070a-4f62-4983-bcd8-f1a22f734af7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Earthwork",
 "shops": []
 },
 "e0fa4e0e-c497-4c42-bb78-3fae776157a9": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet White",
 "shops": []
 },
@@ -170952,7 +170952,7 @@
 "shops": []
 },
 "e2070edb-01ac-447d-a76e-eba5ef2ad05d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Blue",
 "shops": []
 },
@@ -171011,7 +171011,7 @@
 "shops": []
 },
 "e22eaa6a-cbf9-4af4-8763-6b1da8a31cf7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Brimstone",
 "shops": []
 },
@@ -171181,7 +171181,7 @@
 ]
 },
 "e2b6e746-44aa-493a-acaf-0db55caf87c7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Core Elysium",
 "shops": []
 },
@@ -171280,7 +171280,7 @@
 "shops": []
 },
 "e3260eef-12a3-4214-9299-90e7c3c7bfeb": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Orange",
 "shops": []
 },
@@ -171614,7 +171614,7 @@
 ]
 },
 "e3a5bd46-9845-4cfc-9529-7f8328881359": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask Avarice",
 "shops": []
 },
@@ -171944,7 +171944,7 @@
 "shops": []
 },
 "e462b0cc-4f15-4926-9d58-4988a773b39c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Outcrop",
 "shops": []
 },
@@ -172263,7 +172263,7 @@
 "shops": []
 },
 "e5145460-e74b-4997-995c-bc322e6cf95d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Bokto Core",
 "shops": []
 },
@@ -172553,11 +172553,11 @@
 "shops": []
 },
 "e533d75c-9275-48e9-bc93-f49a2c113bc5": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Breton",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 237600,
 "s": "Stanton",
@@ -172695,7 +172695,7 @@
 "shops": []
 },
 "e5c981c3-533c-4dc9-b246-72df989aa751": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Red",
 "shops": []
 },
@@ -173064,7 +173064,7 @@
 "shops": []
 },
 "e5e93d7e-28e6-487b-8920-38734a27d071": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Clanguard",
 "shops": []
 },
@@ -173166,11 +173166,11 @@
 ]
 },
 "e61d58d6-3ffd-4d7b-ad19-64ae9d27efb1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Colossus",
 "shops": [
 {
-"d": "2026-11-09",
+"d": "2026-11-18",
 "l": "New Babbage",
 "p": 113400,
 "s": "Stanton",
@@ -173189,6 +173189,13 @@
 "p": 113400,
 "s": "Nyx",
 "t": "Teach's Item Shop - Levski"
+},
+{
+"d": "2026-11-20",
+"l": "Dudley & Daughters",
+"p": 113400,
+"s": "Pyro",
+"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-11-13",
@@ -173210,13 +173217,6 @@
 "p": 113400,
 "s": "Pyro",
 "t": "Ship Parts - Ruin Station"
-},
-{
-"d": "2026-08-31",
-"l": "Dudley & Daughters",
-"p": 113400,
-"s": "Pyro",
-"t": "Ship Parts - Dudley & Daughters"
 },
 {
 "d": "2026-08-31",
@@ -173728,7 +173728,7 @@
 "shops": []
 },
 "e6d6521b-e40e-4b56-ab61-3a2a3fa5f7df": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Legs Icefall",
 "shops": []
 },
@@ -173908,11 +173908,11 @@
 "shops": []
 },
 "e7230532-d589-4c97-82d6-2b551262cf2d": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Black",
 "shops": [
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1705,
 "s": "Stanton",
@@ -174528,7 +174528,7 @@
 ]
 },
 "e7801723-def0-41d3-b132-e43102590da3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Brimstone",
 "shops": []
 },
@@ -174887,7 +174887,7 @@
 "shops": []
 },
 "e81f4997-07bf-40f2-a00b-193973dbf05a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Red",
 "shops": [
 {
@@ -174905,21 +174905,21 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - CRU-L4"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1705,
 "s": "Stanton",
 "t": "Casaba Outlet - Area 18"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1873,
 "s": "Stanton",
@@ -175002,7 +175002,7 @@
 "shops": []
 },
 "e8441c9a-20a4-4661-b566-f46190ad4d3e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Tan",
 "shops": []
 },
@@ -175017,7 +175017,7 @@
 "shops": []
 },
 "e877dfab-2ffe-40da-b826-04ce1185c325": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs White",
 "shops": []
 },
@@ -175356,7 +175356,7 @@
 ]
 },
 "e9777e72-752e-4fdd-90ba-db6b7038cc56": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Fortifier Helmet Outcrop",
 "shops": []
 },
@@ -175495,7 +175495,7 @@
 "shops": []
 },
 "ea133a3b-6e17-4eeb-be1c-a6da8a8b3b97": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Origin 350r Racing Helmet",
 "shops": []
 },
@@ -175750,7 +175750,7 @@
 "shops": []
 },
 "eaa35b8d-b3a4-4ebe-a416-bb650c7a8fe8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Ignitor",
 "shops": []
 },
@@ -176674,7 +176674,7 @@
 "shops": []
 },
 "ece98a67-cc49-4a28-882c-24959e1ffd50": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Draas",
 "shops": []
 },
@@ -176755,7 +176755,7 @@
 ]
 },
 "ed19edd5-888b-48bf-b8dc-35e27c6c7e86": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Artimex Legs Hurston Dynamics Executive Security",
 "shops": []
 },
@@ -177057,7 +177057,7 @@
 ]
 },
 "edaf0b70-e1a4-48ff-b827-37e9324014bd": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Core",
 "shops": []
 },
@@ -177211,7 +177211,7 @@
 ]
 },
 "ee14c11f-ef77-40e6-87c8-15a4f4cb35ba": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Frostline",
 "shops": []
 },
@@ -178035,7 +178035,7 @@
 ]
 },
 "eff4fdff-304b-4879-aba0-a2249f76bdc1": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Origin 350r Racing Flight Suit",
 "shops": []
 },
@@ -178045,11 +178045,11 @@
 "shops": []
 },
 "effeaaef-c2dd-4b66-a674-cb9a5e126456": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Seagreen",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 1705,
 "s": "Stanton",
@@ -178065,7 +178065,7 @@
 ]
 },
 "f0008d0c-a28e-4fbc-bf1e-5d055b3eb913": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Seagreen",
 "shops": []
 },
@@ -178309,11 +178309,11 @@
 "shops": []
 },
 "f0a14e29-c9a5-4b47-b682-1e2dc204b2bf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Devereaux Pants",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 600,
 "s": "Stanton",
@@ -178808,7 +178808,7 @@
 ]
 },
 "f1194db3-4bf8-402f-9565-54b7ae8f401b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Red",
 "shops": []
 },
@@ -178861,7 +178861,7 @@
 "shops": []
 },
 "f15c609c-3904-4d72-97ba-b89b34363316": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Frostline",
 "shops": []
 },
@@ -178976,7 +178976,7 @@
 "shops": []
 },
 "f2075bc7-d9b4-45e7-9765-dbfb9d5cbda3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Helmet Combustion",
 "shops": []
 },
@@ -179283,7 +179283,7 @@
 ]
 },
 "f26f97c8-9719-41fa-bae2-a066c283f2f3": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Violet",
 "shops": []
 },
@@ -179311,11 +179311,11 @@
 "shops": []
 },
 "f27e87f6-5075-470f-83f3-358424a14e7c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "IonWave",
 "shops": [
 {
-"d": "2026-09-18",
+"d": "2026-11-18",
 "l": "CRU-L4 Shallow Fields Station",
 "p": 22000,
 "s": "Stanton",
@@ -179365,7 +179365,7 @@
 ]
 },
 "f29d1c9f-5256-4128-b19a-27589efe0d77": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Libio Jacket Dark Green",
 "shops": [
 {
@@ -179383,6 +179383,13 @@
 "t": "Casaba Outlet - Pyro Gateway (Stanton)"
 },
 {
+"d": "2026-11-15",
+"l": "Area18",
+"p": 1705,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
+},
+{
 "d": "2026-10-26",
 "l": "Orison",
 "p": 1705,
@@ -179390,14 +179397,7 @@
 "t": "Makau - Clothing Shop -  Cloudview Center - Orison"
 },
 {
-"d": "2026-08-29",
-"l": "Area18",
-"p": 1705,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-20",
 "l": "Seraphim Station",
 "p": 1873,
 "s": "Stanton",
@@ -179541,7 +179541,7 @@
 "shops": []
 },
 "f33dfc36-2a5c-441b-af16-f8d56f93c589": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Purple",
 "shops": []
 },
@@ -179556,7 +179556,7 @@
 "shops": []
 },
 "f345cdb7-287a-44aa-a588-0331848ac656": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Red",
 "shops": []
 },
@@ -179686,9 +179686,30 @@
 "shops": []
 },
 "f3ceefa2-670f-47c5-8c13-a80c8cf93c52": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "LightFire",
 "shops": [
+{
+"d": "2026-11-19",
+"l": "HUR-L2 Faithful Dream Station",
+"p": 57750,
+"s": "Stanton",
+"t": "Platinum Bay - HUR-L2"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 57750,
+"s": "Stanton",
+"t": "Platinum Bay - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "Nyx Gateway",
+"p": 57750,
+"s": "Stanton",
+"t": "Platinum Bay - Nyx Gateway (Stanton)"
+},
 {
 "d": "2026-10-31",
 "l": "Terra Gateway",
@@ -179704,32 +179725,11 @@
 "t": "Platinum Bay - Pyro Gateway (Stanton)"
 },
 {
-"d": "2026-09-26",
-"l": "HUR-L2 Faithful Dream Station",
-"p": 57750,
-"s": "Stanton",
-"t": "Platinum Bay - HUR-L2"
-},
-{
-"d": "2026-09-09",
-"l": "Nyx Gateway",
-"p": 57750,
-"s": "Stanton",
-"t": "Platinum Bay - Nyx Gateway (Stanton)"
-},
-{
 "d": "2026-09-03",
 "l": "Grim HEX",
 "p": 57750,
 "s": "Stanton",
 "t": "Dumper's Depot - GrimHEX"
-},
-{
-"d": "2026-08-30",
-"l": "Baijini Point",
-"p": 57750,
-"s": "Stanton",
-"t": "Platinum Bay - Baijini Point"
 },
 {
 "d": "2026-09-11",
@@ -179877,7 +179877,7 @@
 ]
 },
 "f42e745f-6d5a-48d3-8f79-859aa7f1fc12": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask Raku",
 "shops": []
 },
@@ -180028,7 +180028,7 @@
 ]
 },
 "f4c9efd5-2a80-45f1-95e6-7d89d35aa915": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Outcrop",
 "shops": []
 },
@@ -180063,7 +180063,7 @@
 "shops": []
 },
 "f50e99c9-0806-4fdc-b981-a640afe19bbe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Dark Red",
 "shops": [
 {
@@ -180137,7 +180137,7 @@
 ]
 },
 "f5158f55-db03-4447-aed8-181b92fbc99f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Imperial",
 "shops": []
 },
@@ -180295,7 +180295,7 @@
 "shops": []
 },
 "f56c6272-4ee5-4720-92fa-256183a2a5da": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Seagreen",
 "shops": []
 },
@@ -180669,7 +180669,7 @@
 "shops": []
 },
 "f68200bd-c850-4d9d-b9fc-ef31ba272597": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Seagreen",
 "shops": []
 },
@@ -180737,12 +180737,12 @@
 "shops": []
 },
 "f6ceb4df-7a12-4224-b172-ca1a7b55ff69": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Oracle Helmet Aqua",
 "shops": []
 },
 "f6d4f561-6919-44ae-9d07-21d52d67022b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Olive",
 "shops": []
 },
@@ -181263,7 +181263,7 @@
 ]
 },
 "f73d6208-6df7-4100-9736-0e6269f4529e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Twilight",
 "shops": [
 {
@@ -181272,6 +181272,27 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 415,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "CRU-L1 Ambitious Dream Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - CRU-L1"
+},
+{
+"d": "2026-11-15",
+"l": "Area18",
+"p": 415,
+"s": "Stanton",
+"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-27",
@@ -181286,27 +181307,6 @@
 "p": 415,
 "s": "Stanton",
 "t": "Casaba Outlet - Port Tressler"
-},
-{
-"d": "2026-09-11",
-"l": "CRU-L1 Ambitious Dream Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - CRU-L1"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 415,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
-},
-{
-"d": "2026-08-29",
-"l": "Area18",
-"p": 415,
-"s": "Stanton",
-"t": "Casaba Outlet - Area 18"
 },
 {
 "d": "2026-09-10",
@@ -181344,7 +181344,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 415,
 "s": "Nyx",
@@ -181368,7 +181368,7 @@
 "shops": []
 },
 "f7753764-2420-446d-9b79-2eda37667d7a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Earthshake",
 "shops": []
 },
@@ -181461,7 +181461,7 @@
 ]
 },
 "f78d7ac5-5e6d-43e1-9256-d30c0bb4a316": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Antium Core Midnight Sun",
 "shops": []
 },
@@ -181737,7 +181737,7 @@
 "shops": []
 },
 "f7edd487-2a8e-4a24-bb0e-cfd013827c7a": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Twilight",
 "shops": []
 },
@@ -182302,7 +182302,7 @@
 ]
 },
 "f94e1082-a45e-432c-9dbe-24b096a91874": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Violet",
 "shops": [
 {
@@ -182658,7 +182658,7 @@
 ]
 },
 "f9fe6b21-49ac-44be-920a-64e68e4634c8": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Purple",
 "shops": []
 },
@@ -183319,7 +183319,7 @@
 "shops": []
 },
 "fa2824c2-b143-4082-b954-5b15f64a2e07": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Tuvois Jacket Yellow",
 "shops": [
 {
@@ -183346,7 +183346,7 @@
 ]
 },
 "fa389812-e21d-4fed-86b2-9c251ca116fe": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Helmet Deadlock",
 "shops": []
 },
@@ -183751,7 +183751,7 @@
 "shops": []
 },
 "faf830ac-82ec-438e-ba21-7c85a292c788": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Bloodstorm",
 "shops": []
 },
@@ -184071,7 +184071,7 @@
 "shops": []
 },
 "fbb9f356-b016-4d2a-9a63-e20973d31e5b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Giocoso Racing Helmet Azure",
 "shops": []
 },
@@ -184256,7 +184256,7 @@
 "shops": []
 },
 "fc085f89-a0ad-403e-a06f-8484a0af99bf": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Nyman Jacket Olive",
 "shops": [
 {
@@ -184267,7 +184267,7 @@
 "t": "Clothing Shop - Baijini Point"
 },
 {
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 1530,
 "s": "Stanton",
@@ -184351,7 +184351,7 @@
 ]
 },
 "fc28e016-acc5-4b50-b732-0e843fb132a6": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Ponos Boots Sienna",
 "shops": [
 {
@@ -184360,6 +184360,27 @@
 "p": 395,
 "s": "Stanton",
 "t": "Cargo Center Supplies - Pyro Gateway (Stanton)"
+},
+{
+"d": "2026-11-21",
+"l": "MIC-L1 Shallow Frontier Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L1"
+},
+{
+"d": "2026-11-19",
+"l": "Baijini Point",
+"p": 415,
+"s": "Stanton",
+"t": "Cargo Center Supplies - Baijini Point"
+},
+{
+"d": "2026-11-18",
+"l": "MIC-L2 Long Forest Station",
+"p": 415,
+"s": "Stanton",
+"t": "Refinery Shop - MIC-L2"
 },
 {
 "d": "2026-09-27",
@@ -184376,20 +184397,6 @@
 "t": "Casaba Outlet - Port Tressler"
 },
 {
-"d": "2026-09-10",
-"l": "MIC-L1 Shallow Frontier Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L1"
-},
-{
-"d": "2026-09-08",
-"l": "Baijini Point",
-"p": 415,
-"s": "Stanton",
-"t": "Cargo Center Supplies - Baijini Point"
-},
-{
 "d": "2026-09-03",
 "l": "Grim HEX",
 "p": 415,
@@ -184397,14 +184404,7 @@
 "t": "KC Trending - GrimHEX"
 },
 {
-"d": "2026-08-28",
-"l": "MIC-L2 Long Forest Station",
-"p": 415,
-"s": "Stanton",
-"t": "Refinery Shop - MIC-L2"
-},
-{
-"d": "2026-08-29",
+"d": "2026-11-15",
 "l": "Area18",
 "p": 512,
 "s": "Stanton",
@@ -184418,7 +184418,7 @@
 "t": "Cargo Services - Pyro Gateway (Nyx)"
 },
 {
-"d": "2026-11-12",
+"d": "2026-11-20",
 "l": "Levski",
 "p": 415,
 "s": "Nyx",
@@ -184427,7 +184427,7 @@
 ]
 },
 "fc2b3f74-c723-441c-bdc7-aa19f82d1a2b": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Deathblow",
 "shops": []
 },
@@ -184508,7 +184508,7 @@
 ]
 },
 "fc5a3d45-543e-4ece-9b45-88ff1422ce08": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Mivaldi Pants Grey",
 "shops": [
 {
@@ -184898,7 +184898,7 @@
 "shops": []
 },
 "fd1367e0-9c11-418f-8a34-bcbfad550b78": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Sandstorm",
 "shops": [
 {
@@ -185102,7 +185102,7 @@
 ]
 },
 "fd4e81b9-ebbc-4bde-9f90-672ce6ba52c4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Core Olive",
 "shops": []
 },
@@ -185127,7 +185127,7 @@
 "shops": []
 },
 "fd7ca539-4462-43b4-b3b4-8f6246dc0362": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Arms Black",
 "shops": []
 },
@@ -185142,12 +185142,12 @@
 "shops": []
 },
 "fd9686a2-c248-4c2e-9333-9eae507d6f56": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Lynx Legs Blue",
 "shops": []
 },
 "fd9cf430-f6ca-4be6-bb4a-b62774811d16": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Core Outcrop",
 "shops": []
 },
@@ -185231,7 +185231,7 @@
 "shops": []
 },
 "fdb9bd1a-236f-4d0f-93e7-8b6a410838d4": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Earthwork",
 "shops": []
 },
@@ -185507,7 +185507,7 @@
 ]
 },
 "fe1f3199-6680-4929-b511-7a85dc73437f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Mark I",
 "shops": []
 },
@@ -185805,12 +185805,12 @@
 ]
 },
 "fea0df3c-6b88-4de2-ab90-dd318f70eb8f": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Palatino Legs Necropolis",
 "shops": []
 },
 "fea1241c-cb47-41b7-8b93-b6c65d9e0e6c": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Arms Ignitor",
 "shops": []
 },
@@ -186161,7 +186161,7 @@
 "shops": []
 },
 "ff0ae2cc-1f3b-472f-a2d7-ff0df50eae74": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Arms Green",
 "shops": []
 },
@@ -186259,7 +186259,7 @@
 "shops": []
 },
 "ff37159c-c703-4ec1-bb06-670929105e56": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Earthwork",
 "shops": []
 },
@@ -186473,7 +186473,7 @@
 "shops": []
 },
 "ff595abb-14b6-420e-bc59-fea001e59f72": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Morningstar Helmet Yellow",
 "shops": []
 },
@@ -186532,12 +186532,12 @@
 ]
 },
 "ff69150c-a0f8-4079-ab5d-1a52f7088157": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Inquisitor Legs Aqua",
 "shops": []
 },
 "ff75dd6c-c1ab-4c2d-b70c-52f2552bb62e": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Kiba Mask Passion",
 "shops": []
 },
@@ -186589,7 +186589,7 @@
 "shops": []
 },
 "ffb96ae3-59f3-420e-acbc-fb255e9c43b7": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Citadel Core Brimstone",
 "shops": []
 },
@@ -186733,7 +186733,7 @@
 "shops": []
 },
 "ffe92800-4681-4d22-ac4d-5a664b16d016": {
-"checked": 1794748631,
+"checked": 1795398040,
 "n": "Testudo Arms Nightveil",
 "shops": []
 },
